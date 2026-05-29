@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { PhoneCall } from "lucide-react";
+import { PhoneCall, MapPin } from "lucide-react";
 import { CONTACT_DETAILS } from "@/data/contact";
 
 const heroImages = [
@@ -18,17 +18,17 @@ export function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % heroImages.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
 
   return (
-    <div className="relative min-h-[85vh] svh:min-h-[85svh] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[90vh] svh:min-h-[90svh] flex items-center justify-center overflow-hidden">
       {/* Auto-sliding background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80 z-10" />
 
         {heroImages.map((src, index) => (
           <img
@@ -38,22 +38,25 @@ export function Hero() {
             width={1920}
             height={1080}
             fetchPriority={index === 0 ? "high" : "low"}
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1500 ${
               index === currentImage ? "opacity-100" : "opacity-0"
             }`}
           />
         ))}
 
+        {/* Traditional border pattern at top */}
+        <div className="absolute top-0 left-0 right-0 h-2 z-20 bg-gradient-to-r from-brand-gold via-brand-saffron to-brand-gold" />
+
         {/* Slide indicators */}
-        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-28 left-1/2 -translate-x-1/2 z-20 flex gap-3">
           {heroImages.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentImage(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              className={`rounded-full transition-all duration-500 ${
                 index === currentImage
-                  ? "bg-brand-gold w-6"
-                  : "bg-white/50 hover:bg-white/70"
+                  ? "w-8 h-2 bg-brand-gold"
+                  : "w-2 h-2 bg-white/50 hover:bg-white/70"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -63,81 +66,106 @@ export function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-20 text-center text-white px-6 py-20 max-w-4xl mx-auto"
+        className="relative z-20 text-center text-white px-6 py-20 max-w-5xl mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.2 }}
       >
+        {/* Top decorative element */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mb-6"
+        >
+          <div className="inline-flex items-center gap-4">
+            <div className="h-px w-20 bg-gradient-to-r from-transparent to-brand-gold" />
+            <div className="text-brand-gold text-3xl">🕉️</div>
+            <div className="h-px w-20 bg-gradient-to-l from-transparent to-brand-gold" />
+          </div>
+        </motion.div>
+
         {/* Devanagari sacred chant */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="mb-8"
         >
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-brand-gold/60" />
-            <span className="text-brand-gold text-2xl">🙏</span>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-brand-gold/60" />
-          </div>
-          <p className="font-serif text-brand-gold text-xl md:text-2xl tracking-wider mb-3">
+          <p className="font-serif text-brand-gold text-2xl md:text-3xl tracking-widest mb-2 drop-shadow-lg">
             ॥ श्री गजानन महाराज ॥
           </p>
-          <p className="font-serif italic text-brand-gold/90 text-lg md:text-xl tracking-wide">
+          <p className="font-serif italic text-brand-gold/90 text-xl md:text-2xl tracking-wider drop-shadow-md">
             || Jai Gajanan Maharaj ||
           </p>
+        </motion.div>
+
+        {/* Ornate divider */}
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="flex items-center justify-center gap-2 mb-8"
+        >
+          <div className="h-px w-24 bg-gradient-to-r from-transparent to-brand-gold/70" />
+          <svg className="w-6 h-6 text-brand-gold" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L13.5 6.5L18 8L13.5 9.5L12 14L10.5 9.5L6 8L10.5 6.5L12 2Z" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+          <div className="h-px w-24 bg-gradient-to-l from-transparent to-brand-gold/70" />
         </motion.div>
 
         {/* Main heading */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading text-white mb-6 leading-tight"
+          transition={{ duration: 0.8, delay: 0.9 }}
+          className="text-5xl md:text-7xl lg:text-8xl font-bold font-heading text-white mb-6 leading-tight tracking-wide"
         >
+          <span className="block text-4xl md:text-5xl lg:text-6xl mb-2 text-brand-gold/90 font-normal italic">
+            Welcome to
+          </span>
           Shri Gajanan<br />
           <span className="text-brand-gold">Maharaj Sansthan</span>
         </motion.h1>
 
-        {/* Simple divider */}
+        {/* Location badge */}
         <motion.div
-          initial={{ opacity: 0, scaleX: 0 }}
-          animate={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="flex items-center justify-center gap-3 mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.1 }}
+          className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20"
         >
-          <div className="h-px w-20 bg-gradient-to-r from-transparent to-brand-gold/50" />
-          <svg className="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L14 8L20 8L15 12L17 18L12 14L7 18L9 12L4 8L10 8Z" />
-          </svg>
-          <div className="h-px w-20 bg-gradient-to-l from-transparent to-brand-gold/50" />
+          <MapPin className="h-4 w-4 text-brand-gold" />
+          <span className="text-white/90 text-sm">Shegaon, Maharashtra</span>
         </motion.div>
 
         {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+          transition={{ duration: 0.8, delay: 1.2 }}
+          className="text-lg md:text-xl lg:text-2xl text-white/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
         >
-          Experience divine serenity at our sacred shrine.<br className="hidden md:block" />
-          Plan your spiritual journey for Darshan and peaceful stay.
+          Experience divine serenity at the sacred shrine of Shri Gajanan Maharaj.
+          <br className="hidden md:block" />
+          Plan your spiritual journey for Darshan and peaceful Bhakta Niwas stay.
         </motion.p>
 
-        {/* CTA */}
+        {/* CTA buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.1 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button
             asChild
             size="lg"
-            className="bg-brand-saffron hover:bg-brand-saffron/90 text-white border-0 h-12 px-8 text-base font-medium rounded-full shadow-lg"
+            className="bg-brand-saffron hover:bg-brand-saffron/90 text-white border-0 h-14 px-10 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
           >
             <a href={bookingCallHref}>
-              <PhoneCall className="h-4 w-4 mr-2" />
+              <PhoneCall className="h-5 w-5 mr-2" />
               Book Accommodation
             </a>
           </Button>
@@ -145,7 +173,7 @@ export function Hero() {
             asChild
             size="lg"
             variant="outline"
-            className="bg-transparent hover:bg-white/10 text-white border-white/40 h-12 px-8 text-base font-medium rounded-full"
+            className="bg-transparent hover:bg-white/15 text-white border-2 border-white/50 h-14 px-10 text-lg font-medium rounded-full hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
           >
             <a href="/locations">
               Explore Locations
@@ -153,22 +181,35 @@ export function Hero() {
           </Button>
         </motion.div>
 
-        {/* Trust badge */}
+        {/* Trust badges */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.4 }}
-          className="mt-12"
+          transition={{ duration: 0.8, delay: 1.6 }}
+          className="mt-14 flex flex-wrap items-center justify-center gap-6"
         >
-          <p className="text-white/60 text-sm tracking-wide">
-            Serving devotees since 1908
-          </p>
+          <div className="flex items-center gap-2 text-white/70 text-sm">
+            <span className="text-brand-gold">🙏</span>
+            <span>Serving since 1908</span>
+          </div>
+          <div className="w-1 h-1 rounded-full bg-brand-gold/50" />
+          <div className="flex items-center gap-2 text-white/70 text-sm">
+            <span className="text-brand-gold">🏛️</span>
+            <span>4 Sacred Locations</span>
+          </div>
+          <div className="w-1 h-1 rounded-full bg-brand-gold/50" />
+          <div className="flex items-center gap-2 text-white/70 text-sm">
+            <span className="text-brand-gold">❤️</span>
+            <span>Free Bus Service</span>
+          </div>
         </motion.div>
       </motion.div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 z-20 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+      {/* Bottom fade with gradient */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 z-20 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        {/* Traditional border at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-brand-gold/50 to-transparent" />
       </div>
     </div>
   );
