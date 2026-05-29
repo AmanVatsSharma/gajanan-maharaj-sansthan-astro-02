@@ -1,0 +1,88 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { BlogTaxonomyPageBody } from "@/features/blog/components/BlogTaxonomyPageBody";
+import { BLOG_FEATURED_PILLAR_SLUGS } from "@/features/blog/constants";
+import {
+  formatTaxonomyLabel,
+  getAllCategories,
+  getPostsByCategory,
+  getPostsBySlugs,
+} from "@/lib/blog";
+import { BRAND_VARIANTS, getUniqueKeywords } from "@/lib/seo/constants";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getBreadcrumbSchema,
+  getCollectionPageSchema,
+} from "@/lib/seo/structured-data";
+
+export async function getStaticPaths() {
+  const categories = await getAllCategories();
+  return categories.map((category) => ({ params: { category } }));
+}
+
+const category = Astro.params.category!;
+const posts = await getPostsByCategory(category);
+const categoryLabel = formatTaxonomyLabel(category);
+
+if (posts.length === 0) {
+  throw new Error(`No posts for category: ${category}`);
+}
+
+const featuredPosts = await getPostsBySlugs([...BLOG_FEATURED_PILLAR_SLUGS]);
+
+const description = `Browse ${categoryLabel.toLowerCase()} guides, updates, and devotional resources from Shri Gajanan Maharaj Sansthan, Shegaon. Plan your visit, booking, and darshan with our ${categoryLabel.toLowerCase()} articles.`;
+
+const meta = generatePageMetadata({
+  title: `${categoryLabel} Guides`,
+  description,
+  path: `/blog/category/${category}`,
+  noIndex: posts.length === 0,
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    `gajanan maharaj ${categoryLabel.toLowerCase()}`,
+    `${categoryLabel.toLowerCase()} travel guide`,
+    `${categoryLabel.toLowerCase()} shegaon`,
+    `shegaon ${categoryLabel.toLowerCase()}`,
+    "sansthan category pages",
+    "gajanan maharaj sansthan blog",
+  ]),
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: categoryLabel, url: `/blog/category/${category}` },
+]);
+
+const collectionSchema = getCollectionPageSchema({
+  path: `/blog/category/${category}`,
+  title: `${categoryLabel} Guides - Shri Gajanan Maharaj Sansthan`,
+  description,
+  items: posts.map((post) => ({
+    title: post.title,
+    urlPath: `/blog/${post.slug}`,
+    description: post.description,
+    date: post.date,
+    image: post.image,
+    keywords: post.keywords,
+    category: post.category,
+  })),
+});
+
+const structuredPayload = [breadcrumbSchema, collectionSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+  <BlogTaxonomyPageBody
+    kind="category"
+    taxonomySlug={category}
+    label={categoryLabel}
+    posts={posts}
+    featuredPosts={featuredPosts}
+  />
+</Layout>

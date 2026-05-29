@@ -1,0 +1,51 @@
+---
+import "@/styles/globals.css";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import HeadTags from "@/components/seo/HeadTags.astro";
+import type { SitePageMetadata } from "@/lib/seo/metadata";
+
+interface Props {
+  meta: SitePageMetadata;
+  includeRssAlternate?: boolean;
+}
+
+const { meta, includeRssAlternate = true } = Astro.props;
+const pathname = Astro.url.pathname;
+const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? "";
+---
+
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta name="theme-color" content="#8B0000" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <HeadTags meta={meta} includeRssAlternate={includeRssAlternate} />
+    <GoogleAnalytics client:idle gaId={gaId} />
+  </head>
+  <body class="antialiased flex flex-col min-h-screen">
+    <Navbar client:idle pathname={pathname} />
+    <main class="grow">
+      <slot />
+    </main>
+    <WhatsAppButton client:visible />
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,31 @@
+name: SEO Quality Gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - "cursor/**"
+
+jobs:
+  seo-check:
+    name: Lint + Build + SEO Verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run strict SEO gate
+        run: npm run seo:check:strict

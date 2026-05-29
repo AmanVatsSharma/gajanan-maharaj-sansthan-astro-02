@@ -1,0 +1,371 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - link "Shri Gajanan Maharaj Sansthan Logo Shri Gajanan Maharaj Sansthan" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Shri Gajanan Maharaj Sansthan Logo" [ref=e7]
+        - generic [ref=e8]: Shri Gajanan Maharaj Sansthan
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Booking" [ref=e11] [cursor=pointer]:
+          - /url: /booking
+        - link "Locations" [ref=e12] [cursor=pointer]:
+          - /url: /locations
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "About Sansthan" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e17]:
+        - link "WhatsApp for temple accommodation booking" [ref=e18] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0ATemple%20accommodation%20booking%20enquiry%0A%0AKindly%20guide%20me%20on%20availability%20and%20booking.
+          - img
+          - generic [ref=e19]: WhatsApp
+        - link "Call booking helpline +918796359334" [ref=e20] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img
+          - generic [ref=e21]: Call
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - navigation "Breadcrumb" [ref=e25]:
+        - link "Home" [ref=e27] [cursor=pointer]:
+          - /url: /
+          - img [ref=e28]
+          - text: Home
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e34]: Booking
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - heading "Accommodation Booking Request" [level=1] [ref=e37]
+          - paragraph [ref=e38]: This is the official booking help page for devotees. Share your preferred location, dates, and guest count, then contact our office via WhatsApp or phone for availability and confirmation.
+          - generic [ref=e39]:
+            - link "View Locations" [ref=e40] [cursor=pointer]:
+              - /url: /locations
+            - link "Send Request" [ref=e41] [cursor=pointer]:
+              - /url: "#booking-form"
+        - region "Booking request form" [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - generic [ref=e49]:
+                - heading "Send a Booking Request" [level=2] [ref=e50]
+                - paragraph [ref=e51]: Fill details below to generate a WhatsApp message, or call the booking helpline.
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - text: Select location
+                - combobox "Select location" [ref=e54]:
+                  - generic: Choose a location
+                  - img [ref=e55]
+                - combobox [ref=e57]
+                - paragraph [ref=e58]: "Tip: selecting a location helps the office respond faster."
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - text: Check-in date (optional)
+                  - textbox "Check-in date (optional)" [ref=e61]
+                - generic [ref=e62]:
+                  - text: Check-out date (optional)
+                  - textbox "Check-out date (optional)" [ref=e63]
+              - generic [ref=e64]:
+                - generic [ref=e65]:
+                  - text: Number of guests
+                  - spinbutton "Number of guests" [ref=e66]: "3"
+                  - paragraph [ref=e67]: "Note: Sansthan rules may require minimum occupancy for private rooms."
+                - generic [ref=e68]:
+                  - text: Your phone number (optional)
+                  - textbox "Your phone number (optional)" [ref=e69]:
+                    - /placeholder: +91XXXXXXXXXX
+                  - paragraph [ref=e70]: Optional, but helpful if the office needs to call back.
+              - generic [ref=e71]:
+                - link "WhatsApp to Book" [ref=e72] [cursor=pointer]:
+                  - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0AAccommodation%20booking%20enquiry%0APreferred%20location%3A%20a%20Sansthan%20location%0ACheck-in%3A%20Not%20specified%0ACheck-out%3A%20Not%20specified%0AGuests%3A%203%0AKindly%20share%20availability%20and%20booking%20process.
+                  - img
+                  - text: WhatsApp to Book
+                - link "Call Now" [ref=e73] [cursor=pointer]:
+                  - /url: tel:+918796359334
+                  - img
+                  - text: Call Now
+              - generic [ref=e74]: Final confirmation is provided by the Sansthan office based on availability and rules.
+        - generic [ref=e75]:
+          - heading "How booking works" [level=2] [ref=e76]
+          - list [ref=e77]:
+            - listitem [ref=e78]: Select your preferred location (Shri Gajanan Maharaj Sansthan Shegaon, Shri Gajanan Maharaj Sansthan Pandharpur, Shri Gajanan Maharaj Sansthan Trimbakeshwar, or Shri Gajanan Maharaj Sansthan Omkareshwar).
+            - listitem [ref=e79]: Share your dates and guest count.
+            - listitem [ref=e80]: Send the request via WhatsApp or call. The office confirms based on availability.
+          - paragraph [ref=e81]: For rules (families only, ID proof, minimum occupancy), please check the FAQs below.
+        - region "Booking FAQs" [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - heading "Booking FAQs" [level=2] [ref=e85]
+              - paragraph [ref=e86]: Common questions about accommodation rules, facilities, and the booking process.
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - button "How do I book accommodation at Shri Gajanan Maharaj Sansthan?" [expanded] [ref=e89]:
+                  - generic [ref=e90]: How do I book accommodation at Shri Gajanan Maharaj Sansthan?
+                  - img [ref=e91]
+                - generic [ref=e94]: To book accommodation, fill out the booking request form on our website. After submission, you can send the request via WhatsApp to our booking helpline or call directly. Final confirmation is provided by the Sansthan office based on availability and booking rules.
+              - generic [ref=e95]:
+                - button "How far in advance can I book accommodation?" [ref=e96]:
+                  - generic [ref=e97]: How far in advance can I book accommodation?
+                  - img [ref=e98]
+                - generic [ref=e100]: Accommodation booking is typically accepted up to 30 days in advance. However, during special occasions and festivals, advance booking periods may vary. We recommend contacting the office directly for major festivals.
+              - generic [ref=e101]:
+                - button "Can unmarried couples or groups of friends book rooms?" [ref=e102]:
+                  - generic [ref=e103]: Can unmarried couples or groups of friends book rooms?
+                  - img [ref=e104]
+                - generic [ref=e106]: No, accommodation is strictly for families only. Rooms are allocated only to married couples with valid proof of marriage. Unmarried couples and groups of friends may be directed to dormitory facilities. Valid government ID is mandatory for all guests.
+              - generic [ref=e107]:
+                - button "What is the minimum number of people required to book a room?" [ref=e108]:
+                  - generic [ref=e109]: What is the minimum number of people required to book a room?
+                  - img [ref=e110]
+                - generic [ref=e112]: A minimum of 3 family members is usually required to book a private room. This ensures optimal utilization of our limited accommodation resources for families visiting for darshan.
+              - generic [ref=e113]:
+                - button "What is the cost of accommodation?" [ref=e114]:
+                  - generic [ref=e115]: What is the cost of accommodation?
+                  - img [ref=e116]
+                - generic [ref=e118]: Accommodation at Shri Gajanan Maharaj Sansthan is provided on a donation basis. There is no fixed charge, and devotees can contribute as per their capacity. The Sansthan operates on the principle of serving all devotees equally.
+              - generic [ref=e119]:
+                - button "How long can I stay at the Bhakta Niwas?" [ref=e120]:
+                  - generic [ref=e121]: How long can I stay at the Bhakta Niwas?
+                  - img [ref=e122]
+                - generic [ref=e124]: Accommodation is typically allotted for 24 hours from the time of check-in. Extensions may be considered based on availability, but you should inform the office staff if you need to stay longer.
+              - generic [ref=e125]:
+                - button "What facilities are provided in the accommodation?" [ref=e126]:
+                  - generic [ref=e127]: What facilities are provided in the accommodation?
+                  - img [ref=e128]
+                - generic [ref=e130]: "Facilities vary by location but generally include: hot water (morning hours), Mahaprasad canteen, free bus service to temple, parking, and basic room amenities. Some locations offer AC rooms, dormitories, and deluxe options. Check individual location pages for specific details."
+              - generic [ref=e131]:
+                - button "What documents do I need to bring for check-in?" [ref=e132]:
+                  - generic [ref=e133]: What documents do I need to bring for check-in?
+                  - img [ref=e134]
+                - generic [ref=e136]: Valid government-issued ID proof is mandatory for all guests. This includes Aadhar Card, Voter ID, Passport, or Driving License. Married couples may be asked to provide proof of marriage (marriage certificate or relevant documents).
+              - generic [ref=e137]:
+                - button "Can I book accommodation at multiple locations?" [ref=e138]:
+                  - generic [ref=e139]: Can I book accommodation at multiple locations?
+                  - img [ref=e140]
+                - generic [ref=e142]: Yes, Shri Gajanan Maharaj Sansthan manages accommodation at multiple holy places including Shri Gajanan Maharaj Sansthan Shegaon, Shri Gajanan Maharaj Sansthan Pandharpur, Shri Gajanan Maharaj Sansthan Trimbakeshwar, and Shri Gajanan Maharaj Sansthan Omkareshwar. You can book at any location based on your pilgrimage plans, subject to availability.
+              - generic [ref=e143]:
+                - button "What is the cancellation policy?" [ref=e144]:
+                  - generic [ref=e145]: What is the cancellation policy?
+                  - img [ref=e146]
+                - generic [ref=e148]: If you need to cancel your booking, please inform the Sansthan office as soon as possible via phone or WhatsApp. This helps us allocate the accommodation to other devotees waiting for rooms. There are no cancellation charges.
+              - generic [ref=e149]:
+                - button "Is food available at the accommodation?" [ref=e150]:
+                  - generic [ref=e151]: Is food available at the accommodation?
+                  - img [ref=e152]
+                - generic [ref=e154]: Yes, most locations have Mahaprasad canteen or Bhojan Kaksha where simple, satvik meals are provided to devotees. The timing and availability may vary by location. Some locations also offer prasad distribution.
+              - generic [ref=e155]:
+                - button "What are the temple darshan timings?" [ref=e156]:
+                  - generic [ref=e157]: What are the temple darshan timings?
+                  - img [ref=e158]
+                - generic [ref=e160]: The main temple in Shegaon is open for darshan throughout the day from early morning till late evening. Specific timings may vary for aarti and special ceremonies. Free bus service is often provided from accommodation to the main temple.
+              - generic [ref=e161]:
+                - button "What room types are available at Bhakta Niwas Shegaon?" [ref=e162]:
+                  - generic [ref=e163]: What room types are available at Bhakta Niwas Shegaon?
+                  - img [ref=e164]
+                - generic [ref=e166]: "Bhakta Niwas Shegaon offers multiple room types: 2-Bed AC (₹1,650), 2-Bed Non-AC (₹1,250), 3-Bed AC (₹2,050), 3-Bed Non-AC (₹1,750), 4-Bed AC (₹2,550), 4-Bed Non-AC (₹2,250), Deluxe Suite (₹3,150), Luxury Suite (₹4,150), and Family Room (₹3,850). All prices are suggested donations and include room accommodation, all meals (breakfast, lunch, dinner), hot water, and applicable taxes. There are no hidden charges."
+              - generic [ref=e167]:
+                - button "What is the room price at Bhakt Niwas Shegaon?" [ref=e168]:
+                  - generic [ref=e169]: What is the room price at Bhakt Niwas Shegaon?
+                  - img [ref=e170]
+                - generic [ref=e172]: Room prices (suggested donation) at Bhakta Niwas Shegaon start from ₹1,250 for a 2-bed non-AC room and go up to ₹4,150 for a Luxury Suite. AC rooms are available from ₹1,650 (2-bed) to ₹2,550 (4-bed). Deluxe Suites are ₹3,150 and Family Rooms are ₹3,850. All room rates include meals and hot water. Accommodation is provided on a donation basis — there is no mandatory charge.
+              - generic [ref=e173]:
+                - button "Are AC rooms available at Bhakta Niwas Shegaon?" [ref=e174]:
+                  - generic [ref=e175]: Are AC rooms available at Bhakta Niwas Shegaon?
+                  - img [ref=e176]
+                - generic [ref=e178]: "Yes, air-conditioned (AC) rooms are available at Bhakta Niwas Shegaon. AC room options include: 2-Bed AC (suggested donation ₹1,650), 3-Bed AC (₹2,050), 4-Bed AC (₹2,550), Deluxe Suite (₹3,150), Luxury Suite (₹4,150), and Family Room (₹3,850). AC rooms are also available at Shegaon Anand Vihar. Book in advance as AC rooms fill up quickly during peak seasons."
+              - generic [ref=e179]:
+                - button "How can I book a Deluxe or Luxury Suite at Bhakta Niwas Shegaon?" [ref=e180]:
+                  - generic [ref=e181]: How can I book a Deluxe or Luxury Suite at Bhakta Niwas Shegaon?
+                  - img [ref=e182]
+                - generic [ref=e184]: Deluxe Suites (₹3,150) and Luxury Suites (₹4,150) at Bhakta Niwas Shegaon can be booked by contacting the Sansthan office via WhatsApp or phone at +918796359334. Use the booking form on our website to send your request, specifying the Deluxe or Luxury Suite preference, check-in date, and guest count. These rooms are limited and should be booked well in advance.
+              - generic [ref=e185]:
+                - button "Are meals included in the accommodation price?" [ref=e186]:
+                  - generic [ref=e187]: Are meals included in the accommodation price?
+                  - img [ref=e188]
+                - generic [ref=e190]: Yes, all meal charges are included in the suggested donation amount for Bhakta Niwas rooms. Breakfast, lunch, and dinner (Mahaprasad) are provided at the Sansthan canteen. Hot water facilities are also included. There are no hidden charges — the price shown is the complete cost.
+              - generic [ref=e191]:
+                - button "What is the WhatsApp number for Bhakta Niwas Shegaon booking?" [ref=e192]:
+                  - generic [ref=e193]: What is the WhatsApp number for Bhakta Niwas Shegaon booking?
+                  - img [ref=e194]
+                - generic [ref=e196]: The WhatsApp booking number for Shri Gajanan Maharaj Sansthan is +918796359334. You can send your accommodation booking request via WhatsApp with your preferred location, check-in date, check-out date, and number of guests. The Sansthan office will confirm availability and complete your booking.
+              - generic [ref=e197]:
+                - button "Can I book Bhakta Niwas accommodation over the phone?" [ref=e198]:
+                  - generic [ref=e199]: Can I book Bhakta Niwas accommodation over the phone?
+                  - img [ref=e200]
+                - generic [ref=e202]: Yes, you can call the Sansthan booking helpline at +918796359334 to make an accommodation booking request. Office hours are Monday to Sunday, 9:00 AM to 6:00 PM. For convenience, WhatsApp booking is also available on the same number.
+              - generic [ref=e203]:
+                - button "Is online booking available for Bhakta Niwas Shegaon?" [ref=e204]:
+                  - generic [ref=e205]: Is online booking available for Bhakta Niwas Shegaon?
+                  - img [ref=e206]
+                - generic [ref=e208]: Yes, you can submit an accommodation booking request online using the booking form on the official Shri Gajanan Maharaj Sansthan website. Fill in your preferred location, check-in date, check-out date, and number of guests. The form automatically generates a WhatsApp message which you send to the Sansthan office at +918796359334 for confirmation.
+              - generic [ref=e209]:
+                - button "How do I book accommodation for Ashadhi Ekadashi at Pandharpur?" [ref=e210]:
+                  - generic [ref=e211]: How do I book accommodation for Ashadhi Ekadashi at Pandharpur?
+                  - img [ref=e212]
+                - generic [ref=e214]: For Ashadhi Ekadashi at Pandharpur, book your Bhakta Niwas accommodation at Shri Gajanan Maharaj Sansthan Pandharpur several months in advance. Contact the Sansthan office at +918796359334 via WhatsApp or call. Rooms fill up months before the Ekadashi date. The Sansthan provides accommodation near the Vitthal temple for warkari families visiting during the Ashadha wari.
+              - generic [ref=e215]:
+                - button "How do I book accommodation for Kartik Ekadashi at Pandharpur?" [ref=e216]:
+                  - generic [ref=e217]: How do I book accommodation for Kartik Ekadashi at Pandharpur?
+                  - img [ref=e218]
+                - generic [ref=e220]: For Kartik Ekadashi (Dev Uthani Ekadashi) at Pandharpur, advance booking at Shri Gajanan Maharaj Sansthan Pandharpur is essential — rooms book out quickly. Contact the Sansthan office at +918796359334 as early as possible, ideally 3–4 months before the Kartik Ekadashi date. The Sansthan provides family accommodation for Vitthal devotees visiting Pandharpur during the Kartik wari.
+              - generic [ref=e221]:
+                - button "How do I book accommodation at Trimbakeshwar for Maha Shivaratri?" [ref=e222]:
+                  - generic [ref=e223]: How do I book accommodation at Trimbakeshwar for Maha Shivaratri?
+                  - img [ref=e224]
+                - generic [ref=e226]: For Maha Shivaratri at Trimbakeshwar Jyotirlinga, book your accommodation at Shri Gajanan Maharaj Sansthan Trimbakeshwar at least 2–3 months in advance. Contact the Sansthan booking helpline at +918796359334 via WhatsApp or phone. The Sansthan provides overnight accommodation for families visiting the Trimbakeshwar Jyotirlinga during Maha Shivaratri.
+              - generic [ref=e227]:
+                - button "When is the peak booking season at Bhakta Niwas Shegaon?" [ref=e228]:
+                  - generic [ref=e229]: When is the peak booking season at Bhakta Niwas Shegaon?
+                  - img [ref=e230]
+                - generic [ref=e232]: "Peak booking seasons at Shegaon Bhakta Niwas are: (1) Gajanan Vijay Utsav / Punyatithi (September 8 each year) — the busiest day, lakhs of devotees visit. (2) Ganesh Chaturthi (August–September). (3) Navratri (October). (4) Diwali (October–November). (5) Makar Sankranti (January 14). During these periods, rooms fill weeks to months in advance. Early WhatsApp booking at +918796359334 is strongly recommended."
+              - generic [ref=e233]:
+                - button "What are the exact darshan timings at Shri Gajanan Maharaj Sansthan Shegaon?" [ref=e234]:
+                  - generic [ref=e235]: What are the exact darshan timings at Shri Gajanan Maharaj Sansthan Shegaon?
+                  - img [ref=e236]
+                - generic [ref=e238]: "Shri Gajanan Maharaj Sansthan Shegaon is open for darshan in two sessions: Morning Darshan 5:00 AM – 12:00 PM (Kakad Aarti at 5:00 AM, Madhyan Aarti at ~11:30 AM), and Evening Darshan 4:00 PM – 10:00 PM (Saptashringi Aarti at ~4:00 PM, Shej Aarti at ~9:30 PM). The temple is closed from 12:00 PM to 4:00 PM for afternoon break. The temple is open every day of the year."
+              - generic [ref=e239]:
+                - button "Is darshan at Shri Gajanan Maharaj Sansthan Shegaon free?" [ref=e240]:
+                  - generic [ref=e241]: Is darshan at Shri Gajanan Maharaj Sansthan Shegaon free?
+                  - img [ref=e242]
+                - generic [ref=e244]: Yes, darshan at Shri Gajanan Maharaj Sansthan Shegaon is completely free of charge. There is no entry ticket or darshan fee. The temple is open to all devotees regardless of caste, religion, or financial status. Anand Sagar (Anand Vihar) park may have a nominal entry fee — please check with the Sansthan office.
+              - generic [ref=e245]:
+                - button "Is there a free bus from Shegaon Railway Station to the temple?" [ref=e246]:
+                  - generic [ref=e247]: Is there a free bus from Shegaon Railway Station to the temple?
+                  - img [ref=e248]
+                - generic [ref=e250]: Yes, Shri Gajanan Maharaj Sansthan operates a free bus service between Shegaon Railway Station (SGO) and the main temple complex. The bus runs at regular intervals throughout the day. Devotees arriving by train can board the Sansthan bus at the main exit of Shegaon Railway Station. This is the most convenient and cost-free way to reach the temple from the station.
+              - generic [ref=e251]:
+                - button "Is Mahaprasad available at Shegaon temple?" [ref=e252]:
+                  - generic [ref=e253]: Is Mahaprasad available at Shegaon temple?
+                  - img [ref=e254]
+                - generic [ref=e256]: Yes, Mahaprasad (sacred community meal) is available at Shri Gajanan Maharaj Sansthan Shegaon. The Sansthan's Mahaprasad canteen serves simple, satvik meals to thousands of devotees daily. Mahaprasad is also distributed on special festival occasions. For Bhakta Niwas guests, all meals (breakfast, lunch, dinner) are included in the accommodation donation.
+              - generic [ref=e257]:
+                - button "Can we visit Anand Sagar (Anand Vihar) during our stay at Shegaon?" [ref=e258]:
+                  - generic [ref=e259]: Can we visit Anand Sagar (Anand Vihar) during our stay at Shegaon?
+                  - img [ref=e260]
+                - generic [ref=e262]: Yes, Anand Sagar (also known as Anand Vihar) is a beautiful spiritual and recreational park managed by Shri Gajanan Maharaj Sansthan, located near the main temple complex in Shegaon. It features gardens, water features, meditation zones, and is ideal for families. It is best visited during the afternoon break (12:00 PM – 4:00 PM) when the main temple is closed for darshan. Bhakta Niwas Anand Vihar accommodation is also available here.
+        - region "Planning resources" [ref=e263]:
+          - heading "Planning Resources" [level=2] [ref=e264]
+          - paragraph [ref=e265]: Before you book, explore locations, Sansthan history, and direct contact options.
+          - list [ref=e266]:
+            - listitem [ref=e267]:
+              - link "All Sansthan locations & maps" [ref=e268] [cursor=pointer]:
+                - /url: /locations
+            - listitem [ref=e269]:
+              - link "About Shri Gajanan Maharaj Sansthan" [ref=e270] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e271]:
+              - link "Contact & office details" [ref=e272] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e273]:
+          - text: Need direct contact details? Visit
+          - link "Contact" [ref=e274] [cursor=pointer]:
+            - /url: /contact
+          - text: .
+  - button "Contact us" [ref=e278]:
+    - img [ref=e280]
+  - contentinfo [ref=e282]:
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - paragraph [ref=e288]: Need Help? Reach us instantly
+        - link "Call booking helpline" [ref=e289] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - text: "+918796359334"
+      - generic [ref=e290]:
+        - link "Chat on WhatsApp" [ref=e291] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0AAccommodation%20booking%20enquiry
+          - img [ref=e292]
+          - text: WhatsApp
+        - link "Call now" [ref=e294] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img [ref=e295]
+          - text: Call Now
+    - generic [ref=e299]:
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - heading "Shri Gajanan Maharaj Sansthan" [level=3] [ref=e302]
+          - paragraph [ref=e303]: "\"Jai Gajanan Maharaj\""
+          - paragraph [ref=e304]: Official website for devotee services and accommodation booking.
+        - generic [ref=e305]:
+          - heading "Quick Links" [level=4] [ref=e306]
+          - list [ref=e307]:
+            - listitem [ref=e308]:
+              - link "Home" [ref=e309] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e310]:
+              - link "Accommodation" [ref=e311] [cursor=pointer]:
+                - /url: /locations
+            - listitem [ref=e312]:
+              - link "Booking" [ref=e313] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=e314]:
+              - link "History" [ref=e315] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e316]:
+              - link "Blog" [ref=e317] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e318]:
+              - link "Contact" [ref=e319] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e320]:
+              - link "Privacy Policy" [ref=e321] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e322]:
+              - link "Terms & Conditions" [ref=e323] [cursor=pointer]:
+                - /url: /terms-conditions
+            - listitem [ref=e324]:
+              - link "Refund Policy" [ref=e325] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e326]:
+              - link "Disclaimer" [ref=e327] [cursor=pointer]:
+                - /url: /disclaimer
+        - generic [ref=e328]:
+          - heading "Popular Guides" [level=4] [ref=e329]
+          - list [ref=e330]:
+            - listitem [ref=e331]:
+              - link "Shegaon Travel Guide" [ref=e332] [cursor=pointer]:
+                - /url: /blog/shegaon-travel-guide
+            - listitem [ref=e333]:
+              - link "Omkareshwar Darshan Timings" [ref=e334] [cursor=pointer]:
+                - /url: /blog/omkareshwar-darshan-timings
+            - listitem [ref=e335]:
+              - link "Bhakta Niwas Booking" [ref=e336] [cursor=pointer]:
+                - /url: /blog/shegaon-bhakta-niwas-booking-process
+            - listitem [ref=e337]:
+              - link "Phone & WhatsApp Booking" [ref=e338] [cursor=pointer]:
+                - /url: /blog/phone-and-whatsapp-booking-best-practices
+            - listitem [ref=e339]:
+              - link "Accommodation Booking" [ref=e340] [cursor=pointer]:
+                - /url: /blog/gajanan-maharaj-sansthan-booking-guide
+        - generic [ref=e341]:
+          - heading "Locations" [level=4] [ref=e342]
+          - list [ref=e343]:
+            - listitem [ref=e344]: Shri Gajanan Maharaj Sansthan Shegaon
+            - listitem [ref=e345]: Shri Gajanan Maharaj Sansthan Shegaon Anand Vihar
+            - listitem [ref=e346]: Shri Gajanan Maharaj Sansthan Pandharpur
+            - listitem [ref=e347]: Shri Gajanan Maharaj Sansthan Trimbakeshwar
+            - listitem [ref=e348]: Shri Gajanan Maharaj Sansthan Omkareshwar
+        - generic [ref=e349]:
+          - heading "Contact" [level=4] [ref=e350]
+          - generic [ref=e351]:
+            - generic [ref=e352]: Shri Gajanan Maharaj Sansthan,
+            - generic [ref=e353]: Shegaon,
+            - generic [ref=e354]: Dist. Buldhana,
+            - generic [ref=e355]: Maharashtra - 444203
+          - paragraph [ref=e356]: "Contact: +918796359334"
+      - paragraph [ref=e358]: © 2026 Shri Gajanan Maharaj Sansthan. All rights reserved.
+  - generic [ref=e361]:
+    - button "Menu" [ref=e362]:
+      - img [ref=e364]
+      - generic: Menu
+    - button "Inspect" [ref=e368]:
+      - img [ref=e370]
+      - generic: Inspect
+    - button "Audit" [ref=e372]:
+      - img [ref=e374]
+      - generic: Audit
+    - button "Settings" [ref=e377]:
+      - img [ref=e379]
+      - generic: Settings

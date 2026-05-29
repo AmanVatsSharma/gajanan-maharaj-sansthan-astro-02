@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Anand Vihar Spiritual Garden</title>
+  <desc id="desc">Representative image for Anand Vihar location under Shri Gajanan Maharaj Sansthan.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C3B2A"/>
+      <stop offset="0.6" stop-color="#2A5A43"/>
+      <stop offset="1" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="120" r="90" fill="#FDE68A" opacity="0.24"/>
+  <path d="M80 520H1120" stroke="#D1FAE5" stroke-opacity="0.4" stroke-width="4"/>
+  <text x="80" y="250" fill="#ECFDF5" font-family="Georgia, serif" font-size="56" font-weight="700">Shegaon Anand Vihar</text>
+  <text x="80" y="320" fill="#ECFDF5" font-family="Georgia, serif" font-size="36" opacity="0.94">Shri Gajanan Maharaj Sansthan</text>
+  <text x="80" y="380" fill="#ECFDF5" font-family="Arial, sans-serif" font-size="28" opacity="0.86">Spiritual garden and devotee-friendly stay options</text>
+</svg>

@@ -1,0 +1,322 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { bookingFAQs, getLocationFAQs } from "@/data/faq";
+import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  BRAND_VARIANTS,
+  PRIMARY_KEYWORDS,
+  LONGTAIL_KEYWORDS,
+  ACCOMMODATION_HUB_KEYWORDS,
+  LOCATION_KEYWORDS,
+  ROOM_PRICE_KEYWORDS,
+  CONTACT_HELPLINE_KEYWORDS,
+  OFFICIAL_SITE_KEYWORDS,
+  SERVICES_KEYWORDS,
+  PILGRIMAGE_INTENT_KEYWORDS,
+  ROOM_TYPE_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import {
+  getLodgingBusinessSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getSpeakableSchema,
+  getServiceSchema,
+  getRoomsItemListSchema,
+  getAggregateRatingSchema,
+} from "@/lib/seo/structured-data";
+import { ROOMS } from "@/data/rooms";
+import { testimonials } from "@/data/testimonials";
+
+const meta = generatePageMetadata({
+  title: "Bhakta Niwas Booking Shegaon",
+  description:
+    "Book Bhakta Niwas (Bhakt Niwas) at Shri Gajanan Maharaj Sansthan. Rooms at Shegaon, Pandharpur, Trimbakeshwar & Omkareshwar, donation basis. Book now.",
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...PRIMARY_KEYWORDS,
+    ...LONGTAIL_KEYWORDS,
+    ...ACCOMMODATION_HUB_KEYWORDS,
+    ...ROOM_PRICE_KEYWORDS,
+    ...ROOM_TYPE_KEYWORDS,
+    ...CONTACT_HELPLINE_KEYWORDS,
+    ...OFFICIAL_SITE_KEYWORDS,
+    ...SERVICES_KEYWORDS,
+    ...PILGRIMAGE_INTENT_KEYWORDS,
+    ...LOCATION_KEYWORDS.shegaon,
+    ...LOCATION_KEYWORDS.pandharpur,
+    ...LOCATION_KEYWORDS.trimbakeshwar,
+    ...LOCATION_KEYWORDS.omkareshwar,
+    "bhakta niwas all locations",
+    "bhakta nivas booking online",
+    "gajanan maharaj sansthan niwas booking",
+  ]),
+  path: "/bhakta-niwas",
+});
+
+// All location lodging schemas
+const lodgingSchemas = sansthanLocations.map((loc) =>
+  getLodgingBusinessSchema(loc)
+);
+
+// Aggregated FAQs — include all high-value FAQs for maximum rich-result coverage
+const shegaonFAQs = getLocationFAQs(
+  sansthanLocations[0].name,
+  "Shegaon",
+  CONTACT_DETAILS.booking.mobile,
+  sansthanLocations[0].facilities.reduce((s, f) => s + f.capacity, 0)
+).slice(0, 2);
+
+const hubFAQs = [
+  ...bookingFAQs.filter((f) =>
+    [
+      "how-to-book", "accommodation-cost", "family-only", "check-in-duration",
+      "facilities-available", "multiple-locations", "room-types-available",
+      "room-price-bhakt-niwas", "ac-room-available", "whatsapp-booking-number",
+      "online-booking-available", "meals-included", "darshan-timings-shegaon",
+      "free-entry-darshan", "free-bus-station", "mahaprasad-availability",
+      "ashadhi-ekadashi-booking", "peak-season-festival",
+    ].includes(f.id)
+  ),
+  ...shegaonFAQs,
+];
+
+const faqSchema = getFAQSchema(
+  hubFAQs.map((f) => ({ question: f.question, answer: f.answer }))
+);
+
+const roomsSchema = getRoomsItemListSchema(
+  ROOMS.map((r) => ({ id: r.id, title: r.title, description: r.description, price: r.price, ac: r.ac, capacity: r.capacity }))
+);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Bhakta Niwas", url: "/bhakta-niwas" },
+]);
+
+const speakableSchema = getSpeakableSchema("/bhakta-niwas", [
+  "h1",
+  ".bhakta-niwas-intro",
+]);
+
+const serviceSchema = getServiceSchema();
+
+const aggregateRatingSchema = getAggregateRatingSchema(
+  "Shri Gajanan Maharaj Sansthan",
+  5.0,
+  testimonials.length
+);
+
+const structuredPayload = [
+  serviceSchema,
+  roomsSchema,
+  ...lodgingSchemas,
+  faqSchema,
+  breadcrumbSchema,
+  speakableSchema,
+  aggregateRatingSchema,
+];
+
+const phone = CONTACT_DETAILS.booking.mobile;
+---
+
+<Layout meta={meta}>
+  {structuredPayload.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+
+  <div class="container py-12 max-w-5xl">
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold uppercase tracking-widest text-brand-saffron mb-3">
+        Official Accommodation
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold font-heading text-brand-maroon mb-4">
+        Bhakta Niwas Booking
+      </h1>
+      <p class="bhakta-niwas-intro text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+        Shri Gajanan Maharaj Sansthan manages Bhakta Niwas (भक्त निवास) accommodation for
+        devotees at four holy locations across Maharashtra and Madhya Pradesh. All rooms are
+        available on a donation basis.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 text-white font-semibold hover:bg-green-700 transition-colors"
+        >
+          WhatsApp Booking
+        </a>
+        <a
+          href={`tel:${phone}`}
+          class="inline-flex items-center gap-2 rounded-lg bg-brand-maroon px-6 py-3 text-white font-semibold hover:bg-brand-maroon/90 transition-colors"
+        >
+          Call: {phone}
+        </a>
+      </div>
+    </div>
+
+    <!-- Location Cards -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-2 text-center">
+        Bhakta Niwas at All Locations
+      </h2>
+      <p class="text-muted-foreground text-center mb-8">
+        Choose your pilgrimage destination — accommodation available at each location below.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {sansthanLocations.map((location) => {
+          const totalCap = location.facilities.reduce((s, f) => s + f.capacity, 0);
+          return (
+            <div class="rounded-xl border bg-card shadow-sm overflow-hidden">
+              <div class="p-6">
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div>
+                    <h3 class="font-bold text-brand-maroon font-heading text-lg leading-snug">
+                      {location.name}
+                    </h3>
+                    <p class="text-sm text-brand-saffron font-medium mt-0.5">
+                      {location.city}
+                      {location.city === "Omkareshwar" ? ", Madhya Pradesh" : ", Maharashtra"}
+                    </p>
+                  </div>
+                </div>
+                <p class="text-sm text-muted-foreground mb-4">{location.description}</p>
+
+                <div class="space-y-1 mb-4">
+                  <p class="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Room Types
+                  </p>
+                  {location.facilities.map((f) => (
+                    <p class="text-sm text-foreground">
+                      {f.name} — capacity {f.capacity}
+                      {f.ac ? " (AC)" : " (Non-AC)"}
+                    </p>
+                  ))}
+                  <p class="text-xs text-muted-foreground pt-1">
+                    Total capacity: {totalCap} devotees
+                  </p>
+                </div>
+
+                {location.amenities.length > 0 && (
+                  <div class="flex flex-wrap gap-1.5 mb-4">
+                    {location.amenities.map((a) => (
+                      <span class="text-xs bg-muted rounded-full px-2.5 py-0.5 text-muted-foreground">
+                        {a}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <div class="flex flex-wrap gap-3 pt-2 border-t">
+                  <a
+                    href={`/booking?location=${location.id}`}
+                    class="text-sm font-medium text-brand-maroon hover:text-brand-saffron transition-colors"
+                  >
+                    Book this Bhakta Niwas →
+                  </a>
+                  <a
+                    href={`/locations/${location.id}`}
+                    class="text-sm font-medium text-muted-foreground hover:text-brand-maroon transition-colors"
+                  >
+                    Full details
+                  </a>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Booking Process -->
+    <section class="mb-16 bg-muted/30 rounded-2xl p-8 border">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6 text-center">
+        How to Book Bhakta Niwas
+      </h2>
+      <ol class="space-y-4 max-w-2xl mx-auto">
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-maroon text-white text-sm font-bold flex items-center justify-center">1</span>
+          <div>
+            <p class="font-semibold text-foreground">Select Location &amp; Dates</p>
+            <p class="text-sm text-muted-foreground">Use the booking form to choose your preferred Bhakta Niwas location — Shegaon (Bhakt Niwas, Anand Vihar, or Visawa), Pandharpur, Trimbakeshwar, or Omkareshwar.</p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-maroon text-white text-sm font-bold flex items-center justify-center">2</span>
+          <div>
+            <p class="font-semibold text-foreground">Send via WhatsApp or Call</p>
+            <p class="text-sm text-muted-foreground">Submit your booking request directly to the Sansthan office at <strong>{phone}</strong> via WhatsApp or phone call. Include check-in date and number of guests.</p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-maroon text-white text-sm font-bold flex items-center justify-center">3</span>
+          <div>
+            <p class="font-semibold text-foreground">Receive Confirmation</p>
+            <p class="text-sm text-muted-foreground">The Sansthan office confirms availability and completes your booking. Bring valid government ID (Aadhar/Voter ID) for all guests at check-in.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="mt-8 text-center">
+        <a
+          href="/booking"
+          class="inline-flex items-center gap-2 rounded-lg bg-brand-maroon px-8 py-3 text-white font-semibold hover:bg-brand-maroon/90 transition-colors"
+        >
+          Open Booking Form
+        </a>
+      </div>
+    </section>
+
+    <!-- Key Rules -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6 text-center">
+        Bhakta Niwas Booking Rules
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {[
+          { title: "Families Only", body: "Accommodation is strictly for families. Rooms are allocated to married couples with valid ID proof." },
+          { title: "Minimum 3 Members", body: "Private rooms typically require at least 3 family members. Dormitory options available for individuals." },
+          { title: "Valid ID Proof", body: "Government-issued photo ID (Aadhar, Voter ID, Passport) is mandatory for all guests at check-in." },
+          { title: "24-Hour Stay", body: "Rooms are allotted for 24 hours from check-in. Extensions subject to availability." },
+          { title: "Donation Based", body: "There is no fixed price. Accommodation is provided on a donation basis as per devotees' capacity." },
+          { title: "Advance Booking", body: "Book in advance for festivals (Ashadhi Ekadashi, Kartik Ekadashi) as rooms fill quickly." },
+        ].map((rule) => (
+          <div class="rounded-xl border bg-card p-5">
+            <p class="font-semibold text-brand-maroon mb-1">{rule.title}</p>
+            <p class="text-sm text-muted-foreground">{rule.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6 text-center">
+        Bhakta Niwas — Frequently Asked Questions
+      </h2>
+      <div class="space-y-4 max-w-3xl mx-auto">
+        {hubFAQs.map((faq) => (
+          <details class="rounded-xl border bg-card p-5 group">
+            <summary class="font-semibold text-brand-maroon cursor-pointer list-none flex justify-between items-center gap-3">
+              {faq.question}
+              <span class="shrink-0 text-brand-saffron">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Navigation links -->
+    <div class="border-t pt-8 flex flex-wrap gap-6 justify-center text-sm font-medium">
+      <a href="/locations" class="text-brand-maroon hover:text-brand-saffron transition-colors">All Locations</a>
+      <a href="/booking" class="text-brand-maroon hover:text-brand-saffron transition-colors">Booking Request Form</a>
+      <a href="/darshan-timings" class="text-brand-maroon hover:text-brand-saffron transition-colors">Darshan Timings</a>
+      <a href="/how-to-reach" class="text-brand-maroon hover:text-brand-saffron transition-colors">How to Reach</a>
+      <a href="/contact" class="text-brand-maroon hover:text-brand-saffron transition-colors">Contact &amp; Maps</a>
+    </div>
+  </div>
+</Layout>

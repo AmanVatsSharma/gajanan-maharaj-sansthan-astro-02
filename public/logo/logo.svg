@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shri Gajanan Maharaj Sansthan Logo</title>
+  <desc id="desc">Official vector logo used for structured data and social surfaces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#431010"/>
+      <stop offset="1" stop-color="#B3771E"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="url(#bg)"/>
+  <rect x="48" y="48" width="416" height="416" rx="84" stroke="#FDE68A" stroke-opacity="0.75" stroke-width="8"/>
+  <text x="256" y="240" text-anchor="middle" fill="#FFF9EB" font-family="Georgia, serif" font-size="106" font-weight="700">SG</text>
+  <text x="256" y="300" text-anchor="middle" fill="#FFF9EB" font-family="Arial, sans-serif" font-size="24" letter-spacing="1.5">SHRI GAJANAN MAHARAJ</text>
+  <text x="256" y="336" text-anchor="middle" fill="#FFF9EB" font-family="Arial, sans-serif" font-size="24" letter-spacing="1.5">SANSTHAN</text>
+</svg>

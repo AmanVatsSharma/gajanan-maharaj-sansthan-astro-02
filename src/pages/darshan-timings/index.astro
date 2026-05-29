@@ -1,0 +1,306 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { CONTACT_DETAILS } from "@/data/contact";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  BRAND_VARIANTS,
+  VISIT_INTENT_KEYWORDS,
+  LOCATION_KEYWORDS,
+  SAINT_KEYWORDS,
+  FESTIVAL_YEAR_KEYWORDS,
+  MANTRA_AARTI_KEYWORDS,
+  VOICE_QUERY_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import {
+  getLocalBusinessSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getHowToSchema,
+  getSpeakableSchema,
+} from "@/lib/seo/structured-data";
+
+const meta = generatePageMetadata({
+  title: "Shegaon Darshan Timings",
+  description:
+    "Darshan timings at Shri Gajanan Maharaj Sansthan Shegaon. Morning: 5 AM–12 PM. Evening: 4–10 PM. Daily aarti schedule and best visiting times.",
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...VISIT_INTENT_KEYWORDS,
+    ...LOCATION_KEYWORDS.shegaon,
+    ...SAINT_KEYWORDS,
+    ...FESTIVAL_YEAR_KEYWORDS,
+    ...MANTRA_AARTI_KEYWORDS,
+    ...VOICE_QUERY_KEYWORDS,
+    "shegaon temple darshan",
+    "gajanan maharaj darshan timing",
+    "gajanan maharaj aarti time",
+    "shegaon mandir morning aarti",
+    "shegaon darshan best time",
+    "shegaon temple timing today",
+    "sheogaon darshan timings",
+    "shri gajanan maharaj sansthan shegaon timings",
+    "omkareshwar darshan timings",
+    "trimbakeshwar darshan timings",
+    "pandharpur vitthal darshan timings",
+    "gajanan maharaj kakad aarti timing",
+    "gajanan maharaj shej aarti time",
+    "shegaon mandir open time close time",
+    "gajanan maharaj temple darshan 2026",
+    "shegaon temple darshan free entry",
+  ]),
+  path: "/darshan-timings",
+});
+
+// Use main Shegaon location for LocalBusiness schema with opening hours
+const shegaon = sansthanLocations.find((l) => l.id === "shegaon-bhakt-niwas")!;
+const localBusinessSchema = getLocalBusinessSchema(shegaon);
+
+const faqSchema = getFAQSchema([
+  {
+    question: "What are the darshan timings at Shri Gajanan Maharaj Sansthan Shegaon?",
+    answer:
+      "The temple is open for darshan in two sessions: Morning Darshan from 5:00 AM to 12:00 PM, and Evening Darshan from 4:00 PM to 10:00 PM. The temple remains open every day of the year including festivals.",
+  },
+  {
+    question: "What time is the morning aarti at Shegaon Gajanan Maharaj temple?",
+    answer:
+      "The morning aarti (Kakad Aarti) begins at 5:00 AM and is considered the most auspicious darshan of the day. Devotees are advised to arrive 15–20 minutes early to secure a good position.",
+  },
+  {
+    question: "What time is the evening aarti at Shegaon Gajanan Maharaj temple?",
+    answer:
+      "The evening aarti (Shej Aarti) takes place around 9:00–10:00 PM. It marks the end of the day's darshan. The evening darshan session is from 4:00 PM to 10:00 PM.",
+  },
+  {
+    question: "Is the Shegaon temple open on all days including festivals?",
+    answer:
+      "Yes, Shri Gajanan Maharaj Sansthan Shegaon is open every day of the year. During major festivals like Ashadhi Ekadashi, Kartik Ekadashi, and the Maharaj's Punyatithi, special arrangements and extended darshan may be available.",
+  },
+  {
+    question: "What is the best time to visit Shegaon temple to avoid crowds?",
+    answer:
+      "Weekdays (Monday–Friday) during non-festival periods have fewer crowds. The early morning session (5:00 AM–7:00 AM) is also less crowded. Avoid visiting during Ekadashi, weekends, and major festival dates if you want a calm darshan.",
+  },
+  {
+    question: "What are the darshan timings at Omkareshwar Jyotirlinga?",
+    answer:
+      "Omkareshwar Jyotirlinga is generally open from 5:00 AM to 10:00 PM with breaks for aarti and puja rituals. Shri Gajanan Maharaj Sansthan Omkareshwar accommodation is available for pilgrims visiting the Jyotirlinga.",
+  },
+  {
+    question: "What are the darshan timings at Trimbakeshwar Jyotirlinga?",
+    answer:
+      "Trimbakeshwar Jyotirlinga darshan is available from 5:30 AM to 9:00 PM with specific aarti timings. Shri Gajanan Maharaj Sansthan Trimbakeshwar provides accommodation for pilgrims.",
+  },
+]);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Darshan Timings", url: "/darshan-timings" },
+]);
+
+const howToSchema = getHowToSchema(
+  "How to Plan Your Darshan at Shri Gajanan Maharaj Sansthan Shegaon",
+  "A step-by-step guide to planning a smooth darshan visit at Shegaon temple.",
+  [
+    "Book Bhakta Niwas accommodation in advance via WhatsApp at " + CONTACT_DETAILS.booking.mobile + " — especially for weekends and festivals.",
+    "Arrive at Shegaon Railway Station or Bus Stand. Free bus service is available from the station to the temple complex.",
+    "For morning darshan, reach the temple premises by 4:45 AM to be ready for the 5:00 AM Kakad Aarti.",
+    "Carry valid government-issued photo ID for accommodation check-in.",
+    "Visit Anand Sagar (Anand Vihar) park and other attractions within the Sansthan complex during afternoon hours (12:00 PM–4:00 PM).",
+    "Attend the evening darshan session from 4:00 PM. The Shej Aarti around 9:30 PM is a deeply spiritual experience.",
+  ],
+  "/darshan-timings"
+);
+
+const speakableSchema = getSpeakableSchema("/darshan-timings", ["h1", ".darshan-intro"]);
+
+const structuredPayload = [
+  localBusinessSchema,
+  faqSchema,
+  breadcrumbSchema,
+  howToSchema,
+  speakableSchema,
+];
+---
+
+<Layout meta={meta}>
+  {structuredPayload.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+
+  <div class="container py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold uppercase tracking-widest text-brand-saffron mb-3">
+        Shri Gajanan Maharaj Sansthan
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold font-heading text-brand-maroon mb-4">
+        Darshan Timings
+      </h1>
+      <p class="darshan-intro text-lg text-muted-foreground max-w-2xl mx-auto">
+        Official darshan schedule for Shri Gajanan Maharaj Sansthan, Shegaon.
+        The temple is open every day of the year for devotees.
+      </p>
+    </div>
+
+    <!-- Main Timings Card -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6 text-center">
+        Shegaon Temple Darshan Schedule
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="rounded-2xl border bg-card p-6 text-center shadow-sm">
+          <div class="text-brand-saffron text-3xl mb-3">🌅</div>
+          <h3 class="text-xl font-bold font-heading text-brand-maroon mb-2">Morning Darshan</h3>
+          <p class="text-3xl font-bold text-foreground mb-1">5:00 AM – 12:00 PM</p>
+          <p class="text-sm text-muted-foreground">Kakad Aarti at 5:00 AM</p>
+          <p class="text-xs text-muted-foreground mt-2">Best for: First darshan of the day</p>
+        </div>
+        <div class="rounded-2xl border bg-card p-6 text-center shadow-sm">
+          <div class="text-brand-saffron text-3xl mb-3">🌆</div>
+          <h3 class="text-xl font-bold font-heading text-brand-maroon mb-2">Evening Darshan</h3>
+          <p class="text-3xl font-bold text-foreground mb-1">4:00 PM – 10:00 PM</p>
+          <p class="text-sm text-muted-foreground">Shej Aarti at ~9:30 PM</p>
+          <p class="text-xs text-muted-foreground mt-2">Best for: Calm, peaceful atmosphere</p>
+        </div>
+      </div>
+      <div class="rounded-xl bg-muted/30 border p-4 text-center text-sm text-muted-foreground">
+        Temple is closed between <strong>12:00 PM – 4:00 PM</strong> (midday break). Mahaprasad (prasad lunch) is available at the canteen during this time.
+      </div>
+    </section>
+
+    <!-- Aarti Schedule -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        Daily Aarti Schedule
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border rounded-xl overflow-hidden">
+          <thead class="bg-brand-maroon text-white">
+            <tr>
+              <th class="px-4 py-3 text-left font-semibold">Aarti</th>
+              <th class="px-4 py-3 text-left font-semibold">Time</th>
+              <th class="px-4 py-3 text-left font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr class="bg-background hover:bg-muted/20">
+              <td class="px-4 py-3 font-medium text-brand-maroon">Kakad Aarti</td>
+              <td class="px-4 py-3">5:00 AM</td>
+              <td class="px-4 py-3 text-muted-foreground">Most auspicious darshan; arrive by 4:45 AM</td>
+            </tr>
+            <tr class="bg-background hover:bg-muted/20">
+              <td class="px-4 py-3 font-medium text-brand-maroon">Madhyan Aarti</td>
+              <td class="px-4 py-3">~11:30 AM</td>
+              <td class="px-4 py-3 text-muted-foreground">Before temple closes for afternoon break</td>
+            </tr>
+            <tr class="bg-background hover:bg-muted/20">
+              <td class="px-4 py-3 font-medium text-brand-maroon">Saptashringi Aarti</td>
+              <td class="px-4 py-3">~4:00 PM</td>
+              <td class="px-4 py-3 text-muted-foreground">Reopening aarti for evening darshan</td>
+            </tr>
+            <tr class="bg-background hover:bg-muted/20">
+              <td class="px-4 py-3 font-medium text-brand-maroon">Shej Aarti</td>
+              <td class="px-4 py-3">~9:30 PM</td>
+              <td class="px-4 py-3 text-muted-foreground">Final aarti of the day; deeply devotional</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-muted-foreground mt-2">Timings may vary slightly on festival days. Confirm with the Sansthan office at {CONTACT_DETAILS.booking.mobile}.</p>
+    </section>
+
+    <!-- Other Locations -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        Darshan Timings at Other Sansthan Locations
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {[
+          { name: "Pandharpur (Vitthal Temple)", times: "4:00 AM – 11:00 PM", note: "Extended on Ekadashi", id: "pandharpur-math" },
+          { name: "Trimbakeshwar Jyotirlinga", times: "5:30 AM – 9:00 PM", note: "Multiple aarti throughout day", id: "trimbakeshwar" },
+          { name: "Omkareshwar Jyotirlinga", times: "5:00 AM – 10:00 PM", note: "Special Jal Abhishek at 5:00 AM", id: "omkareshwar" },
+        ].map((loc) => (
+          <div class="rounded-xl border bg-card p-5">
+            <h3 class="font-bold text-brand-maroon font-heading text-base mb-1">{loc.name}</h3>
+            <p class="text-lg font-semibold text-foreground mb-1">{loc.times}</p>
+            <p class="text-xs text-muted-foreground mb-3">{loc.note}</p>
+            <a href={`/locations/${loc.id}`} class="text-sm font-medium text-brand-saffron hover:text-brand-maroon transition-colors">
+              View accommodation →
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Best Time to Visit -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        Best Time to Visit Shegaon
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {[
+          { season: "Winter (Oct–Feb)", icon: "❄️", desc: "Pleasant weather, comfortable darshan. Ideal for families and elderly devotees. Book accommodation early for December–January.", crowd: "Moderate" },
+          { season: "Monsoon (Jul–Sep)", icon: "🌧️", desc: "Lush greenery around Anand Sagar. Fewer crowds on regular days but very busy during Ashadhi Ekadashi.", crowd: "Low–High" },
+          { season: "Summer (Mar–Jun)", icon: "☀️", desc: "Hot but less crowded. AC rooms at Anand Vihar available. Early morning darshan recommended.", crowd: "Low" },
+        ].map((s) => (
+          <div class="rounded-xl border bg-card p-5">
+            <div class="text-2xl mb-2">{s.icon}</div>
+            <h3 class="font-bold text-brand-maroon font-heading mb-1">{s.season}</h3>
+            <p class="text-xs text-muted-foreground mb-2">{s.desc}</p>
+            <p class="text-xs font-medium text-brand-saffron">Crowd: {s.crowd}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        Darshan Timings — FAQs
+      </h2>
+      <div class="space-y-4 max-w-3xl">
+        {[
+          { q: "Is the temple open on all days?", a: "Yes. Shri Gajanan Maharaj Sansthan Shegaon is open every day of the year including Sundays and festivals. Special arrangements are made on major festival days." },
+          { q: "Is there a dress code for darshan?", a: "Modest traditional attire is preferred. Shoes must be removed before entering the temple premises. Photography is restricted inside the sanctum." },
+          { q: "Is free bus service available from Shegaon Station?", a: "Yes. Free bus service is operated by the Sansthan between Shegaon Railway Station and the main temple complex at regular intervals." },
+        ].map((faq) => (
+          <details class="rounded-xl border bg-card p-5">
+            <summary class="font-semibold text-brand-maroon cursor-pointer list-none flex justify-between items-center gap-3">
+              {faq.q}
+              <span class="shrink-0 text-brand-saffron">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA + Links -->
+    <div class="rounded-2xl bg-brand-maroon/5 border border-brand-maroon/20 p-8 text-center mb-8">
+      <h2 class="text-xl font-bold font-heading text-brand-maroon mb-2">
+        Staying for Darshan? Book Bhakta Niwas
+      </h2>
+      <p class="text-sm text-muted-foreground mb-6 max-w-lg mx-auto">
+        Stay close to the temple at Bhakta Niwas. Accommodation available at Shegaon and 3 other holy locations on donation basis.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/bhakta-niwas" class="inline-flex items-center gap-2 rounded-lg bg-brand-maroon px-6 py-3 text-white font-semibold hover:bg-brand-maroon/90 transition-colors">
+          Book Bhakta Niwas
+        </a>
+        <a href="/how-to-reach" class="inline-flex items-center gap-2 rounded-lg border border-brand-maroon px-6 py-3 text-brand-maroon font-semibold hover:bg-brand-maroon/5 transition-colors">
+          How to Reach Shegaon
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t pt-6 flex flex-wrap gap-6 justify-center text-sm font-medium">
+      <a href="/locations" class="text-brand-maroon hover:text-brand-saffron">All Locations</a>
+      <a href="/booking" class="text-brand-maroon hover:text-brand-saffron">Booking Form</a>
+      <a href="/bhakta-niwas" class="text-brand-maroon hover:text-brand-saffron">Bhakta Niwas</a>
+      <a href="/contact" class="text-brand-maroon hover:text-brand-saffron">Contact</a>
+    </div>
+  </div>
+</Layout>

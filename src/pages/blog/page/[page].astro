@@ -1,0 +1,103 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { BlogListingQueryFilter } from "@/features/blog/components/BlogListingQueryFilter";
+import { BlogListingLayout } from "@/features/blog/components/BlogListingLayout";
+import {
+  BLOG_POSTS_PER_PAGE,
+  getBlogPosts,
+  getCategorySummaries,
+  getTagSummaries,
+} from "@/lib/blog";
+import {
+  BRAND_VARIANTS,
+  LOCATION_INTENT_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getBreadcrumbSchema,
+  getCollectionPageSchema,
+} from "@/lib/seo/structured-data";
+
+export async function getStaticPaths() {
+  const posts = await getBlogPosts();
+  const totalPages = Math.max(1, Math.ceil(posts.length / BLOG_POSTS_PER_PAGE));
+  return Array.from({ length: totalPages }, (_, index) => index + 1)
+    .filter((page) => page > 1)
+    .map((page) => ({ params: { page: String(page) } }));
+}
+
+const pageNumber = Number.parseInt(Astro.params.page!, 10);
+
+const [posts, tagSummaries, categorySummaries] = await Promise.all([
+  getBlogPosts(),
+  getTagSummaries(),
+  getCategorySummaries(),
+]);
+
+const totalPages = Math.max(1, Math.ceil(posts.length / BLOG_POSTS_PER_PAGE));
+const startIndex = (pageNumber - 1) * BLOG_POSTS_PER_PAGE;
+const pagePosts = posts.slice(startIndex, startIndex + BLOG_POSTS_PER_PAGE);
+
+const prevPath =
+  pageNumber === 2 ? "/blog" : `/blog/page/${pageNumber - 1}`;
+const nextPath =
+  pageNumber < totalPages ? `/blog/page/${pageNumber + 1}` : undefined;
+
+const meta = generatePageMetadata({
+  title: `Blog - Page ${pageNumber}`,
+  description: `Browse page ${pageNumber} of Shri Gajanan Maharaj Sansthan blog guides, location updates, and pilgrimage planning articles for Shegaon, Pandharpur, Trimbakeshwar, and Omkareshwar.`,
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...Object.values(LOCATION_INTENT_KEYWORDS).flat(),
+    `sansthan blog page ${pageNumber}`,
+    "shegaon blog",
+    "gajanan maharaj updates",
+  ]),
+  path: `/blog/page/${pageNumber}`,
+  noIndex: pageNumber > 1,
+  pagination: { prev: prevPath, next: nextPath },
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: `Page ${pageNumber}`, url: `/blog/page/${pageNumber}` },
+]);
+
+const collectionSchema = getCollectionPageSchema({
+  path: `/blog/page/${pageNumber}`,
+  title: `Shri Gajanan Maharaj Sansthan Blog - Page ${pageNumber}`,
+  description: `Page ${pageNumber} of the Sansthan blog. Travel guides, darshan updates, and Bhakta Niwas help.`,
+  items: pagePosts.map((post) => ({
+    title: post.title,
+    urlPath: `/blog/${post.slug}`,
+    description: post.description,
+    date: post.date,
+    image: post.image,
+    keywords: post.keywords,
+    category: post.category,
+  })),
+});
+
+const structuredPayload = [breadcrumbSchema, collectionSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+  <BlogListingQueryFilter client:load />
+  <BlogListingLayout
+    posts={pagePosts}
+    categorySummaries={categorySummaries}
+    tagSummaries={tagSummaries}
+    currentPage={pageNumber}
+    totalPages={totalPages}
+    pagePath={`/blog/page/${pageNumber}`}
+    title={`Latest Updates - Page ${pageNumber}`}
+    description="Continue reading location guides, accommodation help, and devotional planning resources."
+  />
+</Layout>

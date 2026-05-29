@@ -1,0 +1,65 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { BookingPageBody } from "@/features/booking/components/BookingPageBody";
+import {
+  BRAND_VARIANTS,
+  LONGTAIL_KEYWORDS,
+  PRIMARY_KEYWORDS,
+  ROOM_PRICE_KEYWORDS,
+  ROOM_TYPE_KEYWORDS,
+  CONTACT_HELPLINE_KEYWORDS,
+  OFFICIAL_SITE_KEYWORDS,
+  ACCOMMODATION_HUB_KEYWORDS,
+  PILGRIMAGE_INTENT_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getServiceSchema, getBreadcrumbSchema, getAggregateRatingSchema } from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+const meta = generatePageMetadata({
+  title: "Book Bhakta Niwas Accommodation",
+  description:
+    "Book Bhakta Niwas at Shri Gajanan Maharaj Sansthan. Rooms at Shegaon, Pandharpur, Trimbakeshwar & Omkareshwar. Send your request via WhatsApp or call.",
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...PRIMARY_KEYWORDS,
+    ...LONGTAIL_KEYWORDS,
+    ...ROOM_PRICE_KEYWORDS,
+    ...ROOM_TYPE_KEYWORDS,
+    ...CONTACT_HELPLINE_KEYWORDS,
+    ...OFFICIAL_SITE_KEYWORDS,
+    ...ACCOMMODATION_HUB_KEYWORDS,
+    ...PILGRIMAGE_INTENT_KEYWORDS,
+    "bhakt niwas booking",
+    "bhakta niwas booking",
+    "shegaon accommodation booking",
+    "gajanan maharaj booking helpline",
+    "book bhakta niwas shegaon",
+    "shri gajanan maharaj sansthan room booking",
+    "bhakta niwas booking form",
+    "book bhakta niwas online",
+  ]),
+  path: "/booking",
+});
+
+const serviceSchema = getServiceSchema();
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Booking", url: "/booking" },
+]);
+const aggregateRatingSchema = getAggregateRatingSchema(
+  "Shri Gajanan Maharaj Sansthan",
+  5.0,
+  testimonials.length
+);
+
+const initialLocation = Astro.url.searchParams.get("location");
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(aggregateRatingSchema)} />
+  <BookingPageBody client:load initialLocation={initialLocation} />
+</Layout>

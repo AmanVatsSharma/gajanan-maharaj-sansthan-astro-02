@@ -1,0 +1,14 @@
+{
+  "name": "Shri Gajanan Maharaj Sansthan",
+  "short_name": "SGMS",
+  "description": "Official website of Shri Gajanan Maharaj Sansthan, Shegaon. Book temple accommodation across Maharashtra and Madhya Pradesh.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B0000",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/icon.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

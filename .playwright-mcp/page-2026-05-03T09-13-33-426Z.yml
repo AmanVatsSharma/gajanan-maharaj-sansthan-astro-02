@@ -1,0 +1,399 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - link "Shri Gajanan Maharaj Sansthan Logo Shri Gajanan Maharaj Sansthan" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Shri Gajanan Maharaj Sansthan Logo" [ref=e7]
+        - generic [ref=e8]: Shri Gajanan Maharaj Sansthan
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Booking" [ref=e11] [cursor=pointer]:
+          - /url: /booking
+        - link "Locations" [ref=e12] [cursor=pointer]:
+          - /url: /locations
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "About Sansthan" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e17]:
+        - link "WhatsApp for temple accommodation booking" [ref=e18] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0ATemple%20accommodation%20booking%20enquiry%0A%0AKindly%20guide%20me%20on%20availability%20and%20booking.
+          - img
+          - generic [ref=e19]: WhatsApp
+        - link "Call booking helpline +918796359334" [ref=e20] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img
+          - generic [ref=e21]: Call
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: Official Accommodation
+        - heading "Bhakta Niwas Booking" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Shri Gajanan Maharaj Sansthan manages Bhakta Niwas (भक्त निवास) accommodation for devotees at four holy locations across Maharashtra and Madhya Pradesh. All rooms are available on a donation basis.
+        - generic [ref=e28]:
+          - link "WhatsApp Booking" [ref=e29] [cursor=pointer]:
+            - /url: https://wa.me/918796359334
+          - 'link "Call: +918796359334" [ref=e30] [cursor=pointer]':
+            - /url: tel:+918796359334
+      - generic [ref=e31]:
+        - heading "Bhakta Niwas at All Locations" [level=2] [ref=e32]
+        - paragraph [ref=e33]: Choose your pilgrimage destination — accommodation available at each location below.
+        - generic [ref=e34]:
+          - generic [ref=e36]:
+            - generic [ref=e38]:
+              - heading "Shri Gajanan Maharaj Sansthan Shegaon Bhakt Niwas" [level=3] [ref=e39]
+              - paragraph [ref=e40]: Shegaon , Maharashtra
+            - paragraph [ref=e41]: The main accommodation complex for devotees visiting the holy samadhi. Includes multiple buildings with various room types.
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: Room Types
+              - paragraph [ref=e44]: Common Hall — capacity 50 (Non-AC)
+              - paragraph [ref=e45]: Double Bed — capacity 3 (Non-AC)
+              - paragraph [ref=e46]: Deluxe Room — capacity 3 (AC)
+              - paragraph [ref=e47]: "Total capacity: 56 devotees"
+            - generic [ref=e48]:
+              - generic [ref=e49]: Hot Water (Morning)
+              - generic [ref=e50]: Mahaprasad Canteen
+              - generic [ref=e51]: Free Bus Service
+              - generic [ref=e52]: Parking
+            - generic [ref=e53]:
+              - link "Book this Bhakta Niwas →" [ref=e54] [cursor=pointer]:
+                - /url: /booking?location=shegaon-bhakt-niwas
+              - link "Full details" [ref=e55] [cursor=pointer]:
+                - /url: /locations/shegaon-bhakt-niwas
+          - generic [ref=e57]:
+            - generic [ref=e59]:
+              - heading "Shri Gajanan Maharaj Sansthan Shegaon Anand Vihar" [level=3] [ref=e60]
+              - paragraph [ref=e61]: Shegaon , Maharashtra
+            - paragraph [ref=e62]: A premium accommodation complex located near the Anand Sagar spiritual park.
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Room Types
+              - paragraph [ref=e65]: AC Room — capacity 3 (AC)
+              - paragraph [ref=e66]: Suite — capacity 4 (AC)
+              - paragraph [ref=e67]: "Total capacity: 7 devotees"
+            - generic [ref=e68]:
+              - generic [ref=e69]: AC
+              - generic [ref=e70]: Garden
+              - generic [ref=e71]: Canteen
+              - generic [ref=e72]: Parking
+            - generic [ref=e73]:
+              - link "Book this Bhakta Niwas →" [ref=e74] [cursor=pointer]:
+                - /url: /booking?location=shegaon-anand-vihar
+              - link "Full details" [ref=e75] [cursor=pointer]:
+                - /url: /locations/shegaon-anand-vihar
+          - generic [ref=e77]:
+            - generic [ref=e79]:
+              - heading "Shri Gajanan Maharaj Sansthan Shegaon Visawa" [level=3] [ref=e80]
+              - paragraph [ref=e81]: Shegaon , Maharashtra
+            - paragraph [ref=e82]: Conveniently located accommodation for travelers arriving by train.
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Room Types
+              - paragraph [ref=e85]: Standard Room — capacity 3 (Non-AC)
+              - paragraph [ref=e86]: "Total capacity: 3 devotees"
+            - generic [ref=e87]:
+              - generic [ref=e88]: Parking
+              - generic [ref=e89]: Canteen
+            - generic [ref=e90]:
+              - link "Book this Bhakta Niwas →" [ref=e91] [cursor=pointer]:
+                - /url: /booking?location=shegaon-visawa
+              - link "Full details" [ref=e92] [cursor=pointer]:
+                - /url: /locations/shegaon-visawa
+          - generic [ref=e94]:
+            - generic [ref=e96]:
+              - heading "Shri Gajanan Maharaj Sansthan Pandharpur" [level=3] [ref=e97]
+              - paragraph [ref=e98]: Pandharpur , Maharashtra
+            - paragraph [ref=e99]: A large complex serving pilgrims visiting Lord Vitthal.
+            - generic [ref=e100]:
+              - paragraph [ref=e101]: Room Types
+              - paragraph [ref=e102]: Room — capacity 4 (Non-AC)
+              - paragraph [ref=e103]: Hall — capacity 20 (Non-AC)
+              - paragraph [ref=e104]: "Total capacity: 24 devotees"
+            - generic [ref=e105]:
+              - generic [ref=e106]: Bhojan Kaksha
+              - generic [ref=e107]: Hot Water
+            - generic [ref=e108]:
+              - link "Book this Bhakta Niwas →" [ref=e109] [cursor=pointer]:
+                - /url: /booking?location=pandharpur-math
+              - link "Full details" [ref=e110] [cursor=pointer]:
+                - /url: /locations/pandharpur-math
+          - generic [ref=e112]:
+            - generic [ref=e114]:
+              - heading "Shri Gajanan Maharaj Sansthan Trimbakeshwar" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Trimbakeshwar , Maharashtra
+            - paragraph [ref=e117]: Accommodation for devotees visiting the Trimbakeshwar Jyotirlinga.
+            - generic [ref=e118]:
+              - paragraph [ref=e119]: Room Types
+              - paragraph [ref=e120]: Room — capacity 3 (Non-AC)
+              - paragraph [ref=e121]: "Total capacity: 3 devotees"
+            - generic [ref=e122]:
+              - generic [ref=e123]: Parking
+              - generic [ref=e124]: Bhojan Kaksha
+              - generic [ref=e125]: Hot Water
+            - generic [ref=e126]:
+              - link "Book this Bhakta Niwas →" [ref=e127] [cursor=pointer]:
+                - /url: /booking?location=trimbakeshwar
+              - link "Full details" [ref=e128] [cursor=pointer]:
+                - /url: /locations/trimbakeshwar
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - heading "Shri Gajanan Maharaj Sansthan Omkareshwar" [level=3] [ref=e133]
+              - paragraph [ref=e134]: Omkareshwar , Madhya Pradesh
+            - paragraph [ref=e135]: Serving pilgrims visiting Omkareshwar Jyotirlinga.
+            - generic [ref=e136]:
+              - paragraph [ref=e137]: Room Types
+              - paragraph [ref=e138]: Room — capacity 3 (Non-AC)
+              - paragraph [ref=e139]: "Total capacity: 3 devotees"
+            - generic [ref=e140]:
+              - generic [ref=e141]: Parking
+              - generic [ref=e142]: Bhojan Kaksha
+              - generic [ref=e143]: Hot Water
+            - generic [ref=e144]:
+              - link "Book this Bhakta Niwas →" [ref=e145] [cursor=pointer]:
+                - /url: /booking?location=omkareshwar
+              - link "Full details" [ref=e146] [cursor=pointer]:
+                - /url: /locations/omkareshwar
+      - generic [ref=e147]:
+        - heading "How to Book Bhakta Niwas" [level=2] [ref=e148]
+        - list [ref=e149]:
+          - listitem [ref=e150]:
+            - generic [ref=e151]: "1"
+            - generic [ref=e152]:
+              - paragraph [ref=e153]: Select Location & Dates
+              - paragraph [ref=e154]: Use the booking form to choose your preferred Bhakta Niwas location — Shegaon (Bhakt Niwas, Anand Vihar, or Visawa), Pandharpur, Trimbakeshwar, or Omkareshwar.
+          - listitem [ref=e155]:
+            - generic [ref=e156]: "2"
+            - generic [ref=e157]:
+              - paragraph [ref=e158]: Send via WhatsApp or Call
+              - paragraph [ref=e159]:
+                - text: Submit your booking request directly to the Sansthan office at
+                - strong [ref=e160]: "+918796359334"
+                - text: via WhatsApp or phone call. Include check-in date and number of guests.
+          - listitem [ref=e161]:
+            - generic [ref=e162]: "3"
+            - generic [ref=e163]:
+              - paragraph [ref=e164]: Receive Confirmation
+              - paragraph [ref=e165]: The Sansthan office confirms availability and completes your booking. Bring valid government ID (Aadhar/Voter ID) for all guests at check-in.
+        - link "Open Booking Form" [ref=e167] [cursor=pointer]:
+          - /url: /booking
+      - generic [ref=e168]:
+        - heading "Bhakta Niwas Booking Rules" [level=2] [ref=e169]
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - paragraph [ref=e172]: Families Only
+            - paragraph [ref=e173]: Accommodation is strictly for families. Rooms are allocated to married couples with valid ID proof.
+          - generic [ref=e174]:
+            - paragraph [ref=e175]: Minimum 3 Members
+            - paragraph [ref=e176]: Private rooms typically require at least 3 family members. Dormitory options available for individuals.
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Valid ID Proof
+            - paragraph [ref=e179]: Government-issued photo ID (Aadhar, Voter ID, Passport) is mandatory for all guests at check-in.
+          - generic [ref=e180]:
+            - paragraph [ref=e181]: 24-Hour Stay
+            - paragraph [ref=e182]: Rooms are allotted for 24 hours from check-in. Extensions subject to availability.
+          - generic [ref=e183]:
+            - paragraph [ref=e184]: Donation Based
+            - paragraph [ref=e185]: There is no fixed price. Accommodation is provided on a donation basis as per devotees' capacity.
+          - generic [ref=e186]:
+            - paragraph [ref=e187]: Advance Booking
+            - paragraph [ref=e188]: Book in advance for festivals (Ashadhi Ekadashi, Kartik Ekadashi) as rooms fill quickly.
+      - generic [ref=e189]:
+        - heading "Bhakta Niwas — Frequently Asked Questions" [level=2] [ref=e190]
+        - generic [ref=e191]:
+          - group [ref=e192]:
+            - generic "How do I book accommodation at Shri Gajanan Maharaj Sansthan? +" [ref=e193] [cursor=pointer]:
+              - text: How do I book accommodation at Shri Gajanan Maharaj Sansthan?
+              - generic [ref=e194]: +
+          - group [ref=e195]:
+            - generic "Can unmarried couples or groups of friends book rooms? +" [ref=e196] [cursor=pointer]:
+              - text: Can unmarried couples or groups of friends book rooms?
+              - generic [ref=e197]: +
+          - group [ref=e198]:
+            - generic "What is the cost of accommodation? +" [ref=e199] [cursor=pointer]:
+              - text: What is the cost of accommodation?
+              - generic [ref=e200]: +
+          - group [ref=e201]:
+            - generic "How long can I stay at the Bhakta Niwas? +" [ref=e202] [cursor=pointer]:
+              - text: How long can I stay at the Bhakta Niwas?
+              - generic [ref=e203]: +
+          - group [ref=e204]:
+            - generic "What facilities are provided in the accommodation? +" [ref=e205] [cursor=pointer]:
+              - text: What facilities are provided in the accommodation?
+              - generic [ref=e206]: +
+          - group [ref=e207]:
+            - generic "Can I book accommodation at multiple locations? +" [ref=e208] [cursor=pointer]:
+              - text: Can I book accommodation at multiple locations?
+              - generic [ref=e209]: +
+          - group [ref=e210]:
+            - generic "What room types are available at Bhakta Niwas Shegaon? +" [ref=e211] [cursor=pointer]:
+              - text: What room types are available at Bhakta Niwas Shegaon?
+              - generic [ref=e212]: +
+          - group [ref=e213]:
+            - generic "What is the room price at Bhakt Niwas Shegaon? +" [ref=e214] [cursor=pointer]:
+              - text: What is the room price at Bhakt Niwas Shegaon?
+              - generic [ref=e215]: +
+          - group [ref=e216]:
+            - generic "Are AC rooms available at Bhakta Niwas Shegaon? +" [ref=e217] [cursor=pointer]:
+              - text: Are AC rooms available at Bhakta Niwas Shegaon?
+              - generic [ref=e218]: +
+          - group [ref=e219]:
+            - generic "Are meals included in the accommodation price? +" [ref=e220] [cursor=pointer]:
+              - text: Are meals included in the accommodation price?
+              - generic [ref=e221]: +
+          - group [ref=e222]:
+            - generic "What is the WhatsApp number for Bhakta Niwas Shegaon booking? +" [ref=e223] [cursor=pointer]:
+              - text: What is the WhatsApp number for Bhakta Niwas Shegaon booking?
+              - generic [ref=e224]: +
+          - group [ref=e225]:
+            - generic "Is online booking available for Bhakta Niwas Shegaon? +" [ref=e226] [cursor=pointer]:
+              - text: Is online booking available for Bhakta Niwas Shegaon?
+              - generic [ref=e227]: +
+          - group [ref=e228]:
+            - generic "How do I book accommodation for Ashadhi Ekadashi at Pandharpur? +" [ref=e229] [cursor=pointer]:
+              - text: How do I book accommodation for Ashadhi Ekadashi at Pandharpur?
+              - generic [ref=e230]: +
+          - group [ref=e231]:
+            - generic "When is the peak booking season at Bhakta Niwas Shegaon? +" [ref=e232] [cursor=pointer]:
+              - text: When is the peak booking season at Bhakta Niwas Shegaon?
+              - generic [ref=e233]: +
+          - group [ref=e234]:
+            - generic "What are the exact darshan timings at Shri Gajanan Maharaj Sansthan Shegaon? +" [ref=e235] [cursor=pointer]:
+              - text: What are the exact darshan timings at Shri Gajanan Maharaj Sansthan Shegaon?
+              - generic [ref=e236]: +
+          - group [ref=e237]:
+            - generic "Is darshan at Shri Gajanan Maharaj Sansthan Shegaon free? +" [ref=e238] [cursor=pointer]:
+              - text: Is darshan at Shri Gajanan Maharaj Sansthan Shegaon free?
+              - generic [ref=e239]: +
+          - group [ref=e240]:
+            - generic "Is there a free bus from Shegaon Railway Station to the temple? +" [ref=e241] [cursor=pointer]:
+              - text: Is there a free bus from Shegaon Railway Station to the temple?
+              - generic [ref=e242]: +
+          - group [ref=e243]:
+            - generic "Is Mahaprasad available at Shegaon temple? +" [ref=e244] [cursor=pointer]:
+              - text: Is Mahaprasad available at Shegaon temple?
+              - generic [ref=e245]: +
+          - group [ref=e246]:
+            - generic "How do I book accommodation at Shri Gajanan Maharaj Sansthan Shegaon Bhakt Niwas? +" [ref=e247] [cursor=pointer]:
+              - text: How do I book accommodation at Shri Gajanan Maharaj Sansthan Shegaon Bhakt Niwas?
+              - generic [ref=e248]: +
+          - group [ref=e249]:
+            - generic "What are the check-in and check-out timings at Shegaon Bhakta Niwas? +" [ref=e250] [cursor=pointer]:
+              - text: What are the check-in and check-out timings at Shegaon Bhakta Niwas?
+              - generic [ref=e251]: +
+      - generic [ref=e252]:
+        - link "All Locations" [ref=e253] [cursor=pointer]:
+          - /url: /locations
+        - link "Booking Request Form" [ref=e254] [cursor=pointer]:
+          - /url: /booking
+        - link "Darshan Timings" [ref=e255] [cursor=pointer]:
+          - /url: /darshan-timings
+        - link "How to Reach" [ref=e256] [cursor=pointer]:
+          - /url: /how-to-reach
+        - link "Contact & Maps" [ref=e257] [cursor=pointer]:
+          - /url: /contact
+  - button "Contact us" [ref=e261]:
+    - img [ref=e263]
+  - contentinfo [ref=e265]:
+    - generic [ref=e269]:
+      - generic [ref=e270]:
+        - paragraph [ref=e271]: Need Help? Reach us instantly
+        - link "Call booking helpline" [ref=e272] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - text: "+918796359334"
+      - generic [ref=e273]:
+        - link "Chat on WhatsApp" [ref=e274] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0AAccommodation%20booking%20enquiry
+          - img [ref=e275]
+          - text: WhatsApp
+        - link "Call now" [ref=e277] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img [ref=e278]
+          - text: Call Now
+    - generic [ref=e282]:
+      - generic [ref=e283]:
+        - generic [ref=e284]:
+          - heading "Shri Gajanan Maharaj Sansthan" [level=3] [ref=e285]
+          - paragraph [ref=e286]: "\"Jai Gajanan Maharaj\""
+          - paragraph [ref=e287]: Official website for devotee services and accommodation booking.
+        - generic [ref=e288]:
+          - heading "Quick Links" [level=4] [ref=e289]
+          - list [ref=e290]:
+            - listitem [ref=e291]:
+              - link "Home" [ref=e292] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e293]:
+              - link "Accommodation" [ref=e294] [cursor=pointer]:
+                - /url: /locations
+            - listitem [ref=e295]:
+              - link "Booking" [ref=e296] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=e297]:
+              - link "History" [ref=e298] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e299]:
+              - link "Blog" [ref=e300] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e301]:
+              - link "Contact" [ref=e302] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e303]:
+              - link "Privacy Policy" [ref=e304] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e305]:
+              - link "Terms & Conditions" [ref=e306] [cursor=pointer]:
+                - /url: /terms-conditions
+            - listitem [ref=e307]:
+              - link "Refund Policy" [ref=e308] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e309]:
+              - link "Disclaimer" [ref=e310] [cursor=pointer]:
+                - /url: /disclaimer
+        - generic [ref=e311]:
+          - heading "Popular Guides" [level=4] [ref=e312]
+          - list [ref=e313]:
+            - listitem [ref=e314]:
+              - link "Shegaon Travel Guide" [ref=e315] [cursor=pointer]:
+                - /url: /blog/shegaon-travel-guide
+            - listitem [ref=e316]:
+              - link "Omkareshwar Darshan Timings" [ref=e317] [cursor=pointer]:
+                - /url: /blog/omkareshwar-darshan-timings
+            - listitem [ref=e318]:
+              - link "Bhakta Niwas Booking" [ref=e319] [cursor=pointer]:
+                - /url: /blog/shegaon-bhakta-niwas-booking-process
+            - listitem [ref=e320]:
+              - link "Phone & WhatsApp Booking" [ref=e321] [cursor=pointer]:
+                - /url: /blog/phone-and-whatsapp-booking-best-practices
+            - listitem [ref=e322]:
+              - link "Accommodation Booking" [ref=e323] [cursor=pointer]:
+                - /url: /blog/gajanan-maharaj-sansthan-booking-guide
+        - generic [ref=e324]:
+          - heading "Locations" [level=4] [ref=e325]
+          - list [ref=e326]:
+            - listitem [ref=e327]: Shri Gajanan Maharaj Sansthan Shegaon
+            - listitem [ref=e328]: Shri Gajanan Maharaj Sansthan Shegaon Anand Vihar
+            - listitem [ref=e329]: Shri Gajanan Maharaj Sansthan Pandharpur
+            - listitem [ref=e330]: Shri Gajanan Maharaj Sansthan Trimbakeshwar
+            - listitem [ref=e331]: Shri Gajanan Maharaj Sansthan Omkareshwar
+        - generic [ref=e332]:
+          - heading "Contact" [level=4] [ref=e333]
+          - generic [ref=e334]:
+            - generic [ref=e335]: Shri Gajanan Maharaj Sansthan,
+            - generic [ref=e336]: Shegaon,
+            - generic [ref=e337]: Dist. Buldhana,
+            - generic [ref=e338]: Maharashtra - 444203
+          - paragraph [ref=e339]: "Contact: +918796359334"
+      - paragraph [ref=e341]: © 2026 Shri Gajanan Maharaj Sansthan. All rights reserved.
+  - generic [ref=e344]:
+    - button "Menu" [ref=e345]:
+      - img [ref=e347]
+      - generic: Menu
+    - button "Inspect" [ref=e351]:
+      - img [ref=e353]
+      - generic: Inspect
+    - button "Audit" [ref=e355]:
+      - img [ref=e357]
+      - generic: Audit
+    - button "Settings" [ref=e360]:
+      - img [ref=e362]
+      - generic: Settings

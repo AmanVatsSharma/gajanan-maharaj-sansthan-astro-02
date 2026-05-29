@@ -1,0 +1,166 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Hero } from "@/features/info/components/Hero";
+import { BookingCheckoutWidget } from "@/features/booking/components/BookingCheckoutWidget";
+import { SEOSection } from "@/features/info/components/SEOSection";
+import { ImpactStats } from "@/features/info/components/ImpactStats";
+import { Features } from "@/features/info/components/Features";
+import { FeaturedLocations } from "@/features/info/components/FeaturedLocations";
+import EnhancedRoomsSection from "@/features/info/components/EnhancedRoomsSection";
+import { Testimonials } from "@/features/info/components/Testimonials";
+import { PlanYourVisit } from "@/features/info/components/PlanYourVisit";
+import {
+  FeaturedGuides,
+  FEATURED_GUIDE_SLUGS,
+} from "@/features/info/components/FeaturedGuides";
+import { getPostsBySlugs } from "@/lib/blog";
+import { CTABanner } from "@/features/info/components/CTABanner";
+import { SectionDivider } from "@/features/info/components/SectionDivider";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  BRAND_VARIANTS,
+  PRIMARY_KEYWORDS,
+  SECONDARY_KEYWORDS,
+  SAINT_KEYWORDS,
+  FESTIVAL_YEAR_KEYWORDS,
+  OFFICIAL_SITE_KEYWORDS,
+  SERVICES_KEYWORDS,
+  DEVANAGARI_BRAND_VARIANTS,
+  DEVANAGARI_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import {
+  getOrganizationWithRatingSchema,
+  getWebSiteSchema,
+  getEventSchema,
+  getFAQSchema,
+  getLocalBusinessSchema,
+  getHinduTempleSchema,
+  getEnhancedPersonSchema,
+  getGranthBookSchema,
+  getDasganuMaharajSchema,
+  getAnandSagarSchema,
+  getServiceSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+import { sansthanFestivals } from "@/data/festivals";
+import { bookingFAQs } from "@/data/faq";
+import { sansthanLocations } from "@/data/sansthan-data";
+
+const meta = generatePageMetadata({
+  title: "Shri Gajanan Maharaj Sansthan — Bhakta Niwas Booking",
+  description:
+    "Official site of Shri Gajanan Maharaj Sansthan, Shegaon. Book Bhakta Niwas accommodation, check darshan timings, travel info, and temple facilities.",
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...PRIMARY_KEYWORDS,
+    ...SECONDARY_KEYWORDS,
+    ...SAINT_KEYWORDS,
+    ...FESTIVAL_YEAR_KEYWORDS,
+    ...OFFICIAL_SITE_KEYWORDS,
+    ...SERVICES_KEYWORDS,
+    ...DEVANAGARI_BRAND_VARIANTS,
+    ...DEVANAGARI_KEYWORDS,
+    "bhakta niwas booking shegaon",
+    "bhakt niwas shegaon",
+    "bhakta nivas shegaon",
+    "gajanan maharaj darshan timings",
+    "how to reach shegaon temple",
+    "shegaon temple accommodation",
+    "gajanan maharaj sansthan room booking",
+    "shri gajanan maharaj sansthan bhakt niwas",
+  ]),
+  path: "/",
+});
+
+const organizationSchema = getOrganizationWithRatingSchema(
+  testimonials.map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+    ...(t.date ? { datePublished: t.date } : {}),
+  }))
+);
+const webSiteSchema = getWebSiteSchema();
+const today = new Date();
+const eventSchemas = sansthanFestivals
+  .filter((f) => new Date(f.endDate) >= today)
+  .map((festival) =>
+    getEventSchema(
+      festival.name,
+      festival.description,
+      festival.startDate,
+      festival.endDate,
+      festival.locationName,
+      festival.locationAddress
+    )
+  );
+// Select the richest FAQs for homepage — prioritise price, WhatsApp, darshan, and booking
+const homepageFAQIds = [
+  "how-to-book", "room-types-available", "room-price-bhakt-niwas",
+  "ac-room-available", "accommodation-cost", "whatsapp-booking-number",
+  "online-booking-available", "family-only", "check-in-duration",
+  "darshan-timings-shegaon", "free-entry-darshan", "free-bus-station",
+  "meals-included", "multiple-locations", "mahaprasad-availability",
+];
+const faqSchema = getFAQSchema(
+  bookingFAQs
+    .filter((f) => homepageFAQIds.includes(f.id))
+    .map((f) => ({ question: f.question, answer: f.answer }))
+);
+const shegaon = sansthanLocations.find((l) => l.id === "shegaon-bhakt-niwas");
+const localBusinessSchema = shegaon ? getLocalBusinessSchema(shegaon) : null;
+const hinduTempleSchema = shegaon ? getHinduTempleSchema(shegaon) : null;
+
+const personSchema = getEnhancedPersonSchema();
+const dasganuSchema = getDasganuMaharajSchema();
+const granthBookSchema = getGranthBookSchema();
+const anandSagarSchema = getAnandSagarSchema();
+const serviceSchema = getServiceSchema();
+
+const breadcrumbSchema = getBreadcrumbSchema([{ name: "Home", url: "/" }]);
+
+const structuredPayload = [
+  organizationSchema,
+  webSiteSchema,
+  breadcrumbSchema,
+  personSchema,
+  dasganuSchema,
+  granthBookSchema,
+  serviceSchema,
+  faqSchema,
+  anandSagarSchema,
+  ...(localBusinessSchema ? [localBusinessSchema] : []),
+  ...(hinduTempleSchema ? [hinduTempleSchema] : []),
+  ...eventSchemas,
+];
+
+const featuredGuidePosts = await getPostsBySlugs(FEATURED_GUIDE_SLUGS);
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+  <div class="flex flex-col">
+    <Hero client:load />
+    <BookingCheckoutWidget client:idle />
+    <SEOSection client:visible />
+    <ImpactStats client:visible />
+    <SectionDivider client:visible variant="ornate" />
+    <Features client:visible />
+    <SectionDivider client:visible variant="default" />
+    <EnhancedRoomsSection client:visible />
+    <SectionDivider client:visible variant="default" />
+    <FeaturedLocations client:visible />
+    <SectionDivider client:visible variant="ornate" />
+    <Testimonials client:visible />
+    <SectionDivider client:visible variant="minimal" />
+    <FeaturedGuides posts={featuredGuidePosts} />
+    <PlanYourVisit client:visible />
+    <CTABanner client:visible />
+  </div>
+</Layout>

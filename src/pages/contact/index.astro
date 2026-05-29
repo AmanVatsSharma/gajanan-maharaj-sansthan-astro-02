@@ -1,0 +1,173 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { CONTACT_DETAILS } from "@/data/contact";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { BRAND_VARIANTS, PRIMARY_KEYWORDS, ACCOMMODATION_HUB_KEYWORDS, CONTACT_HELPLINE_KEYWORDS, OFFICIAL_SITE_KEYWORDS, LOCATION_KEYWORDS, VISIT_INTENT_KEYWORDS, getUniqueKeywords } from "@/lib/seo/constants";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getContactPageSchema, getBreadcrumbSchema } from "@/lib/seo/structured-data";
+
+const meta = generatePageMetadata({
+  title: "Contact Shri Gajanan Maharaj Sansthan | Bhakta Niwas Booking Helpline",
+  description:
+    `Contact Shri Gajanan Maharaj Sansthan for Bhakta Niwas bookings and temple inquiries. WhatsApp/phone: ${CONTACT_DETAILS.booking.mobile}. Shegaon head office open daily, 9 AM–6 PM.`,
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...PRIMARY_KEYWORDS,
+    ...ACCOMMODATION_HUB_KEYWORDS,
+    ...CONTACT_HELPLINE_KEYWORDS,
+    ...OFFICIAL_SITE_KEYWORDS,
+    ...LOCATION_KEYWORDS.shegaon,
+    ...VISIT_INTENT_KEYWORDS,
+    "gajanan maharaj contact",
+    "gajanan maharaj contact number",
+    "shegaon temple phone number",
+    "bhakt niwas booking contact",
+    "bhakta niwas booking number",
+    "bhakta niwas whatsapp number",
+    "shri gajanan maharaj sansthan whatsapp",
+    "sansthan address shegaon",
+    "temple office hours shegaon",
+    "gajanan maharaj sansthan helpline",
+    "shegaon mandir address",
+    "shri gajanan maharaj sansthan address shegaon maharashtra",
+  ]),
+  path: "/contact",
+});
+
+const contactPageSchema = getContactPageSchema(
+  CONTACT_DETAILS.booking.mobile,
+  CONTACT_DETAILS.headOffice.address
+);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Contact", url: "/contact" },
+]);
+
+const headOfficeMapLink =
+  "https://maps.google.com/?q=Shri+Gajanan+Maharaj+Sansthan+Shegaon";
+
+const addressLines = CONTACT_DETAILS.headOffice.address.split(",");
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="container py-12">
+    <h1 class="text-4xl font-bold font-heading text-brand-maroon mb-8 text-center">Contact Us</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="space-y-6">
+        <div class="rounded-xl border bg-card text-card-foreground shadow-sm">
+          <div class="p-6 pb-2">
+            <h3 class="text-lg font-semibold text-brand-maroon">Head Office</h3>
+          </div>
+          <div class="px-6 pb-6 text-muted-foreground">
+            {addressLines.map((line) => (
+              <span class="block">{line.trim()},</span>
+            ))}
+          </div>
+        </div>
+
+        <div class="rounded-xl border bg-card text-card-foreground shadow-sm">
+          <div class="p-6 pb-2">
+            <h3 class="text-lg font-semibold text-brand-maroon">Contact</h3>
+          </div>
+          <div class="px-6 pb-6 space-y-2 text-muted-foreground">
+            <p class="font-medium text-brand-maroon">{CONTACT_DETAILS.booking.mobile}</p>
+            <p class="text-sm">For booking and general inquiries (WhatsApp / Call)</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl border bg-card text-card-foreground shadow-sm">
+          <div class="p-6 pb-2">
+            <h3 class="text-lg font-semibold text-brand-maroon">Office Hours</h3>
+          </div>
+          <div class="px-6 pb-6 text-muted-foreground">
+            <p>Monday - Sunday: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-full min-h-[400px] rounded-xl border bg-muted/20 p-5 sm:p-6">
+        <div class="space-y-4">
+          <div>
+            <h2 class="text-xl font-bold font-heading text-brand-maroon">Find us on map</h2>
+            <p class="text-sm text-muted-foreground mt-1">
+              Open trusted map links for directions to each Sansthan location.
+            </p>
+          </div>
+
+          <a
+            href={headOfficeMapLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-sm font-medium text-brand-maroon hover:text-brand-saffron transition-colors"
+          >
+            Open Head Office Map
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <div class="space-y-3 pt-1">
+            {sansthanLocations.map((location) => (
+              <div class="rounded-lg border bg-background p-3 sm:p-4 flex items-start justify-between gap-3">
+                <div class="min-w-0">
+                  <p class="font-medium text-foreground text-sm sm:text-base line-clamp-2">
+                    {location.name}
+                  </p>
+                  <p class="text-xs sm:text-sm text-muted-foreground mt-1">{location.address}</p>
+                </div>
+                <a
+                  href={location.googleMapsLink || headOfficeMapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex shrink-0 items-center gap-1 rounded-md border px-2.5 py-1.5 text-xs sm:text-sm font-medium hover:border-brand-saffron/40 hover:text-brand-saffron transition-colors"
+                >
+                  Map ↗
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">Planning</h2>
+      <p class="text-muted-foreground mb-6">
+        Official pages for booking, locations, and Sansthan information.
+      </p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <li>
+          <a href="/booking" class="text-brand-maroon hover:text-brand-saffron hover:underline font-medium">
+            Booking request
+          </a>
+        </li>
+        <li>
+          <a href="/locations" class="text-brand-maroon hover:text-brand-saffron hover:underline font-medium">
+            All locations
+          </a>
+        </li>
+        <li>
+          <a href="/about" class="text-brand-maroon hover:text-brand-saffron hover:underline font-medium">
+            About Sansthan
+          </a>
+        </li>
+        <li>
+          <a href="/bhakta-niwas" class="text-brand-maroon hover:text-brand-saffron hover:underline font-medium">
+            Bhakta Niwas accommodation
+          </a>
+        </li>
+        <li>
+          <a href="/how-to-reach" class="text-brand-maroon hover:text-brand-saffron hover:underline font-medium">
+            How to reach Shegaon
+          </a>
+        </li>
+        <li>
+          <a href="/darshan-timings" class="text-brand-maroon hover:text-brand-saffron hover:underline font-medium">
+            Darshan timings
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Layout>

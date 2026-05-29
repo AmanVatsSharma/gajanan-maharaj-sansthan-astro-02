@@ -1,0 +1,256 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - link "Shri Gajanan Maharaj Sansthan Logo Shri Gajanan Maharaj Sansthan" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Shri Gajanan Maharaj Sansthan Logo" [ref=e7]
+        - generic [ref=e8]: Shri Gajanan Maharaj Sansthan
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Booking" [ref=e11] [cursor=pointer]:
+          - /url: /booking
+        - link "Locations" [ref=e12] [cursor=pointer]:
+          - /url: /locations
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "About Sansthan" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e17]:
+        - link "WhatsApp for temple accommodation booking" [ref=e18] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0ATemple%20accommodation%20booking%20enquiry%0A%0AKindly%20guide%20me%20on%20availability%20and%20booking.
+          - img
+          - generic [ref=e19]: WhatsApp
+        - link "Call booking helpline +918796359334" [ref=e20] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img
+          - generic [ref=e21]: Call
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: Shri Gajanan Maharaj Sansthan
+        - heading "Darshan Timings" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Official darshan schedule for Shri Gajanan Maharaj Sansthan, Shegaon. The temple is open every day of the year for devotees.
+      - generic [ref=e28]:
+        - heading "Shegaon Temple Darshan Schedule" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: 🌅
+            - heading "Morning Darshan" [level=3] [ref=e33]
+            - paragraph [ref=e34]: 5:00 AM – 12:00 PM
+            - paragraph [ref=e35]: Kakad Aarti at 5:00 AM
+            - paragraph [ref=e36]: "Best for: First darshan of the day"
+          - generic [ref=e37]:
+            - generic [ref=e38]: 🌆
+            - heading "Evening Darshan" [level=3] [ref=e39]
+            - paragraph [ref=e40]: 4:00 PM – 10:00 PM
+            - paragraph [ref=e41]: Shej Aarti at ~9:30 PM
+            - paragraph [ref=e42]: "Best for: Calm, peaceful atmosphere"
+        - generic [ref=e43]:
+          - text: Temple is closed between
+          - strong [ref=e44]: 12:00 PM – 4:00 PM
+          - text: (midday break). Mahaprasad (prasad lunch) is available at the canteen during this time.
+      - generic [ref=e45]:
+        - heading "Daily Aarti Schedule" [level=2] [ref=e46]
+        - table [ref=e48]:
+          - rowgroup [ref=e49]:
+            - row "Aarti Time Notes" [ref=e50]:
+              - columnheader "Aarti" [ref=e51]
+              - columnheader "Time" [ref=e52]
+              - columnheader "Notes" [ref=e53]
+          - rowgroup [ref=e54]:
+            - row "Kakad Aarti 5:00 AM Most auspicious darshan; arrive by 4:45 AM" [ref=e55]:
+              - cell "Kakad Aarti" [ref=e56]
+              - cell "5:00 AM" [ref=e57]
+              - cell "Most auspicious darshan; arrive by 4:45 AM" [ref=e58]
+            - row "Madhyan Aarti ~11:30 AM Before temple closes for afternoon break" [ref=e59]:
+              - cell "Madhyan Aarti" [ref=e60]
+              - cell "~11:30 AM" [ref=e61]
+              - cell "Before temple closes for afternoon break" [ref=e62]
+            - row "Saptashringi Aarti ~4:00 PM Reopening aarti for evening darshan" [ref=e63]:
+              - cell "Saptashringi Aarti" [ref=e64]
+              - cell "~4:00 PM" [ref=e65]
+              - cell "Reopening aarti for evening darshan" [ref=e66]
+            - row "Shej Aarti ~9:30 PM Final aarti of the day; deeply devotional" [ref=e67]:
+              - cell "Shej Aarti" [ref=e68]
+              - cell "~9:30 PM" [ref=e69]
+              - cell "Final aarti of the day; deeply devotional" [ref=e70]
+        - paragraph [ref=e71]: Timings may vary slightly on festival days. Confirm with the Sansthan office at +918796359334.
+      - generic [ref=e72]:
+        - heading "Darshan Timings at Other Sansthan Locations" [level=2] [ref=e73]
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - heading "Pandharpur (Vitthal Temple)" [level=3] [ref=e76]
+            - paragraph [ref=e77]: 4:00 AM – 11:00 PM
+            - paragraph [ref=e78]: Extended on Ekadashi
+            - link "View accommodation →" [ref=e79] [cursor=pointer]:
+              - /url: /locations/pandharpur-math
+          - generic [ref=e80]:
+            - heading "Trimbakeshwar Jyotirlinga" [level=3] [ref=e81]
+            - paragraph [ref=e82]: 5:30 AM – 9:00 PM
+            - paragraph [ref=e83]: Multiple aarti throughout day
+            - link "View accommodation →" [ref=e84] [cursor=pointer]:
+              - /url: /locations/trimbakeshwar
+          - generic [ref=e85]:
+            - heading "Omkareshwar Jyotirlinga" [level=3] [ref=e86]
+            - paragraph [ref=e87]: 5:00 AM – 10:00 PM
+            - paragraph [ref=e88]: Special Jal Abhishek at 5:00 AM
+            - link "View accommodation →" [ref=e89] [cursor=pointer]:
+              - /url: /locations/omkareshwar
+      - generic [ref=e90]:
+        - heading "Best Time to Visit Shegaon" [level=2] [ref=e91]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: ❄️
+            - heading "Winter (Oct–Feb)" [level=3] [ref=e95]
+            - paragraph [ref=e96]: Pleasant weather, comfortable darshan. Ideal for families and elderly devotees. Book accommodation early for December–January.
+            - paragraph [ref=e97]: "Crowd: Moderate"
+          - generic [ref=e98]:
+            - generic [ref=e99]: 🌧️
+            - heading "Monsoon (Jul–Sep)" [level=3] [ref=e100]
+            - paragraph [ref=e101]: Lush greenery around Anand Sagar. Fewer crowds on regular days but very busy during Ashadhi Ekadashi.
+            - paragraph [ref=e102]: "Crowd: Low–High"
+          - generic [ref=e103]:
+            - generic [ref=e104]: ☀️
+            - heading "Summer (Mar–Jun)" [level=3] [ref=e105]
+            - paragraph [ref=e106]: Hot but less crowded. AC rooms at Anand Vihar available. Early morning darshan recommended.
+            - paragraph [ref=e107]: "Crowd: Low"
+      - generic [ref=e108]:
+        - heading "Darshan Timings — FAQs" [level=2] [ref=e109]
+        - generic [ref=e110]:
+          - group [ref=e111]:
+            - generic "Is the temple open on all days? +" [ref=e112] [cursor=pointer]:
+              - text: Is the temple open on all days?
+              - generic [ref=e113]: +
+          - group [ref=e114]:
+            - generic "Is there a dress code for darshan? +" [ref=e115] [cursor=pointer]:
+              - text: Is there a dress code for darshan?
+              - generic [ref=e116]: +
+          - group [ref=e117]:
+            - generic "Is free bus service available from Shegaon Station? +" [ref=e118] [cursor=pointer]:
+              - text: Is free bus service available from Shegaon Station?
+              - generic [ref=e119]: +
+      - generic [ref=e120]:
+        - heading "Staying for Darshan? Book Bhakta Niwas" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Stay close to the temple at Bhakta Niwas. Accommodation available at Shegaon and 3 other holy locations on donation basis.
+        - generic [ref=e123]:
+          - link "Book Bhakta Niwas" [ref=e124] [cursor=pointer]:
+            - /url: /bhakta-niwas
+          - link "How to Reach Shegaon" [ref=e125] [cursor=pointer]:
+            - /url: /how-to-reach
+      - generic [ref=e126]:
+        - link "All Locations" [ref=e127] [cursor=pointer]:
+          - /url: /locations
+        - link "Booking Form" [ref=e128] [cursor=pointer]:
+          - /url: /booking
+        - link "Bhakta Niwas" [ref=e129] [cursor=pointer]:
+          - /url: /bhakta-niwas
+        - link "Contact" [ref=e130] [cursor=pointer]:
+          - /url: /contact
+  - button "Contact us" [ref=e134]:
+    - img [ref=e136]
+  - contentinfo [ref=e138]:
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - paragraph [ref=e144]: Need Help? Reach us instantly
+        - link "Call booking helpline" [ref=e145] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - text: "+918796359334"
+      - generic [ref=e146]:
+        - link "Chat on WhatsApp" [ref=e147] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0AAccommodation%20booking%20enquiry
+          - img [ref=e148]
+          - text: WhatsApp
+        - link "Call now" [ref=e150] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img [ref=e151]
+          - text: Call Now
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - heading "Shri Gajanan Maharaj Sansthan" [level=3] [ref=e158]
+          - paragraph [ref=e159]: "\"Jai Gajanan Maharaj\""
+          - paragraph [ref=e160]: Official website for devotee services and accommodation booking.
+        - generic [ref=e161]:
+          - heading "Quick Links" [level=4] [ref=e162]
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - link "Home" [ref=e165] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e166]:
+              - link "Accommodation" [ref=e167] [cursor=pointer]:
+                - /url: /locations
+            - listitem [ref=e168]:
+              - link "Booking" [ref=e169] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=e170]:
+              - link "History" [ref=e171] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e172]:
+              - link "Blog" [ref=e173] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e174]:
+              - link "Contact" [ref=e175] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e176]:
+              - link "Privacy Policy" [ref=e177] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e178]:
+              - link "Terms & Conditions" [ref=e179] [cursor=pointer]:
+                - /url: /terms-conditions
+            - listitem [ref=e180]:
+              - link "Refund Policy" [ref=e181] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e182]:
+              - link "Disclaimer" [ref=e183] [cursor=pointer]:
+                - /url: /disclaimer
+        - generic [ref=e184]:
+          - heading "Popular Guides" [level=4] [ref=e185]
+          - list [ref=e186]:
+            - listitem [ref=e187]:
+              - link "Shegaon Travel Guide" [ref=e188] [cursor=pointer]:
+                - /url: /blog/shegaon-travel-guide
+            - listitem [ref=e189]:
+              - link "Omkareshwar Darshan Timings" [ref=e190] [cursor=pointer]:
+                - /url: /blog/omkareshwar-darshan-timings
+            - listitem [ref=e191]:
+              - link "Bhakta Niwas Booking" [ref=e192] [cursor=pointer]:
+                - /url: /blog/shegaon-bhakta-niwas-booking-process
+            - listitem [ref=e193]:
+              - link "Phone & WhatsApp Booking" [ref=e194] [cursor=pointer]:
+                - /url: /blog/phone-and-whatsapp-booking-best-practices
+            - listitem [ref=e195]:
+              - link "Accommodation Booking" [ref=e196] [cursor=pointer]:
+                - /url: /blog/gajanan-maharaj-sansthan-booking-guide
+        - generic [ref=e197]:
+          - heading "Locations" [level=4] [ref=e198]
+          - list [ref=e199]:
+            - listitem [ref=e200]: Shri Gajanan Maharaj Sansthan Shegaon
+            - listitem [ref=e201]: Shri Gajanan Maharaj Sansthan Shegaon Anand Vihar
+            - listitem [ref=e202]: Shri Gajanan Maharaj Sansthan Pandharpur
+            - listitem [ref=e203]: Shri Gajanan Maharaj Sansthan Trimbakeshwar
+            - listitem [ref=e204]: Shri Gajanan Maharaj Sansthan Omkareshwar
+        - generic [ref=e205]:
+          - heading "Contact" [level=4] [ref=e206]
+          - generic [ref=e207]:
+            - generic [ref=e208]: Shri Gajanan Maharaj Sansthan,
+            - generic [ref=e209]: Shegaon,
+            - generic [ref=e210]: Dist. Buldhana,
+            - generic [ref=e211]: Maharashtra - 444203
+          - paragraph [ref=e212]: "Contact: +918796359334"
+      - paragraph [ref=e214]: © 2026 Shri Gajanan Maharaj Sansthan. All rights reserved.
+  - generic [ref=e217]:
+    - button "Menu" [ref=e218]:
+      - img [ref=e220]
+      - generic: Menu
+    - button "Inspect" [ref=e224]:
+      - img [ref=e226]
+      - generic: Inspect
+    - button "Audit" [ref=e228]:
+      - img [ref=e230]
+      - generic: Audit
+    - button "Settings" [ref=e233]:
+      - img [ref=e235]
+      - generic: Settings

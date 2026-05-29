@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Omkareshwar Sansthan Stay</title>
+  <desc id="desc">Representative image for Shri Gajanan Maharaj Sansthan Omkareshwar location.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F3A3E"/>
+      <stop offset="0.58" stop-color="#1C5A63"/>
+      <stop offset="1" stop-color="#D4A03E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="110" fill="#A7F3D0" opacity="0.2"/>
+  <text x="80" y="250" fill="#ECFEFF" font-family="Georgia, serif" font-size="56" font-weight="700">Omkareshwar Accommodation</text>
+  <text x="80" y="320" fill="#ECFEFF" font-family="Georgia, serif" font-size="36" opacity="0.92">Shri Gajanan Maharaj Sansthan</text>
+  <text x="80" y="380" fill="#ECFEFF" font-family="Arial, sans-serif" font-size="28" opacity="0.86">Pilgrimage support for Jyotirlinga devotees</text>
+</svg>

@@ -1,0 +1,348 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - link "Shri Gajanan Maharaj Sansthan Logo Shri Gajanan Maharaj Sansthan" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Shri Gajanan Maharaj Sansthan Logo" [ref=e7]
+        - generic [ref=e8]: Shri Gajanan Maharaj Sansthan
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Booking" [ref=e11] [cursor=pointer]:
+          - /url: /booking
+        - link "Locations" [ref=e12] [cursor=pointer]:
+          - /url: /locations
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "About Sansthan" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e17]:
+        - link "WhatsApp for temple accommodation booking" [ref=e18] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0ATemple%20accommodation%20booking%20enquiry%0A%0AKindly%20guide%20me%20on%20availability%20and%20booking.
+          - img
+          - generic [ref=e19]: WhatsApp
+        - link "Call booking helpline +918796359334" [ref=e20] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img
+          - generic [ref=e21]: Call
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - navigation "Breadcrumb" [ref=e25]:
+        - link "Home" [ref=e27] [cursor=pointer]:
+          - /url: /
+          - img [ref=e28]
+          - text: Home
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - link "Locations" [ref=e34] [cursor=pointer]:
+            - /url: /locations
+        - generic [ref=e35]:
+          - img [ref=e36]
+          - generic [ref=e38]: Shri Gajanan Maharaj Sansthan Shegaon Bhakt Niwas
+      - link "Back to Locations" [ref=e39] [cursor=pointer]:
+        - /url: /locations
+        - img [ref=e40]
+        - text: Back to Locations
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - heading "Shri Gajanan Maharaj Sansthan Shegaon Bhakt Niwas" [level=1] [ref=e45]
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - text: Near Shri Gajanan Maharaj Temple, Shegaon, Dist. Buldhana
+          - img "Shri Gajanan Maharaj Sansthan Shegaon Bhakt Niwas Shegaon - Temple accommodation building exterior and entrance view" [ref=e51]
+          - generic [ref=e52]:
+            - heading "About" [level=2] [ref=e53]
+            - paragraph [ref=e54]: The main accommodation complex for devotees visiting the holy samadhi. Includes multiple buildings with various room types.
+          - generic [ref=e55]:
+            - heading "Facilities & Amenities" [level=2] [ref=e56]
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - img [ref=e60]
+                - text: Hot Water (Morning)
+              - listitem [ref=e62]:
+                - img [ref=e64]
+                - text: Mahaprasad Canteen
+              - listitem [ref=e66]:
+                - img [ref=e68]
+                - text: Free Bus Service
+              - listitem [ref=e70]:
+                - img [ref=e72]
+                - text: Parking
+          - generic [ref=e74]:
+            - heading "Room Types" [level=2] [ref=e75]
+            - table [ref=e78]:
+              - rowgroup [ref=e79]:
+                - row "Type Capacity AC" [ref=e80]:
+                  - columnheader "Type" [ref=e81]
+                  - columnheader "Capacity" [ref=e82]
+                  - columnheader "AC" [ref=e83]
+              - rowgroup [ref=e84]:
+                - row "Common Hall 50 Persons No" [ref=e85]:
+                  - cell "Common Hall" [ref=e86]
+                  - cell "50 Persons" [ref=e87]
+                  - cell "No" [ref=e88]
+                - row "Double Bed 3 Persons No" [ref=e89]:
+                  - cell "Double Bed" [ref=e90]
+                  - cell "3 Persons" [ref=e91]
+                  - cell "No" [ref=e92]
+                - row "Deluxe Room 3 Persons Yes" [ref=e93]:
+                  - cell "Deluxe Room" [ref=e94]
+                  - cell "3 Persons" [ref=e95]
+                  - cell "Yes" [ref=e96]
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e100]: Book Accommodation
+            - generic [ref=e102]:
+              - link "Book on WhatsApp" [ref=e103] [cursor=pointer]:
+                - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0AAccommodation%20booking%20enquiry%0ALocation%3A%20Shri%20Gajanan%20Maharaj%20Sansthan%20Shegaon%20Bhakt%20Niwas%2C%20Shegaon%0A%0AKindly%20share%20availability%20and%20booking%20process.
+                - img
+                - text: Book on WhatsApp
+              - link "Call to Book" [ref=e104] [cursor=pointer]:
+                - /url: tel:+918796359334
+                - img
+                - text: Call to Book
+              - generic [ref=e105]: "* Booking subject to availability and Sansthan rules."
+              - generic [ref=e106]:
+                - text: Prefer a form? Use the
+                - link "booking request page" [ref=e107] [cursor=pointer]:
+                  - /url: /booking?location=shegaon-bhakt-niwas
+                - text: .
+          - generic [ref=e108]:
+            - generic [ref=e110]: Contact Details
+            - generic [ref=e113]:
+              - img [ref=e114]
+              - text: "+918796359334"
+    - generic [ref=e116]:
+      - heading "Related Guides" [level=2] [ref=e117]
+      - paragraph [ref=e118]: Planning a visit? Explore these guides for darshan, accommodation, and travel tips.
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - img [ref=e123]
+              - time [ref=e125]: February 17, 2026
+              - generic [ref=e126]: •
+              - img [ref=e127]
+              - generic [ref=e130]: 2 min read
+            - link "Complete Travel Guide to Shegaon - Temple, Darshan Timings, Accommodation" [ref=e132] [cursor=pointer]:
+              - /url: /blog/shegaon-travel-guide
+            - generic [ref=e133]: Plan your Shegaon pilgrimage with this complete guide. Get darshan timings, Sansthan accommodation options, travel routes, and nearby places.
+          - generic [ref=e135]:
+            - generic [ref=e136]: shegaon
+            - generic [ref=e137]: travel-guide
+            - generic [ref=e138]: darshan
+            - generic [ref=e139]: +2 more
+          - link "Read Article" [ref=e141] [cursor=pointer]:
+            - /url: /blog/shegaon-travel-guide
+            - text: Read Article
+            - generic [ref=e142]: →
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - img [ref=e146]
+              - time [ref=e148]: February 16, 2026
+              - generic [ref=e149]: •
+              - img [ref=e150]
+              - generic [ref=e153]: 2 min read
+            - link "Nearby Places from Shegaon - Devotional and Family Itinerary Guide" [ref=e155] [cursor=pointer]:
+              - /url: /blog/nearby-places-from-shegaon
+            - generic [ref=e156]: Explore nearby places from Shegaon after darshan. Plan a balanced spiritual and family-friendly itinerary with practical travel tips.
+          - generic [ref=e158]:
+            - generic [ref=e159]: shegaon
+            - generic [ref=e160]: nearby-places
+            - generic [ref=e161]: itinerary
+            - generic [ref=e162]: +1 more
+          - link "Read Article" [ref=e164] [cursor=pointer]:
+            - /url: /blog/nearby-places-from-shegaon
+            - text: Read Article
+            - generic [ref=e165]: →
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - img [ref=e169]
+              - time [ref=e171]: February 16, 2026
+              - generic [ref=e172]: •
+              - img [ref=e173]
+              - generic [ref=e176]: 3 min read
+            - link "Shegaon Darshan Timing Guide | Shri Gajanan Maharaj Sansthan" [ref=e178] [cursor=pointer]:
+              - /url: /blog/shegaon-darshan-timing-guide
+            - generic [ref=e179]: Detailed shegaon darshan timing guide for devotees searching Shri/Shree/Sri Gajanan Maharaj Sansthan Shegaon. Includes booking links, travel tips, and internal route guidance.
+          - generic [ref=e181]:
+            - generic [ref=e182]: shegaon
+            - generic [ref=e183]: darshan
+            - generic [ref=e184]: sansthan-seo
+            - generic [ref=e185]: +1 more
+          - link "Read Article" [ref=e187] [cursor=pointer]:
+            - /url: /blog/shegaon-darshan-timing-guide
+            - text: Read Article
+            - generic [ref=e188]: →
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - img [ref=e192]
+              - time [ref=e194]: February 15, 2026
+              - generic [ref=e195]: •
+              - img [ref=e196]
+              - generic [ref=e199]: 2 min read
+            - link "Shegaon Accommodation Guide - Bhakt Niwas, Anand Vihar, Visawa" [ref=e201] [cursor=pointer]:
+              - /url: /blog/shegaon-accommodation-guide
+            - generic [ref=e202]: Find the right Sansthan stay in Shegaon. Compare Bhakt Niwas, Anand Vihar, and Visawa with practical booking tips for devotees.
+          - generic [ref=e204]:
+            - generic [ref=e205]: shegaon
+            - generic [ref=e206]: accommodation
+            - generic [ref=e207]: bhakt-niwas
+            - generic [ref=e208]: +1 more
+          - link "Read Article" [ref=e210] [cursor=pointer]:
+            - /url: /blog/shegaon-accommodation-guide
+            - text: Read Article
+            - generic [ref=e211]: →
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - img [ref=e215]
+              - time [ref=e217]: February 14, 2026
+              - generic [ref=e218]: •
+              - img [ref=e219]
+              - generic [ref=e222]: 3 min read
+            - link "Shegaon Weekend Planning Guide | Shri Gajanan Maharaj Sansthan" [ref=e224] [cursor=pointer]:
+              - /url: /blog/shegaon-weekend-planning-guide
+            - generic [ref=e225]: Detailed shegaon weekend planning guide for devotees searching Shri/Shree/Sri Gajanan Maharaj Sansthan Shegaon. Includes booking links, travel tips, and internal route guidance.
+          - generic [ref=e227]:
+            - generic [ref=e228]: shegaon
+            - generic [ref=e229]: travel-guide
+            - generic [ref=e230]: sansthan-seo
+            - generic [ref=e231]: +1 more
+          - link "Read Article" [ref=e233] [cursor=pointer]:
+            - /url: /blog/shegaon-weekend-planning-guide
+            - text: Read Article
+            - generic [ref=e234]: →
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - img [ref=e238]
+              - time [ref=e240]: February 13, 2026
+              - generic [ref=e241]: •
+              - img [ref=e242]
+              - generic [ref=e245]: 3 min read
+            - link "Shegaon Family Accommodation Checklist | Shri Gajanan Maharaj Sansthan" [ref=e247] [cursor=pointer]:
+              - /url: /blog/shegaon-family-accommodation-checklist
+            - generic [ref=e248]: Detailed shegaon family accommodation checklist for devotees searching Shri/Shree/Sri Gajanan Maharaj Sansthan Shegaon. Includes booking links, travel tips, and internal route guidance.
+          - generic [ref=e250]:
+            - generic [ref=e251]: shegaon
+            - generic [ref=e252]: accommodation
+            - generic [ref=e253]: sansthan-seo
+            - generic [ref=e254]: +1 more
+          - link "Read Article" [ref=e256] [cursor=pointer]:
+            - /url: /blog/shegaon-family-accommodation-checklist
+            - text: Read Article
+            - generic [ref=e257]: →
+      - link "View all guides →" [ref=e258] [cursor=pointer]:
+        - /url: /blog
+  - button "Contact us" [ref=e262]:
+    - img [ref=e264]
+  - contentinfo [ref=e266]:
+    - generic [ref=e270]:
+      - generic [ref=e271]:
+        - paragraph [ref=e272]: Need Help? Reach us instantly
+        - link "Call booking helpline" [ref=e273] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - text: "+918796359334"
+      - generic [ref=e274]:
+        - link "Chat on WhatsApp" [ref=e275] [cursor=pointer]:
+          - /url: https://wa.me/918796359334?text=%F0%9F%99%8F%20Jai%20Gajanan%20Maharaj%20%F0%9F%99%8F%0A%0AAccommodation%20booking%20enquiry
+          - img [ref=e276]
+          - text: WhatsApp
+        - link "Call now" [ref=e278] [cursor=pointer]:
+          - /url: tel:+918796359334
+          - img [ref=e279]
+          - text: Call Now
+    - generic [ref=e283]:
+      - generic [ref=e284]:
+        - generic [ref=e285]:
+          - heading "Shri Gajanan Maharaj Sansthan" [level=3] [ref=e286]
+          - paragraph [ref=e287]: "\"Jai Gajanan Maharaj\""
+          - paragraph [ref=e288]: Official website for devotee services and accommodation booking.
+        - generic [ref=e289]:
+          - heading "Quick Links" [level=4] [ref=e290]
+          - list [ref=e291]:
+            - listitem [ref=e292]:
+              - link "Home" [ref=e293] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e294]:
+              - link "Accommodation" [ref=e295] [cursor=pointer]:
+                - /url: /locations
+            - listitem [ref=e296]:
+              - link "Booking" [ref=e297] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=e298]:
+              - link "History" [ref=e299] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e300]:
+              - link "Blog" [ref=e301] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e302]:
+              - link "Contact" [ref=e303] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e304]:
+              - link "Privacy Policy" [ref=e305] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e306]:
+              - link "Terms & Conditions" [ref=e307] [cursor=pointer]:
+                - /url: /terms-conditions
+            - listitem [ref=e308]:
+              - link "Refund Policy" [ref=e309] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e310]:
+              - link "Disclaimer" [ref=e311] [cursor=pointer]:
+                - /url: /disclaimer
+        - generic [ref=e312]:
+          - heading "Popular Guides" [level=4] [ref=e313]
+          - list [ref=e314]:
+            - listitem [ref=e315]:
+              - link "Shegaon Travel Guide" [ref=e316] [cursor=pointer]:
+                - /url: /blog/shegaon-travel-guide
+            - listitem [ref=e317]:
+              - link "Omkareshwar Darshan Timings" [ref=e318] [cursor=pointer]:
+                - /url: /blog/omkareshwar-darshan-timings
+            - listitem [ref=e319]:
+              - link "Bhakta Niwas Booking" [ref=e320] [cursor=pointer]:
+                - /url: /blog/shegaon-bhakta-niwas-booking-process
+            - listitem [ref=e321]:
+              - link "Phone & WhatsApp Booking" [ref=e322] [cursor=pointer]:
+                - /url: /blog/phone-and-whatsapp-booking-best-practices
+            - listitem [ref=e323]:
+              - link "Accommodation Booking" [ref=e324] [cursor=pointer]:
+                - /url: /blog/gajanan-maharaj-sansthan-booking-guide
+        - generic [ref=e325]:
+          - heading "Locations" [level=4] [ref=e326]
+          - list [ref=e327]:
+            - listitem [ref=e328]: Shri Gajanan Maharaj Sansthan Shegaon
+            - listitem [ref=e329]: Shri Gajanan Maharaj Sansthan Shegaon Anand Vihar
+            - listitem [ref=e330]: Shri Gajanan Maharaj Sansthan Pandharpur
+            - listitem [ref=e331]: Shri Gajanan Maharaj Sansthan Trimbakeshwar
+            - listitem [ref=e332]: Shri Gajanan Maharaj Sansthan Omkareshwar
+        - generic [ref=e333]:
+          - heading "Contact" [level=4] [ref=e334]
+          - generic [ref=e335]:
+            - generic [ref=e336]: Shri Gajanan Maharaj Sansthan,
+            - generic [ref=e337]: Shegaon,
+            - generic [ref=e338]: Dist. Buldhana,
+            - generic [ref=e339]: Maharashtra - 444203
+          - paragraph [ref=e340]: "Contact: +918796359334"
+      - paragraph [ref=e342]: © 2026 Shri Gajanan Maharaj Sansthan. All rights reserved.
+  - generic [ref=e345]:
+    - button "Menu" [ref=e346]:
+      - img [ref=e348]
+      - generic: Menu
+    - button "Inspect" [ref=e352]:
+      - img [ref=e354]
+      - generic: Inspect
+    - button "Audit" [ref=e356]:
+      - img [ref=e358]
+      - generic: Audit
+    - button "Settings" [ref=e361]:
+      - img [ref=e363]
+      - generic: Settings

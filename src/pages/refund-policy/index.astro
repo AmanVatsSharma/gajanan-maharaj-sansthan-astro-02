@@ -1,0 +1,120 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
+
+const meta = generatePageMetadata({
+  title: "Refund & Cancellation Policy",
+  description:
+    "Refund and cancellation policy for Bhakta Niwas bookings, donations, and services at Shri Gajanan Maharaj Sansthan, Shegaon. Read before you book or donate.",
+  keywords: [
+    "refund policy",
+    "cancellation policy",
+    "bhakta niwas refund",
+    "booking cancellation shegaon",
+    "donation refund policy",
+    "gajanan maharaj sansthan refund",
+  ],
+  path: "/refund-policy",
+  robots: { index: true, follow: true, maxSnippet: 0 },
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Refund & Cancellation Policy", url: "/refund-policy" },
+]);
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="container mx-auto max-w-3xl py-12 px-4 sm:px-6 lg:px-8">
+    <article class="prose prose-slate lg:prose-lg mx-auto">
+      <h1>Refund & Cancellation Policy</h1>
+      <p class="lead">Last Updated: February 2026</p>
+
+      <p>
+        At Gajanan Maharaj Sansthan, we understand that situations may arise where you need to
+        modify or cancel your donation or accommodation booking. This Refund & Cancellation Policy
+        outlines our procedures for such instances.
+      </p>
+
+      <h2>1. Donations</h2>
+      <p>
+        All donations made to Gajanan Maharaj Sansthan are voluntary and are generally
+        non-refundable. We use these funds to support our various charitable and religious
+        activities. However, in exceptional circumstances (e.g., technical errors during the
+        transaction process), we may consider refund requests on a case-by-case basis. Please contact
+        us immediately if you believe a donation was made in error.
+      </p>
+
+      <h2>2. Accommodation Bookings (<a href="/bhakta-niwas">Bhakta Niwas</a>)</h2>
+      <p>Cancellations and refunds for <a href="/booking">accommodation bookings</a> are subject to the following terms:</p>
+      <ul>
+        <li>
+          <strong>Cancellation Request:</strong> To cancel a booking, please contact us via email
+          or phone at least 24 hours before the scheduled check-in time.
+        </li>
+        <li>
+          <strong>Refund Eligibility:</strong> Refunds will be processed for eligible cancellations
+          according to the Sansthan&apos;s prevailing rules. Typically, a cancellation fee may apply.
+        </li>
+        <li>
+          <strong>Processing Time:</strong> Approved refunds will be processed within 7-10 working
+          days to the original payment method.
+        </li>
+        <li>
+          <strong>No-Show:</strong> Failure to check-in on the scheduled date without prior
+          cancellation may result in forfeiture of the booking amount.
+        </li>
+      </ul>
+
+      <h2>3. Event Registrations</h2>
+      <p>
+        Fees paid for event registrations or special services are generally non-refundable unless
+        the event is cancelled by the Sansthan. In such cases, a full refund will be provided.
+      </p>
+
+      <h2>4. Changes to Policy</h2>
+      <p>
+        Gajanan Maharaj Sansthan reserves the right to modify this Refund & Cancellation Policy at
+        any time. Any changes will be posted on this page with an updated date.
+      </p>
+
+      <h2>5. Contact Us</h2>
+      <p>If you have any questions or need to request a refund or cancellation, please <a href="/contact">contact us</a> or email:</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:contact@gajananmaharaj.org">contact@gajananmaharaj.org</a>
+      </p>
+
+      <h2>Related Pages</h2>
+      <ul>
+        <li><a href="/booking">Book Bhakta Niwas Accommodation</a></li>
+        <li><a href="/bhakta-niwas">Bhakta Niwas Rooms &amp; Rates</a></li>
+        <li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </article>
+
+    <nav aria-label="Related pages" class="mt-12 pt-8 border-t not-prose">
+      <p class="text-sm font-medium text-muted-foreground mb-4">Related pages</p>
+      <ul class="flex flex-wrap gap-x-8 gap-y-3">
+        <li>
+          <a href="/booking" class="text-brand-saffron hover:text-brand-maroon font-medium transition-colors">
+            Book Bhakta Niwas accommodation
+          </a>
+        </li>
+        <li>
+          <a href="/contact" class="text-brand-saffron hover:text-brand-maroon font-medium transition-colors">
+            Contact us to cancel or modify a booking
+          </a>
+        </li>
+        <li>
+          <a href="/bhakta-niwas" class="text-brand-saffron hover:text-brand-maroon font-medium transition-colors">
+            Bhakta Niwas accommodation details
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</Layout>

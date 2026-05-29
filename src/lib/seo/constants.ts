@@ -1,0 +1,912 @@
+/**
+ * File: src/lib/seo/constants.ts
+ * Module: lib/seo
+ * Purpose: SEO-related constants including keywords, site info, and configuration
+ * Author: Aman Sharma / Novologic/ Cursor AI
+ * Last-updated: 2026-02-18
+ * Notes:
+ * - Centralized SEO configuration for consistency across pages
+ * - Keywords organized by category for better targeting
+ * - Primary phone comes from @/data/contact (single source of truth)
+ */
+
+import { CONTACT_DETAILS } from "@/data/contact";
+import { getSiteUrl } from "./site-url";
+
+export const SITE_CONFIG = {
+  name: "Shri Gajanan Maharaj Sansthan",
+  shortName: "SGMS",
+  url: getSiteUrl(),
+  description: "Official website of Shri Gajanan Maharaj Sansthan, Shegaon. Book temple accommodation, plan your visit to multiple locations across Maharashtra and Madhya Pradesh.",
+  foundingYear: "1908",
+  locale: "en_IN",
+  type: "Hindu Temple & Religious Organization",
+} as const;
+
+export const ORGANIZATION_INFO = {
+  legalName: "Shri Gajanan Maharaj Sansthan",
+  alternateName: "Gajanan Maharaj Mandir Shegaon",
+  logo: "/logo/logo.svg",
+  email: "contact@gajananmaharaj.org",
+  phone: CONTACT_DETAILS.booking.mobile,
+  address: {
+    streetAddress: "Shri Gajanan Maharaj Temple Complex",
+    addressLocality: "Shegaon",
+    addressRegion: "Maharashtra",
+    postalCode: "444203",
+    addressCountry: "IN",
+  },
+} as const;
+
+/**
+ * Canonical + common search-variant brand names.
+ * Includes transliteration/spelling patterns frequently used in Google queries.
+ */
+export const BRAND_VARIANTS = [
+  "shri gajanan maharaj sansthan",
+  "shree gajanan maharaj sansthan",
+  "sri gajanan maharaj sansthan",
+  "gajanan maharaj sansthan",
+  "shri gajanan maharaj sanstan",
+  "shree gajanan maharaj sanstan",
+  "sri gajanan maharaj sanstan",
+  "gajanan maharaj sanstan",
+  "shri gajanan maharaj shegaon",
+  "shree gajanan maharaj shegaon",
+  "sri gajanan maharaj shegaon",
+  "gajanan maharaj shegaon",
+  "shri gajanan maharaj mandir shegaon",
+  "shree gajanan maharaj mandir shegaon",
+  "gajanan maharaj temple shegaon",
+  "shri gajanan maharaj sansthan shegaon",
+  "shree gajanan maharaj sansthan shegaon",
+  "gajanan maharaj sansthan shegaon",
+  "shri gajanan maharaj mandir",
+  "shree gajanan maharaj mandir",
+  "gajanan maharaj sansthan omkareshwar",
+  "gajanan maharaj sansthan pandharpur",
+  "gajanan maharaj sansthan trimbakeshwar",
+  "gajananwadi shegaon",
+  "sgms shegaon",
+  "gajanan maharaj mandir buldhana",
+  "shri gajanan maharaj sansthan 1908",
+  "gajanan maharaj sansthan official",
+  "shegaon sansthan bhakt niwas",
+  "shri gajanan maharaj sansthan booking official",
+] as const;
+
+// Primary keywords for accommodation/booking focus
+export const PRIMARY_KEYWORDS = [
+  "gajanan maharaj temple booking",
+  "shri gajanan maharaj sansthan booking",
+  "shree gajanan maharaj sansthan booking",
+  "sri gajanan maharaj sansthan booking",
+  "shegaon temple accommodation",
+  "bhakt niwas shegaon",
+  "bhakta niwas shegaon",
+  "shegaon bhakta niwas booking",
+  "bhakta niwas booking",
+  "bhakt niwas accommodation",
+  "temple stay maharashtra",
+  "dharamshala booking shegaon",
+  "gajanan maharaj room booking",
+  "shri gajanan maharaj room booking",
+  "bhakt nivas shegaon",
+  "bhakta nivas shegaon",
+  "shegaon bhakta nivas booking",
+  "bhakta nivas booking",
+  "bhakt nivas accommodation",
+  "dharamshala shegaon booking",
+] as const;
+
+// Secondary keywords for broader reach
+export const SECONDARY_KEYWORDS = [
+  "gajanan maharaj sansthan",
+  "shri gajanan maharaj sansthan",
+  "shree gajanan maharaj sansthan",
+  "sri gajanan maharaj sansthan",
+  "gajanan maharaj sanstan",
+  "shegaon temple",
+  "devotee accommodation",
+  "temple rooms booking",
+  "pilgrimage stay maharashtra",
+  "pandharpur temple accommodation",
+  "hindu temple lodging",
+  "jyotirlinga yatra stay",
+  "temple dharamshala booking",
+] as const;
+
+// Long-tail keywords for specific queries
+export const LONGTAIL_KEYWORDS = [
+  "how to book accommodation at gajanan maharaj temple",
+  "how to book room in shri gajanan maharaj sansthan",
+  "how to book shree gajanan maharaj sansthan accommodation",
+  "shegaon bhakt niwas room booking",
+  "bhakta niwas shegaon contact number",
+  "bhakta niwas sheogaon booking process",
+  "bhakt niwas shegaon booking",
+  "bhakt niwas shegaon online booking",
+  "bhakta niwas shegaon online booking",
+  "bhakt niwas shegaon whatsapp number",
+  "bhakta niwas shegaon whatsapp number",
+  "bhakta niwas check in time",
+  "bhakta niwas check out time",
+  "bhakt niwas check in check out time",
+  "bhakta niwas refund policy",
+  "bhakta niwas cancellation policy",
+  "bhakta niwas room types",
+  "bhakta niwas family room",
+  "bhakta niwas dormitory",
+  "gajanan maharaj sansthan contact number",
+  "shri gajanan maharaj sansthan whatsapp number",
+  "family accommodation near shegaon temple",
+  "gajanan maharaj temple stay facilities",
+  "book dharamshala near pandharpur",
+  "best time to visit shegaon gajanan maharaj temple",
+  "omkareshwar darshan timings and stay guide",
+  "omkareshwar bhakt niwas accommodation",
+  "trimbakeshwar accommodation for devotees",
+  "triambakeshwar jyotirlinga stay and darshan",
+  "pandharpur pilgrimage stay booking tips",
+  "ashadhi ekadashi pandharpur wari accommodation",
+  "kartik ekadashi pandharpur darshan planning",
+  "bhakta nivas shegaon contact number",
+  "bhakta nivas shegaon online booking",
+  "bhakta nivas shegaon whatsapp number",
+  "bhakt nivas check in time",
+  "bhakta nivas shegaon room types",
+  "omkareshwar bhakta nivas accommodation",
+  "trimbakeshwar bhakta nivas for devotees",
+  "pandharpur bhakta niwas booking",
+  "pandharpur bhakta nivas booking",
+  "ashadhi ekadashi pandharpur bhakta niwas booking",
+  "how to book bhakt niwas shegaon whatsapp",
+  "shri gajanan maharaj sansthan room booking 2026",
+  "gajanan maharaj sansthan bhakt niwas booking procedure",
+  "can unmarried couples book bhakt niwas shegaon",
+  "minimum members required bhakt niwas shegaon",
+  "bhakt niwas shegaon advance booking how many days",
+  "is bhakt niwas shegaon free or donation based",
+  "shegaon bhakt niwas check in time morning",
+  "shegaon bhakt niwas check out time",
+  "id proof required bhakt niwas shegaon",
+  "gajanan maharaj temple darshan free entry",
+  "shegaon temple parking facility",
+  "shegaon bhakt niwas air conditioned rooms",
+  "pandharpur accommodation ashadhi ekadashi early booking",
+  "trimbakeshwar bhakt niwas nashik jyotirlinga",
+  "omkareshwar jyotirlinga accommodation gajanan maharaj",
+  "shri gajanan maharaj sansthan bhakt niwas all locations",
+  "gajanan maharaj sansthan bhakta niwas shegaon pandharpur trimbakeshwar omkareshwar",
+  "bhakt niwas booking shegaon procedure",
+  "gajanan maharaj sansthan 24 hour check in",
+  "shegaon temple stay government id required",
+] as const;
+
+// Location-specific keywords
+export const LOCATION_KEYWORDS = {
+  shegaon: [
+    "shri gajanan maharaj sansthan shegaon",
+    "shree gajanan maharaj sansthan shegaon",
+    "sri gajanan maharaj sansthan shegaon",
+    "shegaon temple booking",
+    "shegaon gajanan maharaj booking",
+    "sheogaon temple",
+    "sheogaon accommodation",
+    "sheogaon bhakta niwas",
+    "sheogaon darshan",
+    "bhakt niwas shegaon",
+    "bhakta niwas shegaon",
+    "anand vihar shegaon",
+    "visawa shegaon",
+    "anand sagar shegaon",
+    "buldhana temple",
+    "maharashtra pilgrimage",
+    "vidarbha temple stay",
+    "akola to shegaon",
+    "jalgaon to shegaon",
+    "nagpur to shegaon",
+    "pune to shegaon",
+    "mumbai to shegaon",
+    "amravati to shegaon",
+    "shegaon accommodation",
+    "shegaon dharamshala",
+    "shegaon mandir accommodation",
+    "shegaon darshan timings",
+    "nearby places from shegaon",
+    "shegaon bhakt niwas online booking",
+    "shegaon bhakta niwas online booking",
+    "shegaon bhakt niwas check in time",
+    "shegaon bhakta niwas check out time",
+    "bhakta nivas shegaon",
+    "bhakt nivas shegaon",
+    "sheogaon bhakta nivas",
+    "sheogaon bhakt nivas",
+    "shegaon bhakta nivas online booking",
+    "shegaon anand vihar accommodation",
+    "shegaon visawa accommodation",
+    "shegaon bhakta nivas room booking",
+  ],
+  pandharpur: [
+    "shri gajanan maharaj sansthan pandharpur",
+    "shree gajanan maharaj sansthan pandharpur",
+    "pandharpur temple stay",
+    "pandharpur accommodation",
+    "gajanan math pandharpur",
+    "pandharpur darshan travel guide",
+    "pandharpur temple dharamshala booking",
+    "pandharpur bhakta niwas",
+    "pandharpur bhakta nivas",
+    "pandharpur bhakt niwas",
+    "pandharpur bhakt nivas",
+    "pandharpur gajanan maharaj accommodation",
+    "pandharpur wari accommodation",
+    "pandharpur vitthal temple stay",
+    "pandharpur dharamshala booking",
+    "solapur to pandharpur accommodation",
+    "pune to pandharpur pilgrimage stay",
+  ],
+  trimbakeshwar: [
+    "shri gajanan maharaj sansthan trimbakeshwar",
+    "shree gajanan maharaj sansthan trimbakeshwar",
+    "trimbakeshwar accommodation",
+    "triambakeshwar accommodation",
+    "trimbakeshwar jyotirlinga stay",
+    "triambakeshwar jyotirlinga",
+    "trimbakeshwar darshan guide",
+    "trimbakeshwar temple room booking",
+    "triambakeshwar temple stay",
+    "triambakeshwar darshan timings",
+    "triambakeshwar temple accommodation booking",
+    "trimbakeshwar bhakta niwas",
+    "trimbakeshwar bhakta nivas",
+    "trimbakeshwar bhakt niwas",
+    "trimbakeshwar bhakt nivas",
+    "nashik trimbakeshwar accommodation",
+    "trimbakeshwar temple dharamshala booking",
+    "nashik to trimbakeshwar",
+    "mumbai to trimbakeshwar",
+    "pune to trimbakeshwar",
+  ],
+  omkareshwar: [
+    "shri gajanan maharaj sansthan omkareshwar",
+    "shree gajanan maharaj sansthan omkareshwar",
+    "omkareshwar bhakt niwas",
+    "omkareshwar temple accommodation",
+    "omkareshwar darshan timings",
+    "omkareshwar jyotirlinga stay",
+    "omkareshwar yatra planning",
+    "indore to omkareshwar",
+    "ujjain to omkareshwar",
+    "omkareshwar bhakta niwas",
+    "omkareshwar bhakta nivas",
+    "omkareshwar bhakt niwas",
+    "omkareshwar bhakt nivas",
+    "omkareshwar temple stay booking",
+    "omkareshwar dharamshala booking",
+    "omkareshwar accommodation booking",
+    "khandwa to omkareshwar",
+    "bhopal to omkareshwar",
+  ],
+} as const;
+
+/**
+ * Location-intent cluster variants for blog and metadata use.
+ */
+export const LOCATION_INTENT_KEYWORDS = {
+  shegaon: [
+    "shegaon travel guide",
+    "sheogaon travel guide",
+    "shegaon accommodation guide",
+    "shegaon darshan timing guide",
+    "how to reach shegaon temple",
+    "shegaon family trip planning",
+    "shegaon temple nearby places",
+    "shegaon bhakt niwas contact number",
+    "shegaon bhakt niwas online booking",
+    "shegaon bhakta niwas online booking",
+    "shegaon bhakta niwas refund policy",
+    "sheogaon temple accommodation",
+    "buldhana district temple guide",
+    "akola to shegaon route",
+    "pune to shegaon route",
+    "mumbai to shegaon route",
+    "nagpur to shegaon route",
+  ],
+  pandharpur: [
+    "pandharpur travel guide",
+    "pandharpur temple stay guide",
+    "how to reach pandharpur temple",
+    "pandharpur darshan tips",
+    "pandharpur family pilgrimage planning",
+  ],
+  trimbakeshwar: [
+    "trimbakeshwar travel guide",
+    "triambakeshwar travel guide",
+    "trimbakeshwar jyotirlinga darshan guide",
+    "triambakeshwar jyotirlinga stay",
+    "how to reach trimbakeshwar",
+    "trimbakeshwar stay for families",
+    "trimbakeshwar darshan timing tips",
+    "triambakeshwar darshan timing tips",
+  ],
+  omkareshwar: [
+    "omkareshwar travel guide",
+    "omkareshwar jyotirlinga darshan guide",
+    "how to reach omkareshwar temple",
+    "omkareshwar family pilgrimage planning",
+    "omkareshwar darshan timing tips",
+  ],
+} as const;
+
+// Darshan timing and visit-intent keywords
+export const VISIT_INTENT_KEYWORDS = [
+  "shegaon darshan timings",
+  "gajanan maharaj temple timing",
+  "shegaon mandir darshan timing",
+  "shri gajanan maharaj sansthan darshan time",
+  "shegaon temple aarti timings",
+  "gajanan maharaj shegaon morning aarti time",
+  "shegaon temple opening time",
+  "shegaon temple closing time",
+  "how to reach shegaon temple",
+  "shegaon railway station temple distance",
+  "nagpur to shegaon temple",
+  "akola to shegaon train",
+  "mumbai to shegaon train",
+  "pune to shegaon bus",
+  "shegaon temple by road",
+  "shegaon temple bus service",
+  "free bus shegaon temple",
+  "shegaon pilgrimage travel tips",
+  "visit shegaon gajanan maharaj",
+  "shegaon temple darshan guide",
+  "omkareshwar darshan timings",
+  "trimbakeshwar darshan timings",
+  "pandharpur vitthal temple darshan timings",
+] as const;
+
+// Bhakta Niwas / accommodation hub keywords
+export const ACCOMMODATION_HUB_KEYWORDS = [
+  "bhakta niwas booking",
+  "bhakt niwas booking",
+  "bhakta nivas booking",
+  "bhakt nivas booking",
+  "bhakta niwas shegaon booking",
+  "bhakt niwas shegaon booking",
+  "bhakta nivas shegaon booking",
+  "bhakt nivas shegaon booking",
+  "shegaon bhakta niwas",
+  "shegaon bhakt niwas",
+  "shegaon bhakta nivas",
+  "shegaon bhakt nivas",
+  "gajanan maharaj accommodation",
+  "gajanan maharaj sansthan rooms",
+  "sansthan bhakta niwas all locations",
+  "bhakta niwas pandharpur",
+  "bhakta niwas trimbakeshwar",
+  "bhakta niwas omkareshwar",
+  "bhakta nivas pandharpur",
+  "bhakta nivas trimbakeshwar",
+  "bhakta nivas omkareshwar",
+  "temple accommodation booking india",
+  "gajanan maharaj sansthan room booking",
+  "shri gajanan maharaj sansthan accommodation",
+] as const;
+
+// Saint / knowledge-panel authority keywords
+export const SAINT_KEYWORDS = [
+  "gajanan maharaj biography",
+  "gajanan maharaj history",
+  "sant gajanan maharaj",
+  "gajanan maharaj teachings",
+  "gajanan maharaj shegaon story",
+  "gajanan maharaj samadhi",
+  "gajanan maharaj samadhi shegaon",
+  "gajanan maharaj janm sthal",
+  "gajanan maharaj miracles",
+  "gajanan maharaj pothi",
+  "gajanan maharaj satcharitra",
+  "gajanan maharaj birth year 1858",
+  "gajanan maharaj dattatreya",
+  "gajanan maharaj shegaon maharashtra",
+  "gajanan vijayadashami",
+  "shegaon sant gajanan",
+  "gajanan maharaj 1908 sansthan",
+  "gajanan maharaj punyatithi",
+  "gajanan maharaj jayanti",
+  "shri gajanan maharaj samadhi mandir",
+  "gajanan maharaj shegaon darshan",
+  "gajanan maharaj information",
+] as const;
+
+// Room price / tariff search keywords
+export const ROOM_PRICE_KEYWORDS = [
+  "bhakt niwas room rates",
+  "shegaon temple room price",
+  "bhakta niwas ac room price",
+  "shegaon accommodation price list",
+  "bhakt niwas room charges shegaon",
+  "gajanan maharaj sansthan room tariff",
+  "bhakta niwas shegaon ac non ac price",
+  "temple accommodation cheap shegaon",
+  "dharamshala room price shegaon",
+  "shegaon bhakt niwas 2 bed room",
+  "shegaon bhakt niwas 4 bed ac room",
+  "bhakta niwas deluxe room shegaon",
+  "bhakt niwas family room price",
+  "temple stay price maharashtra",
+  "shegaon bhakt niwas room booking charges",
+  "bhakt niwas shegaon donation amount",
+  "gajanan maharaj sansthan accommodation cost",
+] as const;
+
+// Contact / helpline / WhatsApp — highest commercial intent
+export const CONTACT_HELPLINE_KEYWORDS = [
+  "gajanan maharaj sansthan contact number",
+  "shri gajanan maharaj sansthan phone number",
+  "bhakt niwas shegaon phone number",
+  "bhakta niwas booking whatsapp number",
+  "shegaon temple booking helpline",
+  "gajanan maharaj sansthan helpline",
+  "bhakt niwas shegaon contact number",
+  "shegaon mandir booking number",
+  "bhakta niwas whatsapp booking",
+  "gajanan maharaj sansthan whatsapp",
+  "shegaon temple contact number",
+  "shegaon bhakt niwas helpline number",
+  "gajanan maharaj sansthan email",
+  "bhakta niwas booking contact shegaon",
+] as const;
+
+// Official site / brand authority signals
+export const OFFICIAL_SITE_KEYWORDS = [
+  "shri gajanan maharaj sansthan official website",
+  "gajanan maharaj official website shegaon",
+  "shegaon temple official site",
+  "official bhakt niwas booking website",
+  "gajanan maharaj sansthan online booking official",
+  "shegaon mandir official booking",
+  "gajanan maharaj sansthan verified booking",
+  "shri gajanan maharaj sansthan online",
+] as const;
+
+// "Near temple" and budget hotel alternatives
+export const NEAR_TEMPLE_KEYWORDS = [
+  "hotel near shegaon temple",
+  "lodge near gajanan maharaj temple",
+  "accommodation near shegaon station",
+  "dharamshala near shegaon temple",
+  "rooms near shegaon railway station",
+  "best stay near gajanan maharaj mandir",
+  "budget accommodation shegaon temple",
+  "affordable rooms shegaon",
+  "family stay near shegaon temple",
+  "accommodation shegaon buldhana",
+  "cheap accommodation shegaon maharashtra",
+  "guesthouses near shegaon temple",
+  "hotels in shegaon near mandir",
+] as const;
+
+// Festival + year-specific seasonal search keywords
+export const FESTIVAL_YEAR_KEYWORDS = [
+  "ashadhi ekadashi 2026 accommodation pandharpur",
+  "ashadhi ekadashi 2026 bhakta niwas booking",
+  "kartik ekadashi 2026 pandharpur accommodation",
+  "ganesh chaturthi 2026 shegaon accommodation",
+  "navratri 2026 shegaon temple stay",
+  "shivaratri 2027 trimbakeshwar stay",
+  "shivaratri 2027 omkareshwar accommodation",
+  "gudi padwa 2026 shegaon darshan",
+  "ram navami 2026 shegaon accommodation",
+  "maha shivaratri 2027 trimbakeshwar booking",
+  "diwali 2026 shegaon temple visit",
+  "makar sankranti 2027 shegaon",
+  "holi 2027 shegaon temple",
+  "gajanan vijay utsav accommodation",
+  "gajanan maharaj punyatithi 2026 shegaon stay",
+  "ashadhi wari 2026 pandharpur bhakta niwas",
+  "pandharpur wari 2026 accommodation booking",
+] as const;
+
+// Extended travel routes to cover more origin cities
+export const TRAVEL_ROUTE_KEYWORDS = [
+  "hyderabad to shegaon train",
+  "nagpur to shegaon bus",
+  "nagpur to shegaon train time",
+  "aurangabad to shegaon",
+  "wardha to shegaon",
+  "bhandara to shegaon",
+  "washim to shegaon",
+  "yavatmal to shegaon",
+  "khamgaon to shegaon",
+  "delhi to shegaon train",
+  "kolkata to shegaon train",
+  "shegaon to pandharpur",
+  "shegaon to trimbakeshwar",
+  "shegaon to omkareshwar route",
+  "bhopal to omkareshwar bus train",
+  "indore to omkareshwar distance",
+  "nashik to trimbakeshwar train",
+  "pune to trimbakeshwar distance",
+  "solapur to pandharpur accommodation",
+  "akola to shegaon distance km",
+  "amravati to shegaon bus",
+  "nanded to shegaon train",
+  "latur to pandharpur accommodation",
+  "sangli to pandharpur accommodation",
+] as const;
+
+// Festival darshan + booking urgency keywords
+export const PILGRIMAGE_INTENT_KEYWORDS = [
+  "wari accommodation pandharpur 2026",
+  "ashadhi wari 2026 pandharpur accommodation booking",
+  "vithal darshan pandharpur accommodation",
+  "vitthal mandir pandharpur bhakta niwas",
+  "trimbakeshwar jyotirlinga accommodation booking",
+  "omkareshwar jyotirlinga accommodation booking",
+  "12 jyotirlinga yatra accommodation",
+  "maharashtra pilgrimage accommodation",
+  "vidarbha pilgrimage shegaon",
+  "shegaon yatra accommodation",
+  "gajanan maharaj punyatithi accommodation shegaon",
+  "gajanan vijay utsav shegaon booking",
+  "sant gajanan maharaj jayanti shegaon",
+  "temple stay vidarbha maharashtra",
+  "pilgrimage dharamshala maharashtra",
+  "jyotirlinga yatra stay booking",
+  "maharashtra temple pilgrimage accommodation",
+] as const;
+
+// Specific room type searches users make
+export const ROOM_TYPE_KEYWORDS = [
+  "2 bed ac room shegaon bhakt niwas",
+  "4 bed ac room shegaon bhakt niwas",
+  "family room shegaon bhakt niwas",
+  "deluxe room shegaon temple accommodation",
+  "luxury suite shegaon temple",
+  "bhakt niwas dormitory shegaon",
+  "bhakt niwas single room shegaon",
+  "ac double room shegaon temple",
+  "non ac room bhakt niwas shegaon",
+  "bhakt niwas shegaon room types price",
+  "shegaon temple cheap room booking",
+  "shegaon bhakt niwas room availability",
+  "bhakt niwas shegaon deluxe booking",
+  "shegaon temple family accommodation",
+  "accommodation with meals shegaon",
+  "room with food shegaon temple",
+] as const;
+
+// Temple services, mahaprasad, amenities-based searches
+export const SERVICES_KEYWORDS = [
+  "mahaprasad shegaon temple",
+  "shegaon temple free food",
+  "anand sagar shegaon",
+  "anand vihar shegaon accommodation",
+  "shegaon visawa accommodation",
+  "shegaon bhakt niwas visawa",
+  "anand sagar shegaon park",
+  "gajanan maharaj temple water park",
+  "shegaon temple facilities",
+  "bhakt niwas meals included",
+  "temple stay with food maharashtra",
+  "shegaon temple hot water facility",
+  "bhakt niwas ac rooms shegaon",
+  "gajanan maharaj sansthan canteen",
+  "shegaon bhakt niwas free bus service",
+  "anand vihar shegaon park accommodation",
+  "shegaon prasadalaya timings",
+  "matoshree mandir shegaon",
+  "gajananwadi darshan guide",
+  "free mahaprasad shegaon temple timing",
+  "shegaon annadan seva",
+  "palkhi procession shegaon thursday",
+  "shegaon temple elephants darshan",
+] as const;
+
+/**
+ * Devanagari (Marathi + Hindi script) brand variants.
+ * Captures native-script queries for Google India + voice assistants.
+ */
+export const DEVANAGARI_BRAND_VARIANTS = [
+  "श्री गजानन महाराज",
+  "श्री गजानन महाराज संस्थान",
+  "श्री गजानन महाराज संस्थान शेगांव",
+  "श्री गजानन महाराज संस्थान शेगाव",
+  "गजानन महाराज",
+  "गजानन महाराज संस्थान",
+  "गजानन महाराज शेगांव",
+  "संत गजानन महाराज",
+  "संत गजानन महाराज शेगांव",
+  "गजानन महाराज मंदिर",
+  "गजानन महाराज मंदिर शेगांव",
+  "शेगांव मंदिर",
+  "शेगांव संस्थान",
+  "शेगांव गजानन महाराज",
+  "श्री गजानन महाराज समाधी मंदिर",
+  "श्री गजानन महाराज समाधी मंदिर शेगांव",
+  "गजानन महाराज समाधी",
+  "गजाननबुवा",
+  "गजाननबुवा शेगांव",
+  "श्रीगजानन महाराज",
+  "श्रीगजानन महाराज संस्थान",
+] as const;
+
+/**
+ * Devanagari long-tail / informational keywords.
+ */
+export const DEVANAGARI_KEYWORDS = [
+  "गजानन महाराज आरती",
+  "श्री गजानन महाराज आरती",
+  "गजानन महाराज आरती मराठी",
+  "गजानन महाराज भजन",
+  "गजानन महाराज मंत्र",
+  "गण गण गणात बोते",
+  "गण गण गणात बोते अर्थ",
+  "जय जय सच्चिदानंद आरती",
+  "गजानन महाराज स्तोत्र",
+  "श्री गजानन विजय ग्रंथ",
+  "श्री गजानन विजय",
+  "गजानन विजय पोथी",
+  "गजानन विजय ग्रंथ पोथी",
+  "गजानन विजय २१ अध्याय",
+  "गजानन विजय अध्याय १",
+  "दासगणू महाराज",
+  "संत दासगणू महाराज",
+  "दासगणू महाराज गजानन विजय",
+  "पोथी पारायण विधी",
+  "शेगांव भक्त निवास",
+  "शेगांव भक्त निवास बुकिंग",
+  "भक्त निवास शेगांव",
+  "शेगांव दर्शन वेळ",
+  "शेगांव दर्शन आज",
+  "शेगांव आरती वेळ",
+  "शेगांव महाप्रसाद",
+  "शेगांव पालखी",
+  "शेगांव कसे जायचे",
+  "मुंबई ते शेगांव",
+  "पुणे ते शेगांव",
+  "नागपूर ते शेगांव",
+  "अकोला ते शेगांव",
+  "शेगांव आनंद सागर",
+  "आनंद सागर शेगांव वेळ",
+  "आनंद विहार शेगांव",
+  "गजानन महाराज पुण्यतिथी",
+  "ऋषी पंचमी",
+  "गजानन महाराज प्रकट दिन",
+  "गजानन महाराज जयंती",
+  "पंढरपूर",
+  "पंढरपूर विठ्ठल मंदिर",
+  "पंढरपूर आषाढी एकादशी",
+  "त्र्यंबकेश्वर",
+  "त्र्यंबकेश्वर ज्योतिर्लिंग",
+  "ओंकारेश्वर",
+  "ओंकारेश्वर ज्योतिर्लिंग",
+  "गजानन महाराज फोटो",
+  "गजानन महाराज मूर्ती",
+  "गजानन महाराज चरित्र",
+  "बुलडाणा शेगांव",
+] as const;
+
+/**
+ * Gajanan Vijay Granth — huge untapped query volume.
+ */
+export const GRANTH_KEYWORDS = [
+  "gajanan vijay granth",
+  "shri gajanan vijay granth",
+  "shree gajanan vijay granth",
+  "gajanan vijay pothi",
+  "vijay granth pothi",
+  "shri gajanan vijay",
+  "gajanan vijay 21 adhyay",
+  "gajanan vijay twenty one chapters",
+  "gajanan vijay granth marathi",
+  "gajanan vijay granth english",
+  "gajanan vijay granth hindi",
+  "gajanan vijay granth gujarati",
+  "gajanan vijay granth pdf",
+  "gajanan vijay granth pdf marathi",
+  "gajanan vijay granth pdf download",
+  "gajanan vijay adhyay 1",
+  "gajanan vijay adhyay 11",
+  "gajanan vijay adhyay 21",
+  "dasganu maharaj",
+  "das ganu maharaj",
+  "sant dasganu",
+  "dasganu maharaj author gajanan vijay",
+  "pothi parayan vidhi",
+  "gajanan vijay parayan",
+  "saptah parayan gajanan maharaj",
+  "3669 ovis gajanan vijay",
+  "ovi count gajanan vijay granth",
+  "gajanan vijay granth buy online",
+  "gajanan vijay granth book shegaon",
+] as const;
+
+/**
+ * Mantra / aarti / bhajan queries.
+ */
+export const MANTRA_AARTI_KEYWORDS = [
+  "gan gan ganat bote",
+  "gana gana ganat bote",
+  "gan gan ganat bote mantra",
+  "gan gan ganat bote meaning",
+  "gan gan ganat bote lyrics",
+  "jai gajanan",
+  "jai jai swami gajanan",
+  "shree gajanan jai gajanan",
+  "gajanan maharaj aarti",
+  "gajanan maharaj aarti lyrics",
+  "gajanan maharaj aarti marathi",
+  "gajanan maharaj aarti hindi",
+  "jai jai satchidanand aarti",
+  "gajanan maharaj bhajan",
+  "gajanan maharaj bhajan lyrics",
+  "gajanan maharaj bhajan mp3",
+  "gajanan maharaj stotra",
+  "gajanan maharaj raksha mantra",
+  "gajanan maharaj sahasranam",
+  "kakad aarti time shegaon",
+  "kakad aarti shegaon temple",
+  "shej aarti shegaon temple",
+  "madhyan aarti shegaon",
+  "sandhya aarti shegaon",
+  "gajanan maharaj ashtak",
+] as const;
+
+/**
+ * Festival & event queries — high seasonality.
+ */
+export const FESTIVAL_EVENT_KEYWORDS = [
+  "pragat din utsav shegaon",
+  "prakat din utsav shegaon",
+  "gajanan maharaj pragat din 2027",
+  "gajanan maharaj prakat din 23 february",
+  "rushi panchami shegaon 2026",
+  "rishi panchami gajanan maharaj",
+  "gajanan maharaj punyatithi 2026",
+  "gajanan maharaj samadhi din",
+  "gajanan maharaj samadhi din 8 september",
+  "gajanan maharaj jayanti 2026",
+  "thursday palkhi shegaon",
+  "warkari palkhi shegaon",
+  "shegaon palkhi procession time",
+  "gajanan maharaj palkhi pandharpur",
+  "pandharpur wari 2026 shegaon palkhi",
+  "shegaon utsav calendar",
+  "shegaon festival schedule 2026",
+  "shegaon annual celebrations",
+] as const;
+
+/**
+ * Anand Sagar / Anand Vihar / Matoshree Mandir / nearby attractions.
+ */
+export const ANAND_SAGAR_KEYWORDS = [
+  "anand sagar shegaon",
+  "anand sagar shegaon timings",
+  "anand sagar shegaon entry fee",
+  "anand sagar shegaon tickets",
+  "dhyan kendra shegaon",
+  "swami vivekananda statue shegaon",
+  "anand sagar meditation center",
+  "anand sagar boating",
+  "anand sagar children park",
+  "anand sagar lion garden",
+  "matoshree mandir shegaon",
+  "gajananwadi shegaon",
+  "anand vihar shegaon",
+  "visawa shegaon",
+  "places to visit near shegaon temple",
+  "shegaon one day sightseeing",
+] as const;
+
+/**
+ * Voice search / AI-Overview friendly conversational queries.
+ */
+export const VOICE_QUERY_KEYWORDS = [
+  "what time does shegaon temple open today",
+  "what time does shegaon temple close",
+  "is bhakt niwas shegaon free",
+  "is bhakta niwas free or donation based",
+  "how to book shegaon bhakt niwas online",
+  "how to reach shegaon from mumbai",
+  "how to reach shegaon from pune",
+  "how to reach shegaon from nagpur",
+  "how far is shegaon from akola",
+  "who wrote gajanan vijay granth",
+  "who is gajanan maharaj of shegaon",
+  "when did gajanan maharaj take samadhi",
+  "when is rushi panchami 2026",
+  "when is gajanan maharaj punyatithi",
+  "what is gan gan ganat bote meaning",
+  "where is gajanan maharaj samadhi",
+  "why is shegaon famous",
+  "is shegaon temple open today",
+  "is palkhi today at shegaon",
+  "what is the aarti schedule at shegaon",
+  "is there free food at shegaon temple",
+] as const;
+
+/**
+ * Media / photo / wallpaper queries — drives image-search traffic.
+ */
+export const MEDIA_KEYWORDS = [
+  "gajanan maharaj photo",
+  "gajanan maharaj hd photo",
+  "gajanan maharaj wallpaper",
+  "gajanan maharaj hd wallpaper",
+  "gajanan maharaj image",
+  "gajanan maharaj image download",
+  "gajanan maharaj status video",
+  "gajanan maharaj whatsapp status",
+  "gajanan maharaj samadhi photo",
+  "shegaon temple photo",
+  "shegaon temple hd image",
+  "gajanan maharaj murti",
+  "gajanan maharaj padhuka",
+] as const;
+
+// Combine all keywords for global use
+export const ALL_KEYWORDS = [
+  ...BRAND_VARIANTS,
+  ...PRIMARY_KEYWORDS,
+  ...SECONDARY_KEYWORDS,
+  ...LONGTAIL_KEYWORDS,
+  ...Object.values(LOCATION_KEYWORDS).flat(),
+  ...Object.values(LOCATION_INTENT_KEYWORDS).flat(),
+  ...VISIT_INTENT_KEYWORDS,
+  ...ACCOMMODATION_HUB_KEYWORDS,
+  ...SAINT_KEYWORDS,
+  ...ROOM_PRICE_KEYWORDS,
+  ...CONTACT_HELPLINE_KEYWORDS,
+  ...OFFICIAL_SITE_KEYWORDS,
+  ...NEAR_TEMPLE_KEYWORDS,
+  ...FESTIVAL_YEAR_KEYWORDS,
+  ...TRAVEL_ROUTE_KEYWORDS,
+  ...SERVICES_KEYWORDS,
+  ...PILGRIMAGE_INTENT_KEYWORDS,
+  ...ROOM_TYPE_KEYWORDS,
+  ...DEVANAGARI_BRAND_VARIANTS,
+  ...DEVANAGARI_KEYWORDS,
+  ...GRANTH_KEYWORDS,
+  ...MANTRA_AARTI_KEYWORDS,
+  ...FESTIVAL_EVENT_KEYWORDS,
+  ...ANAND_SAGAR_KEYWORDS,
+  ...VOICE_QUERY_KEYWORDS,
+  ...MEDIA_KEYWORDS,
+] as const;
+
+/**
+ * Deduplicate and trim keywords defensively before passing to metadata.
+ * Keeps metadata robust when many keyword sources are merged.
+ */
+export function getUniqueKeywords(
+  keywords: ReadonlyArray<string>,
+  limit = 80
+): string[] {
+  const normalized = keywords
+    .map((keyword) => keyword.trim().toLowerCase())
+    .filter(Boolean);
+  return [...new Set(normalized)].slice(0, limit);
+}
+
+// Social media profiles
+export const SOCIAL_PROFILES = {
+  facebook: "https://facebook.com/gajananmaharajsansthan",
+  youtube: "https://youtube.com/@gajananmaharajsansthan",
+  instagram: "https://instagram.com/gajananmaharajsansthan",
+  twitter: "https://twitter.com/sgms_shegaon",
+} as const;
+
+// Image dimensions for Open Graph
+export const OG_IMAGE_DIMENSIONS = {
+  width: 1200,
+  height: 630,
+} as const;
+
+// Geo coordinates for main temple (Shegaon)
+export const MAIN_TEMPLE_COORDINATES = {
+  latitude: 20.7934,
+  longitude: 76.6983,
+} as const;

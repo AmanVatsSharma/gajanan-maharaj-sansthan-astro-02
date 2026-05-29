@@ -1,0 +1,354 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { CONTACT_DETAILS } from "@/data/contact";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  BRAND_VARIANTS,
+  PRIMARY_KEYWORDS,
+  VISIT_INTENT_KEYWORDS,
+  LOCATION_KEYWORDS,
+  TRAVEL_ROUTE_KEYWORDS,
+  NEAR_TEMPLE_KEYWORDS,
+  VOICE_QUERY_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import {
+  getPlaceOfWorshipSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getHowToSchema,
+  getSpeakableSchema,
+} from "@/lib/seo/structured-data";
+import { sansthanLocations } from "@/data/sansthan-data";
+
+const meta = generatePageMetadata({
+  title: "How to Reach Shegaon Temple",
+  description:
+    "How to reach Shri Gajanan Maharaj Sansthan Shegaon by train, bus & road from Nagpur, Mumbai, Pune, Akola. Free Sansthan bus from Shegaon station.",
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...PRIMARY_KEYWORDS,
+    ...VISIT_INTENT_KEYWORDS,
+    ...LOCATION_KEYWORDS.shegaon,
+    ...TRAVEL_ROUTE_KEYWORDS,
+    ...NEAR_TEMPLE_KEYWORDS,
+    ...VOICE_QUERY_KEYWORDS,
+    "how to reach shegaon",
+    "shegaon railway station",
+    "shegaon bus stand",
+    "nagpur to shegaon",
+    "nagpur to shegaon train",
+    "nagpur to shegaon distance",
+    "mumbai to shegaon train",
+    "pune to shegaon",
+    "akola to shegaon",
+    "amravati to shegaon",
+    "aurangabad to shegaon",
+    "jalgaon to shegaon",
+    "shegaon temple directions",
+    "shegaon mandir kaise pahunche",
+    "free bus shegaon railway station temple",
+    "shegaon temple by road distance",
+    "nearest airport shegaon",
+    "dr babasaheb ambedkar airport nagpur shegaon",
+    "shegaon station code sgo",
+    "train to shegaon from hyderabad",
+    "wardha to shegaon train",
+    "shegaon msrtc bus",
+    "how to reach shegaon from delhi",
+  ]),
+  path: "/how-to-reach",
+});
+
+const shegaon = sansthanLocations.find((l) => l.id === "shegaon-bhakt-niwas")!;
+const placeSchema = getPlaceOfWorshipSchema(shegaon);
+
+const howToSchema = getHowToSchema(
+  "How to Reach Shri Gajanan Maharaj Sansthan Shegaon",
+  "Step-by-step travel directions to Shegaon temple by train, road, and air.",
+  [
+    "By Train: Board a train to Shegaon Railway Station (SGO), which is on the Mumbai–Nagpur–Howrah main line. Trains from Nagpur (~2.5 hrs), Mumbai (~10 hrs), Pune (~11 hrs), Akola (~1 hr).",
+    "From Shegaon Station: A free bus service operated by Shri Gajanan Maharaj Sansthan runs from the station to the temple complex at regular intervals. Look for the Sansthan bus near the main exit.",
+    "By Road: Shegaon is on NH-53 (Nagpur–Mumbai). From Nagpur (~150 km via NH-53). From Akola (~80 km). State highway buses from Akola, Amravati, Nagpur, Aurangabad available.",
+    "By Air: The nearest airport is Dr. Babasaheb Ambedkar International Airport, Nagpur (~165 km). From Nagpur airport, take a cab or taxi to Shegaon (approx. 2.5–3 hrs).",
+    "On arrival: Auto-rickshaws and tempo services are available at the station and bus stand to reach Bhakta Niwas. The main temple complex is walkable from Bhakta Niwas.",
+  ],
+  "/how-to-reach"
+);
+
+const faqSchema = getFAQSchema([
+  {
+    question: "How to reach Shri Gajanan Maharaj Sansthan Shegaon by train?",
+    answer:
+      "Shegaon Railway Station (SGO) is on the main Mumbai–Nagpur–Howrah Central Railway line. Trains from Nagpur take approximately 2.5 hours. Trains from Mumbai take approximately 10–11 hours. From the station, a free Sansthan bus takes you directly to the temple complex.",
+  },
+  {
+    question: "Is there a free bus from Shegaon railway station to the temple?",
+    answer:
+      "Yes. Shri Gajanan Maharaj Sansthan operates a free bus service from Shegaon Railway Station to the main temple complex at regular intervals. This is one of the most convenient ways to reach the temple without any cost.",
+  },
+  {
+    question: "What is the distance from Nagpur to Shegaon?",
+    answer:
+      "The distance from Nagpur to Shegaon is approximately 150 km via NH-53. By train it takes about 2.5 hours. By road it takes approximately 2–2.5 hours depending on traffic.",
+  },
+  {
+    question: "What is the distance from Akola to Shegaon?",
+    answer:
+      "The distance from Akola to Shegaon is approximately 80 km. Buses and shared autos are available from Akola to Shegaon. By train it takes approximately 1 hour.",
+  },
+  {
+    question: "Which is the nearest airport to Shegaon temple?",
+    answer:
+      "The nearest airport to Shegaon is Dr. Babasaheb Ambedkar International Airport, Nagpur (IATA: NAG), approximately 165 km away. From Nagpur airport, take a taxi or cab to Shegaon (2.5–3 hours).",
+  },
+  {
+    question: "How to reach Shegaon from Mumbai by train?",
+    answer:
+      "From Mumbai (Chhatrapati Shivaji Maharaj Terminus), several trains run to Shegaon Station (SGO) on the Central Railway line. Journey time is approximately 10–11 hours. Trains like Vidarbha Express, Sewagram Express, and others stop at Shegaon.",
+  },
+  {
+    question: "How to reach Shegaon from Pune?",
+    answer:
+      "From Pune, you can take a train via Daund–Manmad or via Nagpur to reach Shegaon (approximately 11–12 hours by train). Alternatively, drive from Pune via NH-65 to Ahmednagar, then NH-753 toward Aurangabad and Jalgaon to reach Shegaon (approximately 500 km by road).",
+  },
+]);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "How to Reach", url: "/how-to-reach" },
+]);
+
+const speakableSchema = getSpeakableSchema("/how-to-reach", ["h1", ".reach-intro"]);
+
+const structuredPayload = [placeSchema, howToSchema, faqSchema, breadcrumbSchema, speakableSchema];
+---
+
+<Layout meta={meta}>
+  {structuredPayload.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+
+  <div class="container py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold uppercase tracking-widest text-brand-saffron mb-3">
+        Travel Guide
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold font-heading text-brand-maroon mb-4">
+        How to Reach Shegaon
+      </h1>
+      <p class="reach-intro text-lg text-muted-foreground max-w-2xl mx-auto">
+        Complete directions to Shri Gajanan Maharaj Sansthan, Shegaon — by train, bus, road, and air.
+        Free bus service from Shegaon Railway Station to the temple.
+      </p>
+    </div>
+
+    <!-- Quick Info Bar -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      {[
+        { label: "From Nagpur", value: "~150 km / 2.5 hr train" },
+        { label: "From Akola", value: "~80 km / 1 hr train" },
+        { label: "From Mumbai", value: "~600 km / 10 hr train" },
+        { label: "From Pune", value: "~500 km / 11 hr train" },
+      ].map((item) => (
+        <div class="rounded-xl border bg-card p-4 text-center">
+          <p class="text-xs text-muted-foreground mb-1">{item.label}</p>
+          <p class="text-sm font-semibold text-foreground">{item.value}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- By Train -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        By Train to Shegaon (Recommended)
+      </h2>
+      <div class="rounded-xl border bg-card p-6">
+        <p class="text-muted-foreground mb-4">
+          <strong class="text-foreground">Shegaon Railway Station (Station Code: SGO)</strong> is on the
+          Howrah–Mumbai Central Railway main line, making it easily accessible from most major cities in India.
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full text-sm border rounded-xl overflow-hidden">
+            <thead class="bg-brand-maroon text-white">
+              <tr>
+                <th class="px-4 py-3 text-left font-semibold">From</th>
+                <th class="px-4 py-3 text-left font-semibold">Distance</th>
+                <th class="px-4 py-3 text-left font-semibold">Approx. Train Time</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y">
+              {[
+                { from: "Nagpur", dist: "~150 km", time: "~2.5 hours" },
+                { from: "Akola", dist: "~80 km", time: "~1 hour" },
+                { from: "Amravati", dist: "~110 km", time: "~1.5 hours" },
+                { from: "Jalgaon", dist: "~120 km", time: "~1.5 hours" },
+                { from: "Mumbai (CSMT)", dist: "~580 km", time: "~10–11 hours" },
+                { from: "Pune", dist: "~520 km", time: "~11–12 hours" },
+                { from: "Aurangabad", dist: "~210 km", time: "~3 hours" },
+              ].map((row) => (
+                <tr class="bg-background hover:bg-muted/20">
+                  <td class="px-4 py-3 font-medium">{row.from}</td>
+                  <td class="px-4 py-3 text-muted-foreground">{row.dist}</td>
+                  <td class="px-4 py-3 text-muted-foreground">{row.time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="rounded-lg bg-green-50 border border-green-200 p-4">
+          <p class="text-sm font-semibold text-green-800 mb-1">Free Bus Service from Station</p>
+          <p class="text-sm text-green-700">
+            Shri Gajanan Maharaj Sansthan operates a <strong>free bus service</strong> from
+            Shegaon Railway Station to the temple complex. Look for the Sansthan bus near the
+            main station exit. This is the most convenient and cost-free way to reach the temple.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- By Road -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        By Road or Bus to Shegaon
+      </h2>
+      <div class="rounded-xl border bg-card p-6">
+        <p class="text-muted-foreground mb-4">
+          Shegaon is well connected by state highways. <strong class="text-foreground">NH-53</strong> (Nagpur–Aurangabad) passes through Shegaon.
+          MSRTC (Maharashtra State Road Transport Corporation) buses run from Nagpur, Akola, Amravati, Aurangabad, Mumbai, and Pune.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { city: "Nagpur", route: "Via NH-53 (Amravati–Shegaon road)", note: "Most frequent bus services" },
+            { city: "Akola", route: "Via State Highway, ~80 km", note: "Short, easy journey" },
+            { city: "Amravati", route: "Via NH-53, ~110 km", note: "Direct buses available" },
+            { city: "Aurangabad", route: "Via NH-752/State Roads", note: "Buses via Jalna, Buldhana" },
+          ].map((r) => (
+            <div class="rounded-lg border p-4">
+              <p class="font-semibold text-brand-maroon mb-0.5">{r.city} to Shegaon</p>
+              <p class="text-xs text-muted-foreground">{r.route}</p>
+              <p class="text-xs text-brand-saffron font-medium mt-1">{r.note}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- By Air -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        By Air to Shegaon (via Nagpur Airport)
+      </h2>
+      <div class="rounded-xl border bg-card p-6">
+        <p class="text-muted-foreground mb-4">
+          The nearest airport to Shegaon is <strong class="text-foreground">Dr. Babasaheb Ambedkar International Airport, Nagpur (IATA: NAG)</strong>,
+          approximately 165 km away.
+        </p>
+        <ol class="space-y-3 text-sm text-muted-foreground">
+          <li class="flex gap-3"><span class="font-bold text-brand-maroon">1.</span> Fly into Nagpur (NAG) airport — well connected from Mumbai, Delhi, Hyderabad, Bengaluru.</li>
+          <li class="flex gap-3"><span class="font-bold text-brand-maroon">2.</span> From Nagpur airport, hire a prepaid cab/taxi to Shegaon (~165 km, approximately 2.5–3 hours).</li>
+          <li class="flex gap-3"><span class="font-bold text-brand-maroon">3.</span> Alternatively, take a cab to Nagpur Railway Station and board a train to Shegaon (fastest option).</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Local Transport -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        Local Transport in Shegaon
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {[
+          { mode: "Free Sansthan Bus", desc: "Operates between Railway Station and temple complex. Available at regular intervals." },
+          { mode: "Auto-Rickshaw / Tempo", desc: "Available at the railway station and bus stand for short distances to Bhakta Niwas." },
+          { mode: "Walking", desc: "The main temple and Bhakta Niwas (Bhakt Niwas) complex are close to each other and walkable." },
+        ].map((t) => (
+          <div class="rounded-xl border bg-card p-5">
+            <p class="font-bold text-brand-maroon font-heading mb-2">{t.mode}</p>
+            <p class="text-sm text-muted-foreground">{t.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Address + Maps -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        Address &amp; Google Maps
+      </h2>
+      <div class="rounded-xl border bg-card p-6 mb-4">
+        <p class="font-semibold text-foreground mb-1">Shri Gajanan Maharaj Sansthan</p>
+        <p class="text-muted-foreground text-sm">
+          Near Shri Gajanan Maharaj Temple, Shegaon,<br />
+          Dist. Buldhana, Maharashtra – 444203
+        </p>
+        <p class="mt-3 text-sm">
+          <strong>Booking Helpline:</strong>{" "}
+          <a href={`tel:${CONTACT_DETAILS.booking.mobile}`} class="text-brand-saffron hover:text-brand-maroon">
+            {CONTACT_DETAILS.booking.mobile}
+          </a>
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        {sansthanLocations.map((loc) => (
+          <a
+            href={loc.googleMapsLink || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm font-medium text-brand-maroon hover:text-brand-saffron transition-colors inline-flex items-center gap-1 border rounded-lg px-3 py-2"
+          >
+            {loc.city} Map ↗
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-6">
+        How to Reach — FAQs
+      </h2>
+      <div class="space-y-4 max-w-3xl">
+        {[
+          { q: "Is there a direct train from Hyderabad to Shegaon?", a: "Yes, several trains on the Hyderabad–Nagpur and Hyderabad–Mumbai routes stop at Shegaon. Check the Indian Railways IRCTC website for current train schedules." },
+          { q: "Can I hire a private cab from Nagpur to Shegaon?", a: "Yes, private cabs and taxi services from Nagpur to Shegaon are readily available from Nagpur Airport and Nagpur Railway Station. The journey takes approximately 2.5 hours via NH-53." },
+          { q: "Is there parking available at Shegaon Bhakta Niwas?", a: "Yes, Shri Gajanan Maharaj Sansthan provides parking facilities for devotees visiting by private vehicle. Parking is available near the temple complex and Bhakta Niwas." },
+        ].map((faq) => (
+          <details class="rounded-xl border bg-card p-5">
+            <summary class="font-semibold text-brand-maroon cursor-pointer list-none flex justify-between items-center gap-3">
+              {faq.q}
+              <span class="shrink-0 text-brand-saffron">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="rounded-2xl bg-brand-maroon/5 border border-brand-maroon/20 p-8 text-center mb-8">
+      <h2 class="text-xl font-bold font-heading text-brand-maroon mb-2">
+        Book Bhakta Niwas Before You Travel
+      </h2>
+      <p class="text-sm text-muted-foreground mb-6 max-w-lg mx-auto">
+        Secure your accommodation at Shegaon, Pandharpur, Trimbakeshwar, or Omkareshwar before your journey.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/bhakta-niwas" class="inline-flex items-center gap-2 rounded-lg bg-brand-maroon px-6 py-3 text-white font-semibold hover:bg-brand-maroon/90 transition-colors">
+          Book Bhakta Niwas
+        </a>
+        <a href="/darshan-timings" class="inline-flex items-center gap-2 rounded-lg border border-brand-maroon px-6 py-3 text-brand-maroon font-semibold hover:bg-brand-maroon/5 transition-colors">
+          Darshan Timings
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t pt-6 flex flex-wrap gap-6 justify-center text-sm font-medium">
+      <a href="/locations" class="text-brand-maroon hover:text-brand-saffron">All Locations</a>
+      <a href="/bhakta-niwas" class="text-brand-maroon hover:text-brand-saffron">Bhakta Niwas</a>
+      <a href="/booking" class="text-brand-maroon hover:text-brand-saffron">Booking Form</a>
+      <a href="/contact" class="text-brand-maroon hover:text-brand-saffron">Contact &amp; Maps</a>
+    </div>
+  </div>
+</Layout>

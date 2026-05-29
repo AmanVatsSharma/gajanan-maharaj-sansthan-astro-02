@@ -1,0 +1,140 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { BlogCard } from "@/features/blog/components/BlogCard";
+import { getPostsByLocationId } from "@/lib/blog";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { LocationDetailPageBody } from "@/features/locations/components/LocationDetailPageBody";
+import { generateLocationMetadata } from "@/lib/seo/metadata";
+import {
+  BRAND_VARIANTS,
+  LOCATION_KEYWORDS,
+  ROOM_PRICE_KEYWORDS,
+  NEAR_TEMPLE_KEYWORDS,
+  CONTACT_HELPLINE_KEYWORDS,
+  ACCOMMODATION_HUB_KEYWORDS,
+  VISIT_INTENT_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import {
+  getHinduTempleSchema,
+  getLocalBusinessWithRatingSchema,
+  getLodgingBusinessWithRatingSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getServiceSchema,
+} from "@/lib/seo/structured-data";
+import { getLocationFAQs } from "@/data/faq";
+import { CONTACT_DETAILS } from "@/data/contact";
+import { testimonials } from "@/data/testimonials";
+
+export function getStaticPaths() {
+  return sansthanLocations.map((location) => ({
+    params: { id: location.id },
+  }));
+}
+
+const { id } = Astro.params;
+const location = sansthanLocations.find((l) => l.id === id);
+
+if (!location) {
+  return Astro.redirect("/404");
+}
+
+const cityKey = location.city.toLowerCase() as keyof typeof LOCATION_KEYWORDS;
+const locationKeywords = LOCATION_KEYWORDS[cityKey] || [];
+
+const meta = generateLocationMetadata(
+  location.name,
+  location.city,
+  location.description,
+  location.images[0] || "/images/shegaon-temple.svg",
+  location.id,
+  getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...locationKeywords,
+    ...ROOM_PRICE_KEYWORDS,
+    ...NEAR_TEMPLE_KEYWORDS,
+    ...CONTACT_HELPLINE_KEYWORDS,
+    ...ACCOMMODATION_HUB_KEYWORDS,
+    ...VISIT_INTENT_KEYWORDS,
+  ]),
+  location.coordinates
+);
+
+const locationRating = {
+  ratingValue: 4.9,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+    ...(t.date ? { datePublished: t.date } : {}),
+  })),
+};
+
+const hinduTempleSchema = getHinduTempleSchema(location);
+const localBusinessSchema = getLocalBusinessWithRatingSchema(location, locationRating);
+const lodgingBusinessSchema = getLodgingBusinessWithRatingSchema(
+  location,
+  locationRating,
+  { min: 500, max: 3000, currency: "₹" }
+);
+const totalCapacity = location.facilities.reduce((sum, f) => sum + f.capacity, 0);
+const locationFAQs = getLocationFAQs(
+  location.name,
+  location.city,
+  location.contact[0] || CONTACT_DETAILS.booking.mobile,
+  totalCapacity
+);
+const faqSchema = getFAQSchema(
+  locationFAQs.map((faq) => ({ question: faq.question, answer: faq.answer }))
+);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Locations", url: "/locations" },
+  { name: location.name, url: `/locations/${location.id}` },
+]);
+
+const serviceSchema = getServiceSchema();
+
+const structuredPayload = [
+  hinduTempleSchema,
+  localBusinessSchema,
+  lodgingBusinessSchema,
+  serviceSchema,
+  faqSchema,
+  breadcrumbSchema,
+];
+
+const relatedPosts = await getPostsByLocationId(location.id, 6);
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+  <LocationDetailPageBody client:visible location={location} />
+  {
+    relatedPosts.length > 0 && (
+      <section class="container py-12 border-t">
+        <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">Related Guides</h2>
+        <p class="text-muted-foreground mb-6">
+          Planning a visit? Explore these guides for darshan, accommodation, and travel tips.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {relatedPosts.map((post) => (
+            <BlogCard post={post} />
+          ))}
+        </div>
+        <a
+          href="/blog"
+          class="inline-block mt-6 text-sm font-medium text-brand-saffron hover:text-brand-maroon transition-colors"
+        >
+          View all guides →
+        </a>
+      </section>
+    )
+  }
+</Layout>

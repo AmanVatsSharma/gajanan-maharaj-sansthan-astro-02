@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pandharpur Sansthan Accommodation</title>
+  <desc id="desc">Representative image for Shri Gajanan Maharaj Sansthan Pandharpur location.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3F1B0D"/>
+      <stop offset="0.58" stop-color="#7C3A1F"/>
+      <stop offset="1" stop-color="#EAB308"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="140" r="100" fill="#FDE68A" opacity="0.2"/>
+  <text x="80" y="250" fill="#FFFBEB" font-family="Georgia, serif" font-size="56" font-weight="700">Pandharpur Location</text>
+  <text x="80" y="320" fill="#FFFBEB" font-family="Georgia, serif" font-size="36" opacity="0.94">Shri Gajanan Maharaj Sansthan</text>
+  <text x="80" y="380" fill="#FFFBEB" font-family="Arial, sans-serif" font-size="28" opacity="0.86">Accommodation support near pilgrimage routes</text>
+</svg>

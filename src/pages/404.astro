@@ -1,0 +1,61 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getBreadcrumbSchema, getOrganizationSchema } from "@/lib/seo/structured-data";
+
+const meta = generatePageMetadata({
+  title: "Page Not Found",
+  description: "Page not found at Shri Gajanan Maharaj Sansthan, Shegaon. Return to homepage to book Bhakta Niwas, check darshan timings, or explore all temple locations.",
+  path: "/404",
+  noIndex: true,
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([{ name: "Home", url: "/" }]);
+const orgSchema = getOrganizationSchema();
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  <div class="container py-16 md:py-24">
+    <div class="mx-auto max-w-2xl text-center space-y-6">
+      <div
+        class="inline-flex items-center justify-center rounded-full border border-brand-gold/40 bg-background/60 px-4 py-1 text-xs font-medium tracking-wider text-brand-maroon backdrop-blur-sm"
+      >
+        404 • Page Not Found
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold font-heading text-brand-maroon text-balance">
+        This page is not available
+      </h1>
+
+      <p class="text-muted-foreground text-lg leading-relaxed">
+        The page you&apos;re looking for may have moved or no longer exists. Please use the options
+        below to continue.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+        <a
+          href="/"
+          class="inline-flex items-center justify-center h-12 rounded-full px-6 text-base bg-brand-saffron text-white hover:bg-brand-maroon transition-colors"
+        >
+          Go to Home
+        </a>
+        <a
+          href="/locations"
+          class="inline-flex items-center justify-center h-12 rounded-full px-6 text-base border border-brand-maroon/20 hover:bg-muted transition-colors"
+        >
+          View Locations
+        </a>
+        <a
+          href="/booking"
+          class="inline-flex items-center justify-center h-12 rounded-full px-6 text-base hover:bg-muted transition-colors"
+        >
+          Booking Request
+        </a>
+      </div>
+
+      <p class="pt-4 text-sm text-muted-foreground italic">&quot;Jai Gajanan Maharaj&quot;</p>
+    </div>
+  </div>
+</Layout>

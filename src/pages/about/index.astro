@@ -1,0 +1,166 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { BlogCard } from "@/features/blog/components/BlogCard";
+import { ABOUT_EXPLORE_GUIDE_SLUGS } from "@/features/blog/constants";
+import { getPostsBySlugs } from "@/lib/blog";
+import { sansthanHistory } from "@/data/sansthan-data";
+import {
+  BRAND_VARIANTS,
+  SAINT_KEYWORDS,
+  DEVANAGARI_BRAND_VARIANTS,
+  GRANTH_KEYWORDS,
+  OFFICIAL_SITE_KEYWORDS,
+  SERVICES_KEYWORDS,
+  getUniqueKeywords,
+} from "@/lib/seo/constants";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getOrganizationSchema, getBreadcrumbSchema, getPersonSchema } from "@/lib/seo/structured-data";
+
+const explorePosts = await getPostsBySlugs([...ABOUT_EXPLORE_GUIDE_SLUGS]);
+
+const meta = generatePageMetadata({
+  title: "About Shri Gajanan Maharaj Sansthan | History, Mission & Saint Since 1908",
+  description:
+    "Shri Gajanan Maharaj Sansthan, founded 1908 in Shegaon, Maharashtra — serving Sant Gajanan Maharaj's Samadhi with Bhakta Niwas, Mahaprasad, and social welfare.",
+  keywords: getUniqueKeywords([
+    ...BRAND_VARIANTS,
+    ...SAINT_KEYWORDS,
+    ...DEVANAGARI_BRAND_VARIANTS,
+    ...GRANTH_KEYWORDS,
+    ...OFFICIAL_SITE_KEYWORDS,
+    ...SERVICES_KEYWORDS,
+    "gajanan maharaj sansthan history",
+    "shegaon temple history",
+    "gajanan maharaj trust 1908",
+    "gajanan maharaj sansthan shegaon history",
+    "shri gajanan maharaj sansthan about",
+    "gajanan maharaj trust founded",
+    "shegaon temple organization",
+    "gajanan maharaj sansthan mission",
+    "gajanan maharaj samadhi mandir shegaon",
+    "sant gajanan maharaj shegaon 1908",
+    "gajanan maharaj teachings equality compassion",
+    "shegaon sansthan founded 1908",
+    "gajanan maharaj dattatreya manifestation",
+    "shri gajanan maharaj social welfare",
+    "gajanan maharaj satcharitra shegaon",
+  ]),
+  path: "/about",
+});
+
+const orgSchema = getOrganizationSchema();
+const personSchema = getPersonSchema();
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+]);
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="container py-12 max-w-4xl">
+    <h1 class="text-4xl font-bold font-heading text-brand-maroon mb-6 text-center">
+      About Sansthan
+    </h1>
+
+    <div class="prose prose-lg mx-auto text-muted-foreground">
+      <p class="lead text-xl text-center mb-8 font-medium text-foreground">
+        &quot;{sansthanHistory.motto}&quot;
+      </p>
+
+      <div class="bg-muted/30 p-8 rounded-xl border mb-8">
+        <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">Our History</h2>
+        <p>{sansthanHistory.description}</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-bold font-heading text-brand-maroon mb-2">Mission</h3>
+          <p>
+            To provide spiritual solace and service to humanity through the teachings of Shri Gajanan
+            Maharaj. We strive to maintain the highest standards of cleanliness, discipline, and devotion.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold font-heading text-brand-maroon mb-2">Values</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Seva (Service)</li>
+            <li>Discipline</li>
+            <li>Cleanliness</li>
+            <li>Equality</li>
+            <li>Devotion</li>
+          </ul>
+        </div>
+      </div>
+
+      {
+        explorePosts.length > 0 && (
+          <div class="mt-12 pt-8 border-t not-prose">
+            <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">
+              Explore Our Guides
+            </h2>
+            <p class="text-muted-foreground mb-6">
+              Plan your pilgrimage with our guides on Sansthan history, travel, accommodation, and
+              devotional practices.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {explorePosts.map((post) => (
+                <BlogCard post={post} />
+              ))}
+            </div>
+            <div class="mt-6 text-center">
+              <a
+                href="/blog"
+                class="inline-flex items-center gap-2 font-medium text-brand-saffron hover:text-brand-maroon transition-colors"
+              >
+                View all guides
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        )
+      }
+
+      <div class="mt-12 pt-8 border-t">
+        <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">Learn more</h2>
+        <p class="text-muted-foreground mb-6">
+          Plan your pilgrimage with our official pages on travel, accommodation, and locations.
+        </p>
+        <ul class="space-y-2">
+          <li>
+            <a href="/locations" class="font-medium text-brand-saffron hover:text-brand-maroon">
+              All locations
+            </a>
+          </li>
+          <li>
+            <a href="/booking" class="font-medium text-brand-saffron hover:text-brand-maroon">
+              Booking request
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="font-medium text-brand-saffron hover:text-brand-maroon">
+              Contact &amp; maps
+            </a>
+          </li>
+          <li>
+            <a href="/bhakta-niwas" class="font-medium text-brand-saffron hover:text-brand-maroon">
+              Bhakta Niwas accommodation
+            </a>
+          </li>
+          <li>
+            <a href="/darshan-timings" class="font-medium text-brand-saffron hover:text-brand-maroon">
+              Darshan timings
+            </a>
+          </li>
+          <li>
+            <a href="/how-to-reach" class="font-medium text-brand-saffron hover:text-brand-maroon">
+              How to reach Shegaon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>

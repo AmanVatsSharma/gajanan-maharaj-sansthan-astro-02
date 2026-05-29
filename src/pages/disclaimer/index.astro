@@ -1,0 +1,108 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getBreadcrumbSchema } from "@/lib/seo/structured-data";
+
+const meta = generatePageMetadata({
+  title: "Disclaimer",
+  description:
+    "Disclaimer for Shri Gajanan Maharaj Sansthan website — information accuracy, external link liability, and booking terms for Bhakta Niwas at Shegaon temple.",
+  keywords: [
+    "disclaimer",
+    "legal disclaimer",
+    "gajanan maharaj sansthan disclaimer",
+    "website liability",
+    "content accuracy",
+    "shegaon temple disclaimer",
+  ],
+  path: "/disclaimer",
+  robots: { index: true, follow: true, maxSnippet: 0 },
+});
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Disclaimer", url: "/disclaimer" },
+]);
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="container mx-auto max-w-3xl py-12 px-4 sm:px-6 lg:px-8">
+    <article class="prose prose-slate lg:prose-lg mx-auto">
+      <h1>Disclaimer</h1>
+      <p class="lead">Last Updated: February 2026</p>
+
+      <p>
+        The information contained on this website is for general information purposes only. The
+        information is provided by <a href="/about">Gajanan Maharaj Sansthan</a>, and while we endeavour to keep the
+        information up to date and correct, we make no representations or warranties of any kind,
+        express or implied, about the completeness, accuracy, reliability, suitability, or
+        availability with respect to the website or the information, products, services, or related
+        graphics contained on the website for any purpose. Any reliance you place on such information
+        is therefore strictly at your own risk.
+      </p>
+
+      <h2>1. External Links Disclaimer</h2>
+      <p>
+        Through this website, you are able to link to other websites which are not under the control
+        of Gajanan Maharaj Sansthan. We have no control over the nature, content, and availability of
+        those sites. The inclusion of any links does not necessarily imply a recommendation or
+        endorse the views expressed within them.
+      </p>
+
+      <h2>2. Professional Advice Disclaimer</h2>
+      <p>
+        The content provided on this website is not intended to be a substitute for professional
+        advice. Always seek the advice of qualified professionals with any questions you may have
+        regarding a medical condition, legal matter, or other professional concerns.
+      </p>
+
+      <h2>3. Limitation of Liability</h2>
+      <p>
+        In no event will Gajanan Maharaj Sansthan be liable for any loss or damage including without
+        limitation, indirect or consequential loss or damage, or any loss or damage whatsoever
+        arising from loss of data or profits arising out of, or in connection with, the use of this
+        website.
+      </p>
+
+      <h2>4. Changes to This Disclaimer</h2>
+      <p>We reserve the right to modify this disclaimer at any time without prior notice.</p>
+
+      <h2>5. Contact Us</h2>
+      <p>If you have any questions about this disclaimer, please <a href="/contact">contact us</a> or email:</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:contact@gajananmaharaj.org">contact@gajananmaharaj.org</a>
+      </p>
+
+      <h2>Related Pages</h2>
+      <ul>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/refund-policy">Refund &amp; Cancellation Policy</a></li>
+        <li><a href="/about">About Shri Gajanan Maharaj Sansthan</a></li>
+      </ul>
+    </article>
+
+    <nav aria-label="Related pages" class="mt-12 pt-8 border-t not-prose">
+      <p class="text-sm font-medium text-muted-foreground mb-4">Related pages</p>
+      <ul class="flex flex-wrap gap-x-8 gap-y-3">
+        <li>
+          <a href="/about" class="text-brand-saffron hover:text-brand-maroon font-medium transition-colors">
+            About Shri Gajanan Maharaj Sansthan
+          </a>
+        </li>
+        <li>
+          <a href="/booking" class="text-brand-saffron hover:text-brand-maroon font-medium transition-colors">
+            Book Bhakta Niwas accommodation
+          </a>
+        </li>
+        <li>
+          <a href="/contact" class="text-brand-saffron hover:text-brand-maroon font-medium transition-colors">
+            Contact &amp; office hours
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</Layout>

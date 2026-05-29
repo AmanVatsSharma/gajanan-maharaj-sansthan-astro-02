@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shri Gajanan Maharaj Sansthan Symbol</title>
+  <desc id="desc">Circular symbolic logo for Shri Gajanan Maharaj Sansthan.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B1C1C"/>
+      <stop offset="1" stop-color="#C98A2C"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="246" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="214" stroke="#FDE68A" stroke-opacity="0.8" stroke-width="8"/>
+  <text x="256" y="250" text-anchor="middle" fill="#FFF8E1" font-family="Georgia, serif" font-size="118" font-weight="700">SG</text>
+  <text x="256" y="320" text-anchor="middle" fill="#FFF8E1" font-family="Arial, sans-serif" font-size="30" letter-spacing="2">SANSTHAN</text>
+</svg>

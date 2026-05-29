@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shegaon Temple Accommodation</title>
+  <desc id="desc">Representative illustration for Shri Gajanan Maharaj Sansthan Shegaon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A1111"/>
+      <stop offset="0.55" stop-color="#6B1F1F"/>
+      <stop offset="1" stop-color="#D4A03E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="120" fill="#FDE68A" opacity="0.2"/>
+  <path d="M120 500C320 430 520 420 700 500C850 565 970 565 1110 520" stroke="#FDE68A" stroke-opacity="0.35" stroke-width="4"/>
+  <text x="80" y="250" fill="#FFF9EB" font-family="Georgia, serif" font-size="56" font-weight="700">Shegaon Bhakt Niwas</text>
+  <text x="80" y="320" fill="#FFF9EB" font-family="Georgia, serif" font-size="36" opacity="0.92">Shri Gajanan Maharaj Sansthan</text>
+  <text x="80" y="380" fill="#FFF9EB" font-family="Arial, sans-serif" font-size="28" opacity="0.86">Official accommodation and pilgrimage guidance</text>
+</svg>
