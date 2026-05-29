@@ -3,7 +3,7 @@
  */
 import { defineMiddleware } from "astro:middleware";
 
-const CANONICAL_DOMAIN_APEX = "gajananmaharajsanstan.com";
+const CANONICAL_DOMAIN_APEX = "srigajananmaharajsanstan.com";
 const DEFAULT_CANONICAL_ORIGIN = `https://www.${CANONICAL_DOMAIN_APEX}`;
 
 function normalizeCanonicalHostname(hostname: string): string {

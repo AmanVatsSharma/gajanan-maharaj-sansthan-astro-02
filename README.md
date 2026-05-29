@@ -38,7 +38,7 @@ Use `.env.example` as the single source template.
 Critical variables:
 
 ```env
-PUBLIC_SITE_URL=https://www.gajananmaharajsanstan.com
+PUBLIC_SITE_URL=https://www.srigajananmaharajsanstan.com
 PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 PUBLIC_DEBUG_SEO=false
 BUILD_STANDALONE=false
@@ -48,7 +48,7 @@ SEO_VERIFY_LIVE_REDIRECTS=false
 
 ### `PUBLIC_SITE_URL` (production and CI)
 
-Set **`PUBLIC_SITE_URL`** to the exact canonical origin you submit in Google Search Console (for example `https://www.gajananmaharajsanstan.com`, no trailing slash). It drives:
+Set **`PUBLIC_SITE_URL`** to the exact canonical origin you submit in Google Search Console (for example `https://www.srigajananmaharajsanstan.com`, no trailing slash). It drives:
 
 - absolute URLs in `sitemap.xml`, `robots.txt` (`Sitemap:` / `Host:`), and RSS `feed.xml`
 - canonical and Open Graph URLs from `src/lib/seo/site-url.ts`

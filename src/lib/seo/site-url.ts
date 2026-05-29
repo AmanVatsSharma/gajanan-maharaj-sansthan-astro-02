@@ -4,8 +4,8 @@
  */
 
 export const DEFAULT_PRODUCTION_SITE_URL =
-  "https://www.gajananmaharajsanstan.com";
-const CANONICAL_DOMAIN_APEX = "gajananmaharajsanstan.com";
+  "https://www.srigajananmaharajsanstan.com";
+const CANONICAL_DOMAIN_APEX = "srigajananmaharajsanstan.com";
 let hasLoggedApexHostNormalization = false;
 let hasLoggedInvalidSiteUrl = false;
 
