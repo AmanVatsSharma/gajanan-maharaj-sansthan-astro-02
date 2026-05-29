@@ -1,26 +1,64 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PhoneCall } from "lucide-react";
 import { CONTACT_DETAILS } from "@/data/contact";
 
+const heroImages = [
+  "/gallery/hero-image-2026-02-05.jpeg",
+  "/hero/branches1.jpg",
+  "/hero/wmremove-transformed.jpeg",
+];
+
 export function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
 
   return (
     <div className="relative min-h-[85vh] svh:min-h-[85svh] flex items-center justify-center overflow-hidden">
-      {/* Background */}
+      {/* Auto-sliding background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-10" />
-        <img
-          src="/gallery/hero-image-2026-02-05.jpeg"
-          alt="Shri Gajanan Maharaj Temple - Sacred shrine at Shegaon"
-          width={1920}
-          height={1080}
-          fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+
+        {heroImages.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt={index === 0 ? "Shri Gajanan Maharaj Temple" : `Temple view ${index + 1}`}
+            width={1920}
+            height={1080}
+            fetchPriority={index === 0 ? "high" : "low"}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+              index === currentImage ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+
+        {/* Slide indicators */}
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImage(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentImage
+                  ? "bg-brand-gold w-6"
+                  : "bg-white/50 hover:bg-white/70"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Content */}
