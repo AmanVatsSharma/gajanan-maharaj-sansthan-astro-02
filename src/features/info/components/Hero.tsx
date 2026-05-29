@@ -1,81 +1,40 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PhoneCall } from "lucide-react";
 import { CONTACT_DETAILS } from "@/data/contact";
 
-const heroImages = [
-  "/gallery/hero-image-2026-02-05.jpeg",
-  "/hero/1.png",
-];
-
 export function Hero() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
   const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
 
   return (
     <div className="relative min-h-[85vh] svh:min-h-[85svh] flex items-center justify-center overflow-hidden">
-      {/* Auto-sliding background */}
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-10" />
-
-        {heroImages.map((src, index) => (
-          <img
-            key={src}
-            src={src}
-            alt={index === 0 ? "Shri Gajanan Maharaj Temple - Sacred shrine at Shegaon" : "Shri Gajanan Maharaj Temple - Divine view"}
-            width={1920}
-            height={1080}
-            fetchPriority={index === 0 ? "high" : "low"}
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
-
-        {/* Slide indicators */}
-        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-          {heroImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImage(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentImage
-                  ? "bg-brand-gold w-6"
-                  : "bg-white/50 hover:bg-white/70"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+        <img
+          src="/gallery/hero-image-2026-02-05.jpeg"
+          alt="Shri Gajanan Maharaj Temple - Sacred shrine at Shegaon"
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
       </div>
 
       {/* Content */}
       <motion.div
         className="relative z-20 text-center text-white px-6 py-20 max-w-4xl mx-auto"
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 1 } }
-        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         {/* Devanagari sacred chant */}
         <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-8"
         >
           <div className="flex items-center justify-center gap-4 mb-4">
@@ -93,10 +52,9 @@ export function Hero() {
 
         {/* Main heading */}
         <motion.h1
-          variants={{
-            hidden: { opacity: 0, y: 30 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.5 } }
-          }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading text-white mb-6 leading-tight"
         >
           Shri Gajanan<br />
@@ -105,10 +63,9 @@ export function Hero() {
 
         {/* Simple divider */}
         <motion.div
-          variants={{
-            hidden: { opacity: 0, scaleX: 0 },
-            visible: { opacity: 1, scaleX: 1, transition: { duration: 0.6, delay: 0.7 } }
-          }}
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
           className="flex items-center justify-center gap-3 mb-8"
         >
           <div className="h-px w-20 bg-gradient-to-r from-transparent to-brand-gold/50" />
@@ -120,10 +77,9 @@ export function Hero() {
 
         {/* Subtitle */}
         <motion.p
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.9 } }
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
           className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
         >
           Experience divine serenity at our sacred shrine.<br className="hidden md:block" />
@@ -132,10 +88,9 @@ export function Hero() {
 
         {/* CTA */}
         <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 1.1 } }
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button
@@ -162,10 +117,9 @@ export function Hero() {
 
         {/* Trust badge */}
         <motion.div
-          variants={{
-            hidden: { opacity: 0 },
-            visible: { opacity: 1, transition: { duration: 0.8, delay: 1.4 } }
-          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
           className="mt-12"
         >
           <p className="text-white/60 text-sm tracking-wide">
