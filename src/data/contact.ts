@@ -1,7 +1,7 @@
 export const CONTACT_DETAILS = {
   headOffice: {
     address: "Shri Gajanan Maharaj Sansthan, Shegaon, Dist. Buldhana, Maharashtra - 444203",
-    email: "contact@gajananmaharaj.org",
+    email: "shreegajananmaharajsansthan@gmail.com",
   },
   booking: {
     // Single contact number for site-wide call/WhatsApp links
