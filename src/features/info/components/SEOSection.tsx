@@ -119,7 +119,7 @@ export function SEOSection() {
                     <p className="font-semibold flex items-center gap-2">
                       Official Site <ExternalLink className="w-3 h-3 opacity-50" />
                     </p>
-                    <p className="text-sm text-white/70">Always use <span className="text-brand-gold font-bold">www.gajananmaharajsanstan.com</span> for all sansthan related information.</p>
+                    <p className="text-sm text-white/70">Always use <span className="text-brand-gold font-bold">www.srigajananmaharajsanstan.com</span> for all sansthan related information.</p>
                   </div>
                 </div>
                 

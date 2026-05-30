@@ -37,7 +37,7 @@ cp .env.example .env
 ```
 
 Key variables:
-- `PUBLIC_SITE_URL` — canonical origin (`https://www.gajananmaharajsanstan.com`). Drives sitemap, robots, RSS, OG/canonical URLs. Must match your Vercel deployment domain.
+- `PUBLIC_SITE_URL` — canonical origin (`https://www.srigajananmaharajsanstan.com`). Drives sitemap, robots, RSS, OG/canonical URLs. Must match your Vercel deployment domain.
 - `PUBLIC_GA_MEASUREMENT_ID` — GA4 measurement ID (`G-XXXXXXXXXX`).
 - `SEO_ENABLE_APP_HOST_REDIRECTS` — set `true` only when Vercel is NOT handling apex→www redirect itself (avoids redirect loops).
 - `PUBLIC_DEBUG_SEO=false` — set to `true` for verbose SEO runtime logs.
