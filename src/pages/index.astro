@@ -9,11 +9,6 @@ import { FeaturedLocations } from "@/features/info/components/FeaturedLocations"
 import EnhancedRoomsSection from "@/features/info/components/EnhancedRoomsSection";
 import { Testimonials } from "@/features/info/components/Testimonials";
 import { PlanYourVisit } from "@/features/info/components/PlanYourVisit";
-import {
-  FeaturedGuides,
-  FEATURED_GUIDE_SLUGS,
-} from "@/features/info/components/FeaturedGuides";
-import { getPostsBySlugs } from "@/lib/blog";
 import { CTABanner } from "@/features/info/components/CTABanner";
 import { SectionDivider } from "@/features/info/components/SectionDivider";
 import { generatePageMetadata } from "@/lib/seo/metadata";
@@ -136,7 +131,6 @@ const structuredPayload = [
   ...eventSchemas,
 ];
 
-const featuredGuidePosts = await getPostsBySlugs(FEATURED_GUIDE_SLUGS);
 ---
 
 <Layout meta={meta}>
@@ -159,8 +153,7 @@ const featuredGuidePosts = await getPostsBySlugs(FEATURED_GUIDE_SLUGS);
     <SectionDivider client:visible variant="ornate" />
     <Testimonials client:visible />
     <SectionDivider client:visible variant="minimal" />
-    <FeaturedGuides posts={featuredGuidePosts} />
-    <PlanYourVisit client:visible />
+        <PlanYourVisit client:visible />
     <CTABanner client:visible />
   </div>
 </Layout>

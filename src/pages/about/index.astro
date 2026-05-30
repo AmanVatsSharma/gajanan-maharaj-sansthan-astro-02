@@ -1,8 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { BlogCard } from "@/features/blog/components/BlogCard";
-import { ABOUT_EXPLORE_GUIDE_SLUGS } from "@/features/blog/constants";
-import { getPostsBySlugs } from "@/lib/blog";
 import { sansthanHistory } from "@/data/sansthan-data";
 import {
   BRAND_VARIANTS,
@@ -16,7 +13,6 @@ import {
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import { getOrganizationSchema, getBreadcrumbSchema, getPersonSchema } from "@/lib/seo/structured-data";
 
-const explorePosts = await getPostsBySlugs([...ABOUT_EXPLORE_GUIDE_SLUGS]);
 
 const meta = generatePageMetadata({
   title: "About Shri Gajanan Maharaj Sansthan | History, Mission & Saint Since 1908",
@@ -95,34 +91,7 @@ const breadcrumbSchema = getBreadcrumbSchema([
         </div>
       </div>
 
-      {
-        explorePosts.length > 0 && (
-          <div class="mt-12 pt-8 border-t not-prose">
-            <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">
-              Explore Our Guides
-            </h2>
-            <p class="text-muted-foreground mb-6">
-              Plan your pilgrimage with our guides on Sansthan history, travel, accommodation, and
-              devotional practices.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {explorePosts.map((post) => (
-                <BlogCard post={post} />
-              ))}
-            </div>
-            <div class="mt-6 text-center">
-              <a
-                href="/blog"
-                class="inline-flex items-center gap-2 font-medium text-brand-saffron hover:text-brand-maroon transition-colors"
-              >
-                View all guides
-                <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        )
-      }
-
+      
       <div class="mt-12 pt-8 border-t">
         <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4">Learn more</h2>
         <p class="text-muted-foreground mb-6">

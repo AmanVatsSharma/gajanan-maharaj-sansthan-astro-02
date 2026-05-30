@@ -1,8 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { BlogCard } from "@/features/blog/components/BlogCard";
-import { LOCATIONS_POPULAR_GUIDE_SLUGS } from "@/features/blog/constants";
-import { getPostsBySlugs } from "@/lib/blog";
 import { LocationCard } from "@/features/locations/components/LocationCard";
 import { sansthanLocations } from "@/data/sansthan-data";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
@@ -18,7 +15,6 @@ import {
 } from "@/lib/seo/constants";
 import { getLocationsItemListSchema, getBreadcrumbSchema, getServiceSchema } from "@/lib/seo/structured-data";
 
-const popularGuides = await getPostsBySlugs([...LOCATIONS_POPULAR_GUIDE_SLUGS]);
 
 const meta = generatePageMetadata({
   title: "Bhakta Niwas All Locations — Shri Gajanan Maharaj Sansthan | Shegaon, Pandharpur, Trimbakeshwar, Omkareshwar",
@@ -79,33 +75,7 @@ const serviceSchema = getServiceSchema();
       }
     </div>
 
-    {
-      popularGuides.length > 0 && (
-        <ScrollReveal client:visible className="mt-16">
-          <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4 text-center">
-            Popular Guides by Location
-          </h2>
-          <p class="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
-            Plan your visit with guides for Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar.
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {popularGuides.map((post) => (
-              <BlogCard post={post} />
-            ))}
-          </div>
-          <div class="mt-6 text-center">
-            <a
-              href="/blog"
-              class="inline-flex items-center gap-2 font-medium text-brand-saffron hover:text-brand-maroon transition-colors"
-            >
-              View all guides
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </ScrollReveal>
-      )
-    }
-
+    
     <ScrollReveal client:visible className="mt-16">
       <h2 class="text-2xl font-bold font-heading text-brand-maroon mb-4 text-center">
         Planning your visit

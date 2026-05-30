@@ -30,7 +30,6 @@
 
 import type { APIRoute } from "astro";
 import { sansthanLocations } from "@/data/sansthan-data";
-import { getBlogPosts } from "@/lib/blog";
 import { getSiteUrl } from "@/lib/seo/site-url";
 
 export const prerender = true;
@@ -71,21 +70,11 @@ function isoDate(d: Date): string {
   return d.toISOString().split("T")[0] ?? "";
 }
 
-function getLatestBlogDate(
-  posts: Array<{ date: string; lastModified?: string }>
-): Date | null {
-  if (posts.length === 0) return null;
-  const timestamps = posts.map((p) => new Date(p.lastModified || p.date).getTime());
-  return new Date(Math.max(...timestamps));
-}
 
 export const GET: APIRoute = async () => {
   const siteUrl = getSiteUrl();
 
-  const blogPosts = await getBlogPosts();
-  const latestBlogDate = getLatestBlogDate(blogPosts) ?? new Date();
-  const latestBlogStr = isoDate(latestBlogDate);
-
+  
   const chunks: string[] = [];
 
   const staticPages: Array<{ path: string; changefreq: string; priority: string }> = [
@@ -95,8 +84,7 @@ export const GET: APIRoute = async () => {
     { path: "/locations",        changefreq: "weekly",  priority: "0.9" },
     { path: "/darshan-timings",  changefreq: "monthly", priority: "0.85" },
     { path: "/how-to-reach",     changefreq: "monthly", priority: "0.85" },
-    { path: "/blog",             changefreq: "weekly",  priority: "0.85" },
-    { path: "/about",            changefreq: "monthly", priority: "0.6" },
+        { path: "/about",            changefreq: "monthly", priority: "0.6" },
     { path: "/contact",          changefreq: "monthly", priority: "0.6" },
     { path: "/privacy-policy",   changefreq: "yearly",  priority: "0.3" },
     { path: "/terms-conditions", changefreq: "yearly",  priority: "0.3" },
@@ -105,7 +93,7 @@ export const GET: APIRoute = async () => {
   ];
 
   for (const p of staticPages) {
-    const lastmod = p.path === "/blog" ? latestBlogStr : (STATIC_PAGE_LASTMOD[p.path] ?? "2026-01-01");
+    const lastmod = STATIC_PAGE_LASTMOD[p.path] ?? "2026-01-01";
     chunks.push(urlEntry(`${siteUrl}${p.path}`, lastmod, p.changefreq, p.priority));
   }
 
