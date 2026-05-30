@@ -107,7 +107,13 @@ export function Footer() {
               ))}
             </div>
             <p className="text-sm text-gray-200">
-              Contact: {CONTACT_DETAILS.booking.mobile}
+              <span className="font-semibold">Email:</span>{" "}
+              <a href={`mailto:${CONTACT_DETAILS.headOffice.email}`} className="hover:text-brand-gold transition-colors">
+                {CONTACT_DETAILS.headOffice.email}
+              </a>
+            </p>
+            <p className="text-sm text-gray-200">
+              <span className="font-semibold">Contact:</span> {CONTACT_DETAILS.booking.mobile}
             </p>
           </div>
         </div>
