@@ -1,7 +1,7 @@
 /**
  * File:        src/pages/sitemap-core.xml.ts
  * Module:      SEO · Core Sitemap
- * Purpose:     Sitemap for high-priority static pages and location pages (~25 URLs).
+ * Purpose:     Sitemap for high-priority static pages and location pages.
  *              Uses stable hardcoded lastmod dates so Google doesn't waste crawl budget
  *              re-crawling unchanged pages on every build.
  *
@@ -10,7 +10,6 @@
  *
  * Depends on:
  *   - @/data/sansthan-data — location IDs for /locations/* URLs
- *   - @/lib/blog           — latest blog date for /blog listing page lastmod
  *   - @/lib/seo/site-url   — canonical origin
  *
  * Side-effects:
@@ -18,14 +17,13 @@
  *
  * Key invariants:
  *   - STATIC_PAGE_LASTMOD dates must be updated manually when a page's content changes
- *   - /blog lastmod is dynamic (latest post date) since the listing changes with every new post
  *
  * Read order:
  *   1. STATIC_PAGE_LASTMOD — lastmod source of truth for static pages
  *   2. GET — builds and returns the XML
  *
  * Author:      Aman Sharma
- * Last-updated: 2026-05-03
+ * Last-updated: 2026-05-30
  */
 
 import type { APIRoute } from "astro";
@@ -66,15 +64,8 @@ function urlEntry(
   </url>`;
 }
 
-function isoDate(d: Date): string {
-  return d.toISOString().split("T")[0] ?? "";
-}
-
-
 export const GET: APIRoute = async () => {
   const siteUrl = getSiteUrl();
-
-  
   const chunks: string[] = [];
 
   const staticPages: Array<{ path: string; changefreq: string; priority: string }> = [
@@ -84,7 +75,7 @@ export const GET: APIRoute = async () => {
     { path: "/locations",        changefreq: "weekly",  priority: "0.9" },
     { path: "/darshan-timings",  changefreq: "monthly", priority: "0.85" },
     { path: "/how-to-reach",     changefreq: "monthly", priority: "0.85" },
-        { path: "/about",            changefreq: "monthly", priority: "0.6" },
+    { path: "/about",            changefreq: "monthly", priority: "0.6" },
     { path: "/contact",          changefreq: "monthly", priority: "0.6" },
     { path: "/privacy-policy",   changefreq: "yearly",  priority: "0.3" },
     { path: "/terms-conditions", changefreq: "yearly",  priority: "0.3" },
