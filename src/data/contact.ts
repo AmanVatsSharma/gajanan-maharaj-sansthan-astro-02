@@ -5,8 +5,8 @@ export const CONTACT_DETAILS = {
   },
   booking: {
     // Single contact number for site-wide call/WhatsApp links
-    mobile: "+917404984712",
-    whatsapp: "+917404984712",
+    mobile: "+91XXXXXXXXXX",
+    whatsapp: "+91XXXXXXXXXX",
   },
   social: {
     facebook: "https://facebook.com",
