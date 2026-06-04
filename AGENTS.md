@@ -4,9 +4,11 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 ## Project
 
-Official website for Shri Gajanan Maharaj Sansthan (temple at Shegaon, Maharashtra). Built with Astro 5 + React 19 + Tailwind CSS 4. Deployed on Vercel with `@astrojs/vercel` adapter. Branch: `astro`.
+Official website for Shri Gajanan Maharaj Sansthan (temple at Shegaon, Maharashtra). Built with Astro 5 + React 19 + Tailwind CSS 4. Deployed on Vercel with `@astrojs/vercel` adapter. Branch: `main` (Vercel auto-deploys from main; the legacy `astro` branch no longer exists on the remote).
 
-**Do not read or modify files in `content/blog/`** — there are hundreds of markdown posts; treat that directory as off-limits unless a task explicitly targets blog content.
+**Do not read or modify files in `content/blog/`** — there are 596 markdown posts; treat that directory as off-limits unless a task explicitly targets blog content. To regenerate, run `node scripts/generate-seo-blog-cluster.mjs`.
+
+**Production env var required**: `PUBLIC_SITE_URL=https://www.srigajananmaharajsanstan.com` must be set in the Vercel project's Production environment. Without it, sitemap.xml and all canonical URLs will be served with the `*.vercel.app` deployment hostname, splitting SEO signals across two domains. See `POST_DEPLOY_INDEXING.md` for the full runbook.
 
 ## Commands
 
