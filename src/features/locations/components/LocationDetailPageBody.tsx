@@ -6,12 +6,15 @@ import { AmenityList } from "@/features/locations/components/AmenityList";
 import { LocationBookingCtas } from "@/features/locations/components/LocationBookingCtas";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { FAQ } from "@/components/seo/FAQ";
+import type { FAQItem } from "@/data/faq";
 
 interface LocationDetailPageBodyProps {
   location: Location;
+  faqs?: FAQItem[];
 }
 
-export function LocationDetailPageBody({ location }: LocationDetailPageBodyProps) {
+export function LocationDetailPageBody({ location, faqs }: LocationDetailPageBodyProps) {
   return (
     <div className="container py-12">
       <Breadcrumbs
@@ -68,6 +71,14 @@ export function LocationDetailPageBody({ location }: LocationDetailPageBodyProps
             </h2>
             <AmenityList amenities={location.amenities} />
           </div>
+
+          {faqs && faqs.length > 0 && (
+            <FAQ
+              faqs={faqs}
+              title={`Frequently Asked Questions — ${location.name}`}
+              description={`Common questions about visiting and staying at ${location.name}, ${location.city}.`}
+            />
+          )}
 
           <div>
             <h2 className="text-2xl font-bold font-heading text-brand-maroon mb-4">Room Types</h2>

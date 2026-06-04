@@ -10,10 +10,10 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const LOCATION_HTML_DIR = path.join(process.cwd(), ".next/server/app/locations");
+const LOCATION_HTML_DIR = path.join(process.cwd(), "dist/client/locations");
 const REQUIRED_SCHEMA_TYPES = ["PlaceOfWorship", "LocalBusiness", "LodgingBusiness"];
 const REQUIRED_GEO_META_NAMES = ["geo.position", "geo.placename", "geo.region", "ICBM"];
-const CANONICAL_ORIGIN = "https://www.gajananmaharajsanstan.com/locations/";
+const CANONICAL_ORIGIN = "https://www.srigajananmaharajsanstan.com/locations/";
 
 function getLocationDetailFiles() {
   if (!fs.existsSync(LOCATION_HTML_DIR)) {
@@ -22,17 +22,15 @@ function getLocationDetailFiles() {
 
   const entries = fs.readdirSync(LOCATION_HTML_DIR, { withFileTypes: true });
   return entries
-    .filter(
-      (entry) =>
-        entry.isFile() &&
-        entry.name.endsWith(".html") &&
-        entry.name !== "index.html" &&
-        entry.name !== "locations.html"
-    )
-    .map((entry) => ({
-      absolutePath: path.join(LOCATION_HTML_DIR, entry.name),
-      fileName: entry.name,
-    }));
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => {
+      const candidate = path.join(LOCATION_HTML_DIR, entry.name, "index.html");
+      return {
+        absolutePath: candidate,
+        fileName: `${entry.name}.html`,
+      };
+    })
+    .filter(({ absolutePath }) => fs.existsSync(absolutePath));
 }
 
 function extractSchemaTypes(html) {
@@ -44,7 +42,11 @@ function extractSchemaTypes(html) {
   function collectTypes(value) {
     if (Array.isArray(value)) {
       for (const item of value) {
-        collectTypes(item);
+        if (typeof item === "string") {
+          schemaTypes.add(item);
+        } else {
+          collectTypes(item);
+        }
       }
       return;
     }
@@ -54,8 +56,15 @@ function extractSchemaTypes(html) {
     }
 
     const typedValue = value;
-    if (typeof typedValue["@type"] === "string") {
-      schemaTypes.add(typedValue["@type"]);
+    const atType = typedValue["@type"];
+    if (typeof atType === "string") {
+      schemaTypes.add(atType);
+    } else if (Array.isArray(atType)) {
+      for (const item of atType) {
+        if (typeof item === "string") {
+          schemaTypes.add(item);
+        }
+      }
     }
 
     for (const child of Object.values(typedValue)) {

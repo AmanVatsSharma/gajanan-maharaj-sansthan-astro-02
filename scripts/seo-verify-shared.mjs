@@ -4,8 +4,8 @@
  */
 import path from "node:path";
 
-export const DEFAULT_SITE_ORIGIN = "https://www.gajananmaharajsanstan.com";
-const APEX_HOST = "gajananmaharajsanstan.com";
+export const DEFAULT_SITE_ORIGIN = "https://www.srigajananmaharajsanstan.com";
+const APEX_HOST = "srigajananmaharajsanstan.com";
 
 export function getExpectedSiteOrigin() {
   const raw = process.env.PUBLIC_SITE_URL?.trim();

@@ -10,6 +10,8 @@ import {
 import {
   getVariantForIntent,
   getRandomElement,
+  getFaqVariant,
+  getLocationFact,
   FAQ_VARIANTS,
 } from "./content-variants.mjs";
 
@@ -678,6 +680,17 @@ function getBlogLinkLabel(slug) {
   return CORE_RELATED_LINK_LABELS[slug] || toTitleCase(slug);
 }
 
+const LOCATION_LINK_LABELS = {
+  "shegaon-bhakt-niwas": "Shegaon Bhakt Niwas",
+  "omkareshwar-temple": "Omkareshwar Temple",
+  "pandharpur-math": "Pandharpur Temple",
+  "trimbakeshwar-temple": "Trimbakeshwar Temple",
+};
+
+function getLocationLinkLabel(locationId) {
+  return LOCATION_LINK_LABELS[locationId] || toTitleCase(locationId);
+}
+
 function buildFrontmatter({
   title,
   description,
@@ -716,6 +729,8 @@ function buildFrontmatter({
 
 function buildLocationPostContent({
   city,
+  slug,
+  locationKey,
   locationPage,
   topicTitle,
   relatedBlogLinks,
@@ -734,37 +749,90 @@ function buildLocationPostContent({
           .join(", ")}.`
       : "";
 
-  const checklist = getVariantForIntent(intent, 'checklist');
-  const tip = getVariantForIntent(intent, 'tips');
-  const faqs = [getRandomElement(FAQ_VARIANTS), getRandomElement(FAQ_VARIANTS.filter(f => f.question !== FAQ_VARIANTS[0].question))];
+  const checklist1 = getVariantForIntent(intent, 'checklist', `${slug}:1`);
+  const checklist2 = getVariantForIntent(intent, 'checklist', `${slug}:2`);
+  const checklist3 = getVariantForIntent(intent, 'checklist', `${slug}:3`);
+  const tip1 = getVariantForIntent(intent, 'tips', `${slug}:1`);
+  const tip2 = getVariantForIntent(intent, 'tips', `${slug}:2`);
+  const tip3 = getVariantForIntent(intent, 'tips', `${slug}:3`);
+  const tip4 = getVariantForIntent(intent, 'tips', `${slug}:4`);
+  const tip5 = getVariantForIntent(intent, 'tips', `${slug}:5`);
+  const factBlock = getLocationFact(locationKey, slug);
+  const faqA = getFaqVariant(`${slug}:faq-a`) ?? FAQ_VARIANTS[0];
+  const faqB = getFaqVariant(`${slug}:faq-b`) ?? FAQ_VARIANTS[1];
+  const faqC = getFaqVariant(`${slug}:faq-c`) ?? FAQ_VARIANTS[2];
+  const faqD = getFaqVariant(`${slug}:faq-d`) ?? FAQ_VARIANTS[3];
+  const faqE = getFaqVariant(`${slug}:faq-e`) ?? FAQ_VARIANTS[4];
 
   return `# ${city} ${topicTitle}
 
-${city} remains one of the most searched pilgrimage destinations by devotees looking for trusted temple guidance, darshan clarity, and Sansthan accommodation support. This guide on **${city} ${topicTitle.toLowerCase()}** is written for families who want a practical and peaceful yatra experience.${inlineParagraph}
+${city} remains one of the most searched pilgrimage destinations by devotees looking for trusted temple guidance, darshan clarity, and Sansthan accommodation support. This guide on **${city} ${topicTitle.toLowerCase()}** is written for families who want a practical and peaceful yatra experience, and is reviewed against the latest on-ground conditions by the Sansthan office.${inlineParagraph}
 
 ## Why this ${city} guide matters for devotees
 
-When devotees search for terms like “Shri Gajanan Maharaj Sansthan ${city}”, “Shree Gajanan Maharaj Sansthan ${city}”, or “${city} temple accommodation”, they usually need clear, reliable, and actionable guidance. This article consolidates travel intent, accommodation intent, and darshan intent in one place.
+When devotees search for terms like “Shri Gajanan Maharaj Sansthan ${city}”, “Shree Gajanan Maharaj Sansthan ${city}”, or “${city} temple accommodation”, they usually need clear, reliable, and actionable guidance — not a third-party blog that recycles old information. This article consolidates travel intent, accommodation intent, and darshan intent in one place, and points you to the official Sansthan channels for final confirmation.
+
+The Sansthan digital desk receives hundreds of queries every week for ${city} planning. The most common themes are: which dates have lighter darshan queues, which Bhakta Niwas rooms are most suitable for senior citizens, how to reach ${city} by train from Mumbai, Pune, Nagpur, and Hyderabad, and what the local code of conduct is during festival days. We have built the sections below to address each of those themes directly, and the article ends with a devotee takeaway and the most frequently asked questions on this specific ${city} route.
 
 ## Accommodation and booking support
 
 - Explore official location details: [${city} Sansthan Accommodation](${locationPage})
 - Start your request flow: [Accommodation Booking Request](/booking)
 - Need direct office help? [Contact Sansthan Team](/contact)
+- Read the [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide) for step-by-step support
+- Learn [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices) for fast confirmations
 
-## Darshan and visit planning checklist
+## About ${city} and what makes it distinctive
 
-${checklist.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+${factBlock}
 
-## Location-specific tips for devotees
+## Darshan and visit planning checklist — Part 1
 
-${tip}
+${checklist1.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## Darshan and visit planning checklist — Part 2
+
+${checklist2.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## Darshan and visit planning checklist — Part 3
+
+${checklist3.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## Location-specific tips for devotees — Arrival and movement
+
+${tip1}
 
 Families visiting ${city} often benefit from arriving early to avoid peak queues, especially on weekends and festival days. The temple complex and accommodation areas are well-maintained, with clear signage and helpful staff. Keep a copy of your booking confirmation handy, and carry light snacks and water for children.
 
+## Location-specific tips for devotees — Daily routine and conduct
+
+${tip2}
+
+## Location-specific tips for devotees — Senior citizens and children
+
+${tip3}
+
+## Location-specific tips for devotees — On the day of darshan
+
+${tip4}
+
+## Location-specific tips for devotees — Returning home
+
+${tip5}
+
+Senior citizens should carry their primary medical documents and a small personal medicine kit. Children should carry an ID card or a note from a parent with contact numbers, in case the family gets separated in a crowd. The Sansthan office maintains a lost-and-found desk near the main entrance; ask any volunteer or Sansthan staff member to direct you there. On the day of darshan, plan to arrive at least 90 minutes before the published window to allow for queue, security, and prasad collection. As you return home, give yourself a quiet day to integrate the experience.
+
 ## Frequently asked questions
 
-${faqs.map(faq => `**${faq.question}** ${faq.answer}`).join("\n\n")}
+**${faqA.question}** ${faqA.answer}
+
+**${faqB.question}** ${faqB.answer}
+
+**${faqC.question}** ${faqC.answer}
+
+**${faqD.question}** ${faqD.answer}
+
+**${faqE.question}** ${faqE.answer}
 
 ## Related guides for deeper planning
 
@@ -774,7 +842,9 @@ ${relatedBlogLinks
 
 ## Practical conclusion for ${city} devotees
 
-This ${city} planning resource is built to make your pilgrimage smoother, more spiritual, and better organized. For best outcomes, complete your route planning early, confirm accommodation through official support, and keep your itinerary realistic for all age groups.
+This ${city} planning resource is built to make your pilgrimage smoother, more spiritual, and better organized. For best outcomes, complete your route planning early, confirm accommodation through official support, and keep your itinerary realistic for all age groups. A yatra planned with a small margin of rest and a clear daily intention is a yatra in which the darshan, prasad, and satsang all land with greater impact.
+
+If you are also planning a wider pilgrimage circuit that includes one or more of the Jyotirlinga sites, our cross-location guides below outline the route, the typical duration, and the points where most families add an extra day's buffer for elders.
 
 ---
 
@@ -782,31 +852,93 @@ Browse more in [${category.charAt(0).toUpperCase() + category.slice(1)}](/blog/c
 `;
 }
 
-function buildCrossLocationGuideContent({ title, relatedBlogLinks }) {
-  const tip = getVariantForIntent('travel-guide', 'tips');
-  const checklist = getVariantForIntent('travel-guide', 'checklist');
+function buildCrossLocationGuideContent({ title, slug, relatedBlogLinks }) {
+  const tip1 = getVariantForIntent('travel-guide', 'tips', `${slug}:1`);
+  const tip2 = getVariantForIntent('travel-guide', 'tips', `${slug}:2`);
+  const tip3 = getVariantForIntent('travel-guide', 'tips', `${slug}:3`);
+  const tip4 = getVariantForIntent('travel-guide', 'tips', `${slug}:4`);
+  const tip5 = getVariantForIntent('travel-guide', 'tips', `${slug}:5`);
+  const tip6 = getVariantForIntent('travel-guide', 'tips', `${slug}:6`);
+  const checklist1 = getVariantForIntent('travel-guide', 'checklist', `${slug}:1`);
+  const checklist2 = getVariantForIntent('travel-guide', 'checklist', `${slug}:2`);
+  const checklist3 = getVariantForIntent('travel-guide', 'checklist', `${slug}:3`);
+  const faqA = getFaqVariant(`${slug}:faq-a`) ?? FAQ_VARIANTS[0];
+  const faqB = getFaqVariant(`${slug}:faq-b`) ?? FAQ_VARIANTS[1];
+  const faqC = getFaqVariant(`${slug}:faq-c`) ?? FAQ_VARIANTS[2];
+  const faqD = getFaqVariant(`${slug}:faq-d`) ?? FAQ_VARIANTS[3];
+  const faqE = getFaqVariant(`${slug}:faq-e`) ?? FAQ_VARIANTS[4];
+  const faqF = getFaqVariant(`${slug}:faq-f`) ?? FAQ_VARIANTS[5];
 
   return `# ${title}
 
-This guide helps devotees compare multiple locations connected to Shri Gajanan Maharaj Sansthan and related pilgrimage circuits. It is ideal for families planning a structured trip across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar.
+This guide helps devotees compare multiple locations connected to Shri Gajanan Maharaj Sansthan and related pilgrimage circuits. It is ideal for families planning a structured trip across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar, and is built to give you a single source of truth for route, transport, accommodation, and darshan planning — backed by the Sansthan office for the most schedule-sensitive details.
 
-## Core planning actions
+A multi-location yatra is a meaningful undertaking, and the differences between these four primary sites are not always obvious to first-time visitors. Shegaon is a compact, walkable town with the Samadhi Mandir at its centre, Omkareshwar is on Mandhata island in the Narmada and is best reached via Indore, Pandharpur lies on the Bhima in Solapur district and is the focal point of the Ashadhi and Kartik wari processions, and Trimbakeshwar sits in the Sahyadri range near Nashik. Each has a distinct seasonal rhythm, transport reality, and code of conduct, and the sections below address each in turn.
 
-${checklist.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+## Core planning actions — Part 1
 
-## Cross-location travel tips
+${checklist1.map((item, i) => `${i + 1}. ${item}`).join("\n")}
 
-${tip}
+## Core planning actions — Part 2
+
+${checklist2.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## Core planning actions — Part 3
+
+${checklist3.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## Cross-location travel tips — Routing and sequencing
+
+${tip1}
 
 When visiting multiple Sansthan locations, allow buffer time between cities for rest and local travel. Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar each have distinct peak hours and crowd patterns. Book accommodation for each stop in advance through official channels.
+
+## Cross-location travel tips — Family logistics
+
+${tip2}
+
+## Cross-location travel tips — Budget and packing
+
+${tip3}
+
+## Cross-location travel tips — Spiritual alignment and discipline
+
+${tip4}
+
+## Cross-location travel tips — Senior citizen and child comfort
+
+${tip5}
+
+## Cross-location travel tips — Contingency and weather
+
+${tip6}
 
 ## Official pages to use during planning
 
 - [All Sansthan Locations](/locations)
 - [Shegaon Bhakt Niwas](/locations/shegaon-bhakt-niwas)
 - [Omkareshwar Accommodation](/locations/omkareshwar)
+- [Pandharpur Temple](/locations/pandharpur-math)
+- [Trimbakeshwar Temple](/locations/trimbakeshwar)
 - [Booking Request Page](/booking)
 - [Contact Sansthan Support](/contact)
+- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
+- [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide)
+- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
+
+## Frequently asked questions
+
+**${faqA.question}** ${faqA.answer}
+
+**${faqB.question}** ${faqB.answer}
+
+**${faqC.question}** ${faqC.answer}
+
+**${faqD.question}** ${faqD.answer}
+
+**${faqE.question}** ${faqE.answer}
+
+**${faqF.question}** ${faqF.answer}
 
 ## Related reading
 
@@ -816,7 +948,7 @@ ${relatedBlogLinks
 
 ## Final note
 
-For the best pilgrimage experience, keep your plan devotional but practical: focus on darshan flow, family comfort, and official communication clarity at every stage.
+For the best pilgrimage experience, keep your plan devotional but practical: focus on darshan flow, family comfort, and official communication clarity at every stage. The four primary Sansthan-supported locations — Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar — each reward the devotee who arrives prepared, calm, and open. Plan once, travel slow, and let the darshan do its work.
 
 ---
 
@@ -824,33 +956,78 @@ Browse more in [Guides](/blog/category/guides). Tags: [guides](/blog/tag/guides)
 `;
 }
 
-function buildSpiritualOrEventContent({ title, focusKeyword, category, relatedBlogLinks }) {
+function buildSpiritualOrEventContent({ title, slug, focusKeyword, category, relatedBlogLinks, locationId }) {
   const headingLabel =
     category === "events" ? "Festival and event planning insights" : "Spiritual preparation insights";
-  
+
   const intent = category === "events" ? "darshan" : "travel-guide";
-  const tip = getVariantForIntent(intent, 'tips');
-  const checklist = getVariantForIntent(intent, 'checklist');
+  const tip1 = getVariantForIntent(intent, 'tips', `${slug}:1`);
+  const tip2 = getVariantForIntent(intent, 'tips', `${slug}:2`);
+  const tip3 = getVariantForIntent(intent, 'tips', `${slug}:3`);
+  const tip4 = getVariantForIntent(intent, 'tips', `${slug}:4`);
+  const tip5 = getVariantForIntent(intent, 'tips', `${slug}:5`);
+  const checklist1 = getVariantForIntent(intent, 'checklist', `${slug}:1`);
+  const checklist2 = getVariantForIntent(intent, 'checklist', `${slug}:2`);
+  const checklist3 = getVariantForIntent(intent, 'checklist', `${slug}:3`);
+  const faqA = getFaqVariant(`${slug}:faq-a`) ?? FAQ_VARIANTS[0];
+  const faqB = getFaqVariant(`${slug}:faq-b`) ?? FAQ_VARIANTS[1];
+  const faqC = getFaqVariant(`${slug}:faq-c`) ?? FAQ_VARIANTS[2];
+  const faqD = getFaqVariant(`${slug}:faq-d`) ?? FAQ_VARIANTS[3];
+  const faqE = getFaqVariant(`${slug}:faq-e`) ?? FAQ_VARIANTS[4];
+
+  const locationLink = locationId
+    ? { slug: locationId, label: getLocationLinkLabel(locationId) }
+    : { slug: "shegaon-bhakt-niwas", label: "Shegaon Bhakt Niwas" };
+  const locationHref = `/locations/${locationLink.slug}`;
 
   return `# ${title}
 
-${focusKeyword} is frequently searched by devotees who want both spiritual clarity and practical planning support. This article provides structured guidance aligned with Sansthan discipline and family-friendly travel needs.
+${focusKeyword} is frequently searched by devotees who want both spiritual clarity and practical planning support. This article provides structured guidance aligned with Sansthan discipline and family-friendly travel needs, and is intended to complement — not replace — direct confirmation with the Sansthan office for the most schedule-sensitive details (token timings, accommodation availability, transport disruptions, and weather advisories).
 
-## ${headingLabel}
+The Sansthan office receives a steady stream of ${category === "events" ? "festival-week" : "yatra-prep"} questions every season, and the patterns are remarkably consistent. Most families want to know: how early to arrive, what to pack, how to coordinate with elders and children, what the local transport situation is, and how to remain spiritually focused despite the logistical pressure of a busy pilgrimage. The sections below address each of those patterns, and end with a devotee takeaway and five of the most frequently asked questions on this topic.
 
-${checklist.map((item, i) => `- ${item}`).join("\n")}
+## ${headingLabel} — Part 1
 
-## Practical preparation
+${checklist1.map((item, i) => `${i + 1}. ${item}`).join("\n")}
 
-${tip}
+## ${headingLabel} — Part 2
 
-Devotees often find that a few days of light fasting or simplified meals before travel helps maintain energy and focus during the yatra. Pack modest, comfortable clothing suitable for temple visits and varying weather. Arrive at each location with an open heart and flexible schedule, allowing the divine to guide your pace.
+${checklist2.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## ${headingLabel} — Part 3
+
+${checklist3.map((item, i) => `${i + 1}. ${item}`).join("\n")}
+
+## Practical preparation — Daily routine
+
+${tip1}
+
+## Practical preparation — Family coordination
+
+${tip2}
+
+## Practical preparation — Spiritual focus
+
+${tip3}
+
+## Practical preparation — On the day
+
+${tip4}
+
+## Practical preparation — Returning home and integration
+
+${tip5}
+
+Devotees often find that a few days of light fasting or simplified meals before travel helps maintain energy and focus during the yatra. Pack modest, comfortable clothing suitable for temple visits and varying weather. Arrive at each location with an open heart and flexible schedule, allowing the divine to guide your pace. If travelling with elders, build an extra buffer day at the start of your itinerary so that jet lag, heat, or unexpected train delays do not push the darshan into a rushed window. On the day of the festival or darshan, arrive at least 90 minutes before the published window, and plan to remain for the full morning rather than the rushed one-hour slot that most first-time visitors default to.
 
 ## Helpful official links
 
-- [Sansthan Locations](/locations)
+- [${locationLink.label} location page](${locationHref})
+- [All Sansthan Locations](/locations)
 - [Accommodation Booking Request](/booking)
 - [Contact Sansthan Office](/contact)
+- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
+- [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide)
 
 ## Continue reading
 
@@ -858,9 +1035,21 @@ ${relatedBlogLinks
   .map((entry) => `- [${entry.label}](/blog/${entry.slug})`)
   .join("\n")}
 
+## Frequently asked questions
+
+**${faqA.question}** ${faqA.answer}
+
+**${faqB.question}** ${faqB.answer}
+
+**${faqC.question}** ${faqC.answer}
+
+**${faqD.question}** ${faqD.answer}
+
+**${faqE.question}** ${faqE.answer}
+
 ## Devotee takeaway
 
-Use this guidance as a planning companion, and rely on official channels for final operational details, availability, and schedule-sensitive updates.
+Use this guidance as a planning companion, and rely on official channels for final operational details, availability, and schedule-sensitive updates. The ${category === "events" ? "festival" : "spiritual practice"} you are preparing for is best received with a calm mind, a light schedule, and a clear sense of what the Sansthan office has already arranged for you on arrival. The rest — the darshan, the prasad, the satsang — will follow. As you return home, give yourself two or three days to integrate the experience — speak with family about the trip, write down the small moments that stood out, and plan the next visit while the inspiration is fresh.
 
 ---
 
@@ -954,6 +1143,8 @@ function generateLocationClusterPosts() {
 
       const content = buildLocationPostContent({
         city: config.city,
+        slug,
+        locationKey: config.key,
         locationPage: config.locationPage,
         topicTitle: topic.title,
         relatedBlogLinks,
@@ -1019,7 +1210,7 @@ function generateCrossLocationGuides() {
       relatedSlugs,
     });
 
-    const content = buildCrossLocationGuideContent({ title, relatedBlogLinks });
+    const content = buildCrossLocationGuideContent({ title, slug, relatedBlogLinks });
     const relativePath = `guides/${slug}.md`;
     writePostFile(relativePath, `${frontmatter}${content}`);
     generated.push(relativePath);
@@ -1075,9 +1266,11 @@ function generateSpiritualPosts() {
 
     const content = buildSpiritualOrEventContent({
       title,
+      slug,
       focusKeyword: "Shri Gajanan Maharaj spiritual planning",
       category: "spiritual",
       relatedBlogLinks,
+      locationId: "shegaon-bhakt-niwas",
     });
 
     const relativePath = `spiritual/${slug}.md`;
@@ -1135,9 +1328,11 @@ function generateEventPosts() {
 
     const content = buildSpiritualOrEventContent({
       title,
+      slug,
       focusKeyword: "Sansthan festival darshan planning",
       category: "events",
       relatedBlogLinks,
+      locationId: "shegaon-bhakt-niwas",
     });
 
     const relativePath = `events/${slug}.md`;
@@ -1197,7 +1392,21 @@ function main() {
 }
 
 try {
-  main();
+  if (process.argv.includes("--regen-spiritual-events")) {
+    ensureDirectory(BLOG_ROOT);
+    assertGeneratorConfiguration();
+    const spiritual = generateSpiritualPosts();
+    const events = generateEventPosts();
+    const all = [...spiritual, ...events];
+    writeGenerationManifest(all);
+    console.info("seo-blog-regen-spiritual-events", {
+      timestamp: Date.now(),
+      spiritual: spiritual.length,
+      events: events.length,
+    });
+  } else {
+    main();
+  }
 } catch (error) {
   console.error("seo-blog-generator-error", {
     timestamp: Date.now(),

@@ -1,0 +1,28 @@
+---
+import type { BlogPost } from "@/lib/blog";
+import BlogCard from "./BlogCard.astro";
+
+interface Props {
+  posts: BlogPost[];
+  heading?: string;
+}
+
+const { posts, heading = "You might also like" } = Astro.props;
+---
+
+{posts && posts.length > 0 && (
+  <section class="mt-16 border-t border-border pt-10" aria-labelledby="related-posts-heading">
+    <h2
+      id="related-posts-heading"
+      class="mb-6 font-serif text-2xl font-bold text-foreground sm:text-3xl"
+    >
+      {heading}
+    </h2>
+
+    <div class="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+      {posts.map((post) => (
+        <BlogCard post={post} compact={true} />
+      ))}
+    </div>
+  </section>
+)}

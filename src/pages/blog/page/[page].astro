@@ -1,0 +1,89 @@
+---
+export const prerender = true;
+
+import Layout from "@/layouts/Layout.astro";
+import BlogListingLayout from "@/components/blog/BlogListingLayout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getCollectionPageSchema } from "@/lib/seo/structured-data";
+import {
+  getBlogPosts,
+  paginate,
+  BLOG_PAGE_SIZE,
+} from "@/lib/blog";
+import type { CollectionPageItem } from "@/lib/seo/structured-data";
+
+export async function getStaticPaths() {
+  const posts = getBlogPosts();
+  const firstPage = paginate(posts, 1, BLOG_PAGE_SIZE);
+  // Pages 2..N (page 1 is served by /blog/index.astro)
+  if (firstPage.totalPages <= 1) return [];
+  const pages: Array<{ params: { page: string } }> = [];
+  for (let p = 2; p <= firstPage.totalPages; p++) {
+    pages.push({ params: { page: String(p) } });
+  }
+  return pages;
+}
+
+const rawPage = Astro.params.page;
+const pageNumber = Number.parseInt(rawPage ?? "", 10);
+
+if (!Number.isFinite(pageNumber) || pageNumber < 2) {
+  return Astro.redirect("/blog");
+}
+
+const posts = getBlogPosts();
+const result = paginate(posts, pageNumber, BLOG_PAGE_SIZE);
+
+const prevHref = result.hasPrev
+  ? result.page - 1 === 1
+    ? "/blog"
+    : `/blog/page/${result.page - 1}`
+  : undefined;
+const nextHref = result.hasNext ? `/blog/page/${result.page + 1}` : undefined;
+
+const collectionItems: CollectionPageItem[] = result.items.map((post) => ({
+  title: post.title,
+  urlPath: `/blog/${post.slug}`,
+  description: post.description,
+  date: post.date,
+  image: post.image,
+  keywords: post.keywords,
+  category: post.category,
+}));
+
+const meta = generatePageMetadata({
+  title: `Blog — Page ${result.page}`,
+  description: `Browse page ${result.page} of articles, guides and stories from Shri Gajanan Maharaj Sansthan Shegaon.`,
+  keywords: [
+    "Shri Gajanan Maharaj Blog",
+    "Shegaon temple blog",
+    "pilgrimage guides",
+  ],
+  path: `/blog/page/${result.page}`,
+  pagination: {
+    ...(prevHref ? { prev: prevHref } : {}),
+    ...(nextHref ? { next: nextHref } : {}),
+  },
+});
+
+const collectionJsonLd = JSON.stringify(
+  getCollectionPageSchema({
+    path: `/blog/page/${result.page}`,
+    title: `Shri Gajanan Maharaj Sansthan Blog — Page ${result.page}`,
+    description: `Page ${result.page} of articles, guides and stories from Shri Gajanan Maharaj Sansthan Shegaon.`,
+    items: collectionItems,
+  }),
+);
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={collectionJsonLd} />
+  <BlogListingLayout
+    title={`Blog — Page ${result.page}`}
+    description={`Page ${result.page} of articles, guides and stories from the Sansthan.`}
+    posts={result.items}
+    currentPage={result.page}
+    totalPages={result.totalPages}
+    basePath="/blog"
+  />
+</Layout>

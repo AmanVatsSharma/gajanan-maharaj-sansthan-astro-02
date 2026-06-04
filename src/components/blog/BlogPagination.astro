@@ -1,0 +1,96 @@
+---
+import { cn } from "@/lib/utils";
+
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  basePath: string;
+}
+
+const { currentPage, totalPages, basePath } = Astro.props;
+
+if (totalPages <= 1) {
+  // Render nothing when there is only a single page.
+}
+
+const safeTotalPages = Math.max(1, totalPages);
+const safeCurrentPage = Math.min(Math.max(1, currentPage), safeTotalPages);
+
+const buildHref = (page: number): string => {
+  if (page <= 1) return basePath;
+  return `${basePath}/page/${page}`;
+};
+
+const pageNumbers: Array<number | "ellipsis"> = (() => {
+  const total = safeTotalPages;
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+  const pages: Array<number | "ellipsis"> = [1];
+  const start = Math.max(2, safeCurrentPage - 1);
+  const end = Math.min(total - 1, safeCurrentPage + 1);
+  if (start > 2) pages.push("ellipsis");
+  for (let i = start; i <= end; i++) pages.push(i);
+  if (end < total - 1) pages.push("ellipsis");
+  pages.push(total);
+  return pages;
+})();
+
+const hasPrev = safeCurrentPage > 1;
+const hasNext = safeCurrentPage < safeTotalPages;
+const prevHref = hasPrev ? buildHref(safeCurrentPage - 1) : undefined;
+const nextHref = hasNext ? buildHref(safeCurrentPage + 1) : undefined;
+
+const linkBase =
+  "inline-flex items-center justify-center rounded-md border border-border px-3 py-2 text-sm font-medium transition-colors";
+const linkMuted = "bg-card text-foreground hover:bg-muted";
+const linkActive = "bg-primary text-primary-foreground border-primary hover:bg-primary/90";
+const linkDisabled = "bg-muted text-muted-foreground pointer-events-none opacity-50";
+---
+
+{safeTotalPages > 1 && (
+  <nav
+    aria-label="Blog pagination"
+    class="mt-12 flex flex-col items-center justify-between gap-4 sm:flex-row"
+  >
+    <a
+      href={prevHref ?? "#"}
+      aria-disabled={!hasPrev}
+      class={cn(linkBase, hasPrev ? linkMuted : linkDisabled)}
+    >
+      <span aria-hidden="true" class="mr-1">&larr;</span>
+      <span>Previous</span>
+    </a>
+
+    <ul class="flex flex-wrap items-center justify-center gap-1">
+      {pageNumbers.map((item) => (
+        item === "ellipsis" ? (
+          <li class="px-2 text-muted-foreground" aria-hidden="true">&hellip;</li>
+        ) : (
+          <li>
+            <a
+              href={buildHref(item)}
+              aria-current={item === safeCurrentPage ? "page" : undefined}
+              class={cn(
+                linkBase,
+                "min-w-10",
+                item === safeCurrentPage ? linkActive : linkMuted,
+              )}
+            >
+              {item}
+            </a>
+          </li>
+        )
+      ))}
+    </ul>
+
+    <a
+      href={nextHref ?? "#"}
+      aria-disabled={!hasNext}
+      class={cn(linkBase, hasNext ? linkMuted : linkDisabled)}
+    >
+      <span>Next</span>
+      <span aria-hidden="true" class="ml-1">&rarr;</span>
+    </a>
+  </nav>
+)}

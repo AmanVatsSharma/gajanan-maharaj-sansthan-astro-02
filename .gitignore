@@ -58,3 +58,7 @@ Thumbs.db
 
 # ESLint
 .eslintcache
+
+# Local dev / scratch
+wordcount.cjs
+public/hero/*.exe

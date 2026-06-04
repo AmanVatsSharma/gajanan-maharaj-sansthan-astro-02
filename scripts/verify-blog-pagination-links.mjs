@@ -10,8 +10,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const APP_SERVER_DIR = path.join(process.cwd(), ".next/server/app");
-const BLOG_INDEX_HTML_PATH = path.join(APP_SERVER_DIR, "blog.html");
+const APP_SERVER_DIR = path.join(process.cwd(), "dist/client");
+const BLOG_INDEX_HTML_PATH = path.join(APP_SERVER_DIR, "blog/index.html");
 const BLOG_PAGE_DIR = path.join(APP_SERVER_DIR, "blog/page");
 
 function getPaginatedPageNumbers() {
@@ -21,8 +21,8 @@ function getPaginatedPageNumbers() {
 
   const entries = fs.readdirSync(BLOG_PAGE_DIR, { withFileTypes: true });
   return entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".html"))
-    .map((entry) => Number.parseInt(entry.name.replace(/\.html$/, ""), 10))
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => Number.parseInt(entry.name, 10))
     .filter((page) => Number.isInteger(page) && page >= 2)
     .sort((a, b) => a - b);
 }
@@ -79,9 +79,9 @@ function main() {
   const maxPage = pageNumbers[pageNumbers.length - 1];
 
   for (const page of pageNumbers) {
-    const pagePath = path.join(BLOG_PAGE_DIR, `${page}.html`);
+    const pagePath = path.join(BLOG_PAGE_DIR, String(page), "index.html");
     const html = fs.readFileSync(pagePath, "utf-8");
-    const relativePath = `blog/page/${page}.html`;
+    const relativePath = `blog/page/${page}/index.html`;
 
     const previousHref = page === 2 ? "/blog" : `/blog/page/${page - 1}`;
     if (!hasHref(html, previousHref)) {

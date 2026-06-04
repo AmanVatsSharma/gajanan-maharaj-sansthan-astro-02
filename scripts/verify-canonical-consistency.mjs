@@ -11,8 +11,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const APP_SERVER_DIR = path.join(process.cwd(), ".next/server/app");
-const CANONICAL_ORIGIN = "https://www.gajananmaharajsanstan.com";
+const APP_SERVER_DIR = path.join(process.cwd(), "dist/client");
+const CANONICAL_ORIGIN = "https://www.srigajananmaharajsanstan.com";
 
 function getHtmlFiles(directoryPath) {
   if (!fs.existsSync(directoryPath)) {

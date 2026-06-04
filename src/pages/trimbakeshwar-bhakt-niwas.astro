@@ -1,0 +1,366 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ROOMS, PRICING_TRANSPARENCY } from "@/data/rooms";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getLodgingBusinessWithRatingSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const trimbakeshwar = sansthanLocations.find((l) => l.id === "trimbakeshwar");
+if (!trimbakeshwar) {
+  return Astro.redirect("/404");
+}
+
+const trimbakeshwarRooms = ROOMS;
+
+const meta = generatePageMetadata({
+  title:
+    "Trimbakeshwar Bhakt Niwas — Book Nashik Jyotirlinga Stay",
+  description:
+    "Book Trimbakeshwar Bhakt Niwas for your Nashik Jyotirlinga darshan. Sansthan-managed rooms with meals, hot water, parking and a peaceful stay near Brahmagiri.",
+  keywords: [
+    "trimbakeshwar bhakt niwas",
+    "trimbakeshwar accommodation",
+    "nashik jyotirlinga stay",
+    "trimbakeshwar dharamshala",
+    "brahmagiri trek stay",
+    "trimbakeshwar room booking",
+    "godavari origin trimbakeshwar",
+  ],
+  path: "/trimbakeshwar-bhakt-niwas",
+});
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  trimbakeshwar,
+  rating,
+  { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "How far is Trimbakeshwar from Nashik?",
+    answer:
+      "Trimbakeshwar is about 28 km west of Nashik city, at the foothills of Brahmagiri. The drive takes roughly 45 minutes to an hour via the Nashik–Trimbak road. MSRTC buses and shared taxis run frequently from Nashik CBS to Trimbakeshwar.",
+  },
+  {
+    question: "Is there a Sansthan Bhakt Niwas in Trimbakeshwar?",
+    answer:
+      "Yes. Shri Gajanan Maharaj Sansthan operates a Bhakt Niwas at Trimbakeshwar offering family rooms with meals, hot water, parking and a bhojan kaksha. Bookings can be made online or at the Sansthan office in Trimbakeshwar.",
+  },
+  {
+    question: "What is the special pooja at Trimbakeshwar?",
+    answer:
+      "The most sought-after pooja is Rudra Homa, performed in the temple's mandap to invoke Lord Shiva. Other popular rituals include Maha Mrityunjaya Japa, Laghu Rudra, and the Kushavarta puja at the source of the Godavari.",
+  },
+  {
+    question: "Can I do Narayan Nagbali pooja at Trimbakeshwar?",
+    answer:
+      "Yes. Trimbakeshwar is one of the very few places in India where the Narayan Nagbali pooja is performed, with the help of qualified purohits. The pooja typically takes 3 days and must be arranged in advance through the temple office or a registered pandit.",
+  },
+  {
+    question: "How to reach Trimbakeshwar from Mumbai?",
+    answer:
+      "Mumbai to Trimbakeshwar is approximately 170 km via NH 848, taking 4–5 hours by car. The fastest train option is to Nashik Road station, followed by a 1-hour taxi or bus ride. State transport and private buses also ply overnight from Mumbai to Nashik.",
+  },
+  {
+    question: "What is Brahmagiri and how to trek it?",
+    answer:
+      "Brahmagiri is the 1,300-metre hill at Trimbakeshwar that marks the origin of the Godavari river. A 4-km, ~2-hour trek from the temple leads to the source. The path is well-marked and the climb is moderate, with steps on the steeper sections. Start early to avoid midday heat.",
+  },
+  {
+    question: "Is Trimbakeshwar open year-round?",
+    answer:
+      "Yes. The Trimbakeshwar Jyotirlinga temple is open every day, with darshan timings generally from 5:30 AM to 9:00 PM. Light rain showers are common in monsoon, but the temple and Bhakt Niwas remain operational. Mahashivratri and Shravan Mondays are the busiest days.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Bhakt Niwas", url: "/trimbakeshwar-bhakt-niwas" },
+]);
+
+const structuredPayload = [lodgingSchema, faqSchema, breadcrumbSchema];
+
+const whySansthan = [
+  {
+    title: "Walking distance to the Jyotirlinga",
+    body: "The Sansthan Bhakt Niwas is a short walk from the Trimbakeshwar temple, so you can attend kakad aarti without arranging transport.",
+  },
+  {
+    title: "All meals included",
+    body: "Your room rate covers sattvic breakfast, lunch and dinner at the Sansthan bhojan kaksha. No need to depend on local restaurants during your yatra.",
+  },
+  {
+    title: "Transparent pricing",
+    body: "Suggested donations from ₹1,250 to ₹4,150 per night cover room, meals, hot water and taxes. No agents, no commission, no hidden fees.",
+  },
+  {
+    title: "Parking &amp; family stay",
+    body: "Free parking for cars and two-wheelers. Rooms are reserved for family pilgrims with a 24-hour check-in policy and a calm, disciplined campus.",
+  },
+  {
+    title: "Pilgrim-first service",
+    body: "Run by Shri Gajanan Maharaj Sansthan — the same trust serving devotees at Shegaon, Pandharpur and Omkareshwar for over a century.",
+  },
+];
+
+const bookingSteps = [
+  "Visit the Sansthan booking page and enter your Trimbakeshwar check-in and check-out dates.",
+  "Choose a room type from the Trimbakeshwar Bhakt Niwas list (2 Bed, 3 Bed, 4 Bed, Family, Deluxe or Luxury).",
+  "Enter primary guest details — full name, mobile, Aadhar / Voter ID, and number of family members.",
+  "Pay the suggested donation online (UPI, card, netbanking) or choose to pay at the Bhakt Niwas office on arrival.",
+  "Receive an SMS and email confirmation with your booking ID, allotted room and check-in instructions for Trimbakeshwar.",
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 border-b border-orange-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-orange-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-orange-900 font-medium">Trimbakeshwar Bhakt Niwas</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-orange-900 leading-tight">
+        Trimbakeshwar Bhakt Niwas — Book Nashik Jyotirlinga Stay
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-orange-900/80 max-w-3xl">
+        Stay at the Sansthan Bhakt Niwas near the Trimbakeshwar Jyotirlinga
+        temple. Family rooms, sattvic meals, hot water and a calm stay at the
+        foothills of Brahmagiri.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-orange-700 text-white font-semibold shadow hover:bg-orange-800 transition"
+        >
+          Book a Room
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-orange-800 font-semibold border border-orange-300 hover:bg-orange-50 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why book with Sansthan -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Why stay at Sansthan Bhakt Niwas in Trimbakeshwar
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        The Sansthan runs a calm, family-first stay a short walk from the
+        Trimbakeshwar Jyotirlinga. Booking with the Sansthan keeps your yatra
+        simple, sattvic and well-organised.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          whySansthan.map((item) => (
+            <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+              <h3 class="text-lg font-semibold text-orange-900" set:html={item.title} />
+              <p class="mt-2 text-orange-900/80 text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Room types table -->
+  <section class="py-16 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Trimbakeshwar Bhakt Niwas room types &amp; pricing
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        All room rates at Trimbakeshwar Bhakt Niwas include accommodation, three
+        meals per day, hot water and applicable taxes. There are no hidden
+        charges — the price you see is the price you pay.
+      </p>
+
+      <div class="mt-8 overflow-x-auto rounded-xl border border-orange-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-orange-100 text-orange-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Room Type</th>
+              <th class="px-4 py-3 font-semibold">Capacity</th>
+              <th class="px-4 py-3 font-semibold">AC</th>
+              <th class="px-4 py-3 font-semibold text-right">Suggested Donation</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100 text-orange-900">
+            {
+              trimbakeshwarRooms.map((room) => (
+                <tr class="hover:bg-orange-50/60">
+                  <td class="px-4 py-3 font-medium">{room.title}</td>
+                  <td class="px-4 py-3">{room.capacity} persons</td>
+                  <td class="px-4 py-3">{room.ac ? "Yes" : "No"}</td>
+                  <td class="px-4 py-3 text-right font-semibold">
+                    ₹{room.price.toLocaleString("en-IN")}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-4 text-xs md:text-sm text-orange-900/70">
+        {PRICING_TRANSPARENCY.disclaimer}. {PRICING_TRANSPARENCY.noHiddenCharges}.
+        {PRICING_TRANSPARENCY.checkInOut}.
+      </p>
+
+      <div class="mt-8">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-orange-700 text-white font-semibold shadow hover:bg-orange-800 transition"
+        >
+          Reserve a room now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-step booking guide -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        How to book Trimbakeshwar Bhakt Niwas — 5-step guide
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Reserve your Jyotirlinga stay in minutes. Booking early is recommended
+        for Mahashivratri, Shravan Mondays and the Guru Purnima rush.
+      </p>
+      <ol class="mt-10 space-y-4">
+        {
+          bookingSteps.map((step, idx) => (
+            <li class="flex gap-4 items-start rounded-xl border border-orange-200 bg-orange-50/40 p-5">
+              <span class="flex-shrink-0 w-9 h-9 rounded-full bg-orange-700 text-white font-bold flex items-center justify-center">
+                {idx + 1}
+              </span>
+              <p class="text-orange-900 leading-relaxed">{step}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Frequently asked questions — Trimbakeshwar Bhakt Niwas
+      </h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-orange-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-orange-900">
+                <span>{faq.question}</span>
+                <span class="text-orange-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-orange-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Related blog posts -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Trimbakeshwar yatra guides
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Plan your Jyotirlinga darshan with our guides on the temple, the
+        Godavari origin, Nashik to Trimbakeshwar routes, and the Brahmagiri
+        trek.
+      </p>
+      <ul class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          [
+            { slug: "trimbakeshwar-jyotirlinga-guide", title: "Trimbakeshwar Jyotirlinga Guide" },
+            { slug: "nashik-to-trimbakeshwar-route", title: "Nashik to Trimbakeshwar Route" },
+            { slug: "godavari-origin-trimbakeshwar", title: "Origin of Godavari at Trimbakeshwar" },
+            { slug: "trimbakeshwar-puja-types", title: "Pooja Types at Trimbakeshwar" },
+            { slug: "brahmagiri-trek-guide", title: "Brahmagiri Trek Guide" },
+          ].map((post) => (
+            <li>
+              <a
+                href={`/blog/${post.slug}`}
+                class="block rounded-xl border border-orange-200 bg-orange-50/40 p-5 hover:bg-orange-100 transition"
+              >
+                <span class="text-orange-900 font-semibold">{post.title}</span>
+                <span class="block mt-1 text-sm text-orange-800/70">Read guide →</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-gradient-to-r from-orange-700 to-amber-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">
+        Book your Trimbakeshwar Jyotirlinga stay today
+      </h2>
+      <p class="mt-4 text-orange-50/90 max-w-2xl mx-auto">
+        Reserve a Bhakt Niwas room near the Trimbakeshwar temple. All meals and
+        hot water included. Family rooms available.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-orange-800 font-semibold shadow hover:bg-orange-50 transition"
+        >
+          Book on /booking
+        </a>
+        <a
+          href="/locations/trimbakeshwar-temple"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          See Trimbakeshwar location page
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

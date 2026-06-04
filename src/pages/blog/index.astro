@@ -1,0 +1,62 @@
+---
+export const prerender = true;
+
+import Layout from "@/layouts/Layout.astro";
+import BlogListingLayout from "@/components/blog/BlogListingLayout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getCollectionPageSchema } from "@/lib/seo/structured-data";
+import {
+  getBlogPosts,
+  paginate,
+  BLOG_PAGE_SIZE,
+} from "@/lib/blog";
+import type { CollectionPageItem } from "@/lib/seo/structured-data";
+
+const allPosts = getBlogPosts();
+const firstPage = paginate(allPosts, 1, BLOG_PAGE_SIZE);
+
+const collectionItems: CollectionPageItem[] = firstPage.items.map((post) => ({
+  title: post.title,
+  urlPath: `/blog/${post.slug}`,
+  description: post.description,
+  date: post.date,
+  image: post.image,
+  keywords: post.keywords,
+  category: post.category,
+}));
+
+const meta = generatePageMetadata({
+  title: "Blog",
+  description:
+    "Articles, guides and stories from Shri Gajanan Maharaj Sansthan Shegaon — pilgrimage tips, darshan guides, festivals, and devotee experiences.",
+  keywords: [
+    "Shri Gajanan Maharaj Blog",
+    "Shegaon temple blog",
+    "Gajanan Maharaj stories",
+    "pilgrimage guides",
+  ],
+  path: "/blog",
+});
+
+const collectionJsonLd = JSON.stringify(
+  getCollectionPageSchema({
+    path: "/blog",
+    title: "Shri Gajanan Maharaj Sansthan Blog",
+    description:
+      "Articles, guides and stories from Shri Gajanan Maharaj Sansthan Shegaon — pilgrimage tips, darshan guides, festivals, and devotee experiences.",
+    items: collectionItems,
+  }),
+);
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={collectionJsonLd} />
+  <BlogListingLayout
+    title="Shri Gajanan Maharaj Sansthan Blog"
+    description="Articles, guides and stories from the Sansthan — pilgrimage tips, darshan guides, festivals, and devotee experiences."
+    posts={firstPage.items}
+    currentPage={firstPage.page}
+    totalPages={firstPage.totalPages}
+    basePath="/blog"
+  />
+</Layout>

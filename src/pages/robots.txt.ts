@@ -17,6 +17,7 @@ Allow: /logo/
 Allow: /rooms/
 
 Sitemap: ${siteUrl}/sitemap.xml
+Host: ${siteUrl}
 `;
   return new Response(body, {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

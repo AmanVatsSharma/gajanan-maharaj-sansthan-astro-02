@@ -48,6 +48,10 @@ const STATIC_PAGE_LASTMOD: Record<string, string> = {
   "/terms-conditions":"2026-01-01",
   "/refund-policy":   "2026-01-01",
   "/disclaimer":      "2026-01-01",
+  "/shegaon-accommodation":       "2026-06-04",
+  "/omkareshwar-bhakta-niwas":    "2026-06-04",
+  "/pandharpur-room-booking":     "2026-06-04",
+  "/trimbakeshwar-bhakt-niwas":   "2026-06-04",
 };
 
 function urlEntry(
@@ -69,18 +73,22 @@ export const GET: APIRoute = async () => {
   const chunks: string[] = [];
 
   const staticPages: Array<{ path: string; changefreq: string; priority: string }> = [
-    { path: "/",                 changefreq: "weekly",  priority: "1.0" },
-    { path: "/booking",          changefreq: "weekly",  priority: "0.9" },
-    { path: "/bhakta-niwas",     changefreq: "weekly",  priority: "0.9" },
-    { path: "/locations",        changefreq: "weekly",  priority: "0.9" },
-    { path: "/darshan-timings",  changefreq: "monthly", priority: "0.85" },
-    { path: "/how-to-reach",     changefreq: "monthly", priority: "0.85" },
-    { path: "/about",            changefreq: "monthly", priority: "0.6" },
-    { path: "/contact",          changefreq: "monthly", priority: "0.6" },
-    { path: "/privacy-policy",   changefreq: "yearly",  priority: "0.3" },
-    { path: "/terms-conditions", changefreq: "yearly",  priority: "0.3" },
-    { path: "/refund-policy",    changefreq: "yearly",  priority: "0.3" },
-    { path: "/disclaimer",       changefreq: "yearly",  priority: "0.3" },
+    { path: "/",                       changefreq: "weekly",  priority: "1.0" },
+    { path: "/booking",                changefreq: "weekly",  priority: "0.9" },
+    { path: "/bhakta-niwas",           changefreq: "weekly",  priority: "0.9" },
+    { path: "/locations",              changefreq: "weekly",  priority: "0.9" },
+    { path: "/darshan-timings",        changefreq: "monthly", priority: "0.85" },
+    { path: "/how-to-reach",           changefreq: "monthly", priority: "0.85" },
+    { path: "/about",                  changefreq: "monthly", priority: "0.6" },
+    { path: "/contact",                changefreq: "monthly", priority: "0.6" },
+    { path: "/privacy-policy",         changefreq: "yearly",  priority: "0.3" },
+    { path: "/terms-conditions",       changefreq: "yearly",  priority: "0.3" },
+    { path: "/refund-policy",          changefreq: "yearly",  priority: "0.3" },
+    { path: "/disclaimer",             changefreq: "yearly",  priority: "0.3" },
+    { path: "/shegaon-accommodation",      changefreq: "monthly", priority: "0.85" },
+    { path: "/omkareshwar-bhakta-niwas",   changefreq: "monthly", priority: "0.85" },
+    { path: "/pandharpur-room-booking",    changefreq: "monthly", priority: "0.85" },
+    { path: "/trimbakeshwar-bhakt-niwas",  changefreq: "monthly", priority: "0.85" },
   ];
 
   for (const p of staticPages) {

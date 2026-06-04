@@ -12,8 +12,8 @@ import path from "node:path";
 import matter from "gray-matter";
 
 const BLOG_CONTENT_DIR = path.join(process.cwd(), "content/blog");
-const BLOG_APP_BUILD_DIR = path.join(process.cwd(), ".next/server/app/blog");
-const CANONICAL_ORIGIN = "https://www.gajananmaharajsanstan.com";
+const BLOG_APP_BUILD_DIR = path.join(process.cwd(), "dist/client/blog");
+const CANONICAL_ORIGIN = "https://www.srigajananmaharajsanstan.com";
 const REQUIRED_SCHEMA_TYPES = ["BlogPosting", "BreadcrumbList"];
 
 function toTaxonomySlug(value) {
@@ -155,7 +155,7 @@ function getPostEntries() {
     postEntries.push({
       slug,
       sourcePath: markdownFilePath,
-      htmlPath: path.join(BLOG_APP_BUILD_DIR, `${slug}.html`),
+      htmlPath: path.join(BLOG_APP_BUILD_DIR, slug, "index.html"),
     });
   }
 

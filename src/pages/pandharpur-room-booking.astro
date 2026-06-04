@@ -1,0 +1,366 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ROOMS, PRICING_TRANSPARENCY } from "@/data/rooms";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getLodgingBusinessWithRatingSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const pandharpur = sansthanLocations.find((l) => l.id === "pandharpur-math");
+if (!pandharpur) {
+  return Astro.redirect("/404");
+}
+
+const pandharpurRooms = ROOMS;
+
+const meta = generatePageMetadata({
+  title:
+    "Pandharpur Room Booking — Vitthal Rukmini Bhakta Niwas",
+  description:
+    "Book Pandharpur room booking for your Vitthal Rukmini darshan yatra. Sansthan-managed Bhakta Niwas with meals, hot water, hall for wari pilgrims. Reserve your stay today.",
+  keywords: [
+    "pandharpur room booking",
+    "vitthal rukmini bhakta niwas",
+    "pandharpur accommodation",
+    "pandharpur dharamshala",
+    "wari pandharpur stay",
+    "ashadhi ekadashi pandharpur",
+    "pandharpur temple stay",
+  ],
+  path: "/pandharpur-room-booking",
+});
+
+const rating = {
+  ratingValue: 4.7,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  pandharpur,
+  rating,
+  { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "When is Ashadhi Ekadashi at Pandharpur?",
+    answer:
+      "Ashadhi Ekadashi falls in the bright fortnight (Shukla Paksha) of the Hindu month of Ashadha, typically in June or July. It is the most important pilgrimage day at Pandharpur, when the wari processions from Alandi and Dehu arrive with the palkhi of Sant Tukaram and Sant Dnyaneshwar.",
+  },
+  {
+    question: "How to book Pandharpur Bhakta Niwas?",
+    answer:
+      "You can book online through the Sansthan's official booking page, or visit the Pandharpur Bhakta Niwas office in person. Online booking is recommended during Ashadhi Ekadashi and Kartiki Ekadashi when the city is at peak occupancy.",
+  },
+  {
+    question: "Is there free accommodation at Pandharpur?",
+    answer:
+      "Yes. Several dharamshalas in Pandharpur offer free or donation-based accommodation for warkaris and pilgrim families. The Shri Gajanan Maharaj Sansthan Bhakta Niwas near Sant Kaikadi Maharaj Math offers clean family rooms with meals on a donation basis.",
+  },
+  {
+    question: "What is the distance from Solapur to Pandharpur?",
+    answer:
+      "Pandharpur is approximately 72 km west of Solapur by NH 65. The drive takes about 1.5 hours by car, and MSRTC and private buses run frequently between the two cities.",
+  },
+  {
+    question: "Are wari processions accommodated at Bhakta Niwas?",
+    answer:
+      "The Sansthan Bhakta Niwas is primarily for family pilgrims. Wari groups travelling in procession are usually accommodated in larger dharamshala halls nearby; the Sansthan office can guide warkaris to the right hall on arrival.",
+  },
+  {
+    question: "What is the best route from Pune to Pandharpur?",
+    answer:
+      "The shortest route from Pune to Pandharpur is via NH 65 via Solapur, covering about 245 km in 5 hours. An alternative scenic route goes via Baramati and Indapur, taking around 6 hours. Trains run from Pune to Kurduvadi, from where Pandharpur is a 40-minute drive.",
+  },
+  {
+    question: "Is food included in Bhakta Niwas Pandharpur?",
+    answer:
+      "Yes. Room rates at Pandharpur Bhakta Niwas include breakfast, lunch and dinner at the Sansthan bhojan kaksha. The meals are sattvic, freshly prepared and served at fixed timings, with hot water available throughout the day.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Pandharpur Room Booking", url: "/pandharpur-room-booking" },
+]);
+
+const structuredPayload = [lodgingSchema, faqSchema, breadcrumbSchema];
+
+const whySansthan = [
+  {
+    title: "Near Sant Kaikadi Maharaj Math",
+    body: "The Sansthan Bhakta Niwas is a short walk from the Math and the Bhagirathi ghat, the most convenient access point for Vitthal's darshan.",
+  },
+  {
+    title: "All meals included",
+    body: "Your room rate covers sattvic breakfast, lunch and dinner — vital during a Pandharpur yatra where hot meals are hard to find during peak season.",
+  },
+  {
+    title: "Transparent pricing",
+    body: "Suggested donations from ₹1,250 to ₹4,150 per night cover room, meals, hot water and taxes. No agents, no commission, no hidden charges.",
+  },
+  {
+    title: "Halls for groups",
+    body: "Larger dormitory halls (up to 20 persons) are available for warkari groups and extended families, in addition to private family rooms.",
+  },
+  {
+    title: "Calm, family-first stay",
+    body: "Bhakta Niwas is reserved for family pilgrims. ID verification and a 24-hour check-in policy keep the campus clean and orderly, even during Ekadashi rush.",
+  },
+];
+
+const bookingSteps = [
+  "Open the Sansthan booking page and enter your Pandharpur check-in and check-out dates.",
+  "Choose a room type (2 Bed, 3 Bed, 4 Bed, Family Room, Deluxe or Luxury Suite) or a hall for larger groups.",
+  "Fill in the primary guest details — name, mobile, Aadhar / Voter ID, and total family members.",
+  "Pay the suggested donation online (UPI, card, netbanking) or opt to pay at the Pandharpur Bhakta Niwas office on arrival.",
+  "Receive an SMS and email confirmation with your booking ID, allotted room and check-in instructions for Pandharpur.",
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 border-b border-orange-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-orange-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-orange-900 font-medium">Pandharpur Room Booking</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-orange-900 leading-tight">
+        Pandharpur Room Booking — Vitthal Rukmini Bhakta Niwas
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-orange-900/80 max-w-3xl">
+        Book a clean family room or dormitory hall at Shri Gajanan Maharaj
+        Sansthan Bhakta Niwas near Sant Kaikadi Maharaj Math. All meals, hot
+        water and a calm, family-first stay — perfect for your Vitthal darshan.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-orange-700 text-white font-semibold shadow hover:bg-orange-800 transition"
+        >
+          Book a Room
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-orange-800 font-semibold border border-orange-300 hover:bg-orange-50 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why book with Sansthan -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Why book Pandharpur rooms with the Sansthan
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Pandharpur draws lakhs of warkaris every Ashadhi Ekadashi. Booking with
+        the Sansthan guarantees a clean room, sattvic meals and a calm campus —
+        no agents, no overcharging, no uncertainty.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          whySansthan.map((item) => (
+            <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+              <h3 class="text-lg font-semibold text-orange-900">{item.title}</h3>
+              <p class="mt-2 text-orange-900/80 text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Room types table -->
+  <section class="py-16 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Pandharpur Bhakta Niwas room types &amp; pricing
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        All room rates at Pandharpur Bhakta Niwas include accommodation, three
+        meals per day, hot water and applicable taxes. There are no hidden
+        charges — the price you see is the price you pay.
+      </p>
+
+      <div class="mt-8 overflow-x-auto rounded-xl border border-orange-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-orange-100 text-orange-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Room Type</th>
+              <th class="px-4 py-3 font-semibold">Capacity</th>
+              <th class="px-4 py-3 font-semibold">AC</th>
+              <th class="px-4 py-3 font-semibold text-right">Suggested Donation</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100 text-orange-900">
+            {
+              pandharpurRooms.map((room) => (
+                <tr class="hover:bg-orange-50/60">
+                  <td class="px-4 py-3 font-medium">{room.title}</td>
+                  <td class="px-4 py-3">{room.capacity} persons</td>
+                  <td class="px-4 py-3">{room.ac ? "Yes" : "No"}</td>
+                  <td class="px-4 py-3 text-right font-semibold">
+                    ₹{room.price.toLocaleString("en-IN")}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-4 text-xs md:text-sm text-orange-900/70">
+        {PRICING_TRANSPARENCY.disclaimer}. {PRICING_TRANSPARENCY.noHiddenCharges}.
+        {PRICING_TRANSPARENCY.checkInOut}.
+      </p>
+
+      <div class="mt-8">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-orange-700 text-white font-semibold shadow hover:bg-orange-800 transition"
+        >
+          Reserve a room now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-step booking guide -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        How to book Pandharpur Bhakta Niwas — 5-step guide
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Reserve your Pandharpur stay well in advance for Ashadhi Ekadashi and
+        Kartiki Ekadashi. The process is the same for individuals, families and
+        wari groups.
+      </p>
+      <ol class="mt-10 space-y-4">
+        {
+          bookingSteps.map((step, idx) => (
+            <li class="flex gap-4 items-start rounded-xl border border-orange-200 bg-orange-50/40 p-5">
+              <span class="flex-shrink-0 w-9 h-9 rounded-full bg-orange-700 text-white font-bold flex items-center justify-center">
+                {idx + 1}
+              </span>
+              <p class="text-orange-900 leading-relaxed">{step}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Frequently asked questions — Pandharpur room booking
+      </h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-orange-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-orange-900">
+                <span>{faq.question}</span>
+                <span class="text-orange-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-orange-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Related blog posts -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Pandharpur darshan &amp; wari guides
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Plan your Vitthal yatra with our guides on darshan, the Ashadhi Ekadashi
+        wari, travel from Mumbai and Pune, and temple history.
+      </p>
+      <ul class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          [
+            { slug: "pandharpur-darshan-guide", title: "Pandharpur Darshan Guide" },
+            { slug: "pandharpur-travel-from-mumbai", title: "Mumbai to Pandharpur — Travel Options" },
+            { slug: "pandharpur-ashadhi-ekadashi-guide", title: "Ashadhi Ekadashi at Pandharpur" },
+            { slug: "vitthal-rukmini-temple-history", title: "Vitthal Rukmini Temple History" },
+            { slug: "pandharpur-accommodation-options", title: "Pandharpur Accommodation Options" },
+          ].map((post) => (
+            <li>
+              <a
+                href={`/blog/${post.slug}`}
+                class="block rounded-xl border border-orange-200 bg-orange-50/40 p-5 hover:bg-orange-100 transition"
+              >
+                <span class="text-orange-900 font-semibold">{post.title}</span>
+                <span class="block mt-1 text-sm text-orange-800/70">Read guide →</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-gradient-to-r from-orange-700 to-amber-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">
+        Ready to book your Pandharpur Bhakta Niwas?
+      </h2>
+      <p class="mt-4 text-orange-50/90 max-w-2xl mx-auto">
+        Confirm your stay in minutes. Suggested donations start at ₹1,250 with
+        all meals, hot water and a calm, family-first stay.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-orange-800 font-semibold shadow hover:bg-orange-50 transition"
+        >
+          Book on /booking
+        </a>
+        <a
+          href="/locations/pandharpur-temple"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          See Pandharpur location page
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

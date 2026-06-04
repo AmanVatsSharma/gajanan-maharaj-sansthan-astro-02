@@ -19,7 +19,7 @@ import {
 const BLOG_ROOT = path.join(process.cwd(), "content/blog");
 const BLOG_POSTS_PER_PAGE = 24;
 /** Must match staticPaths.length in src/pages/sitemap.xml.ts */
-const STATIC_ROUTE_COUNT = 13;
+const STATIC_ROUTE_COUNT = 16;
 const LOCATION_ROUTE_COUNT = 6;
 
 function getSitemapUrls(sitemapPath) {
@@ -45,6 +45,26 @@ function getSitemapUrls(sitemapPath) {
   return urls;
 }
 
+function getAllSitemapUrls(indexPath) {
+  const indexUrls = getSitemapUrls(indexPath);
+  const sitemapIndex = indexUrls.filter((url) => url.endsWith(".xml"));
+
+  if (sitemapIndex.length <= 1) {
+    return indexUrls;
+  }
+
+  const distClient = getDistClientDir();
+  const all = [];
+  for (const url of sitemapIndex) {
+    const filename = url.split("/").pop();
+    const childPath = path.join(distClient, filename);
+    if (fs.existsSync(childPath)) {
+      all.push(...getSitemapUrls(childPath));
+    }
+  }
+  return all;
+}
+
 function assertPresence(urlSet, url, failures, check) {
   if (!urlSet.has(url)) {
     failures.push({
@@ -58,7 +78,7 @@ function main() {
   const siteOrigin = getExpectedSiteOrigin();
   const sitemapPath = distClientFile("sitemap.xml");
   const inventory = getBlogInventory(BLOG_ROOT);
-  const sitemapUrls = getSitemapUrls(sitemapPath);
+  const sitemapUrls = getAllSitemapUrls(sitemapPath);
   const urlSet = new Set(sitemapUrls);
   const failures = [];
 

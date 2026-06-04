@@ -1,0 +1,366 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ROOMS, PRICING_TRANSPARENCY } from "@/data/rooms";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getLodgingBusinessWithRatingSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const omkareshwar = sansthanLocations.find((l) => l.id === "omkareshwar");
+if (!omkareshwar) {
+  return Astro.redirect("/404");
+}
+
+const omkareshwarRooms = ROOMS;
+
+const meta = generatePageMetadata({
+  title:
+    "Omkareshwar Bhakta Niwas — Book Pilgrimage Stay at Jyotirlinga",
+  description:
+    "Book Omkareshwar Bhakta Niwas for your Jyotirlinga darshan yatra. Affordable Sansthan-managed rooms with meals, hot water and parking. Reserve your stay near the temple today.",
+  keywords: [
+    "omkareshwar bhakta niwas",
+    "omkareshwar accommodation",
+    "omkareshwar room booking",
+    "jyotirlinga stay omkareshwar",
+    "omkareshwar dharamshala",
+    "sansthan omkareshwar",
+    "omkareshwar temple stay",
+  ],
+  path: "/omkareshwar-bhakta-niwas",
+});
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  omkareshwar,
+  rating,
+  { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "How do I reach Omkareshwar from Indore?",
+    answer:
+      "Omkareshwar is about 77 km south-east of Indore, on the banks of the Narmada. The fastest route is via MH SH-27 / NH 347, taking roughly 2 hours by car. State transport buses and shared taxis run from Indore's Gangwal Bus Stand to Omkareshwar throughout the day.",
+  },
+  {
+    question: "Is there a Sansthan Bhakta Niwas in Omkareshwar?",
+    answer:
+      "Yes. Shri Gajanan Maharaj Sansthan operates a Bhakta Niwas at Omkareshwar offering clean family rooms with meals, hot water, parking and a bhojan kaksha. Bookings can be made online or at the Sansthan office on arrival.",
+  },
+  {
+    question: "What is the best time to visit Omkareshwar?",
+    answer:
+      "The best season is October to March, when the weather is cool and the Narmada is calm. Avoid the peak monsoon (July–August) when ferry timings are affected. Kartik Purnima (November) and Maha Shivaratri are the most auspicious days to visit.",
+  },
+  {
+    question: "Are ferries available to Omkareshwar temple?",
+    answer:
+      "Yes. Free and paid ferry services run across the Narmada from the ghat on the mainland to Omkareshwar island. The crossing takes about 10–15 minutes. During peak season or heavy current, expect short queues at the ghat.",
+  },
+  {
+    question: "Is there a dress code at Omkareshwar temple?",
+    answer:
+      "Traditional wear is recommended for darshan at the Omkareshwar Jyotirlinga — dhoti-kurta for men and saree or salwar-kameez for women. Shorts, sleeveless tops and leather items are not permitted inside the temple complex.",
+  },
+  {
+    question: "What is Mamleshwar and how is it different from Omkareshwar?",
+    answer:
+      "Mamleshwar is the second Jyotirlinga situated on the south bank of the Narmada, opposite Omkareshwar. The two temples are considered a single Jyotirlinga darshan, and pilgrims traditionally visit both. A short walk across the bridge on the island connects the two shrines.",
+  },
+  {
+    question: "How many days should I plan for Omkareshwar darshan?",
+    answer:
+      "Two days is ideal — one day for Omkareshwar temple and the parikrama around the island, and a second for Mamleshwar, the 27-parikrama trek and quiet darshan. If you only have one day, an early morning start from Indore allows both temples in a single visit.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Bhakta Niwas", url: "/omkareshwar-bhakta-niwas" },
+]);
+
+const structuredPayload = [lodgingSchema, faqSchema, breadcrumbSchema];
+
+const whySansthan = [
+  {
+    title: "Walk to the Jyotirlinga",
+    body: "The Sansthan Bhakta Niwas is on the Omkareshwar island, minutes from the main temple ghat. No need to depend on ferries for every darshan.",
+  },
+  {
+    title: "All meals included",
+    body: "Your room rate covers sattvic breakfast, lunch and dinner at the Sansthan bhojan kaksha. No need to hunt for sattvic food during your yatra.",
+  },
+  {
+    title: "Transparent pricing",
+    body: "Suggested donations from ₹1,250 to ₹4,150 per night cover room, meals, hot water and taxes. Pay online or at the office — no agents, no commissions.",
+  },
+  {
+    title: "Parking &amp; family stay",
+    body: "Free parking for cars and two-wheelers. Rooms are reserved for family pilgrims with a 24-hour check-in policy and a calm, disciplined campus.",
+  },
+  {
+    title: "Pilgrim-first service",
+    body: "Run by Shri Gajanan Maharaj Sansthan, the same trust that serves devotees at Shegaon, Pandharpur and Trimbakeshwar — over a century of trust.",
+  },
+];
+
+const bookingSteps = [
+  "Visit the Sansthan booking page and enter your preferred check-in and check-out dates at Omkareshwar.",
+  "Choose a room type from the Omkareshwar Bhakta Niwas list (2 Bed, 3 Bed, 4 Bed, Family, Deluxe or Luxury).",
+  "Enter primary guest details — full name, mobile, Aadhar / Voter ID, and number of family members travelling.",
+  "Pay the suggested donation online (UPI, card, netbanking) or choose to pay at the Bhakta Niwas office on arrival.",
+  "Get an SMS and email confirmation with your booking ID, allotted room and ferry / check-in instructions.",
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 border-b border-orange-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-orange-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-orange-900 font-medium">Omkareshwar Bhakta Niwas</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-orange-900 leading-tight">
+        Omkareshwar Bhakta Niwas — Book Pilgrimage Stay at Jyotirlinga
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-orange-900/80 max-w-3xl">
+        Stay at the Shri Gajanan Maharaj Sansthan Bhakta Niwas on the holy
+        Omkareshwar island. Family rooms, sattvic meals, hot water and a short
+        walk to the Jyotirlinga temple.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-orange-700 text-white font-semibold shadow hover:bg-orange-800 transition"
+        >
+          Book a Room
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-orange-800 font-semibold border border-orange-300 hover:bg-orange-50 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why book with Sansthan -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Why stay at Sansthan Bhakta Niwas in Omkareshwar
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        The Sansthan runs a calm, family-first stay on the Omkareshwar island —
+        the only Jyotirlinga situated on a river island in India. Booking with
+        the Sansthan keeps your yatra simple and sattvic.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          whySansthan.map((item) => (
+            <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+              <h3 class="text-lg font-semibold text-orange-900" set:html={item.title} />
+              <p class="mt-2 text-orange-900/80 text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Room types table -->
+  <section class="py-16 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Omkareshwar Bhakta Niwas room types &amp; pricing
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        All room rates at Omkareshwar Bhakta Niwas include accommodation, three
+        meals per day, hot water and applicable taxes. There are no hidden
+        charges — the price you see is the price you pay.
+      </p>
+
+      <div class="mt-8 overflow-x-auto rounded-xl border border-orange-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-orange-100 text-orange-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Room Type</th>
+              <th class="px-4 py-3 font-semibold">Capacity</th>
+              <th class="px-4 py-3 font-semibold">AC</th>
+              <th class="px-4 py-3 font-semibold text-right">Suggested Donation</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100 text-orange-900">
+            {
+              omkareshwarRooms.map((room) => (
+                <tr class="hover:bg-orange-50/60">
+                  <td class="px-4 py-3 font-medium">{room.title}</td>
+                  <td class="px-4 py-3">{room.capacity} persons</td>
+                  <td class="px-4 py-3">{room.ac ? "Yes" : "No"}</td>
+                  <td class="px-4 py-3 text-right font-semibold">
+                    ₹{room.price.toLocaleString("en-IN")}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-4 text-xs md:text-sm text-orange-900/70">
+        {PRICING_TRANSPARENCY.disclaimer}. {PRICING_TRANSPARENCY.noHiddenCharges}.
+        {PRICING_TRANSPARENCY.checkInOut}.
+      </p>
+
+      <div class="mt-8">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-orange-700 text-white font-semibold shadow hover:bg-orange-800 transition"
+        >
+          Reserve a room now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-step booking guide -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        How to book Omkareshwar Bhakta Niwas — 5-step guide
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Booking your Jyotirlinga stay is simple. Reserve early for Kartik
+        Purnima and Maha Shivaratri — these are the busiest windows at
+        Omkareshwar.
+      </p>
+      <ol class="mt-10 space-y-4">
+        {
+          bookingSteps.map((step, idx) => (
+            <li class="flex gap-4 items-start rounded-xl border border-orange-200 bg-orange-50/40 p-5">
+              <span class="flex-shrink-0 w-9 h-9 rounded-full bg-orange-700 text-white font-bold flex items-center justify-center">
+                {idx + 1}
+              </span>
+              <p class="text-orange-900 leading-relaxed">{step}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Frequently asked questions — Omkareshwar Bhakta Niwas
+      </h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-orange-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-orange-900">
+                <span>{faq.question}</span>
+                <span class="text-orange-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-orange-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Related blog posts -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">
+        Omkareshwar yatra guides
+      </h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        Plan your Jyotirlinga darshan with our curated guides on timings, travel
+        from Indore, the Omkareshwar–Mahakaleshwar route, and stay options.
+      </p>
+      <ul class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          [
+            { slug: "omkareshwar-darshan-timings", title: "Omkareshwar Darshan Timings & Aarti" },
+            { slug: "omkareshwar-travel-guide", title: "Omkareshwar Travel Guide" },
+            { slug: "omkareshwar-to-mahakaleshwar-route", title: "Omkareshwar to Mahakaleshwar Route" },
+            { slug: "indore-to-omkareshwar-travel", title: "Indore to Omkareshwar — How to Reach" },
+            { slug: "omkareshwar-accommodation-guide", title: "Omkareshwar Accommodation Guide" },
+          ].map((post) => (
+            <li>
+              <a
+                href={`/blog/${post.slug}`}
+                class="block rounded-xl border border-orange-200 bg-orange-50/40 p-5 hover:bg-orange-100 transition"
+              >
+                <span class="text-orange-900 font-semibold">{post.title}</span>
+                <span class="block mt-1 text-sm text-orange-800/70">Read guide →</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-gradient-to-r from-orange-700 to-amber-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">
+        Book your Omkareshwar Jyotirlinga stay today
+      </h2>
+      <p class="mt-4 text-orange-50/90 max-w-2xl mx-auto">
+        Reserve a Bhakta Niwas room on the Omkareshwar island. All meals and
+        hot water included. Family rooms available.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-orange-800 font-semibold shadow hover:bg-orange-50 transition"
+        >
+          Book on /booking
+        </a>
+        <a
+          href="/locations/omkareshwar-temple"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          See Omkareshwar location page
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import { cn } from "@/lib/utils";
+
+interface Props {
+  htmlContent: string;
+  wordCount: number;
+}
+
+const { htmlContent, wordCount } = Astro.props;
+
+const minutes = Math.max(1, Math.ceil(wordCount / 200));
+const formattedWordCount = wordCount.toLocaleString("en-IN");
+---
+
+<article class="mx-auto w-full">
+  <div
+    class={cn(
+      "prose prose-slate max-w-none",
+      "prose-headings:font-serif prose-headings:scroll-mt-24",
+      "prose-a:text-primary prose-a:no-underline hover:prose-a:underline",
+      "prose-img:rounded-lg prose-img:shadow-sm",
+      "prose-blockquote:border-l-primary prose-blockquote:bg-muted/40 prose-blockquote:not-italic",
+    )}
+    set:html={htmlContent}
+  />
+
+  <div class="mt-10 flex items-center justify-end border-t border-border pt-4 text-sm text-muted-foreground">
+    <span>
+      {formattedWordCount} words &bull; {minutes} min read
+    </span>
+  </div>
+</article>

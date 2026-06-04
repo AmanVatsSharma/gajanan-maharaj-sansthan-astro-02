@@ -1,0 +1,68 @@
+---
+export const prerender = true;
+
+import Layout from "@/layouts/Layout.astro";
+import BlogListingLayout from "@/components/blog/BlogListingLayout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import { getCollectionPageSchema } from "@/lib/seo/structured-data";
+import {
+  getCategories,
+  getPostsByCategory,
+} from "@/lib/blog";
+import type { CollectionPageItem } from "@/lib/seo/structured-data";
+
+export async function getStaticPaths() {
+  const categories = getCategories();
+  return categories.map((cat) => ({
+    params: { category: cat.slug },
+    props: { label: cat.label },
+  }));
+}
+
+interface CategoryProps {
+  label: string;
+}
+
+const { label } = Astro.props as CategoryProps;
+const slug = Astro.params.category as string;
+const posts = getPostsByCategory(slug);
+
+const description = `${label} — articles, guides and stories from Shri Gajanan Maharaj Sansthan Shegaon.`;
+
+const collectionItems: CollectionPageItem[] = posts.map((post) => ({
+  title: post.title,
+  urlPath: `/blog/${post.slug}`,
+  description: post.description,
+  date: post.date,
+  image: post.image,
+  keywords: post.keywords,
+  category: post.category,
+}));
+
+const meta = generatePageMetadata({
+  title: `${label} — Blog`,
+  description,
+  keywords: [label, "Shri Gajanan Maharaj Blog", "Shegaon temple blog"],
+  path: `/blog/category/${slug}`,
+});
+
+const collectionJsonLd = JSON.stringify(
+  getCollectionPageSchema({
+    path: `/blog/category/${slug}`,
+    title: `${label} — Shri Gajanan Maharaj Sansthan Blog`,
+    description,
+    items: collectionItems,
+  }),
+);
+---
+
+<Layout meta={meta}>
+  <script type="application/ld+json" set:html={collectionJsonLd} />
+  <BlogListingLayout
+    title={`${label} — Blog`}
+    description={description}
+    posts={posts}
+    basePath="/blog"
+    breadcrumbLabel={label}
+  />
+</Layout>
