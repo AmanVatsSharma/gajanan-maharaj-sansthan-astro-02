@@ -31,6 +31,9 @@ export function Navbar({ pathname }: { pathname: string }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
+  // New hero: hide header initially, show on scroll
+  const [showHeader, setShowHeader] = useState(false);
+
   const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
 
   const navWhatsAppMessage = [
@@ -45,6 +48,8 @@ export function Navbar({ pathname }: { pathname: string }) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
+      // Show header after scrolling 50px
+      setShowHeader(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -58,10 +63,10 @@ export function Navbar({ pathname }: { pathname: string }) {
   return (
     <nav
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-500",
-        isScrolled
+        "fixed top-0 z-50 w-full transition-all duration-500",
+        showHeader || isScrolled
           ? "border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 shadow-md py-2"
-          : "bg-background/50 border-transparent py-4 backdrop-blur-sm"
+          : "bg-transparent border-transparent py-4 backdrop-blur-sm -translate-y-full opacity-0"
       )}
     >
       {/* Saffron brand stripe */}

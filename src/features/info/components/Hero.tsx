@@ -1,67 +1,33 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PhoneCall, MapPin } from "lucide-react";
 import { CONTACT_DETAILS } from "@/data/contact";
 
-const heroImages = [
-  "/gallery/hero-image-2026-02-05.jpeg",
-  "/hero/branches1.jpg",
-  "/hero/wmremove-transformed.jpeg",
-];
+// New hero with uploaded image background
+const HERO_WITH_NEW_IMAGE = "/hero/new-hero-bg.png";
 
 export function Hero() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
   const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
 
   return (
     <div className="relative min-h-[90vh] svh:min-h-[90svh] flex items-center justify-center overflow-hidden">
-      {/* Auto-sliding background */}
+      {/* New hero background with uploaded image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80 z-10" />
-
-        {heroImages.map((src, index) => (
-          <img
-            key={src}
-            src={src}
-            alt={index === 0 ? "Shri Gajanan Maharaj Temple" : `Temple view ${index + 1}`}
-            width={1920}
-            height={1080}
-            fetchPriority={index === 0 ? "high" : "low"}
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1500 ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
+        <img
+          key={HERO_WITH_NEW_IMAGE}
+          src={HERO_WITH_NEW_IMAGE}
+          alt="Shri Gajanan Maharaj Temple"
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
         {/* Traditional border pattern at top */}
         <div className="absolute top-0 left-0 right-0 h-2 z-20 bg-gradient-to-r from-brand-gold via-brand-saffron to-brand-gold" />
-
-        {/* Slide indicators */}
-        <div className="absolute bottom-28 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-          {heroImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImage(index)}
-              className={`rounded-full transition-all duration-500 ${
-                index === currentImage
-                  ? "w-8 h-2 bg-brand-gold"
-                  : "w-2 h-2 bg-white/50 hover:bg-white/70"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
 
       {/* Content */}
