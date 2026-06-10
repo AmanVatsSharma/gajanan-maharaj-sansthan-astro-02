@@ -51,4 +51,5 @@ flowchart TD
 - 2026-02-13: Removed all other phone numbers; site now uses only 8796359334 for contact (single number everywhere).
 - 2026-02-13: Renamed home checkout widget "Check Out" to "Check Availability"; after click, now shows only Call button (WhatsApp removed).
 - 2026-02-15: Blog SEO content validation now enforces internal booking/contact intent links to strengthen conversion-oriented internal linking.
+- 2026-06-10: Updated booking mobile/WhatsApp number to 7521063034 in `src/data/contact.ts` and all FAQ entries.
 

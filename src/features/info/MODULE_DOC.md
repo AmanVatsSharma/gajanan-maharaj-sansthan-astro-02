@@ -84,3 +84,4 @@ flowchart TD
 - 2026-02-13: Updated booking mobile/WhatsApp number to 8796359334 (via `src/data/contact.ts`); Hero, RoomTypesSection, EnhancedRoomsSection, Footer, Navbar, Contact page all consume this single source.
 - 2026-02-13: Removed all other phone numbers; site now uses only 8796359334 for contact everywhere.
 - 2026-02-18: Restored hero section to use temple photo (hero-image-2026-02-05.jpeg) after SEO PR had switched to SVG placeholder; ensures hero displays proper aligned image post-pull.
+- 2026-06-10: Updated booking mobile/WhatsApp number to 7521063034 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
