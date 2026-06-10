@@ -60,9 +60,9 @@ export function BookingCheckoutWidget({ className, "data-testid": dataTestId }: 
 
   return (
     <section
-      id="quick-checkout"
+      id="booking-widget"
       aria-label="Book temple accommodation by phone or WhatsApp"
-      className={cn("relative -mt-14 md:-mt-20 lg:-mt-24 pb-10 md:pb-14", className)}
+      className={cn("relative scroll-mt-24 pt-24 md:pt-32 lg:pt-40 pb-10 md:pb-14", className)}
       data-testid={dataTestId}
     >
       <div className="container">
