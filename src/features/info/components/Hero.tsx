@@ -61,7 +61,7 @@ export function Hero() {
             size="lg"
             className="bg-brand-saffron hover:bg-brand-saffron/90 text-white border-0 h-14 px-10 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
           >
-            <a href="#booking-widget">
+            <a href="tel:+917521063034">
               <PhoneCall className="h-5 w-5 mr-2" />
               Book Accommodation
             </a>
@@ -72,8 +72,8 @@ export function Hero() {
             variant="outline"
             className="bg-white/90 hover:bg-white text-brand-maroon border-2 border-white h-14 px-10 text-lg font-medium rounded-full hover:shadow-xl transition-all duration-300"
           >
-            <a href="/locations">
-              Explore Locations
+            <a href="#rooms">
+              View Rooms
             </a>
           </Button>
         </motion.div>
