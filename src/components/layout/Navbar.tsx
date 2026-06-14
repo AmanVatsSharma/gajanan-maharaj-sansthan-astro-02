@@ -74,8 +74,8 @@ export function Navbar({ pathname }: { pathname: string }) {
       <div className="container flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 sm:gap-3">
           <img
-            src="/logo/images-1.svg"
-            alt="Shri Gajanan Maharaj Sansthan Logo"
+            src="/logo/images-1-256.png"
+            alt="Shri Gajanan Maharaj Sansthan Emblem"
             width={isScrolled ? 40 : 50}
             height={isScrolled ? 40 : 50}
             className="transition-all duration-300 rounded-full"
@@ -179,8 +179,8 @@ export function Navbar({ pathname }: { pathname: string }) {
               <DialogHeader className="p-6 pb-4 border-b text-left">
                 <div className="flex items-center gap-3 mb-2">
                   <img
-                    src="/logo/images-1.svg"
-                    alt="Shri Gajanan Maharaj Sansthan Logo"
+                    src="/logo/images-1-256.png"
+                    alt="Shri Gajanan Maharaj Sansthan Emblem"
                     width={40}
                     height={40}
                     className="shrink-0 rounded-full"
