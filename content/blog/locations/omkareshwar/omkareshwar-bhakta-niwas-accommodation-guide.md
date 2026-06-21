@@ -162,5 +162,12 @@ The other first-night adjustment is food. The kitchen's evening meal is served a
 - [Omkareshwar Darshan Timing Guide](/blog/omkareshwar-darshan-timing-guide)
 - [Omkareshwar Best Time to Visit](/blog/omkareshwar-best-time-to-visit)
 - [Omkareshwar First Time Visitor Guide](/blog/omkareshwar-first-time-visitor-guide)
+- [Sawan Monday Booking Strategy](/blog/omkareshwar-sawan-monday-booking-strategy)
+- [Bhakta Niwas Room Photo Tour](/blog/omkareshwar-bhakta-niwas-room-photo-tour)
+- [Advance Payment Guide](/blog/omkareshwar-bhakta-niwas-advance-payment-guide)
+- [Kartik Purnima Booking Guide](/blog/omkareshwar-kartik-purnima-booking-guide)
+- [12 Jyotirlinga Yatra Plan](/blog/omkareshwar-12-jyotirlinga-yatra-plan)
+- [Ujjain Mahakaleshwar 2-Day Combo](/blog/omkareshwar-ujjain-mahakaleshwar-two-day-combo)
+- [Shegaon + Omkareshwar 7-Day Combined Yatra](/blog/gajanan-maharaj-omkareshwar-combined-yatra-7-day)
 
 *Last reviewed: 2026-06-21*
