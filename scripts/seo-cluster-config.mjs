@@ -47,6 +47,11 @@ export const CLUSTER_CONFIG_FINGERPRINT = crypto
 export const MANUAL_SEED_POST_PATHS = [
   "guides/shegaon-accommodation-guide.md",
   "locations/omkareshwar/omkareshwar-darshan-timings.md",
+  "locations/omkareshwar/omkareshwar-contact-and-emergency-support.md",
+  "locations/omkareshwar/omkareshwar-family-yatra-planning.md",
+  "locations/omkareshwar/omkareshwar-festival-advance-booking-guide.md",
+  "locations/omkareshwar/omkareshwar-prasad-and-darshan-etiquette.md",
+  "locations/omkareshwar/omkareshwar-senior-citizen-and-accessibility-guide.md",
   "locations/shegaon/nearby-places-from-shegaon.md",
   "locations/shegaon/shegaon-travel-guide.md",
   "welcome-to-sansthan.md",

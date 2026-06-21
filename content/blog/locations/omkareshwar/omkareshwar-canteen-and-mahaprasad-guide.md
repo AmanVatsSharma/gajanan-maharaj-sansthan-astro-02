@@ -1,37 +1,51 @@
 ---
-title: "Omkareshwar Canteen and Mahaprasad Guide | Shri Gajanan Maharaj Sansthan"
-description: "Detailed omkareshwar canteen and mahaprasad guide for devotees searching Shri/Shree/Sri Gajanan Maharaj Sansthan Omkareshwar. Includes booking links, travel tips, and internal route guidance."
+title: "Omkareshwar Canteen & Mahaprasad Guide — Timings, Menus, and What to Expect"
+description: "What's served at the Sansthan Bhakta Niwas bhojan kaksha, the temple's mahaprasad schedule, ghat-side canteens, and dietary options for Jain and allergy-sensitive devotees."
 date: "2025-10-05"
+dateModified: "2026-06-21"
+lastReviewedAt: "2026-06-21"
 slug: "omkareshwar-canteen-and-mahaprasad-guide"
-image: "/images/omkareshwar.svg"
+image: "/images/omkareshwar/canteen-mahaprasad-hero.svg"
 keywords:
   - "omkareshwar canteen and mahaprasad guide"
-  - "omkareshwar pilgrimage"
-  - "omkareshwar sansthan"
-  - "shri gajanan maharaj sansthan omkareshwar"
-  - "omkareshwar temple accommodation"
-author: "Sansthan"
+  - "omkareshwar bhojan kaksha"
+  - "omkareshwar temple prasad"
+  - "omkareshwar jain food"
+  - "omkareshwar sansthan bhandara"
+author: "Sansthan Communications Team"
+authorRole: "Sansthan Communications Team, reviewed by Office Manager, Omkareshwar Bhakta Niwas"
 tags:
   - "omkareshwar"
   - "accommodation"
-  - "sansthan-seo"
   - "pilgrimage-guide"
+  - "food-and-prasad"
 category: "locations"
 locationIds:
   - "omkareshwar"
 relatedSlugs:
-  - "omkareshwar-multi-generation-family-yatra"
-  - "omkareshwar-off-peak-visit-benefits"
-  - "omkareshwar-parking-and-local-transport"
-  - "omkareshwar-how-to-book-bhakta-niwas"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
+  - "omkareshwar-bhakta-niwas-accommodation-guide"
+  - "omkareshwar-darshan-timing-guide"
+  - "omkareshwar-first-time-visitor-guide"
+  - "omkareshwar-bhakta-niwas-booking-process"
+  - "omkareshwar-festival-advance-booking-guide"
+  - "omkareshwar-prasad-and-darshan-etiquette"
+  - "omkareshwar-three-day-itinerary"
+  - "omkareshwar-senior-citizen-and-accessibility-guide"
+faqs:
+  - question: "What is the sattvic bhojan kaksha at Omkareshwar Bhakta Niwas?"
+    answer: "The on-site bhojan kaksha is the Sansthan's vegetarian kitchen at the Bhakta Niwas — sattvic (no onion, no garlic), Maharashtrian thali template, and included in the 2026 room rate. It runs breakfast (7:00–9:30 AM), lunch (12:00–2:30 PM), and dinner (7:30–9:30 PM)."
+  - question: "When is Mahaprasad served at Omkareshwar?"
+    answer: "Three times a day: Bhoga Prasad after the Mangal Aarti (around 5:00 AM) and Shringar Aarti for devotees in the morning queue, Panchamrut after the Madhyan Aarti (around 12:30 PM), and Bhandara Prasad after the Sandhya Aarti (around 7:30 PM). All three are free."
+  - question: "Are there Jain food options at Omkareshwar?"
+    answer: "Yes — Jain (no root vegetable) meals are available at the Sansthan Bhakta Niwas with 24 hours' notice, and the kitchen accepts pre-orders for special thalis (Jain, gluten-free, diabetic) for groups of 4 or more. Outside the Sansthan, Jain options are limited; ask at each canteen before ordering."
+  - question: "Can I bring my own food into the Bhakta Niwas?"
+    answer: "Yes — outside food is allowed in the rooms. The bhojan kaksha itself is for the Sansthan's own meals, and the front desk can hold a small tiffin in their fridge if you need to store something cold."
+  - question: "What does the Bhandara at Omkareshwar include?"
+    answer: "The Sansthan's midday anna-daan runs from about 11:30 AM to 1:00 PM at the temple's dharamshala side and includes rice, dal, sabzi, roti, and a sweet. It is free; donations are welcome. The evening Bhandara Prasad packet (mishri, supari, and a small laddu) is distributed after the Sandhya Aarti."
 ---
 # Omkareshwar Canteen and Mahaprasad Guide — The Food, the Timings, and the Small Choices That Matter
 
-Food at Omkareshwar is more than a meal — it is part of the yatra. The temple's mahaprasad is one of the most distinctive prasad distributions in the Jyotirlinga network, the Sansthan Bhakta Niwas bhojan kaksha runs on a tight sattvic schedule, and the small eateries on the ghat road serve simple meals that have been on the same menus for decades. This guide, written for the 2026 season, covers what the Sansthan serves, what the temple distributes, what to expect at the ghat canteens, and the small choices that make the difference between a satisfied family and a tired one. For related planning, see [Omkareshwar Bhakta Niwas Accommodation Guide](/blog/omkareshwar-bhakta-niwas-accommodation-guide), [Omkareshwar Darshan Timings](/blog/omkareshwar-darshan-timings), and the [Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide).
+Food at Omkareshwar is more than a meal — it is part of the yatra. The temple's mahaprasad is one of the most distinctive prasad distributions in the Jyotirlinga network, the Sansthan Bhakta Niwas bhojan kaksha runs on a tight sattvic schedule, and the small eateries on the ghat road serve simple meals that have been on the same menus for decades. This guide, written for the 2026 season, covers what the Sansthan serves, what the temple distributes, what to expect at the ghat canteens, and the small choices that make the difference between a satisfied family and a tired one. For related planning, see [Omkareshwar Bhakta Niwas Accommodation Guide](/blog/omkareshwar-bhakta-niwas-accommodation-guide), [Omkareshwar Darshan Timing Guide](/blog/omkareshwar-darshan-timing-guide), and the [Prasad & Darshan Etiquette](/blog/omkareshwar-prasad-and-darshan-etiquette).
 
 > **"The Sansthan bhojan kaksha thali is the cleanest sattvic meal you'll eat on the island. We ate there for every meal during our 3-day stay and never had to look for outside food."**
 > — a Pune-based family of four, December 2025
@@ -126,9 +140,10 @@ The Sansthan's bhoga prasad is given to devotees who attend the morning Mangal A
 - [Omkareshwar Sansthan Accommodation](/locations/omkareshwar)
 - [Booking Request Page](/booking)
 - [Contact Sansthan Support](/contact)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
-- [Omkareshwar Darshan Timings](/blog/omkareshwar-darshan-timings)
-- [Omkareshwar Best Time to Visit](/blog/omkareshwar-best-time-to-visit)
+- [Bhakta Niwas Accommodation Guide](/blog/omkareshwar-bhakta-niwas-accommodation-guide)
+- [Bhakta Niwas Booking Process](/blog/omkareshwar-bhakta-niwas-booking-process)
+- [Omkareshwar Darshan Timing Guide](/blog/omkareshwar-darshan-timing-guide)
+- [Prasad & Darshan Etiquette](/blog/omkareshwar-prasad-and-darshan-etiquette)
+- [Omkareshwar First Time Visitor Guide](/blog/omkareshwar-first-time-visitor-guide)
 
-*Last updated: 2026*
+*Last updated: 2026-06-21*

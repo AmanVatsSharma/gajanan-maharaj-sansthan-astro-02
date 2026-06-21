@@ -3,30 +3,701 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     },
     {
       "source": "/_astro/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
       ]
     },
     {
       "source": "/logo/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blog/omkareshwar-accommodation-near-temple",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-akola-to-shegaon-route",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-amravati-to-shegaon-route",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-anand-sagar-visit-guide",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-anand-vihar-vs-visawa",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-accessibility-and-wheelchair-support",
+      "destination": "/blog/omkareshwar-senior-citizen-and-accessibility-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-amenities-hot-water-and-services",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-baggage-and-locker-facilities",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-check-in-check-out-timings",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-checkout-process-guide",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-cleanliness-and-discipline",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-common-booking-mistakes",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-contact-and-escalation-matrix",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-dormitory-vs-family-rooms",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-extension-and-extra-day-policy",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-facilities-and-amenities",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-family-stay-tips",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-food-canteen-and-mahaprasad",
+      "destination": "/blog/omkareshwar-canteen-and-mahaprasad-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-id-proof-requirements",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-late-check-in-guidance",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-offline-helpdesk-guide",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-online-booking-vs-whatsapp",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-parking-and-drop-off-guide",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-payment-modes-and-receipts",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-peak-season-strategy",
+      "destination": "/blog/omkareshwar-festival-advance-booking-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-refund-and-cancellation-guide",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-room-types-and-facilities",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-rules-and-conduct",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-safety-and-security-guide",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-senior-citizen-comfort-guide",
+      "destination": "/blog/omkareshwar-senior-citizen-and-accessibility-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-sheogaon-contact",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-vs-anand-vihar",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-bhakta-niwas-whatsapp-message-template",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-booking-follow-up-and-confirmation-tips",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-budget-pilgrimage-guide",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-buldhana-district-guide",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-buldhana-temple-stays",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-contact-and-support-guide",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-corporate-yatra-planning",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-darshan-queue-time-optimization",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-darshan-timings",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-devotee-faqs",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-devotee-id-and-document-guide",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-early-morning-darshan-tips",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-emergency-contact-and-support",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-evening-aarti-timing-guide",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-evening-darshan-planning",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-family-accommodation-checklist",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-family-yatra-planning",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-family-safety-and-comfort-tips",
+      "destination": "/blog/omkareshwar-senior-citizen-and-accessibility-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-festival-advance-booking-window",
+      "destination": "/blog/omkareshwar-festival-advance-booking-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-festival-crowd-management-guide",
+      "destination": "/blog/omkareshwar-festival-advance-booking-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-first-aid-and-safety",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-five-day-extended-stay",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-flower-offering-guide",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-four-day-itinerary",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-group-darshan-booking",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-group-yatra-planning",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-holiday-rush-planning",
+      "destination": "/blog/omkareshwar-festival-advance-booking-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-how-to-book-bhakta-niwas",
+      "destination": "/blog/omkareshwar-bhakta-niwas-booking-process",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-jalgaon-pilgrimage-route",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-kids-friendly-yatra-guide",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-late-evening-darshan-tips",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-local-bus-and-auto-guide",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-local-communication-and-helpline-tips",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-local-markets-and-shopping",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-local-travel-checklist",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-lunar-eclipse-darshan-tips",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-maharashtra-temple-circuit",
+      "destination": "/blog/omkareshwar-festival-advance-booking-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-math-stay-booking-tips",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-medical-facilities-nearby",
+      "destination": "/blog/omkareshwar-contact-and-emergency-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-mobile-photography-tips",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-monsoon-visit-guide",
+      "destination": "/blog/omkareshwar-festival-season-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-morning-darshan-planning",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-multi-generation-family-yatra",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-nagpur-to-shegaon-route",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-nashik-trimbakeshwar-combo-guide",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-nearby-attractions-day-trip",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-new-year-darshan-planning",
+      "destination": "/blog/omkareshwar-festival-advance-booking-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-night-stay-checklist-for-devotees",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-off-peak-visit-benefits",
+      "destination": "/blog/omkareshwar-best-time-to-visit",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-omkareshwar-bhakt-niwas-guide",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-omkareshwar-temple-stay-tips",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-one-day-itinerary",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-packing-checklist",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-pandharpur-wari-planning",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-parking-and-local-transport",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-photo-and-memory-planning",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-photography-tips-for-devotees",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-post-monsoon-visit-guide",
+      "destination": "/blog/omkareshwar-festival-season-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-prasad-and-offerings-guide",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-prayer-and-darshan-etiquette",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-pune-to-shegaon-route",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-rainy-season-visit-guide",
+      "destination": "/blog/omkareshwar-festival-season-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-seasonal-pilgrimage-calendar",
+      "destination": "/blog/omkareshwar-best-time-to-visit",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-senior-citizen-travel-tips",
+      "destination": "/blog/omkareshwar-senior-citizen-and-accessibility-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-sheogaon-accommodation-guide",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-sheogaon-bhakta-niwas-facilities",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-sheogaon-temple-darshan-guide",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-sheogaon-travel-tips",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-solar-eclipse-visit-guide",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-solo-traveler-guide",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-spring-visit-guide",
+      "destination": "/blog/omkareshwar-festival-season-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-summer-visit-guide",
+      "destination": "/blog/omkareshwar-festival-season-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-temple-area-food-and-facilities",
+      "destination": "/blog/omkareshwar-canteen-and-mahaprasad-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-temple-circuit-extension-guide",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-temple-complex-map-and-directions",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-temple-museum-and-heritage",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-temple-stay-rules-and-etiquette",
+      "destination": "/blog/omkareshwar-prasad-and-darshan-etiquette",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-train-and-bus-arrival-planning",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-travel-insurance-for-pilgrimage",
+      "destination": "/blog/omkareshwar-first-time-visitor-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-triambakeshwar-darshan-tips",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-triambakeshwar-jyotirlinga-stay",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-two-day-itinerary",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-vidarbha-pilgrimage-planning",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-visawa-accommodation-tips",
+      "destination": "/blog/omkareshwar-bhakta-niwas-accommodation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-vitthal-darshan-timing-guide",
+      "destination": "/blog/omkareshwar-darshan-timing-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-week-long-stay-planning",
+      "destination": "/blog/omkareshwar-three-day-itinerary",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-weekend-planning-guide",
+      "destination": "/blog/omkareshwar-weekend-getaway-from-mumbai",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-wheelchair-accessibility",
+      "destination": "/blog/omkareshwar-senior-citizen-and-accessibility-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-winter-visit-guide",
+      "destination": "/blog/omkareshwar-festival-season-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/hyderabad-to-omkareshwar-route",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-pandharpur-combined-yatra",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/omkareshwar-to-trimbakeshwar-pilgrimage-checklist",
+      "destination": "/blog/omkareshwar-jyotirlinga-yatra-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/shegaon-omkareshwar-3-day-itinerary",
+      "destination": "/blog/shegaon-travel-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/shegaon-pandharpur-omkareshwar-circuit",
+      "destination": "/blog/shegaon-travel-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/shegaon-to-omkareshwar-route-guide",
+      "destination": "/blog/shegaon-travel-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/sheogaon-and-omkareshwar-combined-yatra",
+      "destination": "/blog/shegaon-travel-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/indore-omkareshwar-shegaon-yatra",
+      "destination": "/blog/omkareshwar-route-and-transport-options",
+      "statusCode": 301
     }
   ]
 }
