@@ -156,7 +156,7 @@
     },
     {
       "source": "/blog/trimbakeshwar-contact-and-support-guide",
-      "destination": "/blog/trimbakeshwar-contact-and-support-guide",
+      "destination": "/blog/trimbakeshwar-senior-citizen-travel-tips",
       "statusCode": 301
     },
     {
@@ -222,11 +222,6 @@
     {
       "source": "/blog/trimbakeshwar-first-aid-and-safety",
       "destination": "/blog/trimbakeshwar-senior-citizen-travel-tips",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/trimbakeshwar-first-time-visitor-guide",
-      "destination": "/blog/trimbakeshwar-temple-complex-map-and-directions",
       "statusCode": 301
     },
     {
