@@ -35,7 +35,7 @@ faqs:
     answer: "Yes. The temple runs continuous darshan from 5:00 AM on 12 Feb 2026 to 11:00 PM on 17 Feb 2026 — 6 days of continuous darshan. The actual Mahashivratri day is 17 Feb 2026; the queue on this day runs 3 to 6 hours. The full Mahashivratri planning is in the Trimbakeshwar Mahashivratri Booking Guide."
 relatedSlugs:
   - "trimbakeshwar-temple-complex-map-and-directions"
-  - "trimbakeshwar-prasad-and-darshan-etiquette"
+  - "trimbakeshwar-canteen-and-mahaprasad-guide"
   - "trimbakeshwar-bhakta-niwas-accommodation-guide"
   - "trimbakeshwar-bhakta-niwas-booking-process"
   - "trimbakeshwar-three-day-itinerary"
@@ -215,7 +215,7 @@ The 2025 desk log's three top recommendations for a smooth darshan:
 - [Contact Sansthan Support](/contact)
 - [Trimbakeshwar First Time Visitor Guide](/blog/trimbakeshwar-first-time-visitor-guide)
 - [Trimbakeshwar Temple Complex Map and Directions](/blog/trimbakeshwar-temple-complex-map-and-directions)
-- [Trimbakeshwar Prasad and Darshan Etiquette](/blog/trimbakeshwar-prasad-and-darshan-etiquette)
+- [Trimbakeshwar Prasad and Darshan Etiquette](/blog/trimbakeshwar-canteen-and-mahaprasad-guide)
 - [Trimbakeshwar Best Time to Visit](/blog/trimbakeshwar-best-time-to-visit)
 - [Trimbakeshwar Mahashivratri Booking Guide](/blog/trimbakeshwar-mahashivratri-booking-guide)
 

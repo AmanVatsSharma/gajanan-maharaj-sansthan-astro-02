@@ -36,7 +36,7 @@ faqs:
 relatedSlugs:
   - "trimbakeshwar-darshan-timing-guide"
   - "trimbakeshwar-temple-complex-map-and-directions"
-  - "trimbakeshwar-prasad-and-darshan-etiquette"
+  - "trimbakeshwar-canteen-and-mahaprasad-guide"
   - "trimbakeshwar-bhakta-niwas-accommodation-guide"
   - "trimbakeshwar-bhakta-niwas-booking-process"
   - "trimbakeshwar-three-day-itinerary"
@@ -169,7 +169,7 @@ After 12 months of orientation logs, the most-asked first-time questions are:
 
 1. **"Is the temple free?"** Yes, darshan is free. There is no ticket for entry. Donations at the temple hundi are voluntary. Special pujas (Laghu Rudra, Maha Rudra) are paid at the Kulkarni desk.
 2. **"Can I use UPI at the temple?"** No, the temple hundi is cash only. The prasad counter accepts UPI. The Kulkarni desk accepts cash and UPI. The Sansthan Bhakta Niwas accepts cash, UPI, and card.
-3. **"Can I bring my elderly father in a wheelchair?"** Yes. The Sansthan Bhakta Niwas has a free wheelchair service from the gate. The temple courtyard is flat and paved; the main sanctum has 7 steps (a wheelchair lift is not available in 2026; carriers can be arranged at the gate for ₹200). For more, see the [Trimbakeshwar Senior Citizen and Accessibility Guide](/blog/trimbakeshwar-senior-citizen-and-accessibility-guide).
+3. **"Can I bring my elderly father in a wheelchair?"** Yes. The Sansthan Bhakta Niwas has a free wheelchair service from the gate. The temple courtyard is flat and paved; the main sanctum has 7 steps (a wheelchair lift is not available in 2026; carriers can be arranged at the gate for ₹200). For more, see the [Trimbakeshwar Senior Citizen and Accessibility Guide](/blog/trimbakeshwar-senior-citizen-travel-tips).
 4. **"Can my unmarried nephew stay with us at the Bhakta Niwas?"** The Sansthan Bhakta Niwas accommodates families only. Unmarried couples or unrelated male-female pairs are not allotted a private room. The 2025 desk log shows that 1 in 12 first-time callers ask this question; the policy is consistent and applies to all locations.
 5. **"Can I bring my dog?"** No pets are permitted in the Bhakta Niwas or the temple complex. Service animals are not currently accommodated in 2026.
 6. **"What if I have a medical emergency?"** The Bhakta Niwas reception has a 24/7 first-aid kit and a tie-up with the Wockhardt Hospital in Nashik (28 km, 45 minutes by car). For ambulance, the Sansthan desk at 7521063034 will arrange it.

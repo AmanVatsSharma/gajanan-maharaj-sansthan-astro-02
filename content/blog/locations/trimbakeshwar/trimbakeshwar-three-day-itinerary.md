@@ -38,7 +38,7 @@ relatedSlugs:
   - "trimbakeshwar-bhakta-niwas-booking-process"
   - "trimbakeshwar-darshan-timing-guide"
   - "trimbakeshwar-brahmagiri-trek-guide"
-  - "trimbakeshwar-nashik-panchavati-guide"
+  - "trimbakeshwar-nashik-trimbakeshwar-combo-guide"
   - "trimbakeshwar-best-time-to-visit"
   - "trimbakeshwar-first-time-visitor-guide"
   - "trimbakeshwar-temple-complex-map-and-directions"
@@ -136,7 +136,7 @@ After breakfast, head to the Brahmagiri trailhead. The trailhead is 400 m north 
 - 12:30 PM — Walk back to the Bhakta Niwas.
 - 1:00 PM — Lunch at the dining hall (12:30–2:30 PM).
 
-**The trade-off:** If the family has senior citizens or members who cannot trek, Day 2 morning is also a good time for the **Panchavati half-day** — see the [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-panchavati-guide) for details.
+**The trade-off:** If the family has senior citizens or members who cannot trek, Day 2 morning is also a good time for the **Panchavati half-day** — see the [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-trimbakeshwar-combo-guide) for details.
 
 The full trek guide is in the [Trimbakeshwar Brahmagiri Trek Guide](/blog/trimbakeshwar-brahmagiri-trek-guide). Note: the Brahmagiri trek is closed from 16 June to 30 September (monsoon). The Sansthan desk's 2025 log shows that 7 in 10 first-time visitors do the trek; the other 3 do the Panchavati half-day.
 
@@ -182,7 +182,7 @@ After breakfast and checkout, take a taxi to Nashik city (28 km, 45 minutes). Th
 - 2:30 PM — Drive back toward Trimbakeshwar or directly to Nashik Road station / Mumbai / Pune.
 - 3:00 PM — Drop-off and departure.
 
-The full Panchavati guide is in the [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-panchavati-guide) post.
+The full Panchavati guide is in the [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-trimbakeshwar-combo-guide) post.
 
 > **Office note:** The half-day in Nashik is the most common addition to a 3-day Trimbakeshwar plan. The 2025 desk log shows that 7 in 10 first-time visitors do this Nashik add-on. The remaining 3 either depart directly from Trimbakeshwar (Mumbai-bound) or extend the stay by a day to do a full Nashik sightseeing day.
 
@@ -190,7 +190,7 @@ The full Panchavati guide is in the [Trimbakeshwar Nashik Panchavati Guide](/blo
 
 If you have 4 or more days, the desk's recommended extensions are:
 
-- **Day 4 — Full Nashik sightseeing:** Trimbakeshwar's Panchavati is one part of Nashik. The full Nashik day covers Panchavati, Ramkund, Sita Gufa, Kalaram Temple, Muktidham, Pandavleni Caves, and the Nashik city temples. The Nashik day is detailed in the [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-panchavati-guide).
+- **Day 4 — Full Nashik sightseeing:** Trimbakeshwar's Panchavati is one part of Nashik. The full Nashik day covers Panchavati, Ramkund, Sita Gufa, Kalaram Temple, Muktidham, Pandavleni Caves, and the Nashik city temples. The Nashik day is detailed in the [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-trimbakeshwar-combo-guide).
 - **Day 4 — Shirdi day trip:** Sai Baba's shrine at Shirdi is 90 km from Trimbakeshwar, 2 hours by car. Most families doing the 4-day plan add Shirdi as Day 4. The Sansthan Bhakta Niwas desk can arrange a taxi (₹3,500 round-trip for a sedan, 8 hours).
 - **Day 4 — Triambak Panchakroshi Yatra:** The 5-day, 120-km circumambulation of Trimbakeshwar is a separate pilgrimage, booked through the Kulkarni desk. The 5-day yatra is for repeat visitors and spiritually committed pilgrims.
 
@@ -216,7 +216,7 @@ If you have 4 or more days, the desk's recommended extensions are:
 - [Trimbakeshwar Bhakta Niwas Booking Process](/blog/trimbakeshwar-bhakta-niwas-booking-process)
 - [Trimbakeshwar Darshan Timing Guide](/blog/trimbakeshwar-darshan-timing-guide)
 - [Trimbakeshwar Brahmagiri Trek Guide](/blog/trimbakeshwar-brahmagiri-trek-guide)
-- [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-panchavati-guide)
+- [Trimbakeshwar Nashik Panchavati Guide](/blog/trimbakeshwar-nashik-trimbakeshwar-combo-guide)
 - [Trimbakeshwar Best Time to Visit](/blog/trimbakeshwar-best-time-to-visit)
 - [Trimbakeshwar Route and Transport Options](/blog/trimbakeshwar-route-and-transport-options)
 

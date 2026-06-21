@@ -172,3 +172,9 @@ For a younger-child alternative, the Gajanan Maharaj temple at Shegaon has a muc
 ### Source
 
 This guide is compiled by the Sansthan editorial desk from family-yatra observations across 2022–2025, Sansthan Bhakta Niwas booking patterns, and feedback collected from 600+ family yatris who booked through Sansthan channels during the period. For up-to-the-minute family-room availability and any festival-week rules, the Sansthan booking desk is reachable on WhatsApp — see [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+
+## Related links and next steps
+
+  - "[Trimbakeshwar location overview](/locations/trimbakeshwar)" — full temple complex guide, directions, and darshan details
+  - "[Book your Bhakta Niwas stay](/booking)" — secure your room in advance for festival and peak-season visits
+  - "[Contact the Sansthan](/contact)" — direct support for booking, refund, and route queries

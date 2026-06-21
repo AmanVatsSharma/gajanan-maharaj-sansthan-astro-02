@@ -147,3 +147,9 @@ For pilgrims extending the yatra to other Jyotirlingas — Bhimashankar, Grishne
 ### Source
 
 This guide is compiled by the Sansthan editorial desk from Brahmagiri parikrama observations across 2022–2025, the Brahmagiri temple trust's published route maps, and feedback collected from 300+ parikrama pilgrims who stayed at Sansthan-managed Bhakta Niwas rooms during the period. For the up-to-date entry-fee structure and any trail-closure notices, the Sansthan booking desk is reachable on WhatsApp — see [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+
+## Related links and next steps
+
+  - "[Trimbakeshwar location overview](/locations/trimbakeshwar)" — full temple complex guide, directions, and darshan details
+  - "[Book your Bhakta Niwas stay](/booking)" — secure your room in advance for festival and peak-season visits
+  - "[Contact the Sansthan](/contact)" — direct support for booking, refund, and route queries

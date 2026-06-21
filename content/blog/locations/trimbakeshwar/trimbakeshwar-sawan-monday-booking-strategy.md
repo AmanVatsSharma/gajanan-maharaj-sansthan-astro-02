@@ -163,3 +163,9 @@ If you book the Trimbakeshwar Monday via the Sansthan booking desk, ask the same
 ### Source
 
 This guide is compiled by the Sansthan editorial desk from four years of Sawan-Monday booking data, the temple's published Sawan schedule, and feedback collected from 400+ Trimbakeshwar Sawan-Monday pilgrims who booked through Sansthan channels in 2022, 2023, 2024, and 2025. For up-to-the-minute Sawan calendar and Surcharge updates, the Sansthan booking desk is reachable on WhatsApp — see [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+
+## Related links and next steps
+
+  - "[Trimbakeshwar location overview](/locations/trimbakeshwar)" — full temple complex guide, directions, and darshan details
+  - "[Book your Bhakta Niwas stay](/booking)" — secure your room in advance for festival and peak-season visits
+  - "[Contact the Sansthan](/contact)" — direct support for booking, refund, and route queries

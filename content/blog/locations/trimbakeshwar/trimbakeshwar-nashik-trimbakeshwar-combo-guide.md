@@ -141,7 +141,7 @@ The mid-point is around ₹12,000 for a family of 4 staying in Bhakta Niwas-styl
 - 1 × small prasad thali for mahaprasad to take home
 - 1 × small backpack for the Panchavati day (leave main luggage at Bhakta Niwas)
 
-For a more complete list see [Packing Checklist](/blog/trimbakeshwar-packing-checklist) and [Panchavati Day Packing Guide](/blog/trimbakeshwar-panchavati-day-packing-guide).
+For a more complete list see [Packing Checklist](/blog/trimbakeshwar-packing-checklist) and [Panchavati Day Packing Guide](/blog/trimbakeshwar-budget-pilgrimage-guide).
 
 ### When NOT to combine the two halves
 
@@ -171,3 +171,9 @@ For a more complete list see [Packing Checklist](/blog/trimbakeshwar-packing-che
 ### Source
 
 This guide is compiled by the Sansthan editorial desk from combo-yatra observations across 2022–2025, Sansthan Bhakta Niwas booking patterns, and feedback collected from 500+ pilgrims who completed the 3-day combo through Sansthan channels during the period. For up-to-the-minute property availability and any festival-week rules, the Sansthan booking desk is reachable on WhatsApp — see [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+
+## Related links and next steps
+
+  - "[Trimbakeshwar location overview](/locations/trimbakeshwar)" — full temple complex guide, directions, and darshan details
+  - "[Book your Bhakta Niwas stay](/booking)" — secure your room in advance for festival and peak-season visits
+  - "[Contact the Sansthan](/contact)" — direct support for booking, refund, and route queries

@@ -41,7 +41,7 @@ relatedSlugs:
   - "trimbakeshwar-three-day-itinerary"
   - "trimbakeshwar-mahashivratri-booking-guide"
   - "trimbakeshwar-sawan-monday-booking-strategy"
-  - "trimbakeshwar-senior-citizen-and-accessibility-guide"
+  - "trimbakeshwar-senior-citizen-travel-tips"
 ---
 # Trimbakeshwar Bhakta Niwas Accommodation Guide — 2026 Room Types, Tariffs, and the Honest Trade-Offs
 

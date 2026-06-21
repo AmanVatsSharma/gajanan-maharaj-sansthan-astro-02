@@ -110,7 +110,7 @@ A printed one-page summary of the senior's medical history, current medications,
 **Step 3 — Brief the family on the medical point location.**
 The Bhakta Niwas medical point is usually near the reception. Senior pilgrims should know where it is and how to call the desk.
 
-For more on the medical side see [Medical and Emergency Guide](/blog/trimbakeshwar-medical-and-emergency-guide) and [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+For more on the medical side see [Medical and Emergency Guide](/blog/trimbakeshwar-senior-citizen-travel-tips) and [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
 
 ### Day-by-day pattern for a senior-focused 2-night yatra
 
@@ -209,3 +209,9 @@ For a multi-generation family the per-couple cost drops because of shared auto a
 ### Source
 
 This guide is compiled by the Sansthan editorial desk from senior citizen booking patterns across 2022–2025, feedback from 200+ senior pilgrim groups who stayed at Sansthan-managed Bhakta Niwas properties during the period, and consultation with the Bhakta Niwas medical team. For the up-to-date ground-floor room availability and the senior queue hours, the Sansthan booking desk is reachable on WhatsApp — see [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+
+## Related links and next steps
+
+  - "[Trimbakeshwar location overview](/locations/trimbakeshwar)" — full temple complex guide, directions, and darshan details
+  - "[Book your Bhakta Niwas stay](/booking)" — secure your room in advance for festival and peak-season visits
+  - "[Contact the Sansthan](/contact)" — direct support for booking, refund, and route queries

@@ -36,7 +36,7 @@ faqs:
 relatedSlugs:
   - "trimbakeshwar-darshan-timing-guide"
   - "trimbakeshwar-first-time-visitor-guide"
-  - "trimbakeshwar-prasad-and-darshan-etiquette"
+  - "trimbakeshwar-canteen-and-mahaprasad-guide"
   - "trimbakeshwar-three-day-itinerary"
   - "trimbakeshwar-brahmagiri-trek-guide"
   - "trimbakeshwar-best-time-to-visit"
@@ -136,7 +136,7 @@ The walk is signposted in Marathi, Hindi, and English. Most first-time visitors 
 
 ## Accessibility in the complex
 
-The temple courtyard is flat and paved. The main sanctum has 7 stone steps without a ramp. The Sansthan Bhakta Niwas has a free wheelchair service — ask at the gate. The 5 lingams of the inner parikrama are all at ground level. The Kushavarta bath has 4 steps into the kund and a metal handrail. Brahmagiri trailhead is not wheelchair-accessible. For a full accessibility guide, see the [Trimbakeshwar Senior Citizen and Accessibility Guide](/blog/trimbakeshwar-senior-citizen-and-accessibility-guide).
+The temple courtyard is flat and paved. The main sanctum has 7 stone steps without a ramp. The Sansthan Bhakta Niwas has a free wheelchair service — ask at the gate. The 5 lingams of the inner parikrama are all at ground level. The Kushavarta bath has 4 steps into the kund and a metal handrail. Brahmagiri trailhead is not wheelchair-accessible. For a full accessibility guide, see the [Trimbakeshwar Senior Citizen and Accessibility Guide](/blog/trimbakeshwar-senior-citizen-travel-tips).
 
 ## The 12 Jyotirlinga significance of Trimbakeshwar
 

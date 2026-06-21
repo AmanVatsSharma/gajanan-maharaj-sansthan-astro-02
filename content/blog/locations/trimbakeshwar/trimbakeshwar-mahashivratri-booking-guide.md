@@ -165,3 +165,9 @@ Shegaon Sansthan's Bhakta Niwas runs year-round and offers dormitory and family 
 ### Source
 
 This guide is compiled by the Sansthan editorial desk from three years of Mahashivratri desk-booking data, the temple's published festival schedule, and feedback collected from 250+ Trimbakeshwar Mahashivratri pilgrims who booked through Sansthan channels in 2023, 2024, and 2025. For up-to-the-minute changes, the Sansthan booking desk is reachable on WhatsApp — see [Contact and Support Guide](/blog/trimbakeshwar-contact-and-support-guide).
+
+## Related links and next steps
+
+  - "[Trimbakeshwar location overview](/locations/trimbakeshwar)" — full temple complex guide, directions, and darshan details
+  - "[Book your Bhakta Niwas stay](/booking)" — secure your room in advance for festival and peak-season visits
+  - "[Contact the Sansthan](/contact)" — direct support for booking, refund, and route queries
