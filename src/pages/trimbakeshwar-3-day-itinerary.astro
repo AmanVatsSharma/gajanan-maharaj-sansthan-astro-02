@@ -1,0 +1,299 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Trimbakeshwar 3-Day Itinerary — Complete Pilgrimage Plan 2026",
+  description:
+    "3-day itinerary for Trimbakeshwar pilgrimage: Day 1 — temple darshan and Kushavarta Kund, Day 2 — Brahmagiri trek and Triveni Sangam, Day 3 — Narayan Nagbali / Rudra Homa and departure. Includes accommodation, food, and travel tips.",
+  keywords: [
+    "trimbakeshwar 3 day itinerary",
+    "triambakeshwar 3 day itinerary",
+    "trimbakeshwar pilgrimage plan",
+    "trimbakeshwar tour package",
+    "nashik trimbakeshwar 3 days",
+    "trimbakeshwar weekend trip",
+    "trimbakeshwar travel plan",
+    "mumbai to trimbakeshwar 3 days",
+    "pune to trimbakeshwar itinerary",
+    "trimbakeshwar family trip plan",
+    "trimbakeshwar with kids itinerary",
+    "trimbakeshwar temple visit plan",
+  ],
+  path: "/trimbakeshwar-3-day-itinerary",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Nashik, Maharashtra",
+  description: "One of the 12 Jyotirlingas at the Godavari origin.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.6378, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "trimbakeshwar", name: "Trimbakeshwar Bhakta Niwas", city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "How many days are needed for Trimbakeshwar pilgrimage?",
+    answer:
+      "A comfortable Trimbakeshwar pilgrimage requires 3 days: Day 1 — arrival, darshan, and Kushavarta Kund; Day 2 — Brahmagiri trek to Triveni Sangam; Day 3 — optional Narayan Nagbali or Rudra Homa pooja, then departure. A rushed 2-day trip is possible from Mumbai/Pune but misses the Brahmagiri trek. A 4–5 day trip allows combining Trimbakeshwar with Nashik city sightseeing (Sula Vineyards, Panchavati, Saptashrungi).",
+  },
+  {
+    question: "What is the best 3-day itinerary for Trimbakeshwar?",
+    answer:
+      "Day 1: Arrive by 8–9 AM, check into Trimbakeshwar Bhakta Niwas, darshan at Trimbakeshwar temple, visit Kushavarta Kund for holy dip, evening Godavari aarti at sunset. Day 2: Start Brahmagiri trek at 6 AM, reach Triveni Sangam by 8:30 AM, holy dip at the Godavari source, return by noon, rest at Bhakta Niwas, optional evening aarti. Day 3: Morning Rudra Abhishek or Maha Mrityunjaya Japa booking, check out by 11 AM, visit Anjneri Hill (Lord Rama's birthplace, 30 min away), depart by 2 PM.",
+  },
+  {
+    question: "Can I do Trimbakeshwar from Mumbai in a weekend?",
+    answer:
+      "Yes. Mumbai to Trimbakeshwar is 170 km (4–5 hours by car). Weekend itinerary: Saturday — depart Mumbai at 5 AM, reach by 10 AM, darshan + Kushavarta Kund, overnight at Bhakta Niwas. Sunday — Brahmagiri trek at 6 AM, return by noon, depart by 2 PM, reach Mumbai by 7 PM. This covers the essentials but skips the pooja rituals and Narayan Nagbali, which require advance booking and more time.",
+  },
+  {
+    question: "What are the accommodation options for a 3-day Trimbakeshwar trip?",
+    answer:
+      "Best option: Trimbakeshwar Bhakta Niwas by Shri Gajanan Maharaj Sansthan. Suggested donations: ₹1,250–₹4,150/night including 3 meals, hot water, and taxes. Rooms book out fast on weekends and festivals — reserve at least 1–2 weeks ahead. Alternative: budget lodges in Trimbakeshwar town (₹800–₹2,000/night) and GMVN Guest House near Kushavarta Kund. For a luxury option, stay at a resort in Nashik (28 km away) and do day trips.",
+  },
+  {
+    question: "How much does a 3-day Trimbakeshwar trip cost per person?",
+    answer:
+      "Budget estimate per person (from Mumbai/Pune): Accommodation (shared room): ₹600–₹1,200 for 2 nights, Meals (all included at Bhakta Niwas): ₹0 extra, Transport (shared taxi or bus): ₹1,000–₹2,000 round trip, Temple offerings and prasad: ₹300–₹500, Pooja booking (optional): ₹500–₹5,000, Local auto/taxi: ₹200–₹500. Total: ₹2,500–₹5,500 per person for 3 days, depending on transport and optional poojas.",
+  },
+  {
+    question: "What should I pack for a 3-day Trimbakeshwar trip?",
+    answer:
+      "Essentials: Traditional dhoti/lungi and shirt for men, saree/salwar for women, comfortable walking shoes for Brahmagiri trek, sunscreen and hat, water bottle, small backpack, charger, basic medicines, ₹2,000–₹5,000 cash. For Brahmagiri trek: add rain jacket (monsoon), power bank, trekking pole (optional). For pooja bookings: carry horoscope details if available for Narayan Nagbali. Avoid leather belts, wallets, and watches during parikrama.",
+  },
+  {
+    question: "Can I combine Trimbakeshwar with Nashik city in 3 days?",
+    answer:
+      "Yes. Suggested extended 3-day itinerary: Day 1 — Arrive Nashik city, visit Panchavati (Ram Kunda, Sita Gufa), Sula Vineyards, overnight in Nashik. Day 2 — Nashik to Trimbakeshwar (28 km, 45 min), full day at Trimbakeshwar temple + Kushavarta Kund + Bhakta Niwas overnight. Day 3 — Brahmagiri trek morning, depart for Nashik city by noon, visit Saptashrungi Devi temple (50 km from Nashik), depart for Mumbai/Pune. This gives you the best of both Nashik city and Trimbakeshwar pilgrimage.",
+  },
+  {
+    question: "What nearby places can I visit along with Trimbakeshwar?",
+    answer:
+      "Near Trimbakeshwar within 30–50 km: Anjneri Hill (Lord Rama's birthplace, 8 km), Saptashrungi Devi Temple (50 km, one of Maharashtra's 51 Shakti Peethas), Sula Vineyards (30 km, India's largest winery), Panchavati in Nashik city (28 km, Ramayana-linked ghats), and Shirdi Sai Baba Temple (95 km, one of India's most visited pilgrimage sites). For a 5-day trip, add Shirdi and Ellora/Ajanta Caves (Aurangabad, 180 km).",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar 3-Day Itinerary", url: "/trimbakeshwar-3-day-itinerary" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-100 border-b border-green-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-green-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-green-900 font-medium">3-Day Itinerary</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-green-900 leading-tight">
+        Trimbakeshwar 3-Day Itinerary — Complete Pilgrimage Plan 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-green-900/80 max-w-3xl">
+        A detailed 3-day itinerary for your Trimbakeshwar pilgrimage: temple darshan, Kushavarta Kund, Brahmagiri trek, pooja bookings, accommodation at Bhakta Niwas, nearby places, and a full cost breakdown.
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-green-900">Trip Overview</h2>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-green-200 bg-green-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-green-700">3 Days</p>
+          <p class="text-sm text-green-900/70 mt-1">Recommended duration</p>
+        </div>
+        <div class="rounded-xl border border-green-200 bg-green-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-green-700">₹2.5K–5.5K</p>
+          <p class="text-sm text-green-900/70 mt-1">Per person from Mumbai</p>
+        </div>
+        <div class="rounded-xl border border-green-200 bg-green-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-green-700">170 km</p>
+          <p class="text-sm text-green-900/70 mt-1">From Mumbai</p>
+        </div>
+        <div class="rounded-xl border border-green-200 bg-green-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-green-700">28 km</p>
+          <p class="text-sm text-green-900/70 mt-1">From Nashik city</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Day 1 -->
+  <section class="py-16 bg-green-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-green-900">Day 1 — Arrival, Darshan &amp; Kushavarta Kund</h2>
+      <div class="mt-6 rounded-xl border border-green-200 bg-white p-6 md:p-8">
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-semibold text-green-900">🌅 5:00 AM — Depart from Mumbai/Pune</h3>
+            <p class="text-green-900/80 text-sm mt-1">Leave early to beat traffic and crowds. By car: 4–5 hours via NH 848. By bus: take the first MSRTC bus from Dadar/Kurla to Nashik, then local bus/taxi to Trimbakeshwar.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🏨 10:00 AM — Check in at Trimbakeshwar Bhakta Niwas</h3>
+            <p class="text-green-900/80 text-sm mt-1">Reach Bhakta Niwas and check in. Freshen up, have breakfast at the canteen (included). Inform the front desk about your pooja bookings if you have any.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🕐 11:00 AM — Trimbakeshwar Temple Darshan</h3>
+            <p class="text-green-900/80 text-sm mt-1">Walk to the temple (5 minutes from Bhakta Niwas). Have darshan of the Jyotirlinga — the self-manifested lingam that changes form three times daily. Also visit Ganesh (Kedargad) and Kedareshwar temples within the complex.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🌊 1:00 PM — Kushavarta Kund</h3>
+            <p class="text-green-900/80 text-sm mt-1">Walk down to Kushavarta Kund (5-minute walk from temple). Take a holy dip in the sacred tank — considered the source of the Godavari River. Offer bilva leaves and flowers. Change into dry clothes before lunch.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🍛 2:00 PM — Lunch &amp; Rest</h3>
+            <p class="text-green-900/80 text-sm mt-1">Return to Bhakta Niwas for lunch and a midday rest. The afternoon heat makes indoor rest essential.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🌅 6:30 PM — Evening Aarti &amp; Godavari Ghats</h3>
+            <p class="text-green-900/80 text-sm mt-1">Attend the Sayam Sandhya Aarti at the temple (7:30 PM). Walk to the Godavari ghats near Kushavarta Kund for the sunset river aarti with floating diyas.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🍽️ 8:00 PM — Dinner at Bhakta Niwas</h3>
+            <p class="text-green-900/80 text-sm mt-1">Mahaprasad dinner at the Bhakta Niwas canteen. Early night's rest before the Brahmagiri trek tomorrow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Day 2 -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-green-900">Day 2 — Brahmagiri Trek &amp; Triveni Sangam</h2>
+      <div class="mt-6 rounded-xl border border-green-200 bg-green-50/40 p-6 md:p-8">
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-semibold text-green-900">🌄 5:30 AM — Early Start for Brahmagiri Trek</h3>
+            <p class="text-green-900/80 text-sm mt-1">Start before sunrise. The 4-km trek to Triveni Sangam takes 2–3 hours. Carry water, hat, and sunscreen. The stone steps are cooler in the morning. Go with a group or hire a local guide (₹200–₹300).</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🏔️ 8:30 AM — Triveni Sangam at Summit</h3>
+            <p class="text-green-900/80 text-sm mt-1">Reach the Triveni Sangam — the confluence of three springs (Kushavarta, Gangadwar, Ganga Ganga) that form the Godavari. Take a holy dip in all three springs. Visit the Shiva temple at the summit. Enjoy the 360° panorama of the Nashik valley.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🥪 10:00 AM — Summit Snacks &amp; Rest</h3>
+            <p class="text-green-900/80 text-sm mt-1">Small tea stalls near the summit offer chai and snacks. Rest for 30 minutes before descending.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">⬇️ 11:30 AM — Descent to Temple</h3>
+            <p class="text-green-900/80 text-sm mt-1">Descend via the same stone steps — about 1.5 hours. Be careful on wet steps. Return to temple and Bhakta Niwas by 1:00 PM.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🍛 1:30 PM — Lunch &amp; Rest</h3>
+            <p class="text-green-900/80 text-sm mt-1">Recover from the trek with a hot meal and afternoon rest at the Bhakta Niwas.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🌙 7:30 PM — Evening Aarti</h3>
+            <p class="text-green-900/80 text-sm mt-1">Attend the evening Sayam Aarti and Narmada/Godavari ghat aarti. Optional: book a Rudra Homa or Maha Mrityunjaya Japa for tomorrow morning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Day 3 -->
+  <section class="py-16 bg-green-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-green-900">Day 3 — Pooja, Anjneri &amp; Departure</h2>
+      <div class="mt-6 rounded-xl border border-green-200 bg-white p-6 md:p-8">
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-semibold text-green-900">🕐 6:00 AM — Morning Pooja (Optional)</h3>
+            <p class="text-green-900/80 text-sm mt-1">Attend Rudra Abhishek or Maha Mrityunjaya Japa if pre-booked. Alternatively, do personal puja at the temple with bilva leaves and flowers.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🏔️ 8:00 AM — Anjneri Hill (Optional Side Trip)</h3>
+            <p class="text-green-900/80 text-sm mt-1">8 km from Trimbakeshwar — Anjneri Hill is traditionally considered the birthplace of Lord Rama. A gentle 30-minute walk up to the temple. Good for families and those who want an additional spiritual site before departure.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🍛 10:00 AM — Check Out &amp; Lunch</h3>
+            <p class="text-green-900/80 text-sm mt-1">Check out of Bhakta Niwas by 11 AM. Have a final lunch. Pick up prasad and souvenirs from the temple complex shops.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-green-900">🚗 12:00 PM — Depart for Mumbai/Pune/Nashik</h3>
+            <p class="text-green-900/80 text-sm mt-1">Depart Trimbakeshwar. Reach Nashik city (28 km, 45 min) if stopping there, or direct to Mumbai (170 km, 4–5 hrs) or Pune (240 km, 5–6 hrs).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-green-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-green-200 bg-green-50/40 p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-green-900">
+                <span>{faq.question}</span>
+                <span class="text-green-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-green-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-green-700 to-emerald-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Start planning your Trimbakeshwar pilgrimage</h2>
+      <p class="mt-4 text-green-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar Bhakta Niwas in advance. Suggested donations: ₹1,250–₹4,150/night.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-green-800 font-semibold shadow hover:bg-green-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

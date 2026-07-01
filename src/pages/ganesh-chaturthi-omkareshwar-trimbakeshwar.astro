@@ -1,0 +1,213 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Ganesh Chaturthi at Trimbakeshwar & Omkareshwar — Festival Guide 2026",
+  description:
+    "Complete guide to Ganesh Chaturthi celebration at Trimbakeshwar and Omkareshwar Jyotirlingas: festival dates, temple timings, visarjan procession, accommodation booking, how to reach, and combining both Jyotirlingas.",
+  keywords: [
+    "ganesh chaturthi trimbakeshwar 2026",
+    "ganesh chaturthi omkareshwar 2026",
+    "ganesh chaturthi nashik",
+    "ganesh chaturthi nashik gujarat",
+    "ganesh chaturthi mp temples",
+    "ganpati puja omkareshwar",
+    "trimbakeshwar ganpati festival",
+    "ganesh visarjan omkareshwar",
+    "ganesh chaturthi central india",
+    "ganesh festival maharashtra 2026",
+    "nashik ganpati mandals 2026",
+  ],
+  path: "/ganesh-chaturthi-omkareshwar-trimbakeshwar",
+});
+
+const trimbakeshwarSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Nashik, Maharashtra",
+  description: "One of the 12 Jyotirlingas. Celebrated during Ganesh Chaturthi with grand decorations.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.6378, regionCode: "IN-MH" },
+} as any);
+
+const omkareshwarSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description: "One of the 12 Jyotirlingas. Grand Ganesh Chaturthi celebration on the Narmada island.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const trimbakeshwarLodging = getLodgingBusinessWithRatingSchema(
+  { id: "trimbakeshwar", name: "Trimbakeshwar Bhakta Niwas", city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1250, max: 4150, currency: "₹" }
+);
+
+const omkareshwarLodging = getLodgingBusinessWithRatingSchema(
+  { id: "omkareshwar", name: "Omkareshwar Bhakta Niwas", city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "When is Ganesh Chaturthi in 2026?",
+    answer:
+      "Ganesh Chaturthi in 2026 falls on Monday, August 24, 2026. The festival spans 10 days (Ganesh Chaturthi to Anant Chaturdashi on September 2, 2026). Lord Ganesha — son of Lord Shiva and Parvati — is worshipped as the remover of obstacles and the god of new beginnings. Ganesh Chaturthi is the most celebrated festival in Maharashtra and is marked by grand pandals, processions, music, and community feasts.",
+  },
+  {
+    question: "How is Ganesh Chaturthi celebrated at Trimbakeshwar?",
+    answer:
+      "Trimbakeshwar celebrates Ganesh Chaturthi with a grand Ganesha idol installation at the temple complex on the eve of Chaturthi. Over 50,000 devotees visit the temple during the 10-day festival. Daily aartis, modak prasad distribution, bhajan sessions, and cultural programs run throughout the festival. On Anant Chaturdashi (day 10), the Ganesha visarjan (immersion) procession travels from the temple to the Godavari river with music, dance, and chants. The Trimbakeshwar temple remains open extended hours from 4:00 AM to 10:00 PM during the festival.",
+  },
+  {
+    question: "How is Ganesh Chaturthi celebrated at Omkareshwar?",
+    answer:
+      "Omkareshwar celebrates Ganesh Chaturthi on a similarly grand scale — over 80,000 devotees visit during the festival. Ganesh pandals are set up across the island town. The main temple holds a special Ganesh Puja at 11:00 AM on Chaturthi day with abhishek, aarti, and prasad. The immersion procession on Anant Chaturdashi travels through the island to the Narmada river with massive crowds. Many devotees combine their Ganesh Chaturthi visit with Narmada Parikrama — the pilgrimage walk around the island.",
+  },
+  {
+    question: "Can I visit both Trimbakeshwar and Omkareshwar during Ganesh Chaturthi?",
+    answer:
+      "Yes — the most popular Ganesh Chaturthi pilgrimage circuit covers both: Day 1–2: Trimbakeshwar for the Chaturthi celebrations and visarjan. Day 3: Drive to Omkareshwar (via Indore, 320 km, 6–7 hours) — arrive in time for the Anant Chaturdashi immersion. This covers two of the most important Shiva temples in central/western India during the most auspicious 10 days. Book accommodation at both Bhakta Niwases at least 2 weeks in advance — festival weeks sell out completely.",
+  },
+  {
+    question: "How to book accommodation at Trimbakeshwar or Omkareshwar for Ganesh Chaturthi?",
+    answer:
+      "Both Trimbakeshwar Bhakta Niwas and Omkareshwar Bhakta Niwas sell out 2–3 weeks before Ganesh Chaturthi. Contact Shri Gajanan Maharaj Sansthan at +91 96612 63850 (WhatsApp) for advance booking. Suggested donations: Trimbakeshwar ₹1,250–₹4,150/night; Omkareshwar ₹1,000–₹3,500/night. All rooms include 3 meals, hot water, and taxes. Book early — Ganesh Chaturthi sees the highest occupancy of any festival week.",
+  },
+  {
+    question: "How to reach Trimbakeshwar for Ganesh Chaturthi from major cities?",
+    answer:
+      "From Mumbai: 170 km, 4–5 hours by car; overnight trains to Nashik Road + taxi. From Pune: 240 km, 5–6 hours by car. From Nashik city: 28 km, 45 min by bus or taxi. From Indore: 560 km, 10–11 hours by car or overnight bus. From Bhopal: 710 km, 14–15 hours by car — not practical for a weekend but workable for the festival week. MSRTC runs extra buses from Mumbai, Pune, and Nashik during Ganesh Chaturthi week. Taxis from Nashik to Trimbakeshwar: ₹400–₹800 one-way.",
+  },
+  {
+    question: "What is the cost of a Ganesh Chaturthi trip to Trimbakeshwar or Omkareshwar?",
+    answer:
+      "Per person from Mumbai: Transport (shared): ₹1,000–₹2,000 round trip. Accommodation (2–3 nights, shared): ₹600–₹1,500. Meals (if not included): ₹500–₹1,000. Temple offerings: ₹300–₹1,000. Local transport/auto: ₹200–₹500. Total: ₹2,600–₹6,000 per person for 3 days. Solo backpackers: ₹1,500–₹2,500 (shared dorm, public transport, own meals). Family of 4: ₹12,000–₹20,000 total (private taxi, family room, all meals included).",
+  },
+  {
+    question: "What else can I do near Trimbakeshwar during Ganesh Chaturthi?",
+    answer:
+      "Near Trimbakeshwar during Ganesh Chaturthi: (1) Anjneri Hill — Lord Rama's birthplace, 8 km, gentle trek. (2) Sula Vineyards — India's largest winery, 30 km, wine tasting and dining. (3) Panchavati — Nashik Ramayana-linked ghats, 28 km. (4) Saptashrungi Devi — one of Maharashtra's 51 Shakti Peethas, 50 km. (5) Shirdi Sai Baba Temple — 95 km, the most visited pilgrimage site in India. A 5-day extended trip can comfortably cover Trimbakeshwar + Anjneri + Sula + Saptashrungi + Shirdi.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Ganesh Chaturthi Guide", url: "/ganesh-chaturthi-omkareshwar-trimbakeshwar" },
+]);
+
+const structuredPayload = [trimbakeshwarSchema, omkareshwarSchema, trimbakeshwarLodging, omkareshwarLodging, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-100 border-b border-amber-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-amber-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-amber-900 font-medium">Ganesh Chaturthi at Trimbakeshwar &amp; Omkareshwar</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-amber-900 leading-tight">
+        Ganesh Chaturthi at Trimbakeshwar &amp; Omkareshwar — Festival Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-amber-900/80 max-w-3xl">
+        Celebrate Ganesh Chaturthi 2026 (Aug 24 – Sep 2) at two of India's most sacred Jyotirlingas: Trimbakeshwar (Nashik) and Omkareshwar (MP). Includes festival dates, temple timings, visarjan processions, accommodation tips, transport, and how to combine both temples in one pilgrimage.
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Ganesh Chaturthi 2026 at a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-amber-700">Aug 24</p>
+          <p class="text-sm text-amber-900/70 mt-1">Ganesh Chaturthi 2026</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-amber-700">Sep 2</p>
+          <p class="text-sm text-amber-900/70 mt-1">Anant Chaturdashi / Visarjan</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-amber-700">10 Days</p>
+          <p class="text-sm text-amber-900/70 mt-1">Festival duration</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-amber-700">1.3 Lakh</p>
+          <p class="text-sm text-amber-900/70 mt-1">Expected devotees (both temples)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-amber-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-amber-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-amber-900">
+                <span>{faq.question}</span>
+                <span class="text-amber-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-amber-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-amber-700 to-orange-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Book your Ganesh Chaturthi pilgrimage</h2>
+      <p class="mt-4 text-amber-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar and/or Omkareshwar Bhakta Niwas in advance — festival weeks sell out weeks ahead.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-amber-800 font-semibold shadow hover:bg-amber-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+      </div>
+    </div>
+  </section>
+</Layout>

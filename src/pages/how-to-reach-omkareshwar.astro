@@ -1,0 +1,324 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "How to Reach Omkareshwar — By Car, Bus, Train & Air 2026",
+  description:
+    "Complete guide to reaching Omkareshwar Jyotirlinga from Indore, Bhopal, Khandwa, and other cities. Car, bus, train routes, nearest railway stations, airport details, and local transport options.",
+  keywords: [
+    "how to reach omkareshwar",
+    "omkareshwar from indore",
+    "omkareshwar from bhopal",
+    "omkareshwar from khandwa",
+    "omkareshwar from ujjain",
+    "omkareshwar nearest railway station",
+    "omkareshwar nearest airport",
+    "omkareshwar by train",
+    "omkareshwar by bus",
+    "omkareshwar by car",
+    "omkareshwar shared taxi",
+    "khandwa to omkareshwar",
+    "indore to omkareshwar distance",
+    "bhopal to omkareshwar distance",
+    "omkareshwar travel guide",
+  ],
+  path: "/how-to-reach-omkareshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, located on the Narmada river island of Omkareshwar.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const routes = [
+  {
+    from: "Indore",
+    distance: "77 km",
+    time: "2 hrs by car",
+    mode: "Car / Bus",
+    detail: "via SH 27 through Mhow. MSRTC and private buses every 30 min from Indore ISBT. Shared taxis from Sarwate Bus Stand. Scenic drive through Malwa plateau.",
+  },
+  {
+    from: "Bhopal",
+    distance: "250 km",
+    time: "5–6 hrs by car",
+    mode: "Car / Bus / Train",
+    detail: "via NH 46 to Khandwa, then SH 27. Regular buses from Bhopal ISBT to Omkareshwar. Train: Bhopal → Khandwa Junction, then taxi/bus.",
+  },
+  {
+    from: "Khandwa",
+    distance: "13 km",
+    time: "30 min by car",
+    mode: "Taxi / Bus / E-Rickshaw",
+    detail: "Nearest railway station on the Mumbai–Delhi main line. Shared taxis and MSRTC buses depart frequently from Khandwa station. E-rickshaws also available for local commute.",
+  },
+  {
+    from: "Ujjain",
+    distance: "135 km",
+    time: "3.5 hrs by car",
+    mode: "Car / Bus",
+    detail: "via SH 27. Many devotees combine the Ujjain Mahakaleshwar darshan with Omkareshwar in a 2-day pilgrimage. Regular buses from Ujjain to Omkareshwar.",
+  },
+  {
+    from: "Jabalpur",
+    distance: "320 km",
+    time: "6–7 hrs by car",
+    mode: "Car / Bus / Train",
+    detail: "via NH 45 to Khandwa, then SH 27. Several trains connect Jabalpur to Khandwa Junction. Long-distance buses also available.",
+  },
+  {
+    from: "Mumbai",
+    distance: "580 km",
+    time: "11–12 hrs by car",
+    mode: "Car / Bus / Train",
+    detail: "via NH 47 and NH 46. Overnight buses from Mumbai to Khandwa or Omkareshwar. Nearest airport is Indore (85 km from temple), then drive 2.5 hrs.",
+  },
+  {
+    from: "Pune",
+    distance: "650 km",
+    time: "12–13 hrs by car",
+    mode: "Car / Bus / Train",
+    detail: "via Mumbai–Nagpur Expressway to Indore, then SH 27. Several overnight buses. Or take a train to Khandwa + taxi.",
+  },
+  {
+    from: "Delhi",
+    distance: "780 km",
+    time: "14–15 hrs by car",
+    mode: "Train / Flight",
+    detail: "Best option: fly Delhi→Indore (DEVI Airport), then drive 85 km. Train: Delhi → Khandwa, then taxi. Several Rajdhani and Duronto trains stop at Khandwa.",
+  },
+];
+
+const faqs = [
+  {
+    question: "What is the nearest railway station to Omkareshwar?",
+    answer:
+      "Khandwa Junction is the nearest railway station, 13 km from Omkareshwar. It is on the Mumbai–Delhi main line and connects to major cities. Shared taxis and MSRTC buses run from Khandwa station to the temple. Journey time from station to temple: 30–45 minutes.",
+  },
+  {
+    question: "What is the nearest airport to Omkareshwar?",
+    answer:
+      "Devi Ahilya Bai Holkar Airport in Indore is the nearest airport, approximately 85 km from Omkareshwar. From the airport, take a taxi or bus via SH 27 (about 2.5 hours). Alternative: fly into Raja Bhoj Airport in Bhopal (250 km) if Indore flights are unavailable.",
+  },
+  {
+    question: "Is there a ropeway or ferry to Omkareshwar temple?",
+    answer:
+      "Yes. The Omkareshwar temple is on an island in the Narmada River. You can reach it either by the Omkareshwar Sethu (bridge) for vehicles and pedestrians, or by traditional ferry boats from the main ghat. The ropeway (cable car) connects the mainland to Mamleshwar temple on the eastern side, giving aerial views of the Narmada and the island.",
+  },
+  {
+    question: "Are there direct buses from Mumbai/Pune to Omkareshwar?",
+    answer:
+      "There are no direct MSRTC buses from Mumbai or Pune to Omkareshwar. You must take a bus or train to Khandwa or Indore, then change to a local bus/taxi. Private operators run overnight sleeper buses from Mumbai to Indore (₹1,200–₹1,800), then Indore to Omkareshwar (₹100–₹200).",
+  },
+  {
+    question: "Can I combine Omkareshwar with other Jyotirlingas in one trip?",
+    answer:
+      "Yes. Omkareshwar is well-located for a multi-Jyotirlinga pilgrimage: Ujjain Mahakaleshwar is 135 km away (Mahakaleshwar + Omkareshwar is a popular 2-day combo), Mahakaleshwar is also 135 km, and Grishneshwar (near Aurangabad) is ~350 km away. Many pilgrims plan a central India Jyotirlinga circuit: Omkareshwar → Mahakaleshwar → Grishneshwar → Tryambakeshwar.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "How to Reach Omkareshwar", url: "/how-to-reach-omkareshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-100 border-b border-indigo-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-indigo-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-indigo-900 font-medium">How to Reach Omkareshwar</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-indigo-900 leading-tight">
+        How to Reach Omkareshwar — By Car, Bus, Train &amp; Air 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-indigo-900/80 max-w-3xl">
+        Complete travel routes to Omkareshwar Jyotirlinga from Indore, Bhopal, Khandwa, Mumbai, Delhi, and other major cities. Includes nearest railway stations, airports, local transport, and bridge/ferry details.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">Nearest Railway</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">Khandwa Junction</p>
+          <p class="text-sm text-indigo-900/70">13 km away</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">Nearest Airport</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">Indore (IDR)</p>
+          <p class="text-sm text-indigo-900/70">85 km away</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">Nearest City</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">Khandwa</p>
+          <p class="text-sm text-indigo-900/70">13 km away</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">Best Route from</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">Indore</p>
+          <p class="text-sm text-indigo-900/70">77 km via SH 27</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Table -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Routes from Major Cities</h2>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-indigo-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-indigo-100 text-indigo-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">From</th>
+              <th class="px-4 py-3 font-semibold">Distance</th>
+              <th class="px-4 py-3 font-semibold">Time</th>
+              <th class="px-4 py-3 font-semibold">Mode</th>
+              <th class="px-4 py-3 font-semibold">Details</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-indigo-100">
+            {
+              routes.map((r) => (
+                <tr class="hover:bg-indigo-50/60">
+                  <td class="px-4 py-3 font-medium text-indigo-900">{r.from}</td>
+                  <td class="px-4 py-3 text-indigo-900">{r.distance}</td>
+                  <td class="px-4 py-3 text-indigo-900">{r.time}</td>
+                  <td class="px-4 py-3 text-indigo-900/70">{r.mode}</td>
+                  <td class="px-4 py-3 text-indigo-900/70">{r.detail}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ropeway & Ferry -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Bridge, Ropeway &amp; Ferry Options</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        The Omkareshwar Jyotirlinga sits on a river island in the Narmada. There are three ways to reach it:
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Omkareshwar Bridge</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">
+            Vehicular bridge connecting the mainland to the island. Cars, buses, and two-wheelers cross freely. Most convenient option for temple visits.
+          </p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Ropeway (Cable Car)</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">
+            Aerial cable car from the mainland to Mamleshwar temple. Offers spectacular aerial views of the Narmada river and the Om-shaped island. Duration: ~5 minutes.
+          </p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Ferry Boats</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">
+            Traditional ferry boats run from the main Omkareshwar ghat to the island. A memorable Narmada river crossing, subject to seasonal water levels.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-indigo-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-indigo-900">
+                <span>{faq.question}</span>
+                <span class="text-indigo-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-indigo-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Omkareshwar pilgrimage</h2>
+      <p class="mt-4 text-indigo-100/90 max-w-2xl mx-auto">
+        Book accommodation near Omkareshwar temple in advance. All meals and hot water included.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-indigo-800 font-semibold shadow hover:bg-indigo-50 transition">Book Accommodation</a>
+        <a href="/how-to-reach" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">How to Reach Shegaon</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,268 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Narmada Parikrama — Full Route Map & Guide 2026",
+  description:
+    "Complete guide to the Narmada Parikrama at Omkareshwar: route map, 5 temples, distance, time, rules, holy dip, best time, and accommodation tips. Everything for your Narmada river circumambulation.",
+  keywords: [
+    "narmada parikrama omkareshwar",
+    "narmada parikrama route",
+    "narmada river circumambulation",
+    "omkareshwar 5 temples",
+    "omkareshwar parikrama distance",
+    "narmada parikrama rules",
+    "narmada aarti omkareshwar",
+    "narmada river holy dip",
+    "narmada parikrama 2026",
+    "omkareshwar narmada ghats",
+    "omkareshwar parikrama barefoot",
+    "siddhnath temple omkareshwar",
+    "mai ki birsa omkareshwar",
+    "amaleshwar temple omkareshwar",
+  ],
+  path: "/narmada-parikrama-omkareshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description: "One of the 12 Jyotirlingas of Lord Shiva on the sacred Narmada river island.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "omkareshwar", name: "Omkareshwar Bhakta Niwas", city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple", description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What is the Narmada Parikrama at Omkareshwar?",
+    answer:
+      "The Narmada Parikrama at Omkareshwar is the sacred circumambulation (pradakshina) of the Narmada river around the Omkareshwar island. Devotees walk approximately 5.5 km barefoot along the ghats, visiting all five sacred temples on the island. This practice is deeply rooted in Hindu scripture — the Skanda Purana states that walking the entire Narmada Parikrama (2,600 km from source to sea) grants moksha (liberation). The Omkareshwar island parikrama is a condensed, accessible version of this sacred journey.",
+  },
+  {
+    question: "Which temples are on the Narmada Parikrama route at Omkareshwar?",
+    answer:
+      "Five temples form the sacred circuit around the Omkareshwar island: (1) Omkareshwar Temple — main Jyotirlinga on the western bank, (2) Mamleshwar Temple — ancient Shiva temple on the eastern bank, connected by bridge and ropeway, (3) Siddhnath Temple — dedicated to Lord Siddhanath near the southern ghats, (4) Mai Ki Birsa — sacred mother goddess shrine on the northern side, and (5) Amaleshwar Temple — ancient stone Jyotirlinga structure. Most devotees visit all five in one parikrama walk.",
+  },
+  {
+    question: "How long does the Narmada Parikrama take?",
+    answer:
+      "The Omkareshwar island parikrama of 5.5 km takes 3–4 hours at a relaxed pace including darshan stops and a holy dip in the Narmada. Fast walkers who skip the temple darshans can complete the walking route in about 2 hours. Many pilgrims do the barefoot parikrama as a spiritual vow, which naturally slows the pace.",
+  },
+  {
+    question: "Is walking barefoot mandatory for Narmada Parikrama?",
+    answer:
+      "Walking barefoot is the traditional and preferred way to perform the Narmada Parikrama, symbolising humility and surrender before the sacred river. However, it is not strictly enforced — you may wear sandals if you have health concerns. Many elderly pilgrims and those with foot injuries choose to wear sandals. The path is generally clean and well-maintained.",
+  },
+  {
+    question: "What are the rules for Narmada Parikrama?",
+    answer:
+      "Key rules: (1) Walk clockwise around the island (pradakshina direction), (2) Remove leather items before starting — leather belts, wallets, and watches should be left at accommodation, (3) No smoking, alcohol, or non-vegetarian food along the parikrama route, (4) Maintain silence near temples and ghats, (5) Do not pollute the Narmada — take all waste back, (6) Photography is restricted inside temple sanctums, (7) The parikrama is closed during major floods when Narmada water levels rise above the ghats.",
+  },
+  {
+    question: "Can I take a holy dip in the Narmada during parikrama?",
+    answer:
+      "Yes, taking a holy dip (snan) in the Narmada is an integral part of the parikrama. The sacred steps (ghats) along the route provide access to the river. The water is cleanest in the early morning. Many devotees carry a change of clothes in a waterproof bag. Full immersion is traditional, but a partial dip is also accepted. After bathing, change into dry clothes before entering temple premises.",
+  },
+  {
+    question: "What is the best time for Narmada Parikrama?",
+    answer:
+      "The best time is October–March, with cool, dry weather ideal for walking barefoot along the ghats. Early morning (5–8 AM) is the most popular time — cool temperatures, fewer crowds, and the river is calm. Shravan month (July–August) is spiritually powerful but hot and humid. Avoid peak monsoon when the Narmada water rises above the ghats and parts of the parikrama route may be submerged.",
+  },
+  {
+    question: "How much does the Narmada Parikrama cost?",
+    answer:
+      "The parikrama itself is free — no fees or permits are required to walk the 5.5 km ghat path around Omkareshwar island. Optional expenses: boat rides on the Narmada (₹50–₹200 per person), prasad offerings at temples (voluntary), dhoti rental at the entrance (₹10–20), and guide services (₹200–₹300 if you want a local to accompany and explain the temples).",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Narmada Parikrama Omkareshwar", url: "/narmada-parikrama-omkareshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-cyan-50 via-blue-50 to-indigo-100 border-b border-cyan-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-cyan-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-cyan-900 font-medium">Narmada Parikrama</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-cyan-900 leading-tight">
+        Narmada Parikrama at Omkareshwar — Full Route Map &amp; Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-cyan-900/80 max-w-3xl">
+        Complete guide to the Narmada Parikrama around the Omkareshwar island: route map covering all 5 sacred temples, distance, timing, rules, holy dip procedure, best season, and what to expect on your sacred walk.
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">What is the Narmada Parikrama?</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-cyan-900/80 leading-relaxed mb-4">
+            The Narmada Parikrama (circumambulation) is one of Hinduism's most sacred pilgrimage practices. The full parikrama follows the entire 2,600 km length of the Narmada River from its source at Amarkantak to its mouth at the Arabian Sea — a journey that takes months on foot.
+          </p>
+          <p class="text-cyan-900/80 leading-relaxed mb-4">
+            At Omkareshwar, pilgrims can experience the essence of the full parikrama by walking the 5.5 km ghat path around the sacred island. This condensed route passes all five temples of the island, allows a holy dip in the Narmada, and completes the symbolic circumambulation of the Om-shaped landmass.
+          </p>
+          <p class="text-cyan-900/80 leading-relaxed">
+            According to the Skanda Purana, performing the Narmada Parikrama absolves all sins and grants moksha. The river is considered Shiva's daughter, and each drop of Narmada water is said to carry the sanctity of the Ganga at Kashi.
+          </p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-cyan-50/60 p-6">
+          <h3 class="text-lg font-semibold text-cyan-900 mb-4">Parikrama at a Glance</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-cyan-100"><td class="py-2 text-cyan-900/70">Distance</td><td class="py-2 font-medium text-cyan-900">~5.5 km (island route)</td></tr>
+              <tr class="border-b border-cyan-100"><td class="py-2 text-cyan-900/70">Duration</td><td class="py-2 font-medium text-cyan-900">3–4 hours (with stops)</td></tr>
+              <tr class="border-b border-cyan-100"><td class="py-2 text-cyan-900/70">Direction</td><td class="py-2 font-medium text-cyan-900">Clockwise (pradakshina)</td></tr>
+              <tr class="border-b border-cyan-100"><td class="py-2 text-cyan-900/70">Temples on Route</td><td class="py-2 font-medium text-cyan-900">5 sacred temples</td></tr>
+              <tr class="border-b border-cyan-100"><td class="py-2 text-cyan-900/70">Holy Dip</td><td class="py-2 font-medium text-cyan-900">Narmada river ghats</td></tr>
+              <tr><td class="py-2 text-cyan-900/70">Entry Fee</td><td class="py-2 font-medium text-cyan-900">Free</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Temples -->
+  <section class="py-16 bg-cyan-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">The Five Sacred Temples</h2>
+      <p class="mt-3 text-cyan-900/80 max-w-3xl">
+        The parikrama route around Omkareshwar island connects five temples of immense spiritual significance. Visit all five in clockwise order:
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">1. Omkareshwar Temple</h3>
+          <p class="mt-2 text-cyan-900/70 text-sm">Main Jyotirlinga temple on the western bank. Self-manifested Shiva lingam in the Omkareshwar (Lord of Om) form. This is the starting and ending point of the parikrama.</p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">2. Mamleshwar Temple</h3>
+          <p class="mt-2 text-cyan-900/70 text-sm">Ancient temple on the eastern bank connected by bridge. Considered a Jyotirlinga by some traditions. Houses a self-manifested stone lingam with a peaceful riverside atmosphere.</p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">3. Siddhnath Temple</h3>
+          <p class="mt-2 text-cyan-900/70 text-sm">Dedicated to Lord Siddhanath (Bhiva), located near the southern ghats. One of the most ancient shrines on the island with references in Puranic literature.</p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">4. Mai Ki Birsa</h3>
+          <p class="mt-2 text-cyan-900/70 text-sm">Sacred mother goddess shrine on the northern side of the island. Devotees offer prayers here before completing the parikrama. Known for its serene atmosphere and panoramic Narmada views.</p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">5. Amaleshwar Temple</h3>
+          <p class="mt-2 text-cyan-900/70 text-sm">One of the 12 Jyotirlingas. Ancient stone structure with intricate carvings. The temple faces east and has a small courtyard where devotees sit in meditation before the lingam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules & Tips -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">Parikrama Rules &amp; Tips</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-6">
+          <h3 class="text-lg font-semibold text-cyan-900 mb-3">🙏 Spiritual Guidelines</h3>
+          <ul class="space-y-2 text-sm text-cyan-900/80">
+            <li>• Walk clockwise (pradakshina) — never counter-clockwise</li>
+            <li>• Remove leather before starting: belts, wallets, watches</li>
+            <li>• Keep silence near temples and ghats</li>
+            <li>• No photography inside temple sanctums</li>
+            <li>• Chant "Om Namah Shivaya" while walking</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-6">
+          <h3 class="text-lg font-semibold text-cyan-900 mb-3">👜 Practical Tips</h3>
+          <ul class="space-y-2 text-sm text-cyan-900/80">
+            <li>• Start early (5–7 AM) — cooler and less crowded</li>
+            <li>• Carry minimal belongings in a small bag</li>
+            <li>• Waterproof bag for phone and clothes during holy dip</li>
+            <li>• Wear a hat and sunscreen — the ghats are exposed</li>
+            <li>• Carry ₹100–200 for prasad and tea along the way</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-cyan-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-cyan-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-cyan-900">
+                <span>{faq.question}</span>
+                <span class="text-cyan-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-cyan-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-cyan-700 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Narmada Parikrama</h2>
+      <p class="mt-4 text-cyan-100/90 max-w-2xl mx-auto">
+        Book accommodation near Omkareshwar before your parikrama. Early morning starts are best — stay overnight at Bhakta Niwas.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-cyan-800 font-semibold shadow hover:bg-cyan-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

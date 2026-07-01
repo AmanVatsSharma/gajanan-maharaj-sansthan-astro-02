@@ -1,0 +1,302 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "12 Jyotirlingas of India — Complete List with Location, State & Significance 2026",
+  description:
+    "Complete guide to all 12 Jyotirlingas of Lord Shiva: Somnath, Mallikarjuna, Mahakaleshwar, Omkareshwar, Kedarnath, Bhimashankar, Kashi Vishwanath, Trimbakeshwar, Baidyanath, Nageshwar, Rameshwaram, Grishneshwar — with locations, history, darshan timings, and how to plan your pilgrimage.",
+  keywords: [
+    "12 jyotirlingas of india",
+    "12 jyotirlingas list",
+    "jyotirlingas of india complete list",
+    "jyotirlinga temples india",
+    "shiva jyotirlingas list",
+    "12 jyotirlingas location map",
+    "jyotirlinga pilgrimage guide",
+    "jyotirlingas by state",
+    "jyotirlingas maharashtra",
+    "jyotirlingas madhya pradesh",
+    "jyotirlingas tamil nadu",
+    "jyotirlingas gujarat",
+    "jyotirlingas uttarakhand",
+    "which state has most jyotirlingas",
+  ],
+  path: "/12-jyotirlingas-of-india",
+});
+
+const rating = {
+  ratingValue: 4.9,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "trimbakeshwar", name: "Trimbakeshwar Bhakta Niwas", city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1250, max: 4150, currency: "₹" }
+);
+
+const jyotirlingas = [
+  {
+    num: 1,
+    name: "Somnath",
+    location: "Somnath, Gujarat",
+    state: "Gujarat",
+    significance: "First Jyotirlinga, built by Chandra (Moon God). Located on the Arabian Sea coast. Destroyed and rebuilt 17 times by invaders, symbolising the indestructibility of faith. Currently managed by the Somnath Trust.",
+    nearby: "Gir National Park, Dwarka",
+  },
+  {
+    num: 2,
+    name: "Mallikarjuna",
+    location: "Srisailam, Andhra Pradesh",
+    state: "Andhra Pradesh",
+    significance: "One of the most ancient Jyotirlingas, mentioned in the Mahabharata. The Mallikarjuna temple is combined with the Bramarambha Devi temple (one of the 18 Shakti Peethas). Located in the Nallamala hills.",
+    nearby: "Srisailam Dam, Hyderabad",
+  },
+  {
+    num: 3,
+    name: "Mahakaleshwar",
+    location: "Ujjain, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    significance: "The only south-facing Jyotirlinga. Ujjain is one of Hinduism's seven sacred cities. The Mahakaleshwar temple houses the famous Bhasma Aarti (ash ritual) every morning. Also one of the 12 Jyotirlingas and a Shakti Peetha site.",
+    nearby: "Ram Ghat, Shipra River",
+  },
+  {
+    num: 4,
+    name: "Omkareshwar",
+    location: "Omkareshwar, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    significance: "The Jyotirlinga on the sacred Om-shaped island in the Narmada River. The name means 'Lord of Om'. Features the Narmada Parikrama, Mamleshwar Temple, and five sacred temples on the island. One of the most spiritually powerful Jyotirlingas.",
+    nearby: "Maheshwar, Khandwa",
+  },
+  {
+    num: 5,
+    name: "Kedarnath",
+    location: "Kedarnath, Uttarakhand",
+    state: "Uttarakhand",
+    significance: "The northernmost Jyotirlinga, located at 3,583 metres in the Himalayas. Open only 6 months a year (April–November). Lord Shiva appeared here as a triangular Jyotirlinga to the Pandavas after the Kurukshetra war. Part of the Char Dham Yatra.",
+    nearby: "Badrinath, Gangotri, Yamunotri",
+  },
+  {
+    num: 6,
+    name: "Bhimashankar",
+    location: "Bhimashankar, Maharashtra",
+    state: "Maharashtra",
+    significance: "Located in the Sahyadri hills near Pune. The Bhimashankar temple is also a popular trekking destination. The Jyotirlinga here is said to have been created by Bhima (the Pandava brother) with his trident during his penance. Features rare indigenous wildlife in the Bhimashankar Wildlife Sanctuary.",
+    nearby: "Pune, Manmad",
+  },
+  {
+    num: 7,
+    name: "Kashi Vishwanath",
+    location: "Varanasi, Uttar Pradesh",
+    state: "Uttar Pradesh",
+    significance: "One of the most revered Jyotirlingas, located in the spiritual capital of India — Varanasi (Kashi). The temple has been destroyed and rebuilt multiple times. The current structure was built by Rani Ahilyabai Holkar in 1780. Considered the holiest of Shiva's abodes.",
+    nearby: "Dashashwamedh Ghat, Ganga River",
+  },
+  {
+    num: 8,
+    name: "Trimbakeshwar",
+    location: "Trimbakeshwar, Maharashtra",
+    state: "Maharashtra",
+    significance: "One of the most unique Jyotirlingas — the lingam is believed to change its face three times a day (Surya morning, Vishnu noon, Shiva evening). Located at the origin of the Godavari River on Brahmagiri hill. Features Kushavarta Kund and the 4-km Brahmagiri trek. Managed by Shri Gajanan Maharaj Sansthan.",
+    nearby: "Nashik, Brahmagiri Trek",
+  },
+  {
+    num: 9,
+    name: "Baidyanath",
+    location: "Deoghar, Jharkhand",
+    state: "Jharkhand",
+    significance: "Also known as Baba Baidyanath Dham, one of the most visited Jyotirlingas. The temple is said to have been built by Raja Bir Vikram. Famous for the Shravan month pilgrimage where devotees carry holy water from the Ganga at Sultanganj (108 km away) to pour on the lingam.",
+    nearby: "Sultanganj, Jasidih",
+  },
+  {
+    num: 10,
+    name: "Nageshwar",
+    location: "Dwarka, Gujarat",
+    state: "Gujarat",
+    significance: "Also known as Nagnath, located near Dwarka. Represents the 'Lord of Serpents' form of Shiva. The temple is underground and faces south. Associated with the story of Supriya, a demon who worshipped Shiva here. Near the Arabian Sea coast.",
+    nearby: "Dwarka, Somnath",
+  },
+  {
+    num: 11,
+    name: "Rameshwaram",
+    location: "Rameshwaram, Tamil Nadu",
+    state: "Tamil Nadu",
+    significance: "The southernmost Jyotirlinga, located on Pamban Island. The Ramanathaswamy Temple has the longest temple corridor in India (1,000+ pillars). It is one of the Char Dham sites and is linked to Lord Rama's bridge (Ram Setu) to Lanka. The temple's 22 sacred wells each have different-tasting water.",
+    nearby: "Dhanushkodi, Ram Setu",
+  },
+  {
+    num: 12,
+    name: "Grishneshwar",
+    location: "Aurangabad, Maharashtra",
+    state: "Maharashtra",
+    significance: "The last and smallest of the 12 Jyotirlingas, located near Ellora Caves in Aurangabad. The current temple was built by Rani Ahilyabai Holkar in the 18th century. Near the UNESCO World Heritage Ellora Caves. Entry restrictions: only Hindus allowed inside the sanctum.",
+    nearby: "Ellora Caves, Ajanta Caves",
+  },
+];
+
+const faqs = [
+  {
+    question: "Which state in India has the most Jyotirlingas?",
+    answer:
+      "Maharashtra has the most Jyotirlingas with three: Trimbakeshwar (Nashik), Bhimashankar (Pune), and Grishneshwar (Aurangabad). Madhya Pradesh and Gujarat each have two: Mahakaleshwar and Omkareshwar in MP; Somnath and Nageshwar in Gujarat. All other states have one each.",
+  },
+  {
+    question: "Which Jyotirlinga should I visit first?",
+    answer:
+      "The most popular starting point is either Trimbakeshwar (Nashik) for Maharashtra pilgrims, Somnath (Gujarat) for western India pilgrims, or Kashi Vishwanath (Varanasi) for eastern/northern pilgrims. For a complete pilgrimage, the recommended route depends on your starting location. The Maharashtra circuit (Trimbakeshwar → Bhimashankar → Grishneshwar) covers all 3 of Maharashtra's Jyotirlingas in a 5–6 day trip.",
+  },
+  {
+    question: "When is the best time to visit all 12 Jyotirlingas?",
+    answer:
+      "The best season for visiting most Jyotirlingas is October to March. Special times: Mahashivratri (February/March) at any Jyotirlinga is especially powerful; Shravan month (July–August) at Trimbakeshwar and Kedarnath; Kumbh Mela (every 12 years) at Trimbakeshwar; and Kartik Purnima at all Jyotirlingas. Note: Kedarnath is only open April–November — plan separately.",
+  },
+  {
+    question: "Can I visit all 12 Jyotirlingas in one trip?",
+    answer:
+      "Visiting all 12 Jyotirlingas in one trip requires about 25–30 days of travel, covering 7 states. The most efficient circuit: Maharashtra (Trimbakeshwar → Bhimashankar → Grishneshwar) → Gujarat (Somnath → Nageshwar) → MP (Mahakaleshwar → Omkareshwar) → UP (Kashi Vishwanath) → Jharkhand (Baidyanath) → Andhra Pradesh (Mallikarjuna) → Tamil Nadu (Rameshwaram) → Uttarakhand (Kedarnath). Many pilgrims split this into 2–3 separate trips, especially since Kedarnath requires a separate Himalayan visit.",
+  },
+  {
+    question: "Are all 12 Jyotirlingas in India?",
+    answer:
+      "Yes, all 12 Jyotirlingas are in India. They span 7 states: Gujarat (2), Maharashtra (3), Madhya Pradesh (2), Uttar Pradesh (1), Jharkhand (1), Andhra Pradesh (1), Tamil Nadu (1), and Uttarakhand (1). Each Jyotirlinga represents Lord Shiva in a unique form and is located at a place of immense spiritual significance described in the Shiva Purana and Skanda Purana.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "12 Jyotirlingas of India", url: "/12-jyotirlingas-of-india" },
+]);
+
+const structuredPayload = [getHinduTempleSchema({
+  id: "trimbakeshwar", name: "Trimbakeshwar Jyotirlinga", city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Nashik, Maharashtra", description: "One of the 12 Jyotirlingas.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.6378, regionCode: "IN-MH" },
+} as any), lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-100 border-b border-violet-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-violet-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-violet-900 font-medium">12 Jyotirlingas of India</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-violet-900 leading-tight">
+        12 Jyotirlingas of India — Complete List, Locations &amp; Significance 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-violet-900/80 max-w-3xl">
+        The complete guide to all 12 Jyotirlingas of Lord Shiva across India: Somnath, Mallikarjuna, Mahakaleshwar, Omkareshwar, Kedarnath, Bhimashankar, Kashi Vishwanath, Trimbakeshwar, Baidyanath, Nageshwar, Rameshwaram, and Grishneshwar — with locations, history, significance, and how to plan your pilgrimage.
+      </p>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">What Are the 12 Jyotirlingas?</h2>
+      <p class="mt-4 text-violet-900/80 leading-relaxed max-w-3xl">
+        The 12 Jyotirlingas (literally 'pillars of light') are the most sacred abodes of Lord Shiva, spread across India. According to the Shiva Purana, Lord Shiva appeared as an infinite pillar of light to resolve a dispute between Brahma and Vishnu. The 12 places where this pillar touched the earth became the Jyotirlingas — self-manifested (Swayambhu) Shiva lingams. Visiting all 12 Jyotirlingas is considered the highest form of Shiva devotion, though not required for spiritual fulfilment.
+      </p>
+      <div class="mt-6 rounded-xl border border-violet-200 bg-violet-50/60 p-6">
+        <h3 class="text-lg font-semibold text-violet-900 mb-3">The 12 Jyotirlingas — Quick Reference</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+          <div><span class="text-violet-700 font-medium">Gujarat:</span> Somnath, Nageshwar</div>
+          <div><span class="text-violet-700 font-medium">Maharashtra:</span> Trimbakeshwar, Bhimashankar, Grishneshwar</div>
+          <div><span class="text-violet-700 font-medium">MP:</span> Mahakaleshwar, Omkareshwar</div>
+          <div><span class="text-violet-700 font-medium">UP:</span> Kashi Vishwanath</div>
+          <div><span class="text-violet-700 font-medium">Jharkhand:</span> Baidyanath</div>
+          <div><span class="text-violet-700 font-medium">AP:</span> Mallikarjuna</div>
+          <div><span class="text-violet-700 font-medium">TN:</span> Rameshwaram</div>
+          <div><span class="text-violet-700 font-medium">Uttarakhand:</span> Kedarnath</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All 12 -->
+  <section class="py-16 bg-violet-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">All 12 Jyotirlingas in Detail</h2>
+      <div class="mt-8 space-y-6">
+        {
+          jyotirlingas.map((j) => (
+            <div class="rounded-xl border border-violet-200 bg-white p-6">
+              <div class="flex items-start gap-4">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-violet-600 text-white flex items-center justify-center font-bold text-sm">{j.num}</span>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                    <h3 class="text-lg font-semibold text-violet-900">{j.name}</h3>
+                    <span class="text-sm text-violet-900/60">{j.location}</span>
+                    <span class="px-2 py-0.5 rounded-full bg-violet-100 text-violet-700 text-xs font-medium">{j.state}</span>
+                  </div>
+                  <p class="mt-2 text-sm text-violet-900/80 leading-relaxed">{j.significance}</p>
+                  <p class="mt-1 text-xs text-violet-900/50">Nearby: {j.nearby}</p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-violet-200 bg-violet-50/40 p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-violet-900">
+                <span>{faq.question}</span>
+                <span class="text-violet-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-violet-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-violet-700 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Jyotirlinga pilgrimage</h2>
+      <p class="mt-4 text-violet-100/90 max-w-2xl mx-auto">
+        Book accommodation near Trimbakeshwar or Omkareshwar for your pilgrimage. Shri Gajanan Maharaj Sansthan manages Bhakta Niwas at both locations.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-violet-800 font-semibold shadow hover:bg-violet-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,275 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getEventSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+
+const meta = generatePageMetadata({
+  title: "Rudra Homa Trimbakeshwar — Powerful Maha Mrityunjaya Fire Ritual | Complete Guide",
+  description:
+    "Guide to Rudra Homa (fire sacrifice) at Trimbakeshwar Jyotirlinga. Learn about the ancient Maha Mrityunjaya Homa ritual procedure, benefits, cost, and how it removes obstacles, grants longevity, and destroys negative forces.",
+  keywords: [
+    "rudra homa trimbakeshwar",
+    "rudra homa procedure",
+    "rudra homa benefits",
+    "rudra homa cost trimbakeshwar",
+    "rudra homa timing",
+    "maha mrityunjaya homa",
+    "rudra abhishek trimbakeshwar",
+    "fire ritual for longevity",
+    "rudra homa vidhi",
+    "rudra homa mantras",
+    "rudra homa booking",
+    "rudra homa pandit",
+  ],
+  path: "/rudra-homa-trimbakeshwar",
+});
+
+const faqs = [
+  {
+    question: "What is Rudra Homa and its benefits?",
+    answer:
+      "Rudra Homa is a powerful Vedic fire ceremony dedicated to Lord Shiva in his fierce form as Rudra. Performed at Trimbakeshwar Jyotirlinga, it destroys negativity, removes black magic and evil eye, grants longevity and protection from untimely death, clears obstacles in career and life, attracts wealth and prosperity, and protects the family from harm.",
+  },
+  {
+    question: "What is the cost of Rudra Homa at Trimbakeshwar?",
+    answer:
+      "The complete Rudra Homa ceremony costs approximately ₹8,000 to ₹25,000. This includes priest fees (₹3,000-10,000), materials (₹2,000-8,000), temple donation (₹1,000-5,000), and pandit dakshina (₹2,000-2,000). The cost varies based on number of priests, quality of materials, and duration.",
+  },
+  {
+    question: "When is the best time to perform Rudra Homa?",
+    answer:
+      "Rudra Homa is most powerful during Mahashivratri, Shravan month (July-August), Pournami (full moon), and Rudra Jayanti (March-April). The ritual should be performed in the morning hours (6 AM - 12 PM) for optimal results. Consult a priest for your specific birth star and planetary positions.",
+  },
+  {
+    question: "What materials are needed for Rudra Homa?",
+    answer:
+      "Essential materials include: Yagna samagri (wood sticks, ghee, havan ingredients), sesame seeds, rice, barley, coconut, honey, 108 bilva leaves for offering, rudraksha beads, flowers, camphor, incense, sandalwood paste, and appropriate priest dakshina. The temple or priests can usually provide the materials.",
+  },
+  {
+    question: "How to book Rudra Homa at Trimbakeshwar?",
+    answer:
+      "Contact Shri Gajanan Maharaj Sansthan's booking helpline at least 7-15 days in advance. Provide your preferred date, number of participants, and specific prayers. The ritual takes 2-3 hours and requires participants to maintain a sattvic diet before the ceremony. Wear traditional white or light-colored clothing.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Jyotirlingas", url: "/12-jyotirlingas-of-india" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "Rudra Homa Ritual", url: "/rudra-homa-trimbakeshwar" },
+]);
+
+const eventSchema = getEventSchema(
+  "Rudra Homa Trimbakeshwar",
+  "Ancient Vedic fire ceremony performed at Trimbakeshwar Jyotirlinga to destroy negative forces, grant longevity, and overcome obstacles. Includes chanting of Rudra Gayatri mantra and offering 108 bilva leaves to the sacred fire.",
+  "various",
+  "various",
+  "Trimbakeshwar Jyotirlinga Temple",
+  "Near Kushavarta Kund, Trimbakeshwar, Nashik District, Maharashtra"
+);
+
+const structuredPayload = [
+  eventSchema,
+  faqSchema,
+  breadcrumbSchema,
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <main class="min-h-screen">
+    {/* Hero */}
+    <section class="relative bg-gradient-to-b from-red-900 via-red-800 to-red-700 py-16 sm:py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white space-y-4">
+          <p class="text-yellow-400 text-sm font-semibold tracking-widest uppercase">
+            Ancient Vedic Fire Ceremony
+          </p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading leading-tight">
+            Rudra Homa Trimbakeshwar — Maha Mrityunjaya Ritual
+          </h1>
+          <p class="text-lg text-red-100 max-w-2xl mx-auto">
+            Experience the transformative power of Rudra Homa, the ancient Vedic fire ritual performed at Trimbakeshwar to destroy obstacles, grant longevity, and invoke divine protection.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Main Content */}
+    <section class="py-12 sm:py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+          {/* Introduction */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              What is Rudra Homa?
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Rudra Homa</strong> is a powerful Vedic fire ceremony dedicated to Lord Shiva in his fierce form as <strong>Rudra</strong> (the roarer or howler). This ancient ritual is performed to appease the destructive aspect of Shiva and transform it into protective energy that destroys negativity, obstacles, and death itself.
+              </p>
+              <p>
+                When performed specifically at <strong>Trimbakeshwar Jyotirlinga</strong>, Rudra Homa takes on extraordinary power. The temple's association with the <strong>Maha Mrityunjaya Mantra</strong> (great victory over death) makes it the ideal location for this life-protecting ritual. Pilgrims from across India visit Trimbakeshwar specifically to perform Rudra Homa for health protection and longevity.
+              </p>
+              <p>
+                The ritual involves chanting sacred mantras while offerings are made into the sacred fire. Each offering carries specific meaning, addressing different aspects of life protection, prosperity, and spiritual growth.
+              </p>
+            </div>
+          </article>
+
+          {/* The Maha Mrityunjaya Connection */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              Maha Mrityunjaya Mantra &amp; Rudra Homa
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Rudra Homa at Trimbakeshwar is deeply connected to the <strong>Maha Mrityunjaya Mantra</strong>, the most powerful mantra for victory over death. This mantra is recited 108 times during the ritual, creating an intense spiritual field of protection around the participant.
+              </p>
+              <p>
+                Legend tells that this mantra was given by Shiva to the sage <strong>Markandeya</strong>, who was granted immortality after chanting it. When performed with proper devotion at Trimbakeshwar, the mantra's power is magnified manifold, offering real protection against life-threatening situations.
+              </p>
+            </div>
+          </article>
+
+          {/* The Ritual Procedure */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              The Rudra Homa Ceremony — Step by Step
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>The ceremony is elaborate, typically lasting 2-3 hours:</p>
+
+              <h3 class="text-xl font-semibold text-red-800">Preparation</h3>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong>Altar Setup</strong> — Creating a sacred space with the fire pit (yagna kunda)</li>
+                <li><strong>Puja Items</strong> — Bilva leaves, flowers, ghee, rice, sesame seeds, etc.</li>
+                <li><strong>Priest Invocation</strong> — Qualified priest performing the ritual</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold text-red-800 mt-6">Main Ceremony</h3>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong>Ganesh Puja</strong> — Invoking Ganesha for removing obstacles</li>
+                <li><strong>Rudra Gayatri</strong> — Chanting the sacred Rudra mantra 108 times</li>
+                <li><strong>Maha Mrityunjaya Japa</strong> — Reciting the life-giving mantra</li>
+                <li><strong>Aahuti Offering</strong> — Making offerings into the fire with each mantra</li>
+                <li><strong>108 Bilva Leaves</strong> — Offering sacred bilva leaves to Lord Shiva</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold text-red-800 mt-6">Concluding Steps</h3>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong>Prasad Distribution</strong> — Sharing the sanctified offerings</li>
+                <li><strong>Blessings</strong> — Receiving ashirvachan from the priest</li>
+                <li><strong>Sacred Ash</strong> — Taking home the holy ash (vibhuti) as prasad</li>
+              </ul>
+            </div>
+          </article>
+
+          {/* Auspicious Timing */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              Auspicious Timing for Rudra Homa
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>Rudra Homa is particularly powerful during:</p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong>Mahashivratri</strong> — The most auspicious night for Shiva worship</li>
+                <li><strong>Shravan Month</strong> — Holiest month for Lord Shiva (July-August)</li>
+                <li><strong>Pournami</strong> — Full moon days are especially favorable</li>
+                <li><strong>Rudra Jayanti</strong> — Birth anniversary of Lord Shiva (March-April)</li>
+                <li><strong>Birth Star Days</strong> — Based on individual's birth nakshatra</li>
+              </ul>
+              <p>The ritual is best performed in the <strong>morning hours (6 AM - 12 PM)</strong> when spiritual energy peaks.</p>
+            </div>
+          </article>
+
+          {/* Materials */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              Ritual Materials &amp; Offerings
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>For a complete Rudra Homa ceremony at Trimbakeshwar:</p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong>Yagna Materials</strong> — Wood sticks (samidha), ghee, havan samagri</li>
+                <li><strong>Offerings</strong> — Sesame seeds, rice, barley, coconut, honey</li>
+                <li><strong>Sacred Items</strong> — 108 bilva leaves, rudraksha beads</li>
+                <li><strong>Flowers</strong> — Red and white flowers for offering</li>
+                <li><strong>Puja Items</strong> — Camphor, incense, sandalwood paste</li>
+                <li><strong>Priest Dakshina</strong> — Appropriate payment for priest services</li>
+              </ul>
+            </div>
+          </article>
+
+          {/* Cost and Booking */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              Cost &amp; Booking Information
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p><strong>Total Cost</strong> — ₹8,000 to ₹25,000 including:</p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>Priest fees: ₹3,000-10,000</li>
+                <li>Materials: ₹2,000-8,000</li>
+                <li>Temple donation: ₹1,000-5,000</li>
+                <li>Pandit dakshina: ₹2,000-2,000</li>
+              </ul>
+            </div>
+          </article>
+
+          {/* FAQ */}
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-red-900 font-heading">
+              Frequently Asked Questions
+            </h2>
+            <div class="mt-4 space-y-4">
+              {faqs.map((faq) => (
+                <div class="border border-border rounded-xl p-6">
+                  <h3 class="text-lg font-semibold text-foreground mb-2">{faq.question}</h3>
+                  <p class="text-foreground/70 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div class="bg-red-900/5 rounded-2xl p-8 border border-red-900/10 mt-12">
+            <h3 class="text-xl font-bold text-red-900 mb-3">
+              Book Your Rudra Homa Ceremony
+            </h3>
+            <p class="text-foreground/70 mb-4">
+              Experience the transformative power of Rudra Homa at Trimbakeshwar. Stay at our Bhakta Niwas and let our priests guide you through this life-changing ritual.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="/booking"
+                class="inline-flex items-center gap-2 bg-red-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-red-900/90 transition-colors"
+              >
+                Book Rudra Homa
+              </a>
+              <a
+                href="/trimbakeshwar-bhakt-niwas"
+                class="inline-flex items-center gap-2 border border-red-900/30 text-red-900 px-6 py-3 rounded-xl font-semibold hover:bg-red-900/5 transition-colors"
+              >
+                View Accommodation
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

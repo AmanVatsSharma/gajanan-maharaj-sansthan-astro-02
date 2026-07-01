@@ -1,0 +1,321 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Temple History — Mamleshwar, Narmada & Ancient Legends 2026",
+  description:
+    "Discover the ancient history of Omkareshwar Jyotirlinga: the Om-shaped island, Mamleshwar temple legend, Narmada river mythology, Adi Shankara connection, and why it is one of the 12 sacred Jyotirlingas of Lord Shiva.",
+  keywords: [
+    "omkareshwar temple history",
+    "mamleshwar temple omkareshwar",
+    "omkareshwar jyotirlinga legend",
+    "om shaped island narmada",
+    "omkareshwar mythology",
+    "adi shankara omkareshwar",
+    "omkareshwar 12 jyotirlingas",
+    "narmada river mythology",
+    "omkareshwar ancient history",
+    "omkareshwar temple architecture",
+    "who built omkareshwar temple",
+    "omkareshwar significance",
+    "omkareshwar purana",
+    "narmada parikrama history",
+  ],
+  path: "/omkareshwar-temple-history",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, located on the Narmada river island of Omkareshwar.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What is the legend behind Omkareshwar Jyotirlinga?",
+    answer:
+      "According to the Shiva Purana, King Mandhata of the Ikshvaku dynasty worshipped Lord Shiva on this island, which led to the emergence of the Omkareshwar Jyotirlinga. The island itself is naturally shaped like the Om (Aum) symbol — hence the name Omkareshwar, meaning 'Lord of Om'. Lord Shiva appeared here as Omkareshwar, the divine sound made manifest.",
+  },
+  {
+    question: "What is the story of Mamleshwar Temple?",
+    answer:
+      "Mamleshwar Temple on the eastern bank of the Narmada is one of the oldest temples in Omkareshwar and is directly linked to the Jyotirlinga legend. It is believed that Lord Shiva appeared as Mamleshwar here, and this temple is also counted among the 12 Jyotirlingas by some traditions. The temple has ancient stone architecture and a serene atmosphere along the Narmada ghats.",
+  },
+  {
+    question: "Is Omkareshwar mentioned in the Skanda Purana?",
+    answer:
+      "Yes, Omkareshwar is extensively described in the Skanda Purana and the Shiva Purana. It is listed as one of the 12 Jyotirlingas where Lord Shiva manifested as a pillar of light. The Puranas describe the Narmada as Shiva's daughter, and Omkareshwar as a tirtha of unparalleled sanctity where bathing in the river and darshan of the Jyotirlinga grant moksha.",
+  },
+  {
+    question: "What is the connection between Adi Shankara and Omkareshwar?",
+    answer:
+      "Adi Shankara is believed to have visited Omkareshwar during his pilgrimage across India. He is said to have composed hymns to Lord Shiva here and to have established one of the four cardinal mathas (monasteries) in the broader region. The spiritual legacy of Omkareshwar is deeply intertwined with Advaita philosophy through Shankara's influence.",
+  },
+  {
+    question: "Why is the Omkareshwar island shaped like the sacred Om symbol?",
+    answer:
+      "The island of Omkareshwar in the Narmada River has a naturally occurring shape resembling the Sanskrit symbol 'Om' (Aum) when viewed from above. This natural formation is considered a divine miracle by devotees — the very shape of the primal sound of the universe. The temple was built on this naturally sacred geography, enhancing its spiritual significance.",
+  },
+  {
+    question: "What is the architectural style of Omkareshwar Temple?",
+    answer:
+      "The main Omkareshwar Temple is built in the Bhumija style of North Indian temple architecture, characterised by a tall shikhara (spire) with intricately carved stonework. The temple complex includes the main sanctum with the Jyotirlinga, a large mandapa, subsidiary shrines for Parvati, Ganapati, and other deities. The Mamleshwar temple on the eastern bank has an older, more rustic stone construction.",
+  },
+  {
+    question: "When was Omkareshwar temple built?",
+    answer:
+      "The current temple structure was built and renovated over centuries, with significant construction during the Maratha period (18th century). The temple has been rebuilt and expanded multiple times throughout history. Stone inscriptions in the complex date back to medieval periods. Archaeological evidence suggests worship at this site has continued for over 2,000 years.",
+  },
+  {
+    question: "What is Narmada Pushkaram and how does it relate to Omkareshwar?",
+    answer:
+      "Narmada Pushkaram is a major 12-day festival that occurs once every 12 years when Jupiter enters the Vrushabha (Taurus) zodiac sign. The next Narmada Pushkaram will be in 2028. During this festival, millions of pilgrims gather at Omkareshwar to take a holy dip in the Narmada, perform rituals, and seek Lord Shiva's blessings. The 2028 Pushkaram is expected to draw over 2 crore devotees.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Temple History", url: "/omkareshwar-temple-history" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-100 border-b border-amber-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-amber-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-amber-900 font-medium">Temple History</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-amber-900 leading-tight">
+        Omkareshwar Temple History — Ancient Legends &amp; Sacred Heritage
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-amber-900/80 max-w-3xl">
+        Explore the ancient history and mythology of Omkareshwar Jyotirlinga: the sacred Om-shaped island, Mamleshwar temple legends, Shiva Purana stories, Adi Shankara's connection, and why this Narmada island is one of the holiest sites in Hinduism.
+      </p>
+    </div>
+  </section>
+
+  <!-- Om-Shaped Island -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">The Om-Shaped Sacred Island</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            Omkareshwar derives its name from the extraordinary natural shape of its island — the entire landmass in the Narmada River is naturally shaped like the sacred Sanskrit symbol 'Om' (Aum). This is not a human-made formation; it is the river's own topography that has created this divine shape over millennia.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            For Hindus, the Om symbol represents the primordial sound of the universe — the vibration from which all creation emerged. To find an entire island naturally shaped like Om is considered a divine miracle. The temple was built here precisely because this geography is seen as a living symbol of the divine.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed">
+            The island is approximately 5.5 km in circumference and rises slightly above the Narmada's water level. It is divided into two main zones: the western bank (where the Omkareshwar temple stands) and the eastern bank (where the ancient Mamleshwar temple is located), connected by the Omkareshwar Bridge.
+          </p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-6">
+          <h3 class="text-lg font-semibold text-amber-900 mb-4">Quick Facts: Omkareshwar Island</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Shape</td><td class="py-2 font-medium text-amber-900">Naturally formed Om (Aum)</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">River</td><td class="py-2 font-medium text-amber-900">Narmada</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Circumference</td><td class="py-2 font-medium text-amber-900">~5.5 km</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Jyotirlinga Type</td><td class="py-2 font-medium text-amber-900">Omkareshwar (Lord of Om)</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Also Known As</td><td class="py-2 font-medium text-amber-900">Omkar Mountain</td></tr>
+              <tr><td class="py-2 text-amber-900/70">State</td><td class="py-2 font-medium text-amber-900">Madhya Pradesh</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shiva Purana Legend -->
+  <section class="py-16 bg-amber-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Legend from the Shiva Purana</h2>
+      <p class="mt-3 text-amber-900/80 max-w-3xl">
+        The origin of the Omkareshwar Jyotirlinga is narrated in the Shiva Purana with deep spiritual significance.
+      </p>
+      <div class="mt-8 rounded-xl border border-amber-200 bg-white p-6 md:p-8">
+        <h3 class="text-lg font-semibold text-amber-900 mb-3">The Story of King Mandhata</h3>
+        <p class="text-amber-900/80 leading-relaxed mb-4">
+          King Mandhata, a devout ruler of the Ikshvaku dynasty (the same lineage as Lord Rama), undertook intense penance (tapasya) at this site on the banks of the Narmada. Pleased by his unwavering devotion, Lord Shiva manifested here as a Jyotirlinga — a pillar of infinite light — and the place became known as Omkareshwar.
+        </p>
+        <p class="text-amber-900/80 leading-relaxed mb-4">
+          King Mandhata is also identified with the legendary King Ambarisha, whose story is told in the Bhagavata Purana. His intense devotion to Lord Shiva at this spot established the sanctity of the site for all time.
+        </p>
+        <p class="text-amber-900/80 leading-relaxed">
+          The Shiva Purana states: <em>"Wherever the Narmada flows, that place is sacred. But Omkareshwar, being the abode of Omkareshwar (the Om form of Shiva), is the most sacred of all."</em> The river is considered Shiva's daughter, making every drop of Narmada water equivalent to the Ganga at Kashi.
+        </p>
+      </div>
+      <div class="mt-6 rounded-xl border border-amber-200 bg-white p-6 md:p-8">
+        <h3 class="text-lg font-semibold text-amber-900 mb-3">The 12 Jyotirlingas</h3>
+        <p class="text-amber-900/80 leading-relaxed">
+          The 12 Jyotirlingas are the most sacred abodes of Lord Shiva, spread across India. Omkareshwar is the ninth in the traditional list. The full list: Somnath (Gujarat), Mallikarjuna (Andhra Pradesh), Mahakaleshwar (Ujjain), Omkareshwar (MP), Kedarnath (Uttarakhand), Bhimashankar (Maharashtra), Kashi Vishwanath (Varanasi), Trimbakeshwar (Maharashtra), Baidyanath (Jharkhand), Nageshwar (Gujarat), Rameshwaram (Tamil Nadu), and Grishneshwar (Maharashtra).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mamleshwar -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Mamleshwar Temple</h2>
+      <p class="mt-3 text-amber-900/80 max-w-3xl">
+        The ancient Mamleshwar Temple on the eastern bank of the Narmada is inseparable from the Omkareshwar Jyotirlinga story.
+      </p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            Mamleshwar is one of the 12 Jyotirlingas according to certain scriptural traditions. The temple faces west towards the Omkareshwar island across the Narmada, and the two temples are connected by the Omkareshwar Sethu (bridge). Devotees traditionally visit both temples in one pilgrimage circuit.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            The architecture of Mamleshwar is older and simpler than the main Omkareshwar temple — built with local stone in a traditional North Indian shikhara style. The temple's quiet, riverside location offers a peaceful counterpart to the busier Omkareshwar temple on the island.
+          </p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-6">
+          <h3 class="text-lg font-semibold text-amber-900 mb-4">Mamleshwar Temple Details</h3>
+          <ul class="space-y-2 text-sm text-amber-900/80">
+            <li><strong>Location:</strong> Eastern bank, Narmada River</li>
+            <li><strong>Jyotirlinga Status:</strong> One of the 12 (per some traditions)</li>
+            <li><strong>Connected By:</strong> Omkareshwar Bridge + Ropeway</li>
+            <li><strong>Architecture:</strong> Ancient stone shikhara style</li>
+            <li><strong>Deity:</strong> Lord Shiva as Mamleshwar</li>
+            <li><strong>Atmosphere:</strong> Quiet, riverside, peaceful</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Narmada -->
+  <section class="py-16 bg-amber-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Narmada — Shiva's Daughter</h2>
+      <p class="mt-3 text-amber-900/80 max-w-3xl">
+        In Hindu mythology, the Narmada River is considered the daughter of Lord Shiva, born from his sweat during the destruction of Tripura (the three demon cities). This divine parentage makes the Narmada uniquely sacred — unlike the Ganga, which is considered Shiva's consort (Ganga).
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-amber-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-amber-900">Narmada Aarti</h3>
+          <p class="mt-2 text-amber-900/80 text-sm">Evening aarti on the Narmada ghats with floating diyas. Takes place at sunset, creating a magical atmosphere with the Om-shaped island as backdrop.</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-amber-900">Narmada Parikrama</h3>
+          <p class="mt-2 text-amber-900/80 text-sm">A 2,600-km circumambulation of the Narmada river from source to sea, considered one of the most sacred pilgrimages in India. Omkareshwar is the most important stop on this route.</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-amber-900">Narmada Pushkaram</h3>
+          <p class="mt-2 text-amber-900/80 text-sm">Major 12-day festival every 12 years (next in 2028). Millions of devotees take a holy dip in the Narmada at Omkareshwar during Jupiter's transit through Taurus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adi Shankara -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Adi Shankara's Connection</h2>
+      <p class="mt-3 text-amber-900/80 max-w-3xl">
+        Adi Shankara, the 8th-century CE philosopher and founder of Advaita Vedanta, is traditionally believed to have visited Omkareshwar during his pan-Indian pilgrimage to establish the four cardinal mathas.
+      </p>
+      <p class="mt-4 text-amber-900/80 max-w-3xl">
+        While Shankara's primary matha assignments were at Sringeri (South), Dwaraka (West), Puri (East), and Badrinath (North), his travels through central India brought him to the Narmada banks at Omkareshwar. His hymns to Lord Shiva — the Shiva Manasa Puja and the Dakshinamurti Stotra — are recited daily at the temple.
+      </p>
+      <p class="mt-4 text-amber-900/80 max-w-3xl">
+        The Advaita philosophy of non-dualism, which Shankara systematised, aligns with the Omkareshwar experience — where the singular divine sound of Om permeates the entire island and river.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-amber-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-amber-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-amber-900">
+                <span>{faq.question}</span>
+                <span class="text-amber-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-amber-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-amber-600 to-orange-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Visit Omkareshwar — The Sacred Om Island</h2>
+      <p class="mt-4 text-amber-100/90 max-w-2xl mx-auto">
+        Book your stay near Omkareshwar temple in advance for the best rates.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-amber-800 font-semibold shadow hover:bg-amber-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,308 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getPlaceOfWorshipSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+import {
+  getPlaceOfWorshipSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+
+const faqs = [
+  {
+    question: "What is the significance of Kushavarta Kund?",
+    answer:
+      "Kushavarta Kund is the eternal source of the Godavari River, one of the most sacred pilgrimage sites in Trimbakeshwar. The kund has never dried up, even during the worst droughts. It is believed that the Godavari flows directly from Lord Shiva's matted hair, making this the origin point of the sacred river that purifies devotees who bathe here.",
+  },
+  {
+    question: "What are the Kushavarta Kund entry timings?",
+    answer:
+      "Kushavarta Kund is typically open from 5:00 AM to 9:00 PM. Early morning (5–7 AM) is considered most auspicious for bathing. During festivals like Mahashivratri and Kumbh Mela, the timings are extended to accommodate larger crowds. Always check current timings before visiting, as they can vary seasonally.",
+  },
+  {
+    question: "What is the entry fee for Kushavarta Kund?",
+    answer:
+      "There is no entry fee to visit Kushavarta Kund. However, donations are welcome. For special pujas or rituals performed at the kund, priests may charge nominal fees ranging from ₹101 to ₹1001 depending on the complexity. Lockers are available for ₹10-20 to store valuables safely.",
+  },
+  {
+    question: "What is the proper ritual bath procedure at Kushavarta?",
+    answer:
+      "The proper procedure includes: (1) Purify hands and feet before touching water, (2) Take 3 dips, each time chanting 'Om Namah Shivaya', (3) Offer prayers to ancestors before entering, (4) Collect some sacred water in a bottle to take home, (5) Visit the nearby temples after bathing. Many pilgrims also carry prasad to offer after their bath.",
+  },
+  {
+    question: "Are there changing facilities at Kushavarta Kund?",
+    answer:
+      "Yes, there are separate changing rooms for men and women. Basic facilities include lockers (₹10-20) and places to store clothes while bathing. The area is well-maintained with security personnel present. For better changing facilities, nearby hotels and the Bhakta Niwat provide more comfortable options.",
+  },
+];
+
+const meta = generatePageMetadata({
+  title: "Kushavarta Kund Trimbakeshwar — Sacred Godavari Origin | Pilgrim Bathing Guide",
+  description:
+    "Guide to Kushavarta Kund, the eternal source of the Godavari River at Trimbakeshwar. Learn about the sacred kund's history, significance, pilgrimage rituals, and how it remains water even during drought. Discover the spiritual importance of bathing here and detailed visiting tips.",
+  keywords: [
+    "kushavarta kund trimbakeshwar",
+    "kushavarta kund godavari origin",
+    "kushavarta kund pilgrimage",
+    "kushavarta kund darshan",
+    "kushavarta kund mahaprasad",
+    "kushavarta kund timing",
+    "kushavarta kund brahmagiri",
+    "kushavarta kund ritual bath",
+    "kushavarta kund entrance",
+    "kushavarta kund pooja",
+    "kushavarta kund water level",
+    "kushavarta kund vs ganga",
+  ],
+  path: "/kushavarta-kund-guide",
+});
+
+const faqSchema = getFAQSchema(faqs);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Jyotirlingas", url: "/12-jyotirlingas-of-india" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "Kushavarta Kund Guide", url: "/kushavarta-kund-guide" },
+]);
+
+const kushavartaLocation = {
+  id: "kushavarta-kund",
+  name: "Kushavarta Kund Trimbakeshwar",
+  city: "Trimbakeshwar",
+  address: "Near Trimbakeshwar Jyotirlinga Temple, Trimbakeshwar, Nashik District, Maharashtra",
+  description:
+    "Kushavarta Kund is the eternal source of the Godavari River, a sacred water tank where pilgrims bathe before visiting the Trimbakeshwar Jyotirlinga. The kund miraculously remains full even during drought.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+};
+
+const structuredPayload = [
+  getPlaceOfWorshipSchema(kushavartaLocation),
+  faqSchema,
+  breadcrumbSchema,
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <main class="min-h-screen">
+    {/* Hero */}
+    <section class="relative bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 py-16 sm:py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white space-y-4">
+          <p class="text-yellow-400 text-sm font-semibold tracking-widest uppercase">
+            Sacred Origin of the Godavari
+          </p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading leading-tight">
+            Kushavarta Kund — Eternal Source of the Godavari
+          </h1>
+          <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+            Experience the miracle of Kushavarta Kund — where the sacred Godavari River has been flowing eternally. Learn the ancient stories, pilgrimage rituals, and spiritual significance of this sacred water tank.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Main Content */}
+    <section class="py-12 sm:py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+          {/* Introduction */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              The Miracle of Kushavarta Kund
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Kushavarta Kund is the most sacred bathing site in all of Trimbakeshwar, marking the eternal origin point of the Godavari River. Unlike traditional kunds that depend on seasonal rainfall, Kushavarta is miraculous — it has never dried up, not even during the worst droughts in recorded history. This eternal spring makes it one of India's most sacred pilgrimage sites, attracting devotees who seek spiritual cleansing and divine blessings.
+              </p>
+              <p>
+                The name "Kushavarta" comes from <strong>kush grass</strong> (used in sacred rituals) and <strong>avarta</strong> (circular motion), suggesting the flowing movement that nourishes the surrounding land. The kund appears to have no visible source of water; pilgrims believe that the holy water emerges from <strong>subterranean connections to the Ganga</strong> and directly from Lord Shiva's abode in the Himalayas.
+              </p>
+            </div>
+          </article>
+
+          {/* Mythological Significance */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              Mythological Significance & Divine Origin
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                According to the <strong>Skanda Purana</strong> and other ancient texts, the Godavari River flows directly from Lord Shiva's matted hair (jata). When the great sage <strong>Gautama Maharishi</strong> performed intense penance to cleanse his sin of accidentally killing a sacred cow, Lord Shiva released the sacred Godavari at this exact location. The water emerged as a <strong>continuous spring</strong>, creating the Kushavarta Kund.
+              </p>
+              <p>
+                The kund is also associated with <strong>Lord Brahma</strong>. It is believed that the great creator himself sanctified this place with divine presence, declaring that anyone who bathes here and performs proper rituals will be freed from sins across seven generations. This is why many pilgrims specifically make the journey to Trimbakeshwar — primarily to perform the <strong>Narayan Nagbali</strong> and <strong>Rudrabhishek</strong> ceremonies here.
+              </p>
+            </div>
+          </article>
+
+          {/* Physical Structure */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              Architecture & Features of the Kund
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Kushavarta Kund is an <strong>impressive rectangular stepped tank</strong> carved from solid rock, with its most impressive dimension being its depth — measuring approximately 15 feet deep. The kund features wide stone steps leading down to the water level, allowing pilgrims to descend for their ritual bath safely. The walls are adorned with <strong>intricate carvings</strong depicting scenes from Hindu mythology, including depictions of Gods, saints, and various celestial beings.
+              </p>
+              <p>
+                Around the kund, you can see <strong>eleven small temples</strong> dedicated to various deities — including <strong>Ganesha</strong>, <strong>Shankar</strong>, and several forms of the goddess Durga. Each temple has its own significance, and pilgrims often offer prayers to these deities before or after their dip in the kund.
+              </p>
+            </div>
+          </article>
+
+          {/* Ritual Bathing Process */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              Sacred Ritual Bathing Process
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                The proper procedure for bathing at Kushavarta follows a sacred sequence:
+              </p>
+              <ol class="list-decimal list-inside space-y-2 ml-4">
+                <li>
+                  <strong>Purification</strong> - Upon entering, pilgrims must wash hands and feet before touching the water.
+                </li>
+                <li>
+                  <strong>Puja Preparation</strong - Many pilgrims carry <strong>prasad</strong> and <strong>flowers</strong> for offering.
+                </li>
+                <li>
+                  <strong>Prayer to Ancestors</strong> - It is traditional to remember and pray to one's ancestors before entering the water.
+                </li>
+                <li>
+                  <strong>Ritual Bath</strong> - Three dips are typically taken, each time chanting <strong>"Om Namah Shivaya"</strong> or prayers to the River Godavari.
+                </li>
+                <li>
+                  <strong>Mahaprasad</strong> - After bathing, pilgrims collect the sacred water to take home or offer at the nearby temples.
+                </li>
+              </ol>
+              <p>
+                Most pilgrims visit the kund during the early morning hours (5–7 AM) when the atmosphere is serene and the water is considered most auspicious.
+              </p>
+            </div>
+          </article>
+
+          {/* Mahaprasad Tradition */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              The Mahaprasad Tradition
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                One of the unique traditions at Kushavarta is the <strong>Mahaprasad</strong> — a special meal prepared with the water brought from the kund. Pilgrims collect the sacred water and take it to the nearby temples or have it cooked with their offerings. It is believed that food cooked or offered with this water receives divine blessings.
+              </p>
+              <p>
+                This practice is particularly significant during auspicious occasions and festivals when the <strong>panchamrut</strong> — a mixture of milk, honey, ghee, curd, and sugar — is offered to the deities using water from Kushavarta. The <strong>Shaniwar Wari</strong> procession during Saturdays witnesses hundreds of devotees bringing water from Kushavarta for rituals.
+              </p>
+            </div>
+          </article>
+
+          {/* Spiritual Significance */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              Spiritual Significance & Miracles
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Pilgrims report numerous miraculous experiences at Kushavarta Kund. Many claim that their <strong>wishes are fulfilled</strong> after bathing here, particularly those related to health, family, and spiritual progress. The water is said to have <strong>healing properties</strong>, and many bring it back home to treat various ailments.
+              </p>
+              <p>
+                The kund is also considered a place of <strong>spiritual transformation</strong>. Those who perform proper penance and meditation here often experience profound inner changes. Several saints and spiritual leaders have meditated at Kushavarta, attaining enlightenment and deep spiritual insights.
+              </p>
+            </div>
+          </article>
+
+          {/* Visiting Tips */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              Visiting Tips & Practical Information
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Best Time to Visit</strong> — The early morning hours (5–7 AM) are considered most auspicious. Many pilgrims also visit during sunset for evening prayers.
+              </p>
+              <p>
+                <strong>Dress Code</strong> — Men should wear dhoti or mundu with an upper garment. Women typically wear sarees or traditional clothing. Modest clothing is expected.
+              </p>
+              <p>
+                <strong>Photography</strong> — Photography is permitted, but avoid taking photos of people without permission. Tripods and professional photography may require special permission.
+              </p>
+              <p>
+                <strong>Facilities</strong> — There are changing rooms, storage facilities, and nearby shops selling puja materials. Lockers are available to keep valuables safe.
+              </p>
+              <p>
+                <strong>Crowds</strong> — The kund is busiest during Mahashivratri, Kumbh Mela, and Shravan month. Weekdays are less crowded than weekends.
+              </p>
+            </div>
+          </article>
+
+          {/* Nearby Attractions */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 font-heading">
+              Nearby Attractions
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                After visiting Kushavarta Kund, pilgrims often explore these nearby sacred sites:
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  <strong>Trimbakeshwar Temple</strong> — Just a short walk away, the Jyotirlinga temple is the main destination for darshan.
+                </li>
+                <li>
+                  <strong>Indra Sarovar</strong> — Another sacred pond believed to be associated with King Indra.
+                </li>
+                <li>
+                  <strong>Gautama Ashram</strong> — The meditation place of Sage Gautama Maharishi.
+                </li>
+                <li>
+                  <strong>Narayan Nagbali Mandir</strong> — Where the powerful Narayan Nagbali ritual is performed.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* CTA */}
+          <div class="bg-blue-900/5 rounded-2xl p-8 border border-blue-900/10 mt-12">
+            <h3 class="text-xl font-bold text-blue-900 mb-3">
+              Plan Your Trimbakeshwar Pilgrimage
+            </h3>
+            <p class="text-foreground/70 mb-4">
+              Make your spiritual journey comfortable by staying at Shri Gajanan Maharaj Sansthan's Bhakta Niwas in Trimbakeshwar. Located within walking distance of both the temple and Kushavarta Kund.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="/trimbakeshwar-bhakt-niwas"
+                class="inline-flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/90 transition-colors"
+              >
+                Book Accommodation
+              </a>
+              <a
+                href="/booking"
+                class="inline-flex items-center gap-2 border border-blue-900/30 text-blue-900 px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/5 transition-colors"
+              >
+                Check Availability
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

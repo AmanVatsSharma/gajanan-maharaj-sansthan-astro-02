@@ -1,0 +1,247 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+
+const faqs = [
+  {
+    question: "What is the significance of the three-faced Jyotirlinga at Trimbakeshwar?",
+    answer:
+      "The Trimbakeshwar Jyotirlinga is unique among the 12 Jyotirlingas as it has three distinct faces representing the Trimurti — Brahma (creator), Vishnu (preserver), and Shiva (destroyer). This trinity is partially covered by a silver mask adorned with gemstones. The three faces symbolize the past, present, and future, and make Trimbakeshwar the most philosophically rich of all the Jyotirlingas.",
+  },
+  {
+    question: "What is the origin of the Godavari River at Trimbakeshwar?",
+    answer:
+      "According to Hindu mythology, the Godavari River flows directly from Lord Shiva's matted hair (jata) at Trimbakeshwar. When sage Gautama performed intense penance here, Shiva released the sacred river to purify the sage. The eternal spring at Kushavarta Kund is the precise source point, and the river has been flowing continuously since — miraculously never drying up even during severe droughts.",
+  },
+  {
+    question: "Who was Sage Gautama and what is his connection to Trimbakeshwar?",
+    answer:
+      "Sage Gautama Maharishi was one of the Saptarishis (seven great sages) and a key figure in the history of Trimbakeshwar. To atone for accidentally killing a sacred cow (which was actually the goddess Ganga in disguise), he performed intense penance at Trimbakeshwar. Pleased with his devotion, Lord Shiva appeared as the Jyotirlinga and released the Godavari River to cleanse the sage's sin. His ashram is still located nearby.",
+  },
+  {
+    question: "Who built the Trimbakeshwar temple and when?",
+    answer:
+      "The present structure of Trimbakeshwar Temple was built in the 18th century by Nana Phadnavis, the influential Maratha statesman and advisor to the Peshwas. The temple is a magnificent example of Hemadpanti architecture with intricate stone carvings and a striking shikhara (spire). Earlier structures on the site date back over 2,000 years, mentioned in ancient texts like the Skanda Purana.",
+  },
+  {
+    question: "When is the next Kumbh Mela at Trimbakeshwar?",
+    answer:
+      "The Nashik-Trimbakeshwar Kumbh Mela (Simhastha) occurs every 12 years when Jupiter enters Leo. The last one was in 2015 and the next is expected in 2027. Over 3 crore (30 million) devotees are expected to gather for the Shahi Snan (royal bath) in the Godavari River — one of the world's largest religious gatherings.",
+  },
+];
+
+const meta = generatePageMetadata({
+  title: "Trimbakeshwar Temple History — Origin of Godavari & 12th Jyotirlinga",
+  description:
+    "Discover the ancient history of Trimbakeshwar Shiva Temple, Nashik — one of the 12 Jyotirlingas of India. Learn about Sage Gautama, the origin of the Godavari River, Nana Phadnavis, and the temple's unique three-faced Jyotirlinga.",
+  keywords: [
+    "trimbakeshwar temple history",
+    "trimbakeshwar jyotirlinga history",
+    "godavari river origin",
+    "sage gautama trimbakeshwar",
+    "nana phadnavis temple",
+    "trimbakeshwar shiva temple",
+    "trimbakeshwar nashik history",
+    "hemadpanti architecture trimbakeshwar",
+    "trimbakeshwar temple story",
+    "trimurti jyotirlinga trimbakeshwar",
+    "why trimbakeshwar is famous",
+    "trimbakeshwar shiva temple nashik",
+  ],
+  path: "/trimbakeshwar-temple-history",
+});
+
+const faqSchema = getFAQSchema(faqs);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Jyotirlingas", url: "/12-jyotirlingas-of-india" },
+  { name: "Trimbakeshwar Temple History", url: "/trimbakeshwar-temple-history" },
+]);
+
+const trimbakeshwarTemple = {
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga Temple",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Nashik District, Maharashtra 422212",
+  description:
+    "Trimbakeshwar Shiva Temple, one of the 12 sacred Jyotirlingas, located at the origin of the Godavari River in Nashik, Maharashtra. The temple houses a unique three-faced Jyotirlinga representing Brahma, Vishnu, and Shiva.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+};
+
+const structuredPayload = [
+  getHinduTempleSchema(trimbakeshwarTemple),
+  faqSchema,
+  breadcrumbSchema,
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <main class="min-h-screen">
+    {/* Hero */}
+    <section class="relative bg-gradient-to-b from-brand-maroon via-brand-maroon/95 to-brand-maroon/80 py-16 sm:py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white space-y-4">
+          <p class="text-brand-gold text-sm font-semibold tracking-widest uppercase">
+            One of the 12 Sacred Jyotirlingas
+          </p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading leading-tight">
+            Trimbakeshwar Temple — History &amp; Significance
+          </h1>
+          <p class="text-lg text-white/80 max-w-2xl mx-auto">
+            Explore 2,000 years of spiritual heritage at Trimbakeshwar Shiva Temple, Nashik — the sacred origin of the Godavari River and home to the only three-faced Jyotirlinga in the world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Main Content */}
+    <section class="py-12 sm:py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+          {/* Ancient Mythology */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brand-maroon font-heading">
+              Ancient Mythology &amp; Divine Origin
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Trimbakeshwar Shiva Temple stands as one of the most revered <strong>12 Jyotirlingas of India</strong>, located in the town of Trimbakeshwar, approximately 30 km from Nashik in Maharashtra. The temple's name derives from the three faces of the Jyotirlinga — representing the <strong>Trimurti</strong> (Brahma, Vishnu, and Shiva) — making it the only Jyotirlinga in India that embodies all three aspects of the divine trinity.
+              </p>
+              <p>
+                According to Hindu mythology, the sacred <strong>Godavari River</strong> — regarded as the Ganga of South India — originates from this very site. It is believed that Lord Shiva released the river from his matted hair (jata) at Trimbakeshwar, blessing the land with one of India's seven holy rivers. Pilgrims consider bathing in the Godavari here and performing rituals to be supremely meritorious.
+              </p>
+              <p>
+                The temple is closely associated with the legend of <strong>Sage Gautama Maharishi</strong>, one of the Saptarishis (seven great sages). To atone for accidentally killing a sacred cow — which was actually the goddess Ganga in disguise — Gautama performed intense penance here, praying to Lord Shiva to bring the Ganga down to earth. Pleased with his devotion, Shiva appeared as the Jyotirlinga, and the Godavari began to flow, cleansing the sage's sin.
+              </p>
+            </div>
+          </article>
+
+          {/* Temple Architecture */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brand-maroon font-heading">
+              Temple Architecture &amp; Structure
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                The present structure of Trimbakeshwar Temple was built in the <strong>18th century by Nana Phadnavis</strong>, the influential Maratha statesman and Peshwa advisor. The temple is a magnificent example of <strong>Hemadpanti architecture</strong>, characterized by intricately carved black stone, elaborate pillar work, and a striking shikhara (spire) that rises prominently against the Sahyadri hills.
+              </p>
+              <p>
+                The temple complex houses multiple shrines within its spacious courtyard. Besides the main Jyotirlinga, devotees worship <strong>Gautama Rishi</strong> and <strong>Goddess Annapurna</strong> here. The Kushavarta Kund — a sacred stepped tank — is considered the precise source point of the Godavari River, and pilgrims perform their ritual baths here before entering the temple.
+              </p>
+              <p>
+                The Jyotirlinga itself is unique: it has <strong>three distinct faces</strong> symbolizing the three gods of the Hindu trinity — Brahma, Vishnu, and Mahesh (Shiva). This is the only Jyotirlinga in India with such a characteristic, and it is partially covered by a silver mask adorned with gemstones offered by generations of devotees.
+              </p>
+            </div>
+          </article>
+
+          {/* Kumbh Mela */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brand-maroon font-heading">
+              Trimbakeshwar &amp; the Kumbh Mela
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Trimbakeshwar is one of the four locations in India that host the grand <strong>Kumbh Mela</strong> — the world's largest religious gathering. The Nashik-Trimbakeshwar Kumbh Mela occurs every 12 years on the banks of the Godavari. The last one took place in 2015, and the next is expected around 2027. During the Kumbh Mela, millions of devotees gather at Trimbakeshwar for ritual bathing, prayers, and spiritual discourses.
+              </p>
+              <p>
+                The Kumbh Mela here rotates between four sacred locations on the Godavari: <strong>Trimbakeshwar, Nashik, Kopargaon, and Shirdi</strong>. The event transforms the entire region into a vibrant spiritual festival, with temporary infrastructure, guided processions, and ancient rituals observed on an unprecedented scale.
+              </p>
+            </div>
+          </article>
+
+          {/* Rituals and Practices */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brand-maroon font-heading">
+              Sacred Rituals &amp; Pilgrimage Practices
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Pilgrims visiting Trimbakeshwar engage in several sacred practices. The most significant is performing a ritual bath in the <strong>Kushavarta Kund</strong> — the eternal source of the Godavari — before entering the temple for darshan. This is followed by offering prayers to the three-faced Jyotirlinga, often accompanied by abhishekam (ritual bathing of the linga) with water, milk, honey, and bilva (bael) leaves.
+              </p>
+              <p>
+                <strong>Mahashivratri</strong> is the most celebrated festival at Trimbakeshwar. On this night, the temple stays open from early morning until late at night, with continuous abhishekam, Rudra Abhishek, and the recitation of the Shiva Mahimna Stotra. Thousands of pilgrims camp on the temple grounds, creating a deeply spiritual atmosphere throughout the night.
+              </p>
+              <p>
+                Other significant rituals include <strong>Narayan Nagbali</strong> — a ceremony performed to remove ancestral curses and Pitru Dosha — and <strong>Rudra Homa</strong> fire sacrifices, both conducted by trained priests on specific auspicious days.
+              </p>
+            </div>
+          </article>
+
+          {/* Nearby Attractions */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brand-maroon font-heading">
+              Nearby Attractions &amp; Pilgrim Circuit
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                Beyond the temple itself, the Trimbakeshwar region offers several meaningful pilgrimage experiences. The nearby <strong>Brahmagiri Hill</strong> is one of the three peaks of the Brahmagiri mountain range and is deeply associated with Sage Gautama's ashram. Pilgrims undertake a trek up Brahmagiri to visit the ancient cave temples and enjoy panoramic views of the surrounding Sahyadri landscape.
+              </p>
+              <p>
+                The nearby <strong>Panchavati</strong> area in Nashik is equally significant — it is where Lord Rama spent his exile years during the Ramayana. The <strong>Sita Gufa</strong>, <strong>Kalaram Temple</strong>, and <strong>Godavari Ghats</strong> at Nashik are popular pilgrimage stops that complement a visit to Trimbakeshwar.
+              </p>
+            </div>
+          </article>
+
+          {/* Travel Tips */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brand-maroon font-heading">
+              Best Time to Visit &amp; Travel Tips
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                The best time to visit Trimbakeshwar is between <strong>October and March</strong>, when the weather is pleasant and cool. The monsoon months (July–September) offer lush green landscapes but can make trekking to Brahmagiri challenging. Summer (April–June) is hot but manageable.
+              </p>
+              <p>
+                <strong>Darshan timings</strong> at Trimbakeshwar typically open at 5:30 AM and close by 9:00 PM, with a brief afternoon break. Special extended hours are observed during Mahashivratri, Kumbh Mela, and major festivals. It is advisable to check the latest timings before planning your visit.
+              </p>
+              <p>
+                Trimbakeshwar is easily accessible from <strong>Nashik (28 km)</strong> via regular buses and taxis. The nearest airport is at <strong>Nashik (Ozar)</strong>, and the nearest railway station is also Nashik Road, which connects to all major Indian cities.
+              </p>
+            </div>
+          </article>
+
+          {/* CTA */}
+          <div class="bg-brand-maroon/5 rounded-2xl p-8 border border-brand-maroon/10 mt-12">
+            <h3 class="text-xl font-bold text-brand-maroon mb-3">
+              Plan Your Visit to Trimbakeshwar
+            </h3>
+            <p class="text-foreground/70 mb-4">
+              Looking for accommodation near Trimbakeshwar Jyotirlinga? Shri Gajanan Maharaj Sansthan manages verified Bhakta Niwas at Trimbakeshwar, providing comfortable, well-located stays for pilgrims. Book your room online or via WhatsApp.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="/trimbakeshwar-bhakt-niwas"
+                class="inline-flex items-center gap-2 bg-brand-maroon text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-maroon/90 transition-colors"
+              >
+                Book Bhakta Niwas, Trimbakeshwar
+              </a>
+              <a
+                href="/booking"
+                class="inline-flex items-center gap-2 border border-brand-maroon/30 text-brand-maroon px-6 py-3 rounded-xl font-semibold hover:bg-brand-maroon/5 transition-colors"
+              >
+                Booking Page
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

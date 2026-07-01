@@ -1,0 +1,241 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Mahashivratri at Omkareshwar — Guide, Timings, Rituals &amp; Accommodation 2026",
+  description:
+    "Complete guide to Mahashivratri at Omkareshwar Jyotirlinga: temple timings, aarti schedule, Narmada night rituals, how to reach, what to wear, and booking Omkareshwar Bhakta Niwas for the festival.",
+  keywords: [
+    "mahashivratri omkareshwar",
+    "omkareshwar mahashivratri 2026",
+    "mahashivratri narmada aarti",
+    "maha shivratri omkareshwar",
+    "omkareshwar shivratri timings",
+    "mahashivratri kumbh mela",
+    "shivratri omkareshwar accommodation",
+    "omkareshwar shivratri pooja",
+    "narmada shivratri aarti",
+    "omkareshwar maha shivratri guide",
+  ],
+  path: "/mahashivratri-omkareshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description: "One of the 12 Jyotirlingas of Lord Shiva on the Narmada river island.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "omkareshwar", name: "Omkareshwar Bhakta Niwas", city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "When is Mahashivratri at Omkareshwar in 2026?",
+    answer:
+      "Mahashivratri in 2026 falls on Thursday, February 26, 2026. At Omkareshwar, the festival is celebrated throughout the night with continuous aartis, special pujas, Rudra Abhishek, Narmada Aarti, and a grand procession. The temple remains open from 4:00 AM on the festival day until late at night, with no closing between aartis.",
+  },
+  {
+    question: "What are the special timings and aartis during Mahashivratri at Omkareshwar?",
+    answer:
+      "During Mahashivratri, Omkareshwar temple remains open throughout the night — from 4:00 AM to approximately 11:00 PM. The aarti schedule is extended with hourly aartis from 6:00 PM to 12:00 AM, including the grand Maha Aarti at midnight. The Narmada river aarti at sunset is especially spectacular with thousands of diyas (oil lamps) floated on the river. All five temples on the island (Omkareshwar, Mamleshwar, Siddhnath, Mai Ki Birsa, Amaleshwar) have special schedules.",
+  },
+  {
+    question: "What rituals are performed during Mahashivratri at Omkareshwar?",
+    answer:
+      "Key Mahashivratri rituals at Omkareshwar include: (1) Rudra Abhishek — bathing the Shiva Lingam with milk, honey, and Ganga water, (2) Maha Aarti — the grand midnight aarti with hundreds of diyas, (3) Narmada Night Aarti — on the river ghats with floating lamps, (4) Bilva Archana — offering bilva leaves throughout the day, (5) Mahaprasad distribution — free food for all devotees, (6) All-night vigil (jaagaran) in the temple mandap, (7) Narmada Parikrama barefoot as a spiritual vow.",
+  },
+  {
+    question: "How to reach Omkareshwar for Mahashivratri?",
+    answer:
+      "For Mahashivratri, plan to reach Omkareshwar 1–2 days in advance as the town fills with over 2 lakh devotees. From Indore: 77 km, 2 hours by car. Regular MSRTC buses run extra services from Indore, Bhopal, and Khandwa during Mahashivratri. Khandwa Junction (13 km) has special festival trains. Nearest airport: Indore (85 km). Book accommodation at least 2 weeks in advance — Omkareshwar Bhakta Niwas and all hotels sell out during Mahashivratri.",
+  },
+  {
+    question: "What should I wear during Mahashivratri at Omkareshwar?",
+    answer:
+      "Traditional dress is strongly recommended and sometimes enforced at temple entrances: men should wear dhoti, pajamas, or formal trousers (no shorts, lungis, or jeans). Women should wear a saree or salwar kameez covering shoulders and knees. Many pilgrims wear saffron or white as a sign of devotion. Leather belts, wallets, and watches should be left in accommodation lockers. Free dhoti rental is available near the main entrance.",
+  },
+  {
+    question: "Is there a Kumbh Mela connection to Mahashivratri at Omkareshwar?",
+    answer:
+      "Yes. The Nashik-Trimbakeshwar Kumbh Mela is held in the same region and is considered one of the four sacred Kumbh Melas of India. While the main Kumbh Mela occurs every 12 years, Mahashivratri every year draws a massive crowd to Omkareshwar and Trimbakeshwar. The spiritual energy during Mahashivratri at Omkareshwar is said to be equivalent to the Kumbh Mela — many sages and sadhus gather here for the all-night aarti.",
+  },
+  {
+    question: "Can I combine Omkareshwar Mahashivratri with other Jyotirlingas?",
+    answer:
+      "Yes, many pilgrims combine Omkareshwar Mahashivratri with nearby sacred sites. The most popular combinations are: (1) Omkareshwar + Ujjain Mahakaleshwar (135 km, 3.5 hrs) — both in Madhya Pradesh and close together, (2) Omkareshwar + Mahakaleshwar + Grishneshwar (Maharashtra) — a central India Jyotirlinga circuit, (3) Omkareshwar + Ujjain + Omkareshwar — a 3-day MP circuit. The Indore–Omkareshwar–Ujjain triangle is the most popular pilgrimage route during Mahashivratri.",
+  },
+  {
+    question: "How to book accommodation during Mahashivratri at Omkareshwar?",
+    answer:
+      "Accommodation during Mahashivratri sells out 3–4 weeks in advance. Recommended options: (1) Omkareshwar Bhakta Niwas — managed by Shri Gajanan Maharaj Sansthan, book via +91 96612 63850 (WhatsApp). Suggested donations from ₹1,000–₹3,500 per night including all meals. (2) MPSTDC Guest House on the island — government-run, book via MP Tourism website. (3) budget hotels in Khandwa (13 km) as a backup. Book at least 2–3 weeks ahead for Mahashivratri.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Mahashivratri Omkareshwar", url: "/mahashivratri-omkareshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-indigo-50 via-purple-50 to-violet-100 border-b border-indigo-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-indigo-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-indigo-900 font-medium">Mahashivratri Guide</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-indigo-900 leading-tight">
+        Mahashivratri at Omkareshwar — Festival Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-indigo-900/80 max-w-3xl">
+        Complete festival guide to Mahashivratri at Omkareshwar Jyotirlinga: aarti schedule, temple timings, night rituals, Narmada river ceremonies, how to reach, dress code, and booking Omkareshwar Bhakta Niwas for the big night.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">Feb 26, 2026</span>
+        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 text-sm font-medium">Omkareshwar, MP</span>
+        <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">All-night Festival</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Festival Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">About Mahashivratri at Omkareshwar</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        Mahashivratri (the Great Night of Shiva) is the most sacred festival dedicated to Lord Shiva. In 2026, it falls on Thursday, February 26. At Omkareshwar — one of the 12 Jyotirlingas — the festival is celebrated with unmatched intensity: the Om-shaped island transforms into a sea of oil lamps, the Narmada ghats echo with Rudra chants, and the temple remains open throughout the night for over 200,000 devotees.
+      </p>
+    </div>
+  </section>
+
+  <!-- Aarti Schedule -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Mahashivratri Aarti Schedule</h2>
+      <p class="mt-3 text-indigo-900/80">Extended schedule — temple open all night with hourly aartis:</p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-indigo-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-indigo-100 text-indigo-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Time</th>
+              <th class="px-4 py-3 font-semibold">Aarti / Ritual</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-indigo-100">
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">4:00 AM</td><td class="px-4 py-3 text-indigo-900">Temple opens — Kakad Aarti</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">6:00 AM</td><td class="px-4 py-3 text-indigo-900">Rudra Abhishek begins</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">9:00 AM</td><td class="px-4 py-3 text-indigo-900">Bilva Archana (continuous)</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">12:00 PM</td><td class="px-4 py-3 text-indigo-900">Madhyan Aarti</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">4:00 PM</td><td class="px-4 py-3 text-indigo-900">Narmada Ganga Pooja</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">6:00 PM</td><td class="px-4 py-3 text-indigo-900">Sayam Aarti + Narmada River Aarti</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">8:00 PM</td><td class="px-4 py-3 text-indigo-900">Shiva Katha (story recitation)</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">10:00 PM</td><td class="px-4 py-3 text-indigo-900">Mahadeepotsava (grand lamp lighting)</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">12:00 AM</td><td class="px-4 py-3 text-indigo-900">Maha Aarti (most sacred moment)</td></tr>
+            <tr class="hover:bg-indigo-50/60"><td class="px-4 py-3 font-medium text-indigo-900">11:00 PM</td><td class="px-4 py-3 text-indigo-900">Temple closes for the night</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rituals -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Key Rituals on Mahashivratri</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Rudra Abhishek</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">The sacred bathing of the Shiva Lingam with milk, honey, Ganga water, and bilva leaves. Performed continuously from 6:00 AM throughout the night by temple priests. Each abhishek takes 10–15 minutes and is accompanied by Rudra mantra chanting.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Mahadeepotsava</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">The grand lamp-lighting ceremony at 10:00 PM. Hundreds of brass lamps are lit simultaneously around the sanctum and on the Narmada ghats. The sight of thousands of floating diyas on the river during Narmada Aarti is unforgettable.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Narmada River Aarti</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">At sunset, thousands of diyas are floated on the Narmada while priests chant Shiva mantras. The Om-shaped island creates a natural amphitheatre for the aarti. Devotees on both the island and mainland participate, creating a river of light on the sacred waters.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">All-Night Jaagaran</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Devotees stay awake throughout the night in the temple mandap, singing bhajans, reciting the Shiva Purana, and participating in the midnight Maha Aarti — considered the most auspicious moment of the entire year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-indigo-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-indigo-900">
+                <span>{faq.question}</span>
+                <span class="text-indigo-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-indigo-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Mahashivratri at Omkareshwar</h2>
+      <p class="mt-4 text-indigo-100/90 max-w-2xl mx-auto">
+        Book Omkareshwar Bhakta Niwas in advance — accommodation sells out weeks before Mahashivratri.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-indigo-800 font-semibold shadow hover:bg-indigo-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

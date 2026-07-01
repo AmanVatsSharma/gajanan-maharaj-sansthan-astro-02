@@ -1,0 +1,314 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar from Bhopal — Road Trip, Train & Bus Guide 2026",
+  description:
+    "How to reach Omkareshwar from Bhopal: 250 km by car via NH 46, MSRTC buses, and train to Khandwa. Includes temple timings, accommodation tips, and nearby Ujjain pilgrimage route.",
+  keywords: [
+    "bhopal to omkareshwar",
+    "omkareshwar from bhopal",
+    "bhopal omkareshwar distance",
+    "bhopal to omkareshwar by car",
+    "bhopal to omkareshwar by train",
+    "omkareshwar bus from bhopal",
+    "bhopal omkareshwar pilgrimage",
+    "bhopal ujjain omkareshwar trip",
+    "bhopal omkareshwar taxi",
+    "bhopal jyotirlinga trip",
+    "omkareshwar weekend trip from bhopal",
+  ],
+  path: "/omkareshwar-from-bhopal",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description: "One of the 12 Jyotirlingas on the Narmada river island.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "omkareshwar", name: "Omkareshwar Bhakta Niwas", city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "How far is Omkareshwar from Bhopal?",
+    answer:
+      "Omkareshwar is approximately 250 km from Bhopal via NH 46, taking 5–6 hours by car. The route goes through Sehore, Shajapur, Indore, and then Khandwa before reaching Omkareshwar. By bus, MSRTC and private operators run daily services from Bhopal ISBT to Omkareshwar, taking about 6–7 hours. By train, take a train from Bhopal Junction to Khandwa Junction (180 km, 3–4 hours), then a taxi or bus for the remaining 13 km.",
+  },
+  {
+    question: "Which is better — road or train from Bhopal to Omkareshwar?",
+    answer:
+      "Road is the better option for most pilgrims. The NH 46 route is well-paved and passes through Indore, allowing you to break the journey with a meal stop. By car or taxi, the journey takes 5–6 hours with flexibility to stop at temples along the way. By train, you save time to Khandwa (3–4 hours) but then need another 30–45 minutes by taxi — the total is similar. The road option is more convenient for families with luggage and allows a combined Indore + Omkareshwar pilgrimage.",
+  },
+  {
+    question: "Can I visit Ujjain and Omkareshwar from Bhopal in one trip?",
+    answer:
+      "Yes, and it's an excellent 2-day pilgrimage circuit. Day 1: Bhopal → Ujjain (140 km, 3 hrs), visit Mahakaleshwar Jyotirlinga in the morning, overnight in Ujjain. Day 2: Ujjain → Omkareshwar (135 km, 3.5 hrs), visit Omkareshwar Jyotirlinga and do Narmada Parikrama, return to Bhopal via Indore or direct. This covers 2 of the 12 Jyotirlingas in one trip. Many pilgrims add Maheshwar (50 km from Omkareshwar) as a day 2.5 stop.",
+  },
+  {
+    question: "Are there direct buses from Bhopal to Omkareshwar?",
+    answer:
+      "Yes, MSRTC operates regular direct bus services from Bhopal ISBT (Inter State Bus Terminal) to Omkareshwar. Buses run 3–4 times daily, with the first departure around 5:00 AM and the last around 8:00 PM. Journey time: 6–7 hours. Fare: ₹350–₹600 per person. Private operators also run AC and non-AC sleeper buses. Booking in advance through the RedBus app or MSRTC website is recommended, especially during Mahashivratri and festival seasons.",
+  },
+  {
+    question: "What are some good places to stop between Bhopal and Omkareshwar?",
+    answer:
+      "The best stopover is Indore (approx. halfway from Bhopal). Indore offers: Mahakaleshwar Jyotirlinga darshan, Indore's famous Sarafa Bazaar for street food, overnight accommodation, and MPSTDC guest houses. Other stops: Dewas (30 km from Indore, Chamunda Mata Temple), Maheshwar (50 km from Omkareshwar, ancient Maratha capital with Narmada ghats), and Nemawar (midway, historic town).",
+  },
+  {
+    question: "Is Omkareshwar suitable for a weekend trip from Bhopal?",
+    answer:
+      "Yes, Omkareshwar makes an excellent weekend trip from Bhopal. Suggested 2-day itinerary: Day 1: Depart Bhopal at 5 AM, reach Omkareshwar by 10–11 AM, do Omkareshwar temple darshan, Mamleshwar visit, Narmada Parikrama, and check in at Bhakta Niwas. Evening Narmada Aarti. Day 2: Morning Kushavarta Kund holy dip, Brahmagiri-style island walk, depart by 2 PM, reach Bhopal by 8–9 PM. Book Bhakta Niwas in advance for weekends.",
+  },
+  {
+    question: "What are the accommodation options near Omkareshwar?",
+    answer:
+      "Best option: Omkareshwar Bhakta Niwas (managed by Shri Gajanan Maharaj Sansthan) — suggested donations ₹1,000–₹3,500/night including all meals. MPSTDC Guest House on the island — government-run, river-view rooms. Budget hotels in Omkareshwar town — ₹500–₹1,500/night. Budget hotels in Khandwa (13 km) — ₹800–₹2,000/night. Mid-range: Hotel Narmada and Hotel Om Sai — ₹2,000–₹4,000/night with AC and meals.",
+  },
+  {
+    question: "What is the best season to visit Omkareshwar from Bhopal?",
+    answer:
+      "October to March is ideal — cool and dry weather (15–30°C) perfect for temple visits and Narmada Parikrama. The road from Bhopal is in excellent condition during this period. Avoid July–August monsoon season — heavy rains can cause Narmada water to rise above the ghats, and some sections of the parikrama may be closed. Mahashivratri (Feb/March) is the most spiritually powerful time but expect heavy crowds — book everything 2–3 weeks ahead.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar from Bhopal", url: "/omkareshwar-from-bhopal" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100 border-b border-emerald-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-emerald-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/how-to-reach-omkareshwar" class="hover:underline">How to Reach Omkareshwar</a>
+        <span class="mx-2">/</span>
+        <span class="text-emerald-900 font-medium">From Bhopal</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-emerald-900 leading-tight">
+        Omkareshwar from Bhopal — Road Trip, Train &amp; Bus Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-emerald-900/80 max-w-3xl">
+        Complete guide to reaching Omkareshwar Jyotirlinga from Bhopal: 250 km by car via NH 46, MSRTC bus services, train to Khandwa, combined Ujjain pilgrimage, accommodation tips, and a suggested 2-day itinerary.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">Travel Overview: Bhopal → Omkareshwar</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-emerald-700">250 km</p>
+          <p class="text-sm text-emerald-900/70 mt-1">Distance by road</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-emerald-700">5–6 hrs</p>
+          <p class="text-sm text-emerald-900/70 mt-1">By car (NH 46)</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-emerald-700">6–7 hrs</p>
+          <p class="text-sm text-emerald-900/70 mt-1">By MSRTC bus</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-emerald-700">4.5 hrs</p>
+          <p class="text-sm text-emerald-900/70 mt-1">By train to Khandwa + taxi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- By Road -->
+  <section class="py-16 bg-emerald-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">By Car / Taxi from Bhopal</h2>
+      <p class="mt-3 text-emerald-900/80 max-w-3xl">
+        The most popular and convenient option. The NH 46 route is well-paved and scenic through Madhya Pradesh's heartland.
+      </p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-emerald-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-emerald-900 mb-3">Route via NH 46</h3>
+          <ol class="list-decimal list-inside space-y-2 text-sm text-emerald-900/80">
+            <li>Bhopal → Sehore (40 km, 45 min)</li>
+            <li>Sehore → Shajapur (75 km, 1.5 hrs)</li>
+            <li>Shajapur → Indore (85 km, 1.5 hrs)</li>
+            <li>Indore → Khandwa via SH 27 (180 km, 3 hrs)</li>
+            <li>Khandwa → Omkareshwar (13 km, 30 min)</li>
+          </ol>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-emerald-900 mb-3">Cost Estimate</h3>
+          <ul class="space-y-2 text-sm text-emerald-900/80">
+            <li><strong>Self-drive:</strong> ₹3,000–₹5,000 round trip (fuel + tolls)</li>
+            <li><strong>Taxi (4-seater):</strong> ₹5,000–₹7,000 one way</li>
+            <li><strong>MSRTC Bus:</strong> ₹350–₹600 per person</li>
+            <li><strong>Tolls:</strong> ₹300–₹500 on NH 46</li>
+            <li><strong>Fuel:</strong> ~₹2,500 for round trip</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- By Bus -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">By Bus from Bhopal</h2>
+      <p class="mt-3 text-emerald-900/80 max-w-3xl">
+        MSRTC and private operators run daily services from Bhopal ISBT to Omkareshwar.
+      </p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900 mb-3">MSRTC Buses</h3>
+          <ul class="space-y-2 text-sm text-emerald-900/80">
+            <li>• Departure: Bhopal ISBT, 5:00 AM – 8:00 PM</li>
+            <li>• Frequency: 3–4 buses daily</li>
+            <li>• Duration: 6–7 hours</li>
+            <li>• Fare: ₹350–₹600 per person</li>
+            <li>• Type: Non-AC and AC Volvo available</li>
+            <li>• Booking: MSRTC website or RedBus</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900 mb-3">Private Operators</h3>
+          <ul class="space-y-2 text-sm text-emerald-900/80">
+            <li>• Departure: Bhopal New Bus Stand</li>
+            <li>• Frequency: 2–3 buses daily</li>
+            <li>• Duration: 6–7 hours</li>
+            <li>• Fare: ₹400–₹800 per person</li>
+            <li>• Type: AC and Non-AC sleeper</li>
+            <li>• Booking: RedBus, AbhiBus, or at stand</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- By Train -->
+  <section class="py-16 bg-emerald-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">By Train from Bhopal</h2>
+      <p class="mt-3 text-emerald-900/80 max-w-3xl">
+        Trains connect Bhopal to Khandwa Junction (nearest railway station to Omkareshwar). From Khandwa, take a taxi or bus for the final 13 km.
+      </p>
+      <div class="mt-6 rounded-xl border border-emerald-200 bg-white p-6">
+        <h3 class="text-lg font-semibold text-emerald-900 mb-3">Key Trains: Bhopal → Khandwa</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-emerald-100 text-emerald-900">
+              <tr>
+                <th class="px-3 py-2 font-semibold">Train</th>
+                <th class="px-3 py-2 font-semibold">Departure</th>
+                <th class="px-3 py-2 font-semibold">Arrival</th>
+                <th class="px-3 py-2 font-semibold">Duration</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-emerald-100">
+              <tr class="hover:bg-emerald-50/60"><td class="px-3 py-2 text-emerald-900">Jabalpur – Pune Express</td><td class="px-3 py-2 text-emerald-900/70">6:15 AM</td><td class="px-3 py-2 text-emerald-900/70">10:20 AM</td><td class="px-3 py-2 text-emerald-900">4h 5m</td></tr>
+              <tr class="hover:bg-emerald-50/60"><td class="px-3 py-2 text-emerald-900">Bhopal – Indore Intercity</td><td class="px-3 py-2 text-emerald-900/70">6:30 AM</td><td class="px-3 py-2 text-emerald-900/70">11:30 AM</td><td class="px-3 py-2 text-emerald-900">5h 0m</td></tr>
+              <tr class="hover:bg-emerald-50/60"><td class="px-3 py-2 text-emerald-900">Dakshin Express</td><td class="px-3 py-2 text-emerald-900/70">9:30 PM</td><td class="px-3 py-2 text-emerald-900/70">1:50 AM+1</td><td class="px-3 py-2 text-emerald-900">4h 20m</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-4 text-xs text-emerald-900/70">From Khandwa Junction, shared taxis (₹50–₹100) and MSRTC buses run every 30 min to Omkareshwar (30 min journey).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ujjain Combo -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">Bhopal → Ujjain → Omkareshwar — 2-Day Pilgrimage</h2>
+      <p class="mt-3 text-emerald-900/80 max-w-3xl">
+        The most popular pilgrimage circuit from Bhopal covers 2 of the 12 Jyotirlingas in one weekend trip.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900">Day 1 — Bhopal to Ujjain</h3>
+          <p class="mt-2 text-emerald-900/80 text-sm">Depart Bhopal at 5 AM, reach Ujjain by 8:30 AM (140 km). Mahakaleshwar Jyotirlinga darshan, then Ram Ghat aarti on the Shipra River. Overnight at Ujjain. Stay at MPSTDC guest house or budget hotel (₹1,000–₹2,500/night).</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900">Day 2 — Ujjain to Omkareshwar</h3>
+          <p class="mt-2 text-emerald-900/80 text-sm">Depart Ujjain at 6 AM, reach Omkareshwar by 10 AM (135 km). Omkareshwar temple darshan, Mamleshwar, Narmada Parikrama, holy dip. Evening Narmada Aarti. Depart by 6 PM, reach Bhopal by 10 PM via Indore.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-emerald-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-emerald-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-emerald-900">
+                <span>{faq.question}</span>
+                <span class="text-emerald-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-emerald-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-emerald-700 to-teal-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Omkareshwar trip from Bhopal</h2>
+      <p class="mt-4 text-emerald-100/90 max-w-2xl mx-auto">
+        Book accommodation in advance. Omkareshwar Bhakta Niwas recommended for pilgrims.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-emerald-800 font-semibold shadow hover:bg-emerald-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

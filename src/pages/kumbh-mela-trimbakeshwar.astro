@@ -1,0 +1,269 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Kumbh Mela at Trimbakeshwar — 2027 Guide, Dates, Rituals &amp; Accommodation",
+  description:
+    "Complete guide to Nashik-Trimbakeshwar Kumbh Mela 2027: history, dates, ritual bath (shahi snan), Brahmagiri, accommodation at Trimbakeshwar Bhakta Niwas, safety tips, and how to combine Kumbh Mela with regular darshan.",
+  keywords: [
+    "kumbh mela trimbakeshwar 2027",
+    "nashik kumbh mela 2027",
+    "trimbakeshwar kumbh mela dates",
+    "kumbh mela nashik",
+    "simhastha kumbh 2027",
+    "trimbakeshwar kumbh mela accommodation",
+    "kumbh mela shahi snan",
+    "kumbh mela brahmagiri",
+    "kumbh mela booking 2027",
+    "kumbh mela trimbakeshwar accommodation",
+    "kumbh mela nashik trimbakeshwar",
+    "simhastha kumbh mela",
+  ],
+  path: "/kumbh-mela-trimbakeshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Nashik, Maharashtra",
+  description: "One of the 12 Jyotirlingas. Hosts the Nashik-Trimbakeshwar Kumbh Mela every 12 years.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.6378, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.9,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "trimbakeshwar", name: "Trimbakeshwar Bhakta Niwas", city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple. Managed by Shri Gajanan Maharaj Sansthan.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1500, max: 5500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "When is the next Kumbh Mela at Trimbakeshwar (Nashik)?",
+    answer:
+      "The next Nashik-Trimbakeshwar Kumbh Mela (Simhastha Kumbh) will be held in 2027, continuing from April through May. The Nashik-Trimbakeshwar Kumbh Mela occurs every 12 years — the last one was held in 2015, making 2027 the next Simhastha. The exact dates are finalized by the government about 6–12 months in advance. Over 3 crore (30 million) devotees are expected, making it one of the largest religious gatherings in the world.",
+  },
+  {
+    question: "What is the history of the Nashik-Trimbakeshwar Kumbh Mela?",
+    answer:
+      "The Nashik-Trimbakeshwar Kumbh Mela (also called Simhastha Kumbh) is one of the four sacred Kumbh Melas of India — the others being Prayagraj (Allahabad), Haridwar, and Ujjain. It is held every 12 years when Jupiter is in the zodiac sign Leo (Simha), hence the name Simhastha. The 2027 Kumbh Mela will be the 10th Simhastha since the tradition was formalized. During the Kumbh Mela, the Godavari river at Trimbakeshwar and the Ram Kund at Nashik become the site of the Shahi Snan (royal bath), the most sacred bathing ritual.",
+  },
+  {
+    question: "What are the Shahi Snan dates during Kumbh Mela?",
+    answer:
+      "The Shahi Snan (royal bathing days) are the most important dates of the Kumbh Mela, when Akharas (ascetic orders) and millions of devotees take the sacred bath simultaneously in the Godavari. Historically, key Shahi Snan dates include: Amavasya (new moon) in Chaitra month, Vaishakh Purnima (Buddha Purnima), and select other auspicious dates. The Government of Maharashtra and Kumbh Mela Authority publish the official Shahi Snan schedule 6–12 months before the event. Devotees should plan their visit around these dates — accommodation prices increase 3–5x during Shahi Snan days.",
+  },
+  {
+    question: "How to book accommodation during Kumbh Mela at Trimbakeshwar?",
+    answer:
+      "Booking opens 6–12 months before the Kumbh Mela through the official Kumbh Mela 2027 portal, which is expected to launch in mid-2025. Alternative booking: (1) Trimbakeshwar Bhakta Niwas by Shri Gajanan Maharaj Sansthan at +91 96612 63850 — advance reservations open early; (2) MPSTDC and GMVN guest houses along the Godavari corridor; (3) Luxury tent cities — Government of Maharashtra sets up luxury tented accommodation in designated Kumbh Mela zones; (4) Budget camping — self-organized tents in designated non-restricted areas. Book as early as possible — Kumbh Mela accommodation sells out faster than any other festival.",
+  },
+  {
+    question: "What is the Kumbh Mela infrastructure and safety at Trimbakeshwar?",
+    answer:
+      "For the 2027 Kumbh Mela, the Government of Maharashtra plans to build: (1) A 1,200-hectare temporary city on the river banks with roads, water, and electricity, (2) 20+ pontoon bridges across the Godavari for crowd movement, (3) 50+ hospitals and medical camps, (4) Over 200,000 temporary toilets, (5) Drinking water supply for 50 lakh+ people daily, (6) Surveillance cameras, crowd monitoring drones, and police deployment, (7) Railway stations and bus depots inside the Kumbh Mela zone. Local police and paramilitary provide security throughout the festival zone.",
+  },
+  {
+    question: "How do the Kumbh Mela dates interact with regular Trimbakeshwar visits?",
+    answer:
+      "During Kumbh Mela (2027), Trimbakeshwar experiences massive transformation: 3 crore+ devotees expected, Kumbh-specific booking systems for darshan, Shahi Snan days are the most restricted and crowded. Regular darshan is still possible but expect 4–8 hour queues. The Kushavarta Kund and Brahmagiri are open but extremely crowded. Many pilgrims find it spiritually more powerful but logistically harder during Kumbh Mela than during regular months. If planning your first Trimbakeshwar visit, consider visiting in November–March (outside Kumbh Mela) for a quieter, more comfortable experience.",
+  },
+  {
+    question: "Can I combine Kumbh Mela with other Jyotirlingas?",
+    answer:
+      "Yes — the most popular Kumbh Mela pilgrimage circuits: (1) Trimbakeshwar + Mahakaleshwar Ujjain — both are Simhastha/Kumbh cities, 135 km apart, (2) Trimbakeshwar + Omkareshwar + Ujjain — three sacred Shiva temples in a 3-day MP–Maharashtra circuit, (3) Full Maharashtra Simhastha circuit: Trimbakeshwar → Bhimashankar → Grishneshwar. Many devotees from abroad plan their entire 2026–2027 trip around the Kumbh Mela dates, visiting Trimbakeshwar during the festival and then continuing to other Jyotirlingas.",
+  },
+  {
+    question: "What should I pack and prepare for the Kumbh Mela?",
+    answer:
+      "Essential Kumbh Mela preparation: (1) Book accommodation 6–12 months in advance through the Kumbh Mela portal or Shri Gajanan Maharaj Sansthan at +91 96612 63850. (2) Carry a portable power bank, water bottle, basic medicines, hand sanitizer, and a face mask. (3) Wear comfortable walking shoes — you will walk 10–15 km daily within the Kumbh Mela zone. (4) Download the official Kumbh Mela 2027 app (to be released) for crowd maps, Shahi Snan dates, and emergency services. (5) Keep copies of ID, hotel confirmations, and a small amount of emergency cash. (6) Wear traditional clothes and avoid valuables — the crowds make pickpocketing a risk.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Kumbh Mela Trimbakeshwar", url: "/kumbh-mela-trimbakeshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-saffron-50 via-orange-50 to-amber-100 border-b border-orange-200" style={{ backgroundColor: '#fef7ed' }}>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-orange-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-orange-900 font-medium">Kumbh Mela</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-orange-900 leading-tight">
+        Kumbh Mela at Trimbakeshwar — 2027 Simhastha Guide
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-orange-900/80 max-w-3xl">
+        Complete guide to the Nashik-Trimbakeshwar Simhastha Kumbh Mela 2027: history and significance, Shahi Snan dates, 3-crore-devotee pilgrimage, Kumbh Mela infrastructure, safety tips, accommodation booking, and combining with regular Trimbakeshwar darshan.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-sm font-medium">2027 Simhastha</span>
+        <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-sm font-medium">Nashik + Trimbakeshwar</span>
+        <span class="px-3 py-1 rounded-full bg-red-100 text-red-800 text-sm font-medium">3 Crore+ Devotees</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">What is the Nashik-Trimbakeshwar Kumbh Mela?</h2>
+      <p class="mt-4 text-orange-900/80 leading-relaxed max-w-3xl">
+        The Nashik-Trimbakeshwar Kumbh Mela (Simhastha Kumbh) is one of the four sacred Kumbh Melas of India, held every 12 years when Jupiter enters the zodiac sign of Leo (Simha Rashi). In 2027, over 3 crore (30 million) devotees from across India and the world are expected to gather at Trimbakeshwar and Nashik for the world's largest religious gathering. The Shahi Snan (royal bath) at the Godavari river is the most sacred ritual, performed by Akhara sadhus and millions of devotees simultaneously.
+      </p>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-orange-200 bg-orange-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-orange-700">Every 12 Yrs</p>
+          <p class="text-sm text-orange-900/70 mt-1">Simhastha cycle</p>
+        </div>
+        <div class="rounded-xl border border-orange-200 bg-orange-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-orange-700">3 Crore+</p>
+          <p class="text-sm text-orange-900/70 mt-1">Expected 2027 devotees</p>
+        </div>
+        <div class="rounded-xl border border-orange-200 bg-orange-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-orange-700">1,200 Ha</p>
+          <p class="text-sm text-orange-900/70 mt-1">Temporary city planned</p>
+        </div>
+        <div class="rounded-xl border border-orange-200 bg-orange-50/60 p-5 text-center">
+          <p class="text-3xl font-bold text-orange-700">Apr–May</p>
+          <p class="text-sm text-orange-900/70 mt-1">Expected 2027 dates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="py-16 bg-orange-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">Kumbh Mela 2027 Schedule (Expected)</h2>
+      <p class="mt-3 text-orange-900/80">Official dates will be confirmed by the Kumbh Mela Authority 6–12 months in advance. Based on the 2015 Simhastha, the following is the expected schedule:</p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-orange-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-orange-100 text-orange-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Phase</th>
+              <th class="px-4 py-3 font-semibold">Expected Dates 2027</th>
+              <th class="px-4 py-3 font-semibold">Significance</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100">
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Prabodhini Ekadashi</td><td class="px-4 py-3 text-orange-900/70">~Nov 2026</td><td class="px-4 py-3 text-orange-900/70">Kumbh Mela preparations begin</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Makar Sankranti</td><td class="px-4 py-3 text-orange-900/70">~Jan 14, 2027</td><td class="px-4 py-3 text-orange-900/70">Entry begins for pilgrims</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Mahashivratri</td><td class="px-4 py-3 text-orange-900/70">~Feb 26, 2027</td><td class="px-4 py-3 text-orange-900/70">Prelude to Kumbh Mela</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Holi</td><td class="px-4 py-3 text-orange-900/70">~Mar 14, 2027</td><td class="px-4 py-3 text-orange-900/70">Color festival — large crowds</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Kumbh Mela begins</td><td class="px-4 py-3 text-orange-900/70">~Apr 2027</td><td class="px-4 py-3 text-orange-900/70">Official opening date</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Shahi Snan 1</td><td class="px-4 py-3 text-orange-900/70">~Apr/May 2027</td><td class="px-4 py-3 text-orange-900/70">First royal bath (TBD)</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Shahi Snan 2</td><td class="px-4 py-3 text-orange-900/70">~May 2027</td><td class="px-4 py-3 text-orange-900/70">Second royal bath (TBD)</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Shahi Snan 3</td><td class="px-4 py-3 text-orange-900/70">~May 2027</td><td class="px-4 py-3 text-orange-900/70">Third royal bath (TBD)</td></tr>
+            <tr class="hover:bg-orange-50/60"><td class="px-4 py-3 font-medium text-orange-900">Kumbh Mela ends</td><td class="px-4 py-3 text-orange-900/70">~May 2027</td><td class="px-4 py-3 text-orange-900/70">Ganga Dussehra / closing</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety & Tips -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">Kumbh Mela — Safety &amp; Practical Tips</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+          <h3 class="text-lg font-semibold text-orange-900">Do's</h3>
+          <ul class="mt-3 space-y-2 text-sm text-orange-900/80">
+            <li>✓ Book accommodation 6–12 months in advance</li>
+            <li>✓ Carry minimal belongings (power bank, water bottle)</li>
+            <li>✓ Download the Kumbh Mela 2027 app when released</li>
+            <li>✓ Wear traditional Indian clothes (safer in crowds)</li>
+            <li>✓ Keep a meeting point with your group</li>
+            <li>✓ Use only designated bathing areas</li>
+            <li>✓ Respect the Akhara sadhus and their processions</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+          <h3 class="text-lg font-semibold text-orange-900">Don'ts</h3>
+          <ul class="mt-3 space-y-2 text-sm text-orange-900/80">
+            <li>✗ Do not bring valuables (watches, phones in pockets)</li>
+            <li>✗ Do not drink alcohol or take drugs — strictly prohibited</li>
+            <li>✗ Do not enter restricted areas without permission</li>
+            <li>✗ Do not photograph sadhus or Akhara processions without consent</li>
+            <li>✗ Do not swim alone in the Godavari</li>
+            <li>✗ Do not ignore police announcements and crowd warnings</li>
+            <li>✗ Do not litter — Kumbh Mela generates 600+ tonnes of waste daily</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-orange-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-orange-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-orange-900">
+                <span>{faq.question}</span>
+                <span class="text-orange-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-orange-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-orange-800 to-amber-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Kumbh Mela 2027 pilgrimage</h2>
+      <p class="mt-4 text-orange-100/90 max-w-2xl mx-auto">
+        Accommodation bookings for Kumbh Mela open 6–12 months in advance. Contact Shri Gajanan Maharaj Sansthan early for the best rates.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-orange-800 font-semibold shadow hover:bg-orange-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

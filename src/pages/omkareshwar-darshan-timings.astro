@@ -1,0 +1,415 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+import { ROOMS } from "@/data/rooms";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Darshan Timings — Aarti Schedule, Pooja & Temple Hours 2026",
+  description:
+    "Complete Omkareshwar darshan timings: Kakad Aarti at 4:30 AM, Madhyan Aarti at 12 PM, Sayam Aarti at 7:30 PM. Special schedules for Mahashivratri, Narmada Parikrama, and pooja bookings at Omkareshwar Jyotirlinga.",
+  keywords: [
+    "omkareshwar darshan timings",
+    "omkareshwar aarti timings",
+    "omkareshwar temple opening hours",
+    "omkareshwar jyotirlinga darshan",
+    "omkareshwar pooja booking",
+    "narmada parikrama omkareshwar",
+    "mamleshwar temple timings",
+    "omkareshwar mahashivratri timings",
+    "omkareshwar kumbh mela 2026",
+    "how to reach omkareshwar",
+    "omkareshwar from indore",
+    "omkareshwar from bhopal",
+    "omkareshwar accommodation",
+    "omkareshwar bhakta niwas",
+    "omkareshwar room booking",
+    "narmada river aarti omkareshwar",
+  ],
+  path: "/omkareshwar-darshan-timings",
+});
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, located on the Narmada river island of Omkareshwar.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+  googleMapsLink: "https://maps.google.com/?q=22.2417,76.1567",
+} as any);
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What are Omkareshwar darshan timings?",
+    answer:
+      "Omkareshwar Jyotirlinga temple is open from 5:00 AM to 9:30 PM daily. The Kakad Aarti starts at 4:30 AM, Madhyan (noon) Aarti at 12:00 PM, and Sayam Sandhya Aarti at 7:30 PM. During Mahashivratri, Narmada Pushkaram, and Kartik Purnima, the temple remains open throughout the night with extended aarti schedules.",
+  },
+  {
+    question: "Is there any dress code for Omkareshwar temple?",
+    answer:
+      "Yes. Men must wear dhoti, pajamas, or formal full-length trousers. Shorts, lungis, and sleeveless shirts are not permitted. Women should wear sarees, salwar kameez, or long dresses covering the shoulders and knees. Footwear must be removed before entering the sanctum. Free dhoti-puja wassa rental is available near the entrance for a nominal fee.",
+  },
+  {
+    question: "How long is the Narmada Parikrama at Omkareshwar?",
+    answer:
+      "The Narmada Parikrama (circumambulation) at Omkareshwar is approximately 5.5 km around the island. Devotees walk barefoot along the ghats, visiting all five temples — Omkareshwar, Mamleshwar, Siddhnath, Mai Ki Birsa, and Amaleshwar. The full parikrama takes 3–4 hours at a relaxed pace, including stops for darshan and holy dip.",
+  },
+  {
+    question: "What poojas are performed at Omkareshwar?",
+    answer:
+      "Daily poojas include Rudra Abhishek, Laghu Rudra, Maha Rudra, Mahamrityunjaya Japa, Narmada Aarti, and special pujas on Mondays. Narayan Nagbali and Pitru Shraddha poojas are also available with advance booking. Devotees can offer Bilva Patra, bel leaves, flowers, and ghee lamps to Lord Shiva.",
+  },
+  {
+    question: "How far is Omkareshwar from Indore?",
+    answer:
+      "Omkareshwar is about 77 km from Indore via SH 27, taking approximately 2 hours by car. Regular MSRTC and private buses run from Indore ISBT to Omkareshwar every 30 minutes. The nearest railway station is Khandwa Junction, 13 km away, connected to major cities. The nearest airport is Devi Ahilya Bai Holkar Airport in Indore.",
+  },
+  {
+    question: "What is the best time to visit Omkareshwar?",
+    answer:
+      "The best time to visit is October to March with pleasant weather (15°C to 30°C). Mahashivratri (February/March), Shravan month (July–August), Narmada Pushkaram (every 12 years), and Kartik Purnima are the most auspicious times. Monsoon (July–September) can cause Narmada water levels to rise, sometimes restricting boat access.",
+  },
+  {
+    question: "How to reach Omkareshwar temple from the bus stand?",
+    answer:
+      "From the Omkareshwar bus stand, the temple is approximately 2.5 km. Shared auto-rickshaws are available for ₹20–30 per person. E-rickshaws also operate regularly. You can walk the distance in about 30 minutes along the Narmada ghat road — the walk is scenic and passes through the old town market.",
+  },
+  {
+    question: "Is there a helpline number for Omkareshwar temple?",
+    answer:
+      "Yes. The Shri Gajanan Maharaj Sansthan booking helpline is +91 96612 63850. For Omkareshwar-specific queries and pooja bookings, you can also contact the temple office during office hours (8 AM to 6 PM). WhatsApp booking is available on the same number.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Darshan Timings", url: "/omkareshwar-darshan-timings" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-100 border-b border-indigo-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-indigo-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-indigo-900 font-medium">Omkareshwar Darshan Timings</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-indigo-900 leading-tight">
+        Omkareshwar Darshan Timings — Aarti Schedule &amp; Temple Hours 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-indigo-900/80 max-w-3xl">
+        Complete guide to Omkareshwar Jyotirlinga darshan timings, aarti schedules, pooja types, dress code, Narmada Parikrama, and how to reach from Indore, Bhopal, and Khandwa.
+      </p>
+    </div>
+  </section>
+
+  <!-- Aarti Timings -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Daily Darshan &amp; Aarti Timings</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        The temple opens before sunrise and closes after the evening aarti. Below are the standard timings — expect extended hours during festivals.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Morning — Kakad Aarti</h3>
+          <p class="text-3xl font-bold text-indigo-700 mt-2">4:30 AM</p>
+          <p class="text-indigo-900/70 text-sm mt-1">Temple opens at 5:00 AM. Kakad Aarti begins at 4:30 AM. First darshan of the day.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Noon — Madhyan Aarti</h3>
+          <p class="text-3xl font-bold text-indigo-700 mt-2">12:00 PM</p>
+          <p class="text-indigo-900/70 text-sm mt-1">Madhyan Aarti. Temple open throughout the day. Peak crowd between 11 AM and 2 PM.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Evening — Sayam Aarti</h3>
+          <p class="text-3xl font-bold text-indigo-700 mt-2">7:30 PM</p>
+          <p class="text-indigo-900/70 text-sm mt-1">Sayam Sandhya Aarti with Narmada river aarti. Temple closes at 9:30 PM.</p>
+        </div>
+      </div>
+      <div class="mt-8 rounded-xl border border-amber-300 bg-amber-50 p-6">
+        <h3 class="text-lg font-semibold text-amber-900">Festival Extended Timings</h3>
+        <ul class="mt-3 space-y-2 text-sm text-amber-900/80">
+          <li><strong>Mahashivratri:</strong> Open all night — 4:00 AM to 11:00 PM with hourly aartis.</li>
+          <li><strong>Shravan Month (July–August):</strong> Opens at 4:00 AM, closes at 10:00 PM. Special Rudra Abhishek all day.</li>
+          <li><strong>Kartik Purnima:</strong> Open 24 hours with special Narmada Pushpa Aarti at midnight.</li>
+          <li><strong>Narmada Pushkaram:</strong> Open round the clock during the 12-day festival (next in 2028).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dress Code & Guidelines -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Temple Guidelines &amp; Dress Code</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-indigo-900 mb-3">✅ What to Wear</h3>
+          <ul class="space-y-2 text-sm text-indigo-900/80">
+            <li>• Men: Dhoti, pajamas, formal full-length trousers</li>
+            <li>• Women: Saree, salwar kameez, long dress/skirt</li>
+            <li>• Remove footwear before entering the sanctum</li>
+            <li>• Avoid leather belts, purses, or wallets</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-indigo-900 mb-3">❌ What Not to Wear</h3>
+          <ul class="space-y-2 text-sm text-indigo-900/80">
+            <li>• Shorts, lungis, sleeveless shirts</li>
+            <li>• Jeans, miniskirts, revealing clothing</li>
+            <li>• Shoes or sandals inside temple complex</li>
+            <li>• Tobacco or alcohol before entering</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-indigo-900/70">
+        📌 <strong>Pro tip:</strong> Free dhoti-puja wassa rental is available near the main entrance for ₹10–20. Many devotees find it convenient for parikrama.
+      </p>
+    </div>
+  </section>
+
+  <!-- Poojas -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Poojas &amp; Rituals at Omkareshwar</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        Daily poojas and special rituals performed at the Omkareshwar and Mamleshwar temples.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Rudra Abhishek</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Sacred bathing ritual of the Shiva Lingam with milk, honey, Ganga water, and bilva leaves. Performed daily at 6:00 AM. Takes 30–45 minutes. Advance booking recommended.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Mahamrityunjaya Japa</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">108 repetitions of the Maha Mrityunjaya mantra by temple priests. Sought for health and longevity. Available daily with advance booking.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Narmada Aarti</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Evening aarti on the Narmada river ghats with diyas (oil lamps) floated on the river. Magnificent sight with the Om-shaped island in the background. Starts at sunset.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Narayan Nagbali</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">3-day ritual for ancestral peace and pitru dosha nivaran. Performed at a sacred spot near the Narmada. Requires advance booking with a registered priest.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Laghu Rudra</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">11 repetitions of the Rudra mantra. Performed daily for family welfare and obstacle removal. Shorter than Rudra Abhishek, suitable for quick daily offerings.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Bilva Pooja</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Offering of bilva (bael) leaves, flowers, and fruits to Lord Shiva. Bilva leaves are considered Lord Shiva's favourite. Available every day, no prior booking needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Narmada Parikrama -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Narmada Parikrama at Omkareshwar</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        The Narmada Parikrama is one of the most sacred pilgrimages in India. The Omkareshwar island parikrama covers approximately 5.5 km of ghats and sacred temples.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-indigo-700">5.5 km</p>
+          <p class="text-indigo-900/70 text-sm mt-1">Total parikrama distance around the island</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-indigo-700">5</p>
+          <p class="text-indigo-900/70 text-sm mt-1">Sacred temples on the parikrama route</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-indigo-700">3–4 hrs</p>
+          <p class="text-indigo-900/70 text-sm mt-1">Average time for complete parikrama</p>
+        </div>
+      </div>
+      <div class="mt-8 rounded-xl border border-indigo-200 bg-white p-6">
+        <h3 class="text-lg font-semibold text-indigo-900 mb-3">Five Temples on Parikrama Route</h3>
+        <ol class="list-decimal list-inside space-y-2 text-sm text-indigo-900/80">
+          <li><strong>Omkareshwar Temple</strong> — Main Jyotirlinga temple on the western bank</li>
+          <li><strong>Mamleshwar Temple</strong> — Ancient Shiva temple on the eastern bank, linked by a bridge</li>
+          <li><strong>Siddhnath Temple</strong> — Dedicated to Lord Siddhanath, near the southern ghats</li>
+          <li><strong>Mai Ki Birsa</strong> — Sacred mother goddess shrine on the northern side</li>
+          <li><strong>Amaleshwar Temple</strong> — One of the 12 Jyotirlingas, ancient stone structure</li>
+        </ol>
+      </div>
+      <p class="mt-4 text-sm text-indigo-900/70">
+        🕐 <strong>Best time for parikrama:</strong> Early morning (5–8 AM) or late afternoon (4–7 PM) to avoid midday heat. Many devotees complete the parikrama barefoot as a vow.
+      </p>
+    </div>
+  </section>
+
+  <!-- How to Reach -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">How to Reach Omkareshwar</h2>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-indigo-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-indigo-100 text-indigo-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">From</th>
+              <th class="px-4 py-3 font-semibold">Distance</th>
+              <th class="px-4 py-3 font-semibold">Travel Time</th>
+              <th class="px-4 py-3 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-indigo-100">
+            <tr class="hover:bg-indigo-50/60">
+              <td class="px-4 py-3 font-medium text-indigo-900">Indore</td>
+              <td class="px-4 py-3 text-indigo-900">77 km</td>
+              <td class="px-4 py-3 text-indigo-900">2 hrs by car</td>
+              <td class="px-4 py-3 text-indigo-900/70">via SH 27; buses every 30 min from ISBT</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/60">
+              <td class="px-4 py-3 font-medium text-indigo-900">Bhopal</td>
+              <td class="px-4 py-3 text-indigo-900">250 km</td>
+              <td class="px-4 py-3 text-indigo-900">5–6 hrs by car</td>
+              <td class="px-4 py-3 text-indigo-900/70">via NH 46 to Khandwa, then SH 27</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/60">
+              <td class="px-4 py-3 font-medium text-indigo-900">Khandwa</td>
+              <td class="px-4 py-3 text-indigo-900">13 km</td>
+              <td class="px-4 py-3 text-indigo-900">30 min by car</td>
+              <td class="px-4 py-3 text-indigo-900/70">Nearest railway station; shared taxis available</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/60">
+              <td class="px-4 py-3 font-medium text-indigo-900">Indore Airport</td>
+              <td class="px-4 py-3 text-indigo-900">85 km</td>
+              <td class="px-4 py-3 text-indigo-900">2.5 hrs by car</td>
+              <td class="px-4 py-3 text-indigo-900/70">Devi Ahilya Bai Holkar Airport (IDR)</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/60">
+              <td class="px-4 py-3 font-medium text-indigo-900">Ujjain</td>
+              <td class="px-4 py-3 text-indigo-900">135 km</td>
+              <td class="px-4 py-3 text-indigo-900">3.5 hrs by car</td>
+              <td class="px-4 py-3 text-indigo-900/70">via SH 27; popular combined pilgrimage route</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Rates -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Omkareshwar Bhakta Niwas — Room Rates</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        Suggested donation rates for Omkareshwar Bhakta Niwas include accommodation, three meals, hot water, and taxes.
+      </p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-indigo-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-indigo-100 text-indigo-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Room Type</th>
+              <th class="px-4 py-3 font-semibold">Capacity</th>
+              <th class="px-4 py-3 font-semibold">AC</th>
+              <th class="px-4 py-3 font-semibold text-right">Suggested Donation</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-indigo-100">
+            {
+              ROOMS.map((room) => (
+                <tr class="hover:bg-indigo-50/60">
+                  <td class="px-4 py-3 font-medium text-indigo-900">{room.title}</td>
+                  <td class="px-4 py-3 text-indigo-900">{room.capacity} persons</td>
+                  <td class="px-4 py-3 text-indigo-900">{room.ac ? "Yes" : "No"}</td>
+                  <td class="px-4 py-3 text-right font-semibold text-indigo-900">₹{room.price.toLocaleString("en-IN")}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-indigo-200 bg-indigo-50/40 p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-indigo-900">
+                <span>{faq.question}</span>
+                <span class="text-indigo-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-indigo-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Omkareshwar Jyotirlinga visit</h2>
+      <p class="mt-4 text-indigo-100/90 max-w-2xl mx-auto">
+        Book Bhakta Niwas accommodation near Omkareshwar temple. All meals and hot water included.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-indigo-800 font-semibold shadow hover:bg-indigo-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-bhakta-niwas" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Bhakta Niwas Details</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

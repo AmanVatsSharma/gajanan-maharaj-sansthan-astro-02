@@ -1,0 +1,219 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Mahashivratri at Trimbakeshwar — Guide, Timings, Rituals & Accommodation 2026",
+  description:
+    "Complete festival guide to Mahashivratri at Trimbakeshwar Jyotirlinga: all-night aarti schedule, Rudra Abhishek, Godavari aarti, temple timings, dress code, how to reach, and booking Trimbakeshwar Bhakta Niwas.",
+  keywords: [
+    "maha shivratri trimbakeshwar",
+    "mahashivratri trimbakeshwar 2026",
+    "trimbakeshwar shivratri timings",
+    "trimbakeshwar mahashivratri pooja",
+    "trimbakeshwar kumbh mela 2027",
+    "shivratri trimbakeshwar accommodation",
+    "mahashivratri nashik trimbakeshwar",
+    "trimbakeshwar all night aarti",
+    "triambakeshwar mahashivratri",
+    "godavari maha aarti shivratri",
+    "trimbakeshwar sawan monday 2026",
+    "nashik mahashivratri guide",
+    "trimbakeshwar shiva festival",
+  ],
+  path: "/mahashivratri-trimbakeshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Nashik, Maharashtra",
+  description: "One of the 12 Jyotirlingas at the Godavari origin. Major Mahashivratri celebration site.",
+  facilities: [], amenities: [], contact: [], images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.6378, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author, reviewBody: t.quote, ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  { id: "trimbakeshwar", name: "Trimbakeshwar Bhakta Niwas", city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [], amenities: [], contact: [], images: [] } as any,
+  rating, { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "When is Mahashivratri at Trimbakeshwar in 2026?",
+    answer:
+      "Mahashivratri in 2026 falls on Thursday, February 26. Trimbakeshwar hosts one of the grandest Mahashivratri celebrations in India — the temple remains open throughout the night, and over 3 lakh devotees converge at the Godavari origin. The combined spiritual energy of Mahashivratri + Trimbakeshwar Jyotirlinga + Godavari origin makes this one of the most powerful Shiva worship experiences possible.",
+  },
+  {
+    question: "What are the Mahashivratri aarti timings at Trimbakeshwar?",
+    answer:
+      "The temple opens at 4:00 AM on Mahashivratri day and remains open until approximately 11:00 PM. Extended hourly aarti schedule: Kakad at 4:30 AM, Rudra Abhishek starts at 6:00 AM, Bilva Archana throughout the day, Madhyan Aarti at noon, Sayam Aarti at 7:30 PM, and the sacred midnight Maha Aarti at 12:00 AM. The Narmada/Godavari aarti on the Kushavarta Kund ghats at sunset is especially spectacular with thousands of floating diyas.",
+  },
+  {
+    question: "How many devotees attend Mahashivratri at Trimbakeshwar?",
+    answer:
+      "Over 3 lakh (300,000) devotees attend Mahashivratri at Trimbakeshwar. The town and temple grounds are managed with crowd control, additional police deployment, medical camps, and temporary shelters. The 4 km trek to Brahmagiri is open but extremely crowded — most devotees perform darshan at the main temple and Kushavarta Kund. Arrive before 5:00 AM to avoid the worst queues.",
+  },
+  {
+    question: "What is special about Mahashivratri at Trimbakeshwar vs other temples?",
+    answer:
+      "Trimbakeshwar is uniquely powerful on Mahashivratri because it combines three layers of sanctity: (1) It is one of the 12 Jyotirlingas — Lord Shiva's self-manifested abode, (2) It is the origin of the Godavari — Shiva's daughter river, (3) The three-faced lingam is believed to manifest the Trimurti (Brahma-Vishnu-Shiva) on this night. Additionally, the Nashik-Trimbakeshwar Kumbh Mela occurs nearby, and the spiritual energy of the Kumbh merges with Mahashivratri energy every 12 years. The 2027 Kumbh Mela will coincide with Mahashivratri season.",
+  },
+  {
+    question: "How to book accommodation for Mahashivratri at Trimbakeshwar?",
+    answer:
+      "Accommodation sells out 4–6 weeks before Mahashivratri. Best option: Trimbakeshwar Bhakta Niwas via Shri Gajanan Maharaj Sansthan at +91 96612 63850 (WhatsApp). Suggested donations: ₹1,250–₹4,150/night including all meals, hot water, and taxes. Alternative: GMVN Guest House at Kushavarta Kund, book via Maharashtra Tourism. Backup: hotels in Nashik (28 km away, ₹1,500–₹5,000/night). Book at least 4 weeks in advance for Mahashivratri.",
+  },
+  {
+    question: "Can I do the Brahmagiri trek on Mahashivratri?",
+    answer:
+      "Yes, but expect extreme crowds. Thousands of devotees walk the Brahmagiri path on Mahashivratri. The 4 km trail to Triveni Sangam takes 2–3 hours in normal conditions but can take 4–5 hours on festival days due to crowds. Start before 6:00 AM, go in a group, and carry minimal belongings. Wear sturdy shoes — the stone steps are slippery even without rain. Do not trek alone on festival days.",
+  },
+  {
+    question: "What are the Mahashivratri celebrations at Kushavarta Kund?",
+    answer:
+      "Kushavarta Kund is at the center of Mahashivratri celebrations at Trimbakeshwar. From evening onwards, thousands of diyas are floated on the water while priests chant Rudram and Chamakam. The Kund's water reflects thousands of flames against the Brahmagiri backdrop — a sight described as 'heaven on Earth' by devotees. A special Ganga Aarti at Kushavarta begins at sunset and continues until midnight. The sacred dip in Kushavarta on Mahashivratri night is considered to grant wishes equivalent to a Kumbh Mela bath.",
+  },
+  {
+    question: "Can I combine Trimbakeshwar Mahashivratri with other Jyotirlingas?",
+    answer:
+      "Yes — the most popular Mahashivratri Jyotirlinga circuits are: (1) Trimbakeshwar + Omkareshwar + Mahakaleshwar Ujjain — a 6-day MP–Maharashtra circuit covering 3 Jyotirlingas, (2) Trimbakeshwar + Grishneshwar (Aurangabad) — both in Maharashtra, 180 km apart, (3) Trimbakeshwar + Bhimashankar + Grishneshwar — the Maharashtra Jyotirlinga trio. Many pilgrims plan their Mahashivratri trip to include 2–3 Jyotirlingas since the festival falls on the same date nationwide.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Mahashivratri Trimbakeshwar", url: "/mahashivratri-trimbakeshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-slate-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-slate-900 font-medium">Mahashivratri Guide</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+        Mahashivratri at Trimbakeshwar — Festival Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-900/80 max-w-3xl">
+        Complete guide to Mahashivratri at Trimbakeshwar Jyotirlinga: all-night aarti schedule, Rudra Abhishek, Narmada/Godavari aarti, temple timings, dress code, crowd tips, Brahmagiri trek during festival, and accommodation booking.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-3 py-1 rounded-full bg-slate-200 text-slate-800 text-sm font-medium">Feb 26, 2026</span>
+        <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">Trimbakeshwar, Nashik</span>
+        <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">3+ Lakh Devotees</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Why Trimbakeshwar on Mahashivratri</h2>
+      <p class="mt-3 text-slate-900/80 max-w-3xl">
+        Mahashivratri is the most sacred night of the year for devotees of Lord Shiva. Trimbakeshwar — being one of the 12 Jyotirlingas and the source of the Godavari — is among the most powerful places to spend this night. The temple remains open all night, over 3 lakh devotees gather, and the midnight Maha Aarti at the Jyotirlinga is considered to grant the most profound spiritual merit.
+      </p>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="py-16 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Mahashivratri Schedule</h2>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-slate-100 text-slate-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Time</th>
+              <th class="px-4 py-3 font-semibold">Ritual</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">4:00 AM</td><td class="px-4 py-3 text-slate-900">Temple opens — Kakad Aarti</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">4:30 AM</td><td class="px-4 py-3 text-slate-900">Kakad Aarti at the Jyotirlinga</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">6:00 AM</td><td class="px-4 py-3 text-slate-900">Rudra Abhishek begins (continuous)</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">9:00 AM</td><td class="px-4 py-3 text-slate-900">Bilva Archana (all day)</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">12:00 PM</td><td class="px-4 py-3 text-slate-900">Madhyan Aarti</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">3:00 PM</td><td class="px-4 py-3 text-slate-900">Godavari/Kushavarta holy bath</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">6:00 PM</td><td class="px-4 py-3 text-slate-900">Sayam Aarti + Godavari River Aarti</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">8:00 PM</td><td class="px-4 py-3 text-slate-900">Shiva Katha recitation</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">10:00 PM</td><td class="px-4 py-3 text-slate-900">Mahadeepotsava — grand lamp lighting</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">12:00 AM</td><td class="px-4 py-3 text-slate-900">Maha Aarti (most sacred moment)</td></tr>
+            <tr class="hover:bg-slate-50/60"><td class="px-4 py-3 font-medium text-slate-900">11:00 PM</td><td class="px-4 py-3 text-slate-900">Temple closes for the night</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-slate-200 bg-slate-50/40 p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-slate-900">
+                <span>{faq.question}</span>
+                <span class="text-slate-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-slate-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-slate-700 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Experience Mahashivratri at Trimbakeshwar</h2>
+      <p class="mt-4 text-slate-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar Bhakta Niwas well in advance — accommodation sells out 4–6 weeks before Mahashivratri.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-slate-800 font-semibold shadow hover:bg-slate-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

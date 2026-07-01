@@ -1,0 +1,515 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getPlaceOfWorshipSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+import {
+  getPlaceOfWorshipSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+} from "@/lib/seo/structured-data";
+
+const faqs = [
+  {
+    question: "What is the best time to do the Brahmagiri trek?",
+    answer:
+      "The best time to do the Brahmagiri trek is between October and March, when the weather is pleasant and temperatures range from 15–25°C. Early mornings are recommended to avoid afternoon heat. Avoid monsoon season (June–September) as the path becomes slippery and landslides are possible.",
+  },
+  {
+    question: "How difficult is the Brahmagiri trek?",
+    answer:
+      "The Brahmagiri trek is rated as moderate to challenging. The 12-kilometer route climbs approximately 1,500 feet in elevation. You need basic cardio fitness and should be comfortable walking 5–6 km without difficulty. Start early (4–5 AM) to avoid afternoon heat. Children above 12 can attempt with adult supervision.",
+  },
+  {
+    question: "What should I carry for the Brahmagiri trek?",
+    answer:
+      "Essential items: (1) Trekking shoes with good grip, (2) 3–4 liters of water, (3) Energy snacks and dry fruits, (4) First aid kit, (5) Mobile with power bank, (6) Torch for early starts, (7) Cap and sunscreen, (8) Small offerings for Gomukh (flowers, coconut). Wear comfortable trekking clothes and bring a light jacket.",
+  },
+  {
+    question: "How long does the Brahmagiri trek take?",
+    answer:
+      "The Brahmagiri trek from Trimbakeshwar to Gomukh is approximately 12 kilometers and typically takes 4–6 hours to complete. This varies based on fitness level and how many stops you take. The first 3 km through forest is moderate, the middle 4 km steep ascent is challenging, and the final 5 km downhill to Gomukh is moderate.",
+  },
+  {
+    question: "Is there accommodation near Brahmagiri trek start?",
+    answer:
+      "Yes, Shri Gajanan Maharaj Sansthan manages Bhakta Niwas at Trimbakeshwar, located within walking distance of the trek start point near the Jyotirlinga temple. Rooms are available at affordable rates. Book in advance, especially during Shravan month and Mahashivratri when pilgrim traffic is high.",
+  },
+];
+
+const meta = generatePageMetadata({
+  title: "Brahmagiri Trek Guide — Trimbakeshwar to Godavari Origin Point | Complete Trekking Route",
+  description:
+    "Complete guide to Brahmagiri trek from Trimbakeshwar. Learn about the sacred 12-kilometer trek route, timings, difficulty level, what to carry, and the spiritual significance of this ancient pilgrimage trail to the Godavari origin.",
+  keywords: [
+    "brahmagiri trek trimbakeshwar",
+    "brahmagiri trek route",
+    "brahmagiri trek timing",
+    "brahmagiri trek difficulty",
+    "brahmagiri trek godavari origin",
+    "brahmagiri trek start point",
+    "brahmagiri trek distance",
+    "brahmagiri trek what to carry",
+    "brahmagiri trek guide",
+    "brahmagiri trek shoes",
+    "brahmagiri trek map",
+    "brahmagiri temple trek",
+  ],
+  path: "/brahmagiri-trek-guide",
+});
+
+const faqSchema = getFAQSchema(faqs);
+
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Jyotirlingas", url: "/12-jyotirlingas-of-india" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "Brahmagiri Trek Guide", url: "/brahmagiri-trek-guide" },
+]);
+
+const brahmagiriLocation = {
+  id: "brahmagiri-trek",
+  name: "Brahmagiri Trek",
+  city: "Trimbakeshwar",
+  address: "Brahmagiri Hill, Trimbakeshwar, Nashik District, Maharashtra",
+  description:
+    "Sacred 12-kilometer trek from Trimbakeshwar to the origin of the Godavari River at Gomukh. Ancient pilgrimage trail through forests, caves, and scenic viewpoints.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+};
+
+const structuredPayload = [
+  getPlaceOfWorshipSchema(brahmagiriLocation),
+  faqSchema,
+  breadcrumbSchema,
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <main class="min-h-screen">
+    {/* Hero */}
+    <section class="relative bg-gradient-to-b from-green-900 via-green-800 to-green-700 py-16 sm:py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white space-y-4">
+          <p class="text-yellow-400 text-sm font-semibold tracking-widest uppercase">
+            Sacred Ancient Pilgrimage Trail
+          </p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading leading-tight">
+            Brahmagiri Trek Guide — The Sacred Journey
+          </h1>
+          <p class="text-lg text-green-100 max-w-2xl mx-auto">
+            Embark on the ancient 12-kilometer Brahmagiri trek from Trimbakeshwar to the sacred Godavari origin at Gomukh. Complete guide with route details, timings, and spiritual significance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Main Content */}
+    <section class="py-12 sm:py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+          {/* Introduction */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              The Sacred Brahmagiri Trek
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                The <strong>Brahmagiri trek</strong> is one of the most significant ancient pilgrimage routes in India, connecting the sacred town of Trimbakeshwar with the <strong>origin point of the Godavari River</strong> at Gomukh. This 12-kilometer journey is not just a trek but a <strong>spiritual odyssey</strong> that follows in the footsteps of sages and pilgrims who have walked this path for thousands of years.
+              </p>
+              <p>
+                The trek starts from Trimbakeshwar town, ascends through dense forests, ancient caves, and sacred sites before reaching the holy Gomukh where the Godavari emerges as a divine spring. Every step of this journey is steeped in mythology and spiritual significance, making it a truly transformative experience for pilgrims and trekkers alike.
+              </p>
+              <p>
+                Unlike modern treks, the Brahmagiri path is <strong>untouched by commercialization</strong>, maintaining its ancient sanctity. The route is well-defined but requires proper preparation as it involves climbing approximately 1,500 feet in elevation through sometimes challenging terrain.
+              </p>
+            </div>
+          </article>
+
+          {/* The Spiritual Significance */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Mythological & Spiritual Significance
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                The Brahmagiri trek is deeply associated with <strong>Sage Gautama's penance</strong> and the origin of the Godavari River. According to the <strong>Skanda Purana</strong>, when the sage was performing intense tapasya (penance), Lord Shiva released the sacred Godavari from his matted hair to purify the sage's sin of accidentally killing a sacred cow.
+              </p>
+              <p>
+                The trek passes through several sacred sites associated with this legend:
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  <strong>Sage Gautama's Ashram</strong> — Where the sage performed his penance
+                </li>
+                <li>
+                  <strong>Indra Sarovar</strong> — Sacred pond associated with King Indra
+                </li>
+                <li>
+                  <strong>Trimbakeshwar Cave</strong> — Ancient meditation site
+                </li>
+                <li>
+                  <strong>Gomukh</strong> — The eternal source of Godavari River
+                </li>
+              </ul>
+              <p>
+                Pilgrims believe that walking this path helps cleanse the body and mind, and reaching Gomukh brings <strong>moksha</strong> (liberation) from the cycle of birth and death.
+              </p>
+            </div>
+          </article>
+
+          {/* The Trek Route Details */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Complete Trek Route & Key Points
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                The Brahmagiri trek is a 12-kilometer journey that typically takes 4-6 hours to complete, depending on fitness level and stops. Here's the detailed route:
+              </p>
+
+              <h3 class="text-xl font-semibold text-green-800">Starting Point: Trimbakeshwar Town</h3>
+              <div class="space-y-2">
+                <p>
+                  • <strong>Elevation</strong>: 700 meters above sea level
+                </p>
+                <p>
+                  • <strong>Landmark</strong>: Trimbakeshwar Jyotirlinga Temple
+                </p>
+                <p>
+                  • <strong>Preparation</strong>: Final arrangements, blessings from temple
+                </p>
+              </div>
+
+              <h3 class="text-xl font-semibold text-green-800 mt-6">First Section: Forest Trail (3 km)</h3>
+              <div class="space-y-2">
+                <p>
+                  • <strong>Distance</strong>: 3 km, gentle climb
+                </p>
+                <p>
+                  • <strong>Terrain</strong>: Rocky path through dense forest
+                </p>
+                <p>
+                  • <strong>Key Points</strong>: Cross small streams, shade from tall trees
+                </p>
+              </div>
+
+              <h3 class="text-xl font-semibold text-green-800 mt-6">Second Section: Steep Ascent (4 km)</h3>
+              <div class="space-y-2">
+                <p>
+                  • <strong>Distance</strong>: 4 km, steep climb
+                </p>
+                <p>
+                  • <strong>Elevation Gain</strong>: +500 meters
+                </p>
+                <p>
+                  • <strong>Key Points</strong>: Rest stops with views, ancient stone steps
+                </p>
+              </div>
+
+              <h3 class="text-xl font-semibold text-green-800 mt-6">Third Section: Gomukh Approach (5 km)</h3>
+              <div class="space-y-2">
+                <p>
+                  • <strong>Distance</strong>: 5 km, moderate descent
+                </p>
+                <p>
+                  • <strong>Terrain</strong>: Rocky plateau with panoramic views
+                </p>
+                <p>
+                  • <strong>Key Points</strong>: Brahmagiri peak, Gomukh viewpoint
+                </p>
+              </div>
+            </div>
+          </article>
+
+          {/* Best Time to Trek */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Best Time to Trek & Weather Conditions
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Winter Season (October - February)</strong> — Best time for trekking
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Pleasant temperatures (15-25°C)
+                </li>
+                <li>
+                  Clear skies with beautiful mountain views
+                </li>
+                <li>
+                  Less crowded during weekdays
+                </li>
+                <li>
+                  Mornings are crisp and refreshing
+                </li>
+              </ul>
+
+              <p>
+                <strong>Summer Season (March - May)</strong> — Challenging but doable
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Hot and humid (30-40°C)
+                </li>
+                <li>
+                  Start very early (4-5 AM) to avoid heat
+                </li>
+                <li>
+                  Carry plenty of water
+                </li>
+                <li>
+                  Limited shade available
+                </li>
+              </ul>
+
+              <p>
+                <strong>Monsoon Season (June - September)</strong> — Avoid trekking
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Heavy rainfall makes path slippery
+                </li>
+                <li>
+                  Risk of landslides
+                </li>
+                <li>
+                  Dense fog reduces visibility
+                </li>
+                <li>
+                  Best time for pilgrimage (avoid trekking)
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* What to Carry */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Essential Packing List for the Trek
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Clothing & Footwear</strong>
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Trekking shoes with good grip
+                </li>
+                <li>
+                  Comfortable trekking pants and t-shirt
+                </li>
+                <li>
+                  Light jacket or windcheater
+                </li>
+                <li>
+                  Extra pair of socks
+                </li>
+                <li>
+                  Cap or hat for sun protection
+                </li>
+              </ul>
+
+              <p>
+                <strong>Essential Items</strong>
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  3-4 liters of water per person
+                </li>
+                <li>
+                  Energy snacks and dry fruits
+                </li>
+                <li>
+                  First aid kit with basic medicines
+                </li>
+                <li>
+                  Mobile phone with power bank
+                </li>
+                <li>
+                  Torch/flashlight (for early starts)
+                </li>
+                <li>
+                  Camera (optional, for memories)
+                </li>
+              </ul>
+
+              <p>
+                <strong>Spiritual Items</strong>
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Small offerings for Gomukh (flowers, coconut)
+                </li>
+                <li>
+                  Prasad from Trimbakeshwar temple
+                </li>
+                <li>
+                  Holy water from Kushavarta Kund
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* Difficulty Level & Fitness */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Difficulty Level & Fitness Requirements
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Overall Difficulty</strong>: Moderate to Challenging
+              </p>
+              <p>
+                The Brahmagiri trek is rated as a <strong>moderate-level trek</strong> with a few challenging sections. While the path is well-marked, the steep ascent requires good physical fitness.
+              </p>
+              <p>
+                <strong>Fitness Requirements</strong>:
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Basic cardio fitness (can walk 5-6 km without difficulty)
+                </li>
+                <li>
+                  No serious health issues (especially heart or respiratory)
+                </li>
+                <li>
+                  Comfortable with heights (some sections have steep drops)
+                </li>
+                <li>
+                  Mental preparedness for 4-6 hour journey
+                </li>
+              </ul>
+
+              <p>
+                <strong>Age Considerations</strong>:
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Children above 12 can attempt with adult supervision
+                </li>
+                <li>
+                  Elderly pilgrims should consider the temple tour instead
+                </li>
+                <li>
+                  Always consult doctor before attempting the trek
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* Safety Precautions */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Safety Precautions & Guidelines
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Before Starting</strong>
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Check weather forecast before leaving
+                </li>
+                <li>
+                  Inform someone about your trek plan
+                </li>
+                <li>
+                  Start early to avoid afternoon heat
+                </li>
+                <li>
+                  Join a group if trekking alone
+                </li>
+              </ul>
+
+              <p>
+                <strong>During the Trek</strong>
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  Stay hydrated and take regular breaks
+                </li>
+                <li>
+                  Respect religious sites along the way
+                </li>
+                <li>
+                  Don't litter - carry back all waste
+                </li>
+                <li>
+                  Follow local customs and traditions
+                </li>
+                <li>
+                  Emergency contact numbers should be saved
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* Nearby Accommodation */}
+          <article class="prose prose-lg max-w-none">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-900 font-heading">
+              Accommodation Options
+            </h2>
+            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
+              <p>
+                For trekkers planning a multi-day trip, several accommodation options are available:
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>
+                  <strong>Bhakta Niwas Trimbakeshwar</strong> — Comfortable pilgrim accommodation
+                </li>
+                <li>
+                  <strong>Local dharmashalas</strong> — Basic, affordable options
+                </li>
+                <li>
+                  <small hotels and lodges</strong> — Available in Trimbakeshwar town
+                </li>
+              </ul>
+              <p>
+                It's recommended to book accommodation in advance, especially during peak pilgrimage seasons like Shravan month and Mahashivratri.
+              </p>
+            </div>
+          </article>
+
+          {/* CTA */}
+          <div class="bg-green-900/5 rounded-2xl p-8 border border-green-900/10 mt-12">
+            <h3 class="text-xl font-bold text-green-900 mb-3">
+              Plan Your Brahmagiri Trek
+            </h3>
+            <p class="text-foreground/70 mb-4">
+              Make your trek comfortable by staying at Shri Gajanan Maharaj Sansthan's Bhakta Niwas in Trimbakeshwar. Located within walking distance of the trek start point.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="/trimbakeshwar-bhakt-niwas"
+                class="inline-flex items-center gap-2 bg-green-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-900/90 transition-colors"
+              >
+                Book Trek Accommodation
+              </a>
+              <a
+                href="/booking"
+                class="inline-flex items-center gap-2 border border-green-900/30 text-green-900 px-6 py-3 rounded-xl font-semibold hover:bg-green-900/5 transition-colors"
+              >
+                Check Availability
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
