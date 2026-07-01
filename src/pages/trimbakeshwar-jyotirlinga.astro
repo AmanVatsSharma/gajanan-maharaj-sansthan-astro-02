@@ -1,0 +1,514 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ROOMS, PRICING_TRANSPARENCY } from "@/data/rooms";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getLodgingBusinessWithRatingSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getHinduTempleSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const trimbakeshwar = sansthanLocations.find((l) => l.id === "trimbakeshwar");
+if (!trimbakeshwar) {
+  return Astro.redirect("/404");
+}
+
+const meta = generatePageMetadata({
+  title:
+    "Trimbakeshwar Jyotirlinga — Complete Darshan & Stay Guide 2026",
+  description:
+    "Trimbakeshwar Jyotirlinga guide: darshan timings, pooja types, Brahmagiri trek, Godavari origin, Narayan Nagbali. Book Sansthan Bhakta Niwas accommodation near the temple.",
+  keywords: [
+    "trimbakeshwar jyotirlinga",
+    "triambakeshwar jyotirlinga",
+    "trimbakeshwar temple darshan",
+    "triambakeshwar temple darshan",
+    "nashik jyotirlinga",
+    "trimbakeshwar darshan timings",
+    "brahmagiri trek trimbakeshwar",
+    "godavari river origin",
+    "narayan nagbali pooja trimbakeshwar",
+    "rudra homa trimbakeshwar",
+    "trimbakeshwar accommodation",
+    "triambakeshwar accommodation",
+    "trimbakeshwar temple stay",
+    "triambakeshwar temple stay",
+    "trimbakeshwar temple map",
+    "triambakeshwar temple map",
+    "how to reach trimbakeshwar",
+    "mumbai to trimbakeshwar",
+    "pune to trimbakeshwar",
+    "nashik to trimbakeshwar",
+    "12 jyotirlingas list",
+    "shiva jyotirlinga maharashtra",
+    "maha shivaratri trimbakeshwar",
+    "sawan monday trimbakeshwar",
+    "kushavarta trimbakeshwar",
+    "trimbakeshwar bhakt niwas",
+    "triambakeshwar bhakt niwas",
+    "trimbakeshwar bhakta niwas",
+    "triambakeshwar bhakta niwas",
+  ],
+  path: "/trimbakeshwar-jyotirlinga",
+});
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const templeSchema = getHinduTempleSchema(trimbakeshwar);
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  trimbakeshwar,
+  rating,
+  { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What are Trimbakeshwar darshan timings?",
+    answer:
+      "Trimbakeshwar Jyotirlinga temple is open from 5:30 AM to 9:00 PM daily. Kakad Aarti starts at 4:30 AM, Madhyan Aarti at 12:00 PM, and Sayam Sandhya Aarti at 7:30 PM. Mahashivratri and Sawan Mondays see extended hours with special schedules.",
+  },
+  {
+    question: "How far is Trimbakeshwar from Nashik?",
+    answer:
+      "Trimbakeshwar is approximately 28 km from Nashik city via the Nashik–Trimbak Road (NH 848), a 45-minute drive. MSRTC buses and shared taxis run frequently from Nashik CBS to Trimbakeshwar.",
+  },
+  {
+    question: "What is Brahmagiri and how do I trek it?",
+    answer:
+      "Brahmagiri is the 1,300-metre sacred hill at Trimbakeshwar that marks the origin of the Godavari River. A 4-km, approximately 2-hour trek with steps on steeper sections leads from the temple to the Triveni Sangam source. Start early morning to avoid heat. Wear sturdy shoes and carry water.",
+  },
+  {
+    question: "Can I do Narayan Nagbali pooja at Trimbakeshwar?",
+    answer:
+      "Yes. Trimbakeshwar is one of the few places in India where the Narayan Nagbali pooja is performed. The 3-day ritual requires advance booking through the temple office or a registered purohit. It is believed to remove ancestral curses (pitru dosha).",
+  },
+  {
+    question: "How to reach Trimbakeshwar from Mumbai?",
+    answer:
+      "Mumbai to Trimbakeshwar is about 170 km via NH 848, taking 4–5 hours by car. Trains go to Nashik Road station, then a 1-hour taxi or MSRTC bus to Trimbakeshwar. Overnight buses from Mumbai to Nashik are also available.",
+  },
+  {
+    question: "What are the room rates at Trimbakeshwar Bhakta Niwas?",
+    answer:
+      "Suggested donations range from ₹1,250 to ₹4,150 per night. This includes accommodation, three meals, hot water and taxes. All rooms are family-only with a 24-hour check-in window.",
+  },
+  {
+    question: "What is Kushavarta Kund and its significance?",
+    answer:
+      "Kushavarta Kund is a sacred tank at Trimbakeshwar considered the source of the Godavari. It is where Sage Gautama performed his tapas, and where pilgrims take a holy dip before entering the main temple. The water from the kund is believed to cleanse sins.",
+  },
+  {
+    question: "When is the best time to visit Trimbakeshwar?",
+    answer:
+      "The best time to visit is October to March, with cool, pleasant weather. Avoid peak monsoon (July–August) if you plan to trek Brahmagiri. Mahashivratri (February/March) and Shravan Mondays are the most auspicious — and busiest — times to visit.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+
+const highlights = [
+  {
+    title: "One of the 12 Jyotirlingas",
+    body: "Trimbakeshwar is one of the most sacred of the 12 Jyotirlingas of Lord Shiva. The self-manifested lingam is believed to change its face three times a day — morning (Lord Surya), noon (Lord Vishnu), and evening (Lord Shiva).",
+  },
+  {
+    title: "Origin of the Godavari",
+    body: "Trimbakeshwar is where the Godavari — India's second-longest river — begins its 1,465-km journey to the Bay of Bengal. The Triveni Sangam here is formed by three water sources: Kushavarta Kund, Gangadwar spring, and Ganga Ganga spring.",
+  },
+  {
+    title: "Brahmagiri Trek",
+    body: "The 1,300-metre Brahmagiri hill is one of Maharashtra's most rewarding treks. A 4-km walk from the temple leads through dense forest to the source of the Godavari. The view from the summit encompasses the entire Nashik valley.",
+  },
+  {
+    title: "Narayan Nagbali Pooja",
+    body: "Trimbakeshwar is one of the very few places in India where the 3-day Narayan Nagbali pooja is performed. It is believed to dissolve ancestral debts and pitru dosha. The pooja requires advance booking with a registered purohit.",
+  },
+  {
+    title: "Rudra Homa & Maha Mrityunjaya",
+    body: "Rudra Homa and Maha Mrityunjaya Japa are performed daily in the temple mandap. Devotees from across India come for these rituals, especially during Shravan, Mahashivratri, and Kartik Purnima.",
+  },
+  {
+    title: "Ganesh, Kedareshwar & Amriteshwar",
+    body: "The Trimbakeshwar complex houses three other important temples: Ganesh (Kedargad), Kedareshwar, and Amriteshwar. The path connecting them is part of the traditional circumambulation route around the Jyotirlinga.",
+  },
+];
+
+const howToReach = [
+  {
+    from: "Mumbai",
+    distance: "170 km",
+    time: "4–5 hours by car",
+    note: "via NH 848 through Kasara and Igatpuri ghats",
+  },
+  {
+    from: "Nashik",
+    distance: "28 km",
+    time: "45 minutes by car",
+    note: "via Nashik–Trimbak Road; MSRTC buses every 15 min",
+  },
+  {
+    from: "Pune",
+    distance: "240 km",
+    time: "5–6 hours by car",
+    note: "via Mumbai–Nashik Expressway then NH 848",
+  },
+  {
+    from: "Aurangabad",
+    distance: "180 km",
+    time: "4 hours by car",
+    note: "via Shirdi and Sinnar to Nashik, then to Trimbakeshwar",
+  },
+  {
+    from: "Nashik Road Station",
+    distance: "45 km",
+    time: "1 hour by taxi/bus",
+    note: "Nearest railway station; shared taxis available 24 hours",
+  },
+];
+
+const bestTimeToVisit = [
+  { season: "Winter", months: "October – March", note: "Cool and dry, ideal for Brahmagiri trek and temple visits. 10°C to 28°C." },
+  { season: "Monsoon", months: "July – September", note: "Lush green hills. River Godavari flows strong. Trek to Brahmagiri challenging but scenic." },
+  { season: "Summer", months: "April – June", note: "Hot (30°C to 40°C). Early morning darshan recommended. Evening aarti more comfortable." },
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 border-b border-blue-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-blue-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-blue-900 font-medium">Trimbakeshwar Jyotirlinga</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-blue-900 leading-tight">
+        Trimbakeshwar Jyotirlinga — Complete Darshan & Stay Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-blue-900/80 max-w-3xl">
+        One of the 12 sacred Jyotirlingas of Lord Shiva, located at the source of the Godavari River in the Brahmagiri hills of Nashik. Plan your darshan, pooja bookings, and temple stay with this complete guide.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/trimbakeshwar-bhakt-niwas"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 transition"
+        >
+          Book Bhakta Niwas
+        </a>
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-blue-800 font-semibold border border-blue-300 hover:bg-blue-50 transition"
+        >
+          Book Accommodation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Trimbakeshwar -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">
+        About Trimbakeshwar Jyotirlinga
+      </h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-blue-900/80 leading-relaxed mb-4">
+            Trimbakeshwar Jyotirlinga, situated about 28 km west of Nashik in Maharashtra, is one of the most revered of the 12 Jyotirlingas of Lord Shiva. The temple stands at the foothills of Brahmagiri, the mountain from which the sacred Godavari River begins its 1,465 km journey to the Bay of Bengal.
+          </p>
+          <p class="text-blue-900/80 leading-relaxed mb-4">
+            The name "Trimbakeshwar" means "the three-eyed Lord" — a reference to Lord Shiva's third eye of wisdom. The Jyotirlinga here is unique: it is said to change its form three times a day, representing Brahma (morning), Vishnu (noon), and Shiva (evening).
+          </p>
+          <p class="text-blue-900/80 leading-relaxed">
+            The temple was built by Peshwa Balaji Baji Rao in the 18th century in the Hemadpanti style, with intricate stone carvings. It houses not only the main Shiva Jyotirlinga but also temples of Ganesh, Kedareshwar, and Amriteshwar — forming a complete pilgrimage circuit within the complex.
+          </p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-blue-50/60 p-6">
+          <h3 class="text-lg font-semibold text-blue-900 mb-4">Quick Facts</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-blue-100">
+                <td class="py-2 text-blue-900/70">Deity</td>
+                <td class="py-2 text-blue-900 font-medium">Lord Shiva (as Trimbakeshwar)</td>
+              </tr>
+              <tr class="border-b border-blue-100">
+                <td class="py-2 text-blue-900/70">Location</td>
+                <td class="py-2 text-blue-900 font-medium">Trimbakeshwar, Nashik, Maharashtra</td>
+              </tr>
+              <tr class="border-b border-blue-100">
+                <td class="py-2 text-blue-900/70">Coordinates</td>
+                <td class="py-2 text-blue-900 font-medium">19.94°N, 73.53°E</td>
+              </tr>
+              <tr class="border-b border-blue-100">
+                <td class="py-2 text-blue-900/70">Darshan Timings</td>
+                <td class="py-2 text-blue-900 font-medium">5:30 AM – 9:00 PM</td>
+              </tr>
+              <tr class="border-b border-blue-100">
+                <td class="py-2 text-blue-900/70">Best Time</td>
+                <td class="py-2 text-blue-900 font-medium">October – March</td>
+              </tr>
+              <tr class="border-b border-blue-100">
+                <td class="py-2 text-blue-900/70">Major Festivals</td>
+                <td class="py-2 text-blue-900 font-medium">Mahashivratri, Sawan Mondays</td>
+              </tr>
+              <tr>
+                <td class="py-2 text-blue-900/70">Managed By</td>
+                <td class="py-2 text-blue-900 font-medium">Shri Gajanan Maharaj Sansthan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Darshan Timings -->
+  <section class="py-16 bg-blue-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Darshan Timings</h2>
+      <p class="mt-3 text-blue-900/80 max-w-3xl">
+        The temple operates year-round with the following schedule. Special extended timings apply during Mahashivratri, Shravan, and Kartik Purnima.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Morning</h3>
+          <p class="text-3xl font-bold text-blue-700 mt-2">5:30 AM</p>
+          <p class="text-blue-900/70 text-sm mt-1">Temple opens. Kakad Aarti at 4:30 AM.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Afternoon</h3>
+          <p class="text-3xl font-bold text-blue-700 mt-2">12:00 PM</p>
+          <p class="text-blue-900/70 text-sm mt-1">Madhyan Aarti. Temple open throughout.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Evening</h3>
+          <p class="text-3xl font-bold text-blue-700 mt-2">7:30 PM</p>
+          <p class="text-blue-900/70 text-sm mt-1">Sayam Aarti. Temple closes at 9:00 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">
+        Why Trimbakeshwar is Sacred
+      </h2>
+      <p class="mt-3 text-blue-900/80 max-w-3xl">
+        Trimbakeshwar holds unique significance among the 12 Jyotirlingas. Here are the features that make it one of Hinduism's most important pilgrimage destinations.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          highlights.map((item) => (
+            <div class="rounded-xl border border-blue-200 bg-blue-50/40 p-6">
+              <h3 class="text-lg font-semibold text-blue-900">{item.title}</h3>
+              <p class="mt-2 text-blue-900/80 text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Poojas & Rituals -->
+  <section class="py-16 bg-blue-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">
+        Poojas & Rituals at Trimbakeshwar
+      </h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Rudra Homa</h3>
+          <p class="mt-2 text-blue-900/80 text-sm">Fire ritual invoking Lord Shiva in the temple mandap. Popular on Mondays, Pradosha days, and Mahashivratri. Takes about 45–60 minutes.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Maha Mrityunjaya Japa</h3>
+          <p class="mt-2 text-blue-900/80 text-sm">108 repetitions of the Maha Mrityunjaya mantra performed by priests. Sought for health, longevity, and spiritual protection. Requires advance booking.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Narayan Nagbali</h3>
+          <p class="mt-2 text-blue-900/80 text-sm">A 3-day ritual performed to dissolve pitru dosha (ancestral debt). Trimbakeshwar is one of the few temples in India offering this pooja. Requires advance booking with a registered purohit.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Kushavarta Pooja</h3>
+          <p class="mt-2 text-blue-900/80 text-sm">Holy bath and pooja at Kushavarta Kund, the sacred source tank of the Godavari River. Pilgrims offer sesame seeds, flowers, and ghee lamps after the ceremonial dip.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Laghu Rudra</h3>
+          <p class="mt-2 text-blue-900/80 text-sm">11 repetitions of the Rudra mantra, a shorter version of Rudra Homa. Performed daily for family welfare and the removal of obstacles.</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-blue-900">Mahaprasad & Anna Daan</h3>
+          <p class="mt-2 text-blue-900/80 text-sm">Free prasad is distributed to all devotees. The Sansthan runs anna daan (free food) seva for pilgrims throughout the year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Reach -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">How to Reach Trimbakeshwar</h2>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-blue-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-blue-100 text-blue-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">From</th>
+              <th class="px-4 py-3 font-semibold">Distance</th>
+              <th class="px-4 py-3 font-semibold">Travel Time</th>
+              <th class="px-4 py-3 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-blue-100">
+            {
+              howToReach.map((r) => (
+                <tr class="hover:bg-blue-50/60">
+                  <td class="px-4 py-3 font-medium text-blue-900">{r.from}</td>
+                  <td class="px-4 py-3 text-blue-900">{r.distance}</td>
+                  <td class="px-4 py-3 text-blue-900">{r.time}</td>
+                  <td class="px-4 py-3 text-blue-900/70">{r.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Time -->
+  <section class="py-16 bg-blue-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Best Time to Visit</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {
+          bestTimeToVisit.map((t) => (
+            <div class="rounded-xl border border-blue-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-blue-900">{t.season} ({t.months})</h3>
+              <p class="mt-2 text-blue-900/70 text-sm">{t.note}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Pricing -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">
+        Trimbakeshwar Bhakta Niwas — Room Rates
+      </h2>
+      <p class="mt-3 text-blue-900/80 max-w-3xl">
+        All room rates at Trimbakeshwar Bhakta Niwas include accommodation, three meals per day, hot water and taxes. No hidden charges.
+      </p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-blue-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-blue-100 text-blue-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Room Type</th>
+              <th class="px-4 py-3 font-semibold">Capacity</th>
+              <th class="px-4 py-3 font-semibold">AC</th>
+              <th class="px-4 py-3 font-semibold text-right">Suggested Donation</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-blue-100">
+            {
+              ROOMS.map((room) => (
+                <tr class="hover:bg-blue-50/60">
+                  <td class="px-4 py-3 font-medium text-blue-900">{room.title}</td>
+                  <td class="px-4 py-3 text-blue-900">{room.capacity} persons</td>
+                  <td class="px-4 py-3 text-blue-900">{room.ac ? "Yes" : "No"}</td>
+                  <td class="px-4 py-3 text-right font-semibold text-blue-900">
+                    ₹{room.price.toLocaleString("en-IN")}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-xs md:text-sm text-blue-900/70">
+        {PRICING_TRANSPARENCY.disclaimer}. {PRICING_TRANSPARENCY.noHiddenCharges}. {PRICING_TRANSPARENCY.checkInOut}.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-blue-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">
+        Frequently Asked Questions
+      </h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-blue-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-blue-900">
+                <span>{faq.question}</span>
+                <span class="text-blue-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-blue-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-blue-700 to-indigo-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Trimbakeshwar Jyotirlinga visit</h2>
+      <p class="mt-4 text-blue-100/90 max-w-2xl mx-auto">
+        Book Bhakta Niwas accommodation near the Trimbakeshwar temple. All meals and hot water included.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-blue-800 font-semibold shadow hover:bg-blue-50 transition"
+        >
+          Book Accommodation
+        </a>
+        <a
+          href="/trimbakeshwar-bhakt-niwas"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Bhakta Niwas Details
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

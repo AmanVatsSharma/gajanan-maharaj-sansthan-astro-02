@@ -79,6 +79,8 @@ export function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold">Popular Guides</h4>
             <ul className="space-y-2 text-sm text-gray-200">
               <li><a href="/blog/shegaon-travel-guide" className="hover:text-brand-gold transition-colors">Shegaon Travel Guide</a></li>
+              <li><a href="/trimbakeshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Trimbakeshwar Jyotirlinga Guide</a></li>
+              <li><a href="/omkareshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Omkareshwar Jyotirlinga Guide</a></li>
               <li><a href="/blog/omkareshwar-darshan-timings" className="hover:text-brand-gold transition-colors">Omkareshwar Darshan Timings</a></li>
               <li><a href="/blog/shegaon-bhakta-niwas-booking-process" className="hover:text-brand-gold transition-colors">Bhakta Niwas Booking</a></li>
               <li><a href="/blog/phone-and-whatsapp-booking-best-practices" className="hover:text-brand-gold transition-colors">Phone & WhatsApp Booking</a></li>
@@ -89,11 +91,11 @@ export function Footer() {
           <div className="space-y-3 md:space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold">Locations</h4>
             <ul className="space-y-2 text-sm text-gray-200">
-              <li>Shri Gajanan Maharaj Sansthan Shegaon</li>
-              <li>Shri Gajanan Maharaj Sansthan Shegaon Anand Vihar</li>
-              <li>Shri Gajanan Maharaj Sansthan Pandharpur</li>
-              <li>Shri Gajanan Maharaj Sansthan Trimbakeshwar</li>
-              <li>Shri Gajanan Maharaj Sansthan Omkareshwar</li>
+              <li><a href="/locations" className="hover:text-brand-gold transition-colors">Shri Gajanan Maharaj Sansthan Shegaon</a></li>
+              <li><a href="/locations" className="hover:text-brand-gold transition-colors">Shegaon Anand Vihar</a></li>
+              <li><a href="/locations" className="hover:text-brand-gold transition-colors">Pandharpur</a></li>
+              <li><a href="/trimbakeshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Trimbakeshwar Jyotirlinga</a></li>
+              <li><a href="/omkareshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Omkareshwar Jyotirlinga</a></li>
             </ul>
           </div>
 

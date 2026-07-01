@@ -1,0 +1,474 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ROOMS, PRICING_TRANSPARENCY } from "@/data/rooms";
+import { sansthanLocations } from "@/data/sansthan-data";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getLodgingBusinessWithRatingSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getHinduTempleSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const omkareshwar = sansthanLocations.find((l) => l.id === "omkareshwar");
+if (!omkareshwar) {
+  return Astro.redirect("/404");
+}
+
+const meta = generatePageMetadata({
+  title:
+    "Omkareshwar Jyotirlinga — Complete Darshan & Stay Guide 2026",
+  description:
+    "Omkareshwar Jyotirlinga guide: darshan timings, Mamleshwar temple, Narmada parikrama, ferry timings, Kartik Purnima & Maha Shivaratri. Book Sansthan Bhakta Niwas on the holy island.",
+  keywords: [
+    "omkareshwar jyotirlinga",
+    "omkareshwar temple darshan",
+    "omkareshwar darshan timings",
+    "mamleshwar temple omkareshwar",
+    "narmada parikrama omkareshwar",
+    "omkareshwar ferry timings",
+    "kartik purnima omkareshwar",
+    "maha shivaratri omkareshwar",
+    "omkareshwar accommodation",
+    "omkareshwar temple stay",
+    "omkareshwar island temple",
+    "om narmada omkareshwar",
+    "omkareshwar jyotirlinga stay",
+    "how to reach omkareshwar",
+    "indore to omkareshwar",
+    "ujjain to omkareshwar",
+    "khandwa to omkareshwar",
+    "bhopal to omkareshwar",
+    "12 jyotirlingas list",
+    "shiva jyotirlinga madhya pradesh",
+    "omkareshwar bhakt niwas",
+    "omkareshwar bhakta niwas",
+    "omkareshwar dharamshala",
+    "omkareshwar temple accommodation",
+  ],
+  path: "/omkareshwar-jyotirlinga",
+});
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const templeSchema = getHinduTempleSchema(omkareshwar);
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  omkareshwar,
+  rating,
+  { min: 1250, max: 4150, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What are Omkareshwar darshan timings?",
+    answer:
+      "Omkareshwar Jyotirlinga temple is open from 5:00 AM to 9:30 PM daily. Morning Kakad Aarti starts at 4:00 AM. Special extended hours apply during Kartik Purnima, Maha Shivaratri, and Amavasya.",
+  },
+  {
+    question: "How do I reach Omkareshwar from Indore?",
+    answer:
+      "Omkareshwar is about 77 km south-east of Indore via MH SH-27/NH 347, roughly a 2-hour drive. State transport buses and shared taxis run from Gangwal Bus Stand, Indore throughout the day. The nearest railway station is Khandwa, about 13 km away.",
+  },
+  {
+    question: "Are ferries available to Omkareshwar temple?",
+    answer:
+      "Yes. Free and paid ferry services run across the Narmada from the mainland ghat to the Omkareshwar island. The crossing takes about 10–15 minutes. During peak season or heavy monsoon current, expect short queues at the ghat.",
+  },
+  {
+    question: "What is Mamleshwar and how is it different from Omkareshwar?",
+    answer:
+      "Mamleshwar is the second Jyotirlinga situated on the south bank of the Narmada, opposite Omkareshwar. The two temples are considered a single Jyotirlinga darshan, and pilgrims traditionally visit both. A short walk across the bridge on the island connects the two shrines.",
+  },
+  {
+    question: "Is there a Sansthan Bhakta Niwas in Omkareshwar?",
+    answer:
+      "Yes. Shri Gajanan Maharaj Sansthan operates a Bhakta Niwas on the Omkareshwar island, minutes from the main temple ghat. Family rooms include meals, hot water and parking. Bookings can be made online or at the Sansthan office on arrival.",
+  },
+  {
+    question: "What is the best time to visit Omkareshwar?",
+    answer:
+      "The best season is October to March, when the weather is cool and the Narmada is calm. Avoid peak monsoon (July–August) when ferry timings may be affected. Kartik Purnima (November) and Maha Shivaratri are the most auspicious days to visit.",
+  },
+  {
+    question: "What is the Narmada Parikrama and how does it connect to Omkareshwar?",
+    answer:
+      "The Narmada Parikrama is the sacred 2,600 km circumambulation of the Narmada River. Omkareshwar is a key stop on this yatra, situated on the island shaped like the sacred Om (ॐ) symbol — hence the name Omkareshwar (Om + Ishwar).",
+  },
+  {
+    question: "Is there a dress code at Omkareshwar temple?",
+    answer:
+      "Traditional wear is recommended for darshan — dhoti-kurta for men and saree or salwar-kameez for women. Shorts, sleeveless tops, and leather items are not permitted inside the temple complex. Lockers are available at the ghat for storing belongings before darshan.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+
+const highlights = [
+  {
+    title: "Island shaped like Om (ॐ)",
+    body: "The Omkareshwar island is naturally shaped like the sacred Om symbol. This unique geological formation is why the place is named Omkareshwar — Om (the sacred syllable) + Ishwar (Lord Shiva). It is the only Jyotirlinga situated on a river island.",
+  },
+  {
+    title: "Two Jyotirlingas on one island",
+    body: "Omkareshwar and Mamleshwar are both located on the same island, connected by a bridge. Pilgrims traditionally visit both, as they are considered a single Jyotirlinga manifestation. The Mamleshwar temple faces south, while Omkareshwar faces east.",
+  },
+  {
+    title: "Narmada Parikrama stop",
+    body: "Omkareshwar is a major destination on the 2,600 km Narmada Parikrama — the sacred circumambulation of the Narmada River. Devotees completing the parikrama consider darshan at Omkareshwar mandatory.",
+  },
+  {
+    title: "Ancient Mandhata legend",
+    body: "According to legend, King Mandhata (an ancestor of Lord Rama) performed intense tapas here to please Lord Shiva. The Jyotirlinga is believed to have manifested from his devotion. Ancient copper plates and temple records confirm worship here dating back over 2,000 years.",
+  },
+  {
+    title: "Kartik Purnima festival",
+    body: "Kartik Purnima (full moon in the month of Kartik, November) is the most celebrated festival at Omkareshwar. The entire island is illuminated, and thousands of pilgrims take the Narmada holy dip. Accommodation fills up months in advance.",
+  },
+  {
+    title: "Free ferry to the temple",
+    body: "Free ferry services run regularly from the mainland ghat to the Omkareshwar island. Paid ferries are also available. The 10–15 minute crossing across the Narmada is considered part of the spiritual experience.",
+  },
+];
+
+const howToReach = [
+  {
+    from: "Indore",
+    distance: "77 km",
+    time: "2 hours by car",
+    note: "via MH SH-27; frequent MSRTC buses from Gangwal Bus Stand",
+  },
+  {
+    from: "Khandwa (Railway)",
+    distance: "13 km",
+    time: "20 minutes by taxi",
+    note: "Nearest railway station on the Mumbai–Delhi main line",
+  },
+  {
+    from: "Ujjain",
+    distance: "130 km",
+    time: "3 hours by car",
+    note: "via SH-27; buses available from Ujjain bus stand",
+  },
+  {
+    from: "Bhopal",
+    distance: "230 km",
+    time: "5 hours by car",
+    note: "via Indore or Bhopal–Khandwa highway",
+  },
+  {
+    from: "Mumbai",
+    distance: "700 km",
+    time: "12–14 hours by train",
+    note: "Trains to Khandwa or Indore, then taxi to Omkareshwar",
+  },
+];
+
+const bestTimeToVisit = [
+  { season: "Winter", months: "October – March", note: "Cool and pleasant weather. Narmada waters are calm. Ideal for the island parikrama." },
+  { season: "Monsoon", months: "July – September", note: "The island is lush and green. Narmada flows strong — beautiful but ferry crossings can be affected." },
+  { season: "Summer", months: "April – June", note: "Hot (35°C to 42°C). Early morning darshan recommended. Carry sun protection for the island walk." },
+];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-slate-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover-underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-slate-900 font-medium">Omkareshwar Jyotirlinga</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+        Omkareshwar Jyotirlinga — Complete Darshan & Stay Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-900/80 max-w-3xl">
+        One of the 12 sacred Jyotirlingas of Lord Shiva, situated on a sacred island shaped like the Om (ॐ) symbol in the Narmada River, Madhya Pradesh. Plan your darshan, island parikrama, and temple stay.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/omkareshwar-bhakta-niwas"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 transition"
+        >
+          Book Bhakta Niwas
+        </a>
+        <a
+          href="/booking"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-blue-800 font-semibold border border-blue-300 hover:bg-blue-50 transition"
+        >
+          Book Accommodation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Omkareshwar -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+        About Omkareshwar Jyotirlinga
+      </h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-slate-900/80 leading-relaxed mb-4">
+            Omkareshwar Jyotirlinga is situated on a naturally formed island in the Narmada River in Madhya Pradesh. The island's shape — an unmistakable Om (ॐ) — gives the place its name: Om (the sacred syllable of creation) + Ishwar (Lord Shiva) = Omkareshwar.
+          </p>
+          <p class="text-slate-900/80 leading-relaxed mb-4">
+            It is one of the 12 most sacred Jyotirlingas of Lord Shiva and a major stop on the Narmada Parikrama, the 2,600 km circumambulation of the Narmada River. The temple is built in the Nagara style on Shivapuri hill on the island, facing east.
+          </p>
+          <p class="text-slate-900/80 leading-relaxed">
+            According to Hindu legend, King Mandhata (an ancestor of Lord Rama) performed intense devotion here, and the Jyotirlinga manifested in response. The island also houses the Mamleshwar temple — the second Jyotirlinga — connected to Omkareshwar by a bridge. Both are considered one complete darshan.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/60 p-6">
+          <h3 class="text-lg font-semibold text-slate-900 mb-4">Quick Facts</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 text-slate-900/70">Deity</td>
+                <td class="py-2 text-slate-900 font-medium">Lord Shiva (as Omkareshwar)</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 text-slate-900/70">Location</td>
+                <td class="py-2 text-slate-900 font-medium">Omkareshwar, Madhya Pradesh</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 text-slate-900/70">Coordinates</td>
+                <td class="py-2 text-slate-900 font-medium">22.24°N, 76.15°E</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 text-slate-900/70">Darshan Timings</td>
+                <td class="py-2 text-slate-900 font-medium">5:00 AM – 9:30 PM</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 text-slate-900/70">Best Time</td>
+                <td class="py-2 text-slate-900 font-medium">October – March</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 text-slate-900/70">Major Festivals</td>
+                <td class="py-2 text-slate-900 font-medium">Kartik Purnima, Maha Shivaratri</td>
+              </tr>
+              <tr>
+                <td class="py-2 text-slate-900/70">Managed By</td>
+                <td class="py-2 text-slate-900 font-medium">Shri Gajanan Maharaj Sansthan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Darshan Timings -->
+  <section class="py-16 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Darshan Timings</h2>
+      <p class="mt-3 text-slate-900/80 max-w-3xl">
+        The temple operates year-round with the following schedule. During festivals, special aartis and extended hours are announced on the temple notice boards.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-slate-900">Morning</h3>
+          <p class="text-3xl font-bold text-blue-700 mt-2">4:00 AM</p>
+          <p class="text-slate-900/70 text-sm mt-1">Kakad Aarti. Temple opens for darshan.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-slate-900">Afternoon</h3>
+          <p class="text-3xl font-bold text-blue-700 mt-2">12:00 PM</p>
+          <p class="text-slate-900/70 text-sm mt-1">Madhyan Aarti. Temple open throughout the day.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-slate-900">Evening</h3>
+          <p class="text-3xl font-bold text-blue-700 mt-2">7:30 PM</p>
+          <p class="text-slate-900/70 text-sm mt-1">Sayam Sandhya Aarti. Closes at 9:30 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+        Why Omkareshwar is Sacred
+      </h2>
+      <p class="mt-3 text-slate-900/80 max-w-3xl">
+        Omkareshwar's unique island location, ancient history, and role in the Narmada Parikrama make it one of India's most spiritually significant pilgrimage destinations.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          highlights.map((item) => (
+            <div class="rounded-xl border border-slate-200 bg-slate-50/40 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">{item.title}</h3>
+              <p class="mt-2 text-slate-900/80 text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Reach -->
+  <section class="py-16 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">How to Reach Omkareshwar</h2>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-slate-100 text-slate-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">From</th>
+              <th class="px-4 py-3 font-semibold">Distance</th>
+              <th class="px-4 py-3 font-semibold">Travel Time</th>
+              <th class="px-4 py-3 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {
+              howToReach.map((r) => (
+                <tr class="hover:bg-slate-50/60">
+                  <td class="px-4 py-3 font-medium text-slate-900">{r.from}</td>
+                  <td class="px-4 py-3 text-slate-900">{r.distance}</td>
+                  <td class="px-4 py-3 text-slate-900">{r.time}</td>
+                  <td class="px-4 py-3 text-slate-900/70">{r.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Time -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Best Time to Visit</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {
+          bestTimeToVisit.map((t) => (
+            <div class="rounded-xl border border-slate-200 bg-slate-50/60 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">{t.season} ({t.months})</h3>
+              <p class="mt-2 text-slate-900/70 text-sm">{t.note}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Pricing -->
+  <section class="py-16 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+        Omkareshwar Bhakta Niwas — Room Rates
+      </h2>
+      <p class="mt-3 text-slate-900/80 max-w-3xl">
+        All room rates at Omkareshwar Bhakta Niwas include accommodation, three meals per day, hot water and taxes. No hidden charges.
+      </p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-slate-100 text-slate-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Room Type</th>
+              <th class="px-4 py-3 font-semibold">Capacity</th>
+              <th class="px-4 py-3 font-semibold">AC</th>
+              <th class="px-4 py-3 font-semibold text-right">Suggested Donation</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {
+              ROOMS.map((room) => (
+                <tr class="hover:bg-slate-50/60">
+                  <td class="px-4 py-3 font-medium text-slate-900">{room.title}</td>
+                  <td class="px-4 py-3 text-slate-900">{room.capacity} persons</td>
+                  <td class="px-4 py-3 text-slate-900">{room.ac ? "Yes" : "No"}</td>
+                  <td class="px-4 py-3 text-right font-semibold text-slate-900">
+                    ₹{room.price.toLocaleString("en-IN")}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-xs md:text-sm text-slate-900/70">
+        {PRICING_TRANSPARENCY.disclaimer}. {PRICING_TRANSPARENCY.noHiddenCharges}. {PRICING_TRANSPARENCY.checkInOut}.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+        Frequently Asked Questions
+      </h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-slate-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-slate-900">
+                <span>{faq.question}</span>
+                <span class="text-slate-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-slate-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-blue-700 to-indigo-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan your Omkareshwar Jyotirlinga visit</h2>
+      <p class="mt-4 text-blue-100/90 max-w-2xl mx-auto">
+        Book Bhakta Niwas on the Omkareshwar island. All meals and hot water included. Family rooms available.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a
+          href="/booking"
+          class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-blue-800 font-semibold shadow hover:bg-blue-50 transition"
+        >
+          Book Accommodation
+        </a>
+        <a
+          href="/omkareshwar-bhakta-niwas"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Bhakta Niwas Details
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition"
+        >
+          Contact Sansthan
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,439 @@
+- generic [active] [ref=f2e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f2e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f2e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f2e8]:
+    - search [ref=f2e9]:
+      - generic [ref=f2e11]:
+        - link "Go to Google Home" [ref=f2e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQPAgI
+          - img [ref=f2e14]
+        - generic [ref=f2e21]:
+          - generic [ref=f2e22]:
+            - combobox "Search" [ref=f2e25]: gajanan maharaj sansthan shegaon gajanan maharaj sansthan shegaon
+            - generic [ref=f2e26]:
+              - button "Clear" [ref=f2e28] [cursor=pointer]:
+                - img [ref=f2e30]
+              - generic [ref=f2e33]:
+                - button "Search by voice" [ref=f2e34] [cursor=pointer]:
+                  - img [ref=f2e35]
+                - button "Search by image" [ref=f2e37] [cursor=pointer]:
+                  - img [ref=f2e38]
+          - button "Search" [ref=f2e40] [cursor=pointer]:
+            - img [ref=f2e43]
+    - generic [ref=f2e45]:
+      - button "Settings" [ref=f2e47] [cursor=pointer]:
+        - img [ref=f2e50]
+      - button "Share" [ref=f2e53] [cursor=pointer]:
+        - img [ref=f2e57]
+      - generic [ref=f2e59]:
+        - button "Google apps" [ref=f2e61] [cursor=pointer]:
+          - img [ref=f2e62]
+        - link "Sign in" [ref=f2e66] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dgajanan%2Bmaharaj%2Bsansthan%2Bshegaon%26sei%3DEd9EarO_EeyDp84P-Z3N0QE&ec=futura_srp_og_si_72236_p
+  - generic [ref=f2e68]:
+    - navigation [ref=f2e74]:
+      - generic [ref=f2e80]:
+        - list [ref=f2e81]:
+          - listitem [ref=f2e82]:
+            - link "AI Mode" [ref=f2e85] [cursor=pointer]:
+              - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cK-OlyrFp0q_lDSVqWSWpBfB76Efuc1JKh3mTeuQNr6wIBAigBdBXBL4JsBsEFwCH7ZanlLrOzvSRgNj-XSoL-XJ_bbsn-ckNGbzol2QNeUleVZpZd_fA7wi_vk7IEkU_n2OG_4Xtp7EDfXWKOegwcwIqYN-eOSulcgqKHegK8LblGELA&aep=1&ntc=1&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ2J8OegQIEBAD
+              - generic [ref=f2e88]: AI Mode
+          - listitem [ref=f2e89]:
+            - link "All" [disabled] [ref=f2e90]:
+              - generic [ref=f2e92]: All
+          - listitem [ref=f2e93]:
+            - link "Images" [ref=f2e94] [cursor=pointer]:
+              - /url: /search?sca_esv=daab60778bf84638&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cK-OlyrFp0q_lDSVqWSWpBfB76Efuc1JKh3mTeuQNr6wIBAigBdBXBL4JsBsEFwCH7ZanlLrOzvSRgNj-XSoL-XJ_bbsn-ckNGbzol2QNeUleVZpZd_fA7wi_vk7IEkU_n2OG_4Xtp7EDfXWKOegwcwIqYN-eOSulcgqKHegK8LblGELA&q=gajanan+maharaj+sansthan+shegaon&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQtKgLegQIFRAB
+              - generic [ref=f2e96]: Images
+          - listitem [ref=f2e97]:
+            - link "Maps" [ref=f2e98] [cursor=pointer]:
+              - /url: https://maps.google.com/maps?sca_esv=daab60778bf84638&output=search&q=gajanan+maharaj+sansthan+shegaon&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cK-OlyrFp0q_lDSVqWSWpBfB76Efuc1JKh3mTeuQNr6wIBAigBdBXBL4JsBsEFwCH7ZanlLrOzvSRgNj-XSoL-XJ_bbsn-ckNGbzol2QNeUleVZpZd_fA7wi_vk7IEkU_n2OG_4Xtp7EDfXWKOegwcwIqYN-eOSulcgqKHegK8LblGELA&entry=mc&ved=1t:200715&ictx=111
+              - generic [ref=f2e100]: Maps
+          - listitem [ref=f2e101]:
+            - link "Videos" [ref=f2e102] [cursor=pointer]:
+              - /url: /search?sca_esv=daab60778bf84638&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cK-OlyrFp0q_lDSVqWSWpBfB76Efuc1JKh3mTeuQNr6wIBAigBdBXBL4JsBsEFwCH7ZanlLrOzvSRgNj-XSoL-XJ_bbsn-ckNGbzol2QNeUleVZpZd_fA7wi_vk7IEkU_n2OG_4Xtp7EDfXWKOegwcwIqYN-eOSulcgqKHegK8LblGELA&q=gajanan+maharaj+sansthan+shegaon&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQtKgLegQIFhAB
+              - generic [ref=f2e104]: Videos
+          - listitem [ref=f2e105]:
+            - link "Shopping" [ref=f2e106] [cursor=pointer]:
+              - /url: /search?sca_esv=daab60778bf84638&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cK-OlyrFp0q_lDSVqWSWpBfB76Efuc1JKh3mTeuQNr6wIBAigBdBXBL4JsBsEFwCH7ZanlLrOzvSRgNj-XSoL-XJ_bbsn-ckNGbzol2QNeUleVZpZd_fA7wi_vk7IEkU_n2OG_4Xtp7EDfXWKOegwcwIqYN-eOSulcgqKHegK8LblGELA&q=gajanan+maharaj+sansthan+shegaon&ved=1t:220175&ictx=111
+              - generic [ref=f2e108]: Shopping
+          - listitem [ref=f2e109]:
+            - link "Short videos" [ref=f2e110] [cursor=pointer]:
+              - /url: /search?sca_esv=daab60778bf84638&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cK-OlyrFp0q_lDSVqWSWpBfB76Efuc1JKh3mTeuQNr6wIBAigBdBXBL4JsBsEFwCH7ZanlLrOzvSRgNj-XSoL-XJ_bbsn-ckNGbzol2QNeUleVZpZd_fA7wi_vk7IEkU_n2OG_4Xtp7EDfXWKOegwcwIqYN-eOSulcgqKHegK8LblGELA&q=gajanan+maharaj+sansthan+shegaon&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQs6gLegQIERAB
+              - generic [ref=f2e112]: Short videos
+          - listitem [ref=f2e113]:
+            - button "More filters" [ref=f2e114] [cursor=pointer]:
+              - generic "More filters" [ref=f2e115]:
+                - generic [ref=f2e116]:
+                  - generic [ref=f2e117]: More
+                  - img [ref=f2e119]
+        - button "Tools" [ref=f2e122] [cursor=pointer]:
+          - generic [ref=f2e124]:
+            - generic [ref=f2e125]: Tools
+            - img [ref=f2e127]
+    - heading "Search Results" [level=1] [ref=f2e129]
+    - main [ref=f2e135]:
+      - generic [ref=f2e141]:
+        - heading "Shegaon, Maharashtra" [level=2] [ref=f2e142]:
+          - img [ref=f2e145]:
+            - img [ref=f2e146]
+          - generic [ref=f2e149]: Shegaon, Maharashtra
+        - generic [ref=f2e151]:
+          - text: ∙
+          - button "Choose area" [ref=f2e152] [cursor=pointer]
+        - button "How location is used" [ref=f2e155] [cursor=pointer]:
+          - img [ref=f2e157]
+      - generic [ref=f2e162]:
+        - generic [ref=f2e165]:
+          - heading "Web result with site links" [level=2] [ref=f2e166]
+          - generic [ref=f2e167]:
+            - generic [ref=f2e171]:
+              - generic [ref=f2e173]:
+                - link "Welcome to Shree Gajanan Maharaj Sansthan, Shegaon Shree Gajanan Maharaj Sansthan, Shegaon https://www.gajananmaharaj.org" [ref=f2e175] [cursor=pointer]:
+                  - /url: https://www.gajananmaharaj.org/
+                  - heading "Welcome to Shree Gajanan Maharaj Sansthan, Shegaon" [level=3] [ref=f2e176]
+                  - generic [ref=f2e182]:
+                    - generic [ref=f2e184]: Shree Gajanan Maharaj Sansthan, Shegaon
+                    - generic [ref=f2e186]: https://www.gajananmaharaj.org
+                - button "About this result" [ref=f2e189] [cursor=pointer]:
+                  - img [ref=f2e192]
+              - generic [ref=f2e195]: boxes. E-Donation HDFC Gateway.
+            - group "Personalised recommendations based on your history" [ref=f2e196]:
+              - rowgroup [ref=f2e197]:
+                - row "Donation The donation given to Shree Sansthan is exempted under ..." [ref=f2e198]:
+                  - cell "Donation The donation given to Shree Sansthan is exempted under ..." [ref=f2e199]:
+                    - generic [ref=f2e205]:
+                      - heading "Donation" [level=3] [ref=f2e206]:
+                        - link "Donation" [ref=f2e207] [cursor=pointer]:
+                          - /url: https://www.gajananmaharaj.org/sgmsenglish/donation.htm
+                          - text: Donation
+                      - generic [ref=f2e210]: The donation given to Shree Sansthan is exempted under ...
+                - row "निवास व्यवस्था - Shree Gajanan Maharaj, Shegaon श्री गजानन महाराजांच्या समाधी ..." [ref=f2e211]:
+                  - cell "निवास व्यवस्था - Shree Gajanan Maharaj, Shegaon श्री गजानन महाराजांच्या समाधी ..." [ref=f2e212]:
+                    - generic [ref=f2e218]:
+                      - heading "निवास व्यवस्था - Shree Gajanan Maharaj, Shegaon" [level=3] [ref=f2e219]:
+                        - link "निवास व्यवस्था - Shree Gajanan Maharaj, Shegaon" [ref=f2e220] [cursor=pointer]:
+                          - /url: https://www.gajananmaharaj.org/final%20marathi%20site/newas.htm
+                          - text: निवास व्यवस्था - Shree Gajanan Maharaj, Shegaon
+                      - generic [ref=f2e223]: श्री गजानन महाराजांच्या समाधी ...
+                - row "Accommodation Shri Gajanan Maharaj Sansthan, Shegaon has a separate and ..." [ref=f2e224]:
+                  - cell "Accommodation Shri Gajanan Maharaj Sansthan, Shegaon has a separate and ..." [ref=f2e225]:
+                    - generic [ref=f2e231]:
+                      - heading "Accommodation" [level=3] [ref=f2e232]:
+                        - link "Accommodation" [ref=f2e233] [cursor=pointer]:
+                          - /url: https://www.gajananmaharaj.org/sgmsenglish/newas.htm
+                          - text: Accommodation
+                      - generic [ref=f2e236]: Shri Gajanan Maharaj Sansthan, Shegaon has a separate and ...
+                - row "Shree's Samadhi Mandir The Legendary soul Sant Shri Gajanan Maharaj enlightened ..." [ref=f2e237]:
+                  - cell "Shree's Samadhi Mandir The Legendary soul Sant Shri Gajanan Maharaj enlightened ..." [ref=f2e238]:
+                    - generic [ref=f2e244]:
+                      - heading "Shree's Samadhi Mandir" [level=3] [ref=f2e245]:
+                        - link "Shree's Samadhi Mandir" [ref=f2e246] [cursor=pointer]:
+                          - /url: https://www.gajananmaharaj.org/sgmsenglish/samadhimandir.htm
+                          - text: Shree's Samadhi Mandir
+                      - generic [ref=f2e249]: The Legendary soul Sant Shri Gajanan Maharaj enlightened ...
+                - row "०७२६५ पत्ता ; भक्तनिवास संकुल मंदिर परीसर. ०७२६५ ..." [ref=f2e250]:
+                  - cell "०७२६५ पत्ता ; भक्तनिवास संकुल मंदिर परीसर. ०७२६५ ..." [ref=f2e251]:
+                    - generic [ref=f2e257]:
+                      - heading "०७२६५" [level=3] [ref=f2e258]:
+                        - link "०७२६५" [ref=f2e259] [cursor=pointer]:
+                          - /url: https://www.gajananmaharaj.org/final%20marathi%20site/contact.htm
+                          - text: ०७२६५
+                      - generic [ref=f2e262]: पत्ता ; भक्तनिवास संकुल मंदिर परीसर. ०७२६५ ...
+                - row "More results from gajananmaharaj.org »" [ref=f2e264]:
+                  - cell "More results from gajananmaharaj.org »" [ref=f2e265]:
+                    - link "More results from gajananmaharaj.org »" [ref=f2e267] [cursor=pointer]:
+                      - /url: /search?q=gajanan+maharaj+sansthan+shegaon+site:gajananmaharaj.org&sca_esv=daab60778bf84638&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQrAN6BAgaEAE
+        - generic [ref=f2e271]:
+          - heading "Local results" [level=2] [ref=f2e272]
+          - generic [ref=f2e273]:
+            - heading "Places" [level=2] [ref=f2e277]
+            - generic [ref=f2e278]:
+              - heading "Map" [level=3] [ref=f2e279]
+              - link "Map" [ref=f2e282] [cursor=pointer]:
+                - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&udm=1&lsack=Ed9EaqHBOdSnqtsPo8GQsAc&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQtgN6BAgnEAM
+            - generic [ref=f2e285]:
+              - generic [ref=f2e288]:
+                - button "Shri Gajanan Maharaj Sansthan, Shegaon Rated 4.8 out of 5, 25K user reviews · Hindu temple Shri Gajanan Maharaj Sansthan · 072652 52018 Open · Closes 9:30 pm Serene marble Hindu temple complex" [ref=f2e290]:
+                  - generic [ref=f2e294] [cursor=pointer]:
+                    - heading "Shri Gajanan Maharaj Sansthan, Shegaon" [level=3] [ref=f2e295]:
+                      - generic [ref=f2e296]: Shri Gajanan Maharaj Sansthan, Shegaon
+                    - generic [ref=f2e297]:
+                      - img "Rated 4.8 out of 5, 25K user reviews" [ref=f2e299]:
+                        - text: "4.8"
+                        - img [ref=f2e300]
+                        - text: (25K)
+                      - text: · Hindu temple
+                    - generic [ref=f2e303]: Shri Gajanan Maharaj Sansthan · 072652 52018
+                    - generic [ref=f2e305]: Open · Closes 9:30 pm
+                    - generic [ref=f2e307]: Serene marble Hindu temple complex
+                - link "Website" [ref=f2e308] [cursor=pointer]:
+                  - /url: https://www.gajananmaharaj.org/sgmsenglish/samadhimandir.htm
+                  - generic [ref=f2e310]:
+                    - img [ref=f2e313]
+                    - generic [ref=f2e315]: Website
+                - link "Directions" [ref=f2e316] [cursor=pointer]:
+                  - /url: /maps/dir//Shri+Gajanan+Maharaj+Sansthan,+Shegaon,+Shri+Gajanan+Maharaj+Sansthan,+Shegaon,+Maharashtra+444203/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bd745056626df6d:0xbbaa62f18a161193?sa=X&ved=1t:57443&ictx=111
+                  - generic [ref=f2e318]:
+                    - img [ref=f2e321]
+                    - generic [ref=f2e326]: Directions
+              - generic [ref=f2e330]:
+                - button "Shri Gajanan Maharaj Sansthan WareHouse Rated 4.5 out of 5, 92 user reviews · Warehouse Maharashtra Major State Highway 24 · 072652 52018 Open now" [ref=f2e332]:
+                  - generic [ref=f2e336] [cursor=pointer]:
+                    - heading "Shri Gajanan Maharaj Sansthan WareHouse" [level=3] [ref=f2e337]:
+                      - generic [ref=f2e338]: Shri Gajanan Maharaj Sansthan WareHouse
+                    - generic [ref=f2e339]:
+                      - img "Rated 4.5 out of 5, 92 user reviews" [ref=f2e341]:
+                        - text: "4.5"
+                        - img [ref=f2e342]
+                        - text: (92)
+                      - text: · Warehouse
+                    - generic [ref=f2e345]: Maharashtra Major State Highway 24 · 072652 52018
+                    - generic [ref=f2e347]: Open now
+                - link "Website" [ref=f2e348] [cursor=pointer]:
+                  - /url: http://www.gajananmaharaj.org/
+                  - generic [ref=f2e350]:
+                    - img [ref=f2e353]
+                    - generic [ref=f2e355]: Website
+                - link "Directions" [ref=f2e356] [cursor=pointer]:
+                  - /url: /maps/dir//Shri+Gajanan+Maharaj+Sansthan+WareHouse,+Maharashtra+Major+State+Highway+24,+Shegaon,+Maharashtra+444203/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bd745c973db540d:0x555354df1b37749?sa=X&ved=1t:57443&ictx=111
+                  - generic [ref=f2e358]:
+                    - img [ref=f2e361]
+                    - generic [ref=f2e366]: Directions
+        - generic [ref=f2e371]:
+          - heading "People also ask" [level=2] [ref=f2e373]
+          - generic [ref=f2e374]:
+            - generic [ref=f2e378]:
+              - generic [ref=f2e380] [cursor=pointer]:
+                - button
+              - button "शेगाव मध्ये गजानन महाराज रूम बुकिंग कशी करावी?" [ref=f2e383] [cursor=pointer]:
+                - generic [ref=f2e387]: शेगाव मध्ये गजानन महाराज रूम बुकिंग कशी करावी?
+                - img [ref=f2e390]
+            - generic [ref=f2e396]:
+              - generic [ref=f2e398] [cursor=pointer]:
+                - button
+              - button "मी गजानन महाराज, संस्थान, शेगाव येथे पैसे कसे पाठवू शकतो?" [ref=f2e402] [cursor=pointer]:
+                - generic [ref=f2e406]: मी गजानन महाराज, संस्थान, शेगाव येथे पैसे कसे पाठवू शकतो?
+                - img [ref=f2e409]
+            - generic [ref=f2e415]:
+              - generic [ref=f2e417] [cursor=pointer]:
+                - button
+              - button "श्री गजानन महाराज संस्थान म्हणजे काय?" [ref=f2e421] [cursor=pointer]:
+                - generic [ref=f2e425]: श्री गजानन महाराज संस्थान म्हणजे काय?
+                - img [ref=f2e428]
+            - generic [ref=f2e434]:
+              - generic [ref=f2e436] [cursor=pointer]:
+                - button
+              - button "गजानन महाराज संस्थान शेगावचा फोन नंबर काय आहे?" [ref=f2e440] [cursor=pointer]:
+                - generic [ref=f2e444]: गजानन महाराज संस्थान शेगावचा फोन नंबर काय आहे?
+                - img [ref=f2e447]
+        - generic [ref=f2e452]:
+          - heading "Web results" [level=2] [ref=f2e453]
+          - generic [ref=f2e454]:
+            - generic [ref=f2e457]:
+              - link "shree Gajanan maharaj sansthan shegaon Facebook · shree Gajanan maharaj sansthan shegaon 5.7K+ followers" [ref=f2e459] [cursor=pointer]:
+                - /url: https://www.facebook.com/swapnil950351764/
+                - heading "shree Gajanan maharaj sansthan shegaon" [level=3] [ref=f2e460]
+                - generic [ref=f2e466]:
+                  - generic [ref=f2e468]: Facebook · shree Gajanan maharaj sansthan shegaon
+                  - generic [ref=f2e470]: 5.7K+ followers
+              - button "About this result" [ref=f2e473] [cursor=pointer]:
+                - img [ref=f2e476]
+            - generic [ref=f2e479]:
+              - generic [ref=f2e480]:
+                - emphasis [ref=f2e481]: Www.gajananmaharaj.org या संकेतस्थळावर उपलब्ध आहे
+                - text: ई- दर्शन पास · No photo description available. ... No photo description available. Dilip Panditrao and 447 others · 󰍸.
+              - link "Read more" [ref=f2e482] [cursor=pointer]:
+                - /url: https://www.facebook.com/swapnil950351764/#:~:text=Www.gajananmaharaj.org%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B8%E0%A4%82%E0%A4%95%E0%A5%87%E0%A4%A4%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%B3%E0%A4%BE%E0%A4%B5%E0%A4%B0%20%E0%A4%89%E0%A4%AA%E0%A4%B2%E0%A4%AC%E0%A5%8D%E0%A4%A7%20%E0%A4%86%E0%A4%B9%E0%A5%87,%E0%A4%88%2D%20%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8%20%E0%A4%AA%E0%A4%BE%E0%A4%B8&text=Dilip%20Panditrao%20and%20447%20others,%F3%B0%8D%B8
+        - generic [ref=f2e486]:
+          - generic [ref=f2e489]:
+            - link "Shree Gajanan Maharaj Sansthan, Shegaon Jyotirlingatemples.com https://www.jyotirlingatemples.com › article › temple" [ref=f2e491] [cursor=pointer]:
+              - /url: https://www.jyotirlingatemples.com/article/id/8848/temple/465/shree-gajanan-maharaj-sansthan,-shegaon
+              - heading "Shree Gajanan Maharaj Sansthan, Shegaon" [level=3] [ref=f2e492]
+              - generic [ref=f2e498]:
+                - generic [ref=f2e500]: Jyotirlingatemples.com
+                - generic [ref=f2e502]: https://www.jyotirlingatemples.com › article › temple
+            - button "About this result" [ref=f2e505] [cursor=pointer]:
+              - img [ref=f2e508]
+          - generic [ref=f2e511]:
+            - generic [ref=f2e512]:
+              - emphasis [ref=f2e513]: Shree Gajanan Maharaj Sansthan, Shegaon
+              - text: "Dist: Buldhana,(MS) 444203 - India Telephone: +91-7265-252018,252699, 252251 FAX No. +91"
+            - link "Read more" [ref=f2e514] [cursor=pointer]:
+              - /url: https://www.jyotirlingatemples.com/article/id/8848/temple/465/shree-gajanan-maharaj-sansthan,-shegaon#:~:text=Shree%20Gajanan%20Maharaj%20Sansthan%2C%20Shegaon&text=Dist%3A%20Buldhana%2C(M.S.)%20444203%20%2D%20India&text=Telephone%3A%20%2B91%2D7265%2D252018%2C252699%2C%20252251&text=FAX%20No.%20%2B91%207265%2D252634
+        - generic [ref=f2e518]:
+          - generic [ref=f2e521]:
+            - link "Shree Gajanan Maharaj Sansthan shreegajananmaharaj.online https://shreegajananmaharaj.online" [ref=f2e523] [cursor=pointer]:
+              - /url: https://shreegajananmaharaj.online/
+              - heading "Shree Gajanan Maharaj Sansthan" [level=3] [ref=f2e524]
+              - generic [ref=f2e530]:
+                - generic [ref=f2e532]: shreegajananmaharaj.online
+                - generic [ref=f2e534]: https://shreegajananmaharaj.online
+            - button "About this result" [ref=f2e537] [cursor=pointer]:
+              - img [ref=f2e540]
+          - generic [ref=f2e543]:
+            - generic [ref=f2e544]:
+              - emphasis [ref=f2e545]: Shree Gajanan Maharaj Sansthan, located in Shegaon
+              - text: ", Maharashtra, is a revered spiritual institution dedicated to the life, teachings, and legacy of Saint Shri ..."
+            - link "Read more" [ref=f2e546] [cursor=pointer]:
+              - /url: https://shreegajananmaharaj.online/#:~:text=Shree%20Gajanan%20Maharaj%20Sansthan%2C%20located,of%20India's%20most%20beloved%20saints.
+        - generic [ref=f2e550]:
+          - generic [ref=f2e553]:
+            - link "गजानन महाराज Wikipedia https://mr.wikipedia.org › wiki" [ref=f2e555] [cursor=pointer]:
+              - /url: https://mr.wikipedia.org/wiki/%E0%A4%97%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8_%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C
+              - heading "गजानन महाराज" [level=3] [ref=f2e556]
+              - generic [ref=f2e562]:
+                - generic [ref=f2e564]: Wikipedia
+                - generic [ref=f2e566]: https://mr.wikipedia.org › wiki
+            - generic [ref=f2e567]:
+              - generic [ref=f2e568]: ·
+              - link "Translate this page" [ref=f2e569] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://mr.wikipedia.org/wiki/%25E0%25A4%2597%25E0%25A4%259C%25E0%25A4%25BE%25E0%25A4%25A8%25E0%25A4%25A8_%25E0%25A4%25AE%25E0%25A4%25B9%25E0%25A4%25BE%25E0%25A4%25B0%25E0%25A4%25BE%25E0%25A4%259C&hl=en&sl=mr&tl=en&client=search
+            - button "About this result" [ref=f2e572] [cursor=pointer]:
+              - img [ref=f2e575]
+          - generic [ref=f2e578]:
+            - generic [ref=f2e579]:
+              - emphasis [ref=f2e580]: गजानन महाराज
+              - text: .
+              - emphasis [ref=f2e581]: शेगाव
+              - text: (बुलढाणा जिल्हा), महाराष्ट्र, भारत येथील
+              - emphasis [ref=f2e582]: गजानन महाराज
+              - text: हे दत्तात्रेय परंपरा (संप्रदाया)चे भारतीय गुरू होते त्यांचा जन्म कधी झाला हे माहित नाही, परंतु ते पहिल्यांदा त्यांच्या तरुण वयात म्हणजे वयाच्या ३० व्या वर्षी ...
+            - link "Read more" [ref=f2e583] [cursor=pointer]:
+              - /url: https://mr.wikipedia.org/wiki/%E0%A4%97%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8_%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C#:~:text=%E0%A4%97%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C,%E0%A4%AB%E0%A5%87%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%20%E0%A5%A8%E0%A5%A9%20%E0%A4%A4%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A5%87%E0%A4%B2%E0%A4%BE%20%E0%A4%A6%E0%A4%BF%E0%A4%B8%E0%A4%B2%E0%A5%87.
+        - generic [ref=f2e587]:
+          - generic [ref=f2e590]:
+            - link "Shri Gajanan Maharaj Sansthan, Buldana Tripadvisor https://www.tripadvisor.in › ... › Places to visit in Buldana" [ref=f2e592] [cursor=pointer]:
+              - /url: https://www.tripadvisor.in/Attraction_Review-g3207694-d2648983-Reviews-Shri_Gajanan_Maharaj_Sansthan-Buldana_Buldhana_District_Maharashtra.html
+              - heading "Shri Gajanan Maharaj Sansthan, Buldana" [level=3] [ref=f2e593]
+              - generic [ref=f2e599]:
+                - generic [ref=f2e601]: Tripadvisor
+                - generic [ref=f2e603]: https://www.tripadvisor.in › ... › Places to visit in Buldana
+            - button "About this result" [ref=f2e606] [cursor=pointer]:
+              - img [ref=f2e609]
+          - generic [ref=f2e612]:
+            - generic [ref=f2e613]:
+              - text: To visit & get blessing from
+              - emphasis [ref=f2e614]: Gajanan Maharaj temple at Shegaon
+              - text: is very much satisfying experience. There is huge divine power & to become part of it.
+            - link "Read more" [ref=f2e615] [cursor=pointer]:
+              - /url: https://www.tripadvisor.in/Attraction_Review-g3207694-d2648983-Reviews-Shri_Gajanan_Maharaj_Sansthan-Buldana_Buldhana_District_Maharashtra.html#:~:text=To%20visit%20%26%20get%20blessing,become%20part%20of%20infinite%20positive.
+        - generic [ref=f2e619]:
+          - generic [ref=f2e622]:
+            - link "Driving directions to Shree Gajanan Maharaj Sansthan ... Waze https://www.waze.com › live-map › shree-gajanan-mahar..." [ref=f2e624] [cursor=pointer]:
+              - /url: https://www.waze.com/live-map/directions/shree-gajanan-maharaj-sansthan-shegaon?to=place.w.50266320.502663199.16581774
+              - heading "Driving directions to Shree Gajanan Maharaj Sansthan ..." [level=3] [ref=f2e625]
+              - generic [ref=f2e631]:
+                - generic [ref=f2e633]: Waze
+                - generic [ref=f2e635]: https://www.waze.com › live-map › shree-gajanan-mahar...
+            - button "About this result" [ref=f2e638] [cursor=pointer]:
+              - img [ref=f2e641]
+          - generic [ref=f2e644]:
+            - generic [ref=f2e645]:
+              - emphasis [ref=f2e646]: Shree Gajanan Maharaj Sansthan
+              - text: . Shegaon, Maharashtra, India. Open in Waze. 072652 52018 · gajananmaharaj.org/sgmsenglish/samadhimandir.htm. Closed now.
+            - link "Read more" [ref=f2e647] [cursor=pointer]:
+              - /url: https://www.waze.com/live-map/directions/shree-gajanan-maharaj-sansthan-shegaon?to=place.w.50266320.502663199.16581774#:~:text=Shree%20Gajanan%20Maharaj%20Sansthan,072652%2052018
+      - generic [ref=f2e649]:
+        - generic [ref=f2e654]:
+          - heading "People also search for" [level=2] [ref=f2e656]
+          - generic [ref=f2e658]:
+            - generic [ref=f2e659]:
+              - link "Gajanan Maharaj Sansthan Shegaon online room booking" [ref=f2e663] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Gajanan+Maharaj+Sansthan+Shegaon+online+room+booking&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAgtEAE
+                - generic [ref=f2e664]:
+                  - generic [ref=f2e669]: Gajanan Maharaj Sansthan Shegaon online room booking
+                  - img [ref=f2e673]
+              - link "Shri Gajanan Maharaj Sansthan Shegaon Tickets" [ref=f2e678] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shri+Gajanan+Maharaj+Sansthan+Shegaon+Tickets&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAhGEAE
+                - generic [ref=f2e679]:
+                  - generic [ref=f2e684]: Shri Gajanan Maharaj Sansthan Shegaon Tickets
+                  - img [ref=f2e688]
+              - link "Shegaon gajanan maharaj Donation" [ref=f2e693] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shegaon+gajanan+maharaj+Donation&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAhFEAE
+                - generic [ref=f2e694]:
+                  - generic [ref=f2e699]: Shegaon gajanan maharaj Donation
+                  - img [ref=f2e703]
+              - link "Shri Gajanan Maharaj Sansthan, Shegaon online Donation" [ref=f2e708] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shri+Gajanan+Maharaj+Sansthan,+Shegaon+online+Donation&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAg-EAE
+                - generic [ref=f2e709]:
+                  - generic [ref=f2e714]: Shri Gajanan Maharaj Sansthan, Shegaon online Donation
+                  - img [ref=f2e718]
+            - generic [ref=f2e720]:
+              - link "Shri Gajanan Maharaj Sansthan Shegaon photos" [ref=f2e724] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shri+Gajanan+Maharaj+Sansthan+Shegaon+photos&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAg3EAE
+                - generic [ref=f2e725]:
+                  - generic [ref=f2e730]: Shri Gajanan Maharaj Sansthan Shegaon photos
+                  - img [ref=f2e734]
+              - link "Shegaon Gajanan Maharaj Bhakt Niwas Contact Number" [ref=f2e739] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shegaon+Gajanan+Maharaj+Bhakt+Niwas+Contact+Number&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAg2EAE
+                - generic [ref=f2e740]:
+                  - generic [ref=f2e745]: Shegaon Gajanan Maharaj Bhakt Niwas Contact Number
+                  - img [ref=f2e749]
+              - link "Shri gajanan maharaj sansthan shegaon directory" [ref=f2e754] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shri+gajanan+maharaj+sansthan+shegaon+directory&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAg1EAE
+                - generic [ref=f2e755]:
+                  - generic [ref=f2e760]: Shri gajanan maharaj sansthan shegaon directory
+                  - img [ref=f2e764]
+              - link "Shree Gajanan Maharaj Sansthan" [ref=f2e769] [cursor=pointer]:
+                - /url: /search?sca_esv=daab60778bf84638&q=Shree+Gajanan+Maharaj+Sansthan&sa=X&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ1QJ6BAgyEAE
+                - generic [ref=f2e770]:
+                  - generic [ref=f2e775]: Shree Gajanan Maharaj Sansthan
+                  - img [ref=f2e779]
+        - navigation [ref=f2e781]:
+          - heading "Page navigation" [level=1] [ref=f2e782]
+          - text: "1"
+          - link "Page 2" [ref=f2e785] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=10&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAE
+            - text: "2"
+          - link "Page 3" [ref=f2e787] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=20&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAG
+            - text: "3"
+          - link "Page 4" [ref=f2e789] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=30&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAI
+            - text: "4"
+          - link "Page 5" [ref=f2e791] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=40&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAK
+            - text: "5"
+          - link "Page 6" [ref=f2e793] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=50&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAM
+            - text: "6"
+          - link "Page 7" [ref=f2e795] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=60&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAO
+            - text: "7"
+          - link "Page 8" [ref=f2e797] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=70&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAQ
+            - text: "8"
+          - link "Page 9" [ref=f2e799] [cursor=pointer]:
+            - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=80&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8tMDegQIKRAS
+            - text: "9"
+          - heading "Next" [level=2] [ref=f2e801]:
+            - link "Next" [ref=f2e802] [cursor=pointer]:
+              - /url: /search?q=gajanan+maharaj+sansthan+shegaon&sca_esv=daab60778bf84638&ei=Ed9EaqHBOdSnqtsPo8GQsAc&start=10&sa=N&sstk=AU9db-DtAGxujLs8QyKOhZ9BCAQ05yhWakyebjSSOZL3zHdU0Jn4XKIp41INe4nygPgoMzIv5f-RHSqnD_oXo1n08UkEwfeHhEIWbw&ved=2ahUKEwjhjZ6mlrGVAxXUk2oFHaMgBHYQ8NMDegQIKRAU
+              - generic [ref=f2e804]: Next
+      - navigation
+    - contentinfo [ref=f2e805]:
+      - heading "Footer links" [level=1] [ref=f2e806]
+      - generic [ref=f2e810]:
+        - generic [ref=f2e812]:
+          - text: India
+          - generic [ref=f2e814]:
+            - button "Panchkula, Haryana - From your IP address" [ref=f2e816] [cursor=pointer]:
+              - generic [ref=f2e817]: Panchkula, Haryana
+              - generic [ref=f2e819]:
+                - text: "-"
+                - generic [ref=f2e820]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f2e822] [cursor=pointer]: Update location
+        - generic [ref=f2e825]:
+          - link "Help" [ref=f2e826] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f2e827] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f2e828] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f2e829] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

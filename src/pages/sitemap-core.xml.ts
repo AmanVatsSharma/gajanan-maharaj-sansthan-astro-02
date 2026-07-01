@@ -52,6 +52,8 @@ const STATIC_PAGE_LASTMOD: Record<string, string> = {
   "/omkareshwar-bhakta-niwas":    "2026-06-04",
   "/pandharpur-room-booking":     "2026-06-04",
   "/trimbakeshwar-bhakt-niwas":   "2026-06-04",
+  "/trimbakeshwar-jyotirlinga":   "2026-07-01",
+  "/omkareshwar-jyotirlinga":     "2026-07-01",
 };
 
 function urlEntry(
@@ -89,6 +91,8 @@ export const GET: APIRoute = async () => {
     { path: "/omkareshwar-bhakta-niwas",   changefreq: "monthly", priority: "0.85" },
     { path: "/pandharpur-room-booking",    changefreq: "monthly", priority: "0.85" },
     { path: "/trimbakeshwar-bhakt-niwas",  changefreq: "monthly", priority: "0.85" },
+    { path: "/trimbakeshwar-jyotirlinga",  changefreq: "weekly",  priority: "0.9" },
+    { path: "/omkareshwar-jyotirlinga",    changefreq: "weekly",  priority: "0.9" },
   ];
 
   for (const p of staticPages) {

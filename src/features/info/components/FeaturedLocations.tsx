@@ -20,18 +20,18 @@ const locations: Location[] = [
     image: "/images/shegaon-temple.jpg",
   },
   {
-    id: "pandharpur-math",
-    name: "Shri Gajanan Maharaj Sansthan",
-    city: "Pandharpur, Maharashtra",
-    description: "A sacred complex near the holy city of Pandharpur for devotees visiting Lord Vitthal.",
-    image: "/images/pandharpur.jpg",
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Jyotirlinga",
+    city: "Trimbakeshwar, Maharashtra",
+    description: "One of the 12 sacred Jyotirlingas. Bhakta Niwas near the temple for pilgrim comfort.",
+    image: "/images/trimbakeshwar.jpg",
   },
   {
-    id: "trimbakeshwar",
-    name: "Shri Gajanan Maharaj Sansthan",
-    city: "Trimbakeshwar, Maharashtra",
-    description: "Peaceful accommodation near the sacred Trimbakeshwar Jyotirlinga temple.",
-    image: "/images/trimbakeshwar.jpg",
+    id: "omkareshwar",
+    name: "Omkareshwar Jyotirlinga",
+    city: "Omkareshwar, Madhya Pradesh",
+    description: "Sacred Jyotirlinga on the Narmada river island. Bhakta Niwas for pilgrims.",
+    image: "/images/omkareshwar.jpg",
   },
 ];
 
@@ -63,7 +63,13 @@ export function FeaturedLocations() {
           {locations.map((location, index) => (
             <motion.a
               key={location.id}
-              href={`/locations/${location.id}`}
+              href={
+                location.id === "trimbakeshwar"
+                  ? "/trimbakeshwar-jyotirlinga"
+                  : location.id === "omkareshwar"
+                  ? "/omkareshwar-jyotirlinga"
+                  : `/locations/${location.id}`
+              }
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

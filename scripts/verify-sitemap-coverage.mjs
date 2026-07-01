@@ -19,7 +19,7 @@ import {
 const BLOG_ROOT = path.join(process.cwd(), "content/blog");
 const BLOG_POSTS_PER_PAGE = 24;
 /** Must match staticPaths.length in src/pages/sitemap.xml.ts */
-const STATIC_ROUTE_COUNT = 16;
+const STATIC_ROUTE_COUNT = 18;
 const LOCATION_ROUTE_COUNT = 6;
 
 function getSitemapUrls(sitemapPath) {
