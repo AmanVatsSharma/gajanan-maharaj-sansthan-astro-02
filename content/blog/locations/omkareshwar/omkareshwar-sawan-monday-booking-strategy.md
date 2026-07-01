@@ -34,7 +34,7 @@ faqs:
   - question: "Does the Sansthan run any special Sawan aarti at Omkareshwar?"
     answer: "Yes. The Sansthan runs a special Rudrabhishek aarti in the main Omkareshwar temple at 6:30 AM on every Sawan Monday, with the 11:30 PM Shiv aarti the night before. Both aartis are open to all registered Bhakta Niwas guests; the 11:30 PM Shiv aarti is also streamed live on the Sansthan's YouTube channel for devotees who cannot be there in person."
   - question: "Can I get a refund if Sawan Monday plans fall through?"
-    answer: "Yes. Cancellations made 7+ days before a Sawan Monday get a full refund minus a 5% processing fee. Cancellations 3-7 days out get a 50% refund. Inside 72 hours, the advance is non-refundable, but the room can be transferred to another name once for free. The Sansthan desk at 7521063034 handles all Sawan-specific exceptions case by case."
+    answer: "Yes. Cancellations made 7+ days before a Sawan Monday get a full refund minus a 5% processing fee. Cancellations 3-7 days out get a 50% refund. Inside 72 hours, the advance is non-refundable, but the room can be transferred to another name once for free. The Sansthan desk at 9661263850 handles all Sawan-specific exceptions case by case."
   - question: "Is there a separate darshan pass for Sawan Monday at Omkareshwar?"
     answer: "There is no separate pass. Registered Bhakta Niwas guests enter via the dedicated Sansthan line (gate 2, on the eastern approach), which cuts the standard public queue by roughly 60% on Sawan Mondays. The pass is the room key-tag — keep it visible when approaching the temple."
 ---
@@ -63,7 +63,7 @@ The Sansthan office opens the Sawan Monday booking window 30 days before each Mo
 - 5 July 2026 (9 AM) — for the 4 August Sawan Monday
 - 12 July 2026 (9 AM) — for the 11 August Sawan Monday
 
-The online portal and the WhatsApp desk open at the same time. The phone desk at 7521063034 takes a small number of same-day walk-in calls (about 30 a day in Sawan), reserved for devotees travelling from more than 500 km.
+The online portal and the WhatsApp desk open at the same time. The phone desk at 9661263850 takes a small number of same-day walk-in calls (about 30 a day in Sawan), reserved for devotees travelling from more than 500 km.
 
 **What we saw in 2025:** the first Sawan Monday 2025 (15 July 2025) filled in 96 hours. The last Sawan Monday 2025 (12 August 2025) filled in 38 hours. Plan for the first Monday to be bookable, the last Monday to be a fight.
 

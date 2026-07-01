@@ -105,7 +105,7 @@ Auto-rickshaw drivers on Omkareshwar are not metered. There are fixed rates by r
 - Bridge drop to Omkareshwar Road railway station: shared ₹50 per person, private ₹400
 - Bridge drop to Mortakka town: shared ₹30 per person, private ₹250-300
 
-**A note on negotiation:** drivers will sometimes quote double, especially during Sawan Mondays and Karthik Purnima when the island is packed. We tell our guests to ask for the "Bhakta Niwas rate" — drivers know what that means and will quote honestly. If a quote still seems high, call our desk at 7521063034 and the duty manager will sort it out within five minutes.
+**A note on negotiation:** drivers will sometimes quote double, especially during Sawan Mondays and Karthik Purnima when the island is packed. We tell our guests to ask for the "Bhakta Niwas rate" — drivers know what that means and will quote honestly. If a quote still seems high, call our desk at 9661263850 and the duty manager will sort it out within five minutes.
 
 ## Where cars cannot go
 

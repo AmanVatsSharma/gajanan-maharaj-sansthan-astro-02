@@ -31,7 +31,7 @@ faqs:
   - question: "Which is the nearest railway station to Omkareshwar Bhakta Niwas?"
     answer: "Omkareshwar Road (OMR) on the Western Railway Ratlam–Khandwa section is the closest at roughly 12 km from the temple and the Bhakta Niwas. Khandwa Junction (KNW) is the main junction about 75 km away with more long-distance trains. Most of our office's 2026 bookings come via Khandwa plus a reserved taxi the rest of the way."
   - question: "Is there an airport near Omkareshwar?"
-    answer: "Devi Ahilya Bai Holkar Airport at Indore (IDR) is the closest commercial airport, about 80 km from the Bhakta Niwas. There is no airport at Khandwa. We book airport pickups through the Sansthan desk at 7521063034 — typical 2026 sedan fare is around ₹2,200 and SUV around ₹3,400, paid directly to the driver."
+    answer: "Devi Ahilya Bai Holkar Airport at Indore (IDR) is the closest commercial airport, about 80 km from the Bhakta Niwas. There is no airport at Khandwa. We book airport pickups through the Sansthan desk at 9661263850 — typical 2026 sedan fare is around ₹2,200 and SUV around ₹3,400, paid directly to the driver."
   - question: "Can I drive my own car to Omkareshwar Bhakta Niwas?"
     answer: "Yes. The Bhakta Niwas has a free parking area behind Block 2 for cars, and a separate two-wheeler stand near the entrance gate. Vehicles are not allowed on the Omkareshwar island itself — you park at the Bhakta Niwas and use the cable car or the bridge walk to reach the temple. Carry your driving licence and registration; the Khandwa district entry check post can ask."
   - question: "How long does the Mumbai to Omkareshwar road trip take in 2026?"
@@ -53,7 +53,7 @@ The honest answer is that Omkareshwar does not sit on a major trunk line. The tw
 | Omkareshwar Road | OMR | ~12 km | Mostly MEMU and a handful of express stops |
 | Khandwa Junction | KNW | ~75 km | All major long-distance trains |
 
-For most devotees coming from outside MP, **Khandwa is the realistic station.** From Khandwa, our office desk arranges a reserved taxi through the Sansthan contact at 7521063034 — in June 2026 the sedan fare is around ₹1,800 and the SUV fare ₹2,700 to the Bhakta Niwas, paid directly to the driver in cash or by UPI.
+For most devotees coming from outside MP, **Khandwa is the realistic station.** From Khandwa, our office desk arranges a reserved taxi through the Sansthan contact at 9661263850 — in June 2026 the sedan fare is around ₹1,800 and the SUV fare ₹2,700 to the Bhakta Niwas, paid directly to the driver in cash or by UPI.
 
 Train suggestions from major cities (all running in the 2026 summer timetable, please re-check on IRCTC a week before travel):
 
@@ -136,6 +136,6 @@ For the Sansthan address, Bhakta Niwas front-desk hours, and the GPS pin, see th
 
 ---
 
-**Written by the Sansthan Communications Team, reviewed by the Office Manager, Omkareshwar Bhakta Niwas.** Tariffs, train timings, and shared-fare figures are accurate to June 2026 but change — please confirm on IRCTC and with the Sansthan desk at 7521063034 before finalising travel.
+**Written by the Sansthan Communications Team, reviewed by the Office Manager, Omkareshwar Bhakta Niwas.** Tariffs, train timings, and shared-fare figures are accurate to June 2026 but change — please confirm on IRCTC and with the Sansthan desk at 9661263850 before finalising travel.
 
 For booking queries or to send a message directly to the duty desk, see the [contact page](/contact).

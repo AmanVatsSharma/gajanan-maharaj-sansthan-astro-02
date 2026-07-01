@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PhoneCall } from "lucide-react";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 // New hero with uploaded image background
 const HERO_WITH_NEW_IMAGE = "/hero/new-hero-bg.png";
@@ -61,7 +62,7 @@ export function Hero() {
             size="lg"
             className="bg-brand-saffron hover:bg-brand-saffron/90 text-white border-0 h-14 px-10 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
           >
-            <a href="tel:+917521063034">
+            <a href={`tel:${CONTACT_DETAILS.booking.mobile}`}>
               <PhoneCall className="h-5 w-5 mr-2" />
               Book Accommodation
             </a>

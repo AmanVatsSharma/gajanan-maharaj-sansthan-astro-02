@@ -40,7 +40,7 @@ faqs:
     answer: "Five-day guests add a side trip to Ujjain (Mahakaleshwar) or a quieter day at the Bhakta Niwas doing japa and reading. Seven-day guests typically do a Narmada ghat circuit at Omkareshwar plus an extended Maheshwar visit. Our office desk can arrange both side trips through the Bhakta Niwas reception."
 ---
 
-Three days is the sweet spot for Omkareshwar, and it is what our office desk recommends to first-time callers more than any other length. This is the actual itinerary we walk families through when they phone us at 7521063034 with a "we have never been, what should we do" question. Everything below is in real 2026 timings and uses the Bhakta Niwas as the home base — which is where our office books you in.
+Three days is the sweet spot for Omkareshwar, and it is what our office desk recommends to first-time callers more than any other length. This is the actual itinerary we walk families through when they phone us at 9661263850 with a "we have never been, what should we do" question. Everything below is in real 2026 timings and uses the Bhakta Niwas as the home base — which is where our office books you in.
 
 A quick note on the year: the festival calendar shifts the timings slightly. **Maha Shivaratri (15 February 2026)**, the **Sawan Mondays (July–August 2026)**, and **Karthik Purnima (early November 2026)** all see special aarti timings — the Bhakta Niwas reception updates the printed slip in every room the day before, and you can also call our desk.
 

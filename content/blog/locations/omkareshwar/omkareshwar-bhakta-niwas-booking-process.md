@@ -31,7 +31,7 @@ faqs:
   - question: "What is the advance payment for Bhakta Niwas Omkareshwar in 2026?"
     answer: "The Sansthan takes a flat ₹300 advance per room at the time of booking, refundable on cancellation up to 7 days before check-in. The room balance is paid at the Bhakta Niwas reception during check-in. Dormitory beds require only ₹100 advance per bed in 2026 because the per-bed tariff is lower."
   - question: "Can I book Omkareshwar Bhakta Niwas by WhatsApp?"
-    answer: "Yes. Send a message to 7521063034 with your name, check-in and check-out dates, number of guests and room type. Our desk replies within four hours during the day and within ten hours overnight, with a UPI deep-link for the ₹300 advance. WhatsApp is the fastest channel for Sawan and Karthik Purnima 2026 when the portal queue is long."
+    answer: "Yes. Send a message to 9661263850 with your name, check-in and check-out dates, number of guests and room type. Our desk replies within four hours during the day and within ten hours overnight, with a UPI deep-link for the ₹300 advance. WhatsApp is the fastest channel for Sawan and Karthik Purnima 2026 when the portal queue is long."
   - question: "How many days before should I book for Maha Shivaratri or Sawan Mondays?"
     answer: "For Maha Shivaratri 2026 (15 February), the Bhakta Niwas is full 30 days in advance and the wait-list opens. For Sawan Mondays in July–August 2026, you should book at least 14 days ahead. For Karthik Purnima in early November 2026, the same 30-day window applies. Walk-ins on these dates are not realistic unless you arrive on a non-Monday."
   - question: "What ID proof do I need at check-in?"
@@ -78,7 +78,7 @@ The Sansthan online portal at `/booking` is what most of our 2026 guests use. Th
 
 ## Channel 2 — WhatsApp (the fastest channel)
 
-For 2026, WhatsApp to **7521063034** is the channel our desk recommends when you need a quick reply or you are travelling. The flow is a single message plus a UPI payment.
+For 2026, WhatsApp to **9661263850** is the channel our desk recommends when you need a quick reply or you are travelling. The flow is a single message plus a UPI payment.
 
 **Template our office suggests** (copy, fill in the blanks, send):
 
@@ -126,7 +126,7 @@ Within 30 minutes of advance payment (online) or 30 minutes of WhatsApp confirma
 2. A WhatsApp message on the same number with the same reference, plus the Bhakta Niwas contact number for any changes
 3. An email with a PDF receipt for the ₹300 advance (this is the document you need for the refund claim if you cancel later)
 
-If any of these three doesn't arrive within an hour, call the Sansthan helpdesk at 7521063034 and quote the UPI transaction ID.
+If any of these three doesn't arrive within an hour, call the Sansthan helpdesk at 9661263850 and quote the UPI transaction ID.
 
 ## Cancellation, refund, and extension — the rules our office follows
 
@@ -139,7 +139,7 @@ If any of these three doesn't arrive within an hour, call the Sansthan helpdesk 
 | Within 72 hours of check-in | Advance forfeited |
 | No-show | Same as within 72 hours; balance refunded |
 
-**Extension.** If you want to stay an extra night, WhatsApp 7521063034 by 10 AM on the day. Extension is subject to availability and the same tariff. The Bhakta Niwas **cannot** guarantee extension during festivals.
+**Extension.** If you want to stay an extra night, WhatsApp 9661263850 by 10 AM on the day. Extension is subject to availability and the same tariff. The Bhakta Niwas **cannot** guarantee extension during festivals.
 
 **Modifying dates.** Date changes are free up to 7 days before check-in and treated as a cancellation + new booking within 7 days. You will pay a fresh ₹300 advance and the original advance is refunded per the timeline above.
 

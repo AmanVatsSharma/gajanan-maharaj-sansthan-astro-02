@@ -32,7 +32,7 @@ faqs:
   - question: "How far is the Bhakta Niwas from the Trimbakeshwar temple?"
     answer: "600 metres south of the main temple gate, a 7-minute walk. The walk is flat, well-lit, and safe at all hours. The Bhakta Niwas runs a free e-rickshaw drop-off and pick-up service (6 AM to 10 PM) for devotees who cannot walk."
   - question: "How far in advance should I book for Mahashivratri 2026 (15 February)?"
-    answer: "6–8 weeks ahead. The Bhakta Niwas books out fully 2 weeks before Mahashivratri. The desk's 2025 waitlist had 47 families by 1 January; the 2026 waitlist is already open. Call the Sansthan desk at 7521063034 to add your name; the waitlist clears in the order the names were added."
+    answer: "6–8 weeks ahead. The Bhakta Niwas books out fully 2 weeks before Mahashivratri. The desk's 2025 waitlist had 47 families by 1 January; the 2026 waitlist is already open. Call the Sansthan desk at 9661263850 to add your name; the waitlist clears in the order the names were added."
 relatedSlugs:
   - "trimbakeshwar-bhakta-niwas-booking-process"
   - "trimbakeshwar-first-time-visitor-guide"

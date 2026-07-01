@@ -35,7 +35,7 @@ faqs:
   - question: "What is the calmest 3-week stretch at Omkareshwar in 2026?"
     answer: "Late November into mid-December. The Sawan rush is over, the post-monsoon humidity is gone, the Narmada is at moderate level, the parikrama path is firm, and the Bhakta Niwas has rooms available with 1–2 weeks' notice. The Diwali-to-Christmas gap is the most reliable 3–4 week calm window on the 2026 calendar."
   - question: "If Bhakta Niwas is full for a festival, where else can a family stay on the island?"
-    answer: "The two private dharamshalas that the office regularly refers families to are Anand Vihar and Visawa. Both are within 1 km of the Omkareshwar temple ghat, both take walk-ins in non-peak weeks, and both need 3–4 weeks' advance booking for Maha Shivaratri and New Year. The office keeps a current rate card and contact list at the front desk; ask the booking desk on 7521063034."
+    answer: "The two private dharamshalas that the office regularly refers families to are Anand Vihar and Visawa. Both are within 1 km of the Omkareshwar temple ghat, both take walk-ins in non-peak weeks, and both need 3–4 weeks' advance booking for Maha Shivaratri and New Year. The office keeps a current rate card and contact list at the front desk; ask the booking desk on 9661263850."
   - question: "Do Sawan Mondays really need a 1–2 week advance booking, or is that overcautious?"
     answer: "It depends on which Monday. The first two Mondays of Sawan (broadly mid-July 2026) are heavier than the later ones, and a Sawan Monday that falls near a weekend can be as busy as a small festival. Our office recommends 1–2 weeks for the first two Sawan Mondays, and 3–5 days for the rest. Dormitory beds are usually available until 48 hours before."
 ---
@@ -117,7 +117,7 @@ The booking desk has a standard process for a family that knows it wants to come
 
 1. Note the festival window (e.g. "Karthik Purnima 2026 week") and the room category.
 2. Hold a tentative reservation for 7 days while the family confirms travel.
-3. Convert the hold to a confirmed booking once the family pays the booking amount through the [online portal](/booking) or the WhatsApp route on 7521063034.
+3. Convert the hold to a confirmed booking once the family pays the booking amount through the [online portal](/booking) or the WhatsApp route on 9661263850.
 
 If the office cannot honour the hold — usually because another family has confirmed in the meantime — the desk will offer the closest available category. The [Bhakta Niwas Online Booking vs WhatsApp guide](/blog/omkareshwar-bhakta-niwas-online-booking-vs-whatsapp) covers which channel to use for which kind of booking.
 

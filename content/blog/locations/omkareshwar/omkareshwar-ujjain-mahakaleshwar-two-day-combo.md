@@ -33,7 +33,7 @@ faqs:
   - question: "How far is Mahakaleshwar Ujjain from Omkareshwar?"
     answer: "The drive from Omkareshwar Bhakta Niwas to Mahakaleshwar Temple in Ujjain is approximately 140 km, taking about 4 hours by car in normal traffic via Sanawad-Indore-Ujjain. The shared-jeep route is roughly the same time but cheaper at ₹350-450 per seat. There is no direct train between the two towns."
   - question: "How do I book the Bhasma Aarti at Mahakaleshwar?"
-    answer: "The Bhasma Aarti at Mahakaleshwar is booked through the Ujjain district temple committee, not the Sansthan. The 2026 booking window opens 60 days before the date and the slots typically fill within 48 hours. The official portal is the Ujjain Smart City portal — the Sansthan desk at 7521063034 will also help you through the booking on request and has a 2026 success rate of about 80% on first try."
+    answer: "The Bhasma Aarti at Mahakaleshwar is booked through the Ujjain district temple committee, not the Sansthan. The 2026 booking window opens 60 days before the date and the slots typically fill within 48 hours. The official portal is the Ujjain Smart City portal — the Sansthan desk at 9661263850 will also help you through the booking on request and has a 2026 success rate of about 80% on first try."
   - question: "Does the Sansthan arrange a Ujjain hotel?"
     answer: "The Sansthan does not run a Bhakta Niwas at Ujjain, but our office desk maintains a short list of three clean, darshan-friendly hotels within 800 metres of Mahakaleshwar temple, all in the ₹1,200-2,400 range for a family room in 2026. We will book these for you as part of your Omkareshwar Bhakta Niwas reservation; you pay the Ujjain hotel directly."
   - question: "What is the cheapest way to do both Jyotirlinga darshans?"
@@ -78,7 +78,7 @@ The reason this combo works is that the temples serve different pilgrimages. Omk
 - 7:30 AM check out
 - 8 AM depart Ujjain — for Indore (75 km, 1.5 hours) or Bhopal (190 km, 4 hours)
 
-The Sansthan office books this itinerary as a single reservation when you call 7521063034. The Ujjain hotel goes on the same confirmation, the Bhasma Aarti slot gets queued for you 60 days out, and the Omkareshwar Bhakta Niwas holds your bags.
+The Sansthan office books this itinerary as a single reservation when you call 9661263850. The Ujjain hotel goes on the same confirmation, the Bhasma Aarti slot gets queued for you 60 days out, and the Omkareshwar Bhakta Niwas holds your bags.
 
 ## Bhasma Aarti booking — the only hard part
 
@@ -93,7 +93,7 @@ The Bhasma Aarti at Mahakaleshwar is the bottleneck. Without a booking, you cann
 
 The 4 AM slot is the original, the one every YouTube video is from. The 6 AM slot is the one our office actually recommends for families — it is the same aarti, it is 25% less crowded, and you do not have to wake a 7-year-old at 2:30 AM.
 
-If the 60-day portal booking fails, the Sansthan desk has a 2026 success rate of about 80% on a back-channel request through the Ujjain temple office. Call the Sansthan desk at 7521063034 a week before your date. There is no extra fee for this, but there is also no guarantee — the desk cannot manufacture slots that do not exist.
+If the 60-day portal booking fails, the Sansthan desk has a 2026 success rate of about 80% on a back-channel request through the Ujjain temple office. Call the Sansthan desk at 9661263850 a week before your date. There is no extra fee for this, but there is also no guarantee — the desk cannot manufacture slots that do not exist.
 
 ## Where to stay in Ujjain
 

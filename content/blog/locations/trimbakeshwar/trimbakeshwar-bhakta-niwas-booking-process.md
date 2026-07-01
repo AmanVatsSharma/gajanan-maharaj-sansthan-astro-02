@@ -24,7 +24,7 @@ locationIds:
   - "trimbakeshwar"
 faqs:
   - question: "How do I book the Sansthan Bhakta Niwas at Trimbakeshwar in 2026?"
-    answer: "Three channels work in 2026: phone call to 7521063034, WhatsApp message to 7521063034, or walk-in at the Bhakta Niwas reception. The Sansthan does not run a third-party online booking portal; the only direct booking channel is the Sansthan desk. The desk confirms by SMS within 30 minutes during business hours (7 AM to 9 PM)."
+    answer: "Three channels work in 2026: phone call to 9661263850, WhatsApp message to 9661263850, or walk-in at the Bhakta Niwas reception. The Sansthan does not run a third-party online booking portal; the only direct booking channel is the Sansthan desk. The desk confirms by SMS within 30 minutes during business hours (7 AM to 9 PM)."
   - question: "Is advance payment required for the Bhakta Niwas booking?"
     answer: "For typical dates, no — pay at check-in. For Mahashivratri week (12–17 Feb 2026), Sawan Mondays (21 Jul, 28 Jul, 4 Aug, 11 Aug 2026), and Kartik Purnima (23 Nov 2026), a 30% advance is required to hold the booking. The advance is refundable up to 14 days before check-in; after that it is non-refundable."
   - question: "What ID proof is required at check-in?"
@@ -47,7 +47,7 @@ relatedSlugs:
 
 The Sansthan Bhakta Niwas at Trimbakeshwar is one of the smaller Bhakta Niwas branches the Sansthan runs (the original is in Shegaon; the others are at Omkareshwar and Pandharpur). The booking process is the same across all four locations — phone, WhatsApp, or walk-in to the Sansthan desk — and the cancellation policy is the same too. This guide walks you through the 2026 process step by step, what to send in your first WhatsApp, when advance payment applies, what ID proof to bring, and how the cancellation window works. For the room types and tariffs, see [Trimbakeshwar Bhakta Niwas Accommodation Guide](/blog/trimbakeshwar-bhakta-niwas-accommodation-guide). For the broader trip planning, see [Trimbakeshwar Best Time to Visit](/blog/trimbakeshwar-best-time-to-visit) and [Trimbakeshwar First Time Visitor Guide](/blog/trimbakeshwar-first-time-visitor-guide).
 
-> **"I called 7521063034 at 8 PM on a Tuesday for a Friday check-in for my parents and me. The desk confirmed a 3 Bed AC within 15 minutes, sent the booking SMS, and asked for our Aadhaar number on arrival. We walked in at 2 PM on Friday, showed the Aadhaar, paid cash, and were in the room by 2:20 PM. The whole thing was easier than booking a hotel."**
+> **"I called 9661263850 at 8 PM on a Tuesday for a Friday check-in for my parents and me. The desk confirmed a 3 Bed AC within 15 minutes, sent the booking SMS, and asked for our Aadhaar number on arrival. We walked in at 2 PM on Friday, showed the Aadhaar, paid cash, and were in the room by 2:20 PM. The whole thing was easier than booking a hotel."**
 > — a Thane resident who booked a 2-night stay for his parents in October 2025
 
 ## The three booking channels in 2026
@@ -56,7 +56,7 @@ The Sansthan Bhakta Niwas does not run a third-party online booking portal (no M
 
 ### Channel 1 — Phone call to the Sansthan desk
 
-**Number:** 7521063034 (this is the same number across all four Sansthan Bhakta Niwas locations)
+**Number:** 9661263850 (this is the same number across all four Sansthan Bhakta Niwas locations)
 **Hours:** 7:00 AM to 9:00 PM, every day
 **Confirmation:** SMS within 30 minutes during business hours; up to 2 hours for calls after 8 PM
 
@@ -64,7 +64,7 @@ The phone channel is the fastest for typical dates and for asking detailed quest
 
 ### Channel 2 — WhatsApp message to the Sansthan desk
 
-**Number:** 7521063034 (WhatsApp-enabled)
+**Number:** 9661263850 (WhatsApp-enabled)
 **Hours:** Messages are read 7:00 AM to 9:00 PM; replies within 30 minutes during business hours
 **Confirmation:** SMS within 30 minutes once the desk confirms availability
 
@@ -165,7 +165,7 @@ The cancellation policy is consistent across all four Sansthan Bhakta Niwas loca
 The Sansthan Bhakta Niwas accepts extensions subject to availability. The extension is at the same per-day tariff; no extension fee.
 
 **How to request an extension:**
-1. Tell the front desk at breakfast on the day you want to extend (or call 7521063034).
+1. Tell the front desk at breakfast on the day you want to extend (or call 9661263850).
 2. The desk will check availability for the extra night(s).
 3. If available, the extension is added to your booking and the additional tariff is paid at the standard checkout.
 
@@ -173,7 +173,7 @@ The Sansthan Bhakta Niwas accepts extensions subject to availability. The extens
 
 ## Frequently asked questions
 
-**What is the Sansthan desk WhatsApp number?** 7521063034 (same as the phone number). WhatsApp-enabled.
+**What is the Sansthan desk WhatsApp number?** 9661263850 (same as the phone number). WhatsApp-enabled.
 
 **Can I book for someone else?** Yes. The booking can be in your name for a different guest. The check-in ID must match the primary guest staying at the Bhakta Niwas.
 

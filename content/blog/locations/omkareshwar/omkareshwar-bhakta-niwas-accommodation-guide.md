@@ -31,7 +31,7 @@ faqs:
   - question: "Is there a family suite at Omkareshwar Bhakta Niwas?"
     answer: "Yes — six 2-room family suites in the 2026 inventory (₹4,150 per night all-inclusive), with a double-bed room, a second room with two singles, a shared bath, and a small balcony. Best for grandparents + parents + kids combinations."
   - question: "What is the check-in time at the Bhakta Niwas?"
-    answer: "Standard check-in is 12:00 PM to 8:00 PM. For very early or very late arrivals, notify the Sansthan office in advance on 7521063034 — the front desk holds the room and the gate for confirmed bookings."
+    answer: "Standard check-in is 12:00 PM to 8:00 PM. For very early or very late arrivals, notify the Sansthan office in advance on 9661263850 — the front desk holds the room and the gate for confirmed bookings."
   - question: "Is the Bhakta Niwas air-conditioned?"
     answer: "About 25 of the 85 rooms are AC (the 3-Bed AC, 4-Bed AC, and Premium 4-Bed categories). The 3-Bed AC runs reliably on inverter backup during power cuts and is the right pick for April–July and Sawan visits."
 relatedSlugs:

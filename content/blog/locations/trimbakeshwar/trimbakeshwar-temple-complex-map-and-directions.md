@@ -123,7 +123,7 @@ The south gate opens only during Mahashivratri (12–21 February 2026), Sawan Mo
 
 ## The 600-metre Bhakta Niwas walk
 
-The Sansthan Bhakta Niwas is 600 m south of the main temple gate, a 7-minute walk. The walk is flat, well-lit, and safe at all hours. For devotees who cannot walk, the Bhakta Niwas runs a free drop-off and pick-up e-rickshaw (6 AM to 10 PM) — call 7521063034 from the gate.
+The Sansthan Bhakta Niwas is 600 m south of the main temple gate, a 7-minute walk. The walk is flat, well-lit, and safe at all hours. For devotees who cannot walk, the Bhakta Niwas runs a free drop-off and pick-up e-rickshaw (6 AM to 10 PM) — call 9661263850 from the gate.
 
 **Walking directions from the Bhakta Niwas to the temple:**
 1. Exit the Bhakta Niwas main gate, turn right.

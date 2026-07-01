@@ -33,7 +33,7 @@ relatedSlugs:
   - "omkareshwar-prasad-and-darshan-etiquette"
 faqs:
   - question: "Is Omkareshwar safe for first-time visitors?"
-    answer: "Yes — the island is compact, the Sansthan Bhakta Niwas is gated, and the Sansthan office maintains a lost-and-found desk near the main entrance. Mobile coverage (Jio, Airtel) is good on the island, patchy at the south ghat and on the boats. For any concerns, call the Sansthan office at 7521063034."
+    answer: "Yes — the island is compact, the Sansthan Bhakta Niwas is gated, and the Sansthan office maintains a lost-and-found desk near the main entrance. Mobile coverage (Jio, Airtel) is good on the island, patchy at the south ghat and on the boats. For any concerns, call the Sansthan office at 9661263850."
   - question: "Do I need to know Hindi or Marathi to visit?"
     answer: "Hindi is enough for most interactions. The Sansthan front desk handles Hindi and Marathi fluently, English is functional but not always polished, and the temple itself is a Marathi-language environment. If you speak Tamil, Telugu, or Kannada, ask the WhatsApp booking desk to add a volunteer translator to your booking thread."
   - question: "What should a first-timer not miss at Omkareshwar?"

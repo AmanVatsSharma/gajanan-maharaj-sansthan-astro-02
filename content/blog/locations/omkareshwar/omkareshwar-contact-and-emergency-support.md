@@ -29,13 +29,13 @@ relatedSlugs:
   - "omkareshwar-prasad-and-darshan-etiquette"
 faqs:
   - question: "What is the main Sansthan number for Omkareshwar Bhakta Niwas?"
-    answer: "The main Sansthan number for Omkareshwar Bhakta Niwas is 7521063034. This line is answered 24×7 by the duty manager — it is the same number for bookings, current-stay issues, medical escalation, and after-hours emergencies."
+    answer: "The main Sansthan number for Omkareshwar Bhakta Niwas is 9661263850. This line is answered 24×7 by the duty manager — it is the same number for bookings, current-stay issues, medical escalation, and after-hours emergencies."
   - question: "Which hospital is closest to Omkareshwar temple?"
     answer: "The closest multi-specialty hospital is the District Hospital Khandwa (phone 0733-2222200), about 35 km from the island. For faster access, the Sansthan's first-aid team will arrange the Omkareshwar CHC (Community Health Centre, 07280-271235), which is roughly 3 km across the bridge in Mortakka-side."
   - question: "What ID proof do I need at Omkareshwar Bhakta Niwas check-in?"
     answer: "Every adult needs a government-issued photo ID — Aadhaar card, passport, driving licence, voter ID, or PAN. Children should be on the same document as a parent, or carry their Aadhaar card. Originals are inspected at the desk; we keep a photocopy, not the original."
   - question: "What should I do if my child goes missing at Omkareshwar?"
-    answer: "Call our 24×7 desk at 7521063034 immediately. We activate a three-step protocol: PA announcement across the temple complex and Bhakta Niwas, escort-level check at all three bridge exits, and coordination with the Khandwa police tourist helpline 100. Most lost children are reunited within 20 minutes."
+    answer: "Call our 24×7 desk at 9661263850 immediately. We activate a three-step protocol: PA announcement across the temple complex and Bhakta Niwas, escort-level check at all three bridge exits, and coordination with the Khandwa police tourist helpline 100. Most lost children are reunited within 20 minutes."
   - question: "Is there ambulance service on Omkareshwar island?"
     answer: "There is no full ambulance service on the island itself. Our front desk has a first-aid vehicle (Bolero stretcher) that handles the bridge-to-hospital transfer. For serious cases we dispatch 108 (Madhya Pradesh government ambulance), which usually reaches the ghat within 15-20 minutes."
 ---
@@ -48,13 +48,13 @@ Below is the full contact matrix we use internally, written for devotees instead
 
 ## The single number that handles almost everything
 
-**Shri Gajanan Maharaj Sansthan — Omkareshwar Bhakta Niwas duty desk: 7521063034**
+**Shri Gajanan Maharaj Sansthan — Omkareshwar Bhakta Niwas duty desk: 9661263850**
 
 This number is the desk in Shegaon, the booking line, the after-hours emergency line, the WhatsApp business number, and the escalation point for both Omkareshwar and Shegaon. It is staffed 24×7 — three shifts, with the duty manager reachable at any hour. We update the on-call roster every Monday morning and pin it at the Bhakta Niwas front desk so our own team never has to ask "who is on tonight?"
 
 If you remember nothing else from this article, remember that number.
 
-> "We were in Ujjain when my father-in-law's sugar dropped at Omkareshwar around midnight. One call to 7521063034, and they had an auto at our hotel, a glucose kit waiting at the desk, and the CHC on standby. He was stable by 2 a.m." — Sangeeta Joshi, Indore, 4 family members, November 2025
+> "We were in Ujjain when my father-in-law's sugar dropped at Omkareshwar around midnight. One call to 9661263850, and they had an auto at our hotel, a glucose kit waiting at the desk, and the CHC on standby. He was stable by 2 a.m." — Sangeeta Joshi, Indore, 4 family members, November 2025
 
 ## Numbers by situation
 
@@ -62,7 +62,7 @@ We organize contacts by the moment a devotee actually needs them. Print this tab
 
 | Situation | Number / Channel | When it is answered | Notes |
 |---|---|---|---|
-| Sansthan duty desk (any issue) | 7521063034 | 24×7 | Main line. WhatsApp also active. |
+| Sansthan duty desk (any issue) | 9661263850 | 24×7 | Main line. WhatsApp also active. |
 | Bhakta Niwas front desk (current stay) | 07280-271300 | 6 a.m. – 11 p.m. | Direct on-site line at the property. |
 | Temple office (darshan, puja) | 07280-271234 | 5 a.m. – 10 p.m. | For puja bookings, vip pass queries. |
 | Khandwa District Police | 100 / 0733-2222233 | 24×7 | Use 100 for anything urgent. |
@@ -82,7 +82,7 @@ We re-verify every number on this list on the first Monday of each month. The ve
 
 This is the situation the Bhopal pilgrim described, so we walk through it step by step.
 
-1. **Call our desk first — 7521063034.** Do not try to find an auto at 1 a.m. The duty manager will dispatch our first-aid Bolero stretcher vehicle to your hotel or to the queue within 8-10 minutes.
+1. **Call our desk first — 9661263850.** Do not try to find an auto at 1 a.m. The duty manager will dispatch our first-aid Bolero stretcher vehicle to your hotel or to the queue within 8-10 minutes.
 2. We will call **108 ambulance** simultaneously if symptoms suggest cardiac, stroke, severe asthma, or trauma. We tell them to meet at the ghat end of the bridge — that is the closest accessible point for an ambulance.
 3. We will escort you across the bridge to **Omkareshwar CHC (07280-271235)** for stabilization. The CHC has oxygen, IV fluids, and a duty MO. They handle roughly 80% of night emergencies — dehydration, BP spikes, sugar crashes, anxiety episodes.
 4. If the CHC doctor advises referral, we arrange a private vehicle (we keep two Maruti Ertiga cars on retainer for exactly this) to **District Hospital Khandwa**, 35 km away, usually reached in 50 minutes.
@@ -94,7 +94,7 @@ We have a written MOU with the CHC and a verbal one with District Hospital. They
 
 This is the second-most-common emergency call our desk receives, especially during weekends in Sawan (July-August) and the school Diwali break in November.
 
-**Call 7521063034 immediately.** We activate a fixed protocol:
+**Call 9661263850 immediately.** We activate a fixed protocol:
 
 - A PA announcement goes out across the temple complex, the Bhakta Niwas reception, and the ghat in three languages (Hindi, English, Marathi).
 - The duty manager checks all three bridge exits and instructs security not to allow any unaccompanied minor to leave the island.
@@ -136,7 +136,7 @@ For most situations, our desk is the right first call. Escalate directly to the 
 
 - **A crime in progress or threat to life:** dial 100 first, then call our desk. We will send help either way.
 - **A medical emergency where the patient cannot wait 10 minutes:** dial 108 directly. We will still want to hear from you — we will send someone to the ghat to receive the ambulance.
-- **A dispute involving Sansthan staff:** call 7521063034 and ask for the Office Manager. We have a written complaints register at the desk; everything written there gets reviewed by the Shegaon head office within 48 hours.
+- **A dispute involving Sansthan staff:** call 9661263850 and ask for the Office Manager. We have a written complaints register at the desk; everything written there gets reviewed by the Shegaon head office within 48 hours.
 - **A lost document (passport, wallet):** contact Tourist Police Khandwa (0733-2222299) and file a complaint. We can help coordinate but cannot officially recover lost documents.
 
 ## How we run the 24×7 desk
@@ -149,7 +149,7 @@ We do not use a chatbot for after-hours calls. Every number on this page reaches
 
 Save this to your phone's notes app, alongside your booking confirmation.
 
-- [ ] Sansthan duty desk saved as "Omkareshwar Help": **7521063034**
+- [ ] Sansthan duty desk saved as "Omkareshwar Help": **9661263850**
 - [ ] Bhakta Niwas front desk saved: 07280-271300
 - [ ] Khandwa police saved: 100
 - [ ] Ambulance saved: 108
