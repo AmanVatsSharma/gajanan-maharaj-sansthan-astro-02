@@ -1,0 +1,321 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Places to Visit Near Omkareshwar — Top Attractions & Nearby Temples 2026",
+  description:
+    "Top places to visit near Omkareshwar: Ujjain Mahakaleshwar, Indore, Maheshwar, Mandhata fort, Narmada ghats, Siddhnath, Mai Ki Birsa, Khandwa, and a complete guide to nearby attractions around the Omkareshwar Jyotirlinga.",
+  keywords: [
+    "places to visit near omkareshwar",
+    "omkareshwar nearby attractions",
+    "omkareshwar nearby temples",
+    "omkareshwar mandhata fort",
+    "omkareshwar maheshwar",
+    "ujjain from omkareshwar",
+    "indore from omkareshwar",
+    "omkareshwar weekend trip",
+    "omkareshwar sightseeing",
+    "omkareshwar nearby places",
+    "khandwa from omkareshwar",
+    "omkareshwar tourism",
+    "omkareshwar places to see",
+    "omkareshwar weekend getaway",
+  ],
+  path: "/omkareshwar-places-to-visit",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva on the Narmada. Discover nearby attractions and places to visit around Omkareshwar.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const places = [
+  {
+    name: "Mamleshwar Temple",
+    distance: "1 km (eastern bank)",
+    time: "5 min by bridge",
+    category: "Temple",
+    description: "Ancient Shiva temple on the eastern bank of the Narmada. One of the 12 Jyotirlingas per certain traditions. Connected by the Omkareshwar Bridge. The most essential companion visit to Omkareshwar — most pilgrims visit both temples in one day.",
+  },
+  {
+    name: "Ujjain Mahakaleshwar Jyotirlinga",
+    distance: "135 km",
+    time: "3.5 hrs by car",
+    category: "Jyotirlinga",
+    description: "The Mahakaleshwar Jyotirlinga in Ujjain is one of the most revered Shiva temples in India and the only one of the 12 Jyotirlingas in the south of India. It is the most popular side trip from Omkareshwar — thousands of pilgrims combine both in a 2-day central India pilgrimage. Ujjain also hosts the famous Kumbh Mela every 12 years (next in 2028).",
+  },
+  {
+    name: "Narmada Ghats &amp; Sunset Point",
+    distance: "On the island",
+    time: "5 min walk",
+    category: "Scenic",
+    description: "The sacred ghats along the Narmada River around Omkareshwar island offer some of the most beautiful sunset views in Madhya Pradesh. Walk along the ghats, sit by the river, watch the evening aarti, and release a floating diya. The sunset point near the southern ghats provides a panoramic view of the Narmada with the Om-shaped island on one side and the surrounding hills on the other.",
+  },
+  {
+    name: "Mandhata Fort (Omkar Parvat)",
+    distance: "2 km from temple",
+    time: "30 min climb",
+    category: "Historical",
+    description: "Ancient fort ruins on the hills of Omkareshwar island, associated with King Mandhata of the Ikshvaku dynasty. The fort offers panoramic views of the Narmada River and the surrounding countryside. The climb takes approximately 30 minutes. Best visited in the early morning before it gets hot. The fort connects deeply with the Omkareshwar mythology — King Mandhata is said to have built this fort and performed penance here.",
+  },
+  {
+    name: "Siddhnath Temple",
+    distance: "On the island",
+    time: "2 km walk from Omkareshwar",
+    category: "Temple",
+    description: "Dedicated to Lord Siddhanath (a form of Shiva/Bhairava), this ancient temple is one of the five temples on the Narmada Parikrama route. References in Puranic literature. Known for its peaceful atmosphere and ancient stone architecture. Included in the island parikrama walk.",
+  },
+  {
+    name: "Mai Ki Birsa",
+    distance: "On the island",
+    time: "1.5 km walk",
+    category: "Temple",
+    description: "A sacred mother goddess shrine on the northern side of the Omkareshwar island. Devotees offer prayers here before completing the parikrama. Known for its serene atmosphere and panoramic Narmada views. Less crowded than the main temples, making it ideal for quiet meditation.",
+  },
+  {
+    name: "Indore (Devi Ahilya Bai Holkar Airport &amp; City)",
+    distance: "85 km",
+    time: "2.5 hrs by car",
+    category: "City",
+    description: "Indore is the nearest major city to Omkareshwar, with Devi Ahilya Bai Holkar Airport (IDR) connecting to Mumbai, Delhi, and other cities. Indore city offers the famous Rajwada Palace, Lal Bagh Palace, Sarafa Bazaar night food market, and the iconic Patalpani waterfall (30 km from Indore). Many pilgrims use Indore as their base for the Omkareshwar pilgrimage.",
+  },
+  {
+    name: "Maheshwar",
+    distance: "40 km from Omkareshwar",
+    time: "1 hr by car",
+    category: "Town",
+    description: "The historic town of Maheshwar on the Narmada River, 40 km from Omkareshwar. Famous for its handloom Maheshwari sarees, the Ahilya Fort on the Narmada ghats, and the beautiful Narmada aarti in the evening. The town has deep spiritual significance — it is believed to be where King Mahishmant performed tapasya and where Lord Shiva appeared as Maheshwar. Many pilgrims visit Maheshwar as a half-day side trip from Omkareshwar.",
+  },
+  {
+    name: "Khandwa Junction",
+    distance: "13 km",
+    time: "30 min by car",
+    category: "Town",
+    description: "Khandwa is the nearest railway junction on the Mumbai–Delhi main line. It has the unique distinction of being the meeting point of four railway lines (Mumbai–Delhi, Chennai–Delhi, Allahabad–Mumbai, and Khandwa–Akola-Raipur). For railway pilgrims, Khandwa serves as the transport hub for visiting Omkareshwar. The town also has the popular Indirasagar Dam reservoir nearby.",
+  },
+  {
+    name: "Amaleshwar Temple",
+    distance: "On the island",
+    time: "3 km walk",
+    category: "Temple",
+    description: "One of the 12 Jyotirlingas according to certain traditions. Ancient stone structure with intricate carvings on the Omkareshwar island. Faces east with a small courtyard for meditation before the lingam. Part of the five-temple Narmada Parikrama route.",
+  },
+];
+
+const faqs = [
+  {
+    question: "What is the best nearby place to combine with an Omkareshwar visit?",
+    answer:
+      "The most popular side trip from Omkareshwar is Ujjain Mahakaleshwar Jyotirlinga, 135 km away (3.5 hrs by car). Ujjain is one of the seven sacred cities of Hinduism and home to the Mahakaleshwar Jyotirlinga — making it the perfect companion pilgrimage to Omkareshwar. Many devotees plan a 2-day central India circuit: Omkareshwar temples + Narmada parikrama on Day 1, drive to Ujjain in the afternoon, Mahakaleshwar darshan and Shipra River aarti on the evening of Day 1, and return to Indore on Day 2. The second most popular side trip is Maheshwar (40 km, 1 hr) for its handloom sarees, Ahilya Fort, and Narmada ghats.",
+  },
+  {
+    question: "Can I visit all 5 temples on the Omkareshwar island in one walk?",
+    answer:
+      "Yes, the five temples on the Omkareshwar island — Omkareshwar Temple, Mamleshwar Temple, Siddhnath Temple, Mai Ki Birsa, and Amaleshwar Temple — can all be visited in one parikrama walk of approximately 5.5 km. The full walk takes 3–4 hours at a relaxed pace including darshan stops and a holy dip in the Narmada. The route is well-maintained with clear signage. Start at the Omkareshwar Temple (western bank), walk clockwise through all five temples, and return to the starting point. Many pilgrims perform this barefoot as a spiritual vow.",
+  },
+  {
+    question: "Is there accommodation near the nearby temples around Omkareshwar?",
+    answer:
+      "For nearby temple visits around Omkareshwar, the Shri Gajanan Maharaj Sansthan's Omkareshwar Bhakta Niwas is centrally located — just 15 minutes from Omkareshwar Temple, Mamleshwar Temple, and the Narmada ghats. Rooms are available from ₹1,000 to ₹3,500 per night with all vegetarian meals and hot water included. For Ujjain (135 km away), the Sansthan also has accommodation at the Pandharpur Math and can assist with bookings. For Maheshwar, there are several mid-range hotels and MP Tourism properties near the Narmada ghats. It is recommended to stay at the Omkareshwar Bhakta Niwas as your base and make day trips to nearby places.",
+  },
+  {
+    question: "How many days are needed to see the main attractions around Omkareshwar?",
+    answer:
+      "2–3 days is ideal for exploring Omkareshwar and its nearby attractions: Day 1 — Omkareshwar Temple, Mamleshwar Temple, Narmada Parikrama (5 temples), and Narmada Ghat aarti. Day 2 — Mandhata Fort trek, Amaleshwar Temple, Mai Ki Birsa, and a half-day trip to Maheshwar (40 km) for the Ahilya Fort and handloom sarees. Day 3 (optional) — Day trip to Ujjain Mahakaleshwar (135 km, round trip 7 hrs) or a second full day of parikrama and temple visits. If time is limited, 1 full day covers the Omkareshwar island circuit and both main temples.",
+  },
+  {
+    question: "What are the most beautiful spots around Omkareshwar for photography?",
+    answer:
+      "The top photography spots around Omkareshwar are: (1) <strong>Narmada Ghats at sunset</strong> — golden hour light on the water, thousands of floating diyas, and the Om-shaped island silhouette. (2) <strong>Mandhata Fort viewpoint</strong> — panoramic aerial view of the entire Omkareshwar island and the Narmada winding around it. (3) <strong>Omkareshwar Bridge</strong> — the best spot for the classic shot of the island from the bridge with the Om shape visible. (4) <strong>Mamleshwar Temple eastern ghats</strong> — backlit views of the Omkareshwar island from the eastern bank at sunrise. (5) <strong>Ropeway view</strong> — aerial views of the Narmada river and island from the cable car. All five spots are accessible without special permits.",
+  },
+  {
+    question: "Are there any waterfalls or nature spots near Omkareshwar?",
+    answer:
+      "The Omkareshwar area is primarily a temple and river destination rather than a nature destination. The Narmada River and its ghats are the primary natural attraction. The closest significant waterfall is Patalpani Waterfall near Indore (about 90 km from Omkareshwar), which is a 30-minute detour from the Indore–Omkareshwar road. The Patalpani falls are approximately 300 feet high and are most impressive during monsoon (July–September). For devotees on the Omkareshwar–Indore route, Patalpani makes a good morning stop. The Mandhata hills on the island offer nature walks and hilltop views, though they are not classified as waterfalls.",
+  },
+  {
+    question: "Is Omkareshwar suitable for a weekend trip from Indore?",
+    answer:
+      "Yes, Omkareshwar is extremely popular as a weekend trip from Indore. The 77 km, 2-hour distance makes it the perfect weekend destination. Recommended 2-day weekend itinerary: Saturday morning — depart Indore by 6:00 AM, arrive Omkareshwar by 8:00 AM, full day of temple visits and parikrama, overnight at Bhakta Niwas. Sunday morning — pre-dawn Narmada parikrama, Omkareshwar darshan, depart by 10:00 AM, reach Indore by noon. For a more relaxed experience, add Monday as a third day to visit Maheshwar (40 km from Omkareshwar) on the way back. Weekend bookings at the Bhakta Niwas should be made at least 2 weeks in advance, especially from October to February.",
+  },
+  {
+    question: "What makes Omkareshwar unique compared to other Jyotirlingas?",
+    answer:
+      "Omkareshwar is unique among the 12 Jyotirlingas for several remarkable features: (1) <strong>Naturally Om-shaped island</strong> — the entire landmass in the Narmada is naturally shaped like the sacred Om symbol, a phenomenon found nowhere else in the world. (2) <strong>Two Jyotirlingas in one location</strong> — Omkareshwar Temple on the island and Mamleshwar Temple on the eastern bank, both claiming Jyotirlinga status. (3) <strong>The Narmada River</strong> — considered Shiva's daughter, with water that carries the sanctity of the Ganga at Kashi. (4) <strong>Complete parikrama on an island</strong> — the 5.5 km barefoot circumambulation around the island is a condensed version of the 2,600 km Narmada Parikrama. (5) <strong>Ropeway to the temple</strong> — the only Jyotirlinga with a cable car directly connecting the mainland to the temple island. These five features make Omkareshwar a one-of-a-kind pilgrimage destination.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Places to Visit", url: "/omkareshwar-places-to-visit" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-100 border-b border-teal-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-teal-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-teal-900 font-medium">Places to Visit</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-teal-900 leading-tight">
+        Places to Visit Near Omkareshwar — Top Attractions &amp; Nearby Temples 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-teal-900/80 max-w-3xl">
+        Top places to visit near Omkareshwar Jyotirlinga: Ujjain Mahakaleshwar, Maheshwar, Mandhata Fort, Narmada ghats, the five island temples, Indore, Khandwa, and nearby attractions. Complete guide to sightseeing around Omkareshwar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Places Grid -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-900">Top Attractions Around Omkareshwar</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {
+          places.map((p) => (
+            <div class="rounded-xl border border-teal-200 bg-teal-50/30 p-6">
+              <div class="flex flex-wrap gap-2 mb-2">
+                <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700 text-xs font-medium">{p.category}</span>
+                <span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 text-xs font-medium">{p.distance}</span>
+                <span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 text-xs font-medium">{p.time}</span>
+              </div>
+              <h3 class="text-lg font-semibold text-teal-900">{p.name}</h3>
+              <p class="mt-2 text-teal-900/80 text-sm leading-relaxed">{p.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- 2-Day Itinerary -->
+  <section class="py-16 bg-teal-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-900">Recommended 2-Day Itinerary</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="rounded-xl border border-teal-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-teal-900 mb-4">Day 1: Omkareshwar Island Circuit</h3>
+          <ul class="space-y-2 text-sm text-teal-900/80">
+            <li>• 5:00 AM — Pre-dawn Narmada Parikrama barefoot</li>
+            <li>• 7:00 AM — Omkareshwar Temple darshan</li>
+            <li>• 8:00 AM — Mamleshwar Temple darshan</li>
+            <li>• 9:00 AM — Siddhnath Temple visit</li>
+            <li>• 10:00 AM — Mai Ki Birsa visit</li>
+            <li>• 11:00 AM — Amaleshwar Temple visit</li>
+            <li>• 12:00 PM — Holy dip in Narmada</li>
+            <li>• 6:30 PM — Narmada Ghat Aarti</li>
+            <li>• Overnight at Bhakta Niwas</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-teal-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-teal-900 mb-4">Day 2: Maheshwar &amp; Mandhata</h3>
+          <ul class="space-y-2 text-sm text-teal-900/80">
+            <li>• 6:00 AM — Sunrise darshan at Omkareshwar</li>
+            <li>• 7:00 AM — Breakfast &amp; check-out</li>
+            <li>• 8:00 AM — Drive to Maheshwar (40 km, 1 hr)</li>
+            <li>• 9:00 AM — Ahilya Fort &amp; Narmada ghats</li>
+            <li>• 10:30 AM — Mandhata Fort trek (30 min climb)</li>
+            <li>• 12:00 PM — Explore Maheshwar old town</li>
+            <li>• 1:00 PM — Lunch at Maheshwar</li>
+            <li>• 2:00 PM — Return to Omkareshwar or depart</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-teal-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-teal-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-teal-900">
+                <span>{faq.question}</span>
+                <span class="text-teal-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-teal-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-teal-700 to-cyan-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Explore Omkareshwar &amp; Beyond</h2>
+      <p class="mt-4 text-teal-100/90 max-w-2xl mx-auto">
+        Stay at the Sansthan's Bhakta Niwas and explore Omkareshwar and nearby attractions at your own pace.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-teal-800 font-semibold shadow hover:bg-teal-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

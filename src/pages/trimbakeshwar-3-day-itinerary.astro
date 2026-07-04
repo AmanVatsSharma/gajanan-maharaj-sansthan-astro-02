@@ -55,7 +55,7 @@ const lodgingSchema = getLodgingBusinessWithRatingSchema(
     address: "Near Trimbakeshwar Jyotirlinga Temple",
     description: "Pilgrim accommodation near Trimbakeshwar temple.",
     facilities: [], amenities: [], contact: [], images: [] } as any,
-  rating, { min: 1250, max: 4150, currency: "₹" }
+  rating, { min: 500, max: 2500, currency: "₹" }
 );
 
 const faqs = [
@@ -77,12 +77,12 @@ const faqs = [
   {
     question: "What are the accommodation options for a 3-day Trimbakeshwar trip?",
     answer:
-      "Best option: Trimbakeshwar Bhakta Niwas by Shri Gajanan Maharaj Sansthan. Suggested donations: ₹1,250–₹4,150/night including 3 meals, hot water, and taxes. Rooms book out fast on weekends and festivals — reserve at least 1–2 weeks ahead. Alternative: budget lodges in Trimbakeshwar town (₹800–₹2,000/night) and GMVN Guest House near Kushavarta Kund. For a luxury option, stay at a resort in Nashik (28 km away) and do day trips.",
+      "Best option: Trimbakeshwar Bhakta Niwas by Shri Gajanan Maharaj Sansthan. Suggested donations: ₹500–₹2,500/night including 3 meals, hot water, and taxes. Rooms book out fast on weekends and festivals — reserve at least 1–2 weeks ahead. Alternative: budget lodges in Trimbakeshwar town (₹800–₹2,000/night) and GMVN Guest House near Kushavarta Kund. For a luxury option, stay at a resort in Nashik (28 km away) and do day trips.",
   },
   {
     question: "How much does a 3-day Trimbakeshwar trip cost per person?",
     answer:
-      "Budget estimate per person (from Mumbai/Pune): Accommodation (shared room): ₹600–₹1,200 for 2 nights, Meals (all included at Bhakta Niwas): ₹0 extra, Transport (shared taxi or bus): ₹1,000–₹2,000 round trip, Temple offerings and prasad: ₹300–₹500, Pooja booking (optional): ₹500–₹5,000, Local auto/taxi: ₹200–₹500. Total: ₹2,500–₹5,500 per person for 3 days, depending on transport and optional poojas.",
+      "Budget estimate per person (from Mumbai/Pune): Accommodation (shared room): ₹500–₹2,500 for 2 nights, Meals (all included at Bhakta Niwas): ₹0 extra, Transport (shared taxi or bus): ₹1,000–₹2,000 round trip, Temple offerings and prasad: ₹300–₹500, Pooja booking (optional): ₹2,500–₹5,000, Local auto/taxi: ₹200–₹500. Total: ₹3,000–₹6,500 per person for 3 days, depending on transport and optional poojas.",
   },
   {
     question: "What should I pack for a 3-day Trimbakeshwar trip?",
@@ -104,7 +104,8 @@ const faqs = [
 const faqSchema = getFAQSchema(faqs);
 const breadcrumbSchema = getBreadcrumbSchema([
   { name: "Home", url: "/" },
-  { name: "Trimbakeshwar 3-Day Itinerary", url: "/trimbakeshwar-3-day-itinerary" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "3-Day Itinerary", url: "/trimbakeshwar-3-day-itinerary" },
 ]);
 
 const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
@@ -146,7 +147,7 @@ const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSch
           <p class="text-sm text-green-900/70 mt-1">Recommended duration</p>
         </div>
         <div class="rounded-xl border border-green-200 bg-green-50/60 p-5 text-center">
-          <p class="text-3xl font-bold text-green-700">₹2.5K–5.5K</p>
+          <p class="text-3xl font-bold text-green-700">₹3K–6.5K</p>
           <p class="text-sm text-green-900/70 mt-1">Per person from Mumbai</p>
         </div>
         <div class="rounded-xl border border-green-200 bg-green-50/60 p-5 text-center">
@@ -287,7 +288,7 @@ const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSch
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl md:text-3xl font-bold">Start planning your Trimbakeshwar pilgrimage</h2>
       <p class="mt-4 text-green-100/90 max-w-2xl mx-auto">
-        Book Trimbakeshwar Bhakta Niwas in advance. Suggested donations: ₹1,250–₹4,150/night.
+        Book Trimbakeshwar Bhakta Niwas in advance. Rooms from ₹500–₹2,500/night with all meals included.
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-3">
         <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-green-800 font-semibold shadow hover:bg-green-50 transition">Book Accommodation</a>

@@ -1,0 +1,314 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Mamleshwar Temple — History, Significance & Connection 2026",
+  description:
+    "Complete guide to Mamleshwar Temple at Omkareshwar: ancient Jyotirlinga on the Narmada eastern bank, connection to Omkareshwar Jyotirlinga, bridge & ropeway access, darshan timings, and why both temples form one sacred pilgrimage circuit.",
+  keywords: [
+    "mamleshwar temple omkareshwar",
+    "mamleshwar omkareshwar jyotirlinga",
+    "mamleshwar temple history",
+    "mamleshwar temple timings",
+    "omkareshwar mamleshwar bridge",
+    "omkareshwar ropeway",
+    "mamleshwar temple darshan",
+    "omkareshwar two jyotirlingas",
+    "mamleshwar temple architecture",
+    "how to reach mamleshwar temple omkareshwar",
+    "mamleshwar temple significance",
+    "mamleshwar omkareshwar ferry",
+    "mamleshwar temple prasad",
+    "omkareshwar eastern bank temple",
+  ],
+  path: "/omkareshwar-mamleshwar-temple",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "mamleshwar",
+  name: "Mamleshwar Temple",
+  city: "Omkareshwar",
+  address: "Eastern Bank, Narmada River, Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "Ancient Shiva temple on the eastern bank of the Narmada at Omkareshwar, considered one of the 12 Jyotirlingas by certain traditions. Connected to Omkareshwar island by bridge and ropeway.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.245, longitude: 76.162, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar and Mamleshwar temples.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What is the significance of Mamleshwar Temple at Omkareshwar?",
+    answer:
+      "Mamleshwar Temple on the eastern bank of the Narmada is one of the most ancient and sacred Shiva temples at Omkareshwar. According to certain scriptural traditions, it is counted among the 12 Jyotirlingas of Lord Shiva — with Omkareshwar on the island being the other. The name 'Mamleshwar' means 'Lord of Mankind'. The temple houses a self-manifested (swayambhu) Shiva lingam and has been a centre of worship for over two millennia. It faces west towards the Omkareshwar island, symbolising the eternal gaze of Lord Shiva upon his devotees.",
+  },
+  {
+    question: "Is Mamleshwar Temple one of the 12 Jyotirlingas?",
+    answer:
+      "Yes, according to certain Puranic traditions and regional belief systems, Mamleshwar Temple is considered the ninth Jyotirlinga, with Omkareshwar being counted as the tenth — both standing on the banks of the sacred Narmada River. However, the more widely accepted list places Omkareshwar as the ninth Jyotirlinga. Regardless, Mamleshwar Temple is universally recognised as one of the most sacred Shiva shrines in central India and is an essential stop for any pilgrimage to Omkareshwar. Most pilgrims visit both temples in a single combined circuit.",
+  },
+  {
+    question: "How do I reach Mamleshwar Temple from Omkareshwar island?",
+    answer:
+      "There are three ways to reach Mamleshwar Temple from Omkareshwar island: (1) The Omkareshwar Sethu (bridge) — walk or drive across the bridge connecting the island to the eastern bank, then a short 300-metre walk to the temple. This is the most convenient option. (2) The ropeway (cable car) — departs from the mainland near Mamleshwar and takes you directly to the temple in about 5 minutes with spectacular aerial views over the Narmada. (3) Traditional ferry boats — cross the river by boat from the Omkareshwar ghat to the eastern bank, then walk to the temple. Ferry tickets cost around ₹50 per person.",
+  },
+  {
+    question: "What are the darshan timings at Mamleshwar Temple?",
+    answer:
+      "Mamleshwar Temple is open from 5:00 AM to 10:00 PM throughout the year. Morning darshan: 5:00 AM – 12:00 PM. Afternoon break: 12:00 PM – 4:00 PM (temple may be closed briefly for abhishekam). Evening darshan: 4:00 PM – 10:00 PM. Special aarti (Evening Sandhya Aarti) is performed at sunset, around 6:30 PM – 7:00 PM depending on the season. During Maha Shivaratri and Kartik Purnima, the temple remains open all night (24 hours) with continuous abhishekam and aarti. There is no entry fee or special pass required for darshan.",
+  },
+  {
+    question: "What is the difference between Omkareshwar and Mamleshwar temples?",
+    answer:
+      "Omkareshwar Temple (on the island) and Mamleshwar Temple (on the eastern bank) are two distinct but deeply connected temples. Omkareshwar houses the main Jyotirlinga — the self-manifested Shiva lingam in the Om (Aum) form. Mamleshwar houses another self-manifested lingam and is also considered sacred. The architecture differs: Omkareshwar temple has a taller, more elaborate Bhumija-style shikhara with intricate carvings, while Mamleshwar temple has an older, simpler stone structure with a rustic North Indian shikhara. The atmosphere differs too — Omkareshwar is busier with thousands of pilgrims daily, while Mamleshwar is quieter and more meditative. Both temples are visited together by pilgrims, and it is traditional to visit Mamleshwar first, then cross to the island for Omkareshwar darshan.",
+  },
+  {
+    question: "What is the best time to visit Mamleshwar Temple?",
+    answer:
+      "The best time to visit Mamleshwar Temple is October through March, when the weather is cool and pleasant (15–30°C). Early morning (5–8 AM) is ideal — fewer crowds, peaceful atmosphere, and the Narmada sunrise is stunning from the temple ghats. Avoid peak monsoon (July–August) when Narmada water levels can rise and make access difficult. Maha Shivaratri (February/March) and Kartik Purnima (October/November) are the most spiritually significant times to visit — thousands of pilgrims gather and the entire temple complex is illuminated. The winter months (November–January) offer the most comfortable conditions for the parikrama walk.",
+  },
+  {
+    question: "Are there accommodation and prasad facilities at Mamleshwar Temple?",
+    answer:
+      "Yes, basic accommodation is available near Mamleshwar Temple, primarily through the Shri Gajanan Maharaj Sansthan Bhakta Niwas (rooms starting at ₹1,000 per night) and a few local dharamshalas on the eastern bank. The temple trust provides prasad (sacred food offerings) after the main aarti ceremonies, typically around noon and 7:00 PM. There is also a small canteen near the temple entrance serving vegetarian meals, snacks, and drinking water. The Sansthan's accommodation in Omkareshwar (₹1,000–3,500 per night) includes all meals and hot water, and is just 15 minutes from both Mamleshwar and Omkareshwar temples.",
+  },
+  {
+    question: "Can I visit both Mamleshwar and Omkareshwar temples in one day?",
+    answer:
+      "Yes, absolutely. Most pilgrims visit both temples in one day, starting with Mamleshwar on the eastern bank and then crossing to the Omkareshwar island. The complete circuit — including darshan at both temples, a short Narmada parikrama, and a holy dip — takes approximately 4–6 hours. Recommended itinerary: arrive by 6:00 AM, Mamleshwar darshan (6:00–8:00 AM), cross the bridge to the island, Omkareshwar darshan (8:00–10:00 AM), Narmada parikrama and holy dip (10:00 AM–12:00 PM), return to mainland for prasad and rest. For major festivals like Maha Shivaratri, pilgrims often stay overnight and visit both temples across multiple visits.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Mamleshwar Temple", url: "/omkareshwar-mamleshwar-temple" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-100 border-b border-amber-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-amber-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-amber-900 font-medium">Mamleshwar Temple</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-amber-900 leading-tight">
+        Mamleshwar Temple, Omkareshwar — Ancient Jyotirlinga on the Narmada
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-amber-900/80 max-w-3xl">
+        Complete guide to Mamleshwar Temple at Omkareshwar: ancient Jyotirlinga history, connection to Omkareshwar island, bridge and ropeway access, darshan timings, and how to visit both temples in one sacred pilgrimage circuit.
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">The Ancient Temple of Mamleshwar</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            Mamleshwar Temple stands on the eastern bank of the Narmada River at Omkareshwar — directly across from the main Omkareshwar Jyotirlinga on the island. The name 'Mamleshwar' translates to 'Lord of Mankind', reflecting Lord Shiva's role as the supreme protector and provider for all beings.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            The temple is extraordinarily ancient. Stone inscriptions and architectural evidence suggest worship has taken place here for over 2,000 years. The current structure, while much renovated, retains the core of its ancient North Indian shikhara-style architecture — built from local sandstone with intricate carvings of Shiva, Parvati, Ganesha, and Nandi.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed">
+            According to the Shiva Purana, Mamleshwar is one of the 12 Jyotirlingas where Lord Shiva appeared as a pillar of infinite light. The self-manifested (swayambhu) Shiva lingam in the sanctum is the heart of the temple and the object of veneration for millions of pilgrims.
+          </p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-6">
+          <h3 class="text-lg font-semibold text-amber-900 mb-4">Quick Facts: Mamleshwar Temple</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Jyotirlinga Status</td><td class="py-2 font-medium text-amber-900">One of 12 (per some traditions)</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Meaning</td><td class="py-2 font-medium text-amber-900">Lord of Mankind</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">River</td><td class="py-2 font-medium text-amber-900">Narmada (eastern bank)</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber/70">Connected to</td><td class="py-2 font-medium text-amber-900">Omkareshwar island (bridge + ropeway)</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Architecture</td><td class="py-2 font-medium text-amber-900">North Indian shikhara (stone)</td></tr>
+              <tr><td class="py-2 text-amber-900/70">Age</td><td class="py-2 font-medium text-amber-900">Over 2,000 years of worship</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two Jyotirlingas -->
+  <section class="py-16 bg-amber-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Two Jyotirlingas on One Island</h2>
+      <p class="mt-3 text-amber-900/80 max-w-3xl">
+        Omkareshwar is unique among the 12 Jyotirlingas — two Shiva temples stand on opposite banks of the Narmada, each claiming Jyotirlinga status.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="rounded-xl border border-amber-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-amber-900 mb-3">Omkareshwar Temple (Island)</h3>
+          <ul class="space-y-2 text-sm text-amber-900/80">
+            <li><strong>Lingam:</strong> Self-manifested (swayambhu), Om-shaped</li>
+            <li><strong>Location:</strong> Western bank, Narmada island</li>
+            <li><strong>Status:</strong> 9th Jyotirlinga (mainstream list)</li>
+            <li><strong>Style:</strong> Bhumija shikhara, tall spire</li>
+            <li><strong>Atmosphere:</strong> Bustling, thousands of pilgrims daily</li>
+            <li><strong>Access:</strong> Bridge from mainland</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-amber-900 mb-3">Mamleshwar Temple (Eastern Bank)</h3>
+          <ul class="space-y-2 text-sm text-amber-900/80">
+            <li><strong>Lingam:</strong> Self-manifested (swayambhu), stone</li>
+            <li><strong>Location:</strong> Eastern bank, mainland</li>
+            <li><strong>Status:</strong> 9th or 10th Jyotirlinga (regional lists)</li>
+            <li><strong>Style:</strong> Ancient stone shikhara, simpler</li>
+            <li><strong>Atmosphere:</strong> Peaceful, riverside, meditative</li>
+            <li><strong>Access:</strong> Bridge or ropeway from island</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 rounded-xl border border-amber-200 bg-amber-50/60 p-6">
+        <p class="text-amber-900/80 leading-relaxed">
+          <strong>Pilgrim tradition:</strong> Visit both temples in one day. Start at Mamleshwar on the eastern bank, cross the Omkareshwar Bridge to the island, perform darshan at Omkareshwar Temple, complete the Narmada parikrama, and return. This combined circuit is believed to grant the full merit of visiting all 12 Jyotirlingas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bridge & Ropeway -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Bridge, Ropeway & Ferry to Mamleshwar</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-6">
+          <h3 class="text-lg font-semibold text-amber-900">Omkareshwar Sethu (Bridge)</h3>
+          <p class="mt-2 text-amber-900/80 text-sm">Vehicular and pedestrian bridge directly connecting the Omkareshwar island to the eastern bank. Cars, buses, and walkers use this bridge. From the eastern bank, Mamleshwar Temple is a 300-metre walk. Open 24 hours, free to cross.</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-6">
+          <h3 class="text-lg font-semibold text-amber-900">Ropeway (Cable Car)</h3>
+          <p class="mt-2 text-amber-900/80 text-sm">Aerial cable car from the mainland near Mamleshwar directly to the island. A breathtaking 5-minute ride with sweeping views of the Narmada and the Om-shaped island. Cost: approximately ₹50–100 per person round trip. Best for photographers and those who want a unique perspective.</p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-6">
+          <h3 class="text-lg font-semibold text-amber-900">Ferry Boats</h3>
+          <p class="mt-2 text-amber-900/80 text-sm">Traditional wooden ferries cross the Narmada from the main ghat to the eastern bank near Mamleshwar. A scenic 10-minute crossing. Subject to seasonal water levels — may be suspended during monsoon floods. Approximately ₹50 per person.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section class="py-16 bg-amber-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Temple Architecture</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            Mamleshwar Temple is built in the traditional North Indian shikhara style, with a compact but impressive stone tower rising above the Narmada ghats. The structure is older and more austere than its counterpart on the island — built from local sandstone rather than the ornate marble seen at Omkareshwar.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed mb-4">
+            The sanctum (garbhagriha) houses the swayambhu Shiva lingam — the self-manifested stone that is the object of worship. The lingam is bathed continuously during abhishekam ceremonies, with sacred Narmada water, milk, honey, and ghee.
+          </p>
+          <p class="text-amber-900/80 leading-relaxed">
+            The temple complex includes subsidiary shrines dedicated to Parvati, Ganapati, Kartikeya, and Nandi. Stone pillars in the mandapa (hall) feature intricate carvings of Hindu deities and mythological scenes. The temple's riverside location on the Narmada ghats makes it one of the most photogenic Shiva temples in India.
+          </p>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-amber-900 mb-4">Architecture at a Glance</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Style</td><td class="py-2 font-medium text-amber-900">North Indian Shikhara</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Material</td><td class="py-2 font-medium text-amber-900">Local sandstone</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Lingam Type</td><td class="py-2 font-medium text-amber-900">Swayambhu (self-manifested)</td></tr>
+              <tr class="border-b border-amber-100"><td class="py-2 text-amber-900/70">Shrines</td><td class="py-2 font-medium text-amber-900">Shiva, Parvati, Ganapati, Kartikeya, Nandi</td></tr>
+              <tr><td class="py-2 text-amber-900/70">Setting</td><td class="py-2 font-medium text-amber-900">Riverside Narmada ghats</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mythology -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-amber-900">Mythology &amp; Legends</h2>
+      <div class="mt-8 rounded-xl border border-amber-200 bg-amber-50/60 p-6 md:p-8">
+        <h3 class="text-lg font-semibold text-amber-900 mb-3">The Shiva Purana Account</h3>
+        <p class="text-amber-900/80 leading-relaxed mb-4">
+          According to the Shiva Purana, King Mandhata of the Ikshvaku dynasty performed intense tapasya (penance) on the banks of the Narmada to please Lord Shiva. Pleased by his devotion, Shiva appeared here as a Jyotirlinga — a pillar of blazing light that stretched beyond the heavens and the netherworld.
+        </p>
+        <p class="text-amber-900/80 leading-relaxed mb-4">
+          The Purana states: <em>"On the banks of the Narmada, Lord Shiva appeared as Mamleshwar — the Lord of Mankind — granting boons to the devoted King Mandhata and establishing this place as a supreme tirtha."</em>
+        </p>
+        <p class="text-amber-900/80 leading-relaxed">
+          The Narmada River itself is described in the Puranas as Shiva's daughter — born from his sweat when he destroyed the three demon cities (Tripura). This divine parentage makes Narmada water uniquely sacred — every drop is said to carry the purifying power of the Ganga at Kashi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-amber-600 to-orange-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Omkareshwar Pilgrimage</h2>
+      <p class="mt-4 text-amber-100/90 max-w-2xl mx-auto">
+        Book accommodation near Omkareshwar and Mamleshwar temples. Early morning visits are best for peaceful darshan.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-amber-800 font-semibold shadow hover:bg-amber-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

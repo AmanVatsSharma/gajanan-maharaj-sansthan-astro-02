@@ -1,0 +1,252 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Temple Rules — Dress Code, Entry, Photography & Do's & Don'ts 2026",
+  description:
+    "Complete Omkareshwar temple rules guide: dress code, photography rules, leather restrictions, mobile policy, prasadam rules, darshan etiquette, temple timings, and what to expect at Omkareshwar Jyotirlinga.",
+  keywords: [
+    "omkareshwar temple rules",
+    "omkareshwar dress code",
+    "omkareshwar photography rules",
+    "omkareshwar temple guidelines",
+    "omkareshwar temple do's don'ts",
+    "omkareshwar temple entry rules",
+    "omkareshwar mobile phone rules",
+    "omkareshwar temple prasadam",
+    "omkareshwar leather restriction",
+    "omkareshwar darshan rules",
+    "omkareshwar temple security",
+    "omkareshwar temple children",
+    "omkareshwar temple foreigners",
+    "omkareshwar temple donation",
+  ],
+  path: "/omkareshwar-temple-rules",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva. Complete guide to temple rules, dress code, and darshan guidelines.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const dos = [
+  { title: "Dress modestly", desc: "Wear traditional Indian attire (dhoti, sari, kurta-pajama) or clean, modest Western clothing. No shorts, sleeveless tops, or revealing clothes." },
+  { title: "Remove leather items", desc: "Leather belts, wallets, watches, and shoes must be removed before entering the sanctum area. Leave them in your room or at the cloakroom." },
+  { title: "Switch off or silence mobile", desc: "Mobile phones must be on silent mode or switched off inside the temple. Photography inside the sanctum is strictly prohibited." },
+  { title: "Bring ID proof", desc: "Carry government-issued ID (Aadhar card, voter ID, passport) — it may be checked at the entrance, especially during festivals." },
+  { title: "Maintain silence", desc: "Speak softly inside the temple premises. The temple is a place of worship and meditation — keep noise to a minimum." },
+  { title: "Offer prasad", desc: "Coconuts, bananas, flowers, and sweets are traditional offerings. Purchase prasad from vendors outside the temple — do not bring food inside." },
+  { title: "Follow queue discipline", desc: "Join the darshan queue patiently. Do not push, shove, or try to jump the queue — security personnel are present to manage crowds." },
+  { title: "Respect the priests", desc: "Address priests as 'Panditji' or 'Swamiji'. Do not interrupt priests during aarti or pooja ceremonies." },
+];
+
+const donts = [
+  { title: "No photography inside the sanctum", desc: "Photography and videography inside the temple sanctum (garbhagriha) are strictly prohibited. Cameras must be deposited at the entrance." },
+  { title: "No leather in the sanctum", desc: "Leather items of any kind — belts, wallets, shoes, watch straps, bags — must be removed before entering the sanctum area." },
+  { title: "No non-vegetarian food", desc: "Non-vegetarian food, alcohol, tobacco, and smoking are strictly prohibited on the entire temple premises." },
+  { title: "No loud talking or phone calls", desc: "Keep conversations to a whisper. Phone calls must be taken outside the temple complex." },
+  { title: "Do not touch the lingam", desc: "The Shiva lingam in the sanctum may only be touched by authorized priests. Devotees should not attempt to touch it." },
+  { title: "No shoes inside", desc: "All footwear must be removed before entering any temple building. Designated shoe-racks are available at the entrance." },
+  { title: "Do not enter during abhishekam", desc: "During abhishekam ceremonies, the sanctum may be temporarily closed to devotees. Wait outside until the priests announce it is open." },
+  { title: "Do not pollute the Narmada", desc: "Do not throw any waste, flowers, or offerings into the Narmada River during parikrama. Use designated waste bins." },
+];
+
+const faqs = [
+  {
+    question: "What is the dress code for Omkareshwar Temple?",
+    answer:
+      "The dress code for Omkareshwar Temple requires modest, traditional attire. <strong>Men:</strong> Wear a dhoti, lungi, or kurta-pajama. Jeans and shorts are not permitted inside the temple sanctum area. <strong>Women:</strong> Wear a sari, salwar kameez, or long skirt with a dupatta. Short dresses, sleeveless tops, and jeans are not permitted. <strong>General:</strong> All visitors must remove footwear before entering any temple building. A simple cloakroom is available at the entrance for storing shoes and bags. During peak festivals (Maha Shivaratri, Kartik Purnima), security is stricter — arrive in appropriate attire to avoid being turned away at the entrance.",
+  },
+  {
+    question: "Are cameras and mobile phones allowed inside Omkareshwar Temple?",
+    answer:
+      "Mobile phones are allowed inside Omkareshwar Temple but must be on silent mode or switched off. <strong>Photography is strictly prohibited inside the sanctum (garbhagriha)</strong> — the inner chamber housing the Jyotirlinga. Cameras and smartphones must be deposited at the entrance cloakroom before entering the sanctum. Photography is allowed in the outer mandapa (hall) and the temple courtyard. During Maha Shivaratri and other major festivals, photography may be restricted in the entire temple complex due to crowd management. Video recording is always prohibited inside the temple.",
+  },
+  {
+    question: "Is there a security check at Omkareshwar Temple entrance?",
+    answer:
+      "Yes, Omkareshwar Temple has security checkpoints at all major entrances — the island bridge entrance, the eastern bank entrance, and the ropeway entrance. During normal days, the check is light: a quick bag check and metal detector walkthrough. During major festivals (Maha Shivaratri, Kartik Purnima, Shravan Mondays), security is significantly heightened with multiple checkpoints, police presence, CCTV surveillance, and crowd control barricades. It is advisable to carry only essential items (ID, wallet, phone) to speed up the entry process. Metal detectors will alarm on large wallets, watches, and electronic devices — be prepared to show these at the checkpoint.",
+  },
+  {
+    question: "Can foreigners visit Omkareshwar Temple? Are there any restrictions?",
+    answer:
+      "Yes, foreigners are welcome at Omkareshwar Temple with no specific restrictions. The temple is open to people of all nationalities and faiths. Foreign visitors should follow the same dress code and rules as Indian devotees: modest clothing, remove leather items, no photography in the sanctum. Foreign passport holders may be asked to show their passport at the entrance for identification purposes. The Shri Gajanan Maharaj Sansthan's Omkareshwar Bhakta Niwas accepts bookings from international visitors. Many Western spiritual seekers and yoga practitioners visit Omkareshwar annually, especially during the winter months (October–February).",
+  },
+  {
+    question: "What should I do if I have health issues and can't walk barefoot for parikrama?",
+    answer:
+      "If you have health issues that prevent walking barefoot (diabetes, foot injuries, arthritis), you are permitted to wear sandals during the Narmada Parikrama. While walking barefoot is the traditional and spiritually preferred method — symbolising humility and surrender — it is not strictly enforced for pilgrims with medical conditions. Elderly pilgrims and those with foot injuries commonly wear comfortable walking shoes or sandals. The path is clean and well-maintained. For those who cannot complete the full 5.5 km parikrama, you can hire a wheelchair at the entrance (approximately ₹100–200) or take the bridge across the island for a partial parikrama experience.",
+  },
+  {
+    question: "Are there cloakroom or locker facilities at Omkareshwar Temple?",
+    answer:
+      "Yes, cloakroom and locker facilities are available at the main temple entrances. A nominal fee (approximately ₹20–50 per bag) is charged for storing bags, shoes, cameras, and mobile phones. The cloakroom is operated by the temple trust and is generally reliable. However, during major festivals, the cloakroom can become overcrowded and waiting times may be 15–30 minutes. To avoid delays, travel light and carry only essentials: ID, wallet, phone, and a small water bottle. Larger bags, backpacks, and cameras should be left at your hotel or the Sansthan's Bhakta Niwas if staying overnight.",
+  },
+  {
+    question: "What is the prasadam at Omkareshwar Temple and is it free?",
+    answer:
+      "The prasadam at Omkareshwar Temple is distributed free of charge after most aartis and pooja ceremonies. The typical prasad includes coconut halves, banana, sacred sweets (ladoo or peda), and holy water (Ganga jal or Narmada jal) from the abhishekam. Prasad distribution takes place near the temple exit after each aarti. You do not need to make any offering to receive prasad — simply stand in the prasad queue after the aarti completes. On festival days, prasad is distributed more quickly and in larger quantities. The Narmada Pushkaram festival (next in 2028) will see millions receiving prasad over 12 days.",
+  },
+  {
+    question: "What are the temple timings for Omkareshwar and Mamleshwar?",
+    answer:
+      "Omkareshwar Temple: Opens at 4:30 AM, closes at 10:00 PM. Closed briefly from 12:00 PM to 4:00 PM for the priests' break. Mamleshwar Temple: Opens at 5:00 AM, closes at 10:00 PM. Closed 12:00 PM–4:00 PM. Both temples are open on all 365 days of the year, including all major festivals. During Maha Shivaratri, both temples remain open 24 hours (4:00 AM–6:00 AM next day). There is no entry fee or ticket required for either temple. The best time to visit for peaceful darshan is before 8:00 AM or after 8:00 PM when crowds are thin.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Temple Rules", url: "/omkareshwar-temple-rules" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-slate-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-slate-900 font-medium">Temple Rules</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+        Omkareshwar Temple Rules — Dress Code, Entry &amp; Do's &amp; Don'ts 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-900/80 max-w-3xl">
+        Complete guide to Omkareshwar temple rules: dress code, photography restrictions, leather policy, mobile rules, prasadam, security checks, and what every pilgrim should know before visiting the sacred Jyotirlinga.
+      </p>
+    </div>
+  </section>
+
+  <!-- Dos -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-green-800">✅ Do's at Omkareshwar Temple</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          dos.map((d) => (
+            <div class="flex gap-3 rounded-xl border border-green-200 bg-green-50/50 p-4">
+              <span class="text-green-600 text-xl flex-shrink-0 mt-0.5">✓</span>
+              <div>
+                <h3 class="font-semibold text-green-900 text-sm">{d.title}</h3>
+                <p class="text-green-900/80 text-sm mt-1">{d.desc}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Don'ts -->
+  <section class="py-16 bg-red-50/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-red-800">❌ Don'ts at Omkareshwar Temple</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          donts.map((d) => (
+            <div class="flex gap-3 rounded-xl border border-red-200 bg-red-50/40 p-4">
+              <span class="text-red-600 text-xl flex-shrink-0 mt-0.5">✗</span>
+              <div>
+                <h3 class="font-semibold text-red-900 text-sm">{d.title}</h3>
+                <p class="text-red-900/80 text-sm mt-1">{d.desc}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-slate-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-slate-900">
+                <span>{faq.question}</span>
+                <span class="text-slate-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-slate-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-slate-700 to-zinc-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Visit to Omkareshwar</h2>
+      <p class="mt-4 text-slate-100/90 max-w-2xl mx-auto">
+        Book accommodation near Omkareshwar for a peaceful and well-planned pilgrimage.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-slate-800 font-semibold shadow hover:bg-slate-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

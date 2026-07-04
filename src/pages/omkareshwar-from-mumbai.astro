@@ -1,0 +1,306 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar from Mumbai — Distance, Train, Bus & Flight Guide 2026",
+  description:
+    "Travel guide from Mumbai to Omkareshwar Jyotirlinga: 580 km via NH 47, overnight bus options, train via Khandwa, flight to Indore, complete route details, costs, and 2-day pilgrimage itinerary.",
+  keywords: [
+    "omkareshwar from mumbai",
+    "mumbai to omkareshwar",
+    "mumbai to omkareshwar distance",
+    "mumbai to omkareshwar train",
+    "mumbai to omkareshwar bus",
+    "mumbai to omkareshwar flight",
+    "mumbai omkareshwar pilgrimage",
+    "mumbai to khandwa train",
+    "omkareshwar from mumbai cost",
+    "mumbai indore omkareshwar",
+    "omkareshwar mumbai msrtc",
+    "mumbai to omkareshwar shared taxi",
+    "mumbai to omkareshwar overnight bus",
+    "mumbai devotee omkareshwar",
+  ],
+  path: "/omkareshwar-from-mumbai",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, 580 km from Mumbai via NH 47 and NH 46.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const routes = [
+  {
+    from: "Mumbai → Indore by Bus",
+    distance: "580 km total",
+    time: "11–12 hrs total",
+    mode: "Bus",
+    detail: "Overnight sleeper buses from Mumbai (Dadar/Sion/Kurla) to Indore (8–9 hrs, ₹1,000–1,500). From Indore, take MSRTC bus or taxi to Omkareshwar (77 km, 2 hrs, ₹150–300). Total cost: approximately ₹1,200–1,800. Total time: 10–12 hrs with transfer time.",
+  },
+  {
+    from: "Mumbai → Indore by Flight",
+    distance: "580 km (flight)",
+    time: "2 hr flight + 2.5 hr drive",
+    mode: "Flight + Taxi",
+    detail: "Fly Mumbai–Indore (DEVI Airport, 2 hrs, ₹3,000–6,000 one-way on IndiGo/SpiceJet/Air India). Taxi from Indore airport to Omkareshwar (90 km, 2.5 hrs, ₹1,500–2,000). Most expensive but fastest option. Total cost: ₹4,500–8,000. Best when time is limited.",
+  },
+  {
+    from: "Mumbai → Khandwa by Train",
+    distance: "580 km",
+    time: "9–12 hrs + 30 min taxi",
+    mode: "Train + Taxi",
+    detail: "Several trains connect Mumbai Central/Dadar to Khandwa Junction on the Mumbai–Delhi main line (Avantika Express, Golden Temple Mail, Punjab Mail). Journey: 9–12 hrs. From Khandwa, shared taxi to Omkareshwar (13 km, 30 min, ₹100–200). Train fare: ₹500–1,200 (sleeper). Most economical option for budget devotees.",
+  },
+  {
+    from: "Mumbai → Omkareshwar by Car",
+    distance: "580 km",
+    time: "11–12 hrs",
+    mode: "Car",
+    detail: "Via NH 47 to Dhule, NH 46 to Indore, then SH 27 to Omkareshwar. Best route: Mumbai → Nashik → Jalgaon → Indore → SH 27 to Omkareshwar. Drive time: 11–12 hrs non-stop. Fuel cost: approximately ₹4,000–5,000 round trip. Best done as an overnight drive with 2 drivers or an early 4:00 AM departure.",
+  },
+];
+
+const faqs = [
+  {
+    question: "How far is Omkareshwar from Mumbai and how long does it take?",
+    answer:
+      "Omkareshwar is approximately 580 km from Mumbai. By car via NH 47 and NH 46, the journey takes 11–12 hours non-stop. By overnight bus to Indore (8–9 hrs) plus a 2-hour transfer, the total travel time is 10–12 hours. By flight to Indore (2 hrs) plus a 2.5-hour taxi, the total is about 5–6 hours including airport formalities. By train to Khandwa (9–12 hrs) plus a 30-minute taxi, it's 10–12 hours total. Most Mumbai devotees travel overnight by bus or train, arriving at Omkareshwar early morning for darshan.",
+  },
+  {
+    question: "What is the cheapest way to travel from Mumbai to Omkareshwar?",
+    answer:
+      "The cheapest option is train + taxi: Mumbai to Khandwa Junction by sleeper train costs approximately ₹500–1,200 one-way, and the shared taxi from Khandwa to Omkareshwar costs approximately ₹100–200. Total one-way cost: approximately ₹600–1,400. The second cheapest is bus to Indore + MSRTC bus to Omkareshwar, at approximately ₹800–1,500 total. The train option is the most popular with budget devotees, especially as trains offer overnight travel, saving on one night's accommodation cost.",
+  },
+  {
+    question: "Are there direct buses from Mumbai to Omkareshwar?",
+    answer:
+      "There are no direct MSRTC buses from Mumbai to Omkareshwar. However, several private operators run overnight sleeper buses from Mumbai (Dadar, Sion, and Kurla) to Indore. From Indore ISBT (Palasia), take an MSRTC bus or shared taxi to Omkareshwar (77 km, 2 hrs, ₹150–300). Popular private bus operators include Puri Bus Services, Ganesh Travels, and VRL Travels, with sleeper buses departing around 8:00–10:00 PM and arriving Indore around 5:00–7:00 AM. Book tickets in advance via RedBus or atleas.",
+  },
+  {
+    question: "What is the best 2-day itinerary from Mumbai to Omkareshwar?",
+    answer:
+      "Recommended 2-day itinerary: Day 1 — Depart Mumbai by overnight bus or train, arrive at Omkareshwar/Indore/Khandwa by 6:00–7:00 AM. Check into Bhakta Niwas or a local hotel. Mamleshwar darshan (7:00–8:00 AM), Omkareshwar temple darshan (8:00 AM–12:00 PM), Narmada parikrama and holy dip (12:00–3:00 PM), evening aarti at the ghats (6:30 PM), overnight at Bhakta Niwas. Day 2 — Morning Narmada sunrise darshan (5:00–7:00 AM), departure for Mumbai by bus/train/flight from Indore. For a more relaxed 3-day trip, add Ujjain Mahakaleshwar on the return route.",
+  },
+  {
+    question: "Is it safe to drive from Mumbai to Omkareshwar?",
+    answer:
+      "Yes, the Mumbai to Omkareshwar route via NH 47 and NH 46 is well-maintained and safe for driving. The road is in good condition throughout, with regular dhabas, fuel stations, and rest stops. Best driven as an overnight journey: depart Mumbai around 4:00 AM, take breaks at Dhule, Jalgaon, and Indore, and reach Omkareshwar by early afternoon. Avoid driving at night through the ghat sections near Nashik and the Malwa plateau. Two drivers are recommended for the full drive. Vehicle parking is available at Omkareshwar bus stand and near the main temple.",
+  },
+  {
+    question: "How much does a trip from Mumbai to Omkareshwar cost per person?",
+    answer:
+      "Budget breakdown per person: Bus to Indore (₹800–1,500) + Indore–Omkareshwar (₹150–300) + accommodation (₹500–1,000/night) + food (₹300–500/day) + local transport (₹200–400) = approximately ₹2,000–3,500 for a 2-day trip. Mid-range (AC bus + private taxi + better hotel): ₹3,500–5,000. Luxury (flight + private taxi + premium stay): ₹6,000–10,000. The Omkareshwar Sansthan's own Bhakta Niwas (₹1,000–3,500 per room) offers the best value for budget devotees.",
+  },
+  {
+    question: "Can I combine Omkareshwar with other Jyotirlingas from Mumbai?",
+    answer:
+      "Yes, Mumbai is well-located for a multi-Jyotirlinga pilgrimage. The most popular circuit from Mumbai is: Mumbai → Omkareshwar (580 km) → Ujjain Mahakaleshwar (135 km) → Indore (55 km) → flight/train back to Mumbai. This covers two Jyotirlingas in 3–4 days. For a longer 7–10 day pilgrimage: add Trimbakeshwar (near Nashik, 170 km from Mumbai), Grishneshwar (near Aurangabad, 340 km), and Mahakaleshwar Ujjain. The Shri Gajanan Maharaj Sansthan organises group pilgrimages from Mumbai to Omkareshwar and Trimbakeshwar during major festivals — contact the Sansthan for group booking details.",
+  },
+  {
+    question: "When is the best time for Mumbai devotees to visit Omkareshwar?",
+    answer:
+      "For Mumbai devotees, the best time is October through February, aligning with Mumbai's post-monsoon pleasant season. November (Kartik Purnima) and February (Maha Shivaratri) are the most popular months. A long weekend from Mumbai is ideal: Friday evening departure by overnight bus/train, Saturday full day at Omkareshwar temples, Sunday morning parikrama and departure. During monsoon (July–September), Mumbai receives heavy rain, and while Omkareshwar is accessible, travel delays are common. Plan festival visits (Maha Shivaratri, Kartik Purnima) 3+ months in advance as both bus and train tickets sell out fast.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "How to Reach Omkareshwar", url: "/how-to-reach-omkareshwar" },
+  { name: "From Mumbai", url: "/omkareshwar-from-mumbai" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-50 via-indigo-50 to-violet-100 border-b border-blue-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-blue-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-blue-900 font-medium">From Mumbai</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-blue-900 leading-tight">
+        Omkareshwar from Mumbai — Distance, Train, Bus &amp; Flight Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-blue-900/80 max-w-3xl">
+        Complete travel guide for Mumbai devotees to Omkareshwar Jyotirlinga: 580 km via NH 47, overnight bus options, train via Khandwa Junction, flight to Indore, costs, 2-day itinerary, and combining Omkareshwar with other Jyotirlingas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-blue-200 bg-blue-50/60 p-5 text-center">
+          <p class="text-xs text-blue-700 uppercase tracking-wide">Distance</p>
+          <p class="text-xl font-bold text-blue-900 mt-1">580 km</p>
+          <p class="text-sm text-blue-900/70">via NH 47 + NH 46</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-blue-50/60 p-5 text-center">
+          <p class="text-xs text-blue-700 uppercase tracking-wide">By Car</p>
+          <p class="text-xl font-bold text-blue-900 mt-1">11–12 hrs</p>
+          <p class="text-sm text-blue-900/70">non-stop drive</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-blue-50/60 p-5 text-center">
+          <p class="text-xs text-blue-700 uppercase tracking-wide">By Train</p>
+          <p class="text-xl font-bold text-blue-900 mt-1">9–12 hrs</p>
+          <p class="text-sm text-blue-900/70">via Khandwa Junction</p>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-blue-50/60 p-5 text-center">
+          <p class="text-xs text-blue-700 uppercase tracking-wide">By Air</p>
+          <p class="text-xl font-bold text-blue-900 mt-1">~5 hrs</p>
+          <p class="text-sm text-blue-900/70">flight + taxi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes -->
+  <section class="py-16 bg-blue-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Travel Options from Mumbai</h2>
+      <div class="mt-8 space-y-6">
+        {
+          routes.map((r) => (
+            <div class="rounded-xl border border-blue-200 bg-white p-6">
+              <div class="flex flex-wrap gap-4 mb-3">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">{r.from}</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">{r.distance}</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">{r.time}</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">{r.mode}</span>
+              </div>
+              <p class="text-blue-900/80 text-sm leading-relaxed">{r.detail}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- 2-Day Itinerary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">2-Day Pilgrimage Itinerary from Mumbai</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="rounded-xl border border-blue-200 bg-blue-50/40 p-6">
+          <h3 class="text-lg font-semibold text-blue-900 mb-4">Day 1: Arrival &amp; Darshan</h3>
+          <ul class="space-y-3 text-sm text-blue-900/80">
+            <li>• <strong>Overnight travel</strong> by bus or train from Mumbai, arrive Omkareshwar/Indore/Khandwa by 6:00 AM</li>
+            <li>• <strong>7:00 AM:</strong> Check into Omkareshwar Sansthan Bhakta Niwas (₹1,000–3,500/night, includes meals)</li>
+            <li>• <strong>7:00–8:30 AM:</strong> Mamleshwar Temple darshan (eastern bank, peaceful morning)</li>
+            <li>• <strong>8:30 AM–12:00 PM:</strong> Omkareshwar Temple darshan + Narmada parikrama</li>
+            <li>• <strong>12:00–1:30 PM:</strong> Lunch at local restaurant or Bhakta Niwas</li>
+            <li>• <strong>1:30–5:00 PM:</strong> Rest and optional boat ride on Narmada</li>
+            <li>• <strong>5:00–8:00 PM:</strong> Evening aarti at Narmada ghats with floating diyas</li>
+            <li>• <strong>8:00 PM onwards:</strong> Dinner at Bhakta Niwas, early rest</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-blue-200 bg-blue-50/40 p-6">
+          <h3 class="text-lg font-semibold text-blue-900 mb-4">Day 2: Sunrise Parikrama &amp; Return</h3>
+          <ul class="space-y-3 text-sm text-blue-900/80">
+            <li>• <strong>5:00–7:00 AM:</strong> Pre-dawn Narmada parikrama barefoot — most sacred time</li>
+            <li>• <strong>7:00–8:00 AM:</strong> Sunrise darshan at Omkareshwar island, holy dip in Narmada</li>
+            <li>• <strong>8:00–9:00 AM:</strong> Breakfast at Bhakta Niwas, check-out</li>
+            <li>• <strong>9:00 AM:</strong> Depart for Indore (77 km, 2 hrs) or Khandwa (13 km, 30 min)</li>
+            <li>• <strong>11:00 AM:</strong> Catch train/bus/flight from Indore/Khandwa back to Mumbai</li>
+            <li>• <strong>Option:</strong> Extend to 3 days by adding Ujjain Mahakaleshwar (135 km from Omkareshwar)</li>
+            <li>• <strong>Group booking:</strong> Contact Shri Gajanan Maharaj Sansthan for group pilgrimage packages from Mumbai</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-blue-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-blue-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-blue-900">
+                <span>{faq.question}</span>
+                <span class="text-blue-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-blue-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-blue-700 to-indigo-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Pilgrimage from Mumbai</h2>
+      <p class="mt-4 text-blue-100/90 max-w-2xl mx-auto">
+        Book Omkareshwar accommodation in advance. Early morning darshan is best for a peaceful experience.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-blue-800 font-semibold shadow hover:bg-blue-50 transition">Book Accommodation</a>
+        <a href="/how-to-reach-omkareshwar" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">All Routes</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

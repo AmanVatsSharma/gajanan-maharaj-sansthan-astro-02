@@ -1,0 +1,268 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Trimbakeshwar from Pune — Distance, Route, Bus & Train Guide 2026",
+  description:
+    "Complete travel guide from Pune to Trimbakeshwar Jyotirlinga: 240 km via Mumbai–Nashik Expressway, bus and train options, overnight itinerary, cost per person, and combining with Omkareshwar.",
+  keywords: [
+    "trimbakeshwar from pune",
+    "pune to trimbakeshwar",
+    "pune to trimbakeshwar distance",
+    "pune to trimbakeshwar train",
+    "pune to trimbakeshwar bus",
+    "pune nashik trimbakeshwar",
+    "pune to trimbakeshwar pilgrimage",
+    "pune to trimbakeshwar cost",
+    "pune to trimbakeshwar group tour",
+    "pune devotee trimbakeshwar jyotirlinga",
+  ],
+  path: "/trimbakeshwar-from-pune",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Dist. Nashik, Maharashtra",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, 240 km from Pune via Mumbai–Nashik Expressway.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.5298, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Bhakta Niwas",
+    city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 500, max: 2500, currency: "₹" }
+);
+
+const routes = [
+  {
+    from: "Pune → Nashik → Trimbakeshwar by Bus",
+    distance: "240 km total",
+    time: "6–7 hrs total",
+    mode: "Bus",
+    detail: "MSRTC and private buses from Pune (Swargate/Katraj) to Nashik (210 km, 5 hrs, ₹600–1,000). From Nashik CBS, MSRTC local bus to Trimbakeshwar (30 km, 1 hr, ₹50–100). Some private operators offer direct Pune–Trimbakeshwar buses during festival seasons. Total time: 6–7 hrs with transfer.",
+  },
+  {
+    from: "Pune → Nashik by Train + Taxi",
+    distance: "240 km",
+    time: "5–7 hrs total",
+    mode: "Train + Taxi",
+    detail: "Several trains connect Pune Junction to Nashik Road: Deccan Express (daily), Pragati Express (daily), and others. Journey: 4–5 hrs, ₹300–800 (sleeper). Taxi from Nashik Road to Trimbakeshwar: 32 km, 1 hr, ₹400–600. Total time: 5–7 hrs. The most popular option for Pune devotees.",
+  },
+  {
+    from: "Pune → Trimbakeshwar by Car",
+    distance: "240 km",
+    time: "5–6 hrs",
+    mode: "Car",
+    detail: "Via Mumbai–Nashik Expressway (NH 160) — Pune → Mumbai stretch (150 km, 3 hrs), then Mumbai → Nashik (165 km, 3 hrs), then Nashik → Trimbakeshwar (30 km, 1 hr). Best done as a day trip with early 5:00 AM departure from Pune, reaching Trimbakeshwar by 10:00 AM. Fuel cost: approximately ₹1,800–2,500 round trip.",
+  },
+  {
+    from: "Pune → Trimbakeshwar by Flight",
+    distance: "210 km",
+    time: "1 hr flight + 1 hr drive",
+    mode: "Flight + Taxi",
+    detail: "Fly Pune → Nashik (Ozar Airport, 1 hr, ₹3,000–5,000). Taxi from Ozar airport to Trimbakeshwar (35 km, 1 hr, ₹800–1,200). Not commonly used given the short driving distance. Best saved for time-constrained pilgrims.",
+  },
+];
+
+const faqs = [
+  {
+    question: "How far is Trimbakeshwar from Pune and how long does it take?",
+    answer:
+      "Trimbakeshwar is approximately 240 km from Pune. By car via the Mumbai–Nashik Expressway, the drive takes 5–6 hours. By bus (Pune → Nashik, then Nashik → Trimbakeshwar), the total travel time is 6–7 hours. By train to Nashik Road (4–5 hrs) plus taxi to Trimbakeshwar (1 hr), it is 5–7 hours total. Trimbakeshwar is accessible as a day trip from Pune — depart by 5:00 AM, arrive by 10:00 AM, full day darshan and Brahmagiri trek, depart by 6:00 PM, reach Pune by 11:00 PM. An overnight stay is much more relaxed.",
+  },
+  {
+    question: "Is a day trip from Pune to Trimbakeshwar possible?",
+    answer:
+      "Yes, but it is a long day. Recommended day trip schedule: depart Pune by 5:00 AM, reach Trimbakeshwar by 10:00 AM, Mangala Aarti and temple darshan (10:00 AM–12:00 PM), Narayan Nagbali pooja if pre-booked (12:00–2:00 PM), lunch (2:00–3:00 PM), Kushavarta Kund holy dip (3:00–4:00 PM), Brahmagiri base visit (4:00–5:30 PM), depart by 6:00 PM, reach Pune by 11:00 PM. This is a 16-hour day. A much better option is to stay overnight at the Trimbakeshwar Bhakta Niwas (₹500–2,500/night, meals included) and make it a relaxed 2-day trip.",
+  },
+  {
+    question: "How much does a Pune → Trimbakeshwar trip cost per person?",
+    answer:
+      "Budget breakdown per person for a 2-day trip from Pune: Bus/train to Nashik (₹400–1,000) + Nashik–Trimbakeshwar (₹100–250) + Bhakta Niwas (₹250–1,000/night, shared) + food (₹200–400/day) + local transport (₹150–300) + pooja (₹200–500) = approximately ₹1,500–3,500 per person for 2 days. Mid-range (private car + private room): ₹3,000–5,000. Group tours from Pune spiritual organisations: ₹2,000–3,000 per person for 2 days including transport, accommodation, meals, and guide.",
+  },
+  {
+    question: "Are there group pilgrimage tours from Pune to Trimbakeshwar?",
+    answer:
+      "Several Pune-based spiritual organisations offer group pilgrimage tours to Trimbakeshwar, particularly during Shravan (July–August) and Maha Shivaratri (February/March). These 2-day tours include: AC bus/coach Pune → Nashik → Trimbakeshwar, accommodation at Bhakta Niwas, all vegetarian meals, guided temple visits, Narayan Nagbali pooja booking, and local transport. Cost: approximately ₹2,000–3,000 per person. The Shri Gajanan Maharaj Sansthan (+91 75210 63034) can assist with group bookings from Pune and provide Narayan Nagbali pooja arrangements. For custom group bookings of 20+ devotees, contact the Sansthan directly.",
+  },
+  {
+    question: "What is the best time for Pune devotees to visit Trimbakeshwar?",
+    answer:
+      "The best time for Pune devotees to visit Trimbakeshwar is October through February, aligning with Pune's pleasant post-monsoon season. November (Kartik Purnima) and February (Maha Shivaratri) are the most popular months. For a long weekend from Pune: Friday evening departure, Saturday full day at Trimbakeshwar (temple, Kushavarta Kund, Brahmagiri), overnight at Bhakta Niwas, Sunday morning return. Shravan (July–August) is spiritually the most significant time but coincides with Pune's monsoon — travel is possible but expect rain delays. Plan festival visits 2–3 months in advance for accommodation.",
+  },
+  {
+    question: "Can I combine Trimbakeshwar with Omkareshwar from Pune?",
+    answer:
+      "Yes, many Pune devotees combine Trimbakeshwar with Omkareshwar in a 5-day pilgrimage covering two of the 12 Jyotirlingas. Recommended itinerary: Day 1: Pune → Trimbakeshwar (240 km, 5–6 hrs), darshan and Kushavarta Kund. Day 2: Brahmagiri trek and Narayan Nagbali pooja. Day 3: Trimbakeshwar → Omkareshwar (450 km, 9–10 hrs by road). Day 4: Omkareshwar temples and Narmada parikrama. Day 5: Return to Pune from Indore/Khandwa. The Shri Gajanan Maharaj Sansthan has accommodation at both locations and can assist with the entire itinerary from Pune, including pooja bookings and transport coordination.",
+  },
+  {
+    question: "Which trains go from Pune to Nashik Road for Trimbakeshwar?",
+    answer:
+      "Trains from Pune Junction to Nashik Road Station: (1) Deccan Express — daily, departs Pune ~8:00 AM, arrives Nashik Road ~1:00 PM. Most popular choice. (2) Pragati Express — daily, Pune to Nashik in approximately 5 hrs. (3) Mumbai–Nashik passenger trains via Pune. From Nashik Road Station, take a taxi (₹400–600) or shared auto (₹80–150) to Trimbakeshwar (32 km, 1 hr). Advance booking via IRCTC is recommended, especially during Shravan and Maha Shivaratri seasons when trains sell out.",
+  },
+  {
+    question: "Is there accommodation near Trimbakeshwar for Pune devotees?",
+    answer:
+      "Yes, the Shri Gajanan Maharaj Sansthan's Trimbakeshwar Bhakta Niwas provides accommodation for Pune devotees and all pilgrims. Rooms from ₹500 to ₹2,500 per night, all with vegetarian meals and hot water included. The Bhakta Niwas is located just 500 metres from the Trimbakeshwar Temple and 1 km from Kushavarta Kund. For Pune devotees planning a 2-day trip, staying overnight is highly recommended — it allows for the pre-dawn Mangala Aarti, Narayan Nagbali pooja during daylight hours, Kushavarta Kund holy dip, and the Brahmagiri trek at sunrise. Book via the Sansthan at +91 75210 63034, especially for Shravan and festival dates.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "From Pune", url: "/trimbakeshwar-from-pune" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-100 border-b border-violet-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-violet-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-violet-900 font-medium">From Pune</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-violet-900 leading-tight">
+        Trimbakeshwar from Pune — Distance, Route &amp; Travel Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-violet-900/80 max-w-3xl">
+        Complete travel guide for Pune devotees to Trimbakeshwar Jyotirlinga: 240 km via Mumbai–Nashik Expressway, train to Nashik, bus options, 2-day itinerary, cost per person, and combining Trimbakeshwar with Omkareshwar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">Distance</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">240 km</p>
+          <p class="text-sm text-violet-900/70">via Mumbai–Nashik Expwy</p>
+        </div>
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">By Car</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">5–6 hrs</p>
+          <p class="text-sm text-violet-900/70">via NH 160</p>
+        </div>
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">By Train</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">5–7 hrs</p>
+          <p class="text-sm text-violet-900/70">to Nashik Road</p>
+        </div>
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">By Bus</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">6–7 hrs</p>
+          <p class="text-sm text-violet-900/70">Pune → Nashik → Trim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes -->
+  <section class="py-16 bg-violet-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">Travel Options from Pune</h2>
+      <div class="mt-8 space-y-6">
+        {
+          routes.map((r) => (
+            <div class="rounded-xl border border-violet-200 bg-white p-6">
+              <div class="flex flex-wrap gap-4 mb-3">
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.from}</span>
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.distance}</span>
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.time}</span>
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.mode}</span>
+              </div>
+              <p class="text-violet-900/80 text-sm leading-relaxed">{r.detail}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-violet-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-violet-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-violet-900">
+                <span>{faq.question}</span>
+                <span class="text-violet-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-violet-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-violet-700 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Pune to Trimbakeshwar Pilgrimage</h2>
+      <p class="mt-4 text-violet-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar Bhakta Niwas accommodation for a comfortable pilgrimage. All meals included.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-violet-800 font-semibold shadow hover:bg-violet-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

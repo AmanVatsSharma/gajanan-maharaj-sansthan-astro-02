@@ -1,0 +1,292 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Aarti Timings — Morning, Evening & Night Aarti Schedule 2026",
+  description:
+    "Complete Omkareshwar aarti timings guide: morning aarti, evening Narmada aarti, Sandhya aarti, Maha Shivaratri 24-hour aarti, Kartik Purnima special aarti, and full daily schedule for Omkareshwar and Mamleshwar temples.",
+  keywords: [
+    "omkareshwar aarti timings",
+    "omkareshwar morning aarti",
+    "omkareshwar evening aarti",
+    "omkareshwar narmada aarti",
+    "omkareshwar sandhya aarti",
+    "omkareshwar aarti schedule",
+    "omkareshwar aarti time today",
+    "omkareshwar night aarti",
+    "mamleshwar temple aarti timings",
+    "omkareshwar aarti mahashivratri",
+    "omkareshwar aarti online",
+    "omkareshwar narmada ghat aarti",
+    "omkareshwar aarti with pooja",
+    "omkareshwar aarti live",
+  ],
+  path: "/omkareshwar-aarti-timings",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva. Complete aarti timings for Omkareshwar and Mamleshwar temples.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const dailySchedule = [
+  { time: "4:30 AM", event: "Temple Opening & Mangala Aarti", type: "aarti", desc: "First aarti of the day. Temple gates open. Mangala aarti performed to awaken Lord Shiva." },
+  { time: "5:00 AM", event: "Shiva Darshan Begins", type: "darshan", desc: "Early morning darshan for devotees. Minimal crowds — ideal time for peaceful darshan." },
+  { time: "6:30 AM", event: "Panchamrit Abhishekam", type: "pooja", desc: "First abhishekam of the day. Shiva lingam bathed with five sacred substances (milk, curd, honey, ghee, sugar)." },
+  { time: "7:30 AM", event: "Morning Aarti (Shringar Aarti)", type: "aarti", desc: "Main morning aarti. The lingam is decorated with flowers, sandalwood paste, and new garments. Priests chant the Shiva Sahasranama." },
+  { time: "8:00 AM", event: "Mahaprasad Distribution", type: "pooja", desc: "Morning prasad (sacred food) distributed to devotees after the main aarti." },
+  { time: "12:00 PM", event: "Noon Aarti", type: "aarti", desc: "Midday aarti. The temple closes briefly for the priests' lunch break (12:30–4:00 PM)." },
+  { time: "4:00 PM", event: "Temple Reopens", type: "darshan", desc: "Temple reopens for afternoon darshan." },
+  { time: "6:30 PM", event: "Narmada Ghat Aarti", type: "aarti", desc: "Evening aarti on the Narmada ghats with floating diyas, bells, and conch shells. Spectacular view from the ghats with the Om-shaped island as backdrop." },
+  { time: "7:30 PM", event: "Sandhya Aarti", type: "aarti", desc: "Main evening aarti inside the temple sanctum. Priests perform the evening abhishekam and aarti with camphor flame." },
+  { time: "8:00 PM", event: "Prasadam &amp; Vibhuti", type: "pooja", desc: "Evening prasadam distributed. Vibhuti (sacred ash) and kalawa (sacred thread) given to devotees." },
+  { time: "9:30 PM", event: "Shayan Aarti", type: "aarti", desc: "Night closing aarti. Lord Shiva is symbolically put to rest with lullaby hymns." },
+  { time: "10:00 PM", event: "Temple Closes", type: "darshan", desc: "Temple gates close for the night. Reopens at 4:30 AM." },
+];
+
+const specialAartis = [
+  { name: "Maha Shivaratri", timing: "All-night (6 PM – 6 AM)", note: "Continuous abhishekam, Rudra Abhishek every hour, aartis through the night, 2–3 lakh devotees" },
+  { name: "Kartik Purnima", timing: "6 PM – 10 PM (extended)", note: "Thousands of floating diyas on Narmada, special Narmada aarti, island illumination" },
+  { name: "Shravan Mondays", timing: "Extended hours (4 AM – 11 PM)", note: "Special Rudra Abhishek every Monday, Bholenath aarti, kanwariya processions" },
+  { name: "Amavasya", timing: "All-night", note: "Special pitru tarpan ceremony on the Narmada ghats, ancestor rituals" },
+  { name: "Narmada Pushkaram", timing: "12-day festival", note: "Round-the-clock aartis, millions of pilgrims, continuous abhishekam" },
+];
+
+const faqs = [
+  {
+    question: "What are the daily aarti timings at Omkareshwar Temple?",
+    answer:
+      "The daily aarti schedule at Omkareshwar Temple is: Mangala Aarti at 4:30 AM (temple opening), Shiva Darshan begins at 5:00 AM, Panchamrit Abhishekam at 6:30 AM, Shringar Aarti (main morning) at 7:30 AM, Mahaprasad at 8:00 AM, Noon Aarti at 12:00 PM, temple closes 12:30 PM–4:00 PM, reopens 4:00 PM, Narmada Ghat Aarti at 6:30 PM, Sandhya Aarti at 7:30 PM, evening prasad at 8:00 PM, Shayan Aarti at 9:30 PM, temple closes at 10:00 PM. These timings remain consistent throughout the year with minor seasonal adjustments.",
+  },
+  {
+    question: "What is the Narmada Ghat Aarti at Omkareshwar and when does it happen?",
+    answer:
+      "The Narmada Ghat Aarti is the most spectacular evening ritual at Omkareshwar. Held daily at 6:30 PM on the Narmada river ghats, priests perform a fire aarti (with camphor flame) while devotees release floating diyas (earthen lamps) on the sacred river. The reflection of thousands of lamps on the Narmada water, combined with the bells, conch shells, and Vedic chants, creates a deeply moving spiritual atmosphere. The Om-shaped island silhouette forms the backdrop. The ghat aarti is free to attend — simply arrive at the main ghat 15 minutes before 6:30 PM. It is the most popular daily event at Omkareshwar, drawing hundreds of devotees.",
+  },
+  {
+    question: "Is there a live stream or online broadcast of Omkareshwar aarti?",
+    answer:
+      "Currently, Omkareshwar Temple does not offer an official live stream of aarti ceremonies. However, several third-party YouTube channels occasionally broadcast the evening Narmada Ghat Aarti during major festivals. For festival aartis during Maha Shivaratri, Kartik Purnima, or Amavasya, some devotional TV channels and online platforms may broadcast live. The Shri Gajanan Maharaj Sansthan occasionally shares aarti recordings and festival highlights on their social media channels. For those who cannot visit in person, listening to recordings of the Rudram and Shiva Sahasranama chants from Omkareshwar is considered spiritually beneficial.",
+  },
+  {
+    question: "What is special about aarti during Maha Shivaratri at Omkareshwar?",
+    answer:
+      "Maha Shivaratri aarti at Omkareshwar is extraordinary and unlike any other day of the year. The temple remains open for 24 continuous hours (from 4:00 AM Mahashivratri morning to 6:00 AM the next day) with continuous abhishekam and aartis. Special Rudra Abhishek is performed every hour with full Vedic ritual. The Sandhya Aarti (6:30 PM) is extended to 90 minutes with the participation of 50+ priests. Thousands of devotees chant 'Om Namah Shivaya' through the night. The Narmada Ghat Aarti is performed three times: at 6:00 PM, 9:00 PM, and midnight. The entire island and ghats are illuminated. Maha Shivaratri draws 2–3 lakh devotees, and the aarti on this night is considered to grant the maximum possible spiritual merit of any single night in the year.",
+  },
+  {
+    question: "Which aarti should I not miss at Omkareshwar?",
+    answer:
+      "The three aartis you absolutely should not miss at Omkareshwar are: (1) <strong>Narmada Ghat Aarti at 6:30 PM</strong> — the most visually spectacular, with thousands of floating diyas on the river, the Om-shaped island silhouette, and bells echoing across the water. Free to attend and available every single day. (2) <strong>Sandhya Aarti at 7:30 PM</strong> inside the temple sanctum — intimate, powerful, with camphor flame aarti performed inches from the Jyotirlinga. (3) <strong>Mangala Aarti at 4:30 AM</strong> — the first aarti of the day with minimal crowds, considered deeply meritorious. If you can only pick one, the 6:30 PM Narmada Ghat Aarti is the definitive Omkareshwar experience.",
+  },
+  {
+    question: "Do I need a special pass to attend aarti at Omkareshwar?",
+    answer:
+      "No special pass or ticket is required to attend any of the daily aartis at Omkareshwar. All aartis — Mangala Aarti (4:30 AM), Shringar Aarti (7:30 AM), Narmada Ghat Aarti (6:30 PM), Sandhya Aarti (7:30 PM), and Shayan Aarti (9:30 PM) — are free and open to all devotees. Simply arrive at the temple or ghat 10–15 minutes before the aarti time. During major festivals like Maha Shivaratri and Kartik Purnima, while no ticket is required, expect very large crowds and long queues. VIP or special seating is sometimes available through advance booking with the temple trust for major festival aartis — contact the temple office for details.",
+  },
+  {
+    question: "What are the aarti timings at Mamleshwar Temple on the eastern bank?",
+    answer:
+      "Mamleshwar Temple on the eastern bank of the Narmada follows a similar but slightly shorter schedule: Mangala Aarti at 5:00 AM (temple opening), morning darshan from 5:00 AM–12:00 PM, afternoon break 12:00–4:00 PM, evening darshan and Sandhya Aarti at 6:30–7:30 PM, and temple closes at 10:00 PM. The Mamleshwar aarti is less crowded and more intimate than the main Omkareshwar temple aarti. The Mamleshwar aarti is particularly beautiful during Kartik Purnima, when the temple is illuminated and the Narmada reflection adds to the atmosphere. Both temples are open on all major festivals, and most devotees attend the aarti at both temples on festival days.",
+  },
+  {
+    question: "Can I book a private aarti or pooja ceremony at Omkareshwar?",
+    answer:
+      "Yes, private aarti and pooja ceremonies can be booked at Omkareshwar. Private Rudrabhishek costs approximately ₹2,501–₹5,101 and includes a dedicated priest, 108 Rudra mantra repetitions, sacred offerings, and prasad for the devotee and family. For major family events — wedding anniversaries, birthdays, housewarmings — the Maha Rudrabhishek or Chandi Havan (₹3,501–₹7,001) is recommended. Book at least 7–14 days in advance through the temple trust office. The Shri Gajanan Maharaj Sansthan (+91 75210 63034) can assist with private ceremony bookings and arrange for the devotee's accommodation during the ceremony day. On Maha Shivaratri, private bookings are accepted up to 3 months in advance.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Aarti Timings", url: "/omkareshwar-aarti-timings" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-100 border-b border-orange-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-orange-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-orange-900 font-medium">Aarti Timings</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-orange-900 leading-tight">
+        Omkareshwar Aarti Timings — Morning, Evening &amp; Night Schedule 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-orange-900/80 max-w-3xl">
+        Complete daily aarti schedule for Omkareshwar and Mamleshwar temples: Mangala, Shringar, Sandhya, Shayan, and Narmada Ghat aartis. Festival timings for Maha Shivaratri, Kartik Purnima, and Shravan Mondays included.
+      </p>
+    </div>
+  </section>
+
+  <!-- Daily Schedule -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">Daily Aarti Schedule</h2>
+      <p class="mt-3 text-orange-900/80 max-w-3xl">
+        The Omkareshwar temple follows this daily aarti schedule year-round. Minor adjustments may occur during festivals.
+      </p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-orange-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-orange-100 text-orange-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Time</th>
+              <th class="px-4 py-3 font-semibold">Event</th>
+              <th class="px-4 py-3 font-semibold">Type</th>
+              <th class="px-4 py-3 font-semibold">Details</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100">
+            {
+              dailySchedule.map((s, i) => (
+                <tr class="hover:bg-orange-50/60">
+                  <td class="px-4 py-3 font-medium text-orange-900">{s.time}</td>
+                  <td class="px-4 py-3 text-orange-900">{s.event}</td>
+                  <td class="px-4 py-3">
+                    <span class={`px-2 py-0.5 rounded text-xs font-medium ${
+                      s.type === 'aarti' ? 'bg-red-100 text-red-700' :
+                      s.type === 'pooja' ? 'bg-amber-100 text-amber-700' :
+                      'bg-green-100 text-green-700'
+                    }`}>{s.type}</span>
+                  </td>
+                  <td class="px-4 py-3 text-orange-900/70 text-xs md:text-sm">{s.desc}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Aartis -->
+  <section class="py-16 bg-orange-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">Special Festival Aartis</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          specialAartis.map((s) => (
+            <div class="rounded-xl border border-orange-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-orange-900">{s.name}</h3>
+              <p class="mt-1 text-orange-700 text-sm font-medium">{s.timing}</p>
+              <p class="mt-2 text-orange-900/80 text-sm">{s.note}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Must-See -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">The 3 Aartis You Must Not Miss</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+          <h3 class="text-lg font-semibold text-orange-900">Narmada Ghat Aarti — 6:30 PM</h3>
+          <p class="mt-2 text-orange-900/80 text-sm">The definitive Omkareshwar experience. Fire aarti on the Narmada ghats with thousands of floating diyas. Free, every day. The Om-shaped island forms the perfect backdrop. Best viewed from the main ghat steps — arrive 15 minutes early for a good spot.</p>
+        </div>
+        <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+          <h3 class="text-lg font-semibold text-orange-900">Sandhya Aarti — 7:30 PM</h3>
+          <p class="mt-2 text-orange-900/80 text-sm">The intimate evening aarti inside the temple sanctum. Camphor flame aarti performed inches from the Jyotirlinga. Powerful Vedic chants, ringing bells, and the fragrance of incense fill the sanctum. After the aarti, receive prasad and vibhuti from the priests.</p>
+        </div>
+        <div class="rounded-xl border border-orange-200 bg-orange-50/40 p-6">
+          <h3 class="text-lg font-semibold text-orange-900">Mangala Aarti — 4:30 AM</h3>
+          <p class="mt-2 text-orange-900/80 text-sm">The first aarti of the day to awaken Lord Shiva. Minimal crowds (fewer than 100 devotees). The temple is freshly cleaned and filled with the fragrance of flowers. Deeply peaceful and considered the most meritorious time for Shiva worship. Worth waking up early for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-orange-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-orange-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-orange-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-orange-900">
+                <span>{faq.question}</span>
+                <span class="text-orange-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-orange-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-orange-700 to-red-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Experience the Aarti at Omkareshwar</h2>
+      <p class="mt-4 text-orange-100/90 max-w-2xl mx-auto">
+        Book your stay near Omkareshwar to experience the evening Narmada Ghat Aarti at its most magical.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-orange-800 font-semibold shadow hover:bg-orange-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

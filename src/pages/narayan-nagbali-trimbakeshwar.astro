@@ -2,78 +2,124 @@
 import Layout from "@/layouts/Layout.astro";
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import {
-  getEventSchema,
+  getHinduTempleSchema,
   getFAQSchema,
   getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
 
 const meta = generatePageMetadata({
-  title: "Narayan Nagbali Trimbakeshwar — Ancestral Sin Relief Ritual Guide",
+  title: "Narayan Nagbali Pooja at Trimbakeshwar — Ritual, Cost & Booking Guide 2026",
   description:
-    "Complete guide to Narayan Nagbali ritual at Trimbakeshwar, Maharashtra. Learn the significance, procedure, cost, and importance of this powerful ancestral sin relief ceremony performed at the sacred Jyotirlinga temple.",
+    "Complete guide to Narayan Nagbali pooja at Trimbakeshwar Jyotirlinga: the only ritual to remove Pitru Dosha (ancestral curse), pooja procedure, cost, booking process, who should perform it, timings, and what to expect.",
   keywords: [
     "narayan nagbali trimbakeshwar",
-    "narayan nagbali ritual cost",
-    "narayan nagbali procedure trimbakeshwar",
-    "narayan nagbali booking",
-    "narayan nagbali meaning",
+    "narayan nagbali pooja",
+    "pitru dosha removal trimbakeshwar",
+    "nagbali pooja trimbakeshwar",
+    "nag bali pooja trimbakeshwar",
     "pitru dosh nivaran trimbakeshwar",
-    "ancestral sin removal",
-    "narayan nagbali timing",
-    "narayan nagbali pandit contact",
-    "how to perform narayan nagbali",
-    "narayan nagbali benefits",
-    "shradh pitru dosh remedy",
+    "pitru dosha remedy",
+    "ancestral curse removal india",
+    "nagbali pooja cost",
+    "nagbali booking trimbakeshwar",
+    "trimbakeshwar special pooja",
+    "nag pooja trimbakeshwar",
+    "narayan nagbali procedure",
+    "narayan nagbali booking trimbakeshwar",
   ],
   path: "/narayan-nagbali-trimbakeshwar",
 });
 
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Dist. Nashik, Maharashtra",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, the only temple in India where Narayan Nagbali pooja is performed to remove Pitru Dosha and grant peace to departed souls.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.5298, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Bhakta Niwas",
+    city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 500, max: 2500, currency: "₹" }
+);
+
 const faqs = [
   {
-    question: "What is Narayan Nagbali?",
+    question: "What is Narayan Nagbali pooja at Trimbakeshwar?",
     answer:
-      "Narayan Nagbali is a powerful Vedic ritual performed at Trimbakeshwar to remove ancestral sins and Pitru Dosha. The ceremony combines Nagbali (satisfying unsatisfied ancestors) and Narayan Bali (removing Pitru Dosha). It is one of the most powerful ancestral rituals in Hinduism, believed to pacify restless souls and bring peace to the family for generations.",
+      "Narayan Nagbali is a sacred Vedic ritual performed exclusively at Trimbakeshwar Jyotirlinga to remove Pitru Dosha (ancestral curses and unresolved karmic debts of deceased family members). The pooja consists of two parts: (1) <strong>Narayan Bali</strong> — offerings to Lord Vishnu/Narayan for the peace of departed souls, and (2) <strong>Nag Bali</strong> — offerings to the Nagas (serpent deities) for removing the ill effects of unnatural or premature deaths. Together, these rituals liberate departed ancestors and remove their negative influence on living family members. Trimbakeshwar is the only temple in India where Narayan Nagbali is performed in its authentic Vedic form.",
   },
   {
-    question: "What is the cost of Narayan Nagbali at Trimbakeshwar?",
+    question: "Who should perform Narayan Nagbali pooja?",
     answer:
-      "The total cost varies based on priests, materials, and donations, typically ranging from ₹15,000 to ₹50,000. This includes priest fees (₹5,000-15,000 for 3 days), material costs (₹3,000-10,000), temple donations (₹5,000-20,000), and accommodation for priests (₹2,000-5,000). Contact the temple or Shri Gajanan Maharaj Sansthan for exact pricing.",
+      "Narayan Nagbali is recommended for: (1) <strong>Families experiencing repeated misfortunes</strong> — unexplained financial losses, accidents, or illnesses. (2) <strong>Those who lost family members through unnatural death</strong> — accident, suicide, murder, drowning, fire, or death during pregnancy/childbirth. (3) <strong>Pitru Dosha detected in horoscope</strong> — identified by astrologers through the birth chart, especially Pitru Paksha dosha. (4) <strong>Unresolved family conflicts</strong> or lack of peace despite prosperity. (5) <strong>Couples facing infertility or repeated miscarriages</strong> attributed to ancestral curses. The pooja is performed by the eldest male member or family representative on behalf of the entire family.",
   },
   {
-    question: "What are the auspicious dates for Narayan Nagbali?",
+    question: "How much does Narayan Nagbali pooja cost at Trimbakeshwar?",
     answer:
-      "The best times to perform Narayan Nagbali include Mahashivratri (Feb/March), Shravan month (July-August), Pitru Paksha (September), and as soon as possible after a death in the family. Consult a priest for specific planetary positions — Tuesday and Saturday are generally avoided, while Amavasya and Purnima are most favorable.",
+      "The cost of Narayan Nagbali at Trimbakeshwar is approximately <strong>₹2,500–5,000</strong> per family. This includes priest dakshina (honorarium), all puja samagri (ritual materials: rice, flowers, fruits, ghee, incense), the sacred pit, ritual homa (fire ceremony), and prasad for the family. Additional dakshina is at the devotee's discretion. The pooja takes 2–3 hours. Contact the Shri Gajanan Maharaj Sansthan (+91 96612 63850 / +91 75210 63034) for booking and exact cost details.",
   },
   {
-    question: "How to book Narayan Nagbali at Trimbakeshwar?",
+    question: "How do I book Narayan Nagbali pooja at Trimbakeshwar?",
     answer:
-      "Contact the Trimbakeshwar temple authorities or Shri Gajanan Maharaj Sansthan's booking helpline at least 15-30 days in advance. You'll need to provide: (1) Name, birth date, and gotra of participants, (2) Details of ancestors for whom the ritual is performed, (3) Preferred dates. The ritual requires all participants to stay in Trimbakeshwar for the full 3 days.",
+      "To book: (1) <strong>Call in advance</strong> — contact Shri Gajanan Maharaj Sansthan at <strong>+91 96612 63850</strong> or <strong>+91 75210 63034</strong>, at least 2–4 weeks before your visit. For Shravan and Maha Shivaratri, book 2–3 months ahead. (2) <strong>Provide details</strong> — family name, number of participants, date preference, specific rituals (Narayan Bali + Nag Bali), and gotra/clan information. (3) <strong>Confirm booking</strong> — pay a deposit (₹500–1,000) to secure the date. (4) <strong>On arrival</strong> — report to the temple priest's office at the designated time. Payment for the full pooja is made after completion based on satisfaction.",
+  },
+  {
+    question: "What happens during the Narayan Nagbali pooja ritual?",
+    answer:
+      "The Narayan Nagbali is a multi-hour Vedic ceremony by trained Brahmin priests: (1) <strong>Ganesh Puja</strong> — invocation of Lord Ganesha to begin. (2) <strong>Pitra Tarpan</strong> — offerings of water, sesame seeds, and rice to ancestors while chanting their names and gotra. (3) <strong>Narayan Bali</strong> — offerings to Lord Vishnu/Narayan for liberating departed souls. (4) <strong>Nag Bali</strong> — offerings to Nagas to remove obstacles from unnatural deaths. (5) <strong>Homa (fire ritual)</strong> — the heart of the pooja with specific mantras. (6) <strong>Prasad distribution</strong> — sacred prasad for the family. The ritual is in Sanskrit and Marathi, with the priest explaining key moments.",
+  },
+  {
+    question: "Can Narayan Nagbali be performed at home or any other temple?",
+    answer:
+      "According to Vedic tradition, Narayan Nagbali must be performed at Trimbakeshwar Jyotirlinga — the only temple in India authorised to conduct this ritual in its authentic form. The ritual's effectiveness depends on the sacred geography: the temple at the foot of Brahmagiri, the Trimbakeshwar Jyotirlinga, and the Godavari's origin at Kushavarta Kund. This combination amplifies the ritual's power and ensures liberation of departed souls. Attempting it at home or another temple is not considered effective. Devotees travel from Mumbai, Pune, Delhi, and internationally to perform this pooja at Trimbakeshwar.",
+  },
+  {
+    question: "What is the difference between Narayan Nagbali, Nagbali, and Nag Panchami?",
+    answer:
+      "They are completely different: <strong>Narayan Nagbali</strong> (at Trimbakeshwar) — a 2–3 hour Vedic ritual combining Narayan Bali + Nag Bali for Pitru Dosha removal. Performed by Brahmin priests with fire ceremony. <strong>Nagbali alone</strong> — a shorter version focusing only on the Nag Bali component. <strong>Nag Panchami</strong> — a simple annual festival (5th day of Shravan) when devotees offer milk and flowers to snake idols at home or local temples. The only similarity is the word 'Nag'. <strong>Narayan Bali at Gaya</strong> — a different ritual at Gaya Vishnupad Temple in Bihar for Pitru Shraddha. Trimbakeshwar's Narayan Nagbali is unique and cannot be substituted.",
   },
 ];
 
 const faqSchema = getFAQSchema(faqs);
-
 const breadcrumbSchema = getBreadcrumbSchema([
   { name: "Home", url: "/" },
-  { name: "Jyotirlingas", url: "/12-jyotirlingas-of-india" },
   { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
-  { name: "Narayan Nagbali Ritual", url: "/narayan-nagbali-trimbakeshwar" },
+  { name: "Narayan Nagbali Pooja", url: "/narayan-nagbali-trimbakeshwar" },
 ]);
 
-const eventSchema = getEventSchema(
-  "Narayan Nagbali Trimbakeshwar Ritual",
-  "Ancient Vedic ritual performed at Trimbakeshwar Jyotirlinga to remove ancestral sins, Pitru Dosha, and fulfill unmet wishes of ancestors. This powerful ceremony includes Nagbali and Narayan Bali performed over 3 days.",
-  "various",
-  "various",
-  "Trimbakeshwar Jyotirlinga Temple",
-  "Near Kushavarta Kund, Trimbakeshwar, Nashik District, Maharashtra"
-);
-
-const structuredPayload = [
-  eventSchema,
-  faqSchema,
-  breadcrumbSchema,
-];
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
 ---
 
 <Layout meta={meta}>
@@ -83,193 +129,145 @@ const structuredPayload = [
     ))
   }
 
-  <main class="min-h-screen">
-    {/* Hero */}
-    <section class="relative bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-700 py-16 sm:py-20">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto text-center text-white space-y-4">
-          <p class="text-yellow-400 text-sm font-semibold tracking-widest uppercase">
-            Ancient Vedic Ancestral Ritual
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-rose-50 via-pink-50 to-red-100 border-b border-rose-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-rose-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-rose-900 font-medium">Narayan Nagbali Pooja</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-rose-900 leading-tight">
+        Narayan Nagbali Pooja at Trimbakeshwar — Ritual &amp; Booking Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-rose-900/80 max-w-3xl">
+        Complete guide to Narayan Nagbali pooja at Trimbakeshwar: the only Vedic ritual in India for Pitru Dosha removal. Learn about the pooja procedure, cost from ₹2,500, booking process, who should perform it, and why Trimbakeshwar is the only authentic location.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Facts -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-rose-200 bg-rose-50/60 p-5 text-center">
+          <p class="text-xs text-rose-700 uppercase tracking-wide">Pooja Cost</p>
+          <p class="text-xl font-bold text-rose-900 mt-1">₹2,500–5,000</p>
+          <p class="text-sm text-rose-900/70">per family</p>
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-rose-50/60 p-5 text-center">
+          <p class="text-xs text-rose-700 uppercase tracking-wide">Duration</p>
+          <p class="text-xl font-bold text-rose-900 mt-1">2–3 hrs</p>
+          <p class="text-sm text-rose-900/70">full ritual</p>
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-rose-50/60 p-5 text-center">
+          <p class="text-xs text-rose-700 uppercase tracking-wide">Only at</p>
+          <p class="text-xl font-bold text-rose-900 mt-1">Trimbakeshwar</p>
+          <p class="text-sm text-rose-900/70">authentic Vedic form</p>
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-rose-50/60 p-5 text-center">
+          <p class="text-xs text-rose-700 uppercase tracking-wide">Booking Lead</p>
+          <p class="text-xl font-bold text-rose-900 mt-1">2–4 weeks</p>
+          <p class="text-sm text-rose-900/70">festivals: 2–3 months</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Narayan Nagbali -->
+  <section class="py-16 bg-rose-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">What is Narayan Nagbali?</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="rounded-xl border border-rose-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-rose-900 mb-3">Narayan Bali</h3>
+          <p class="text-rose-900/80 text-sm leading-relaxed">
+            The Narayan Bali component involves offerings to Lord Vishnu/Narayan for the liberation and peace of departed ancestors. Family members participate by chanting the names and gotra of their ancestors while offering water, sesame seeds, and rice. This ritual is believed to free the souls of departed family members from unresolved attachments and grant them moksha (liberation).
           </p>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading leading-tight">
-            Narayan Nagbali Trimbakeshwar — Complete Guide
-          </h1>
-          <p class="text-lg text-indigo-100 max-w-2xl mx-auto">
-            Discover the profound ritual of Narayan Nagbali, a powerful Vedic ceremony performed at Trimbakeshwar to remove ancestral sins and pacify restless souls. Learn the complete procedure, significance, and booking information.
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-rose-900 mb-3">Nag Bali</h3>
+          <p class="text-rose-900/80 text-sm leading-relaxed">
+            The Nag Bali component involves offerings to the Nagas (serpent deities) to remove the negative effects of unnatural or premature deaths in the family — including deaths by accident, drowning, snakebite, fire, fall from height, or during pregnancy/childbirth. This addresses Pitru Dosha that specifically arises from violent or premature death.
           </p>
         </div>
       </div>
-    </section>
+      <div class="mt-8 rounded-xl border border-rose-200 bg-rose-50/60 p-6 md:p-8">
+        <p class="text-rose-900/80 leading-relaxed">
+          Together, <strong>Narayan Nagbali</strong> is one of the most powerful Vedic rituals in Hinduism. It is believed to: remove Pitru Dosha from the family's astrological chart, bring peace and prosperity to the living family members, remove obstacles in health, finances, marriage, and children, and ensure liberation of the departed souls from the cycle of rebirth. Trimbakeshwar is the only temple in India where this specific combination can be performed in its authentic Vedic form, amplified by the sacred energy of the Jyotirlinga and the Godavari's origin at Kushavarta Kund.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    {/* Main Content */}
-    <section class="py-12 sm:py-16">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto space-y-12">
-
-          {/* Introduction */}
-          <article class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              What is Narayan Nagbali?
-            </h2>
-            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                <strong>Narayan Nagbali</strong> is a complex and highly powerful Vedic ritual performed at Trimbakeshwar Jyotirlinga to resolve <strong>ancestral problems</strong> and <strong>Pitru Dosha</strong> (ancestral curse). This ancient ceremony is believed to pacify restless souls, fulfill unmet wishes of ancestors, and bring peace to the family for generations to come.
-              </p>
-              <p>
-                The ritual combines two distinct ceremonies performed together: <strong>Nagbali</strong> (to satisfy unsatisfied ancestors) and <strong>Narayan Bali</strong> (to remove Pitru Dosha). Together, they address multiple types of ancestral disturbances that affect modern life — from career obstacles to health issues and relationship problems.
-              </p>
-              <p>
-                Narayan Nagbali is unique to Trimbakeshwar, making it one of the most sought-after spiritual ceremonies in India. Pilgrims travel from across the country specifically to perform this powerful ritual at the sacred Jyotirlinga.
-              </p>
-            </div>
-          </article>
-
-          {/* When to Perform */}
-          <article class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              When Should You Perform Narayan Nagbali?
-            </h2>
-            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                Narayan Nagbali is recommended under various circumstances when ancestral disturbances are suspected:
-              </p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Unexplained obstacles</strong> in career, business, or education despite efforts</li>
-                <li><strong>Frequent financial problems</strong> despite hard work</li>
-                <li><strong>Health issues</strong> that doctors cannot explain or cure</li>
-                <li><strong>Relationship problems</strong> within family or with spouse</li>
-                <li><strong>Marriage delays</strong> despite all astrological remedies</li>
-                <li><strong>Child birth issues</strong> or miscarriages</li>
-                <li><strong>Sudden deaths</strong> in the family</li>
-                <li><strong>Dreams</strong> of ancestors asking for water or complaining</li>
-                <li><strong>Pitru Dosha</strong> confirmed through astrological analysis</li>
-              </ul>
-            </div>
-          </article>
-
-          {/* The 3-Day Ceremony */}
-          <article class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              The Complete Procedure — 3-Day Ceremony
-            </h2>
-            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                Narayan Nagbali is a <strong>three-day ritual</strong> performed by qualified Vedic priests at Trimbakeshwar:
-              </p>
-              <h3 class="text-xl font-semibold text-indigo-800">Day 1: Preparation &amp; Nagbali</h3>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Puja &amp; Sankalpa</strong> — Purification and vow-taking</li>
-                <li><strong>Nagbali</strong> — Offerings to satisfy unsatisfied ancestors</li>
-                <li><strong>Homam</strong> — Fire ceremony to invoke divine blessings</li>
-              </ul>
-              <h3 class="text-xl font-semibold text-indigo-800 mt-6">Day 2: Continuing Rituals</h3>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Narayan Bali</strong> — Ceremony to remove Pitru Dosha</li>
-                <li><strong>Vishnu Puja</strong> — Worship of Lord Vishnu in various forms</li>
-                <li><strong>Brahmin Dana</strong> — Offering to learned Brahmins</li>
-              </ul>
-              <h3 class="text-xl font-semibold text-indigo-800 mt-6">Day 3: Final Ceremony</h3>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Poornahuti</strong> — Final offering in the fire</li>
-                <li><strong>Ashirvachan</strong> — Blessings from the priests</li>
-                <li><strong>Prasad Distribution</strong> — Sharing the sacred offerings</li>
-              </ul>
-            </div>
-          </article>
-
-          {/* Materials Required */}
-          <article class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              Ritual Materials &amp; Offerings
-            </h2>
-            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                The Narayan Nagbali ritual requires specific materials:
-              </p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Nagbali materials</strong> — Special clay idols, sesame seeds, silver coins</li>
-                <li><strong>Narayan Bali materials</strong> — Wheat flour, wooden idols, copper items</li>
-                <li><strong>Puja items</strong> — Flowers, fruits, coconuts, camphor, incense</li>
-                <li><strong>Yajna materials</strong> — Ghee, havan samagri, sacred wood</li>
-                <li><strong>Donations</strong> — For Brahmins, temple, and needy</li>
-                <li><strong>Accommodation</strong> — For priests and attendants during the 3 days</li>
-              </ul>
-            </div>
-          </article>
-
-          {/* Benefits */}
-          <article class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              Benefits of Narayan Nagbali
-            </h2>
-            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Removes Pitru Dosha</strong> completely</li>
-                <li><strong>Ancestral peace</strong> — restless souls become satisfied</li>
-                <li><strong>Career advancement</strong> — obstacles in profession clear</li>
-                <li><strong>Financial stability</strong> — money flow improves</li>
-                <li><strong>Health recovery</strong> — chronic ailments heal</li>
-                <li><strong>Marriage success</strong> — delays overcome</li>
-                <li><strong>Child birth</strong> — fertility issues resolved</li>
-                <li><strong>Peace of mind</strong> — anxiety and fears disappear</li>
-              </ul>
-            </div>
-          </article>
-
-          {/* Practical Tips */}
-          <article class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              Visiting Tips &amp; Practical Information
-            </h2>
-            <div class="mt-4 space-y-4 text-foreground/80 leading-relaxed">
-              <p><strong>Booking in Advance</strong> — Contact temple authorities at least 15-30 days before preferred dates.</p>
-              <p><strong>Stay Requirements</strong> — You'll need to stay in Trimbakeshwar for all 3 days. Book accommodation at Bhakta Niwas to be close to the ritual site.</p>
-              <p><strong>During the Ritual</strong> — Maintain a sattvic (pure) diet, avoid non-vegetarian food and alcohol throughout the 3 days.</p>
-              <p><strong>Clothing</strong> — Wear traditional Indian clothing in white or light colors. Men should wear dhoti, women should wear saree or salwar kameez.</p>
-            </div>
-          </article>
-
-          {/* FAQ */}
-          <div class="prose prose-lg max-w-none">
-            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-900 font-heading">
-              Frequently Asked Questions
-            </h2>
-            <div class="mt-4 space-y-4">
-              {faqs.map((faq) => (
-                <div class="border border-border rounded-xl p-6">
-                  <h3 class="text-lg font-semibold text-foreground mb-2">{faq.question}</h3>
-                  <p class="text-foreground/70 leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div class="bg-indigo-900/5 rounded-2xl p-8 border border-indigo-900/10 mt-12">
-            <h3 class="text-xl font-bold text-indigo-900 mb-3">
-              Book Your Narayan Nagbali Ritual
-            </h3>
-            <p class="text-foreground/70 mb-4">
-              Shri Gajanan Maharaj Sansthan provides complete assistance for performing Narayan Nagbali at Trimbakeshwar. Stay at our Bhakta Niwas and receive guidance from our experienced priests.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <a
-                href="/booking"
-                class="inline-flex items-center gap-2 bg-indigo-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-900/90 transition-colors"
-              >
-                Book Accommodation & Ritual
-              </a>
-              <a
-                href="/trimbakeshwar-bhakt-niwas"
-                class="inline-flex items-center gap-2 border border-indigo-900/30 text-indigo-900 px-6 py-3 rounded-xl font-semibold hover:bg-indigo-900/5 transition-colors"
-              >
-                View Bhakta Niwas Options
-              </a>
-            </div>
-          </div>
-
+  <!-- Who should do it -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">Who Should Perform Narayan Nagbali?</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-6">
+          <h3 class="text-lg font-semibold text-rose-900 mb-3">Recommended For</h3>
+          <ul class="space-y-2 text-rose-900/80 text-sm">
+            <li>• Repeated misfortunes across multiple family members</li>
+            <li>• Family members who died unnatural deaths (accident, suicide, fire)</li>
+            <li>• Pitru Dosha confirmed by astrologer in the birth chart</li>
+            <li>• Unresolved family conflicts despite material prosperity</li>
+            <li>• Unexplained infertility or repeated miscarriages</li>
+            <li>• Chronic health issues with no medical explanation</li>
+            <li>• Dreams of ancestors asking for help or water</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-6">
+          <h3 class="text-lg font-semibold text-rose-900 mb-3">Ritual Details</h3>
+          <ul class="space-y-2 text-rose-900/80 text-sm">
+            <li>• Performed by the eldest male or family representative</li>
+            <li>• Entire family should be present for the 2–3 hour ritual</li>
+            <li>• Requires sattvic diet (no non-veg, no alcohol) for 3 days</li>
+            <li>• Wear traditional white or light-colored clothing</li>
+            <li>• Men: dhoti; Women: saree or salwar kameez</li>
+            <li>• Can be combined with Kushavarta Kund holy dip</li>
+            <li>• Accommodation at Bhakta Niwas recommended</li>
+          </ul>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-rose-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-rose-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-rose-900">
+                <span>{faq.question}</span>
+                <span class="text-rose-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-rose-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-rose-700 to-pink-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Book Narayan Nagbali Pooja at Trimbakeshwar</h2>
+      <p class="mt-4 text-rose-100/90 max-w-2xl mx-auto">
+        Call +91 96612 63850 or +91 75210 63034 to book. Book 2–4 weeks in advance for the best dates.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-rose-800 font-semibold shadow hover:bg-rose-50 transition">Book Pooja & Stay</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
 </Layout>

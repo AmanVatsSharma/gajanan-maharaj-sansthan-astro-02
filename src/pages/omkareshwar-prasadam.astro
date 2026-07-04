@@ -1,0 +1,265 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Prasadam — Temple Food, Mahaprasad & Narmada Holy Water 2026",
+  description:
+    "Guide to Omkareshwar prasadam: what is offered, Mahaprasad distribution, Narmada holy water, free prasad after aarti, coconut & banana offerings, prasadam timings, and where to get sacred food at Omkareshwar Jyotirlinga.",
+  keywords: [
+    "omkareshwar prasadam",
+    "omkareshwar mahaprasad",
+    "omkareshwar prasadam timings",
+    "omkareshwar prasadam free",
+    "omkareshwar temple food",
+    "omkareshwar prasadam after aarti",
+    "omkareshwar narmada holy water",
+    "omkareshwar coconut offering",
+    "omkareshwar prasadam cost",
+    "omkareshwar prasadam ingredients",
+    "omkareshwar temple bhojan",
+    "omkareshwar free food temple",
+    "omkareshwar prasadam what to expect",
+    "omkareshwar sacred food offering",
+  ],
+  path: "/omkareshwar-prasadam",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva. Complete guide to prasadam and sacred food offerings at Omkareshwar.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple with all vegetarian meals included.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const prasadTypes = [
+  {
+    name: "Narmada Jal (Holy Water)",
+    cost: "Free",
+    description: "The most sacred prasad — water from the Narmada River. The Narmada is considered Shiva's daughter, and her water is said to carry the purifying power of the Ganga at Kashi. Narmada jal is distributed after every aarti ceremony. Devotees collect it in small containers or drink it directly. The water is taken home by thousands of pilgrims annually as sacred tirtha.",
+    when: "Distributed after every aarti",
+  },
+  {
+    name: "Coconut Prasad",
+    cost: "Free (after aarti)",
+    description: "Half a coconut, broken as an offering to Lord Shiva, is distributed as prasad after most aartis. The coconut is considered the purest offering — it represents the ego, which must be broken before the divine. The coconut water inside is sweet and considered Narmada-infused nectar.",
+    when: "After morning and evening aartis",
+  },
+  {
+    name: "Banana &amp; Fruit Prasad",
+    cost: "Free (after aarti)",
+    description: "Bananas and seasonal fruits are distributed as prasad after the main aartis. Fruits are considered sattvic (pure) offerings to Shiva and are traditionally offered before any other prasad. The fruit prasad is given to all devotees after the aarti without discrimination.",
+    when: "After Shringar Aarti and Sandhya Aarti",
+  },
+  {
+    name: "Ladoo / Peda",
+    cost: "Free (after aarti)",
+    description: "Sweet prasad in the form of ladoos or pedas, made from chickpea flour, sugar, and ghee. These traditional Indian sweets are offered to Shiva during aarti and then distributed to devotees. The ladoos of Omkareshwar are particularly known for their soft, melt-in-the-mouth texture.",
+    when: "During festivals and major aartis",
+  },
+  {
+    name: "Vibhuti (Sacred Ash)",
+    cost: "Free",
+    description: "Vibhuti (holy ash) is a sacred prasad applied to the forehead by Shiva devotees. It is prepared by burning dried cow dung cakes with sacred herbs and mantras during the abhishekam. Vibhuti is distributed to all devotees after the aarti and is considered a powerful protective amulet. Many devotees apply vibhuti across their forehead in three horizontal lines (tripundra).",
+    when: "After every abhishekam and aarti",
+  },
+  {
+    name: "Kalawa (Sacred Thread)",
+    cost: "Free",
+    description: "A sacred red-yellow cotton thread (kalawa or mauli) is tied on the right wrist of devotees after the aarti as a blessing from Lord Shiva. The kalawa symbolises protection and the devotee's vow to Shiva. It is traditionally worn for 40 days before being removed and offered back to a river or tree.",
+    when: "After major aartis and poojas",
+  },
+  {
+    name: "Mahaprasad (Full Meal)",
+    cost: "Free / Donation",
+    description: "On special festival days (Maha Shivaratri, Kartik Purnima, Amavasya), the temple trust distributes full vegetarian meals (Mahaprasad) to thousands of devotees. The meal typically includes rice, dal, sabzi, roti, pickle, and sweet. There is no fixed cost — devotees may contribute a voluntary donation. The Mahaprasad is served on banana leaves in large community halls near the temple.",
+    when: "On major festival days",
+  },
+  {
+    name: "Narmada Tirtha (Consecrated Water)",
+    cost: "Free",
+    description: "Water from the Narmada River that has been used during the abhishekam ceremony and then consecrated through Vedic mantras is distributed as Narmada Tirtha. This is considered especially powerful prasad — it carries the mantras chanted during the abhishekam. Many devotees collect it in small bottles to take home. It is also used for self-abhishekam (pouring over oneself as a blessing).",
+    when: "After every Rudrabhishek",
+  },
+];
+
+const faqs = [
+  {
+    question: "Is prasadam free at Omkareshwar Temple?",
+    answer:
+      "Yes, prasadam at Omkareshwar Temple is completely free of charge. After every aarti, prasad (coconut, banana, ladoo, Narmada water, and vibhuti) is distributed to all devotees without any fee or donation requirement. Simply stand in the prasad queue after the aarti completes. On major festival days, the Mahaprasad (full vegetarian meal) is also distributed free, though devotees are welcome to make voluntary donations to the temple trust to support the free food programme. The Shri Gajanan Maharaj Sansthan's Bhakta Niwas also provides free prasad as part of the accommodation package — all vegetarian meals are included in the room rate.",
+  },
+  {
+    question: "What prasad should I not miss at Omkareshwar?",
+    answer:
+      "The three prasad items you should not miss at Omkareshwar are: (1) <strong>Narmada Jal (holy water)</strong> — the most sacred prasad. Distributed after every aarti. Collect a small amount in a bottle to take home. (2) <strong>Vibhuti (sacred ash)</strong> — distributed after every abhishekam. Apply it across your forehead as a blessing. Considered a protective amulet by Shiva devotees. (3) <strong>Coconut prasad</strong> — half a coconut offered to Shiva during aarti, then distributed. Sweet, pure, and deeply symbolic. On festival days, the Mahaprasad (full meal on banana leaf) is a special experience. All prasad is vegetarian and sattvic (pure).",
+  },
+  {
+    question: "Can I take Narmada water home from Omkareshwar?",
+    answer:
+      "Yes, you are welcome to take Narmada water home from Omkareshwar. Bring a clean, sealed water bottle or small container. Fill it from the Narmada ghats before you depart (preferably early morning when the water is calm and clean). Many devotees carry 1–2 litres of Narmada jal home for personal use and to share with family members who could not make the pilgrimage. The water is also used for home puja rituals. Note: if flying back from Indore airport, be prepared for security checks — declare the water bottle if it exceeds 100 ml. For train or bus travel, there are no restrictions on carrying Narmada water.",
+  },
+  {
+    question: "What is the Mahaprasad at Omkareshwar and when is it distributed?",
+    answer:
+      "Mahaprasad at Omkareshwar is a full vegetarian meal distributed free to thousands of devotees on major festival days. The meal is served on banana leaves and typically includes: steamed rice, dal (lentil curry), sabzi (mixed vegetable curry), roti or puri, pickle, papad, and sweet (ladoo or kheer). It is distributed on: Maha Shivaratri (February/March), Kartik Purnima (October/November), Amavasya (new moon days), and during the Narmada Pushkaram (every 12 years, next in 2028). The Mahaprasad is served in large community halls near the temple. There is no charge — simply join the queue. Voluntary donations to the temple trust are welcome to support the Mahaprasad programme.",
+  },
+  {
+    question: "Are there food options at Omkareshwar for non-prasad meals?",
+    answer:
+      "Yes, there are several food options at Omkareshwar for regular meals outside prasad distribution hours. (1) <strong>Temple canteen</strong> — near the main temple entrance, serves vegetarian thalis, snacks, chai, and drinking water. Open from 7:00 AM to 9:00 PM. (2) <strong>Local restaurants</strong> — on the mainland near the bus stand and on the island near the temple. Serve traditional Malwa cuisine — dal, roti, rice, sabzi. Budget: ₹80–150 per thali. (3) <strong>Bhakta Niwas canteen</strong> — the Sansthan's own accommodation includes all vegetarian meals (breakfast, lunch, dinner) in the room rate. Simple, wholesome, sattvic food served in the dining hall. For the best value and most authentic experience, stay at the Sansthan's Bhakta Niwas — meals are included at no extra cost.",
+  },
+  {
+    question: "What offerings can I make at Omkareshwar Temple?",
+    answer:
+      "Common offerings at Omkareshwar Temple: (1) <strong>Coconut</strong> — the most popular offering. Available at vendors outside the temple for ₹10–30 each. The coconut is offered at the sanctum and then received back as prasad. (2) <strong>Flowers</strong> — garlands of jasmine, marigold, and rose petals. Available from vendors outside the temple for ₹20–100. (3) <strong>Banana</strong> — a simple and traditional offering, ₹5–10. (4) <strong>Oil lamp (diya)</strong> — available at the ghats for ₹5–10. Lighting a diya at the Narmada ghats is deeply meritorious. (5) <strong>Cash donation</strong> — donation boxes are placed at the temple entrance and near the sanctum. Donations support the temple's free food, accommodation, and social welfare programmes. (6) <strong>Narmada water</strong> — pour a handful of Narmada water over the Shiva lingam as a self-offering. No purchase needed — the water is freely available at the ghats.",
+  },
+  {
+    question: "What is the difference between prasad and Mahaprasad at Omkareshwar?",
+    answer:
+      "Regular prasad is distributed daily after every aarti and consists of small offerings: half a coconut, a banana, a ladoo, Narmada water, and vibhuti (holy ash). It is a quick blessing distributed to all devotees. Mahaprasad (Maha = great) is a full vegetarian meal served only on major festival days — Maha Shivaratri, Kartik Purnima, Amavasya, and Narmada Pushkaram. The Mahaprasad is a complete thali meal served on banana leaves in community halls. While regular prasad is a quick blessing, Mahaprasad is a full sacred meal shared in community, considered spiritually equivalent to eating in Lord Shiva's own presence. The Mahaprasad is always free of charge.",
+  },
+  {
+    question: "Can I get Omkareshwar prasad shipped to my home?",
+    answer:
+      "Currently, Omkareshwar Temple does not offer prasad shipping or delivery services directly. However, you can purchase prasad items (vibhuti, small Shiva lingams, sacred Rudraksha beads, and religious books) from the temple bookstall and carry them back with you. Some devotees fill small bottles of Narmada water to take home. For packaged prasad items to be shipped, you would need to arrange courier services from Indore or Khandwa after your visit. The Shri Gajanan Maharaj Sansthan in Shegaon also sells religious items and books related to Shri Gajanan Maharaj — contact them at +91 75210 63034 for details.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Prasadam", url: "/omkareshwar-prasadam" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-100 border-b border-yellow-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-yellow-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-yellow-900 font-medium">Prasadam</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-yellow-900 leading-tight">
+        Omkareshwar Prasadam — Temple Food &amp; Sacred Offerings 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-yellow-900/80 max-w-3xl">
+        Complete guide to prasadam at Omkareshwar: free coconut, banana, Narmada holy water, vibhuti, Mahaprasad on festival days, what is distributed after aarti, timings, and where to get sacred food at Omkareshwar Jyotirlinga.
+      </p>
+    </div>
+  </section>
+
+  <!-- Types of Prasad -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-900">Types of Prasadam at Omkareshwar</h2>
+      <p class="mt-3 text-yellow-900/80 max-w-3xl">
+        From holy Narmada water to full festival meals — here is everything offered as prasad at Omkareshwar.
+      </p>
+      <div class="mt-8 space-y-4">
+        {
+          prasadTypes.map((p) => (
+            <div class="rounded-xl border border-yellow-200 bg-yellow-50/30 p-6">
+              <div class="flex flex-wrap items-center gap-3 mb-2">
+                <h3 class="text-lg font-semibold text-yellow-900">{p.name}</h3>
+                <span class="px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-medium">{p.cost}</span>
+              </div>
+              <p class="text-yellow-900/80 text-sm leading-relaxed mb-2">{p.description}</p>
+              <p class="text-yellow-900/70 text-sm"><strong>When:</strong> {p.when}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-yellow-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-yellow-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-yellow-900">
+                <span>{faq.question}</span>
+                <span class="text-yellow-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-yellow-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-yellow-700 to-amber-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Experience Prasadam at Omkareshwar</h2>
+      <p class="mt-4 text-yellow-100/90 max-w-2xl mx-auto">
+        Stay at the Sansthan's Bhakta Niwas where all vegetarian meals are included in your room rate.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-yellow-800 font-semibold shadow hover:bg-yellow-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

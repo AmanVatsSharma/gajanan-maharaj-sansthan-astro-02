@@ -1,0 +1,342 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar from Indore — Distance, Routes, Bus & Taxi Guide 2026",
+  description:
+    "How to reach Omkareshwar from Indore: 77 km via SH 27, bus routes, shared taxis, car drive, train via Khandwa, local transport, and complete travel guide for Indore devotees.",
+  keywords: [
+    "omkareshwar from indore",
+    "indore to omkareshwar",
+    "indore to omkareshwar distance",
+    "indore to omkareshwar bus",
+    "indore to omkareshwar taxi",
+    "indore to omkareshwar by car",
+    "indore omkareshwar one day trip",
+    "indore omkareshwar weekend trip",
+    "omkareshwar indore sh 27",
+    "indore sarwate bus stand omkareshwar",
+    "indore ISBT omkareshwar",
+    "omkareshwar from indore msrtc",
+    "indore to khandwa omkareshwar",
+    "omkareshwar day trip from indore",
+  ],
+  path: "/omkareshwar-from-indore",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, 77 km from Indore via SH 27.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const routes = [
+  {
+    from: "Indore (Sarwate Bus Stand)",
+    distance: "77 km",
+    time: "2 hrs",
+    mode: "Car / Taxi / Bus",
+    detail: "Via SH 27 through Mhow. The most popular and direct route. MSRTC buses depart every 30 minutes from Indore ISBT (Palasia). Shared taxis from Sarwate Bus Stand depart when full (every 15–30 min). Private taxi: ₹2,000–3,000 round trip. The drive is scenic through the Malwa plateau.",
+  },
+  {
+    from: "Indore (Via Khandwa by Train)",
+    distance: "130 km",
+    time: "3–4 hrs total",
+    mode: "Train + Taxi",
+    detail: "Take the Indore–Khandwa passenger or express train (several daily, 1.5–2 hrs). From Khandwa Junction, take a shared taxi or MSRTC bus to Omkareshwar (13 km, 30 min). This is the most economical option at approximately ₹250–500 total per person.",
+  },
+  {
+    from: "Indore Airport (IDR)",
+    distance: "90 km",
+    time: "2.5 hrs",
+    mode: "Taxi / Uber / Ola",
+    detail: "Devi Ahilya Bai Holkar Airport (IDR) is 90 km from Omkareshwar. Taxis are available at the airport (pre-paid counter) or book via Ola/Uber. The drive via SH 27 takes about 2.5 hours through scenic Malwa countryside. No direct airport shuttle to Omkareshwar.",
+  },
+];
+
+const faqs = [
+  {
+    question: "How far is Omkareshwar from Indore?",
+    answer:
+      "Omkareshwar is approximately 77 km from Indore via State Highway 27 (SH 27) through Mhow. By car or taxi, the journey takes about 2 hours. By bus, MSRTC operates frequent services from Indore ISBT (Palasia Bus Stand) to Omkareshwar, taking 2–2.5 hours. By train, you can travel Indore → Khandwa Junction (1.5–2 hrs) and then take a shared taxi for the final 13 km (30 min).",
+  },
+  {
+    question: "Is there a direct bus from Indore to Omkareshwar?",
+    answer:
+      "Yes, MSRTC operates direct buses from Indore ISBT (Inter-State Bus Terminal at Palasia) to Omkareshwar approximately every 30 minutes. The journey takes 2–2.5 hours and costs around ₹150–250 per person. Both AC and non-AC options are available. Buses drop you at Omkareshwar bus stand near the temple. For late evening returns, book your return bus ticket in advance as frequency reduces after 7 PM.",
+  },
+  {
+    question: "Can I do a one-day trip from Indore to Omkareshwar?",
+    answer:
+      "Yes, a one-day trip from Indore to Omkareshwar is possible but tight. Recommended schedule: depart Indore by 5:00 AM (beat traffic and crowds), arrive Omkareshwar by 7:00 AM, Mamleshwar temple darshan (7:00–8:00 AM), cross bridge to Omkareshwar island, main temple darshan and Narmada parikrama (8:00 AM–12:00 PM), lunch at a local restaurant (12:00–1:00 PM), depart for Indore by 1:30 PM, arrive Indore by 3:30 PM. This is doable but exhausting. A 2-day trip is far more relaxed and spiritually fulfilling.",
+  },
+  {
+    question: "How much does a taxi from Indore to Omkareshwar cost?",
+    answer:
+      "A round-trip taxi from Indore to Omkareshwar costs approximately ₹2,000–3,000 depending on the car type (4-seater sedan, 7-seater SUV, or larger). One-way fares are approximately ₹1,200–1,800. Shared taxis from Sarwate Bus Stand or Indore ISBT charge approximately ₹300–500 per person one-way. Ola and Uber are available from most parts of Indore to Omkareshwar at competitive rates. Pre-booking through a local Indore travel agency can often secure a better rate.",
+  },
+  {
+    question: "What are the best places to stop between Indore and Omkareshwar?",
+    answer:
+      "The SH 27 route from Indore to Omkareshwar passes through Mhow (a cantonment town with the famous Patalpani waterfall nearby in monsoon), and then through scenic Malwa plateau countryside. Patalpani waterfall (about 30 km from Indore, slightly off-route) is a popular morning stop for a quick visit. Mhow itself has the Dr. Ambedkar Memorial and the historic Holkar Cricket Stadium. For a meal stop, there are several highway dhabas and restaurants near the SH 27 route. The drive itself is pleasant through agricultural landscape and small villages.",
+  },
+  {
+    question: "Can I combine Indore → Omkareshwar → Ujjain in one trip?",
+    answer:
+      "Yes, the Indore → Omkareshwar → Ujjain circuit is a popular 3-day central India pilgrimage: Day 1: Indore to Omkareshwar (77 km, 2 hrs), darshan at Omkareshwar and Mamleshwar, overnight at Bhakta Niwas. Day 2: Morning Narmada parikrama and holy dip, depart for Ujjain (135 km, 3.5 hrs via SH 27), evening Mahakaleshwar darshan. Day 3: Morning Mahakaleshwar jyotirlinga darshan, return to Indore (55 km, 1.5 hrs). This covers two of the 12 Jyotirlingas in a comfortable 3-day itinerary. Many pilgrims add a third Jyotirlinga — Mahakaleshwar, Ujjain → Grishneshwar (350 km) or back to Indore.",
+  },
+  {
+    question: "Which is closer to Indore — Omkareshwar or Ujjain Mahakaleshwar?",
+    answer:
+      "Ujjain Mahakaleshwar is closer to Indore — only 55 km and about 1.5 hours by car. Omkareshwar is 77 km and about 2 hours from Indore. However, most pilgrims from Indore visit both in one trip because they are on roughly the same route. The Indore–Omkareshwar–Ujjain circuit is standard. If you can only visit one in a day trip, Ujjain is more convenient due to the shorter distance. Omkareshwar requires more time for the island parikrama and dual-temple circuit.",
+  },
+  {
+    question: "What is the best time of day to travel from Indore to Omkareshwar?",
+    answer:
+      "The best departure time from Indore is 5:00–6:00 AM. This avoids the Indore city morning rush hour, gets you to Omkareshwar by 7:00–8:00 AM (cool, peaceful, ideal for darshan before crowds build), and gives you the full day for the parikrama and sightseeing. The return journey from Omkareshwar should be by 2:00–3:00 PM to reach Indore before evening traffic. For a one-day trip, this tight 8-hour window is the maximum sustainable. For 2+ day visits, timing is more relaxed.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "How to Reach Omkareshwar", url: "/how-to-reach-omkareshwar" },
+  { name: "From Indore", url: "/omkareshwar-from-indore" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-100 border-b border-indigo-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-indigo-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-indigo-900 font-medium">From Indore</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-indigo-900 leading-tight">
+        Omkareshwar from Indore — Distance, Routes &amp; Travel Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-indigo-900/80 max-w-3xl">
+        Complete travel guide from Indore to Omkareshwar Jyotirlinga: 77 km via SH 27, MSRTC bus timings, shared taxi rates, car drive tips, train via Khandwa, one-day trip itinerary, and combining Omkareshwar with Ujjain.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">Distance</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">77 km</p>
+          <p class="text-sm text-indigo-900/70">via SH 27</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">By Car</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">2 hrs</p>
+          <p class="text-sm text-indigo-900/70">via Mhow</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">By Bus</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">2–2.5 hrs</p>
+          <p class="text-sm text-indigo-900/70">MSRTC every 30 min</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-5 text-center">
+          <p class="text-xs text-indigo-700 uppercase tracking-wide">Nearest Airport</p>
+          <p class="text-xl font-bold text-indigo-900 mt-1">Indore (IDR)</p>
+          <p class="text-sm text-indigo-900/70">90 km away</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Travel Options from Indore</h2>
+      <div class="mt-8 space-y-6">
+        {
+          routes.map((r) => (
+            <div class="rounded-xl border border-indigo-200 bg-white p-6">
+              <div class="flex flex-wrap gap-4 mb-3">
+                <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">{r.from}</span>
+                <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">{r.distance}</span>
+                <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">{r.time}</span>
+                <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">{r.mode}</span>
+              </div>
+              <p class="text-indigo-900/80 text-sm leading-relaxed">{r.detail}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- One Day Trip -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">One-Day Trip Itinerary from Indore</h2>
+      <div class="mt-8 rounded-xl border border-indigo-200 bg-indigo-50/40 p-6 md:p-8">
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">1</div>
+            <div>
+              <h3 class="font-semibold text-indigo-900">5:00 AM — Depart Indore</h3>
+              <p class="text-indigo-900/80 text-sm mt-1">Beat traffic and morning crowds. Take SH 27 through Mhow. Bring snacks and water for the drive.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">2</div>
+            <div>
+              <h3 class="font-semibold text-indigo-900">7:00 AM — Arrive Omkareshwar</h3>
+              <p class="text-indigo-900/80 text-sm mt-1">Park at Omkareshwar bus stand. Head straight to Mamleshwar Temple on the eastern bank.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">3</div>
+            <div>
+              <h3 class="font-semibold text-indigo-900">7:00–8:00 AM — Mamleshwar Darshan</h3>
+              <p class="text-indigo-900/80 text-sm mt-1">Quiet morning darshan at Mamleshwar. Minimal crowds at this hour.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">4</div>
+            <div>
+              <h3 class="font-semibold text-indigo-900">8:00 AM–12:00 PM — Omkareshwar Island</h3>
+              <p class="text-indigo-900/80 text-sm mt-1">Cross the bridge to the island. Omkareshwar Temple darshan, Narmada parikrama (5.5 km, 3 hrs), and holy dip.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">5</div>
+            <div>
+              <h3 class="font-semibold text-indigo-900">12:00–1:00 PM — Lunch &amp; Rest</h3>
+              <p class="text-indigo-900/80 text-sm mt-1">Lunch at a local restaurant on the island or mainland. Brief rest before return journey.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">6</div>
+            <div>
+              <h3 class="font-semibold text-indigo-900">1:30 PM — Depart for Indore</h3>
+              <p class="text-indigo-900/80 text-sm mt-1">Return via SH 27. Arrive Indore by 3:30 PM. For a relaxed trip, add an overnight stay at Bhakta Niwas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Combined Pilgrimage -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Indore → Omkareshwar → Ujjain Circuit</h2>
+      <p class="mt-3 text-indigo-900/80 max-w-3xl">
+        Many Indore devotees combine Omkareshwar with the Ujjain Mahakaleshwar Jyotirlinga in a 3-day pilgrimage covering two of the 12 Jyotirlingas.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-indigo-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Day 1: Indore → Omkareshwar</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Indore to Omkareshwar (77 km, 2 hrs). Full day: Omkareshwar temple, Mamleshwar temple, Narmada parikrama. Overnight at Bhakta Niwas.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Day 2: Omkareshwar → Ujjain</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Morning parikrama and holy dip. Drive to Ujjain (135 km, 3.5 hrs). Evening Mahakaleshwar darshan. Overnight in Ujjain.</p>
+        </div>
+        <div class="rounded-xl border border-indigo-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-indigo-900">Day 3: Ujjain → Indore</h3>
+          <p class="mt-2 text-indigo-900/80 text-sm">Morning Mahakaleshwar jyotirlinga darshan. Optional: Ram Ghat and Shipra River aarti. Return to Indore (55 km, 1.5 hrs).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-indigo-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-indigo-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-indigo-900">
+                <span>{faq.question}</span>
+                <span class="text-indigo-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-indigo-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-indigo-700 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Indore to Omkareshwar Pilgrimage</h2>
+      <p class="mt-4 text-indigo-100/90 max-w-2xl mx-auto">
+        Book Omkareshwar accommodation in advance for the best rates. Our Bhakta Niwas is just 15 minutes from both temples.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-indigo-800 font-semibold shadow hover:bg-indigo-50 transition">Book Accommodation</a>
+        <a href="/how-to-reach-omkareshwar" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">All Routes</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

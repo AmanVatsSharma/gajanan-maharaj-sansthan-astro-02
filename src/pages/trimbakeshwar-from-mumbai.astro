@@ -1,0 +1,302 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Trimbakeshwar from Mumbai — Distance, Bus, Train & Flight Guide 2026",
+  description:
+    "Complete travel guide from Mumbai to Trimbakeshwar Jyotirlinga: 170 km, best routes via Nashik, bus and train options, weekend itinerary, cost per person, and combining Trimbakeshwar with other Jyotirlingas.",
+  keywords: [
+    "trimbakeshwar from mumbai",
+    "mumbai to trimbakeshwar",
+    "mumbai to trimbakeshwar distance",
+    "mumbai to trimbakeshwar train",
+    "mumbai to trimbakeshwar bus",
+    "mumbai to trimbakeshwar car",
+    "mumbai to nashik trimbakeshwar",
+    "mumbai nashik trimbakeshwar bus",
+    "mumbai to trimbakeshwar weekend trip",
+    "mumbai to trimbakeshwar cost",
+    "trimbakeshwar mumbai pilgrimage",
+    "mumbai to kushavarta kund",
+    "mumbai brahmagiri trek",
+    "mumbai trimbakeshwar group tour",
+  ],
+  path: "/trimbakeshwar-from-mumbai",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Dist. Nashik, Maharashtra",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, 170 km from Mumbai via Nashik.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.5298, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Bhakta Niwas",
+    city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 500, max: 2500, currency: "₹" }
+);
+
+const routes = [
+  {
+    from: "Mumbai → Trimbakeshwar by Car",
+    distance: "170 km",
+    time: "3.5–4 hrs",
+    mode: "Car",
+    detail: "Via Mumbai–Nashik Expressway (NH 160) to Nashik (165 km, 3 hrs), then Nashik–Trimbakeshwar Road (30 km, 1 hr). Total: 195 km, 4 hrs. Best route for flexibility. Depart Mumbai by 4:00 AM to avoid traffic and reach Trimbakeshwar by 8:00 AM. Fuel cost: approximately ₹1,500–2,000 round trip.",
+  },
+  {
+    from: "Mumbai → Nashik → Trimbakeshwar by Bus",
+    distance: "170 km total",
+    time: "4–5 hrs total",
+    mode: "Bus",
+    detail: "MSRTC and private buses run frequently from Mumbai (Dadar/Sion/Kurla) to Nashik (165 km, 3.5–4 hrs, ₹400–700). From Nashik CBS, take a local bus or shared taxi to Trimbakeshwar (30 km, 1 hr, ₹50–150). Total time: 4–5 hrs with transfer. Many temples and spiritual organisations from Mumbai arrange group bus trips to Trimbakeshwar during Shravan and Maha Shivaratri.",
+  },
+  {
+    from: "Mumbai → Nashik by Train + Taxi",
+    distance: "170 km",
+    time: "4–5 hrs total",
+    mode: "Train + Taxi",
+    detail: "Trains from Mumbai (Dadar/CSMT) to Nashik Road Railway Station run frequently — Deccan Express, Godavari Express, and several others. Journey: 3–4 hrs, ₹200–500 (sleeper). From Nashik Road station, take a taxi or local bus to Trimbakeshwar (30 km, 1 hr, ₹300–500 taxi). Total time: 4–5 hrs.",
+  },
+  {
+    from: "Mumbai → Trimbakeshwar by Flight",
+    distance: "170 km",
+    time: "1 hr flight + 1 hr drive",
+    mode: "Flight + Taxi",
+    detail: "Fly Mumbai → Nashik (Ozar Airport, 1 hr, ₹3,000–5,000). Taxi from Nashik airport to Trimbakeshwar (35 km, 1 hr, ₹800–1,200). Total travel time: 3–4 hrs including airport formalities. Most expensive option but fastest. Not commonly used given the short driving distance from Mumbai.",
+  },
+];
+
+const faqs = [
+  {
+    question: "How far is Trimbakeshwar from Mumbai and how long does it take?",
+    answer:
+      "Trimbakeshwar is approximately 170 km from Mumbai city centre. By car via the Mumbai–Nashik Expressway (NH 160), the drive takes 3.5–4 hours. By bus from Mumbai to Nashik (165 km, 3.5 hrs) plus a local bus or taxi from Nashik to Trimbakeshwar (30 km, 1 hr), the total travel time is 4–5 hours. By train to Nashik Road (3–4 hrs) plus taxi (1 hr), it is approximately 4–5 hours. The flight to Nashik is 1 hour but not commonly used given the short total distance. Trimbakeshwar is the closest major Jyotirlinga to Mumbai, making it ideal for weekend trips.",
+  },
+  {
+    question: "Can I do a weekend trip from Mumbai to Trimbakeshwar?",
+    answer:
+      "Yes, a Mumbai → Trimbakeshwar weekend trip is one of the most popular pilgrimage circuits from Mumbai. Recommended schedule: Friday evening depart Mumbai by bus, private car, or train, arrive Trimbakeshwar/Nashik by 8:00–9:00 PM, overnight at Trimbakeshwar Sansthan Bhakta Niwas. Saturday: early morning darshan (5:00 AM), Narayan Nagbali pooja, Kushavarta Kund holy dip, Brahmagiri mountain trek, evening Narmada-style aarti at the Godavari ghats, overnight at Bhakta Niwas. Sunday: morning Godavari sunrise darshan, depart by 9:00 AM, reach Mumbai by 1:00–2:00 PM. This gives a full and deeply satisfying 2-day pilgrimage experience.",
+  },
+  {
+    question: "How much does a Mumbai → Trimbakeshwar trip cost per person?",
+    answer:
+      "Budget breakdown per person for a 2-day trip from Mumbai: Bus/train to Nashik (₹300–600) + Nashik–Trimbakeshwar taxi (₹100–200) + Bhakta Niwas accommodation (₹250–1,000/night, shared) + food (₹200–400/day) + local transport (₹100–200) + pooja offerings (₹200–500) = approximately ₹1,500–3,500 per person for a 2-day trip. Mid-range (private car + private room at Bhakta Niwas): ₹2,500–4,500. Group tours from Mumbai spiritual organisations typically cost ₹1,800–2,500 per person for 2 days (includes transport, accommodation, meals, and guide).",
+  },
+  {
+    question: "Are there group tours from Mumbai to Trimbakeshwar?",
+    answer:
+      "Yes, many Mumbai-based spiritual organisations, temples, and tour operators offer group pilgrimage tours to Trimbakeshwar. These typically cover a 2-day itinerary: Mumbai → Nashik → Trimbakeshwar on Day 1 (temple darshan, Narayan Nagbali pooja), overnight at Bhakta Niwas, and return to Mumbai on Day 2. Group tours are especially popular during Shravan (July–August) and Maha Shivaratri (February/March). The Shri Gajanan Maharaj Sansthan organises group pilgrimages from various Maharashtra cities including Mumbai — contact +91 75210 63034 for details. Group booking advantages: lower per-person cost, pre-arranged accommodation and pooja bookings, and travelling with like-minded devotees.",
+  },
+  {
+    question: "Can I combine Trimbakeshwar with Omkareshwar in one trip from Mumbai?",
+    answer:
+      "Yes, a combined Trimbakeshwar + Omkareshwar pilgrimage from Mumbai is popular and covers two of the 12 Jyotirlingas. Recommended 5-day itinerary: Day 1: Mumbai → Trimbakeshwar (170 km, 4 hrs), darshan and Narayan Nagbali pooja. Day 2: Brahmagiri trek and Godavari origin visit. Day 3: Trimbakeshwar → Omkareshwar (450 km, 9–10 hrs by road) or Trimbakeshwar → Khandwa by train. Day 4: Omkareshwar temples and Narmada parikrama. Day 5: Return to Mumbai from Indore/Khandwa. The Shri Gajanan Maharaj Sansthan has accommodation at both locations and can assist with bookings from Mumbai. Many devotees also add Shegaon (Shri Gajanan Maharaj Samadhi) to the circuit.",
+  },
+  {
+    question: "What is the best time for Mumbai devotees to visit Trimbakeshwar?",
+    answer:
+      "For Mumbai devotees, the best time to visit Trimbakeshwar is October through February, aligning with Mumbai's pleasant post-monsoon season. November (Kartik Purnima) and February (Maha Shivaratri) are the most popular months for Mumbai-based pilgrimages. A long weekend from Mumbai works perfectly: Friday evening departure, Saturday full day at Trimbakeshwar, Sunday morning return. During Shravan (July–August), while spiritually powerful, expect heavy rain and crowded trains/buses from Mumbai — book group tours well in advance. The close proximity of Trimbakeshwar to Mumbai (only 170 km) makes it the most accessible Jyotirlinga for Mumbai residents.",
+  },
+  {
+    question: "Are there direct buses from Mumbai to Trimbakeshwar?",
+    answer:
+      "There are no direct MSRTC buses from Mumbai to Trimbakeshwar. However, several options work well: (1) MSRTC or private buses from Mumbai (Dadar/Sion) to Nashik CBS (165 km, 3.5–4 hrs, every 30 minutes, ₹400–700), then MSRTC local bus Nashik → Trimbakeshwar (30 km, 1 hr, ₹50–100, every hour). (2) Private taxi from Mumbai to Trimbakeshwar: ₹5,000–8,000 round trip, most convenient for groups. (3) Shared cabs from Mumbai to Nashik, then local taxi to Trimbakeshwar. During Shravan and Maha Shivaratri, many Mumbai temples arrange direct private bus services to Trimbakeshwar — check with local temples and spiritual organisations.",
+  },
+  {
+    question: "What makes Trimbakeshwar special compared to other Jyotirlingas near Mumbai?",
+    answer:
+      "Trimbakeshwar stands out for four unique features that no other Jyotirlinga offers: (1) <strong>The origin of the Godavari River</strong> — the sacred Godavari (Ganga of South India) flows from Shiva's matted hair at Kushavarta Kund, 1 km from the temple. This alone makes Trimbakeshwar incomparable. (2) <strong>The three-faced Jyotirlinga</strong> — representing Brahma, Vishnu, and Shiva in one lingam, covered by a silver mask. (3) <strong>The Brahmagiri mountain trek</strong> — the only Jyotirlinga set at the foot of a major mountain, with a 500-step climb to the Gorakshanath Cave. (4) <strong>Narayan Nagbali pooja</strong> — a unique ritual only performed at Trimbakeshwar to remove Pitru Dosha (ancestral curse) and grant liberation to departed souls. At only 170 km from Mumbai, Trimbakeshwar is also the most accessible Jyotirlinga for Maharashtra devotees.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "From Mumbai", url: "/trimbakeshwar-from-mumbai" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 border-b border-sky-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-sky-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-sky-900 font-medium">From Mumbai</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-sky-900 leading-tight">
+        Trimbakeshwar from Mumbai — Distance, Bus, Train &amp; Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-sky-900/80 max-w-3xl">
+        Complete travel guide from Mumbai to Trimbakeshwar Jyotirlinga: 170 km via Nashik Expressway, bus and train options, weekend trip itinerary, cost per person, group tours, and combining Trimbakeshwar with Omkareshwar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">Distance</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">170 km</p>
+          <p class="text-sm text-sky-900/70">via Nashik Expressway</p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">By Car</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">3.5–4 hrs</p>
+          <p class="text-sm text-sky-900/70">via NH 160</p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">By Train</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">3–4 hrs</p>
+          <p class="text-sm text-sky-900/70">to Nashik Road</p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">By Bus</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">4–5 hrs</p>
+          <p class="text-sm text-sky-900/70">Mumbai → Nashik → Trim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes -->
+  <section class="py-16 bg-sky-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Travel Options from Mumbai</h2>
+      <div class="mt-8 space-y-6">
+        {
+          routes.map((r) => (
+            <div class="rounded-xl border border-sky-200 bg-white p-6">
+              <div class="flex flex-wrap gap-4 mb-3">
+                <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-sm font-medium">{r.from}</span>
+                <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-sm font-medium">{r.distance}</span>
+                <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-sm font-medium">{r.time}</span>
+                <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-sm font-medium">{r.mode}</span>
+              </div>
+              <p class="text-sky-900/80 text-sm leading-relaxed">{r.detail}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekend Itinerary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Weekend Trip Itinerary from Mumbai</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-6">
+          <h3 class="text-lg font-semibold text-sky-900 mb-4">Day 1: Arrival &amp; Darshan</h3>
+          <ul class="space-y-3 text-sm text-sky-900/80">
+            <li>• <strong>4:00 PM — Depart Mumbai</strong> by car/bus/train</li>
+            <li>• <strong>7:00–8:00 PM — Arrive Trimbakeshwar</strong>, check into Bhakta Niwas</li>
+            <li>• <strong>8:00 PM — Evening aarti</strong> at the temple</li>
+            <li>• <strong>9:00 PM — Dinner</strong> at Bhakta Niwas canteen</li>
+            <li>• <strong>10:00 PM — Rest</strong> for early start</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-6">
+          <h3 class="text-lg font-semibold text-sky-900 mb-4">Day 2: Full Day Pilgrimage</h3>
+          <ul class="space-y-3 text-sm text-sky-900/80">
+            <li>• <strong>4:30 AM — Mangala Aarti</strong> at Trimbakeshwar Temple</li>
+            <li>• <strong>5:30 AM — Narayan Nagbali pooja</strong> (pre-booked)</li>
+            <li>• <strong>7:00 AM — Kushavarta Kund</strong> holy dip in Godavari source</li>
+            <li>• <strong>8:30 AM — Breakfast</strong> at Bhakta Niwas</li>
+            <li>• <strong>9:30 AM — Brahmagiri base visit</strong> (full trek optional)</li>
+            <li>• <strong>12:00 PM — Depart for Mumbai</strong>, reach by 3:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-sky-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-sky-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-sky-900">
+                <span>{faq.question}</span>
+                <span class="text-sky-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-sky-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-sky-700 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Mumbai to Trimbakeshwar Pilgrimage</h2>
+      <p class="mt-4 text-sky-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar Bhakta Niwas accommodation in advance for the best rates. All meals included.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-sky-800 font-semibold shadow hover:bg-sky-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

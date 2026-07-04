@@ -1,0 +1,270 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar from Pune — Distance, Route, Bus & Train Guide 2026",
+  description:
+    "Travel guide from Pune to Omkareshwar Jyotirlinga: 650 km via Mumbai–Nagpur Expressway, overnight bus options, train via Khandwa, flight to Indore, complete route details and pilgrimage tips.",
+  keywords: [
+    "omkareshwar from pune",
+    "pune to omkareshwar",
+    "pune to omkareshwar distance",
+    "pune to omkareshwar train",
+    "pune to omkareshwar bus",
+    "pune indore omkareshwar",
+    "pune to omkareshwar pilgrimage",
+    "pune mumbai omkareshwar bus",
+    "pune khandwa train omkareshwar",
+    "omkareshwar pune shared taxi",
+    "pune to omkareshwar cost",
+    "pune devotee omkareshwar jyotirlinga",
+  ],
+  path: "/omkareshwar-from-pune",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, 650 km from Pune via Mumbai–Nagpur Expressway and NH 46.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const routes = [
+  {
+    from: "Pune → Mumbai → Indore by Bus",
+    distance: "650 km total",
+    time: "13–14 hrs total",
+    mode: "Bus",
+    detail: "Overnight sleeper buses from Pune (Swargate/Katraj) to Mumbai (3–4 hrs, ₹400–600), then overnight Mumbai–Indore bus (8–9 hrs, ₹800–1,500), then Indore–Omkareshwar taxi/bus (2 hrs, ₹150–300). Many operators offer through-tickets Pune–Indore via Mumbai.",
+  },
+  {
+    from: "Pune → Indore by Flight",
+    distance: "590 km (flight)",
+    time: "1.5 hr flight + 2.5 hr drive",
+    mode: "Flight + Taxi",
+    detail: "Fly Pune–Indore (DEVI Airport, 1.5 hrs, ₹3,000–6,000 on IndiGo/SpiceJet). Taxi from Indore airport to Omkareshwar (90 km, 2.5 hrs, ₹1,500–2,000). Fastest option. Total cost: ₹4,500–8,500.",
+  },
+  {
+    from: "Pune → Khandwa by Train",
+    distance: "700 km approx.",
+    time: "12–15 hrs + 30 min taxi",
+    mode: "Train + Taxi",
+    detail: "Trains from Pune Junction to Khandwa Junction on the Mumbai–Delhi main line (Deccan Express, Pragati Express, or Pune–Jabalpur connect). Journey: 12–15 hrs depending on the train. Shared taxi from Khandwa to Omkareshwar: 13 km, 30 min. Train fare: approximately ₹800–1,800 (sleeper).",
+  },
+  {
+    from: "Pune → Omkareshwar by Car",
+    distance: "650 km",
+    time: "12–13 hrs",
+    mode: "Car",
+    detail: "Via Mumbai–Nagpur Expressway (Mumbai stretch: Pune–Mumbai, 150 km, 3 hrs), then NH 47 to Indore (580 km, 9–10 hrs from Mumbai to Indore), then SH 27 to Omkareshwar (77 km, 2 hrs). Best driven as overnight with two drivers. Depart Pune at 4:00 AM, reach Omkareshwar by 4:00–5:00 PM.",
+  },
+];
+
+const faqs = [
+  {
+    question: "How far is Omkareshwar from Pune?",
+    answer:
+      "Omkareshwar is approximately 650 km from Pune. By car via the Mumbai–Nagpur Expressway and NH 46, the journey takes 12–13 hours non-stop. By bus (Pune–Mumbai, then Mumbai–Indore, then Indore–Omkareshwar), the total travel time is 13–14 hours. By flight to Indore (1.5 hours) plus a 2.5-hour taxi, the total is approximately 5–6 hours. By train to Khandwa (12–15 hours) plus a 30-minute taxi, it's 13–15 hours total.",
+  },
+  {
+    question: "What is the cheapest way for a Pune devotee to reach Omkareshwar?",
+    answer:
+      "The most economical option is train from Pune to Khandwa Junction plus shared taxi to Omkareshwar: train sleeper fare is approximately ₹800–1,800, and the taxi is approximately ₹100–200, totaling around ₹900–2,000 one-way. The second option is bus to Indore via Mumbai (approximately ₹1,200–2,000 one-way). The flight option costs approximately ₹4,500–8,500 one-way and is recommended only when time is limited. For budget devotees from Pune, the train + taxi combination is the standard choice.",
+  },
+  {
+    question: "Can I do a Pune → Omkareshwar trip in a long weekend?",
+    answer:
+      "Yes, a Pune → Omkareshwar long weekend is very popular. Recommended schedule: Friday evening depart Pune by overnight bus or train, arrive Omkareshwar/Indore/Khandwa Saturday morning by 6:00–7:00 AM, full day darshan and parikrama Saturday, overnight at Bhakta Niwas, Sunday sunrise darshan and depart by 9:00 AM, reach Pune by late Sunday night. This gives you approximately 30 hours at Omkareshwar. For a more relaxed trip, take Friday and Monday off for a 4-day pilgrimage. Many Pune-based spiritual groups organise Omkareshwar group trips during Maha Shivaratri and Kartik Purnima weekends.",
+  },
+  {
+    question: "How much does a Pune → Omkareshwar trip cost per person?",
+    answer:
+      "Budget breakdown for a 2-day trip from Pune: Bus/train to Indore/Khandwa (₹800–2,000) + Indore–Omkareshwar (₹150–300) + accommodation at Bhakta Niwas (₹500–1,000/night, shared room) + food (₹300–500/day) + local transport (₹200–400) = approximately ₹2,000–4,500 total per person. Mid-range (AC bus/train + private taxi + private room): ₹3,500–6,000. Luxury (flight + private taxi): ₹6,000–12,000. The Bhakta Niwas rooms (₹1,000–3,500 per room) offer excellent value with meals included.",
+  },
+  {
+    question: "Which trains go from Pune to Khandwa near Omkareshwar?",
+    answer:
+      "Several express trains connect Pune Junction to Khandwa Junction on the Mumbai–Delhi main line: (1) Deccan Express — daily, departs Pune ~8:00 AM, arrives Khandwa ~8:00 PM. (2) Pragati Express — daily, Pune to Khandwa in approximately 14 hrs. (3) Pune–Jabalpur Express — stops at Khandwa, journey approximately 13 hrs. (4) Punjab Mail and Golden Temple Mail also stop at Khandwa. Khandwa Junction is 13 km from Omkareshwar; shared taxis and MSRTC buses run frequently from the station to the temple (30 min, ₹100–200). Advance booking via IRCTC is recommended, especially during festival seasons.",
+  },
+  {
+    question: "Can I combine Pune → Omkareshwar with Trimbakeshwar?",
+    answer:
+      "Yes, many Pune devotees combine Omkareshwar with Trimbakeshwar Jyotirlinga (near Nashik) in a 5–7 day pilgrimage: Day 1: Pune → Trimbakeshwar (170 km, 4 hrs), darshan and stay. Day 2: Trimbakeshwar full day, Brahmagiri trek, Kushavarta Kund. Day 3: Trimbakeshwar → Omkareshwar (450 km, 9 hrs by road) or Trimbakeshwar → Indore → Omkareshwar. Day 4–5: Omkareshwar temples and parikrama. This covers two of the 12 Jyotirlingas in one trip. The Shri Gajanan Maharaj Sansthan has accommodation at both locations and can assist with group bookings from Pune.",
+  },
+  {
+    question: "What is the best season for Pune devotees to visit Omkareshwar?",
+    answer:
+      "The best time for Pune devotees is October through February, which aligns with Pune's pleasant post-monsoon season. November (Kartik Purnima) and February (Maha Shivaratri) are especially popular. Pune's summer (March–June) is extremely hot (35–40°C), and while Omkareshwar is slightly cooler, summer visits are not recommended. Pune's monsoon (June–September) overlaps with Omkareshwar's monsoon — travel is possible but expect rain delays. Plan festival visits at least 3 months in advance as all transport options (buses, trains, flights) from Pune sell out during Maha Shivaratri and Kartik Purnima weekends.",
+  },
+  {
+    question: "Are there any group pilgrimage packages from Pune to Omkareshwar?",
+    answer:
+      "Several Pune-based spiritual organisations and tour operators offer group pilgrimage packages to Omkareshwar, typically covering Indore → Omkareshwar → Ujjain in 3–4 days. These packages include AC bus/coach travel, accommodation, meals, and local guide services. The Shri Gajanan Maharaj Sansthan in Shegaon also organises group pilgrimages from various Maharashtra cities, including Pune, during major festivals. For custom group bookings or package details, contact the Sansthan directly at +91 75210 63034. Group bookings of 20+ devotees can be made in advance with the Sansthan's Bhakta Niwas at Omkareshwar.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "How to Reach Omkareshwar", url: "/how-to-reach-omkareshwar" },
+  { name: "From Pune", url: "/omkareshwar-from-pune" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-100 border-b border-violet-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-violet-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-violet-900 font-medium">From Pune</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-violet-900 leading-tight">
+        Omkareshwar from Pune — Distance, Route &amp; Travel Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-violet-900/80 max-w-3xl">
+        Complete travel guide for Pune devotees to Omkareshwar Jyotirlinga: 650 km via Mumbai–Nagpur Expressway, overnight bus options, train via Khandwa, flight to Indore, 2-day itinerary, and pilgrimage tips.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">Distance</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">650 km</p>
+          <p class="text-sm text-violet-900/70">via Mumbai–Nagpur Expwy</p>
+        </div>
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">By Car</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">12–13 hrs</p>
+          <p class="text-sm text-violet-900/70">overnight drive</p>
+        </div>
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">By Train</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">12–15 hrs</p>
+          <p class="text-sm text-violet-900/70">via Khandwa Junction</p>
+        </div>
+        <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-5 text-center">
+          <p class="text-xs text-violet-700 uppercase tracking-wide">By Air</p>
+          <p class="text-xl font-bold text-violet-900 mt-1">~5 hrs</p>
+          <p class="text-sm text-violet-900/70">flight + taxi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes -->
+  <section class="py-16 bg-violet-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">Travel Options from Pune</h2>
+      <div class="mt-8 space-y-6">
+        {
+          routes.map((r) => (
+            <div class="rounded-xl border border-violet-200 bg-white p-6">
+              <div class="flex flex-wrap gap-4 mb-3">
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.from}</span>
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.distance}</span>
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.time}</span>
+                <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-800 text-sm font-medium">{r.mode}</span>
+              </div>
+              <p class="text-violet-900/80 text-sm leading-relaxed">{r.detail}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-violet-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-violet-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-violet-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-violet-900">
+                <span>{faq.question}</span>
+                <span class="text-violet-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-violet-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-violet-700 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Pilgrimage from Pune</h2>
+      <p class="mt-4 text-violet-100/90 max-w-2xl mx-auto">
+        Book Omkareshwar accommodation in advance. The Sansthan's Bhakta Niwas offers rooms from ₹1,000 per night with all meals included.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-violet-800 font-semibold shadow hover:bg-violet-50 transition">Book Accommodation</a>
+        <a href="/how-to-reach-omkareshwar" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">All Routes</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

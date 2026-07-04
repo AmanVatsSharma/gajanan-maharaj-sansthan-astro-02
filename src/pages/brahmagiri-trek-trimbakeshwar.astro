@@ -1,0 +1,253 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Brahmagiri Trimbakeshwar — Mountain Trek, Gorakshanath Cave & How to Reach 2026",
+  description:
+    "Complete guide to Brahmagiri mountain at Trimbakeshwar: the 500-step trek, Gorakshanath Cave, panoramic Sahyadri views, trekking tips, timings, difficulty, and safety guide.",
+  keywords: [
+    "brahmagiri trimbakeshwar",
+    "brahmagiri mountain trimbakeshwar",
+    "brahmagiri trek trimbakeshwar",
+    "gorakshanath cave trimbakeshwar",
+    "brahmagiri trek difficulty",
+    "brahmagiri trimbakeshwar timings",
+    "how to reach brahmagiri trimbakeshwar",
+    "brahmagiri mountain steps",
+    "trimbakeshwar brahmagiri view",
+    "gorakshanath cave meditation",
+    "brahmagiri trimbakeshwar guide",
+  ],
+  path: "/brahmagiri-trek-trimbakeshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Dist. Nashik, Maharashtra",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, set at the foot of Brahmagiri mountain — the only Jyotirlinga with a mountain trek.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.5298, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Bhakta Niwas",
+    city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 500, max: 2500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "How difficult is the Brahmagiri trek at Trimbakeshwar?",
+    answer:
+      "The Brahmagiri trek at Trimbakeshwar is a 500-step climb from the base to the Gorakshanath Cave. It takes approximately 45–60 minutes to ascend at a moderate pace. The steps are rocky and uneven, with some steep sections and no handrail in places. The trek is rated <strong>moderate difficulty</strong> — suitable for most healthy adults aged 18–55 who can handle 500 steps. It is <strong>not recommended</strong> for: elderly pilgrims (60+), those with knee problems or arthritis, heart conditions, breathing difficulties, or severe back pain. Infants in carriers may be challenging. The descent (20–30 minutes) is easier on the knees but still requires caution on rocky steps.",
+  },
+  {
+    question: "What can I see at the top of Brahmagiri?",
+    answer:
+      "At the summit of Brahmagiri (approximately 1,200 m elevation), the highlight is the <strong>Gorakshanath Cave</strong> — a small cave where the 11th-century Nath yogi Guru Gorakshanath performed 12 years of intense meditation and tapasya. Inside the cave, there is a small Shiva Lingam. The cave is small (approximately 2 m wide) and may require crouching to enter. Beyond the cave, the summit offers a <strong>panoramic view</strong> of the Sahyadri mountain range, the Trimbakeshwar valley, Nashik district, and on clear days, a distant view of the Godavari River winding through the landscape. The sunrise view from Brahmagiri is considered one of the most beautiful in Maharashtra.",
+  },
+  {
+    question: "What is the best time to do the Brahmagiri trek?",
+    answer:
+      "The best time for the Brahmagiri trek is <strong>early morning (5:00–9:00 AM)</strong> throughout the year. Specific season recommendations: (1) <strong>October–November (post-monsoon)</strong> — best overall. The hills are lush green from the rains, the sky is clear, temperatures are 12–28°C. Perfect conditions. (2) <strong>January–February (winter)</strong> — cool (12–26°C), clear skies, minimal crowds. Mornings may be foggy until 8:00 AM. (3) <strong>Avoid May–June</strong> — temperatures reach 38°C+ at the summit. The exposed trail becomes dangerous in midday heat. (4) <strong>Monsoon caution (July–September)</strong> — the trek may be temporarily closed by local authorities during and after heavy rain. The steps become extremely slippery. If the trail is open, wear anti-slip shoes and go only in dry breaks between showers.",
+  },
+  {
+    question: "Is there a guide or ropeway available for the Brahmagiri trek?",
+    answer:
+      "There is no official ropeway or cable car to Brahmagiri at Trimbakeshwar — the only way up is by foot via the stone steps. However, local guides are available at the base of the mountain for ₹200–500. They can assist with the climb, explain the history of the cave and mountain, and ensure a safe return. Hiring a local guide is recommended for first-time visitors, elderly pilgrims, and during the monsoon season. The guide can also arrange horses or sedan chairs for those who cannot walk — local arrangements at the base cost approximately ₹300–500 per person for the horse ride up and down. The mountain path is well-trodden and signposted, but always stay on the marked trail.",
+  },
+  {
+    question: "What should I carry for the Brahmagiri trek?",
+    answer:
+      "Essential items for the Brahmagiri trek: (1) <strong>Anti-slip trekking shoes</strong> — the rocky steps are the main hazard. Wear closed shoes with good grip, never sandals. (2) <strong>1 litre water bottle</strong> — no water sources on the trail. Carry more in summer. (3) <strong>Hat and sunscreen</strong> — the trail is fully exposed with no shade. (4) <strong>Light jacket</strong> — temperature at the summit can be 5–8°C cooler than Trimbakeshwar. (5) <strong>Walking stick</strong> — optional but helpful for balance on steep steps. (6) <strong>Towel</strong> — for sweat and wiping hands on the rock. (7) <strong>Small first-aid kit</strong> — band-aid, antiseptic. (8) <strong>Cash ₹100–200</strong> — for guide or horse ride, prasad at the cave.",
+  },
+  {
+    question: "Is the Brahmagiri trek safe during monsoon?",
+    answer:
+      "The Brahmagiri trek is <strong>moderately hazardous during monsoon</strong> (July–September). The stone steps become extremely slippery from rain and moss. Heavy downpours can cause small rockfalls along the cliff sections. Local authorities may temporarily close the trail during and immediately after heavy rain — check with your guide or the Bhakta Niwas reception for current trail status before climbing. If you visit during monsoon: go only during dry breaks between showers, wear anti-slip trekking shoes with deep tread, carry a walking stick, bring rain gear, go with a guide or experienced companion, and avoid the cave if there is any risk of rockfall. Many pilgrims deliberately visit during Shravan despite the risk — if you choose to, take all safety precautions seriously.",
+  },
+  {
+    question: "How is Brahmagiri at Trimbakeshwar different from other mountain pilgrimages?",
+    answer:
+      "Brahmagiri is unique as the only Jyotirlinga mountain — it is the only one of the 12 Jyotirlingas that is set at the foot of a major mountain requiring a trek. No other Jyotirlinga involves a mountain climb as part of the pilgrimage. The combination of: (1) the Trimbakeshwar three-faced Jyotirlinga at the base, (2) the origin of the Godavari at Kushavarta Kund (1 km away), (3) the Gorakshanath Cave on the Brahmagiri summit, and (4) the panoramic Sahyadri views from the top — makes this the most scenically complete pilgrimage experience among the 12 Jyotirlingas. For pilgrims from Mumbai and Pune, Brahmagiri is also the most accessible mountain trek combined with a Jyotirlinga visit.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "Brahmagiri Trek", url: "/brahmagiri-trek-trimbakeshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-stone-50 via-amber-50 to-yellow-100 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-stone-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-stone-900 font-medium">Brahmagiri Trek</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-stone-900 leading-tight">
+        Brahmagiri Trek at Trimbakeshwar — Gorakshanath Cave &amp; Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-stone-900/80 max-w-3xl">
+        Complete guide to the Brahmagiri mountain trek at Trimbakeshwar: 500 steps, Gorakshanath Cave, Sahyadri views, trekking tips, difficulty rating, timings, safety guide, and what makes this the only Jyotirlinga mountain pilgrimage.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Summary -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-stone-900">Trek at a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-stone-200 bg-stone-50/60 p-5 text-center">
+          <p class="text-xs text-stone-700 uppercase tracking-wide">Steps</p>
+          <p class="text-xl font-bold text-stone-900 mt-1">~500</p>
+          <p class="text-sm text-stone-900/70">Stone steps</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-stone-50/60 p-5 text-center">
+          <p class="text-xs text-stone-700 uppercase tracking-wide">Time to Summit</p>
+          <p class="text-xl font-bold text-stone-900 mt-1">45–60 min</p>
+          <p class="text-sm text-stone-900/70">Moderate pace</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-stone-50/60 p-5 text-center">
+          <p class="text-xs text-stone-700 uppercase tracking-wide">Difficulty</p>
+          <p class="text-xl font-bold text-stone-900 mt-1">Moderate</p>
+          <p class="text-sm text-stone-900/70">Not for elderly</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-stone-50/60 p-5 text-center">
+          <p class="text-xs text-stone-700 uppercase tracking-wide">Best Time</p>
+          <p class="text-xl font-bold text-stone-900 mt-1">Early AM</p>
+          <p class="text-sm text-stone-900/70">Oct–Feb</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-16 bg-stone-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-stone-900">What to Expect on the Trek</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-stone-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-stone-900">The Ascent</h3>
+          <p class="mt-2 text-stone-900/80 text-sm">500 stone steps carved into the Brahmagiri hillside. The first 200 steps are the steepest — take them slowly and pause to catch your breath. The middle section (steps 200–400) flattens slightly with forest views. The final 100 steps lead directly to the Gorakshanath Cave entrance. The entire ascent takes 45–60 minutes at a moderate pace. Wear proper trekking shoes with deep tread — the stone steps are uneven and can be slippery.</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-stone-900">Gorakshanath Cave</h3>
+          <p class="mt-2 text-stone-900/80 text-sm">The cave where Guru Gorakshanath, the 11th-century Nath yogi and founder of the Nath Siddha tradition, performed 12 years of intense tapasya and meditation. Inside is a small Shiva Lingam. The cave is approximately 2 m wide and requires crouching to enter fully. It is a deeply meditative space — many pilgrims sit in silence for 10–15 minutes. There is a small shrine and a priest who can perform a quick puja for a modest offering (₹51–101).</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-stone-900">Summit Views</h3>
+          <p class="mt-2 text-stone-900/80 text-sm">From the Brahmagiri summit (approximately 1,200 m elevation), you get a sweeping panoramic view of the Sahyadri mountain range, the Trimbakeshwar valley, Nashik district plains, and on exceptionally clear days, a distant view of the Godavari River. The sunrise view is the most popular — golden light floods the valley and the temple complex below looks stunning from above. The sunset is also beautiful, with the valley fading into blue shadows. Cloudy or foggy mornings (common in winter) obscure the view — clear days are best for photography.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Guide -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-stone-900">Trekking Safety Guide</h2>
+      <div class="mt-8 rounded-xl border border-stone-200 bg-amber-50/60 p-6">
+        <h3 class="text-lg font-semibold text-amber-900">Who Should NOT Attempt the Trek</h3>
+        <ul class="mt-3 space-y-2 text-amber-900/80 text-sm">
+          <li>• Elderly pilgrims (60+ years) or those with mobility issues</li>
+          <li>• Knee problems, arthritis, or recent knee surgery</li>
+          <li>• Heart conditions, high blood pressure, or breathing difficulties</li>
+          <li>• Severe back pain or spinal conditions</li>
+          <li>• Pregnant women</li>
+          <li>• Monsoon visits during/after heavy rain (trail may be closed)</li>
+        </ul>
+        <p class="mt-3 text-amber-900/80 text-sm">
+          If you cannot do the full trek, you can still visit the Brahmagiri base area for a peaceful experience and great photos. The mountain path from the base to the cave is not accessible without climbing the steps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-stone-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-stone-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-stone-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-stone-900">
+                <span>{faq.question}</span>
+                <span class="text-stone-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-stone-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-stone-700 to-amber-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Brahmagiri Trek with Your Trimbakeshwar Pilgrimage</h2>
+      <p class="mt-4 text-stone-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar Bhakta Niwas — start early, rest well, and enjoy the full pilgrimage experience.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-stone-800 font-semibold shadow hover:bg-stone-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

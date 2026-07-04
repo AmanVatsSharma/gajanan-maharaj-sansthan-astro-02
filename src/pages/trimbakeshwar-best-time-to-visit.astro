@@ -1,0 +1,332 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Trimbakeshwar Best Time to Visit — Weather, Seasons & Festival Guide 2026",
+  description:
+    "Best time to visit Trimbakeshwar Jyotirlinga: weather by month, Nashik temperature, winter pilgrim season, monsoon tips, Kumbh Mela timing, Maha Shivaratri, and ideal pilgrimage planning guide.",
+  keywords: [
+    "best time to visit trimbakeshwar",
+    "trimbakeshwar weather",
+    "trimbakeshwar temperature by month",
+    "trimbakeshwar winter season",
+    "trimbakeshwar monsoon",
+    "trimbakeshwar summer season",
+    "trimbakeshwar maha shivaratri",
+    "trimbakeshwar kumbh mela",
+    "trimbakeshwar best season",
+    "when to visit trimbakeshwar",
+    "trimbakeshwar jyotirlinga pilgrimage season",
+    "nashik trimbakeshwar weather",
+    "trimbakeshwar july august",
+    "trimbakeshwar october november",
+    "trimbakeshwar festival calendar 2026",
+  ],
+  path: "/trimbakeshwar-best-time-to-visit",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Dist. Nashik, Maharashtra",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva and the origin of the Godavari River. Best time to visit guide.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.5298, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Bhakta Niwas",
+    city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 500, max: 2500, currency: "₹" }
+);
+
+const monthlyWeather = [
+  { month: "January", temp: "13–26°C", rain: "Dry", crowd: "High", rating: "★★★★★", note: "Pleasant winter, peak pilgrim season. Ideal for Brahmagiri trek. Book accommodation well in advance." },
+  { month: "February", temp: "14–29°C", rain: "Dry", crowd: "High", rating: "★★★★★", note: "Excellent weather. Maha Shivaratri falls here — expect massive crowds. Otherwise very comfortable." },
+  { month: "March", temp: "18–33°C", rain: "Dry", crowd: "Moderate", rating: "★★★★☆", note: "End of winter, temperatures rising. Early mornings still ideal for Brahmagiri trek." },
+  { month: "April", temp: "22–36°C", rain: "Dry", crowd: "Low", rating: "★★★☆☆", note: "Hot pre-monsoon. Avoid daytime outdoor activities. Pre-dawn and post-sunset visits only." },
+  { month: "May", temp: "25–38°C", rain: "Dry", crowd: "Low", rating: "★★★☆☆", note: "Hottest month. Not recommended for pilgrimage. Godavari water at Kushavarta is still cool." },
+  { month: "June", temp: "24–32°C", rain: "Monsoon onset", crowd: "Moderate", rating: "★★★☆☆", note: "Sawan begins in July. June has moderate rain. Scenic green hills but trekking may be slippery." },
+  { month: "July", temp: "22–28°C", rain: "Heavy monsoon", crowd: "High", rating: "★★★★☆", note: "Shravan month — most sacred time for Lord Shiva. Heavy rain but thousands of kanwariyas come. Green, lush landscape." },
+  { month: "August", temp: "22–28°C", rain: "Heavy monsoon", crowd: "High", rating: "★★★★☆", note: "Shravan continues. Mondays in Shravan see massive crowds. Brahmagiri trek may be closed during heavy rain." },
+  { month: "September", temp: "21–29°C", rain: "Moderate", crowd: "Moderate", rating: "★★★★☆", note: "Monsoon retreating. Ganesh Chaturthi brings many pilgrims from Maharashtra. Weather improving." },
+  { month: "October", temp: "18–30°C", rain: "Minimal", crowd: "High", rating: "★★★★★", note: "Best month begins. Post-monsoon freshness, cool weather, clear skies. Navratri brings crowds. Perfect for Brahmagiri." },
+  { month: "November", temp: "14–27°C", rain: "Dry", crowd: "High", rating: "★★★★★", note: "Ideal pilgrimage weather. Kartik Purnima — extremely sacred full moon. Book accommodation 2 months ahead." },
+  { month: "December", temp: "12–24°C", rain: "Dry", crowd: "Moderate–High", rating: "★★★★★", note: "Cool and comfortable. December is peak pilgrim season. Morning temps can drop to 12°C — bring warm clothing." },
+];
+
+const faqs = [
+  {
+    question: "What is the best month to visit Trimbakeshwar?",
+    answer:
+      "The best months to visit Trimbakeshwar are October through February, with temperatures ranging from 12°C to 29°C — ideal for darshan, the Brahmagiri mountain trek, and temple visits. November (Kartik Purnima) and February (Maha Shivaratri) are the peak months. Shravan (July–August) is the most spiritually powerful time, with thousands of kanwariyas carrying holy water, but the heavy monsoon makes it physically challenging. The worst month is May (38°C+), when daytime temple visits become exhausting.",
+  },
+  {
+    question: "When is the next Kumbh Mela (Simhastha) at Trimbakeshwar?",
+    answer:
+      "The Nashik-Trimbakeshwar Kumbh Mela (also called Simhastha) occurs once every 12 years when Jupiter enters the Leo (Simha) zodiac sign. The last one was held in 2015, and the next is expected in 2027. During Kumbh Mela, over 3 crore (30 million) devotees gather at Trimbakeshwar and the Godavari ghats. The Shahi Snan (royal bath) on the main bathing day draws the largest crowds. Accommodation prices multiply by 5–10x during Kumbh Mela, and advance planning 12+ months ahead is essential. The Kumbh Mela at Trimbakeshwar is considered the second-largest religious gathering in India after Allahabad (Prayagraj).",
+  },
+  {
+    question: "What is special about visiting during Shravan month at Trimbakeshwar?",
+    answer:
+      "Shravan (July–August) is the most spiritually significant time to visit Trimbakeshwar. It is the holiest month of Lord Shiva in the Hindu calendar, and Trimbakeshwar — being a Jyotirlinga and the origin of the sacred Godavari — becomes the epicentre of Shiva worship. Every Monday in Shravan sees thousands of kanwariyas walking hundreds of kilometres carrying Ganga water to offer at the temple. The temple remains open for extended hours. Special Rudra Abhishek is performed every Monday. The atmosphere is electric with devotion. However, heavy monsoon rain can make the Brahmagiri trek and outdoor activities difficult. If visiting in Shravan, bring rain gear and waterproof bags.",
+  },
+  {
+    question: "How many days should I spend at Trimbakeshwar?",
+    answer:
+      "Most pilgrims spend 1–2 days at Trimbakeshwar. One day covers the main circuit: temple darshan, Narayan Nagbali pooja, and Kushavarta Kund holy dip. Two days allow you to add: the Brahmagiri mountain trek to the Gorakshanath Cave, the Agni Theertham, the River Godavari at the Kushavarta Kund, and a second visit to the temple for the evening aarti. The Shri Gajanan Maharaj Sansthan's Trimbakeshwar Bhakta Niwas is centrally located and provides all meals, making a 2-day stay comfortable and affordable. For major festivals like Maha Shivaratri or Kumbh Mela, plan 3–4 days due to crowds.",
+  },
+  {
+    question: "Is Trimbakeshwar safe to visit during monsoon?",
+    answer:
+      "Trimbakeshwar is accessible year-round, but the monsoon (June–September) requires caution. The Brahmagiri mountain trek can be slippery and dangerous during heavy rain — the path to the Gorakshanath Cave may be temporarily closed by local authorities during and immediately after heavy downpours. The Kushavarta Kund holy pool remains open but water levels can rise. The temple itself is fully operational throughout the year. If visiting during monsoon, wear non-slip footwear, carry rain gear, check local trek advisories before climbing Brahmagiri, and book covered accommodation. Many devotees deliberately visit during Shravan despite the rain for the heightened spiritual merit.",
+  },
+  {
+    question: "What should I pack for a Trimbakeshwar visit?",
+    answer:
+      "Essential items: (1) Warm clothing — December mornings can drop to 12°C. Bring a jacket, shawl, or warm layers. (2) Comfortable trekking shoes — the Brahmagiri trek involves ~500 steps and rocky paths. (3) Cotton clothing for daytime — loose, light fabrics. (4) Rain gear for July–September visits — umbrella or poncho, waterproof bag for phone/wallet. (5) Hat and sunscreen — the Brahmagiri trail is fully exposed. (6) Water bottle — refill at the temple. (7) ID proof — required for accommodation booking. (8) Cash — ₹200–500 for prasad, offerings, and small purchases at local vendors. (9) For Shravan visits: extra dry clothes, slippers, and a plastic bag to carry wet clothes.",
+  },
+  {
+    question: "Can I visit Trimbakeshwar in a day trip from Nashik or Mumbai?",
+    answer:
+      "A day trip from Nashik to Trimbakeshwar is very doable — it is only 30 km from Nashik city, approximately 1 hour by car or bus. Morning departure from Nashik at 6:00 AM gets you to Trimbakeshwar by 7:00 AM for darshan before crowds. Full day: temple darshan, Narayan Nagbali pooja, Kushavarta Kund, and Brahmagiri base visit. Depart by 5:00 PM, reach Nashik by 6:00 PM. A day trip from Mumbai (170 km) is also possible but very long — depart Mumbai by 4:00 AM, arrive by 8:00 AM, and depart by 4:00 PM. Not recommended unless time is very limited. An overnight stay is much more rewarding.",
+  },
+  {
+    question: "What makes Trimbakeshwar unique compared to other Jyotirlingas?",
+    answer:
+      "Trimbakeshwar is unique among the 12 Jyotirlingas in four remarkable ways: (1) <strong>The three-faced Jyotirlinga</strong> — representing Brahma, Vishnu, and Shiva simultaneously. This trinity is partially covered by a silver mask. No other Jyotirlinga has three faces. (2) <strong>Origin of the Godavari River</strong> — the sacred Godavari, called the 'Ganga of South India', flows directly from Shiva's matted hair at Kushavarta Kund, the precise source point 1 km from the temple. (3) <strong>Brahmagiri Mountain</strong> — the temple sits at the foot of Brahmagiri, part of the Sahyadri mountain range, offering one of the most scenic settings of any Jyotirlinga. (4) <strong>Narayan Nagbali</strong> — a unique pooja performed only at Trimbakeshwar to remove Pitru Dosha (ancestral curse) and grant peace to departed souls. These four features make Trimbakeshwar a uniquely powerful pilgrimage destination.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "Best Time to Visit", url: "/trimbakeshwar-best-time-to-visit" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 border-b border-sky-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-sky-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-sky-900 font-medium">Best Time to Visit</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-sky-900 leading-tight">
+        Best Time to Visit Trimbakeshwar — Weather, Seasons &amp; Festivals 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-sky-900/80 max-w-3xl">
+        Complete guide to when to visit Trimbakeshwar Jyotirlinga: month-by-month weather, Nashik temperatures, Shravan pilgrimage, Kumbh Mela timing, Maha Shivaratri, and ideal planning for your sacred visit.
+      </p>
+    </div>
+  </section>
+
+  <!-- At a Glance -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">Best Months</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">Oct – Feb</p>
+          <p class="text-sm text-sky-900/70">12–29°C</p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">Hottest Month</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">May</p>
+          <p class="text-sm text-sky-900/70">25–38°C</p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">Most Sacred Month</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">Shravan</p>
+          <p class="text-sm text-sky-900/70">July–August</p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/60 p-5 text-center">
+          <p class="text-xs text-sky-700 uppercase tracking-wide">Next Kumbh</p>
+          <p class="text-xl font-bold text-sky-900 mt-1">2027</p>
+          <p class="text-sm text-sky-900/70">Nashik Simhastha</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monthly Weather -->
+  <section class="py-16 bg-sky-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Month-by-Month Guide</h2>
+      <p class="mt-3 text-sky-900/80 max-w-3xl">
+        Trimbakeshwar's highland climate (at the foot of the Brahmagiri mountains) means cool winters, hot summers, and heavy monsoon.
+      </p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-sky-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-sky-100 text-sky-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Month</th>
+              <th class="px-4 py-3 font-semibold">Temperature</th>
+              <th class="px-4 py-3 font-semibold">Rain</th>
+              <th class="px-4 py-3 font-semibold">Crowds</th>
+              <th class="px-4 py-3 font-semibold">Rating</th>
+              <th class="px-4 py-3 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-sky-100">
+            {
+              monthlyWeather.map((m) => (
+                <tr class="hover:bg-sky-50/60">
+                  <td class="px-4 py-3 font-medium text-sky-900">{m.month}</td>
+                  <td class="px-4 py-3 text-sky-900">{m.temp}</td>
+                  <td class="px-4 py-3 text-sky-900/70">{m.rain}</td>
+                  <td class="px-4 py-3 text-sky-900/70">{m.crowd}</td>
+                  <td class="px-4 py-3 text-sky-900">{m.rating}</td>
+                  <td class="px-4 py-3 text-sky-900/70 text-xs md:text-sm">{m.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasons -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Understanding the Seasons</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-6">
+          <h3 class="text-lg font-semibold text-sky-900">Winter (Oct–Feb)</h3>
+          <p class="mt-2 text-sky-900/80 text-sm">
+            <strong>Best season for pilgrimage and trekking.</strong> Cool, dry weather (12–29°C) is perfect for darshan, Brahmagiri mountain trek, and outdoor sightseeing. November Kartik Purnima and February Maha Shivaratri are peak festivals. December mornings can drop to 12°C — bring a jacket. This is when most Mumbai and Pune devotees visit for weekend trips. Book accommodation 2+ months ahead for festival dates.
+          </p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-6">
+          <h3 class="text-lg font-semibold text-sky-900">Summer (Mar–Jun)</h3>
+          <p class="mt-2 text-sky-900/80 text-sm">
+            <strong>Avoid if possible.</strong> March–May is extremely hot in Nashik's highland climate — May reaches 38°C+. The Brahmagiri trek becomes dangerous in afternoon heat. If visiting in summer, restrict to pre-dawn (5–8 AM) and post-sunset (6–9 PM) temple visits. Shravan Sawan begins in June, drawing crowds despite the heat. The Godavari water at Kushavarta remains refreshingly cool year-round.
+          </p>
+        </div>
+        <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-6">
+          <h3 class="text-lg font-semibold text-sky-900">Monsoon &amp; Shravan (Jul–Sep)</h3>
+          <p class="mt-2 text-sky-900/80 text-sm">
+            <strong>Spiritually the most powerful time.</strong> Shravan (July–August) is the holiest month for Shiva devotees — thousands of kanwariyas walk hundreds of kilometres bearing Ganga water. Every Monday sees massive pilgrim turnout. The Brahmagiri hills turn lush green. Heavy rain may close the mountain trek temporarily. The temple remains fully open. For spiritual experience, Shravan is unmatched — but be prepared for rain and crowds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kumbh Mela -->
+  <section class="py-16 bg-sky-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Kumbh Mela — Simhastha at Trimbakeshwar</h2>
+      <div class="mt-8 rounded-xl border border-sky-200 bg-white p-6 md:p-8">
+        <p class="text-sky-900/80 leading-relaxed mb-4">
+          The Nashik-Trimbakeshwar Kumbh Mela (Simhastha) is held once every 12 years when Jupiter enters the Leo zodiac sign. The last Kumbh Mela was in 2015 and the <strong>next is in 2027</strong>.
+        </p>
+        <p class="text-sky-900/80 leading-relaxed mb-4">
+          Over 3 crore (30 million) devotees are expected to gather for the Shahi Snan (royal bath) in the Godavari River — one of the largest religious gatherings in the world. The Kumbh Mela transforms Trimbakeshwar and Nashik with temporary cities, pontoon bridges, and millions of pilgrims bathing in the sacred river.
+        </p>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 bg-sky-50/60 rounded-lg">
+            <p class="text-sky-900 font-bold">Next Date</p>
+            <p class="text-sky-900/80 text-sm">2027 (exact dates TBD)</p>
+          </div>
+          <div class="p-4 bg-sky-50/60 rounded-lg">
+            <p class="text-sky-900 font-bold">Expected Devotees</p>
+            <p class="text-sky-900/80 text-sm">3+ crore (30 million+)</p>
+          </div>
+          <div class="p-4 bg-sky-50/60 rounded-lg">
+            <p class="text-sky-900 font-bold">Frequency</p>
+            <p class="text-sky-900/80 text-sm">Every 12 years</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sky-900/70 text-sm">
+          <strong>Planning tip:</strong> Kumbh Mela planning should start 12+ months in advance. Accommodation prices multiply by 5–10x. Contact the Shri Gajanan Maharaj Sansthan (+91 75210 63034) well ahead for group booking assistance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-sky-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-sky-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-sky-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-sky-900">
+                <span>{faq.question}</span>
+                <span class="text-sky-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-sky-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-sky-700 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Trimbakeshwar Pilgrimage</h2>
+      <p class="mt-4 text-sky-100/90 max-w-2xl mx-auto">
+        October to February offers the best weather. Book accommodation in advance, especially for festival dates.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-sky-800 font-semibold shadow hover:bg-sky-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

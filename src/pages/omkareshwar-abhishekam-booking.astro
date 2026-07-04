@@ -1,0 +1,307 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Abhishekam Booking — Rudrabhishek, Maha Rudrabhishek & Pooja Guide 2026",
+  description:
+    "Complete guide to Omkareshwar abhishekam booking: Rudrabhishek, Maha Rudrabhishek, Laghu Rudrabhishek, online booking, temple office contact, fees, timings, and what to expect during the sacred Shiva abhishekam ceremony.",
+  keywords: [
+    "omkareshwar abhishekam booking",
+    "omkareshwar rudrabhishek",
+    "omkareshwar maha rudrabhishek",
+    "omkareshwar pooja booking",
+    "omkareshwar abhishekam online",
+    "omkareshwar rudrabhishek cost",
+    "omkareshwar shiv abhishekam",
+    "omkareshwar temple pooja",
+    "omkareshwar abhishekam timings",
+    "omkareshwar rudrabhishek benefits",
+    "omkareshwar laghu rudrabhishek",
+    "omkareshwar mahashivratri abhishekam",
+    "omkareshwar pooja contact number",
+    "omkareshwar abhishekam dress code",
+  ],
+  path: "/omkareshwar-abhishekam-booking",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva. Book Rudrabhishek and Maha Rudrabhishek abhishekam ceremonies here.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const poojas = [
+  {
+    name: "Rudrabhishek",
+    duration: "45–60 minutes",
+    cost: "₹501–₹1,001",
+    description: "The most popular abhishekam at Omkareshwar. The Shiva lingam is bathed with sacred substances — water, milk, honey, ghee, curd, sugar, and bel leaves — while Rudra mantras from the Yajurveda are chanted by temple priests. devotees receive prasad and the sacred vibhuti (holy ash) after the ceremony.",
+    bestFor: "General prosperity, health, and spiritual upliftment",
+  },
+  {
+    name: "Maha Rudrabhishek",
+    duration: "2–3 hours",
+    cost: "₹2,501–₹5,101",
+    description: "The grand version of Rudrabhishek performed on special occasions or by advance booking. Involves elaborate rituals, 108 repetitions of Rudra mantras, offerings of 11 sacred ingredients, and participation of multiple priests. Typically performed during Maha Shivaratri, Kartik Purnima, and Amavasya. Can be booked for a private family ceremony.",
+    bestFor: "Major life events, wedding anniversaries, removing obstacles, fulfilling significant wishes",
+  },
+  {
+    name: "Laghu Rudrabhishek",
+    duration: "15–20 minutes",
+    cost: "₹251–₹501",
+    description: "A shorter, simplified abhishekam ceremony suitable for daily devotees or those with limited time. Basic offerings of water and milk with a brief Rudra mantra recitation. Available on all days without advance booking — just join the queue at the temple office.",
+    bestFor: "Quick spiritual offering, daily devotion, beginners",
+  },
+  {
+    name: "Mahamrityunjaya Jaap",
+    duration: "1–2 hours",
+    cost: "₹1,501–₹3,001",
+    description: "Recitation of the Mahamrityunjaya mantra (11,000 repetitions) by temple priests for health, longevity, and protection from illness and accidents. Performed in the temple sanctum with the devotee present. Includes abhishekam and aarti at the end.",
+    bestFor: "Health concerns, recovery from illness, longevity prayers",
+  },
+  {
+    name: "Chandi Paath &amp; Havan",
+    duration: "3–4 hours",
+    cost: "₹3,501–₹7,001",
+    description: "A fire ceremony (havan) with recitation of the Durga Saptashati (Chandi Paath) performed by trained priests. The havan fire is offered ghee, grains, and herbs while mantras are chanted. Available on most days with 3–7 days advance booking.",
+    bestFor: "Removing obstacles, protection from negative energies, family welfare",
+  },
+];
+
+const faqs = [
+  {
+    question: "How do I book abhishekam at Omkareshwar temple?",
+    answer:
+      "Abhishekam at Omkareshwar can be booked in two ways: (1) <strong>In-person at the temple office:</strong> Visit the temple administration office near the main entrance. Open from 7:00 AM to 12:00 PM and 4:00 PM to 8:00 PM. Bring your government ID. (2) <strong>Phone booking:</strong> Call the Omkareshwar temple trust office at least 2–3 days in advance for Maha Rudrabhishek and other large ceremonies. For Rudrabhishek and Laghu Rudrabhishek, same-day booking is often possible. (3) <strong>Through Shri Gajanan Maharaj Sansthan:</strong> Contact the Sansthan at +91 75210 63034 for assistance with Omkareshwar pooja bookings and accommodation packages.",
+  },
+  {
+    question: "What is the cost of Rudrabhishek at Omkareshwar?",
+    answer:
+      "Rudrabhishek at Omkareshwar costs approximately ₹501–₹1,001 per ceremony, depending on the type: Laghu Rudrabhishek (short, simplified) costs ₹251–₹501. Standard Rudrabhishek costs ₹501–₹1,001. Maha Rudrabhishek (grand ceremony) costs ₹2,501–₹5,101. Mahamrityunjaya Jaap costs ₹1,501–₹3,001. Chandi Paath & Havan costs ₹3,501–₹7,001. These are approximate 2026 rates — confirm with the temple office when booking as prices may vary seasonally. All ceremonies include prasad (sacred food offering) distributed after the pooja.",
+  },
+  {
+    question: "What is included in the Rudrabhishek ceremony at Omkareshwar?",
+    answer:
+      "A standard Rudrabhishek at Omkareshwar includes: (1) Priests chant Rudra mantras from the Yajurveda while bathing the Shiva lingam. (2) Sacred offerings: Ganga water, milk, honey, ghee, curd, sugar, bel leaves, and flowers. (3) The devotee may pour water/milk over the lingam as part of the ceremony. (4) After the abhishekam, the lingam is decorated with flowers and garlands. (5) Aarti is performed with camphor and incense. (6) The devotee receives prasad (typically coconut, banana, and sacred sweets), vibhuti (holy ash), and the sacred thread (kalawa) tied on the wrist. The entire ceremony lasts approximately 45–60 minutes.",
+  },
+  {
+    question: "Can I book Maha Rudrabhishek for my wedding anniversary or birthday?",
+    answer:
+      "Yes, Maha Rudrabhishek is an extremely popular ceremony for wedding anniversaries, birthdays, and other significant life events at Omkareshwar. For a family ceremony, the cost is ₹2,501–₹5,101 and includes 2–3 hours of elaborate ritual with 108 Rudra mantra repetitions, 11 sacred offerings, multiple priests, a private aarti, prasad for the entire family, and a certificate from the temple trust. Book at least 7–14 days in advance for anniversary/birthday dates, especially during festival season (October–February). Contact the temple trust office or the Shri Gajanan Maharaj Sansthan at +91 75210 63034 to arrange a family Maha Rudrabhishek.",
+  },
+  {
+    question: "What is the dress code for attending abhishekam at Omkareshwar?",
+    answer:
+      "For Rudrabhishek and other pooja ceremonies at Omkareshwar: <strong>Men:</strong> Wear traditional Indian attire — dhoti or lungi and a shirt (no jeans or shorts). Remove shoes before entering the sanctum. <strong>Women:</strong> Wear a sari or traditional Indian dress (salwar kameez). Avoid short dresses, jeans, or revealing clothing. <strong>For the devotee performing abhishekam:</strong> White or light-colored traditional clothing is preferred. Carry a small change of clothes as abhishekam can involve water splashes. <strong>General:</strong> Leather items (belts, wallets, watches) should be removed before entering the inner sanctum. Mobile phones must be switched off or on silent mode.",
+  },
+  {
+    question: "Is there online booking for Omkareshwar abhishekam?",
+    answer:
+      "Currently, Omkareshwar temple does not offer fully online abhishekam booking through a dedicated website. Booking is primarily done in-person at the temple office or by phone. However, some third-party pilgrimage platforms offer assisted booking services. For the most reliable booking: (1) Call the temple trust office 3–7 days in advance for Maha Rudrabhishek and other large ceremonies. (2) Visit the temple office in person if you're already at Omkareshwar. (3) Contact Shri Gajanan Maharaj Sansthan at +91 75210 63034 for facilitated booking assistance. The Sansthan can arrange abhishekam bookings as part of pilgrimage packages, including accommodation at the Bhakta Niwas.",
+  },
+  {
+    question: "What are the best days and times for abhishekam at Omkareshwar?",
+    answer:
+      "The best days and times for abhishekam: <strong>Most auspicious:</strong> Mondays (dedicated to Lord Shiva), Amavasya (new moon), Purnima (full moon), and Maha Shivaratri. On these days, all abhishekam ceremonies are performed with extra vigour and significance. <strong>Best time of day:</strong> Early morning (5:00–8:00 AM) — Brahma Muhurta — is the most sacred time for Shiva worship, with minimal crowds and a deeply peaceful atmosphere. <strong>Evening:</strong> The Sandhya Aarti time (6:00–7:30 PM) is equally powerful. <strong>Avoid:</strong> During major festival peak hours (10:00 AM–4:00 PM on festival days), queues for abhishekam can be 2–3 hours long. <strong>Mahashivratri:</strong> 24-hour continuous abhishekam — arrive at any time, but expect significant crowds.",
+  },
+  {
+    question: "What is the difference between Rudrabhishek and Maha Rudrabhishek at Omkareshwar?",
+    answer:
+      "Rudrabhishek is a standard Shiva abhishekam ceremony lasting 45–60 minutes with water, milk, and honey offerings while Rudra mantras are chanted. Cost: ₹501–₹1,001. Maha Rudrabhishek is a grand, extended ceremony lasting 2–3 hours, involving 108 repetitions of each Rudra mantra (instead of 11), 11 sacred ingredients offered instead of 3, multiple priests instead of one, and a private family ceremony instead of joining a group. Cost: ₹2,501–₹5,101. Maha Rudrabhishek is booked for significant occasions — wedding anniversaries, birthdays, housewarmings, major vow completions — and includes prasad for the entire family, a temple certificate, and optional live streaming of the ceremony for family members who cannot attend.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Abhishekam Booking", url: "/omkareshwar-abhishekam-booking" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-rose-50 via-red-50 to-orange-100 border-b border-rose-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-rose-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-rose-900 font-medium">Abhishekam Booking</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-rose-900 leading-tight">
+        Omkareshwar Abhishekam Booking — Rudrabhishek &amp; Pooja Guide 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-rose-900/80 max-w-3xl">
+        Complete guide to booking abhishekam at Omkareshwar Jyotirlinga: Rudrabhishek, Maha Rudrabhishek, Laghu Rudrabhishek, Mahamrityunjaya Jaap, Chandi Havan, fees, timings, temple office contact, and what to expect during the sacred Shiva ceremony.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pooja Types -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">Pooja &amp; Abhishekam Types</h2>
+      <p class="mt-3 text-rose-900/80 max-w-3xl">
+        Omkareshwar temple offers several levels of abhishekam and pooja ceremonies. Choose based on your budget, time, and spiritual purpose.
+      </p>
+      <div class="mt-8 space-y-6">
+        {
+          poojas.map((p) => (
+            <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-6">
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <h3 class="text-lg font-semibold text-rose-900">{p.name}</h3>
+                <span class="px-3 py-1 rounded-full bg-rose-200 text-rose-800 text-xs font-medium">{p.duration}</span>
+                <span class="px-3 py-1 rounded-full bg-rose-200 text-rose-800 text-xs font-medium">{p.cost}</span>
+              </div>
+              <p class="text-rose-900/80 text-sm leading-relaxed mb-3">{p.description}</p>
+              <p class="text-rose-900/70 text-sm"><strong>Best for:</strong> {p.bestFor}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Info -->
+  <section class="py-16 bg-rose-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">How to Book Abhishekam</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold text-rose-900 mb-4">At the Temple Office</h3>
+          <p class="text-rose-900/80 leading-relaxed mb-4">
+            The most reliable way to book abhishekam is in-person at the Omkareshwar temple administration office, located near the main entrance on the island. The office is open daily from 7:00 AM to 12:00 PM and 4:00 PM to 8:00 PM.
+          </p>
+          <ul class="space-y-2 text-sm text-rose-900/80">
+            <li>• Bring a government-issued ID (Aadhar/Voter ID/Passport)</li>
+            <li>• Pay in cash (UPI/card may not be accepted)</li>
+            <li>• You'll receive a booking slip with date and time</li>
+            <li>• Arrive 15 minutes before your scheduled time</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-rose-900 mb-4">By Phone</h3>
+          <p class="text-rose-900/80 leading-relaxed mb-4">
+            For Maha Rudrabhishek and other large ceremonies requiring advance booking, call the temple trust office. Phone bookings require a 30–50% advance deposit (bank transfer).
+          </p>
+          <ul class="space-y-2 text-sm text-rose-900/80">
+            <li>• Call 3–7 days in advance for Maha Rudrabhishek</li>
+            <li>• Call 1–3 days in advance for standard Rudrabhishek</li>
+            <li>• Same-day booking available for Laghu Rudrabhishek</li>
+            <li>• Deposit via bank transfer confirmed by SMS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Times -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">Best Days &amp; Times for Abhishekam</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-6">
+          <h3 class="text-lg font-semibold text-rose-900">Most Auspicious Days</h3>
+          <p class="mt-2 text-rose-900/80 text-sm">Mondays (Shiva's day), Amavasya (new moon), Purnima (full moon), and Maha Shivaratri are the most sacred days for Shiva abhishekam. Crowds are larger but the spiritual energy is considered exponentially higher.</p>
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-6">
+          <h3 class="text-lg font-semibold text-rose-900">Best Time of Day</h3>
+          <p class="mt-2 text-rose-900/80 text-sm">Early morning Brahma Muhurta (5:00–8:00 AM) is ideal — cool, peaceful, minimal crowds, and maximum spiritual merit. Evening Sandhya Aarti time (6:00–7:30 PM) is the second-best option. Avoid festival peak hours (10 AM–4 PM) when queues are 2–3 hours long.</p>
+        </div>
+        <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-6">
+          <h3 class="text-lg font-semibold text-rose-900">Best Season</h3>
+          <p class="mt-2 text-rose-900/80 text-sm">October–February offers the best weather for abhishekam ceremonies. The cooler weather means longer, more comfortable ceremonies outdoors. Maha Shivaratri (Feb/Mar) and Kartik Purnima (Oct/Nov) are the most spiritually significant times to perform Rudrabhishek.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-rose-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-rose-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-rose-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-rose-900">
+                <span>{faq.question}</span>
+                <span class="text-rose-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-rose-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-rose-700 to-red-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Book Your Abhishekam at Omkareshwar</h2>
+      <p class="mt-4 text-rose-100/90 max-w-2xl mx-auto">
+        Contact the Shri Gajanan Maharaj Sansthan for assisted abhishekam booking and accommodation packages.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-rose-800 font-semibold shadow hover:bg-rose-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

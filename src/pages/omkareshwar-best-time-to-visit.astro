@@ -1,0 +1,300 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Omkareshwar Best Time to Visit — Weather, Seasons & Festival Guide 2026",
+  description:
+    "Best time to visit Omkareshwar Jyotirlinga: weather by month, peak seasons, Maha Shivaratri, Kartik Purnima, monsoon tips, and ideal pilgrimage timing for darshan and Narmada parikrama.",
+  keywords: [
+    "best time to visit omkareshwar",
+    "omkareshwar weather",
+    "omkareshwar temperature by month",
+    "omkareshwar winter season",
+    "omkareshwar monsoon",
+    "omkareshwar summer season",
+    "omkareshwar maha shivaratri",
+    "omkareshwar kartik purnima",
+    "omkareshwar best season",
+    "when to visit omkareshwar",
+    "omkareshwar august september",
+    "omkareshwar october november december",
+    "omkareshwar january february",
+    "omkareshwar festival calendar",
+    "omkareshwar pilgrimage tips",
+  ],
+  path: "/omkareshwar-best-time-to-visit",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "omkareshwar",
+  name: "Omkareshwar Jyotirlinga",
+  city: "Omkareshwar",
+  address: "Omkareshwar, Dist. Khandwa, Madhya Pradesh",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, located on the Narmada river island of Omkareshwar.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 22.2417, longitude: 76.1567, regionCode: "IN-MP" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "omkareshwar",
+    name: "Omkareshwar Bhakta Niwas",
+    city: "Omkareshwar",
+    address: "Near Omkareshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Omkareshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 1000, max: 3500, currency: "₹" }
+);
+
+const monthlyWeather = [
+  { month: "January", temp: "12–25°C", rain: "Dry", crowd: "Moderate", rating: "★★★★★", note: "Pleasant winter mornings, cool evenings. Ideal for parikrama and temple visits. Accommodation easy to find." },
+  { month: "February", temp: "15–28°C", rain: "Dry", crowd: "Low–Moderate", rating: "★★★★★", note: "Best month for parikrama barefoot. Maha Shivaratri falls here — expect crowds. Otherwise very comfortable." },
+  { month: "March", temp: "20–32°C", rain: "Dry", crowd: "Moderate", rating: "★★★★☆", note: "End of winter, temperature rising. Early mornings still ideal. Holi brings many pilgrims." },
+  { month: "April", temp: "25–36°C", rain: "Dry", crowd: "Low", rating: "★★★☆☆", note: "Hot pre-monsoon. Avoid afternoon visits. Early morning (5–8 AM) only. Narmada water still cool." },
+  { month: "May", temp: "28–39°C", rain: "Dry", crowd: "Low", rating: "★★★☆☆", note: "Hottest month. Not recommended for pilgrimage. If visiting, only pre-dawn and post-sunset temple visits." },
+  { month: "June", temp: "26–35°C", rain: "Monsoon onset", crowd: "Moderate", rating: "★★★☆☆", note: "Monsoon arrives mid-June. Scenic green landscape but river can swell. Some ghat areas may be restricted." },
+  { month: "July", temp: "24–30°C", rain: "Heavy monsoon", crowd: "Low", rating: "★★★☆☆", note: "Shravan month — spiritually powerful but heavy rain. Narmada water level rises, some parikrama sections underwater." },
+  { month: "August", temp: "23–29°C", rain: "Heavy monsoon", crowd: "Low–Moderate", rating: "★★★★☆", note: "Shravan continues. Kanwar Yatra brings thousands. Green and lush but expect heavy rain." },
+  { month: "September", temp: "23–30°C", rain: "Moderate", crowd: "Moderate", rating: "★★★★☆", note: "Monsoon retreating. Ganesh Chaturthi brings crowds. Weather still humid but improving." },
+  { month: "October", temp: "20–30°C", rain: "Minimal", crowd: "High", rating: "★★★★★", note: "Best month begins! Post-monsoon freshness, cool weather. Navratri and Dussehra bring major crowds. Kartik Purnima in early Nov." },
+  { month: "November", temp: "15–27°C", rain: "Dry", crowd: "High", rating: "★★★★★", note: "Ideal pilgrimage weather. Kartik Purnima (Nov/Dec) is the biggest festival. Perfect for parikrama. Book accommodation well ahead." },
+  { month: "December", temp: "12–24°C", rain: "Dry", crowd: "Moderate", rating: "★★★★★", note: "Cool and comfortable. December-January is peak pilgrimage season. Morning temperatures can drop near 12°C — carry warm clothing." },
+];
+
+const faqs = [
+  {
+    question: "What is the best month to visit Omkareshwar?",
+    answer:
+      "The best months to visit Omkareshwar are October through February. During these winter months, temperatures range from a pleasant 12°C to 28°C, making it ideal for temple visits, the Narmada parikrama barefoot walk, and outdoor sightseeing. The weather is dry and sunny with clear skies. November is particularly ideal — post-monsoal freshness, cool weather, and the Kartik Purnima festival. The worst months to visit are May (hottest, 39°C+) and July–August (heavy monsoon, flooded ghats).",
+  },
+  {
+    question: "Is Omkareshwar safe to visit during monsoon?",
+    answer:
+      "Omkareshwar is accessible year-round, but monsoon (July–September) requires caution. The Narmada River can swell significantly, and some sections of the parikrama ghats may be submerged. Ferry services are sometimes suspended during high water. However, Shravan month (July–August) is spiritually the most powerful time to visit — thousands of kanwariyas and pilgrims come despite the rain. If visiting during monsoon, wear appropriate footwear, carry rain gear, check water levels before starting the parikrama, and book covered accommodation. The temple itself remains open throughout the year.",
+  },
+  {
+    question: "When is Maha Shivaratri at Omkareshwar?",
+    answer:
+      "Maha Shivaratri at Omkareshwar falls in February or March (the 14th night of the dark fortnight in the month of Phalguna). It is the biggest festival of the year at Omkareshwar, drawing 2–3 lakh devotees. The temple remains open for 24 hours with continuous abhishekam, Rudra Abhishek, and special aartis. The entire island and ghats are illuminated. Expect massive crowds, long queues, and limited accommodation — book at least 3 months in advance. The spiritual atmosphere during Maha Shivaratri is extraordinary and considered a once-in-a-lifetime experience.",
+  },
+  {
+    question: "What festivals should I plan my Omkareshwar visit around?",
+    answer:
+      "Key festivals at Omkareshwar: (1) Maha Shivaratri (Feb/Mar) — biggest festival, 24-hour celebration, 2–3 lakh devotees. (2) Kartik Purnima (Oct/Nov) — sacred full moon day, thousands of floating diyas on the Narmada, massive pilgrims. (3) Narmada Pushkaram (once every 12 years, next in 2028) — 12-day festival, expected 2 crore+ devotees. (4) Shravan (July/August) — every Monday in Shravan sees heavy pilgrim turnout; kanwariyas carry holy water from Narmada. (5) Amavasya (new moon) and Purnima (full moon) days every month are especially auspicious. Plan major festival visits at least 2–3 months ahead for accommodation.",
+  },
+  {
+    question: "How many days should I spend at Omkareshwar?",
+    answer:
+      "Most pilgrims spend 1–2 days at Omkareshwar. One day is enough for the main circuit: Omkareshwar temple darshan, Mamleshwar temple darshan, Narmada parikrama, and a holy dip. Two days allow you to: explore the island more deeply, visit all five temples on the parikrama route, take a boat ride on the Narmada, visit local markets, and experience the evening aarti at the ghats. For major festivals like Maha Shivaratri, plan 3–4 days due to crowds and the extended programme. Many pilgrims combine Omkareshwar with Ujjain (135 km away) in a 3-day central India pilgrimage.",
+  },
+  {
+    question: "What should I pack for an Omkareshwar visit?",
+    answer:
+      "Essential items: (1) Comfortable walking shoes or sandals — the parikrama involves several kilometres of walking. (2) Cotton clothing — loose, light fabrics suitable for the warm to hot climate. (3) Hat and sunscreen — the ghats are fully exposed to the sun. (4) Water bottle — refillable, there are drinking water stations on the parikrama route. (5) Warm clothing for winter mornings (Dec–Jan can drop to 12°C). (6) Rain gear if visiting July–September. (7) ID proof (Aadhar/PAN) — required for accommodation booking. (8) Small cash (₹200–300) for prasad, boat rides, and small offerings. Avoid leather items for the parikrama — leave belts and wallets at your room.",
+  },
+  {
+    question: "What is the Narmada Pushkaram and when is the next one?",
+    answer:
+      "Narmada Pushkaram is a major 12-day Hindu festival celebrated once every 12 years, when Jupiter (Guru) enters the Vrushabha (Taurus) zodiac sign. The next Narmada Pushkaram will be in 2028. During Pushkaram, millions of pilgrims gather at Omkareshwar to take a holy dip in the Narmada, perform ancestral rituals, and seek Lord Shiva's blessings. The 2028 Pushkaram is expected to draw over 2 crore (20 million) devotees — comparable to the Kumbh Mela. Omkareshwar will be the epicentre of the festival, and the Narmada Pushkaram is considered one of the most sacred river festivals in India after the Ganga and Godavari Pushkarams.",
+  },
+  {
+    question: "Is Omkareshwar crowded on weekends?",
+    answer:
+      "Omkareshwar is moderately crowded on weekends year-round, with Saturday and Sunday seeing 30–50% more visitors than weekdays. Major festival weekends (Maha Shivaratri, Kartik Purnima, Navratri) can see 2–3 lakh devotees. The best days to visit for peaceful darshan are Tuesday through Thursday. Early morning (5–8 AM) is significantly less crowded at any time of year — the temple has fewer than 500 visitors before 7 AM, compared to 5,000+ by 10 AM on a weekend.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Omkareshwar Jyotirlinga", url: "/omkareshwar-jyotirlinga" },
+  { name: "Best Time to Visit", url: "/omkareshwar-best-time-to-visit" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-emerald-50 via-teal-50 to-green-100 border-b border-emerald-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-emerald-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/omkareshwar-jyotirlinga" class="hover:underline">Omkareshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-emerald-900 font-medium">Best Time to Visit</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-emerald-900 leading-tight">
+        Best Time to Visit Omkareshwar — Weather, Seasons &amp; Festivals 2026
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-emerald-900/80 max-w-3xl">
+        Complete guide to when to visit Omkareshwar Jyotirlinga: month-by-month weather, temperature ranges, festival calendar, Maha Shivaratri timing, Kartik Purnima, and how to plan your pilgrimage for the best experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- At a Glance -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">At a Glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-xs text-emerald-700 uppercase tracking-wide">Best Months</p>
+          <p class="text-xl font-bold text-emerald-900 mt-1">Oct – Feb</p>
+          <p class="text-sm text-emerald-900/70">12–28°C</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-xs text-emerald-700 uppercase tracking-wide">Hottest Month</p>
+          <p class="text-xl font-bold text-emerald-900 mt-1">May</p>
+          <p class="text-sm text-emerald-900/70">28–39°C</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-xs text-emerald-700 uppercase tracking-wide">Monsoon</p>
+          <p class="text-xl font-bold text-emerald-900 mt-1">Jul – Sep</p>
+          <p class="text-sm text-emerald-900/70">Heavy rain</p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-5 text-center">
+          <p class="text-xs text-emerald-700 uppercase tracking-wide">Biggest Festival</p>
+          <p class="text-xl font-bold text-emerald-900 mt-1">Maha Shivaratri</p>
+          <p class="text-sm text-emerald-900/70">Feb/Mar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monthly Weather -->
+  <section class="py-16 bg-emerald-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">Month-by-Month Guide</h2>
+      <p class="mt-3 text-emerald-900/80 max-w-3xl">
+        Omkareshwar's subtropical climate means distinct seasons. Here's what to expect every month of the year.
+      </p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-emerald-200 bg-white">
+        <table class="w-full text-left text-sm md:text-base">
+          <thead class="bg-emerald-100 text-emerald-900">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Month</th>
+              <th class="px-4 py-3 font-semibold">Temperature</th>
+              <th class="px-4 py-3 font-semibold">Rain</th>
+              <th class="px-4 py-3 font-semibold">Crowds</th>
+              <th class="px-4 py-3 font-semibold">Rating</th>
+              <th class="px-4 py-3 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-emerald-100">
+            {
+              monthlyWeather.map((m) => (
+                <tr class="hover:bg-emerald-50/60">
+                  <td class="px-4 py-3 font-medium text-emerald-900">{m.month}</td>
+                  <td class="px-4 py-3 text-emerald-900">{m.temp}</td>
+                  <td class="px-4 py-3 text-emerald-900/70">{m.rain}</td>
+                  <td class="px-4 py-3 text-emerald-900/70">{m.crowd}</td>
+                  <td class="px-4 py-3 text-emerald-900">{m.rating}</td>
+                  <td class="px-4 py-3 text-emerald-900/70 text-xs md:text-sm">{m.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasons -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">Understanding the Seasons</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900">Winter (Oct–Feb)</h3>
+          <p class="mt-2 text-emerald-900/80 text-sm">
+            <strong>Best season for pilgrimage.</strong> Cool, dry weather (12–28°C) is perfect for darshan, parikrama barefoot, and sightseeing. November sees Kartik Purnima — the most sacred full moon. December and January are peak pilgrimage months with thousands of devotees. Book accommodation 2+ months ahead for festival dates. Morning temperatures in December can drop to 12°C — bring a light jacket.
+          </p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900">Summer (Mar–Jun)</h3>
+          <p class="mt-2 text-emerald-900/80 text-sm">
+            <strong>Avoid if possible.</strong> March–May is extremely hot, with May reaching 39°C+. Afternoon temple visits become uncomfortable and exhausting. If you must visit in summer, restrict yourself to pre-dawn (5–8 AM) and post-sunset (6–9 PM) temple visits only. The Narmada river remains cool and offers some relief. Shravan Sawan begins in June, drawing crowds despite the heat.
+          </p>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-6">
+          <h3 class="text-lg font-semibold text-emerald-900">Monsoon (Jul–Sep)</h3>
+          <p class="mt-2 text-emerald-900/80 text-sm">
+            <strong>Spiritually powerful but challenging.</strong> Shravan (July–August) is the most sacred month for Lord Shiva devotees — kanwariyas carrying Ganga water walk hundreds of kilometres. The landscape turns lush and green. However, Narmada water levels rise and some parikrama sections may be submerged. Heavy rain can restrict outdoor activities. The temple remains open year-round regardless of weather.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-emerald-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-emerald-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-emerald-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-emerald-900">
+                <span>{faq.question}</span>
+                <span class="text-emerald-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-emerald-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-emerald-700 to-teal-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Plan Your Pilgrimage to Omkareshwar</h2>
+      <p class="mt-4 text-emerald-100/90 max-w-2xl mx-auto">
+        October to February offers the best weather for your sacred visit. Book accommodation in advance, especially for festival dates.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-emerald-800 font-semibold shadow hover:bg-emerald-50 transition">Book Accommodation</a>
+        <a href="/omkareshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Omkareshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>

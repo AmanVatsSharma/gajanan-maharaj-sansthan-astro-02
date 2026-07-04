@@ -1,0 +1,219 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { generatePageMetadata } from "@/lib/seo/metadata";
+import {
+  getHinduTempleSchema,
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getLodgingBusinessWithRatingSchema,
+} from "@/lib/seo/structured-data";
+import { testimonials } from "@/data/testimonials";
+
+export const prerender = true;
+
+const meta = generatePageMetadata({
+  title: "Kushavarta Kund — The Origin of Godavari at Trimbakeshwar Jyotirlinga",
+  description:
+    "Kushavarta Kund at Trimbakeshwar is where the sacred Godavari River originates from Shiva's matted hair. History, legend, bathing rituals, how to reach, and what to expect for pilgrims.",
+  keywords: [
+    "kushavarta kund trimbakeshwar",
+    "godavari river origin trimbakeshwar",
+    "kushavarta kund history",
+    "godavari origin shiva",
+    "kushavarta kund bathing",
+    "godavari trimbakeshwar sacred",
+    "kushavarta kund timings",
+    "kushavarta kund how to reach",
+    "trimbakeshwar godavari source",
+    "kushavarta kund photo",
+    "trimbakeshwar kund",
+  ],
+  path: "/kushavarta-kund-trimbakeshwar",
+});
+
+const templeSchema = getHinduTempleSchema({
+  id: "trimbakeshwar",
+  name: "Trimbakeshwar Jyotirlinga",
+  city: "Trimbakeshwar",
+  address: "Trimbakeshwar, Dist. Nashik, Maharashtra",
+  description:
+    "One of the 12 Jyotirlingas of Lord Shiva, home to the Kushavarta Kund — the origin point of the sacred Godavari River.",
+  facilities: [],
+  amenities: [],
+  contact: [],
+  images: [],
+  coordinates: { latitude: 19.9418, longitude: 73.5298, regionCode: "IN-MH" },
+} as any);
+
+const rating = {
+  ratingValue: 4.8,
+  reviewCount: testimonials.length,
+  reviews: testimonials.slice(0, 3).map((t) => ({
+    author: t.author,
+    reviewBody: t.quote,
+    ratingValue: 5,
+  })),
+};
+
+const lodgingSchema = getLodgingBusinessWithRatingSchema(
+  {
+    id: "trimbakeshwar",
+    name: "Trimbakeshwar Bhakta Niwas",
+    city: "Trimbakeshwar",
+    address: "Near Trimbakeshwar Jyotirlinga Temple",
+    description: "Pilgrim accommodation near Trimbakeshwar temple.",
+    facilities: [],
+    amenities: [],
+    contact: [],
+    images: [],
+  } as any,
+  rating,
+  { min: 500, max: 2500, currency: "₹" }
+);
+
+const faqs = [
+  {
+    question: "What is Kushavarta Kund and why is it sacred?",
+    answer:
+      "Kushavarta Kund is a sacred stepped pond and the precise origin point of the Godavari River — India's second-longest river and the most revered river in peninsular India. According to Hindu mythology, Sage Gautama performed intense tapasya (penance) here to bring the Ganga River to earth. Lord Shiva agreed to release the Ganga, but its force was so powerful that it threatened to flood the world. Shiva caught the river in his matted hair and released it gradually through this very spot — Kushavarta Kund — where it became the Godavari. 'Kushavarta' means the 'pond of sacred grass' — sages used to weave mats from kusha grass for their rituals. Bathing in Kushavarta Kund is considered equivalent to bathing in the Ganga at Varanasi or Haridwar, making it one of the most sacred spots in Maharashtra.",
+  },
+  {
+    question: "How far is Kushavarta Kund from the Trimbakeshwar Temple?",
+    answer:
+      "Kushavarta Kund is located approximately 1 km from the Trimbakeshwar Temple. It is a 10–15 minute walk from the main temple. Pilgrims often visit it immediately after the temple darshan — the natural order of pilgrimage is: (1) darshan of the Trimbakeshwar Jyotirlinga, (2) holy dip and puja at Kushavarta Kund, (3) Brahmagiri mountain trek. The walk to Kushavarta Kund passes through the temple market area — you can buy coconuts, flowers, and prasad along the way. The pond has stone ghats for bathing. Mobile phones are allowed here (unlike the main temple).",
+  },
+  {
+    question: "Can I take a holy dip at Kushavarta Kund?",
+    answer:
+      "Yes, Kushavarta Kund is open for bathing throughout the year. The water flows directly from the spring at the mountain source, making it exceptionally pure and cold year-round. Men can bathe in the open ghats. Women have a dedicated ghat section. It is best to bathe early morning (6:00–9:00 AM) or late afternoon (4:00–7:00 PM) to avoid the midday sun. During Shravan (July–August), the kund becomes extremely crowded with thousands of kanwariyas. Bring a change of clothes in a waterproof bag. The water is very cold even in summer — be prepared. Footwear must be removed before entering the ghats. There are changing rooms and basic facilities near the ghats.",
+  },
+  {
+    question: "What is the legend of Gautama Rishi and the Godavari at Trimbakeshwar?",
+    answer:
+      "The legend of Kushavarta Kund and the Godavari River is one of the most significant stories in the Skanda Purana and Padma Purana. Sage Gautama, one of the Saptarishis (seven great sages), lived on the Brahmagiri mountain with his wife Ahalya. One day, a divine cow (gifted by Lord Shiva) accidentally died while grazing, and Gautama inadvertently killed it by throwing darbha grass that turned into arrows. To atone for this sin (brahmahatya — killing a sacred cow), Gautama performed an extraordinary tapasya (penance) of 12,000 years on the peak of Brahmagiri. Lord Shiva was so moved by his devotion that he agreed to release the Ganga River to wash away his sin. Shiva caught the descending Ganga in his matted locks to control its force, and released it gradually through the Kushavarta Kund — creating the Godavari. This is why the Godavari is considered 'Ganga brought down by Shiva's grace' and why Trimbakeshwar is the ultimate destination for Pitru Dosha removal.",
+  },
+  {
+    question: "What are the bathing rituals at Kushavarta Kund?",
+    answer:
+      "The ritual bathing sequence at Kushavarta Kund: (1) Remove footwear before approaching the ghats. (2) Take a purifying dip in the sacred water. Many pilgrims submerge themselves fully three times while chanting 'Om Namah Shivaya' or 'Gange Cha Yamune Chaiva'. (3) After bathing, offer water to Shiva Lingam at the ghat shrine. (4) Make offerings of flowers, bilva leaves, and coconut at the kund shrine. (5) Some pilgrims collect sacred water from the source spring to take home. (6) After bathing, change into dry clothes and offer prayers. During major festivals like Kumbh Mela and Shravan, additional ceremonial bathing with milk, honey, and flowers is performed by the priests on behalf of pilgrims. The whole ritual takes approximately 30–45 minutes.",
+  },
+  {
+    question: "When is the best time to visit Kushavarta Kund?",
+    answer:
+      "Kushavarta Kund is open year-round, but the best times are: (1) <strong>October–November (post-monsoon)</strong> — water is abundant, weather is cool (12–30°C), and the surrounding hills are lush green after the rains. Perfect for photography. (2) <strong>January–February (winter)</strong> — coolest water temperature, most pleasant for bathing, peak pilgrim season. (3) <strong>Shravan (July–August)</strong> — spiritually the most powerful time, but expect heavy crowds and rain. (4) <strong>Avoid May–June</strong> — water levels may be lower and daytime bathing in the sun becomes uncomfortable. The kund is especially spectacular at sunrise — the golden light on the water against the Brahmagiri backdrop is unforgettable. Many pilgrims combine early morning temple darshan with a sunrise dip at Kushavarta Kund.",
+  },
+];
+
+const faqSchema = getFAQSchema(faqs);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Trimbakeshwar Jyotirlinga", url: "/trimbakeshwar-jyotirlinga" },
+  { name: "Kushavarta Kund", url: "/kushavarta-kund-trimbakeshwar" },
+]);
+
+const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSchema];
+---
+
+<Layout meta={meta}>
+  {
+    structuredPayload.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))
+  }
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-cyan-50 via-blue-50 to-indigo-100 border-b border-cyan-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <nav class="text-sm text-cyan-800/70 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/trimbakeshwar-jyotirlinga" class="hover:underline">Trimbakeshwar Jyotirlinga</a>
+        <span class="mx-2">/</span>
+        <span class="text-cyan-900 font-medium">Kushavarta Kund</span>
+      </nav>
+      <h1 class="text-3xl md:text-5xl font-bold text-cyan-900 leading-tight">
+        Kushavarta Kund — The Origin of Godavari at Trimbakeshwar
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-cyan-900/80 max-w-3xl">
+        The sacred pond where the Godavari River flows from Shiva's matted hair. Explore the legend of Sage Gautama, bathing rituals, history, and why this is one of India's most sacred water bodies.
+      </p>
+    </div>
+  </section>
+
+  <!-- The Legend -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">The Legend of Kushavarta Kund</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-6">
+          <h3 class="text-lg font-semibold text-cyan-900 mb-3">The Story</h3>
+          <p class="text-cyan-900/80 text-sm leading-relaxed">
+            Sage Gautama, one of the Saptarishis, lived on Brahmagiri mountain with his wife Ahalya. When a divine cow gifted by Shiva accidentally died during grazing, Gautama inadvertently killed it by throwing darbha grass that turned into arrows. To atone for brahmahatya (killing a sacred cow), he performed 12,000 years of tapasya on Brahmagiri. Moved by his devotion, Shiva released the Ganga River through Kushavarta Kund, creating the Godavari.
+          </p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-6">
+          <h3 class="text-lg font-semibold text-cyan-900 mb-3">Why Sacred?</h3>
+          <p class="text-cyan-900/80 text-sm leading-relaxed">
+            Kushavarta Kund is where the Godavari — called the 'Ganga of South India' — originates directly from Shiva's matted hair. Bathing here is equivalent to bathing in the Ganga at Varanasi, Haridwar, or Prayagraj. The water flows year-round from the mountain spring. It is one of the most sacred spots for performing Pind Daan (ritual offering to ancestors) and Pitru Tarpan (peace rituals for departed souls). The name 'Kushavarta' means the 'pond of kusha grass' — the sacred grass used in all Vedic rituals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visiting Guide -->
+  <section class="py-16 bg-cyan-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">Visiting Kushavarta Kund</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">Location & Distance</h3>
+          <p class="mt-2 text-cyan-900/80 text-sm">1 km from the Trimbakeshwar Temple. 10–15 minute walk from the main temple. Located at the base of the Brahmagiri mountain, where the Godavari spring emerges.</p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">Bathing Timings</h3>
+          <p class="mt-2 text-cyan-900/80 text-sm">Open year-round, 5:00 AM–10:00 PM. Best bathing times: early morning (6:00–9:00 AM) or late afternoon (4:00–7:00 PM). During Shravan, expect heavy crowds. Changing rooms available near the ghats.</p>
+        </div>
+        <div class="rounded-xl border border-cyan-200 bg-white p-6">
+          <h3 class="text-lg font-semibold text-cyan-900">What to Bring</h3>
+          <p class="mt-2 text-cyan-900/80 text-sm">Dry clothes in a waterproof bag, plastic slippers, towel. The water is very cold year-round — even in May. No mobile phone restriction at the kund (unlike the main temple).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-cyan-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-900">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        {
+          faqs.map((faq) => (
+            <details class="group rounded-xl border border-cyan-200 bg-white p-5 open:shadow-sm">
+              <summary class="cursor-pointer list-none flex justify-between items-center font-semibold text-cyan-900">
+                <span>{faq.question}</span>
+                <span class="text-cyan-700 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-3 text-cyan-900/80 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-cyan-700 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Visit Kushavarta Kund on Your Trimbakeshwar Pilgrimage</h2>
+      <p class="mt-4 text-cyan-100/90 max-w-2xl mx-auto">
+        Book Trimbakeshwar Bhakta Niwas for accommodation just 500 m from the temple and 1 km from Kushavarta Kund.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-cyan-800 font-semibold shadow hover:bg-cyan-50 transition">Book Accommodation</a>
+        <a href="/trimbakeshwar-jyotirlinga" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Trimbakeshwar Guide</a>
+        <a href="/contact" class="inline-flex items-center px-7 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition">Contact Sansthan</a>
+      </div>
+    </div>
+  </section>
+</Layout>
