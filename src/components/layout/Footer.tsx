@@ -76,15 +76,44 @@ export function Footer() {
           </div>
 
           <div className="space-y-3 md:space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold">Popular Guides</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold">Omkareshwar Jyotirlinga</h4>
             <ul className="space-y-2 text-sm text-gray-200">
-              <li><a href="/blog/shegaon-travel-guide" className="hover:text-brand-gold transition-colors">Shegaon Travel Guide</a></li>
-              <li><a href="/trimbakeshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Trimbakeshwar Jyotirlinga Guide</a></li>
               <li><a href="/omkareshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Omkareshwar Jyotirlinga Guide</a></li>
-              <li><a href="/blog/omkareshwar-darshan-timings" className="hover:text-brand-gold transition-colors">Omkareshwar Darshan Timings</a></li>
-              <li><a href="/blog/shegaon-bhakta-niwas-booking-process" className="hover:text-brand-gold transition-colors">Bhakta Niwas Booking</a></li>
-              <li><a href="/blog/phone-and-whatsapp-booking-best-practices" className="hover:text-brand-gold transition-colors">Phone & WhatsApp Booking</a></li>
-              <li><a href="/blog/gajanan-maharaj-sansthan-booking-guide" className="hover:text-brand-gold transition-colors">Accommodation Booking</a></li>
+              <li><a href="/omkareshwar-darshan-timings" className="hover:text-brand-gold transition-colors">Darshan Timings</a></li>
+              <li><a href="/omkareshwar-aarti-timings" className="hover:text-brand-gold transition-colors">Aarti Timings</a></li>
+              <li><a href="/omkareshwar-bhakta-niwas" className="hover:text-brand-gold transition-colors">Bhakta Niwas & Rooms</a></li>
+              <li><a href="/omkareshwar-best-time-to-visit" className="hover:text-brand-gold transition-colors">Best Time to Visit</a></li>
+              <li><a href="/omkareshwar-places-to-visit" className="hover:text-brand-gold transition-colors">Places to Visit</a></li>
+              <li><a href="/omkareshwar-temple-history" className="hover:text-brand-gold transition-colors">Temple History</a></li>
+              <li><a href="/omkareshwar-from-mumbai" className="hover:text-brand-gold transition-colors">From Mumbai</a></li>
+              <li><a href="/omkareshwar-from-pune" className="hover:text-brand-gold transition-colors">From Pune</a></li>
+              <li><a href="/omkareshwar-from-indore" className="hover:text-brand-gold transition-colors">From Indore</a></li>
+              <li><a href="/omkareshwar-from-bhopal" className="hover:text-brand-gold transition-colors">From Bhopal</a></li>
+              <li><a href="/narmada-parikrama-omkareshwar" className="hover:text-brand-gold transition-colors">Narmada Parikrama</a></li>
+              <li><a href="/omkareshwar-abhishekam-booking" className="hover:text-brand-gold transition-colors">Abhishekam Booking</a></li>
+              <li><a href="/omkareshwar-mamleshwar-temple" className="hover:text-brand-gold transition-colors">Mamleshwar Temple</a></li>
+              <li><a href="/omkareshwar-temple-rules" className="hover:text-brand-gold transition-colors">Temple Rules & Dress Code</a></li>
+              <li><a href="/omkareshwar-prasadam" className="hover:text-brand-gold transition-colors">Prasadam & Offerings</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-3 md:space-y-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold">Trimbakeshwar Jyotirlinga</h4>
+            <ul className="space-y-2 text-sm text-gray-200">
+              <li><a href="/trimbakeshwar-jyotirlinga" className="hover:text-brand-gold transition-colors">Trimbakeshwar Jyotirlinga Guide</a></li>
+              <li><a href="/trimbakeshwar-temple-history" className="hover:text-brand-gold transition-colors">Temple History</a></li>
+              <li><a href="/trimbakeshwar-3-day-itinerary" className="hover:text-brand-gold transition-colors">3-Day Itinerary</a></li>
+              <li><a href="/trimbakeshwar-bhakt-niwas" className="hover:text-brand-gold transition-colors">Bhakta Niwas & Rooms</a></li>
+              <li><a href="/trimbakeshwar-best-time-to-visit" className="hover:text-brand-gold transition-colors">Best Time to Visit</a></li>
+              <li><a href="/brahmagiri-trek-trimbakeshwar" className="hover:text-brand-gold transition-colors">Brahmagiri Trek Guide</a></li>
+              <li><a href="/kushavarta-kund-trimbakeshwar" className="hover:text-brand-gold transition-colors">Kushavarta Kund</a></li>
+              <li><a href="/trimbakeshwar-from-mumbai" className="hover:text-brand-gold transition-colors">From Mumbai</a></li>
+              <li><a href="/trimbakeshwar-from-pune" className="hover:text-brand-gold transition-colors">From Pune</a></li>
+              <li><a href="/trimbakeshwar-from-nashik" className="hover:text-brand-gold transition-colors">From Nashik</a></li>
+              <li><a href="/mahashivratri-trimbakeshwar" className="hover:text-brand-gold transition-colors">Mahashivratri at Trimbakeshwar</a></li>
+              <li><a href="/narayan-nagbali-trimbakeshwar" className="hover:text-brand-gold transition-colors">Narayan Nagbali Pooja</a></li>
+              <li><a href="/rudra-homa-trimbakeshwar" className="hover:text-brand-gold transition-colors">Rudra Homa</a></li>
+              <li><a href="/kumbh-mela-trimbakeshwar" className="hover:text-brand-gold transition-colors">Kumbh Mela Connection</a></li>
             </ul>
           </div>
 
