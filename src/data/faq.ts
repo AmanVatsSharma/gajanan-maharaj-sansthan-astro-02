@@ -128,7 +128,7 @@ export const bookingFAQs: FAQItem[] = [
     id: "deluxe-suite-booking",
     question: "How can I book a Deluxe or Luxury Suite at Bhakta Niwas Shegaon?",
     answer:
-"Deluxe Suites (₹3,150) and Luxury Suites (₹4,150) at Bhakta Niwas Shegaon can be booked by contacting the Sansthan office via WhatsApp or phone at +919661263850. Use the booking form on our website to send your request, specifying the Deluxe or Luxury Suite preference, check-in date, and guest count. These rooms are limited and should be booked well in advance.",
+"Deluxe Suites (₹3,150) and Luxury Suites (₹4,150) at Bhakta Niwas Shegaon can be booked by contacting the Sansthan office via WhatsApp or phone at +918053190691. Use the booking form on our website to send your request, specifying the Deluxe or Luxury Suite preference, check-in date, and guest count. These rooms are limited and should be booked well in advance.",
     category: "booking",
   },
   {
@@ -143,21 +143,21 @@ export const bookingFAQs: FAQItem[] = [
     id: "whatsapp-booking-number",
     question: "What is the WhatsApp number for Bhakta Niwas Shegaon booking?",
     answer:
-      "The WhatsApp booking number for Shri Gajanan Maharaj Sansthan is +919661263850. You can send your accommodation booking request via WhatsApp with your preferred location, check-in date, check-out date, and number of guests. The Sansthan office will confirm availability and complete your booking.",
+      "The WhatsApp booking number for Shri Gajanan Maharaj Sansthan is +918053190691. You can send your accommodation booking request via WhatsApp with your preferred location, check-in date, check-out date, and number of guests. The Sansthan office will confirm availability and complete your booking.",
     category: "booking",
   },
   {
     id: "booking-by-phone",
     question: "Can I book Bhakta Niwas accommodation over the phone?",
     answer:
-      "Yes, you can call the Sansthan booking helpline at +919661263850 to make an accommodation booking request. Office hours are Monday to Sunday, 9:00 AM to 6:00 PM. For convenience, WhatsApp booking is also available on the same number.",
+      "Yes, you can call the Sansthan booking helpline at +918053190691 to make an accommodation booking request. Office hours are Monday to Sunday, 9:00 AM to 6:00 PM. For convenience, WhatsApp booking is also available on the same number.",
     category: "booking",
   },
   {
     id: "online-booking-available",
     question: "Is online booking available for Bhakta Niwas Shegaon?",
     answer:
-      "Yes, you can submit an accommodation booking request online using the booking form on the official Shri Gajanan Maharaj Sansthan website. Fill in your preferred location, check-in date, check-out date, and number of guests. The form automatically generates a WhatsApp message which you send to the Sansthan office at +919661263850 for confirmation.",
+      "Yes, you can submit an accommodation booking request online using the booking form on the official Shri Gajanan Maharaj Sansthan website. Fill in your preferred location, check-in date, check-out date, and number of guests. The form automatically generates a WhatsApp message which you send to the Sansthan office at +918053190691 for confirmation.",
     category: "booking",
   },
   // --- Festival / peak season FAQs ---
@@ -165,28 +165,28 @@ export const bookingFAQs: FAQItem[] = [
     id: "ashadhi-ekadashi-booking",
     question: "How do I book accommodation for Ashadhi Ekadashi at Pandharpur?",
     answer:
-      "For Ashadhi Ekadashi at Pandharpur, book your Bhakta Niwas accommodation at Shri Gajanan Maharaj Sansthan Pandharpur several months in advance. Contact the Sansthan office at +919661263850 via WhatsApp or call. Rooms fill up months before the Ekadashi date. The Sansthan provides accommodation near the Vitthal temple for warkari families visiting during the Ashadha wari.",
+      "For Ashadhi Ekadashi at Pandharpur, book your Bhakta Niwas accommodation at Shri Gajanan Maharaj Sansthan Pandharpur several months in advance. Contact the Sansthan office at +918053190691 via WhatsApp or call. Rooms fill up months before the Ekadashi date. The Sansthan provides accommodation near the Vitthal temple for warkari families visiting during the Ashadha wari.",
     category: "booking",
   },
   {
     id: "kartik-ekadashi-booking",
     question: "How do I book accommodation for Kartik Ekadashi at Pandharpur?",
     answer:
-      "For Kartik Ekadashi (Dev Uthani Ekadashi) at Pandharpur, advance booking at Shri Gajanan Maharaj Sansthan Pandharpur is essential — rooms book out quickly. Contact the Sansthan office at +919661263850 as early as possible, ideally 3–4 months before the Kartik Ekadashi date. The Sansthan provides family accommodation for Vitthal devotees visiting Pandharpur during the Kartik wari.",
+      "For Kartik Ekadashi (Dev Uthani Ekadashi) at Pandharpur, advance booking at Shri Gajanan Maharaj Sansthan Pandharpur is essential — rooms book out quickly. Contact the Sansthan office at +918053190691 as early as possible, ideally 3–4 months before the Kartik Ekadashi date. The Sansthan provides family accommodation for Vitthal devotees visiting Pandharpur during the Kartik wari.",
     category: "booking",
   },
   {
     id: "shivaratri-trimbakeshwar-booking",
     question: "How do I book accommodation at Trimbakeshwar for Maha Shivaratri?",
     answer:
-      "For Maha Shivaratri at Trimbakeshwar Jyotirlinga, book your accommodation at Shri Gajanan Maharaj Sansthan Trimbakeshwar at least 2–3 months in advance. Contact the Sansthan booking helpline at +919661263850 via WhatsApp or phone. The Sansthan provides overnight accommodation for families visiting the Trimbakeshwar Jyotirlinga during Maha Shivaratri.",
+      "For Maha Shivaratri at Trimbakeshwar Jyotirlinga, book your accommodation at Shri Gajanan Maharaj Sansthan Trimbakeshwar at least 2–3 months in advance. Contact the Sansthan booking helpline at +918053190691 via WhatsApp or phone. The Sansthan provides overnight accommodation for families visiting the Trimbakeshwar Jyotirlinga during Maha Shivaratri.",
     category: "booking",
   },
   {
     id: "peak-season-festival",
     question: "When is the peak booking season at Bhakta Niwas Shegaon?",
     answer:
-      "Peak booking seasons at Shegaon Bhakta Niwas are: (1) Gajanan Vijay Utsav / Punyatithi (September 8 each year) — the busiest day, lakhs of devotees visit. (2) Ganesh Chaturthi (August–September). (3) Navratri (October). (4) Diwali (October–November). (5) Makar Sankranti (January 14). During these periods, rooms fill weeks to months in advance. Early WhatsApp booking at +919661263850 is strongly recommended.",
+      "Peak booking seasons at Shegaon Bhakta Niwas are: (1) Gajanan Vijay Utsav / Punyatithi (September 8 each year) — the busiest day, lakhs of devotees visit. (2) Ganesh Chaturthi (August–September). (3) Navratri (October). (4) Diwali (October–November). (5) Makar Sankranti (January 14). During these periods, rooms fill weeks to months in advance. Early WhatsApp booking at +918053190691 is strongly recommended.",
     category: "booking",
   },
   // --- Darshan & visit FAQs ---
@@ -230,14 +230,14 @@ export const bookingFAQs: FAQItem[] = [
     id: "puja-services-shegaon",
     question: "Are puja or abhishek services available at Shri Gajanan Maharaj Sansthan Shegaon?",
     answer:
-      "Yes, puja and abhishek services are performed at Shri Gajanan Maharaj Sansthan Shegaon as part of the temple's daily rituals. The Sansthan conducts Kakad Aarti (5:00 AM), Madhyan Aarti (~11:30 AM), Saptashringi Aarti (~4:00 PM), and Shej Aarti (~9:30 PM) every day. Devotees can participate in these aartis without prior registration. For special pujas or offerings (naivedya), please contact the Sansthan office at +919661263850 to confirm current availability and procedures.",
+      "Yes, puja and abhishek services are performed at Shri Gajanan Maharaj Sansthan Shegaon as part of the temple's daily rituals. The Sansthan conducts Kakad Aarti (5:00 AM), Madhyan Aarti (~11:30 AM), Saptashringi Aarti (~4:00 PM), and Shej Aarti (~9:30 PM) every day. Devotees can participate in these aartis without prior registration. For special pujas or offerings (naivedya), please contact the Sansthan office at +918053190691 to confirm current availability and procedures.",
     category: "visit",
   },
   {
     id: "anand-sagar-entry-timing",
     question: "What are the entry timings and entry fee for Anand Sagar Shegaon?",
     answer:
-      "Anand Sagar (Anand Vihar) at Shegaon is typically open from 9:00 AM to 9:00 PM, though timings may vary on festival days. A nominal entry fee is charged per person; rates may differ for children and adults. Boat rides and garden areas within Anand Sagar may have separate nominal charges. Since fees are subject to periodic revision by the Sansthan, please confirm the current entry fee at the Anand Sagar gate or by calling the Sansthan office at +919661263850 before your visit.",
+      "Anand Sagar (Anand Vihar) at Shegaon is typically open from 9:00 AM to 9:00 PM, though timings may vary on festival days. A nominal entry fee is charged per person; rates may differ for children and adults. Boat rides and garden areas within Anand Sagar may have separate nominal charges. Since fees are subject to periodic revision by the Sansthan, please confirm the current entry fee at the Anand Sagar gate or by calling the Sansthan office at +918053190691 before your visit.",
     category: "visit",
   },
   {
