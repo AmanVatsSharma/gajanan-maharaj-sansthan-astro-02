@@ -35,9 +35,13 @@ function formatDateLabel(value: string): string {
 
 interface BookingLandingFormProps {
   initialLocation?: string | null;
+  /** Called after the WhatsApp link is triggered. */
+  onWhatsAppClick?: () => void;
+  /** Called after the Call link is triggered. */
+  onCallClick?: () => void;
 }
 
-export function BookingLandingForm({ initialLocation = null }: BookingLandingFormProps) {
+export function BookingLandingForm({ initialLocation = null, onWhatsAppClick, onCallClick }: BookingLandingFormProps) {
   const [locationId, setLocationId] = useState<string>(() => {
     const preselected = initialLocation;
     if (!preselected) return "";
@@ -205,9 +209,10 @@ export function BookingLandingForm({ initialLocation = null }: BookingLandingFor
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() =>
-                trackWhatsAppClick(`booking_page:${locationId || "unknown"}`)
-              }
+              onClick={() => {
+                trackWhatsAppClick(`booking_page:${locationId || "unknown"}`);
+                onWhatsAppClick?.();
+              }}
             >
               <MessageCircle className="h-5 w-5" />
               WhatsApp to Book
@@ -221,9 +226,10 @@ export function BookingLandingForm({ initialLocation = null }: BookingLandingFor
           >
             <a
               href={bookingCallHref}
-              onClick={() =>
-                trackPhoneClick(CONTACT_DETAILS.booking.mobile, "booking_page")
-              }
+              onClick={() => {
+                trackPhoneClick(CONTACT_DETAILS.booking.mobile, "booking_page");
+                onCallClick?.();
+              }}
             >
               <PhoneCall className="h-5 w-5" />
               Call Now

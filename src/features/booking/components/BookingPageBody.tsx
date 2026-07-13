@@ -3,12 +3,14 @@
  */
 "use client";
 
+import { useState } from "react";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { FAQ } from "@/components/seo/FAQ";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { bookingFAQs } from "@/data/faq";
 import { BookingLandingForm } from "@/features/booking/components/BookingLandingForm";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
 import { getHowToSchema } from "@/lib/seo/structured-data";
 
 interface BookingPageBodyProps {
@@ -16,6 +18,8 @@ interface BookingPageBodyProps {
 }
 
 export function BookingPageBody({ initialLocation = null }: BookingPageBodyProps) {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   const howToSchema = getHowToSchema(
     "How to Book Accommodation at Shri Gajanan Maharaj Sansthan",
     "Step-by-step guide to booking Bhakta Niwas accommodation at Shri Gajanan Maharaj Sansthan via WhatsApp or phone. Available at Shegaon, Pandharpur, Trimbakeshwar, and Omkareshwar.",
@@ -52,8 +56,12 @@ export function BookingPageBody({ initialLocation = null }: BookingPageBodyProps
               >
                 <a href="/locations">View Locations</a>
               </Button>
-              <Button asChild variant="premium" className="h-12 rounded-full px-6 text-base">
-                <a href="#booking-form">Send Request</a>
+              <Button
+                variant="premium"
+                className="h-12 rounded-full px-6 text-base"
+                onClick={() => setIsBookingOpen(true)}
+              >
+                Send Request
               </Button>
             </div>
           </header>
@@ -135,6 +143,8 @@ export function BookingPageBody({ initialLocation = null }: BookingPageBodyProps
           </section>
         </div>
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </>
   );
 }

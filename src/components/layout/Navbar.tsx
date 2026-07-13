@@ -4,7 +4,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, MessageCircle, PhoneCall } from "lucide-react";
+import { Menu, MessageCircle, PhoneCall, Send } from "lucide-react";
 
 import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics/events";
@@ -17,6 +17,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
@@ -30,11 +31,13 @@ const NAV_ITEMS = [
 export function Navbar({ pathname }: { pathname: string }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   // New hero: hide header initially, show on scroll
   const [showHeader, setShowHeader] = useState(false);
 
   const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
+  const isWhatsAppOnly = CONTACT_DETAILS.booking.whatsappBookingOnly;
 
   const navWhatsAppMessage = [
     "🙏 Jai Gajanan Maharaj 🙏",
@@ -48,7 +51,6 @@ export function Navbar({ pathname }: { pathname: string }) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
-      // Show header after scrolling 50px
       setShowHeader(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -128,14 +130,23 @@ export function Navbar({ pathname }: { pathname: string }) {
               </a>
             </Button>
             <Button asChild variant="premium" size="sm" className="h-10 lg:h-11 rounded-full px-4 lg:px-5 gap-1.5 text-sm font-semibold">
-              <a
-                href={bookingCallHref}
-                aria-label={`Call booking helpline ${CONTACT_DETAILS.booking.mobile}`}
-                onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "navbar_desktop")}
-              >
-                <PhoneCall className="h-4 w-4 shrink-0" />
-                <span className="hidden md:inline">Call</span>
-              </a>
+              {isWhatsAppOnly ? (
+                <button type="button" onClick={() => setIsBookingOpen(true)}>
+                  <Send className="h-4 w-4 shrink-0" />
+                  <span className="hidden md:inline">Send Booking Request</span>
+                  <span className="md:hidden">Request</span>
+                </button>
+              ) : (
+                <a
+                  href={bookingCallHref}
+                  aria-label={`Call booking helpline ${CONTACT_DETAILS.booking.mobile}`}
+                  onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "navbar_desktop")}
+                >
+                  <PhoneCall className="h-4 w-4 shrink-0" />
+                  <span className="hidden md:inline">Call</span>
+                  <span className="md:hidden">Call</span>
+                </a>
+              )}
             </Button>
             <span
               className="hidden xl:inline text-xs text-muted-foreground tabular-nums max-w-34 truncate"
@@ -157,14 +168,25 @@ export function Navbar({ pathname }: { pathname: string }) {
             >
               <MessageCircle className="h-4 w-4" />
             </a>
-            <a
-              href={bookingCallHref}
-              aria-label="Call"
-              onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "navbar_mobile_icon")}
-              className="h-9 w-9 rounded-full bg-brand-maroon hover:bg-brand-maroon/80 text-white flex items-center justify-center shadow-sm transition-colors duration-200"
-            >
-              <PhoneCall className="h-4 w-4" />
-            </a>
+            {isWhatsAppOnly ? (
+              <button
+                type="button"
+                aria-label="Send booking request"
+                onClick={() => setIsBookingOpen(true)}
+                className="h-9 w-9 rounded-full bg-brand-saffron hover:bg-brand-saffron/90 text-white flex items-center justify-center shadow-sm transition-colors duration-200"
+              >
+                <Send className="h-4 w-4" />
+              </button>
+            ) : (
+              <a
+                href={bookingCallHref}
+                aria-label="Call"
+                onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "navbar_mobile_icon")}
+                className="h-9 w-9 rounded-full bg-brand-maroon hover:bg-brand-maroon/80 text-white flex items-center justify-center shadow-sm transition-colors duration-200"
+              >
+                <PhoneCall className="h-4 w-4" />
+              </a>
+            )}
           </div>
 
           <Dialog open={isMobileOpen} onOpenChange={setIsMobileOpen}>
@@ -230,22 +252,36 @@ export function Navbar({ pathname }: { pathname: string }) {
                     </a>
                   </Button>
 
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full h-12 rounded-full text-base border-brand-maroon/20"
-                  >
-                    <a
-                      href={bookingCallHref}
+                  {isWhatsAppOnly ? (
+                    <Button
+                      variant="outline"
+                      className="w-full h-12 rounded-full text-base border-brand-maroon/20"
                       onClick={() => {
-                        trackPhoneClick(CONTACT_DETAILS.booking.mobile, "navbar_drawer");
+                        setIsBookingOpen(true);
                         setIsMobileOpen(false);
                       }}
                     >
-                      <PhoneCall className="h-4 w-4" />
-                      Call for Booking
-                    </a>
-                  </Button>
+                      <Send className="h-4 w-4" />
+                      Send Booking Request
+                    </Button>
+                  ) : (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full h-12 rounded-full text-base border-brand-maroon/20"
+                    >
+                      <a
+                        href={bookingCallHref}
+                        onClick={() => {
+                          trackPhoneClick(CONTACT_DETAILS.booking.mobile, "navbar_drawer");
+                          setIsMobileOpen(false);
+                        }}
+                      >
+                        <PhoneCall className="h-4 w-4" />
+                        Call for Booking
+                      </a>
+                    </Button>
+                  )}
 
                   <div className="text-center text-xs text-muted-foreground">
                     Booking help: <span className="font-medium text-brand-maroon">{CONTACT_DETAILS.booking.mobile}</span>
@@ -262,6 +298,8 @@ export function Navbar({ pathname }: { pathname: string }) {
           </Dialog>
         </div>
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </nav>
   );
 }

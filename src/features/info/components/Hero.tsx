@@ -1,14 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { PhoneCall } from "lucide-react";
-import { CONTACT_DETAILS } from "@/data/contact";
+import { Send } from "lucide-react";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 // New hero with uploaded image background
 const HERO_WITH_NEW_IMAGE = "/hero/new-hero-bg.png";
 
 export function Hero() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
     <div className="relative min-h-[90vh] svh:min-h-[90svh] flex items-end overflow-hidden">
       {/* New hero background with uploaded image — no overlay, fully visible */}
@@ -50,7 +53,7 @@ export function Hero() {
           </ul>
         </div>
 
-        {/* CTA buttons — pinned to the bottom of the hero, the booking button scrolls to the widget below */}
+        {/* CTA buttons — pinned to the bottom of the hero */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,14 +61,12 @@ export function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button
-            asChild
             size="lg"
+            onClick={() => setIsBookingOpen(true)}
             className="bg-brand-saffron hover:bg-brand-saffron/90 text-white border-0 h-14 px-10 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
           >
-            <a href={`tel:${CONTACT_DETAILS.booking.mobile}`}>
-              <PhoneCall className="h-5 w-5 mr-2" />
-              Book Accommodation
-            </a>
+            <Send className="h-5 w-5 mr-2" />
+            Send Booking Request
           </Button>
           <Button
             asChild
@@ -79,6 +80,8 @@ export function Hero() {
           </Button>
         </motion.div>
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </div>
   );
 }

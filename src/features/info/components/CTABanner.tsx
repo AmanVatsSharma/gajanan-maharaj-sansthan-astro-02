@@ -13,11 +13,12 @@
  */
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall, Send } from "lucide-react";
 import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
-import { trackWhatsAppClick, trackPhoneClick } from "@/lib/analytics/events";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 /* Mandala-like radial SVG overlay */
 function MandalaOverlay() {
@@ -56,7 +57,9 @@ function OrnamentalBorder() {
 }
 
 export function CTABanner() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
   const callHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
+  const isWhatsAppOnly = CONTACT_DETAILS.booking.whatsappBookingOnly;
 
   return (
     <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
@@ -150,21 +153,33 @@ export function CTABanner() {
               </a>
             </Button>
 
-            {/* Call — outlined */}
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto min-w-[200px] sm:min-w-[240px] h-14 md:h-16 text-base md:text-lg rounded-full border-2 border-white/50 bg-white/10 text-white hover:bg-white/20 hover:border-white/70 shadow-lg transition-all duration-300 font-semibold"
-            >
-              <a
-                href={callHref}
-                onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "cta_banner")}
+            {/* Call / Booking Request */}
+            {isWhatsAppOnly ? (
+              <Button
+                size="lg"
+                onClick={() => setIsBookingOpen(true)}
+                variant="outline"
+                className="w-full sm:w-auto min-w-[200px] sm:min-w-[240px] h-14 md:h-16 text-base md:text-lg rounded-full border-2 border-white/50 bg-white/10 text-white hover:bg-white/20 hover:border-white/70 shadow-lg transition-all duration-300 font-semibold"
               >
-                <PhoneCall className="mr-2 h-5 w-5 md:h-6 md:w-6 shrink-0" />
-                {CONTACT_DETAILS.booking.mobile}
-              </a>
-            </Button>
+                <Send className="mr-2 h-5 w-5 md:h-6 md:w-6 shrink-0" />
+                Send Booking Request
+              </Button>
+            ) : (
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto min-w-[200px] sm:min-w-[240px] h-14 md:h-16 text-base md:text-lg rounded-full border-2 border-white/50 bg-white/10 text-white hover:bg-white/20 hover:border-white/70 shadow-lg transition-all duration-300 font-semibold"
+              >
+                <a
+                  href={callHref}
+                  onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "cta_banner")}
+                >
+                  <PhoneCall className="mr-2 h-5 w-5 md:h-6 md:w-6 shrink-0" />
+                  {CONTACT_DETAILS.booking.mobile}
+                </a>
+              </Button>
+            )}
           </motion.div>
 
           {/* Trust indicators */}
@@ -197,6 +212,8 @@ export function CTABanner() {
       <div className="absolute bottom-6 left-6 right-6 md:left-16 md:right-16">
         <OrnamentalBorder />
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </section>
   );
 }

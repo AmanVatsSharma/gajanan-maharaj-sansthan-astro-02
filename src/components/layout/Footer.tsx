@@ -1,10 +1,19 @@
 /**
  * Footer component with quick links, locations, and contact info.
  */
+"use client";
+
+import { useState } from "react";
 import { MessageCircle, PhoneCall } from "lucide-react";
+
 import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 export function Footer() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const isWhatsAppOnly = CONTACT_DETAILS.booking.whatsappBookingOnly;
+  const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
+
   return (
     <footer className="relative bg-brand-maroon text-white">
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r from-brand-gold via-brand-saffron to-brand-gold opacity-80" />
@@ -34,14 +43,26 @@ export function Footer() {
                 <MessageCircle className="h-5 w-5 shrink-0" />
                 WhatsApp
               </a>
-              <a
-                href={`tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`}
-                aria-label="Call now"
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-white/20 hover:bg-white/30 text-white font-semibold border border-white/40 shadow-md transition-all duration-200 hover:scale-105"
-              >
-                <PhoneCall className="h-5 w-5 shrink-0" />
-                Call Now
-              </a>
+              {isWhatsAppOnly ? (
+                <button
+                  type="button"
+                  onClick={() => setIsBookingOpen(true)}
+                  aria-label="Send booking request"
+                  className="flex items-center gap-2 px-5 py-3 rounded-full bg-white/20 hover:bg-white/30 text-white font-semibold border border-white/40 shadow-md transition-all duration-200 hover:scale-105"
+                >
+                  <PhoneCall className="h-5 w-5 shrink-0" />
+                  Send Booking Request
+                </button>
+              ) : (
+                <a
+                  href={bookingCallHref}
+                  aria-label="Call now"
+                  className="flex items-center gap-2 px-5 py-3 rounded-full bg-white/20 hover:bg-white/30 text-white font-semibold border border-white/40 shadow-md transition-all duration-200 hover:scale-105"
+                >
+                  <PhoneCall className="h-5 w-5 shrink-0" />
+                  Call Now
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -153,6 +174,8 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} Shri Gajanan Maharaj Sansthan. All rights reserved.</p>
         </div>
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </footer>
   );
 }

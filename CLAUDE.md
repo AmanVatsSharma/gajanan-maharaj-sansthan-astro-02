@@ -128,3 +128,7 @@ Blog pages use these for static path generation (prerendered at build time).
 - `festivals.ts` — annual festival calendar
 - `testimonials.ts` — devotee testimonials for rating schemas
 - `faq.ts` — frequently asked questions for FAQ schema
+
+### Booking dialog toggle
+
+`CONTACT_DETAILS.booking.whatsappBookingOnly` in `src/data/contact.ts` is a site-wide feature flag. When `true`, every "Call" button across the site (Navbar desktop/mobile/drawer, Footer contact strip, CTA banner, Booking page) opens `BookingDialog` instead of initiating a `tel:` link. When `false`, call buttons behave normally. The dialog collects booking details and redirects to WhatsApp. To toggle, change the boolean in `contact.ts` — no component changes needed.
