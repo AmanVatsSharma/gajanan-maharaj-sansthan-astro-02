@@ -24,12 +24,7 @@ relatedSlugs:
   - "family-values-in-sansthan-tradition"
   - "silent-meditation-spots-in-shegaon"
   - "pilgrimage-as-spiritual-transformation"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-bhakta-niwas-booking-process"
+  - "prasad-distribution-etiquette"
 ---
 # Gratitude Practices For Devotees
 

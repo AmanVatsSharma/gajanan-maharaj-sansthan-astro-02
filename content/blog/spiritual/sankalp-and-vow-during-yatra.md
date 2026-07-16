@@ -23,13 +23,8 @@ relatedSlugs:
   - "spiritual-meaning-of-bhakta-niwas"
   - "gratitude-practices-for-devotees"
   - "bhakti-and-surrender-in-pilgrimage"
-  - "meaning-of-pilgrimage-as-spiritual-practice"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-bhakta-niwas-booking-process"
+  - "pilgrimage-as-spiritual-transformation"
+  - "finding-peace-in-temple-queues"
 ---
 # Sankalp And Vow During Yatra
 

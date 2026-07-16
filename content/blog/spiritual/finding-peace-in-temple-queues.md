@@ -22,14 +22,9 @@ locationIds:
 relatedSlugs:
   - "pilgrimage-as-spiritual-transformation"
   - "evening-aarti-participation-guide"
-  - "devotional-discipline-during-temple-stay"
-  - "significance-of-temple-stay-in-devotion"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-bhakta-niwas-booking-process"
+  - "finding-peace-in-temple-queues"
+  - "bhakta-niwas-spiritual-significance"
+  - "bhakti-and-surrender-in-pilgrimage"
 ---
 # Finding Peace In Temple Queues
 

@@ -1,134 +1,118 @@
 ---
-title: "Shegaon Omkareshwar 3 Day Itinerary | Shri Gajanan Maharaj Sansthan"
-description: "A detailed 3-day itinerary combining Shegaon Samadhi Mandir and Omkareshwar Jyotirlinga — with transport, darshan timings, accommodation tips, and budget."
-date: "2025-09-17"
+title: "Shegaon Omkareshwar 3-Day Itinerary | Shri Gajanan Maharaj Sansthan"
+description: "A detailed 3-day yatra itinerary from Shegaon to Omkareshwar covering darshan at the Samadhi Mandir, the Narmada aarti, and both Jyotirlingas — with distances, timings, accommodation, and practical logistics."
+date: "2025-08-27"
 slug: "shegaon-omkareshwar-3-day-itinerary"
 image: "/images/shegaon-temple.svg"
 keywords:
-  - "shegaon omkareshwar 3 day itinerary"
-  - "shegaon omkareshwar yatra"
-  - "3 day pilgrimage shegaon omkareshwar"
-  - "omkareshwar from shegaon"
-  - "combined shegaon omkareshwar trip"
-  - "samadhi mandir jyotirlinga itinerary"
+  - "shegaon omkareshwar itinerary"
+  - "shegaon to omkareshwar 3 days"
+  - "narmada aarti shegaon"
+  - "jyotirlinga circuit shegaon"
+  - "shegaon omkareshwar trip"
+  - "bhakta niwas omkareshwar"
 author: "Sansthan"
 tags:
   - "guides"
-  - "multi-location"
   - "itinerary"
   - "shegaon"
   - "omkareshwar"
+  - "multi-location"
 category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
   - "omkareshwar"
 relatedSlugs:
-  - "mumbai-to-shegaon-weekend-guide"
-  - "week-long-devotional-circuit-planner"
   - "omkareshwar-jyotirlinga-yatra-planning"
-  - "festival-rush-booking-strategies"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
+  - "week-long-devotional-circuit-planner"
+  - "sansthan-location-selection-guide"
   - "complete-transport-guide-for-devotees"
+  - "gajanan-maharaj-sansthan-complete-guide"
+  - "shegaon-omkareshwar-3-day-itinerary"
+  - "shegaon-darshan-timing-guide"
+  - "omkareshwar-best-time-to-visit"
+  - "bhakta-niwas-complete-booking-guide"
+  - "festival-rush-booking-strategies"
 ---
 
-# Shegaon Omkareshwar 3 Day Itinerary | Shri Gajanan Maharaj Sansthan
+# Shegaon Omkareshwar 3-Day Itinerary | Shri Gajanan Maharaj Sansthan
 
-Shegaon and Omkareshwar are the two most popular destinations in the Shri Gajanan Maharaj Sansthan network, and they complement each other beautifully. Shegaon offers the intimate, devotional atmosphere of a saint's samadhi, while Omkareshwar presents the ancient grandeur of a Jyotirlinga set on an island in the sacred Narmada river. Together, they create a pilgrimage that balances personal connection with cosmic scale. The 340 km distance between them is easily covered in one comfortable drive, and a 3-day itinerary gives you enough time at both locations without feeling rushed. This guide provides a detailed day-by-day schedule with practical timing, transport, and accommodation advice.
+The Shegaon to Omkareshwar route is the shortest and most fulfilling devotional circuit that pairs two Jyotirlinga sites — the Samadhi Mandir of Shri Gajanan Maharaj at Shegaon and the Omkareshwar Jyotirlinga on the Narmada. The road distance between the two locations is approximately 340 km via Khamgaon, Mehkar, and Khandwa, and the journey takes about 6 to 7 hours by car or private taxi. There is no direct train between Shegaon and Omkareshwar, and the route passes through some rural stretches where bus connectivity is intermittent, which is why the private taxi or car option is strongly recommended for this itinerary. The three-day format gives you a full first day at Shegaon, a full second day at Omkareshwar, and a partial third day for a second darshan or the Narmada aarti before the return journey. This guide provides an hour-by-hour schedule, including darshan timings, accommodation recommendations, transport arrangements, and specific details of what to expect at each stage.
 
-## Overview
+## Day 1: Shegaon — Arrival and Samadhi Darshan
 
-**Total distance:** Approximately 340 km between Shegaon and Omkareshwar (one way), plus your arrival and departure distances.
-**Total time:** 3 days, 2 nights.
-**Best season:** October to March, when both locations have comfortable weather.
-**Budget range:** INR 4,000-10,000 per person (solo) or INR 10,000-25,000 for a family of four.
-**Accommodation:** Bhakta Niwas at both Shegaon and Omkareshwar, or a combination of Bhakta Niwas and private hotels.
+**6:00-7:00 AM:** Arrive at Shegaon by train, bus, or taxi from your origin city. If you are driving from Nagpur, leave by 3:30 AM to arrive by 7:00 AM. The Samadhi Mandir is a 5-minute auto-rickshaw ride from the railway station. Drop your luggage at Bhakta Niwas (check-in opens at 6:00 AM, and early check-in requests are usually honoured on weekends) or store it at the reception while you proceed to the temple.
 
-## Day 1: Mumbai/Nagpur to Shegaon
+**7:30-8:30 AM:** Mangala Aarti and the first darshan. The Mangala Aarti is the temple's first offering of the day, and it is the most peaceful darshan slot. The queue typically builds from 6:30 AM and reaches its peak by 7:30 AM, with a wait of 30-45 minutes on regular mornings and up to 90 minutes on festival weekends. Arriving by 7:30 AM puts you in the queue with a manageable wait. The Mangala Aarti includes the singing of the devotional songs composed by Shri Gajanan Maharaj himself, the offering of oil lamps, and the arati performed by the temple priests. The temple is quieter and more intimate at this hour than later in the day, and many devotees describe the Mangala Aarti as the most spiritually resonant moment of their entire yatra.
 
-If you are starting from Mumbai, the best option is the overnight MSRTC Volvo bus, which departs around 9:00 PM from Mumbai Central or Dadar and arrives in Shegaon at approximately 6:00 AM. Alternatively, take an overnight train (Sevagram Express or Vidarbha Express) from Mumbai CST, departing around 10:00 PM and arriving at Shegaon by 7:00 AM. If you are starting from Nagpur, the drive is 3.5 hours (230 km) and can be done comfortably in the morning, arriving in Shegaon by early afternoon.
+**8:30-9:30 AM:** Mahaprasad breakfast at the Bhakta Niwas canteen. The canteen serves poha, upma, misal pav, and chai. The thali at INR 40-60 per person is simple, hygienic, and deeply satisfying after the early morning darshan. Spend the rest of the morning resting, writing in your diary, or visiting the Anandanand garden adjacent to the temple.
 
-**6:30 AM:** Arrive in Shegaon. Take an auto-rickshaw from the bus stand or railway station to Bhakta Niwas (INR 30-50, 10 minutes). If you have pre-booked a room, check in immediately and deposit your luggage. Freshen up with a quick wash and change into comfortable clothes.
+**11:00 AM-1:00 PM:** Second darshan at the temple, followed by a walk around the Anand Sagar entertainment complex. The 11:00 AM darshan slot has a shorter queue, and the temple grounds are less crowded than the morning peak. After the darshan, walk to the Anand Sagar complex, which is approximately 1 km from the temple and about 15 minutes on foot. The complex includes the Guruprasad restaurant, the musical fountain (show times at 12:30 PM and 2:00 PM during the day), and the landscaped gardens. Lunch at Guruprasad is a full vegetarian meal including dal, sabzi, roti, rice, and a sweet, typically INR 100-150 per person.
 
-**7:30 AM:** Breakfast at the Bhakta Niwas canteen. The canteen serves poha, upma, and tea from 7:00 AM. A filling breakfast costs INR 30-50.
+**2:00-4:00 PM:** Rest at Bhakta Niwas. The afternoon heat in Shegaon during summer months is intense, and rest is the right use of time. If you are visiting in October-February, the afternoons are comfortable enough to explore the town, visit the Anandanand museum, or sit in the temple garden.
 
-**8:00 AM:** Walk to the Samadhi Mandir (5 minutes). Join the queue for morning darshan. The 8:00 AM slot typically has a 30 to 60 minute wait. After darshan, collect prasad at the counter outside (INR 10-20 for a laddu packet). Spend some time in the temple courtyard, absorbing the atmosphere.
+**4:00-5:30 PM:** Afternoon darshan at the temple. The 4:00 PM slot is typically the shortest queue of the day, and the temple atmosphere is more relaxed. After darshan, sit in the temple garden for a while.
 
-**10:00 AM:** Return to Bhakta Niwas for a short rest. If you are feeling energetic, visit the Anandanand garden, which is a 10-minute walk from the temple. The garden has well-maintained pathways, flowering plants, and a small pond where peacocks are often seen. It is a peaceful place to sit and reflect after the intensity of darshan.
+**5:30-7:00 PM:** Evening free. You can explore the local Shegaon market, visit small dharamshalas, or return to Bhakta Niwas for rest.
 
-**12:00 PM:** Lunch at the Mahaprasad canteen. A typical thali costs INR 40-60 and includes rice, dal, vegetables, roti, and a small sweet. The canteen serves hundreds of devotees in a single seating, and the atmosphere of shared dining is part of the experience. If you prefer privacy, several small restaurants near the temple offer the same food in a quieter setting.
+**7:00-8:00 PM:** Evening Mangala Aarti. This is the largest darshan gathering of the day, and the temple is at its most lively. The aarti includes the full ritual, bells, chanting, and the arati offered by the priests. The musical fountain at Anand Sagan runs at 7:00 PM and 8:00 PM, and many devotees choose the 8:00 PM show for a more intimate experience with fewer crowds.
 
-**1:30 PM to 4:30 PM:** Rest period. The afternoon heat in Buldhana district from March to May can be intense, and even in winter, the post-lunch rest is valuable. Use this time to recharge, write in your journal, or simply relax at your room.
-
-**4:30 PM:** Visit the small museum near the temple that documents Shri Gajanan Maharaj's life through photographs and artefacts. The museum is free to enter and takes about 30 minutes to explore. It provides valuable context that deepens the meaning of your darshan.
-
-**6:00 PM:** Return to the temple for the evening aarti. The 6:00 PM aarti is less crowded than the Shej Aarti at 9:00 PM and is a good option for devotees who want to attend aarti but also want an early dinner and rest.
-
-**7:30 PM:** Dinner at the canteen (INR 40-60). After dinner, take an evening walk around the temple campus. The illuminated temple is beautiful at night, and the atmosphere is peaceful after the daytime crowds.
-
-**9:00 PM:** Optional Shej Aarti. This is the final aarti of the day and is attended by a smaller, more intimate group of devotees. The experience is deeply moving for those who attend.
+**8:30 PM:** Dinner at the Bhakta Niwas Mahaprasad canteen. The full thali with dal, sabzi, roti, rice, and sweet is INR 50-80 per person. After dinner, rest early — Day 2 starts with a long drive to Omkareshwar.
 
 ## Day 2: Shegaon to Omkareshwar
 
-**4:00 AM:** Wake up for the Mangala Aarti at Shegaon. Arrive at the queue by 3:30 AM. The pre-dawn aarti is the most spiritually charged moment at Shegaon, and many devotees consider it the highlight of their entire trip. The aarti takes about 45 minutes, after which the temple closes for a brief rest period.
+**5:00 AM:** Wake up, pack your bags, have breakfast at the Bhakta Niwas canteen, and settle the room bill at the reception.
 
-**5:30 AM:** Return to Bhakta Niwas for breakfast. The canteen opens early on festival days, but on regular days, you may need to wait until 7:00 AM. Pack some snacks for the road.
+**6:00-7:00 AM:** One last darshan at the temple before departure. The 6:00 AM slot is peaceful, and the early morning temple atmosphere is a powerful end to your Shegaon stay.
 
-**7:00 AM:** Check out of Bhakta Niwas and begin the journey to Omkareshwar. The route from Shegaon to Omkareshwar goes via Shegaon-Khamgaon-Patur-Burai-Khandwa-Mandleshwar-Omkareshwar. The total distance is approximately 340 km, and the drive takes about 6 hours. The road quality is good for most of the route, with the Khandwa-Omkareshwar section being the most scenic as it follows the Narmada valley.
+**7:00 AM:** Depart for Omkareshwar. The journey from Shegaon to Omkareshwar is approximately 340 km and 6-7 hours by car. The route goes through Khamgaon (35 km, 40 minutes), Mehkar (90 km, 1.5 hours), Khandwa (180 km, 3 hours), and then the final 160 km stretch to Omkareshwar. The road from Khandwa to Omkareshwar is well-maintained but narrow in some stretches. Plan for at least one 30-minute break at a restaurant near Khandwa for tea and snacks.
 
-**Stop at Khandwa:** Midway through the journey, stop at Khandwa for lunch. Khandwa has several clean vegetarian restaurants on the main highway. A thali meal costs INR 100-150. The stop also gives you a chance to stretch your legs and refuel if needed.
+**1:00-2:00 PM:** Arrive at Omkareshwar. The approach to the temple is via a bridge that crosses the Narmada to the Mandhata island. Drive across the bridge and arrive at the Omkareshwar Jyotirlinga temple parking area. There is no parking at Bhakta Niwas Omkareshwar, and you will need to use the public parking area near the bridge and walk from there. Alternatively, park your vehicle at a private dharamshala or guesthouse parking lot near the bridge.
 
-**1:30 PM:** Arrive at Omkareshwar. Park your vehicle at the designated parking area near the Omkareshwar bridge (free parking for devotees). From the parking area, you can either walk across the bridge to the island or take the cable car (INR 50-100 per person return). The cable car offers spectacular views of the Narmada river and the island temples, and it is worth taking at least once during your visit.
+**2:00-3:30 PM:** First darshan at the Omkareshwar Jyotirlinga. The temple is on the Mandhata island, which is the shape of the Om symbol, and the temple itself is at the central point of the island. The queue for the main Jyotirlinga darshan is typically 20-40 minutes in the afternoon, and the temple is less crowded in the afternoon than in the morning. The Omkareshwar Jyotirlinga is the sacred Shiva lingam that is the central focus of the temple, and the darshan is the primary spiritual purpose of your visit.
 
-**2:00 PM:** Check in at Omkareshwar Bhakta Niwas. The accommodation is on the Mandhata island itself, which means you are staying within the temple complex. Rooms are simpler than at Shegaon, but the location is unbeatable. Book a room with a river view if available.
+**3:30-5:00 PM:** Walk around the island. The Mandhata island has several important temples: the Mamaleshwar (Amaleshwar) Jyotirlinga temple, the Siddhnath temple, and the Fort of Mandhata. The Fort of Mandhata is on the highest point of the island and offers panoramic views of the Narmada valley. The walk around the entire island takes about 1.5 to 2 hours, and it is the most peaceful way to experience Omkareshwar.
 
-**3:30 PM:** Darshan at the Amaleshwar (Mamaleshwar) Jyotirlinga temple on the island. The afternoon crowd is lighter, and you can spend more time in the temple courtyard. Explore the island on foot — it takes about 30 minutes to walk the full circumference, and there are several smaller shrines, ghats, and viewpoints along the way.
+**5:30-7:00 PM:** The Narmada aarti. The Narmada aarti is performed on the river ghats at sunset, and it is widely described as one of the most beautiful spiritual experiences in central India. Oil lamps are floated on the river, priests perform the aarti with bells and conch shells, and hundreds of devotees watch from the ghats. The aarti typically begins at 5:45 PM or 6:00 PM depending on the season and the sunset time. Arrive 15 minutes early to get a good spot.
 
-**6:00 PM:** Return to your room for a short rest. Freshen up and come back to the ghats for the Narmada aarti at sunset. The aarti is performed on the river steps with hundreds of oil lamps, and the reflection of the flames in the still Narmada water is one of the most beautiful sights in the circuit. This moment alone makes the Shegaon-Omkareshwar trip worthwhile.
+**7:00 PM onwards:** Check in to your accommodation. The Bhakta Niwas at Omkareshwar has Standard AC rooms (INR 600-900) and Family Rooms (INR 800-1,500). For the Narmada aarti, many devotees prefer to stay in a hotel on the mainland rather than on the island, because the island properties are basic and the bridge access is easiest at night from the mainland side. Private hotels near the bridge offer AC rooms from INR 800 to INR 2,500. Dinner is available at the Bhakta Niwas canteen or at the Guruprasad restaurant near the bridge.
 
-**8:00 PM:** Dinner at one of the vegetarian restaurants near the bridge, or at the prasad counter near the temple. A thali costs INR 120-200.
+## Day 3: Omkareshwar — Morning Darshan and Return to Shegaon
 
-**9:30 PM:** Return to your room at Bhakta Niwas for a restful night. The sound of the Narmada river outside your window is the perfect lullaby after a day of travel and darshan.
+**5:00-6:00 AM:** Pre-dawn darshan at the temple. The pre-dawn aarti at Omkareshwar is the spiritual highlight of the entire circuit, and the temple is at its most peaceful. The pre-dawn aarti is less crowded than the evening aarti, and the island is still quiet enough for a contemplative walk around the fort.
 
-## Day 3: Omkareshwar to Departure
+**6:00-8:00 AM:** Breakfast at the Bhakta Niwas canteen or the nearby restaurant, then a morning walk along the Narmada ghats.
 
-**5:30 AM:** Wake up and walk to the ghats for the sunrise view of the Narmada. The early morning mist over the river, with the temple spires visible through the haze, is a photographer's dream and a devotee's delight. Spend 30-45 minutes sitting quietly on the ghat steps.
+**8:00-10:00 AM:** Explore the island's other temples — Mamaleshwar, Siddhnath, and the Fort of Mandhata. This is a good time for the Fort walk because the morning light is best for photography and the temperatures are comfortable.
 
-**7:00 AM:** Breakfast at your accommodation or a nearby restaurant. Idli, dosa, and poha are commonly available.
+**10:00 AM:** Check out and depart for Shegaon. The return journey is the same 340 km and 6-7 hours.
 
-**8:00 AM:** Visit the Omkareshwar temple on the mainland for darshan. This temple is separate from the Jyotirlinga on the island and is dedicated to Lord Shiva in his Omkareshwar form. The mainland temple is less crowded than the island temple and offers a more contemplative experience.
+**4:00-5:00 PM:** Arrive at Shegaon. If you have time, take a quick darshan at the temple before your train or bus departure. The 4:00 PM slot is typically the shortest queue at Shegaon in the evening.
 
-**10:00 AM:** Explore the Siddhnath temple and the Mandhata fort viewpoint if you have time and energy. The fort is about 1 km from the island and offers panoramic views of the Narmada valley. The climb is moderate and takes about 20 minutes.
+**5:00 PM onwards:** Depart from Shegaon to your home destination, or continue to Nagpur for an overnight stay before your return flight or train.
 
-**11:30 AM:** Check out of your accommodation. Have lunch at a restaurant near the bridge before departing.
+## Transport Options
 
-**12:30 PM:** Begin the return journey to Shegaon or directly to Nagpur. The drive to Nagpur via Khandwa is approximately 380 km and takes about 6.5 hours. If you are returning to Mumbai, the drive is approximately 570 km via Indore and the Mumbai-Nagpur Expressway, taking about 10 hours.
+The private car or taxi option is strongly recommended for this itinerary because there is no reliable direct public transport between Shegaon and Omkareshwar. A private taxi from Shegaon to Omkareshwar costs approximately INR 4,000-6,000 depending on the vehicle type and the season. If you are sharing the taxi with two or three other devotees, the cost per person is INR 1,300-2,000, which is very reasonable for the convenience. The [complete transport guide](/blog/complete-transport-guide-for-devotees) covers all transport options.
 
-For devotees who want to extend this itinerary, add Trimbakeshwar (4 hours from Omkareshwar via Burhanpur and Nashik) to create a 5-day circuit. The [week-long devotional circuit planner](/blog/week-long-devotional-circuit-planner) covers the extended version.
+For return journeys from Omkareshwar, the nearest railway station is Khandwa Junction (30 km, 45 minutes from Omkareshwar), with trains to Mumbai, Nagpur, and Delhi. The nearest airport is Indore (80 km, 2 hours). If you are not returning directly to Shegaon, flying from Indore back to your home city is a practical option.
 
-## Accommodation Booking Tips
+## Booking the Accommodations
 
-Book Bhakta Niwas at Shegaon at least 1-2 weeks in advance for a weekend visit, and 4-6 weeks in advance if you are visiting during a festival. For Omkareshwar, book at least 4-6 weeks in advance regardless of the season, because the island accommodation is limited and demand is consistently high. Use the [complete booking guide](/blog/bhakta-niwas-complete-booking-guide) for phone numbers and message templates.
-
-If Omkareshwar Bhakta Niwas is fully booked, several private hotels near the Omkareshwar bridge offer rooms from INR 1,500-3,000 per night. The [Omkareshwar accommodation guide](/blog/omkareshwar-accommodation-near-temple) covers these options in detail. For a mid-range hotel experience near Omkareshwar, see the [Anand Vihar vs Visawa comparison](/blog/omkareshwar-anand-vihar-vs-visawa).
+Bhakta Niwas rooms at Shegaon must be booked in advance, and booking two weeks before your trip during regular seasons, and 4-6 weeks before during festival periods. The [Bhakta Niwas booking page](/booking) is where you submit your request. For Omkareshwar, the Sansthan Bhakta Niwas is smaller, and availability can be tighter. Book both Shegaon and Omkareshwar in the same WhatsApp conversation to the Sansthan office.
 
 ## Frequently Asked Questions
 
-**What is the best time of year for this 3-day itinerary?** October to February offers the most comfortable temperatures at both locations. The Narmada aarti at sunset during these months is particularly spectacular, with clear skies and gentle breezes.
+**Can I do the Shegaon-Omkareshwar trip in 2 days?** Yes, a 2-day version starts Shegaon at 6:00 AM, arrives Omkareshwar at 2:00 PM, and returns Shegaon the next day, but it is rushed. The 3-day itinerary is strongly recommended.
 
-**Should I drive myself or hire a car with a driver?** If you are comfortable with long-distance driving on Indian highways, driving yourself is fine. The route is well-marked and the road quality is good. However, a driver gives you the freedom to rest during the 6-hour journey and arrive at Omkareshwar refreshed. A hired car with driver from Nagpur costs approximately INR 3,000-4,000 per day.
+**Do I need a private vehicle?** Yes. There is no reliable direct public transport between Shegaon and Omkareshwar, and the private car option is the only practical way to make the circuit.
 
-**Can I do this itinerary by public transport?** Yes. Take a train from Mumbai to Shegaon, then a bus from Shegaon to Khandwa (INR 300-500, 4 hours), then a shared taxi or bus from Khandwa to Omkareshwar (INR 100-200 per person, 2 hours). The return journey follows the same route. Public transport takes longer but costs significantly less.
+**Can I extend to Pandharpur or Trimbakeshwar?** Yes. The [week-long devotional circuit planner](/blog/week-long-devotional-circuit-planner) adds Pandharpur and Trimbakeshwar to the Shegaon-Omkareshwar loop in 7-10 days.
 
-**Is 3 days enough time?** Yes, for a focused visit to just these two locations. Three days gives you a full day at Shegaon, a full day of travel plus darshan at Omkareshwar, and a relaxed morning at Omkareshwar before departure. If you want a more leisurely pace, extend to 4 days.
+**Is Omkareshwar safe for solo female devotees?** Yes. Omkareshwar is a small, safe town with a devotional community. The Bhakta Niwas reception is staffed 24 hours, and the island is well-lit at night.
 
-**What happens if the Narmada is in flood?** During the monsoon months of July and September, the Narmada can rise significantly, and the island paths may become partially submerged. The temple trust monitors water levels closely and restricts access to the island if conditions are unsafe. Check the water level status with the Omkareshwar trust office before you travel during monsoon season.
+**What is the best time for the Narmada aarti?** The evening aarti at 5:45-6:00 PM is the most beautiful. The morning aarti at sunrise is quieter and more peaceful but less dramatic.
 
-**Are there any dress code requirements specific to Omkareshwar?** Yes, modest dress is required at the Jyotirlinga temple. Men should wear a shirt and trousers or dhoti. Women should wear a saree, salwar kameez, or long skirt with a blouse. Shorts, sleeveless tops, and revealing clothing are not permitted inside the temple complex. Carry a scarf or shawl as a head covering if needed. The same dress code applies at Shegaon's Samadhi Mandir.
+**Can I book Bhakta Niwas at both locations in advance?** Yes. Contact the Sansthan office with both booking requests simultaneously, and they will confirm availability across both locations. The [multi-location comparison guide](/blog/bhakta-niwas-across-locations-comparison) helps you understand the differences between the Bhakta Niwas properties.
 
----
-
-Browse more in [Guides](/blog/category/guides). Tags: [guides](/blog/tag/guides)
+For broader planning, the [shegaon darshan timing guide](/blog/sheogaon-darshan-timing-guide) covers the temple schedule, the [omkareshwar jyotirlinga yatra planning guide](/blog/omkareshwar-jyotirlinga-yatra-planning) covers the Omkareshwar visit in detail, and the [location selection guide](/blog/sansthan-location-selection-guide) helps you decide which location to visit first. When you are ready to book, the [booking page](/booking) is where you submit your request, and [contact](/contact) is available for any specific questions.

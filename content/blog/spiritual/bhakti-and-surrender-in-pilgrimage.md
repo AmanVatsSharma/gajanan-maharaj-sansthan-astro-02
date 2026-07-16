@@ -22,9 +22,9 @@ locationIds:
 relatedSlugs:
   - "bhakta-niwas-spiritual-significance"
   - "pilgrimage-as-spiritual-transformation"
-  - "bhakti-and-surrender-in-pilgrimage"
   - "significance-of-temple-stay-in-devotion"
-  - "gajanan-maharaj-sansthan-complete-guide"
+  - "finding-peace-in-temple-queues"
+  - "gajanan-maharaj-teachings-for-daily-life"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-travel-guide"
   - "shegaon-accommodation-guide"

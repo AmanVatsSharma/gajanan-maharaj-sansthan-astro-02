@@ -23,13 +23,7 @@ relatedSlugs:
   - "legacy-of-shri-gajanan-maharaj"
   - "gratitude-practices-for-devotees"
   - "family-values-in-sansthan-tradition"
-  - "devotional-discipline-during-temple-stay"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-bhakta-niwas-booking-process"
+  - "bhakta-niwas-spiritual-significance"
 ---
 # Prasad Distribution Etiquette
 

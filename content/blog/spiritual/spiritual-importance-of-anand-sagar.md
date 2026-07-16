@@ -24,12 +24,7 @@ relatedSlugs:
   - "gratitude-and-seva-during-yatra"
   - "silent-meditation-spots-in-shegaon"
   - "spiritual-benefits-of-bhakta-niwas-stay"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-bhakta-niwas-booking-process"
+  - "bhakta-niwas-spiritual-significance"
 ---
 # Spiritual Importance Of Anand Sagar
 

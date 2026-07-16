@@ -24,12 +24,7 @@ relatedSlugs:
   - "significance-of-temple-stay-in-devotion"
   - "spiritual-benefits-of-bhakta-niwas-stay"
   - "pilgrimage-as-spiritual-transformation"
-  - "gajanan-maharaj-sansthan-complete-guide"
-  - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
-  - "shegaon-accommodation-guide"
-  - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-bhakta-niwas-booking-process"
+  - "community-and-sangha-in-pilgrimage"
 ---
 # Bhakta Niwas Spiritual Significance
 
