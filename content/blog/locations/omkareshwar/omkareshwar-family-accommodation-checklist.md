@@ -116,7 +116,6 @@ Senior citizens should carry their primary medical documents and a small persona
 - [Omkareshwar Weekend Planning Guide](/blog/omkareshwar-weekend-planning-guide)
 - [Omkareshwar Best Time To Visit](/blog/omkareshwar-best-time-to-visit)
 - [Omkareshwar Route And Transport Options](/blog/omkareshwar-route-and-transport-options)
-- [Family yatra planning](/blog/omkareshwar-family-yatra-planning) — multi-generation room mix and pace planning.
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
 - [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)

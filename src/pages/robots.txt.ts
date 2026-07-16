@@ -10,8 +10,6 @@ Allow: /
 Crawl-delay: 1
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_astro/
-Disallow: /*.json$
 
 User-agent: Googlebot-Image
 Allow: /images/

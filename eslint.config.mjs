@@ -7,5 +7,6 @@ export default defineConfig([
     ".astro/**",
     ".next/**",
     "package-lock.json",
+    "*.cjs",
   ]),
 ]);
