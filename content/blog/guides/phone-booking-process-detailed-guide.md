@@ -95,7 +95,7 @@ Call the same booking number you used for your original reservation, provide you
 
 ## Final Guidance
 
-The phone booking process at Shri Gajanan Maharaj Sansthan is straightforward when you approach it with preparation. Have your information ready, record your reference number, reconfirm one week before arrival, and call on the day of arrival if your schedule changes. For broader planning, the [accommodation comparison guide](/blog/shegaon-accommodation-guide), the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide), and the [Shegaon travel guide](/blog/shegaon-travel-guide) cover the complete travel preparation framework. Use the [booking page](/booking) to initiate your reservation, and the [contact page](/contact) for direct access to Sansthan office numbers.
+The phone booking process at Shri Gajanan Maharaj Sansthan is straightforward when you approach it with preparation. Have your information ready, record your reference number, reconfirm one week before arrival, and call on the day of arrival if your schedule changes. For broader planning, the [accommodation comparison guide](/blog/shegaon-accommodation-guide), the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide), and the [Shegaon travel guide](/blog/sheogaon-travel-guide) cover the complete travel preparation framework. Use the [booking page](/booking) to initiate your reservation, and the [contact page](/contact) for direct access to Sansthan office numbers.
 
 ---
 

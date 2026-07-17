@@ -34,103 +34,105 @@ relatedSlugs:
   - "omkareshwar-darshan-timings"
   - "shegaon-bhakta-niwas-booking-process"
 ---
+
 # Devotee Document Checklist For All Locations | Shri Gajanan Maharaj Sansthan
 
-This guide helps devotees compare multiple locations connected to Shri Gajanan Maharaj Sansthan and related pilgrimage circuits. It is ideal for families planning a structured trip across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar, and is built to give you a single source of truth for route, transport, accommodation, and darshan planning — backed by the Sansthan office for the most schedule-sensitive details.
+A multi-location pilgrimage across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar is one of the most spiritually rewarding trips a devotee can undertake. But it is also a trip that crosses state boundaries, involves multiple accommodation check-ins, and may include train journeys with reserved tickets, toll crossings, and unexpected detours. The difference between a smooth yatra and a frustrating one often comes down to whether you carried the right documents. This guide is a practical checklist of everything you should have in your bag or stored digitally before you leave home, organized by category so you can tick items off as you pack.
 
-A multi-location yatra is a meaningful undertaking, and the differences between these four primary sites are not always obvious to first-time visitors. Shegaon is a compact, walkable town with the Samadhi Mandir at its centre, Omkareshwar is on Mandhata island in the Narmada and is best reached via Indore, Pandharpur lies on the Bhima in Solapur district and is the focal point of the Ashadhi and Kartik wari processions, and Trimbakeshwar sits in the Sahyadri range near Nashik. Each has a distinct seasonal rhythm, transport reality, and code of conduct, and the sections below address each in turn.
+## Primary Identification Documents
 
-## Core planning actions — Part 1
+The foundation of your document kit is a set of government-issued photo IDs, one for every adult travelling. This is non-negotiable at every Sansthan accommodation — the Bhakta Niwas follows a strict family-only policy and requires ID proof for all guests at check-in. Accepted forms include:
 
-1. Set aside a daily budget for meals, local travel, and small donations.
-2. Keep small denomination notes for donations at the temple counter.
-3. Allocate a separate amount for souvenirs and prasad to bring back home.
-4. Carry an emergency reserve of cash because ATMs can run dry on festival days.
+- **Aadhaar card** — the most widely accepted ID across all four locations. Carry the physical card; a photocopy is usually accepted but the original is preferred.
+- **Voter ID card** — equally valid at all Sansthan properties.
+- **Driving licence** — accepted as ID proof and useful if you are driving between locations.
+- **Passport** — required for NRI devotees and useful as a universally accepted secondary ID. If you are an NRI planning to stay at Bhakta Niwas, see our [NRI booking guide](/blog/bhakta-niwas-booking-for-nris) for additional documentation requirements.
 
-## Core planning actions — Part 2
+Bring at least two photocopies of each adult's ID. You may need to submit a copy at the Bhakta Niwas reception, and having a spare is useful if the original is temporarily held at a counter. For families, carry a copy of a marriage certificate if you are travelling with a spouse — it is not always asked for, but on rare occasions it has been requested at accommodation check-in.
 
-1. Identify open play areas in the temple complex where children can move freely.
-2. Carry colouring books or small toys to keep children engaged during the queue.
-3. Plan shorter darshan visits for young children to avoid restlessness and fatigue.
-4. Identify a quiet spot outside the sanctum where you can feed infants privately.
+## Travel Booking Documents
 
-## Core planning actions — Part 3
+Keep all transport confirmations organized in a single folder on your phone or in a printed envelope. For each leg of your journey, ensure you have:
 
-1. Set a daily phone reminder for the morning aarti time you wish to attend.
-2. Sync your watch with the temple clock once you arrive for accurate timing.
-3. Plan the evening aarti slot to avoid the heavy dinner-time crowd in the dining hall.
-4. Note the prasad distribution time so you do not miss the free meals at the counter.
+- **Train ticket or reservation confirmation** — carry both the digital IRCTC screenshot and a printed copy if possible. During festival periods, the ticket checker at crowded stations may not have the patience to scroll through your phone gallery. A printed A4 sheet with the PNR, train number, coach, and seat details is the fastest way to get through verification.
+- **Bus ticket or booking reference** — particularly important for MSRTC and private operator buses. Keep the operator's customer service number saved, as bus schedules can change.
+- **Taxi booking confirmation** — if you have pre-booked a taxi for any leg (such as Khandwa to Omkareshwar, or Nashik to Trimbakeshwar), carry the booking reference and the driver's contact number.
+- **Flight tickets** — relevant for devotees flying into Indore or Nashik airports. Keep the e-ticket and boarding pass accessible.
 
-## Cross-location travel tips — Routing and sequencing
+If you are following a multi-location itinerary, print a one-page summary showing each day's transport mode, departure time, destination, and accommodation name. This single sheet can save you from confusion when you are tired and arriving at an unfamiliar station late at night.
 
-Local cuisine is an essential part of the pilgrimage experience, so try the regional breakfast and prasad items at trusted stalls, but stick to cooked vegetarian food if you have a sensitive stomach.
+## Accommodation Documents
 
-When visiting multiple Sansthan locations, allow buffer time between cities for rest and local travel. Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar each have distinct peak hours and crowd patterns. Book accommodation for each stop in advance through official channels.
+When you book a room at any Bhakta Niwas through the official channels, you will receive a confirmation. Keep this safe. The confirmation typically includes:
 
-## Cross-location travel tips — Family logistics
+- **Booking reference or transaction ID** — needed at check-in to retrieve your room allocation.
+- **Room type and number of occupants** — the Sansthan verifies that the number of guests matches the booking. The family-only rule means single travellers without family may be redirected to dormitory beds.
+- **Check-in date and time** — the Sansthan operates on a 24-hour check-out cycle from the time of check-in, so arriving earlier or later than planned affects your departure time.
 
-Pace your trip so that you allow at least one rest afternoon for every two active sightseeing days, because rushing through the holy town defeats the purpose of a spiritual journey.
+For a detailed walkthrough of the booking process, see our [Bhakta Niwas booking process guide](/blog/shegaon-bhakta-niwas-booking-process). For room types and pricing across all locations, see the [Bhakta Niwas across locations comparison](/blog/bhakta-niwas-across-locations-comparison).
 
-## Cross-location travel tips — Budget and packing
+## Health and Emergency Documents
 
-Families with children should plan shorter temple visits, identify rest areas in advance, carry small snacks and water, and avoid the peak midday heat by returning to the dharamshala for lunch and rest.
+A pilgrimage is not the time to discover that your health insurance card is missing or that your prescription information is only stored on a device you left behind. Carry:
 
-## Cross-location travel tips — Spiritual alignment and discipline
+- **Health insurance card and policy document** — a digital copy on your phone is fine, but know your policy number and the insurer's emergency helpline.
+- **List of current medications** — for each family member on regular medication, carry a printed list with dosage instructions. This is critical if someone needs to visit a pharmacy or clinic during the trip.
+- **Prescription copies** — especially for chronic medications, pain relievers, or anything requiring a prescription at an Indian pharmacy.
+- **Blood group information** — write it down for every family member. In an emergency situation, this is one of the fastest pieces of information first responders need.
+- **Emergency contact card** — a small card in your wallet with the name and phone number of a family member back home, the Sansthan office number (+91 80531 90691), and the address of your home city hospital.
 
-Sunrise visits to the nearby viewpoints offer stunning views of the holy town and the surrounding countryside, and they are particularly beautiful during the post-monsoon months of October and November.
+If you are travelling with elderly family members, carry their most recent medical reports (particularly for heart conditions, diabetes, or blood pressure). Our [handling medical emergencies guide](/blog/handling-medical-emergencies-on-yatra) covers health infrastructure at each Sansthan location.
 
-## Cross-location travel tips — Senior citizen and child comfort
+## Digital Documents and Backups
 
-Photography etiquette inside the temple complex is strict, so keep your phone in your bag, switch to silent mode, and rely on memory and notes rather than endless clicking during darshan.
+Losing physical documents during travel is more common than you might think — a bus conductor collects your bag, or you leave an envelope at a hotel. Create digital backups:
 
-## Cross-location travel tips — Contingency and weather
+- **Scan or photograph every document** — ID cards, tickets, insurance, prescriptions. Store them in a secure cloud folder (Google Drive, Dropbox) and also email them to yourself.
+- **Save contact numbers offline** — the Sansthan booking number (+91 80531 90691), the WhatsApp number, the head office address, and your accommodation's front desk number should all be saved in your phone's contacts, not just in WhatsApp chats.
+- **Download offline maps** — Google Maps offline maps for Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar ensure you can navigate even without mobile data. This is especially important for Omkareshwar, where the island layout can be confusing on first arrival.
 
-The trust usually publishes a yearly festival calendar on its notice board, and aligning your trip to a lesser-known festival gives you the spiritual energy of a celebration without the overwhelming crowd.
+## Documents for Specific Scenarios
 
-## Official pages to use during planning
+**Inter-state travel with minors.** If you are travelling with children across state borders (for example, from Maharashtra to Madhya Pradesh for Omkareshwar), carry their school ID or Aadhaar card. While routine checks are rare on the routes connecting these four locations, it is prudent to have identification for every traveller.
 
-- [All Sansthan Locations](/locations)
-- [Shegaon Bhakt Niwas](/locations/shegaon-bhakt-niwas)
-- [Omkareshwar Accommodation](/locations/omkareshwar)
-- [Pandharpur Temple](/locations/pandharpur-math)
-- [Trimbakeshwar Temple](/locations/trimbakeshwar)
-- [Booking Request Page](/booking)
-- [Contact Sansthan Support](/contact)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
+**NRI devotees.** Carry a valid Indian visa (tourist visa is sufficient), a copy of your passport's bio page, and your Overseas Citizen of India (OCI) card if you have one. NRI devotees staying at Bhakta Niwas should carry additional documentation as described in the [NRI booking guide](/blog/bhakta-niwas-booking-for-nris).
 
-## Frequently asked questions
+**Group travel.** If you are travelling with a large group (10 or more), designate one person as the document custodian. That person carries the originals of all group members' IDs, the group booking confirmation, and a printed list of every traveller's name and phone number. See our [group booking coordination guide](/blog/group-booking-coordination-guide) for large-group planning.
 
-**Are meals provided at the temple accommodation?** While rooms don't usually have room service, the Sansthan operates a massive Mahaprasad Hall and various canteens where healthy, subsidized, or free meals are served.
+**Pilgrimage during festival season.** During Pragat Din and Samadhi Utsav, additional verification may be requested at temple entry points. Carry your ID prominently — in a lanyard or a top pocket of your bag — so it is accessible without rummaging through your luggage. The Sansthan volunteer staff are trained to help, but having your ID ready speeds up the process for everyone.
 
-**Is there an online booking portal for Sansthan accommodation?** Currently, the Sansthan primarily manages bookings through official phone and WhatsApp channels to ensure fair distribution. Be wary of unofficial websites claiming to offer online bookings.
+## Accommodation Booking and Contact
 
-**Are meals provided at the temple accommodation?** While rooms don't usually have room service, the Sansthan operates a massive Mahaprasad Hall and various canteens where healthy, subsidized, or free meals are served.
+The official Shri Gajanan Maharaj Sansthan booking process is handled through a single WhatsApp and phone number: +91 80531 90691. When you call or message, have your travel dates, number of occupants, preferred room type, and ID details ready. The booking team will confirm availability, share the room tariff, and provide payment instructions. For detailed pricing across all room types, see the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide).
 
-**Is there an online booking portal for Sansthan accommodation?** Currently, the Sansthan primarily manages bookings through official phone and WhatsApp channels to ensure fair distribution. Be wary of unofficial websites claiming to offer online bookings.
+If you have any doubt about whether a communication is genuinely from the Sansthan, verify it through the official [contact page](/contact) before sharing any personal or payment information.
 
-**Can I book a room for just one person?** Yes, dormitory facilities are often available for solo devotees, while family rooms are reserved for groups. ID proof is mandatory regardless of the group size.
+## Frequently Asked Questions
 
-**Is there an online booking portal for Sansthan accommodation?** Currently, the Sansthan primarily manages bookings through official phone and WhatsApp channels to ensure fair distribution. Be wary of unofficial websites claiming to offer online bookings.
+**Q: Is a passport sufficient as ID proof at Bhakta Niwas?**
 
-## Related reading
+A: Yes, a passport is fully accepted as ID proof at all four Sansthan locations. It is particularly useful for NRI devotees who may not carry an Aadhaar card.
 
-- [Pilgrimage Budget Planning For Families](/blog/pilgrimage-budget-planning-for-families)
-- [Festival Season Multi City Travel Guide](/blog/festival-season-multi-city-travel-guide)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
-- [Sansthan Location Selection Guide](/blog/sansthan-location-selection-guide)
-- [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
-- [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
-- [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
-- [Shegaon Bhakta Niwas Booking Process](/blog/shegaon-bhakta-niwas-booking-process)
+**Q: Do children need separate ID proof?**
 
-## Final note
+A: Children should carry some form of identification — a school ID card, Aadhaar card, or even a birth certificate copy. While enforcement varies by location, it is standard practice to ask for ID for all guests at check-in.
 
-For the best pilgrimage experience, keep your plan devotional but practical: focus on darshan flow, family comfort, and official communication clarity at every stage. The four primary Sansthan-supported locations — Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar — each reward the devotee who arrives prepared, calm, and open. Plan once, travel slow, and let the darshan do its work.
+**Q: Can I use a digital Aadhaar card (mAadhaar) instead of the physical card?**
+
+A: The mAadhaar app is generally accepted, but some counter staff prefer the physical card. Carry both to avoid any friction at check-in.
+
+**Q: What happens if I lose my ID during the trip?**
+
+A: Report it to the Bhakta Niwas reception immediately. They will typically accept a digital copy from your cloud backup along with a verbal confirmation of your details. For serious situations, the Sansthan office can assist with a local police report.
+
+**Q: Do I need any special permits for Omkareshwar?**
+
+A: No special permits are needed for domestic travellers. International travellers should ensure their Indian visa covers Madhya Pradesh (most tourist visas do).
+
+**Q: Are there any document requirements for the temple darshan itself?**
+
+A: No ID is typically required for general darshan at any of the four locations. ID is primarily needed for accommodation check-in and for the special darshan paid counter at Shegaon, where you may be asked to show ID for record-keeping.
 
 ---
 
-Browse more in [Guides](/blog/category/guides). Tags: [guides](/blog/tag/guides)
+Browse more in [Guides](/blog/category/guides). Tags: [guides](/blog/tag/guides), [multi-location](/blog/tag/multi-location), [travel-planning](/blog/tag/travel-planning)

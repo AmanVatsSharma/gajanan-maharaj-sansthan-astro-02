@@ -34,103 +34,107 @@ relatedSlugs:
   - "omkareshwar-darshan-timings"
   - "phone-and-whatsapp-booking-best-practices"
 ---
+
 # Emergency Contact During Pilgrimage | Shri Gajanan Maharaj Sansthan
 
-This guide helps devotees compare multiple locations connected to Shri Gajanan Maharaj Sansthan and related pilgrimage circuits. It is ideal for families planning a structured trip across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar, and is built to give you a single source of truth for route, transport, accommodation, and darshan planning — backed by the Sansthan office for the most schedule-sensitive details.
+The last thing any devotee wants during a pilgrimage is an emergency — but emergencies do not schedule themselves around spiritual intentions. A family member falls ill, a wallet is lost on the train, a car breaks down on a rural road near Trimbakeshwar, or an elderly parent needs urgent medical attention during Samadhi Utsav. Knowing who to call, what numbers to have saved, and how the Sansthan support system works can turn a crisis into a manageable situation. This guide lists every emergency contact you should have before you leave home, organized by type: Sansthan official contacts, local emergency services at each location, medical facilities, and personal backup contacts.
 
-A multi-location yatra is a meaningful undertaking, and the differences between these four primary sites are not always obvious to first-time visitors. Shegaon is a compact, walkable town with the Samadhi Mandir at its centre, Omkareshwar is on Mandhata island in the Narmada and is best reached via Indore, Pandharpur lies on the Bhima in Solapur district and is the focal point of the Ashadhi and Kartik wari processions, and Trimbakeshwar sits in the Sahyadri range near Nashik. Each has a distinct seasonal rhythm, transport reality, and code of conduct, and the sections below address each in turn.
+## Sansthan Official Contacts
 
-## Core planning actions — Part 1
+The single most important number to save in your phone before any Sansthan visit is the central booking and support line: +91 80531 90691. This number handles both voice calls and WhatsApp messages, and the Sansthan team can assist with accommodation issues, lost-and-found at the Bhakta Niwas, transport coordination, and guidance during festival periods. The head office is located at Shri Gajanan Maharaj Sansthan, Shegaon, Dist. Buldhana, Maharashtra - 444203, and can be reached by email at shreegajananmaharajsansthan@gmail.com for non-urgent written inquiries.
 
-1. Note the location of the nearest 24-hour pharmacy near your stay.
-2. Carry your regular medicines with at least a week of extra supply.
-3. Save the contact number of a local doctor for any minor health issues.
-4. Keep a basic first-aid kit with bandages, antiseptic, and a thermometer.
+The WhatsApp link for the booking number is https://wa.me/8053190691. This is often faster than calling during busy festival periods, as messages are read and replied to throughout the day by the booking team.
 
-## Core planning actions — Part 2
+If you need to verify that a call, message, or website is genuinely from the Shri Gajanan Maharaj Sansthan, see our [guide to verifying official Sansthan contacts](/blog/how-to-verify-official-sansthan-contacts).
 
-1. Set a daily target of one major and one minor site to keep the trip balanced.
-2. Avoid trying to cover too many attractions in a single day to prevent fatigue.
-3. Keep one full afternoon for rest, reading, and reflection at the dharamshala.
-4. Schedule a relaxed evening stroll around the holy town before the night aarti.
+## Emergency Services by Location
 
-## Core planning actions — Part 3
+Each of the four Sansthan locations sits in a different administrative district, which means the local police station, hospital, and ambulance numbers differ. Save these before you travel.
 
-1. Set a daily phone reminder for the morning aarti time you wish to attend.
-2. Sync your watch with the temple clock once you arrive for accurate timing.
-3. Plan the evening aarti slot to avoid the heavy dinner-time crowd in the dining hall.
-4. Note the prasad distribution time so you do not miss the free meals at the counter.
+**Shegaon (Buldhana district, Maharashtra).** The local police station is Shegaon Police Station. The Maharashtra emergency number (112) works across the state and connects to the nearest police control room. For ambulance services, dial 108 — the national emergency medical services number — which operates throughout Maharashtra. The nearest major government hospital is the Buldhana District General Hospital, approximately 15 km from Shegaon town. For the Sansthan head office location, see the [guide to reaching the Sansthan office](/blog/how-to-reach-sansthan-office-shegaon).
 
-## Cross-location travel tips — Routing and sequencing
+**Omkareshwar (Khandwa district, Madhya Pradesh).** Dial 112 for police and 108 for ambulance. The Madhya Pradesh emergency services number 112 connects to the state police control room. The nearest hospital with reasonable facilities is in Khandwa town, about 30 km away. Keep your taxi driver's number handy for the journey between Khandwa and Omkareshwar, as mobile network coverage on the island can be spotty.
 
-Carry a small notebook to jot down thoughts, observations, and prayers during the visit, and revisit these notes later as a way to keep the spiritual experience alive long after you return home.
+**Pandharpur (Solapur district, Maharashtra).** Dial 112 for police and 108 for ambulance. Pandharpur has a government hospital within the town, and Solapur city (80 km away) has larger facilities including a government medical college hospital. During Ashadhi Ekadashi, the Sansthan and local administration set up temporary medical camps along the Wari route.
 
-When visiting multiple Sansthan locations, allow buffer time between cities for rest and local travel. Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar each have distinct peak hours and crowd patterns. Book accommodation for each stop in advance through official channels.
+**Trimbakeshwar (Nashik district, Maharashtra).** Dial 112 for police and 108 for ambulance. The nearest major hospital is in Nashik city, approximately 30 km away. During the Kumbh Mela period (the next one at Trimbakeshwar is in 2027), additional medical infrastructure is deployed by the government, but outside Kumbh periods, Nashik is your best option for anything beyond basic first aid.
 
-## Cross-location travel tips — Family logistics
+## Medical Facilities Near Each Location
 
-Carry a small notebook to jot down thoughts, observations, and prayers during the visit, and revisit these notes later as a way to keep the spiritual experience alive long after you return home.
+For health issues that are beyond basic first aid, here is what you need to know at each location:
 
-## Cross-location travel tips — Budget and packing
+**Shegaon.** The Sansthan itself runs medical camps during festivals, and there are private clinics in Shegaon town. For anything serious, the Buldhana district hospital (15 km) or Akola city (45 km) has better facilities. Ambulance response times from Shegaon to Akola are typically 45 to 60 minutes.
 
-Plan your wardrobe around breathable cotton clothes, easy slip-on footwear, and a light stole that can be used for sun protection, modesty, or warmth depending on the time of day and season.
+**Omkareshwar.** The island has a small primary health centre. For proper medical care, you will need to go to Khandwa (30 km, 45 minutes by taxi). Keep the taxi driver's number saved, and if you need an ambulance, the 108 service will dispatch from Khandwa.
 
-## Cross-location travel tips — Spiritual alignment and discipline
+**Pandharpur.** The town has a government hospital and several private clinics. Solapur (80 km) has a government medical college and larger specialist facilities. During the Wari season, additional medical posts are set up along the processional route.
 
-Plan your wardrobe around breathable cotton clothes, easy slip-on footwear, and a light stole that can be used for sun protection, modesty, or warmth depending on the time of day and season.
+**Trimbakeshwar.** A small primary health centre exists in the town, but Nashik (30 km) is where you will find full hospital facilities. The Godavari Marathwada Hospital and the Nashik District Civil Hospital are the main options.
 
-## Cross-location travel tips — Senior citizen and child comfort
+For a comprehensive guide to handling health situations during your yatra, see [handling medical emergencies on yatra](/blog/handling-medical-emergencies-on-yatra).
 
-Pace your trip so that you allow at least one rest afternoon for every two active sightseeing days, because rushing through the holy town defeats the purpose of a spiritual journey.
+## Personal Emergency Contacts
 
-## Cross-location travel tips — Contingency and weather
+Beyond official numbers, prepare a personal emergency contact list:
 
-Photography etiquette inside the temple complex is strict, so keep your phone in your bag, switch to silent mode, and rely on memory and notes rather than endless clicking during darshan.
+- **Family member or friend back home** — the person who can coordinate with local authorities, make decisions on your behalf if you are incapacitated, and receive updates from the Sansthan or hospital.
+- **Your regular doctor back home** — their number is useful if you need a remote consultation or a prescription forwarded.
+- **Your travel insurance helpline** — if you have travel insurance that covers medical evacuation, keep the 24/7 helpline number in your phone and know what documentation the insurer requires.
+- **A local contact at the destination** — if you have friends or relatives in any of the four cities, save their number. They can be invaluable for local knowledge, language help, and physical assistance.
 
-## Official pages to use during planning
+## What to Do in an Emergency
 
-- [All Sansthan Locations](/locations)
-- [Shegaon Bhakt Niwas](/locations/shegaon-bhakt-niwas)
-- [Omkareshwar Accommodation](/locations/omkareshwar)
-- [Pandharpur Temple](/locations/pandharpur-math)
-- [Trimbakeshwar Temple](/locations/trimbakeshwar)
-- [Booking Request Page](/booking)
-- [Contact Sansthan Support](/contact)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
+If an emergency occurs while you are at a Sansthan location, follow this sequence:
 
-## Frequently asked questions
+1. **Inform the Bhakta Niwas reception immediately.** The reception staff can coordinate with the Sansthan office, arrange transport to the nearest hospital, and contact local authorities if needed. They are trained to handle these situations and are your first point of contact on-site.
 
-**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
+2. **Call the Sansthan support number: +91 80531 90691.** If the situation requires broader coordination — such as arranging a vehicle for hospital transport, contacting family back home, or getting guidance on local medical facilities — the Sansthan office can assist. You can also message this number on WhatsApp.
 
-**What are the typical charges for Bhakta Niwas rooms?** The charges are kept very nominal as it is a service for devotees. Prices vary based on room type (AC/Non-AC) and the number of beds, but it is much more affordable than private hotels.
+3. **Dial 108 for ambulance or 112 for police.** These national emergency numbers work across all four locations and connect to the nearest available service. When you call, clearly state your location, the nature of the emergency, and the number of people affected.
 
-**Is there an online booking portal for Sansthan accommodation?** Currently, the Sansthan primarily manages bookings through official phone and WhatsApp channels to ensure fair distribution. Be wary of unofficial websites claiming to offer online bookings.
+4. **Keep your documents accessible.** In a medical emergency, hospital staff will ask for ID and insurance details. Keeping these in a top pocket or an easily accessible folder saves critical time.
 
-**Are meals provided at the temple accommodation?** While rooms don't usually have room service, the Sansthan operates a massive Mahaprasad Hall and various canteens where healthy, subsidized, or free meals are served.
+## Staying Connected
 
-**Can I book a room for just one person?** Yes, dormitory facilities are often available for solo devotees, while family rooms are reserved for groups. ID proof is mandatory regardless of the group size.
+Mobile network coverage varies across the four locations:
 
-**Can I book a room for just one person?** Yes, dormitory facilities are often available for solo devotees, while family rooms are reserved for groups. ID proof is mandatory regardless of the group size.
+- **Shegaon** has good coverage from all major carriers (Airtel, Jio, BSNL, Vi).
+- **Omkareshwar** has patchy coverage on the island itself; the mainland side near Khandwa Junction has better signal. If you are staying at the Sansthan property, confirm the network situation at check-in.
+- **Pandharpur** has decent coverage from major carriers.
+- **Trimbakeshwar** has reasonable coverage in the town, but signal drops on the Brahmagiri hills and in the valley leading to the Gangadwar waterfall.
 
-## Related reading
+Carry a portable power bank to keep your phone charged during long days. If you are travelling from abroad, check that your SIM or roaming plan covers all four states (Maharashtra and Madhya Pradesh). For tech preparation tips, see our [month-wise pilgrimage planning calendar](/blog/month-wise-pilgrimage-planning-calendar) which covers packing and connectivity.
 
-- [All Sansthan Contact Numbers Complete List](/blog/all-sansthan-contact-numbers-complete-list)
-- [How To Reach Sansthan Office Shegaon](/blog/how-to-reach-sansthan-office-shegaon)
-- [Shegaon And Ajanta Ellora Combined Trip](/blog/shegaon-and-ajanta-ellora-combined-trip)
-- [Vidarbha Spiritual Tourism Guide](/blog/vidarbha-spiritual-tourism-guide)
-- [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
-- [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
-- [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
+## Accommodation Booking and Contact
 
-## Final note
+For accommodation queries, booking requests, or any logistical support before or during your trip, reach out through the [booking page](/booking) or call/WhatsApp +91 80531 90691 directly. For general inquiries, the [contact page](/contact) is available. Booking in advance is strongly recommended during festival periods — rooms at Bhakta Niwas tend to fill up 30 to 60 days before Pragat Din and Samadhi Utsav. For accommodation options and pricing, see the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide).
 
-For the best pilgrimage experience, keep your plan devotional but practical: focus on darshan flow, family comfort, and official communication clarity at every stage. The four primary Sansthan-supported locations — Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar — each reward the devotee who arrives prepared, calm, and open. Plan once, travel slow, and let the darshan do its work.
+## Frequently Asked Questions
+
+**Q: What is the Sansthan's emergency phone number?**
+
+A: The primary Sansthan contact number is +91 80531 90691, which handles both calls and WhatsApp messages. Save this number before you travel. The head office email is shreegajananmaharajsansthan@gmail.com for non-urgent inquiries.
+
+**Q: Does the Sansthan have a dedicated medical team?**
+
+A: During major festivals like Pragat Din and Samadhi Utsav, the Sansthan sets up medical camps with doctors and first-aid stations. Outside festival periods, the Sansthan office can guide you to the nearest qualified medical facility but does not maintain a permanent medical team on-site.
+
+**Q: What should I do if I lose my wallet at the temple?**
+
+A: Report it immediately at the Bhakta Niwas reception or the nearest Sansthan office. Lost property is often turned in by other devotees. For lost wallets specifically, block your cards immediately through phone banking. Carry a small emergency cash reserve in a separate pocket for exactly this situation.
+
+**Q: Is there a lost-and-found at the Bhakta Niwas?**
+
+A: Yes, the Bhakta Niwas reception maintains a lost-and-found register. If you lose something in your room or in the common areas, check with the reception staff first before reporting to the main Sansthan office.
+
+**Q: What if I need to cut my trip short due to an emergency?**
+
+A: Contact the Bhakta Niwas reception for any accommodation-related adjustments. For transport, the Sansthan office can help coordinate taxi arrangements. If you booked through the official booking channel, the team will work with you on the most practical resolution.
+
+**Q: Are there security personnel at the Sansthan locations?**
+
+A: Yes, all four Sansthan locations have security staff, particularly during peak hours and festival periods. The security team can assist with directions, basic lost-and-found, and contacting the reception in case of an emergency.
 
 ---
 
-Browse more in [Guides](/blog/category/guides). Tags: [guides](/blog/tag/guides)
+Browse more in [Guides](/blog/category/guides). Tags: [guides](/blog/tag/guides), [multi-location](/blog/tag/multi-location), [travel-planning](/blog/tag/travel-planning)

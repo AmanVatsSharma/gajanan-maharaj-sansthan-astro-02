@@ -73,7 +73,7 @@ After darshan, you exit through a door that opens directly into the prasad count
 
 The quality of your darshan day is directly linked to where you slept the night before. A room at [Bhakta Niwas Shegaon](/locations/shegaon-bhakt-niwas) puts you five minutes from the temple entrance, which means you can walk to the 4:00 AM Mangala Aarti without arranging transport in the dark. The route from the campus to the temple is well-lit and safe, and you will find yourself walking with other devotees heading in the same direction. If you are staying at a private lodge or a mid-range hotel 2 km away, you will need an auto-rickshaw for the 4:00 AM slot, and the availability of autos at that hour is not guaranteed.
 
-For room types, booking procedures, and what to expect when you arrive at the campus, the [shegaon accommodation guide](/blog/shegaon-accommodation-guide) covers the full picture. The [shegaon travel guide](/blog/shegaon-travel-guide) explains how to reach Shegaon from Mumbai, Nagpur, and other cities. If you are coming from outside India, the [NRI booking guide](/blog/bhakta-niwas-booking-for-nris) walks through the WhatsApp booking process from a foreign number.
+For room types, booking procedures, and what to expect when you arrive at the campus, the [shegaon accommodation guide](/blog/shegaon-accommodation-guide) covers the full picture. The [shegaon travel guide](/blog/sheogaon-travel-guide) explains how to reach Shegaon from Mumbai, Nagpur, and other cities. If you are coming from outside India, the [NRI booking guide](/blog/bhakta-niwas-booking-for-nris) walks through the WhatsApp booking process from a foreign number.
 
 ## Choosing the Right Season
 

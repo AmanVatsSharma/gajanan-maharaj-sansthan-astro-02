@@ -28,7 +28,7 @@ The crowd pattern creates a different accommodation dynamic from Pragat Din, whe
 
 ## Travel Planning for New Year Weekend
 
-The New Year weekend sees heavy demand for transport to Shegaon from all major cities. Trains from Mumbai, Nagpur, and Pune tend to be fully booked two to three weeks in advance. Book your return tickets as soon as you finalize your travel dates, as post-New Year trains are also crowded with returning devotees. The [shegaon-travel-guide](/blog/shegaon-travel-guide) provides comprehensive information on all transport options, including train schedules, bus services, and private vehicle routes.
+The New Year weekend sees heavy demand for transport to Shegaon from all major cities. Trains from Mumbai, Nagpur, and Pune tend to be fully booked two to three weeks in advance. Book your return tickets as soon as you finalize your travel dates, as post-New Year trains are also crowded with returning devotees. The [shegaon-travel-guide](/blog/sheogaon-travel-guide) provides comprehensive information on all transport options, including train schedules, bus services, and private vehicle routes.
 
 Private vehicle travel during the New Year weekend is comfortable thanks to the excellent winter road conditions. Many families drive from Mumbai and Pune, taking advantage of the long weekend for a relaxed pilgrimage. The Mumbai-Shegaon drive takes approximately eight to nine hours via the Mumbai-Agra highway. Plan to leave Mumbai by 5:00 AM on December 31st to arrive at Shegaon by early afternoon, leaving time to settle in before the evening aarti. The winter weather makes the drive pleasant, with clear skies and comfortable temperatures throughout the journey.
 

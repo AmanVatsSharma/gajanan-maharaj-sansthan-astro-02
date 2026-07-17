@@ -106,5 +106,8 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/pandharpur/pandharpur-darshan-timing-guide.md",
   "locations/pandharpur/pandharpur-bhakta-niwas-accommodation-guide.md",
   "locations/pandharpur/pandharpur-first-time-visitor-guide.md",
+  // Part B — additional in-place rewrites (Pandharpur + Jyotirlinga pillar, 2026-07-16)
+  "locations/trimbakeshwar/trimbakeshwar-darshan-timing-guide.md",
+  "locations/trimbakeshwar/trimbakeshwar-bhakta-niwas-accommodation-guide.md",
   "guides/all-12-jyotirlinga-planning.md",
 ];

@@ -103,7 +103,7 @@ Children's needs differ slightly — pack extra snacks, a comfort toy, sunscreen
 
 ## Final Guidance
 
-Thoughtful packing is one of the underappreciated elements of a successful pilgrimage. By bringing modest, season-appropriate clothing, essential toiletries, important documents, a few devotional items, and seasonal adjustments, you free yourself from logistical concerns and focus on the spiritual experience. For broader trip planning, the [Sansthan complete guide](/blog/gajanan-maharaj-sansthan-complete-guide), the [Shegaon travel guide](/blog/shegaon-travel-guide), and the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide) provide the full framework.
+Thoughtful packing is one of the underappreciated elements of a successful pilgrimage. By bringing modest, season-appropriate clothing, essential toiletries, important documents, a few devotional items, and seasonal adjustments, you free yourself from logistical concerns and focus on the spiritual experience. For broader trip planning, the [Sansthan complete guide](/blog/gajanan-maharaj-sansthan-complete-guide), the [Shegaon travel guide](/blog/sheogaon-travel-guide), and the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide) provide the full framework.
 
 ---
 

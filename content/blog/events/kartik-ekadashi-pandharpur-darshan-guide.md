@@ -40,7 +40,7 @@ Consider arriving a day before the festival to settle in and visit the temple at
 
 ## Travel During the Karthik Season
 
-November and December offer the best travel conditions for reaching Shegaon. The roads are dry and well-maintained, and the weather is pleasant for long journeys from Mumbai, Nagpur, and Pune. Daytime temperatures around 25 to 28 degrees Celsius and cool evenings around 14 degrees Celsius make for comfortable travel. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options including train, bus, and private vehicle travel.
+November and December offer the best travel conditions for reaching Shegaon. The roads are dry and well-maintained, and the weather is pleasant for long journeys from Mumbai, Nagpur, and Pune. Daytime temperatures around 25 to 28 degrees Celsius and cool evenings around 14 degrees Celsius make for comfortable travel. The [shegaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options including train, bus, and private vehicle travel.
 
 Many devotees travel by private vehicle for Karthik Ekadashi, enjoying the comfortable driving conditions of the season. The roads from Mumbai and Nagpur to Shegaon are in excellent condition during winter, making the journey a pleasant experience rather than a challenging one. If traveling by train, book tickets at least two weeks in advance through the IRCTC website, as the winter festival season draws significant rail traffic. The nearest railway station at Shegaon is well-connected to major cities, and local transport from the station to the Sansthan is readily available.
 

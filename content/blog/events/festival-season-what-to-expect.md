@@ -46,7 +46,7 @@ Many devotees make receiving prasad a core part of their festival experience, as
 
 ## What to Expect From Transportation
 
-Getting to Shegaon during festivals requires advance planning. Trains from Mumbai, Nagpur, and Pune are crowded, with waiting lists common during Pragat Din and other major festivals. Private vehicles face heavy traffic on highways leading to Shegaon during festival mornings. Plan to arrive the evening before the festival to avoid the pressure of reaching Shegaon on the festival morning itself. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options including train schedules, bus services, and private vehicle routes with specific timing recommendations.
+Getting to Shegaon during festivals requires advance planning. Trains from Mumbai, Nagpur, and Pune are crowded, with waiting lists common during Pragat Din and other major festivals. Private vehicles face heavy traffic on highways leading to Shegaon during festival mornings. Plan to arrive the evening before the festival to avoid the pressure of reaching Shegaon on the festival morning itself. The [shegaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options including train schedules, bus services, and private vehicle routes with specific timing recommendations.
 
 Local transport in Shegaon during festivals also sees increased demand. Auto-rickshaws and shared taxis operate with longer working hours during festival periods, and the Sansthan provides shuttle services between the temple complex and major points in town. Many devotees prefer to walk between their accommodation and the temple, particularly given the short distances involved.
 

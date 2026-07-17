@@ -1,135 +1,111 @@
 ---
-title: "Understanding Sansthan Accommodation Rules | Shri Gajanan Maharaj Sansthan"
-description: "Cross-location pilgrimage planning guide for devotees searching Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar accommodation and route support."
-date: "2025-07-27"
-slug: "understanding-sansthan-accommodation-rules"
-image: "/images/shegaon-temple.svg"
-keywords:
-  - "understanding sansthan accommodation rules pilgrimage guide"
-  - "shree gajanan maharaj sansthan pilgrimage"
-  - "shri gajanan maharaj sanstan pilgrimage"
-  - "sri gajanan maharaj sansthan route planning"
-  - "multi location temple accommodation guide"
-author: "Sansthan"
-tags:
-  - "guides"
-  - "multi-location"
-  - "travel-planning"
-  - "sansthan-seo"
-category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
   - "omkareshwar"
   - "pandharpur-math"
   - "trimbakeshwar"
 relatedSlugs:
-  - "bhakta-niwas-booking-for-nris"
-  - "how-to-manage-luggage-during-yatra"
-  - "best-travel-apps-for-maharashtra-pilgrimage"
-  - "handling-medical-emergencies-on-yatra"
-  - "gajanan-maharaj-sansthan-complete-guide"
+  - "understanding-sansthan-accommodation-rules"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "bhakta-niwas-frequently-asked-questions"
   - "shegaon-accommodation-guide"
-  - "omkareshwar-darshan-timings"
-  - "phone-and-whatsapp-booking-best-practices"
+  - "omkareshwar-bhakta-niwas-accommodation-guide"
+  - "festival-dates-and-booking-windows"
 ---
-# Understanding Sansthan Accommodation Rules | Shri Gajanan Maharaj Sansthan
+# Understanding Sansthan Accommodation Rules: A Clear Guide for Devotees
 
-This guide helps devotees compare multiple locations connected to Shri Gajanan Maharaj Sansthan and related pilgrimage circuits. It is ideal for families planning a structured trip across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar, and is built to give you a single source of truth for route, transport, accommodation, and darshan planning — backed by the Sansthan office for the most schedule-sensitive details.
+The Bhakta Niwas at Shri Gajanan Maharaj Sansthan and its affiliated locations provides accommodation to devotees at nominal rates, and the system is designed to be fair and accessible to as many pilgrims as possible. But to keep the system running smoothly — and to ensure that rooms are available for devotees who genuinely need them — the trust follows a set of clearly defined rules. Understanding these rules before you travel saves time, avoids disappointment at the reception desk, and helps the system serve more devotees better. The rules are not bureaucratic barriers — they are practical guidelines that have evolved from decades of operating accommodation for thousands of pilgrims every year.
 
-A multi-location yatra is a meaningful undertaking, and the differences between these four primary sites are not always obvious to first-time visitors. Shegaon is a compact, walkable town with the Samadhi Mandir at its centre, Omkareshwar is on Mandhata island in the Narmada and is best reached via Indore, Pandharpur lies on the Bhima in Solapur district and is the focal point of the Ashadhi and Kartik wari processions, and Trimbakeshwar sits in the Sahyadri range near Nashik. Each has a distinct seasonal rhythm, transport reality, and code of conduct, and the sections below address each in turn.
+This guide explains the rules that govern Bhakta Niwas at Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar. Whether you are a first-time visitor or a regular pilgrim looking to refresh your understanding, the information below covers everything from documentation requirements to the code of conduct expected on the premises. The rules are consistent across all four locations, with minor variations in check-in times and room types that are explained below.
 
-## Core planning actions — Part 1
+## Who Can Stay at the Bhakta Niwas
 
-1. Carry a refillable water bottle and refill it at the trust's drinking water points.
-2. Avoid single-use plastic bottles as the temple town discourages plastic use.
-3. Keep a small hand sanitiser and pack of tissues in your day bag.
-4. Carry a small packet of wet wipes for cleaning hands before eating meals.
+The Bhakta Niwas is open to all devotees regardless of caste, religion, region, or background. The trust does not discriminate based on faith, and devotees of any tradition are welcome to stay at the premises. The one requirement is that you are visiting the temple for darshan or pilgrimage purposes. The accommodation is not provided for commercial use, transit stops unrelated to temple visits, or long-term stays beyond 15 days. For stays longer than 15 days, special permission must be obtained from the Sansthan office at Shegaon.
 
-## Core planning actions — Part 2
+There is no age restriction for staying at the Bhakta Niwas. Families with infants, senior citizens, and individuals of all ages are accommodated. Children below five years stay free when sharing a bed with parents. Children above five are counted as separate guests for the dormitory quota system. The dormitory allocation system ensures that families with children are given priority over solo travellers during peak periods.
 
-1. Carry a refillable water bottle and refill it at the trust's drinking water points.
-2. Avoid single-use plastic bottles as the temple town discourages plastic use.
-3. Keep a small hand sanitiser and pack of tissues in your day bag.
-4. Carry a small packet of wet wipes for cleaning hands before eating meals.
+The trust operates on a first-come, first-served basis for room allocation. However, there are priority considerations: senior citizens (60+) receive preference for ground-floor rooms and priority queue access at the temple. Physically challenged devotees receive similar priority. Families with infants or small children are given priority for rooms with attached bathrooms or ground-floor locations. These priority rules are applied by the booking coordinator at the time of allocation and are not guaranteed — they depend on availability and the number of priority requests on any given day.
 
-## Core planning actions — Part 3
+## Documentation Required at Check-In
 
-1. Check the local weather forecast a week before finalising your travel dates.
-2. Carry light woollens for the November to January winter mornings and nights.
-3. Pack cotton clothes, sunscreen, and sunglasses for the summer months.
-4. Carry a sturdy umbrella and quick-dry clothes for the monsoon season.
+At the time of booking, you provide names and basic details over WhatsApp or a phone call. At check-in, **every adult must present a government-issued photo ID**. Accepted IDs include:
+- Aadhaar Card
+- Voter ID
+- Passport
+- PAN Card
+- Driving Licence
 
-## Cross-location travel tips — Routing and sequencing
+The ID is mandatory under government regulations for all dharamshala-type accommodation. The trust uses the ID information for security and record-keeping, not for any commercial purpose. Children do not need a separate ID but should carry a school ID card or Aadhaar card for age verification.
 
-The trust usually publishes a yearly festival calendar on its notice board, and aligning your trip to a lesser-known festival gives you the spiritual energy of a celebration without the overwhelming crowd.
+For NRIs and foreign devotees, a passport is required. The [Bhakta Niwas Booking for NRIs](/blog/bhakta-niwas-booking-for-nris) guide covers specific NRI documentation requirements.
 
-When visiting multiple Sansthan locations, allow buffer time between cities for rest and local travel. Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar each have distinct peak hours and crowd patterns. Book accommodation for each stop in advance through official channels.
+Carry the **original ID**. Photocopies and digital copies on your phone may be accepted in emergency situations, but original ID is preferred and avoids delays at check-in. If your original ID is lost or damaged, report it at the nearest police station and bring the FIR copy along with a photocopy of your alternative ID.
 
-## Cross-location travel tips — Family logistics
+## Booking Rules and Limits
 
-Local cuisine is an essential part of the pilgrimage experience, so try the regional breakfast and prasad items at trusted stalls, but stick to cooked vegetarian food if you have a sensitive stomach.
+Bookings can be made through the official [WhatsApp Booking Step By Step Guide](/blog/whatsapp-booking-step-by-step-guide) or by phone. Walk-in bookings are possible subject to availability, but advance booking is strongly recommended, especially during festivals.
 
-## Cross-location travel tips — Budget and packing
+The trust allows a maximum booking of five rooms or 25 dormitory beds per booking request from a single individual. For larger groups (50+ devotees), a separate group booking process applies. The [Group Booking Essentials](/blog/group-booking-essentials) covers the group booking process, including dedicated coordinators for large pilgrim groups.
 
-Spiritual immersion is best achieved by following the temple's daily rhythm of morning aarti, afternoon prayer, and evening aarti, rather than treating the visit as a sightseeing checklist.
+Booking is non-transferable. The name on the booking must match the photo ID at check-in. If a different person from your group is going to use the room, inform the booking team 24 hours in advance so that the records can be updated. This rule prevents unauthorised room allocations and helps the trust maintain security records.
 
-## Cross-location travel tips — Spiritual alignment and discipline
+Room allocation depends on availability at the time of arrival. During festivals, the trust may move confirmed guests to a different room than originally assigned to maximise the use of available rooms. If you have specific room preferences (corner, quiet side, near exit), mention these during booking, but be aware that the trust may not be able to honour them during peak periods. The [Festival Dates And Booking Windows](/blog/festival-dates-and-booking-windows) page lists the high-demand periods.
 
-Pace your trip so that you allow at least one rest afternoon for every two active sightseeing days, because rushing through the holy town defeats the purpose of a spiritual journey.
+## Cancellation Policy
 
-## Cross-location travel tips — Senior citizen and child comfort
+Cancellation must be communicated via WhatsApp or phone call at the earliest. The trust does not charge a cancellation fee, but early notice allows them to allocate the room to another devotee. No-shows (bookings where the devotee does not arrive) may result in future booking restrictions in extreme cases — for example, if a room is booked for a festival period and the booking is a no-show without prior notice. The detailed [Bhakta Niwas Refund and Cancellation Policy](/blog/bhakta-niwas-refund-and-cancellation-policy) covers specific scenarios.
 
-Pack light woollens for early morning darshans in winter, as the queue area can be cold and breezy even when the daytime temperature is comfortable and pleasant in the holy town.
+If you arrive late but within the booking date range, the room will be held for you until 10 AM the next morning. After 10 AM, the booking is considered a no-show and the room may be allocated to another devotee on the walk-in waitlist.
 
-## Cross-location travel tips — Contingency and weather
+## Check-In and Check-Out
 
-Local guides offer valuable insights into the temple's history and rituals, but choose only official guides listed on the trust notice board to avoid unofficial touts charging inflated rates.
+Standard check-in time is 12:00 PM (noon) and check-out is 10:00 AM. The trust allows flexibility for early check-ins if rooms are ready, and late check-outs if no incoming booking is affected. Late check-outs after 10 AM may attract an extra half-day charge at INR 100 to INR 200 per person. Early check-in before 10 AM may be available at no charge if the room is already prepared and no other guest is expected.
 
-## Official pages to use during planning
+At check-in, you receive a token or card that you must produce at the door during late-night returns. The Bhakta Niwas operates a security gate from 11 PM to 5 AM, and only registered guests with valid tokens are allowed inside after hours. If you lose your token, inform the reception desk immediately for a replacement.
 
-- [All Sansthan Locations](/locations)
-- [Shegaon Bhakt Niwas](/locations/shegaon-bhakt-niwas)
-- [Omkareshwar Accommodation](/locations/omkareshwar)
-- [Pandharpur Temple](/locations/pandharpur-math)
-- [Trimbakeshwar Temple](/locations/trimbakeshwar)
-- [Booking Request Page](/booking)
-- [Contact Sansthan Support](/contact)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
+## Code of Conduct on Premises
 
-## Frequently asked questions
+The Bhakta Niwas is a shared spiritual space, and the trust expects all guests to follow a basic code of conduct:
+- Maintain cleanliness in rooms and common areas
+- Do not consume alcohol, tobacco, or non-vegetarian food on the premises
+- Respect other devotees' need for rest and quiet, especially during early morning and late evening
+- Keep noise levels low after 10 PM
+- Do not damage or remove any property from the premises
+- Smoking is prohibited throughout the campus
 
-**Are meals provided at the temple accommodation?** While rooms don't usually have room service, the Sansthan operates a massive Mahaprasad Hall and various canteens where healthy, subsidized, or free meals are served.
+Guests who violate the code of conduct may be asked to leave without a refund on remaining nights. The code of conduct is displayed prominently at the reception desk and in common areas of the Bhakta Niwas.
 
-**Can I book a room for just one person?** Yes, dormitory facilities are often available for solo devotees, while family rooms are reserved for groups. ID proof is mandatory regardless of the group size.
+## Frequently Asked Questions
 
-**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
+**Are pets allowed at the Bhakta Niwas?**
+No. Pets are not permitted inside the Bhakta Niwas premises or the temple complex. If you are travelling with a pet, arrange pet-friendly accommodation outside the Sansthan premises.
 
-**Is there an online booking portal for Sansthan accommodation?** Currently, the Sansthan primarily manages bookings through official phone and WhatsApp channels to ensure fair distribution. Be wary of unofficial websites claiming to offer online bookings.
+**Can I extend my stay beyond the booked dates?**
+Yes. Inform the reception desk as early as possible. If rooms are available, your stay can be extended. During festivals, extensions are subject to availability and may not be possible.
 
-**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
+**What is the maximum number of people per room?**
+Private rooms typically accommodate 2 to 4 people depending on the room type. Dormitory beds are allocated individually. Ask the booking team for specific room capacity details.
 
-**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
+**Are there age restrictions for booking?**
+No. Devotees of all ages are welcome. Minors must be accompanied by a parent or guardian. The Sansthan does not allow unaccompanied minors to stay at the Bhakta Niwas.
 
-## Related reading
+**Can I store luggage at the Bhakta Niwas if I arrive early?**
+Yes. The cloakroom at the Bhakta Niwas can store your luggage until your room is ready. This is useful if you arrive before check-in time or need to check out before your departure time.
 
-- [Bhakta Niwas Booking For Nris](/blog/bhakta-niwas-booking-for-nris)
-- [How To Manage Luggage During Yatra](/blog/how-to-manage-luggage-during-yatra)
-- [Best Travel Apps For Maharashtra Pilgrimage](/blog/best-travel-apps-for-maharashtra-pilgrimage)
-- [Handling Medical Emergencies On Yatra](/blog/handling-medical-emergencies-on-yatra)
-- [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
-- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
-- [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
-- [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
-- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
+**Do the Bhakta Niwas locations have Wi-Fi?**
+Wi-Fi availability varies by location. Shegaon has the most reliable connectivity. Omkareshwar and Pandharpur may have limited or no Wi-Fi. Carry a mobile data plan as backup.
 
-## Final note
+**Can I bring outside food to the Bhakta Niwas?**
+Outside vegetarian food is generally permitted in the rooms, but non-vegetarian food, alcohol, and tobacco are strictly prohibited. During festival periods, the Mahaprasad Hall serves all meals, and outside food is discouraged to maintain the sanctity of the premises.
 
-For the best pilgrimage experience, keep your plan devotional but practical: focus on darshan flow, family comfort, and official communication clarity at every stage. The four primary Sansthan-supported locations — Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar — each reward the devotee who arrives prepared, calm, and open. Plan once, travel slow, and let the darshan do its work.
+**What if I lose my room key?**
+Report to the reception desk immediately. The trust has spare keys at the reception, and the issue can usually be resolved within minutes. There is no charge for a replacement key during your stay.
+
+**Are there power backup arrangements at the Bhakta Niwas?**
+Yes. The Bhakta Niwas has power backup that activates within minutes of a power outage. During summer months, the AC continues to operate. Power cuts in temple towns are infrequent but the backup ensures uninterrupted stay.
+
+**Is smoking allowed at the Bhakta Niwas?**
+No. Smoking is strictly prohibited on the Bhakta Niwas premises and the entire temple campus. Designated smoking areas may exist outside the campus for devotees who need them.
 
 ---
 
