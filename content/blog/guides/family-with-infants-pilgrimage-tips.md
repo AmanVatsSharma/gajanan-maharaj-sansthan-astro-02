@@ -122,7 +122,7 @@ Pack light woollens for early morning darshans in winter, as the queue area can 
 - [Wheelchair Accessible Locations Guide](/blog/wheelchair-accessible-locations-guide)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)

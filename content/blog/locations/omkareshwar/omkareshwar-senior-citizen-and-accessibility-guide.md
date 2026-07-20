@@ -35,7 +35,7 @@ faqs:
   - question: "Do you give a discount for an attendant travelling with a senior citizen?"
     answer: "We do not run a formal attendant discount. What we do is allow one attendant to share the same room at no extra charge for the dormitory and the 4-bed non-AC category when the senior citizen is the primary booking. For AC and family-suite categories the room is charged once, regardless of how many family members share it. Mention the attendant at booking and we will note it on the file."
   - question: "Which hospital is closest to Omkareshwar Bhakta Niwas and what is the number?"
-    answer: "The nearest multi-speciality hospital is the Government Civil Hospital, Khandwa (about 22 km from the Bhakta Niwas). For a quicker response the Sansthan office keeps a list of three local clinics within 3 km of the Bhakta Niwas that handle routine needs. The office phone is 9661263850 — staff will arrange an auto or ambulance depending on the case."
+    answer: "The nearest multi-speciality hospital is the Government Civil Hospital, Khandwa (about 22 km from the Bhakta Niwas). For a quicker response the Sansthan office keeps a list of three local clinics within 3 km of the Bhakta Niwas that handle routine needs. The office phone is 8969871378 — staff will arrange an auto or ambulance depending on the case."
   - question: "Should I book a ground-floor room or an upper-floor AC room for my father who has knee pain?"
     answer: "Ground floor. We strongly recommend ground floor in Block 1 for any guest with mobility limitation, even if it means a non-AC room. The trade-off in summer is real heat, but a cooler and a 7 PM dinner slot make it manageable, and avoiding a staircase every time he returns from darshan matters more than AC."
 ---
@@ -93,7 +93,7 @@ Leave behind: heavy blankets (we issue woollen blankets at check-in), expensive 
 
 ## Attendant policy, room categories, and the conversation to have at booking
 
-When you call 9661263850 or message the Sansthan on WhatsApp at the same number, the booking desk will ask two things that determine what is allocated: (a) is there a senior citizen or divyang guest in the group, and (b) does that guest need a ground-floor room. Saying yes to both routes you to the rooms our office holds for accessibility, which are mostly Block 1 non-AC and a small set of Block 2 first-floor AC.
+When you call 8969871378 or message the Sansthan on WhatsApp at the same number, the booking desk will ask two things that determine what is allocated: (a) is there a senior citizen or divyang guest in the group, and (b) does that guest need a ground-floor room. Saying yes to both routes you to the rooms our office holds for accessibility, which are mostly Block 1 non-AC and a small set of Block 2 first-floor AC.
 
 Tariffs at the Bhakta Niwas for 2026 (subject to change; verify on site or at booking):
 

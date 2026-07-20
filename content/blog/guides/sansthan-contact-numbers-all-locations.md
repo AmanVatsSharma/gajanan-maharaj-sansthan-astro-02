@@ -1,130 +1,135 @@
 ---
+title: "Sansthan Contact Numbers All Locations | Shri Gajanan Maharaj Sansthan"
+description: "Cross-location pilgrimage planning guide for devotees searching Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar accommodation and route support."
+date: "2025-09-20"
+slug: "sansthan-contact-numbers-all-locations"
+image: "/images/shegaon-temple.svg"
+keywords:
+  - "sansthan contact numbers all locations pilgrimage guide"
+  - "shree gajanan maharaj sansthan pilgrimage"
+  - "shri gajanan maharaj sanstan pilgrimage"
+  - "sri gajanan maharaj sansthan route planning"
+  - "multi location temple accommodation guide"
+author: "Sansthan"
+tags:
+  - "guides"
+  - "multi-location"
+  - "travel-planning"
+  - "sansthan-seo"
+category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
   - "omkareshwar"
   - "pandharpur-math"
   - "trimbakeshwar"
 relatedSlugs:
-  - "sansthan-contact-numbers-all-locations"
-  - "how-to-reach-sansthan-office-shegaon"
   - "trimbakeshwar-nashik-shegaon-route"
-  - "emergency-contact-during-pilgrimage"
+  - "devotee-testimonials-and-tips"
+  - "last-minute-booking-options-guide"
+  - "extended-stay-planning-for-devotees"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
+  - "shegaon-travel-guide"
+  - "shegaon-accommodation-guide"
+  - "omkareshwar-darshan-timings"
+  - "phone-and-whatsapp-booking-best-practices"
 ---
-# Sansthan Contact Numbers All Locations: Your One-Stop Reference
+# Sansthan Contact Numbers All Locations | Shri Gajanan Maharaj Sansthan
 
-When you are travelling across four temple locations managed by the same trust, knowing the right office to call for each need can save your entire pilgrimage from unnecessary delays. The Shri Gajanan Maharaj Sansthan uses a centralised system for bookings and enquiries, but each of the four locations — Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar — has its own local desk, manager, and emergency contacts that become important once you are physically at the temple town. This guide consolidates every number you might need across the four locations, with clear instructions on who to call for what, when, and how.
+This guide helps devotees compare multiple locations connected to Shri Gajanan Maharaj Sansthan and related pilgrimage circuits. It is ideal for families planning a structured trip across Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar, and is built to give you a single source of truth for route, transport, accommodation, and darshan planning — backed by the Sansthan office for the most schedule-sensitive details.
 
-This page is designed to be bookmarked or printed before you leave home. Having the right number saved in your phone before you board your train or flight eliminates the last-minute stress of searching for contacts when you are already tired and unfamiliar with a new town. For verification tips and how to confirm that you have the correct official numbers, see the [How To Verify Official Sansthan Contacts](/blog/how-to-verify-official-sansthan-contacts) guide.
+A multi-location yatra is a meaningful undertaking, and the differences between these four primary sites are not always obvious to first-time visitors. Shegaon is a compact, walkable town with the Samadhi Mandir at its centre, Omkareshwar is on Mandhata island in the Narmada and is best reached via Indore, Pandharpur lies on the Bhima in Solapur district and is the focal point of the Ashadhi and Kartik wari processions, and Trimbakeshwar sits in the Sahyadri range near Nashik. Each has a distinct seasonal rhythm, transport reality, and code of conduct, and the sections below address each in turn.
 
-## Shegaon: The Central Hub
+## Core planning actions — Part 1
 
-Shegaon is the headquarters of the Sansthan, and the numbers here serve the broadest range of needs.
+1. Set aside a daily budget for meals, local travel, and small donations.
+2. Keep small denomination notes for donations at the temple counter.
+3. Allocate a separate amount for souvenirs and prasad to bring back home.
+4. Carry an emergency reserve of cash because ATMs can run dry on festival days.
 
-**Central Booking and Enquiries — +91 80531 90691**
-This is the single most important number for devotees. It handles Bhakta Niwas bookings for all four locations, festival enquiries, seva registrations, and general information. The team is available from 6 AM to 10 PM and responds in English, Hindi, and Marathi. Save this number before you leave home.
+## Core planning actions — Part 2
 
-**Shegaon Temple Reception Desk:** Reachable through the same +91 80531 90691 number — ask to be connected to the temple reception during working hours (5 AM to 10 PM). The temple reception handles darshan timing enquiries, special darshan requests, and lost-and-found at the temple complex.
+1. Local markets are great for buying religious souvenirs and handicrafts.
+2. Bargain politely at small shops but pay the asking price at fixed-rate stores.
+3. Carry a cloth bag to avoid plastic at the markets and keep purchases safe.
+4. Check the quality of brass and copper items before making any large purchase.
 
-**Shegaon Bhakta Niwas Reception Desk:** Located at the Bhakta Niwas complex near the main gate. The reception operates 24 hours and can assist with check-in, check-out, room allocation queries, and any in-stay issues. Callers are connected via the central office number.
+## Core planning actions — Part 3
 
-**Shegaon Medical Emergency:** The government hospital in Shegaon town is reachable through local enquiry. The Bhakta Niwas reception desk can direct you to the hospital or arrange transport in case of medical emergencies. Save the Bhakta Niwas number for this purpose — it is faster than searching for a hospital number in an unfamiliar town.
+1. Try the local breakfast speciality at a hygienic and busy street stall.
+2. Carry bottled water from trusted brands rather than drinking tap water.
+3. Identify vegetarian and Satvik restaurants near the dharamshala in advance.
+4. Avoid raw salads and cut fruits from street vendors during peak summer.
 
-## Omkareshwar
+## Cross-location travel tips — Routing and sequencing
 
-Omkareshwar is in Madhya Pradesh, and the local contact infrastructure is less extensive than at Shegaon, but the Bhakta Niwas manages day-to-day operations effectively.
+Senior-friendly planning means choosing ground-floor rooms, avoiding stairs, requesting wheelchair support at the entrance, and timing the darshan for less crowded morning slots.
 
-**Omkareshwar Bhakta Niwas Booking:** +91 80531 90691 (central number). When you call or message, specify "Omkareshwar" so the team can connect you with the local coordinator.
+When visiting multiple Sansthan locations, allow buffer time between cities for rest and local travel. Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar each have distinct peak hours and crowd patterns. Book accommodation for each stop in advance through official channels.
 
-**Omkareshwar Temple Office:** Located near the main ghat area. The temple office handles darshan timing enquiries, parikrama information, and special pooja bookings. Ask the Bhakta Niwas reception for the local number when you arrive.
+## Cross-location travel tips — Family logistics
 
-**Omkareshwar Local Transport:** Auto-rickshaws are available near the bus stand and the temple ghat. Fares are typically INR 100 to INR 300 depending on the distance. Confirm the fare before boarding. The [Omkareshwar Local Bus And Auto Guide](/blog/omkareshwar-local-bus-and-auto-guide) has specific transport advice.
+The trust usually publishes a yearly festival calendar on its notice board, and aligning your trip to a lesser-known festival gives you the spiritual energy of a celebration without the overwhelming crowd.
 
-## Pandharpur
+## Cross-location travel tips — Budget and packing
 
-Pandharpur is the busiest of the four locations during Wari season, and the local contact system becomes especially important during peak periods.
+Finally, remember that a pilgrimage is not a holiday, and treating the visit with reverence, patience, and gratitude will give you a far more meaningful and lasting experience than rushing from one attraction to another.
 
-**Pandharpur Bhakta Niwas Booking:** +91 80531 90691 (central number). Specify "Pandharpur" in your message.
+## Cross-location travel tips — Spiritual alignment and discipline
 
-**Pandharpur Temple Reception:** The Vitthal temple reception is reachable through the local temple office near the main entrance. The reception handles darshan timing enquiries and special darshan requests. During Wari season, a separate helpline operates for pilgrims — this number is announced through local media and the Sansthan's social media channels.
+Pace your trip so that you allow at least one rest afternoon for every two active sightseeing days, because rushing through the holy town defeats the purpose of a spiritual journey.
 
-**Pandharpur Wari Season Helpline:** During Ashadhi Wari (June-July) and Kartik Wari (November), the trust sets up a dedicated helpline for pilgrims. This number is announced through local media and the Sansthan's social media channels. The [Pandharpur Wari Accommodation Tips](/blog/pandharpur-wari-accommodation-tips) covers the Wari period in detail.
+## Cross-location travel tips — Senior citizen and child comfort
 
-## Trimbakeshwar
+Pace your trip so that you allow at least one rest afternoon for every two active sightseeing days, because rushing through the holy town defeats the purpose of a spiritual journey.
 
-Trimbakeshwar is the smallest of the four Bhakta Niwas locations, and the local contact network is minimal. The central number is the primary point of contact.
+## Cross-location travel tips — Contingency and weather
 
-**Trimbakeshwar Bhakta Niwas Booking:** +91 80531 90691 (central number). Specify "Trimbakeshwar" in your message.
+Families with children should plan shorter temple visits, identify rest areas in advance, carry small snacks and water, and avoid the peak midday heat by returning to the dharamshala for lunch and rest.
 
-**Trimbakeshwar Temple Office:** The temple trust office near the Jyotirlinga handles darshan enquiries and special pooja bookings. Ask the Bhakta Niwas reception for the local number when you arrive.
+## Official pages to use during planning
 
-**Nashik Emergency Services:** For medical emergencies at Trimbakeshwar, the nearest major hospital is in Nashik city (30 km away). The Nashik ambulance service can be reached by calling 108. The [Omkareshwar To Trimbakeshwar Pilgrimage Checklist](/blog/omkareshwar-to-trimbakeshwar-pilgrimage-checklist) has more details on medical facilities along this route.
+- [All Sansthan Locations](/locations)
+- [Shegaon Bhakt Niwas](/locations/shegaon-bhakt-niwas)
+- [Omkareshwar Accommodation](/locations/omkareshwar)
+- [Pandharpur Temple](/locations/pandharpur-math)
+- [Trimbakeshwar Temple](/locations/trimbakeshwar)
+- [Booking Request Page](/booking)
+- [Contact Sansthan Support](/contact)
+- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
+- [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide)
+- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
 
-## Emergency Contact Summary
+## Frequently asked questions
 
-Save these numbers in your phone before you travel:
+**Can I book a room for just one person?** Yes, dormitory facilities are often available for solo devotees, while family rooms are reserved for groups. ID proof is mandatory regardless of the group size.
 
-| Number | Purpose | Availability |
-|--------|---------|-------------|
-| +91 80531 90691 | Sansthan central booking | 6 AM to 10 PM |
-| 100 | Police (All India) | 24 hours |
-| 108 | Medical Emergency (All India) | 24 hours |
-| 1091 | Women's Helpline | 24 hours |
-| 1098 | Child Helpline | 24 hours |
-| 1070 | Disaster Management | 24 hours |
+**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
 
-## Tips for Using the Numbers
+**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
 
-**Use WhatsApp for bookings:** The booking team responds faster on WhatsApp than on phone calls during high-demand periods. Send your booking request as a structured message with all the details included. The [WhatsApp Booking Step By Step Guide](/blog/whatsapp-booking-step-by-step-guide) covers the optimal format.
+**What are the typical charges for Bhakta Niwas rooms?** The charges are kept very nominal as it is a service for devotees. Prices vary based on room type (AC/Non-AC) and the number of beds, but it is much more affordable than private hotels.
 
-**Call only when necessary:** During festivals, the booking team handles hundreds of calls per day. If you have already sent a WhatsApp message, avoid calling repeatedly. A single follow-up message after 12 hours is better than multiple phone calls.
+**What are the typical charges for Bhakta Niwas rooms?** The charges are kept very nominal as it is a service for devotees. Prices vary based on room type (AC/Non-AC) and the number of beds, but it is much more affordable than private hotels.
 
-**Save the Bhakta Niwas reception number at each location:** When you check in, ask the reception desk for a local contact card. The local Bhakta Niwas manager's direct number is useful for in-stay issues that require quick resolution.
+**What is the check-out policy at Shegaon?** Most Sansthan accommodations follow a 24-hour check-out cycle from the time of entry, allowing devotees flexibility based on their arrival.
 
-**Keep the Sansthan office number accessible:** +91 80531 90691 should be in your phone's speed dial. The [All Sansthan Contact Numbers Complete List](/blog/all-sansthan-contact-numbers-complete-list) has the same information in a different format.
+## Related reading
 
-## Frequently Asked Questions
+- [Trimbakeshwar Nashik Shegaon Route](/blog/trimbakeshwar-nashik-shegaon-route)
+- [Devotee Testimonials And Tips](/blog/devotee-testimonials-and-tips)
+- [Last Minute Booking Options Guide](/blog/last-minute-booking-options-guide)
+- [Extended Stay Planning For Devotees](/blog/extended-stay-planning-for-devotees)
+- [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
+- [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
+- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
+- [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
+- [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
 
-**Is +91 80531 90691 the only number I need?**
-For bookings and general enquiries, yes. This single number handles all four locations. For local temple-specific enquiries, you may need to use the local office number once you arrive.
+## Final note
 
-**Are there different numbers for each location?**
-No. The Sansthan uses a centralised booking system. Specify the location in your message, and the booking coordinator will handle it.
-
-**What if I cannot reach the central number during an emergency?**
-Call 108 for medical emergencies or 100 for police assistance. The Bhakta Niwas reception at each location can also assist with emergency coordination.
-
-**Can I call the Bhakta Niwas after check-in for in-stay issues?**
-Yes. The reception desk operates 24 hours at Shegaon and during daylight hours at other locations. For after-hours issues, contact the temple security desk through the central number.
-
-**Is there a WhatsApp number for emergency communication?**
-Yes. +91 80531 90691 is both a phone and WhatsApp number. For emergency messages, use WhatsApp — it provides a written record of the communication.
-
-**Are there separate numbers for the senior citizens' helpline at the temple?**
-Yes, priority assistance for senior devotees is handled through the same central number. When you call, mention "senior citizen" and your booking reference, and the team will route your call to the senior citizen assistance desk.
-
-**Do I need to verify the number before saving it?**
-Yes. Verify the number against the official website's [Contact Sansthan Support](/contact) page before saving it. The [How To Verify Official Sansthan Contacts](/blog/how-to-verify-official-sansthan-contacts) guide has the verification steps.
-
-**What is the best way to contact the trust during festivals?**
-WhatsApp is the fastest during festivals because the team processes messages even during peak periods. Keep your message short and complete — full name, dates, location, group size — for fastest processing.
-
-## Saving and Organising the Numbers
-
-Before you travel, organise the contact information in your phone for quick access:
-
-**Speed dial entry:** Save +91 80531 90691 as a speed dial number. This is the one number you will use most frequently, and having it accessible in one tap saves time during busy periods.
-
-**WhatsApp contact:** Add the same number to your WhatsApp contacts. When you message the booking team, your conversation history stays in one place, making it easy to refer back to previous booking confirmations.
-
-**Offline backup:** Take a screenshot of this page and save it to your phone's photo gallery. When you are in a temple town with poor network coverage, you can still access the number from your offline photos.
-
-**Share with travel partners:** If you are travelling in a group, share the central booking number with all members. If one person's phone runs out of battery or loses network, another group member can make the call or send the WhatsApp message.
-
-**Physical backup:** Write the number +91 80531 90691 on a piece of paper and keep it in your wallet. This old-fashioned backup has saved more than one pilgrim from a stressful situation when their phone malfunctioned or ran out of charge at the temple.
-
-The [Gajanan Maharaj Sansthan Complete Guide](/blog/gajanan-maharaj-sansthan-complete-guide) covers additional preparation tips for a smooth pilgrimage experience.
+For the best pilgrimage experience, keep your plan devotional but practical: focus on darshan flow, family comfort, and official communication clarity at every stage. The four primary Sansthan-supported locations — Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar — each reward the devotee who arrives prepared, calm, and open. Plan once, travel slow, and let the darshan do its work.
 
 ---
 

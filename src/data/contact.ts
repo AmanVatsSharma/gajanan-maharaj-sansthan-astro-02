@@ -5,8 +5,8 @@ export const CONTACT_DETAILS = {
   },
   booking: {
     // Single contact number for site-wide call/WhatsApp links
-    mobile: "+918053190691",
-    whatsapp: "+918053190691",
+    mobile: "+918969871378",
+    whatsapp: "+918969871378",
     // When true, all "Call" buttons across the site open a booking request dialog
     // instead of initiating a phone call. The dialog fills the form and redirects
     // to WhatsApp with the booking enquiry.

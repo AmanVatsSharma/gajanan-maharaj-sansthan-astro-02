@@ -14,9 +14,9 @@ $oldSpaced2 = '+91 75210 63034'
 $newSpaced  = '+91 80531 90691'
 
 # Also catch any no-space / machine-readable variants (e.g. in data files).
-$oldPlain1  = '+919661263850'
+$oldPlain1  = '+918969871378'
 $oldPlain2  = '+917521063034'
-$newPlain   = '+918053190691'
+$newPlain   = '+918969871378'
 
 $excludeDirs = @('node_modules', '.git', 'dist', '.vercel', '.playwright-mcp', 'content\blog')
 $includeExt  = @('.astro', '.ts', '.tsx', '.json', '.md', '.mjs', '.js', '.xml', '.txt')
