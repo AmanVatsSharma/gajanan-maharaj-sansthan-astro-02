@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -120,7 +121,7 @@ const faqs = [
   {
     question: "Are there group pilgrimage tours from Pune to Trimbakeshwar?",
     answer:
-      "Several Pune-based spiritual organisations offer group pilgrimage tours to Trimbakeshwar, particularly during Shravan (July–August) and Maha Shivaratri (February/March). These 2-day tours include: AC bus/coach Pune → Nashik → Trimbakeshwar, accommodation at Bhakta Niwas, all vegetarian meals, guided temple visits, Narayan Nagbali pooja booking, and local transport. Cost: approximately ₹2,000–3,000 per person. The Shri Gajanan Maharaj Sansthan (+91 80531 90691) can assist with group bookings from Pune and provide Narayan Nagbali pooja arrangements. For custom group bookings of 20+ devotees, contact the Sansthan directly.",
+      `Several Pune-based spiritual organisations offer group pilgrimage tours to Trimbakeshwar, particularly during Shravan (July–August) and Maha Shivaratri (February/March). These 2-day tours include: AC bus/coach Pune → Nashik → Trimbakeshwar, accommodation at Bhakta Niwas, all vegetarian meals, guided temple visits, Narayan Nagbali pooja booking, and local transport. Cost: approximately ₹2,000–3,000 per person. The Shri Gajanan Maharaj Sansthan (${CONTACT_DETAILS.booking.mobile}) can assist with group bookings from Pune and provide Narayan Nagbali pooja arrangements. For custom group bookings of 20+ devotees, contact the Sansthan directly.`,
   },
   {
     question: "What is the best time for Pune devotees to visit Trimbakeshwar?",
@@ -140,7 +141,7 @@ const faqs = [
   {
     question: "Is there accommodation near Trimbakeshwar for Pune devotees?",
     answer:
-      "Yes, the Shri Gajanan Maharaj Sansthan's Trimbakeshwar Bhakta Niwas provides accommodation for Pune devotees and all pilgrims. Rooms from ₹500 to ₹2,500 per night, all with vegetarian meals and hot water included. The Bhakta Niwas is located just 500 metres from the Trimbakeshwar Temple and 1 km from Kushavarta Kund. For Pune devotees planning a 2-day trip, staying overnight is highly recommended — it allows for the pre-dawn Mangala Aarti, Narayan Nagbali pooja during daylight hours, Kushavarta Kund holy dip, and the Brahmagiri trek at sunrise. Book via the Sansthan at +91 80531 90691, especially for Shravan and festival dates.",
+      `Yes, the Shri Gajanan Maharaj Sansthan's Trimbakeshwar Bhakta Niwas provides accommodation for Pune devotees and all pilgrims. Rooms from ₹500 to ₹2,500 per night, all with vegetarian meals and hot water included. The Bhakta Niwas is located just 500 metres from the Trimbakeshwar Temple and 1 km from Kushavarta Kund. For Pune devotees planning a 2-day trip, staying overnight is highly recommended — it allows for the pre-dawn Mangala Aarti, Narayan Nagbali pooja during daylight hours, Kushavarta Kund holy dip, and the Brahmagiri trek at sunrise. Book via the Sansthan at ${CONTACT_DETAILS.booking.mobile}, especially for Shravan and festival dates.`,
   },
 ];
 

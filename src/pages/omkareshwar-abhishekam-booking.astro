@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -116,7 +117,7 @@ const faqs = [
   {
     question: "How do I book abhishekam at Omkareshwar temple?",
     answer:
-      "Abhishekam at Omkareshwar can be booked in two ways: (1) <strong>In-person at the temple office:</strong> Visit the temple administration office near the main entrance. Open from 7:00 AM to 12:00 PM and 4:00 PM to 8:00 PM. Bring your government ID. (2) <strong>Phone booking:</strong> Call the Omkareshwar temple trust office at least 2–3 days in advance for Maha Rudrabhishek and other large ceremonies. For Rudrabhishek and Laghu Rudrabhishek, same-day booking is often possible. (3) <strong>Through Shri Gajanan Maharaj Sansthan:</strong> Contact the Sansthan at +91 80531 90691 for assistance with Omkareshwar pooja bookings and accommodation packages.",
+      `Abhishekam at Omkareshwar can be booked in two ways: (1) <strong>In-person at the temple office:</strong> Visit the temple administration office near the main entrance. Open from 7:00 AM to 12:00 PM and 4:00 PM to 8:00 PM. Bring your government ID. (2) <strong>Phone booking:</strong> Call the Omkareshwar temple trust office at least 2–3 days in advance for Maha Rudrabhishek and other large ceremonies. For Rudrabhishek and Laghu Rudrabhishek, same-day booking is often possible. (3) <strong>Through Shri Gajanan Maharaj Sansthan:</strong> Contact the Sansthan at ${CONTACT_DETAILS.booking.mobile} for assistance with Omkareshwar pooja bookings and accommodation packages.`,
   },
   {
     question: "What is the cost of Rudrabhishek at Omkareshwar?",
@@ -131,7 +132,7 @@ const faqs = [
   {
     question: "Can I book Maha Rudrabhishek for my wedding anniversary or birthday?",
     answer:
-      "Yes, Maha Rudrabhishek is an extremely popular ceremony for wedding anniversaries, birthdays, and other significant life events at Omkareshwar. For a family ceremony, the cost is ₹2,501–₹5,101 and includes 2–3 hours of elaborate ritual with 108 Rudra mantra repetitions, 11 sacred offerings, multiple priests, a private aarti, prasad for the entire family, and a certificate from the temple trust. Book at least 7–14 days in advance for anniversary/birthday dates, especially during festival season (October–February). Contact the temple trust office or the Shri Gajanan Maharaj Sansthan at +91 80531 90691 to arrange a family Maha Rudrabhishek.",
+      `Yes, Maha Rudrabhishek is an extremely popular ceremony for wedding anniversaries, birthdays, and other significant life events at Omkareshwar. For a family ceremony, the cost is ₹2,501–₹5,101 and includes 2–3 hours of elaborate ritual with 108 Rudra mantra repetitions, 11 sacred offerings, multiple priests, a private aarti, prasad for the entire family, and a certificate from the temple trust. Book at least 7–14 days in advance for anniversary/birthday dates, especially during festival season (October–February). Contact the temple trust office or the Shri Gajanan Maharaj Sansthan at ${CONTACT_DETAILS.booking.mobile} to arrange a family Maha Rudrabhishek.`,
   },
   {
     question: "What is the dress code for attending abhishekam at Omkareshwar?",
@@ -141,7 +142,7 @@ const faqs = [
   {
     question: "Is there online booking for Omkareshwar abhishekam?",
     answer:
-      "Currently, Omkareshwar temple does not offer fully online abhishekam booking through a dedicated website. Booking is primarily done in-person at the temple office or by phone. However, some third-party pilgrimage platforms offer assisted booking services. For the most reliable booking: (1) Call the temple trust office 3–7 days in advance for Maha Rudrabhishek and other large ceremonies. (2) Visit the temple office in person if you're already at Omkareshwar. (3) Contact Shri Gajanan Maharaj Sansthan at +91 80531 90691 for facilitated booking assistance. The Sansthan can arrange abhishekam bookings as part of pilgrimage packages, including accommodation at the Bhakta Niwas.",
+      `Currently, Omkareshwar temple does not offer fully online abhishekam booking through a dedicated website. Booking is primarily done in-person at the temple office or by phone. However, some third-party pilgrimage platforms offer assisted booking services. For the most reliable booking: (1) Call the temple trust office 3–7 days in advance for Maha Rudrabhishek and other large ceremonies. (2) Visit the temple office in person if you're already at Omkareshwar. (3) Contact Shri Gajanan Maharaj Sansthan at ${CONTACT_DETAILS.booking.mobile} for facilitated booking assistance. The Sansthan can arrange abhishekam bookings as part of pilgrimage packages, including accommodation at the Bhakta Niwas.`,
   },
   {
     question: "What are the best days and times for abhishekam at Omkareshwar?",

@@ -11,10 +11,11 @@
 
 "use client";
 
-import { MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall, Send } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { showWhatsAppButton, callButtonIsDialog } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics/events";
 
 export interface LocationBookingCtasProps {
@@ -28,10 +29,7 @@ export function LocationBookingCtas({
   locationName,
   locationCity,
 }: LocationBookingCtasProps) {
-  const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(
-    /[^0-9+]/g,
-    ""
-  )}`;
+  const { number: contactNumber, telHref: bookingCallHref, whatsappHref: WHATSAPP_LINK } = useContactNumber();
 
   const whatsappHref = `${WHATSAPP_LINK}?text=${encodeURIComponent(
     `🙏 Jai Gajanan Maharaj 🙏\n\nAccommodation booking enquiry\nLocation: ${locationName}, ${locationCity}\n\nKindly share availability and booking process.`
@@ -39,36 +37,47 @@ export function LocationBookingCtas({
 
   return (
     <div className="space-y-3">
-      <Button
-        asChild
-        className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white h-12 text-base"
-      >
-        <a
-          href={whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackWhatsAppClick(`location_page:${locationId}`)}
+      {showWhatsAppButton && (
+        <Button
+          asChild
+          className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white h-12 text-base"
         >
-          <MessageCircle className="mr-2 h-5 w-5" />
-          Book on WhatsApp
-        </a>
-      </Button>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick(`location_page:${locationId}`)}
+          >
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book on WhatsApp
+          </a>
+        </Button>
+      )}
 
-      <Button
-        asChild
-        variant="outline"
-        className="w-full h-12 text-base border-brand-maroon/20"
-      >
-        <a
-          href={bookingCallHref}
-          onClick={() =>
-            trackPhoneClick(CONTACT_DETAILS.booking.mobile, `location_page:${locationId}`)
-          }
+      {callButtonIsDialog ? (
+        <Button asChild className="w-full h-12 text-base bg-brand-saffron hover:bg-brand-maroon text-white">
+          <a href={`/booking?location=${locationId}`}>
+            <Send className="mr-2 h-5 w-5" />
+            Send Booking Request
+          </a>
+        </Button>
+      ) : (
+        <Button
+          asChild
+          variant="outline"
+          className="w-full h-12 text-base border-brand-maroon/20"
         >
-          <PhoneCall className="mr-2 h-5 w-5" />
-          Call to Book
-        </a>
-      </Button>
+          <a
+            href={bookingCallHref}
+            onClick={() =>
+              trackPhoneClick(contactNumber, `location_page:${locationId}`)
+            }
+          >
+            <PhoneCall className="mr-2 h-5 w-5" />
+            Call to Book
+          </a>
+        </Button>
+      )}
 
       <div className="text-xs text-muted-foreground text-center">
         * Booking subject to availability and Sansthan rules.

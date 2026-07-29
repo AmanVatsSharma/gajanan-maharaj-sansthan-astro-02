@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -99,7 +100,7 @@ const faqs = [
   {
     question: "How to book accommodation at Trimbakeshwar or Omkareshwar for Ganesh Chaturthi?",
     answer:
-      "Both Trimbakeshwar Bhakta Niwas and Omkareshwar Bhakta Niwas sell out 2–3 weeks before Ganesh Chaturthi. Contact Shri Gajanan Maharaj Sansthan at +91 80531 90691 (WhatsApp) for advance booking. Suggested donations: Trimbakeshwar ₹1,250–₹4,150/night; Omkareshwar ₹1,000–₹3,500/night. All rooms include 3 meals, hot water, and taxes. Book early — Ganesh Chaturthi sees the highest occupancy of any festival week.",
+      `Both Trimbakeshwar Bhakta Niwas and Omkareshwar Bhakta Niwas sell out 2–3 weeks before Ganesh Chaturthi. Contact Shri Gajanan Maharaj Sansthan at ${CONTACT_DETAILS.booking.mobile} (WhatsApp) for advance booking. Suggested donations: Trimbakeshwar ₹1,250–₹4,150/night; Omkareshwar ₹1,000–₹3,500/night. All rooms include 3 meals, hot water, and taxes. Book early — Ganesh Chaturthi sees the highest occupancy of any festival week.`,
   },
   {
     question: "How to reach Trimbakeshwar for Ganesh Chaturthi from major cities?",

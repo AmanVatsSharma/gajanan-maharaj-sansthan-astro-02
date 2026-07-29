@@ -17,10 +17,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { showWhatsAppButton, callButtonIsDialog } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { sansthanLocations } from "@/data/sansthan-data";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics/events";
 import { cn } from "@/lib/utils";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
+import { Send } from "lucide-react";
 
 const LOCATION_ANY = "__any__";
 
@@ -34,13 +37,13 @@ export interface BookingCheckoutWidgetProps {
  */
 export function BookingCheckoutWidget({ className, "data-testid": dataTestId }: BookingCheckoutWidgetProps) {
   const [locationId, setLocationId] = useState<string>(LOCATION_ANY);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const { number: contactNumber, telHref: bookingCallHref, whatsappHref: whatsappBase } = useContactNumber();
 
   const selectedLocation = useMemo(() => {
     if (!locationId || locationId === LOCATION_ANY) return null;
     return sansthanLocations.find((loc) => loc.id === locationId) ?? null;
   }, [locationId]);
-
-  const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
 
   const quickCheckoutWhatsAppHref = useMemo(() => {
     const lines = [
@@ -55,8 +58,8 @@ export function BookingCheckoutWidget({ className, "data-testid": dataTestId }: 
     ]
       .filter((line) => line !== "")
       .join("\n");
-    return `${WHATSAPP_LINK}?text=${encodeURIComponent(lines)}`;
-  }, [selectedLocation]);
+    return `${whatsappBase}?text=${encodeURIComponent(lines)}`;
+  }, [selectedLocation, whatsappBase]);
 
   return (
     <section
@@ -78,39 +81,53 @@ export function BookingCheckoutWidget({ className, "data-testid": dataTestId }: 
 
           <CardContent className="space-y-5">
             <div className="flex flex-col sm:flex-row gap-3 sm:flex-wrap">
-              <Button
-                asChild
-                size="lg"
-                className="h-12 sm:h-14 rounded-full flex-1 min-w-[200px] bg-[#25D366] hover:bg-[#128C7E] text-white shadow-md"
-              >
-                <a
-                  href={quickCheckoutWhatsAppHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="WhatsApp the Sansthan for temple accommodation booking"
-                  onClick={() => trackWhatsAppClick(`quick_checkout:${selectedLocation?.id ?? "any"}`)}
+              {showWhatsAppButton && (
+                <Button
+                  asChild
+                  size="lg"
+                  className="h-12 sm:h-14 rounded-full flex-1 min-w-[200px] bg-[#25D366] hover:bg-[#128C7E] text-white shadow-md"
                 >
-                  <MessageCircle className="h-5 w-5" />
-                  WhatsApp to book
-                </a>
-              </Button>
-              <Button asChild variant="premium" size="lg" className="h-12 sm:h-14 rounded-full flex-1 min-w-[200px]">
-                <a
-                  href={bookingCallHref}
-                  aria-label={`Call booking helpline at ${CONTACT_DETAILS.booking.mobile}`}
-                  onClick={() =>
-                    trackPhoneClick(CONTACT_DETAILS.booking.mobile, `quick_checkout:${selectedLocation?.id ?? "any"}`)
-                  }
+                  <a
+                    href={quickCheckoutWhatsAppHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp the Sansthan for temple accommodation booking"
+                    onClick={() => trackWhatsAppClick(`quick_checkout:${selectedLocation?.id ?? "any"}`)}
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                    WhatsApp to book
+                  </a>
+                </Button>
+              )}
+              {callButtonIsDialog ? (
+                <Button
+                  size="lg"
+                  variant="premium"
+                  onClick={() => setIsBookingOpen(true)}
+                  className="h-12 sm:h-14 rounded-full flex-1 min-w-[200px]"
                 >
-                  <PhoneCall className="h-5 w-5" />
-                  Call now
-                </a>
-              </Button>
+                  <Send className="h-5 w-5" />
+                  Send Booking Request
+                </Button>
+              ) : (
+                <Button asChild variant="premium" size="lg" className="h-12 sm:h-14 rounded-full flex-1 min-w-[200px]">
+                  <a
+                    href={bookingCallHref}
+                    aria-label={`Call booking helpline at ${contactNumber}`}
+                    onClick={() =>
+                      trackPhoneClick(contactNumber, `quick_checkout:${selectedLocation?.id ?? "any"}`)
+                    }
+                  >
+                    <PhoneCall className="h-5 w-5" />
+                    Call now
+                  </a>
+                </Button>
+              )}
             </div>
 
             <p className="text-center text-sm text-muted-foreground">
               Booking helpline:{" "}
-              <span className="font-semibold text-brand-maroon tabular-nums">{CONTACT_DETAILS.booking.mobile}</span>
+              <span className="font-semibold text-brand-maroon tabular-nums">{contactNumber}</span>
             </p>
 
             <div className="space-y-2 pt-1 border-t border-border/60">
@@ -180,6 +197,8 @@ export function BookingCheckoutWidget({ className, "data-testid": dataTestId }: 
           </CardFooter>
         </Card>
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </section>
   );
 }

@@ -7,38 +7,63 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
-import { MessageCircle, PhoneCall, X, Headphones } from "lucide-react";
+import { showWhatsAppButton, callButtonIsDialog } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
+import { MessageCircle, PhoneCall, Send, X, Headphones } from "lucide-react";
 import { trackWhatsAppClick, trackPhoneClick } from "@/lib/analytics/events";
+import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const callHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const { number: contactNumber, telHref: callHref, whatsappHref: WHATSAPP_LINK } = useContactNumber();
+
+  const handleCallClick = () => {
+    if (callButtonIsDialog) {
+      setIsBookingOpen(true);
+    } else {
+      trackPhoneClick(contactNumber, "floating_widget");
+    }
+  };
 
   return (
     <div className="fixed bottom-6 right-5 z-50 flex flex-col items-end gap-3">
       {/* Mobile: always show both pills — no tap needed to reveal */}
       <div className="sm:hidden flex flex-col items-end gap-2 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-700">
-        <a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackWhatsAppClick("floating_widget")}
-          aria-label="Chat on WhatsApp"
-          className="flex items-center gap-2 px-4 py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white text-sm font-semibold shadow-lg shadow-black/20 active:scale-95 transition-all duration-200"
-        >
-          <MessageCircle className="h-5 w-5 shrink-0" />
-          WhatsApp
-        </a>
-        <a
-          href={callHref}
-          onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "floating_widget")}
-          aria-label="Call now"
-          className="flex items-center gap-2 px-4 py-3 rounded-full bg-[#800000] hover:bg-[#6b0000] text-white text-sm font-semibold shadow-lg shadow-black/20 active:scale-95 transition-all duration-200"
-        >
-          <PhoneCall className="h-5 w-5 shrink-0" />
-          Call Now
-        </a>
+        {showWhatsAppButton && (
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("floating_widget")}
+            aria-label="Chat on WhatsApp"
+            className="flex items-center gap-2 px-4 py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white text-sm font-semibold shadow-lg shadow-black/20 active:scale-95 transition-all duration-200"
+          >
+            <MessageCircle className="h-5 w-5 shrink-0" />
+            WhatsApp
+          </a>
+        )}
+        {callButtonIsDialog ? (
+          <button
+            type="button"
+            onClick={() => setIsBookingOpen(true)}
+            aria-label="Send booking request"
+            className="flex items-center gap-2 px-4 py-3 rounded-full bg-brand-saffron hover:bg-brand-saffron/90 text-white text-sm font-semibold shadow-lg shadow-black/20 active:scale-95 transition-all duration-200"
+          >
+            <Send className="h-5 w-5 shrink-0" />
+            Book Now
+          </button>
+        ) : (
+          <a
+            href={callHref}
+            onClick={handleCallClick}
+            aria-label="Call now"
+            className="flex items-center gap-2 px-4 py-3 rounded-full bg-[#800000] hover:bg-[#6b0000] text-white text-sm font-semibold shadow-lg shadow-black/20 active:scale-95 transition-all duration-200"
+          >
+            <PhoneCall className="h-5 w-5 shrink-0" />
+            Call Now
+          </a>
+        )}
       </div>
 
       {/* Desktop: saffron trigger that fans out WhatsApp + Call pills */}
@@ -46,36 +71,55 @@ export function WhatsAppButton() {
         <AnimatePresence>
           {isOpen && (
             <>
-              <motion.a
-                key="whatsapp"
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick("floating_widget")}
-                aria-label="Chat on WhatsApp"
-                initial={{ opacity: 0, y: 16, scale: 0.85 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 16, scale: 0.85 }}
-                transition={{ type: "spring", stiffness: 420, damping: 26, delay: 0.06 }}
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white text-sm font-semibold shadow-lg shadow-black/20 transition-colors duration-200"
-              >
-                <MessageCircle className="h-5 w-5 shrink-0" />
-                WhatsApp
-              </motion.a>
-              <motion.a
-                key="call"
-                href={callHref}
-                onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "floating_widget")}
-                aria-label="Call now"
-                initial={{ opacity: 0, y: 16, scale: 0.85 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 16, scale: 0.85 }}
-                transition={{ type: "spring", stiffness: 420, damping: 26 }}
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#800000] hover:bg-[#6b0000] text-white text-sm font-semibold shadow-lg shadow-black/20 transition-colors duration-200"
-              >
-                <PhoneCall className="h-5 w-5 shrink-0" />
-                Call Now
-              </motion.a>
+              {showWhatsAppButton && (
+                <motion.a
+                  key="whatsapp"
+                  href={WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("floating_widget")}
+                  aria-label="Chat on WhatsApp"
+                  initial={{ opacity: 0, y: 16, scale: 0.85 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 16, scale: 0.85 }}
+                  transition={{ type: "spring", stiffness: 420, damping: 26, delay: 0.06 }}
+                  className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white text-sm font-semibold shadow-lg shadow-black/20 transition-colors duration-200"
+                >
+                  <MessageCircle className="h-5 w-5 shrink-0" />
+                  WhatsApp
+                </motion.a>
+              )}
+              {callButtonIsDialog ? (
+                <motion.button
+                  key="call"
+                  type="button"
+                  onClick={() => setIsBookingOpen(true)}
+                  aria-label="Send booking request"
+                  initial={{ opacity: 0, y: 16, scale: 0.85 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 16, scale: 0.85 }}
+                  transition={{ type: "spring", stiffness: 420, damping: 26 }}
+                  className="flex items-center gap-2 px-5 py-3 rounded-full bg-brand-saffron hover:bg-brand-saffron/90 text-white text-sm font-semibold shadow-lg shadow-black/20 transition-colors duration-200"
+                >
+                  <Send className="h-5 w-5 shrink-0" />
+                  Book Now
+                </motion.button>
+              ) : (
+                <motion.a
+                  key="call"
+                  href={callHref}
+                  onClick={handleCallClick}
+                  aria-label="Call now"
+                  initial={{ opacity: 0, y: 16, scale: 0.85 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 16, scale: 0.85 }}
+                  transition={{ type: "spring", stiffness: 420, damping: 26 }}
+                  className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#800000] hover:bg-[#6b0000] text-white text-sm font-semibold shadow-lg shadow-black/20 transition-colors duration-200"
+                >
+                  <PhoneCall className="h-5 w-5 shrink-0" />
+                  Call Now
+                </motion.a>
+              )}
             </>
           )}
         </AnimatePresence>
@@ -101,6 +145,8 @@ export function WhatsAppButton() {
           </AnimatePresence>
         </motion.button>
       </div>
+
+      <BookingDialog open={isBookingOpen} onOpenChange={setIsBookingOpen} />
     </div>
   );
 }

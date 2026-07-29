@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -88,12 +89,12 @@ const faqs = [
   {
     question: "How much does Narayan Nagbali pooja cost at Trimbakeshwar?",
     answer:
-      "The cost of Narayan Nagbali at Trimbakeshwar is approximately <strong>₹2,500–5,000</strong> per family. This includes priest dakshina (honorarium), all puja samagri (ritual materials: rice, flowers, fruits, ghee, incense), the sacred pit, ritual homa (fire ceremony), and prasad for the family. Additional dakshina is at the devotee's discretion. The pooja takes 2–3 hours. Contact the Shri Gajanan Maharaj Sansthan (+91 80531 90691 / +91 80531 90691) for booking and exact cost details.",
+      `The cost of Narayan Nagbali at Trimbakeshwar is approximately <strong>₹2,500–5,000</strong> per family. This includes priest dakshina (honorarium), all puja samagri (ritual materials: rice, flowers, fruits, ghee, incense), the sacred pit, ritual homa (fire ceremony), and prasad for the family. Additional dakshina is at the devotee's discretion. The pooja takes 2–3 hours. Contact the Shri Gajanan Maharaj Sansthan (${CONTACT_DETAILS.booking.mobile} / ${CONTACT_DETAILS.booking.mobile}) for booking and exact cost details.`,
   },
   {
     question: "How do I book Narayan Nagbali pooja at Trimbakeshwar?",
     answer:
-      "To book: (1) <strong>Call in advance</strong> — contact Shri Gajanan Maharaj Sansthan at <strong>+91 80531 90691</strong> or <strong>+91 80531 90691</strong>, at least 2–4 weeks before your visit. For Shravan and Maha Shivaratri, book 2–3 months ahead. (2) <strong>Provide details</strong> — family name, number of participants, date preference, specific rituals (Narayan Bali + Nag Bali), and gotra/clan information. (3) <strong>Confirm booking</strong> — pay a deposit (₹500–1,000) to secure the date. (4) <strong>On arrival</strong> — report to the temple priest's office at the designated time. Payment for the full pooja is made after completion based on satisfaction.",
+      `To book: (1) <strong>Call in advance</strong> — contact Shri Gajanan Maharaj Sansthan at <strong>${CONTACT_DETAILS.booking.mobile}</strong> or <strong>${CONTACT_DETAILS.booking.mobile}</strong>, at least 2–4 weeks before your visit. For Shravan and Maha Shivaratri, book 2–3 months ahead. (2) <strong>Provide details</strong> — family name, number of participants, date preference, specific rituals (Narayan Bali + Nag Bali), and gotra/clan information. (3) <strong>Confirm booking</strong> — pay a deposit (₹500–1,000) to secure the date. (4) <strong>On arrival</strong> — report to the temple priest's office at the designated time. Payment for the full pooja is made after completion based on satisfaction.`,
   },
   {
     question: "What happens during the Narayan Nagbali pooja ritual?",
@@ -261,7 +262,7 @@ const structuredPayload = [templeSchema, lodgingSchema, faqSchema, breadcrumbSch
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl md:text-3xl font-bold">Book Narayan Nagbali Pooja at Trimbakeshwar</h2>
       <p class="mt-4 text-rose-100/90 max-w-2xl mx-auto">
-        Call +91 80531 90691 or +91 80531 90691 to book. Book 2–4 weeks in advance for the best dates.
+        Call {CONTACT_DETAILS.booking.mobile} or {CONTACT_DETAILS.booking.mobile} to book. Book 2–4 weeks in advance for the best dates.
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-3">
         <a href="/booking" class="inline-flex items-center px-7 py-3 rounded-lg bg-white text-rose-800 font-semibold shadow hover:bg-rose-50 transition">Book Pooja & Stay</a>

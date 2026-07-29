@@ -17,7 +17,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, PhoneCall, Send } from "lucide-react";
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { showWhatsAppButton, callButtonIsDialog } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
+import { trackWhatsAppClick, trackPhoneClick } from "@/lib/analytics/events";
 import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 /* Mandala-like radial SVG overlay */
@@ -58,8 +60,7 @@ function OrnamentalBorder() {
 
 export function CTABanner() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-  const callHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
-  const isWhatsAppOnly = CONTACT_DETAILS.booking.whatsappBookingOnly;
+  const { number: contactNumber, telHref: callHref, whatsappHref: WHATSAPP_LINK } = useContactNumber();
 
   return (
     <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
@@ -137,24 +138,26 @@ export function CTABanner() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
           >
             {/* WhatsApp — saffron-toned, on-brand */}
-            <Button
-              asChild
-              size="lg"
-              className="w-full sm:w-auto min-w-[240px] sm:min-w-[280px] h-14 md:h-16 text-base md:text-lg rounded-full bg-white text-brand-maroon hover:bg-brand-gold hover:text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold border-0"
-            >
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick("cta_banner")}
+            {showWhatsAppButton && (
+              <Button
+                asChild
+                size="lg"
+                className="w-full sm:w-auto min-w-[240px] sm:min-w-[280px] h-14 md:h-16 text-base md:text-lg rounded-full bg-white text-brand-maroon hover:bg-brand-gold hover:text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold border-0"
               >
-                <MessageCircle className="mr-2 h-5 w-5 md:h-6 md:w-6 shrink-0" />
-                Book on WhatsApp
-              </a>
-            </Button>
+                <a
+                  href={WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("cta_banner")}
+                >
+                  <MessageCircle className="mr-2 h-5 w-5 md:h-6 md:w-6 shrink-0" />
+                  Book on WhatsApp
+                </a>
+              </Button>
+            )}
 
             {/* Call / Booking Request */}
-            {isWhatsAppOnly ? (
+            {callButtonIsDialog ? (
               <Button
                 size="lg"
                 onClick={() => setIsBookingOpen(true)}
@@ -173,10 +176,10 @@ export function CTABanner() {
               >
                 <a
                   href={callHref}
-                  onClick={() => trackPhoneClick(CONTACT_DETAILS.booking.mobile, "cta_banner")}
+                  onClick={() => trackPhoneClick(contactNumber, "cta_banner")}
                 >
                   <PhoneCall className="mr-2 h-5 w-5 md:h-6 md:w-6 shrink-0" />
-                  {CONTACT_DETAILS.booking.mobile}
+                  {contactNumber}
                 </a>
               </Button>
             )}

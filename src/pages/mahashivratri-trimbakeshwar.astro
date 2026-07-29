@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -83,7 +84,7 @@ const faqs = [
   {
     question: "How to book accommodation for Mahashivratri at Trimbakeshwar?",
     answer:
-      "Accommodation sells out 4–6 weeks before Mahashivratri. Best option: Trimbakeshwar Bhakta Niwas via Shri Gajanan Maharaj Sansthan at +91 80531 90691 (WhatsApp). Suggested donations: ₹1,250–₹4,150/night including all meals, hot water, and taxes. Alternative: GMVN Guest House at Kushavarta Kund, book via Maharashtra Tourism. Backup: hotels in Nashik (28 km away, ₹1,500–₹5,000/night). Book at least 4 weeks in advance for Mahashivratri.",
+      `Accommodation sells out 4–6 weeks before Mahashivratri. Best option: Trimbakeshwar Bhakta Niwas via Shri Gajanan Maharaj Sansthan at ${CONTACT_DETAILS.booking.mobile} (WhatsApp). Suggested donations: ₹1,250–₹4,150/night including all meals, hot water, and taxes. Alternative: GMVN Guest House at Kushavarta Kund, book via Maharashtra Tourism. Backup: hotels in Nashik (28 km away, ₹1,500–₹5,000/night). Book at least 4 weeks in advance for Mahashivratri.`,
   },
   {
     question: "Can I do the Brahmagiri trek on Mahashivratri?",

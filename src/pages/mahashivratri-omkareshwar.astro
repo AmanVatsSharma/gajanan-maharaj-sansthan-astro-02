@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -95,7 +96,7 @@ const faqs = [
   {
     question: "How to book accommodation during Mahashivratri at Omkareshwar?",
     answer:
-      "Accommodation during Mahashivratri sells out 3–4 weeks in advance. Recommended options: (1) Omkareshwar Bhakta Niwas — managed by Shri Gajanan Maharaj Sansthan, book via +91 80531 90691 (WhatsApp). Suggested donations from ₹1,000–₹3,500 per night including all meals. (2) MPSTDC Guest House on the island — government-run, book via MP Tourism website. (3) budget hotels in Khandwa (13 km) as a backup. Book at least 2–3 weeks ahead for Mahashivratri.",
+      `Accommodation during Mahashivratri sells out 3–4 weeks in advance. Recommended options: (1) Omkareshwar Bhakta Niwas — managed by Shri Gajanan Maharaj Sansthan, book via ${CONTACT_DETAILS.booking.mobile} (WhatsApp). Suggested donations from ₹1,000–₹3,500 per night including all meals. (2) MPSTDC Guest House on the island — government-run, book via MP Tourism website. (3) budget hotels in Khandwa (13 km) as a backup. Book at least 2–3 weeks ahead for Mahashivratri.`,
   },
 ];
 

@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -124,7 +125,7 @@ const faqs = [
   {
     question: "Are there group tours from Mumbai to Trimbakeshwar?",
     answer:
-      "Yes, many Mumbai-based spiritual organisations, temples, and tour operators offer group pilgrimage tours to Trimbakeshwar. These typically cover a 2-day itinerary: Mumbai → Nashik → Trimbakeshwar on Day 1 (temple darshan, Narayan Nagbali pooja), overnight at Bhakta Niwas, and return to Mumbai on Day 2. Group tours are especially popular during Shravan (July–August) and Maha Shivaratri (February/March). The Shri Gajanan Maharaj Sansthan organises group pilgrimages from various Maharashtra cities including Mumbai — contact +91 80531 90691 for details. Group booking advantages: lower per-person cost, pre-arranged accommodation and pooja bookings, and travelling with like-minded devotees.",
+      `Yes, many Mumbai-based spiritual organisations, temples, and tour operators offer group pilgrimage tours to Trimbakeshwar. These typically cover a 2-day itinerary: Mumbai → Nashik → Trimbakeshwar on Day 1 (temple darshan, Narayan Nagbali pooja), overnight at Bhakta Niwas, and return to Mumbai on Day 2. Group tours are especially popular during Shravan (July–August) and Maha Shivaratri (February/March). The Shri Gajanan Maharaj Sansthan organises group pilgrimages from various Maharashtra cities including Mumbai — contact ${CONTACT_DETAILS.booking.mobile} for details. Group booking advantages: lower per-person cost, pre-arranged accommodation and pooja bookings, and travelling with like-minded devotees.`,
   },
   {
     question: "Can I combine Trimbakeshwar with Omkareshwar in one trip from Mumbai?",

@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -77,7 +78,7 @@ const faqs = [
   {
     question: "How to book accommodation during Kumbh Mela at Trimbakeshwar?",
     answer:
-      "Booking opens 6–12 months before the Kumbh Mela through the official Kumbh Mela 2027 portal, which is expected to launch in mid-2025. Alternative booking: (1) Trimbakeshwar Bhakta Niwas by Shri Gajanan Maharaj Sansthan at +91 80531 90691 — advance reservations open early; (2) MPSTDC and GMVN guest houses along the Godavari corridor; (3) Luxury tent cities — Government of Maharashtra sets up luxury tented accommodation in designated Kumbh Mela zones; (4) Budget camping — self-organized tents in designated non-restricted areas. Book as early as possible — Kumbh Mela accommodation sells out faster than any other festival.",
+      `Booking opens 6–12 months before the Kumbh Mela through the official Kumbh Mela 2027 portal, which is expected to launch in mid-2025. Alternative booking: (1) Trimbakeshwar Bhakta Niwas by Shri Gajanan Maharaj Sansthan at ${CONTACT_DETAILS.booking.mobile} — advance reservations open early; (2) MPSTDC and GMVN guest houses along the Godavari corridor; (3) Luxury tent cities — Government of Maharashtra sets up luxury tented accommodation in designated Kumbh Mela zones; (4) Budget camping — self-organized tents in designated non-restricted areas. Book as early as possible — Kumbh Mela accommodation sells out faster than any other festival.`,
   },
   {
     question: "What is the Kumbh Mela infrastructure and safety at Trimbakeshwar?",
@@ -97,7 +98,7 @@ const faqs = [
   {
     question: "What should I pack and prepare for the Kumbh Mela?",
     answer:
-      "Essential Kumbh Mela preparation: (1) Book accommodation 6–12 months in advance through the Kumbh Mela portal or Shri Gajanan Maharaj Sansthan at +91 80531 90691. (2) Carry a portable power bank, water bottle, basic medicines, hand sanitizer, and a face mask. (3) Wear comfortable walking shoes — you will walk 10–15 km daily within the Kumbh Mela zone. (4) Download the official Kumbh Mela 2027 app (to be released) for crowd maps, Shahi Snan dates, and emergency services. (5) Keep copies of ID, hotel confirmations, and a small amount of emergency cash. (6) Wear traditional clothes and avoid valuables — the crowds make pickpocketing a risk.",
+      `Essential Kumbh Mela preparation: (1) Book accommodation 6–12 months in advance through the Kumbh Mela portal or Shri Gajanan Maharaj Sansthan at ${CONTACT_DETAILS.booking.mobile}. (2) Carry a portable power bank, water bottle, basic medicines, hand sanitizer, and a face mask. (3) Wear comfortable walking shoes — you will walk 10–15 km daily within the Kumbh Mela zone. (4) Download the official Kumbh Mela 2027 app (to be released) for crowd maps, Shahi Snan dates, and emergency services. (5) Keep copies of ID, hotel confirmations, and a small amount of emergency cash. (6) Wear traditional clothes and avoid valuables — the crowds make pickpocketing a risk.`,
   },
 ];
 

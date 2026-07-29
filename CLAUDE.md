@@ -129,6 +129,27 @@ Blog pages use these for static path generation (prerendered at build time).
 - `testimonials.ts` — devotee testimonials for rating schemas
 - `faq.ts` — frequently asked questions for FAQ schema
 
-### Booking dialog toggle
+### Contact mode switch
 
-`CONTACT_DETAILS.booking.whatsappBookingOnly` in `src/data/contact.ts` is a site-wide feature flag. When `true`, every "Call" button across the site (Navbar desktop/mobile/drawer, Footer contact strip, CTA banner, Booking page) opens `BookingDialog` instead of initiating a `tel:` link. When `false`, call buttons behave normally. The dialog collects booking details and redirects to WhatsApp. To toggle, change the boolean in `contact.ts` — no component changes needed.
+`CONTACT_DETAILS.booking.contactMode` in `src/data/contact.ts` is the ONE site-wide switch controlling how every Call/WhatsApp CTA behaves. It is a typed value (`"both" | "call_only" | "whatsapp_only"`), default `"both"`. Every contact surface across the site reads it via the two derived flags exported alongside it — `showWhatsAppButton` and `callButtonIsDialog` — never reading `contactMode` directly:
+
+- **`"both"`** — normal: WhatsApp buttons open `wa.me`, Call buttons dial `tel:`.
+- **`"call_only"`** (`showWhatsAppButton === false`) — every WhatsApp CTA is hidden; only Call buttons are shown.
+- **`"whatsapp_only"`** (`callButtonIsDialog === true`) — Call buttons open the booking-request dialog (`BookingDialog`) or link to `/booking` instead of dialling; WhatsApp CTAs stay visible.
+
+Surfaces that honor the switch: Navbar (desktop/mobile/drawer), Footer contact strip, CTA banner, floating WhatsApp widget, homepage booking strip (`BookingCheckoutWidget`), `BookingLandingForm` (inside the dialog and on `/booking`), room-detail modal (`EnhancedRoomsSection`), and location CTAs (`LocationBookingCtas`). The Footer's large phone-number display stays a `tel:` link in all modes (informational, not a CTA). To flip the whole site, change the one value in `contact.ts` — no component changes needed.
+
+### Primary/secondary contact-number split
+
+`CONTACT_DETAILS.booking` also carries the per-visitor number split, used to route a fraction of traffic to a secondary number:
+
+- `mobile` — primary number (always used for SSR/JSON-LD schema and the first paint).
+- `secondary` — secondary number shown to a per-visitor fraction.
+- `secondaryWeight` — probability (0–1) that a given visitor sees the **secondary** number (e.g. `0.65` ⇒ ~65% secondary, ~35% primary).
+
+Because the site is prerendered, the split is resolved **client-side** by `src/lib/contact-number.ts` (`resolveContactNumber()`) on first visit and persisted in `localStorage` (`gms_contact_number`) so a returning visitor keeps the same number. Interactive CTAs read it through the `useContactNumber()` hook in `src/lib/hooks/use-contact-number.ts`, which renders the primary on the server + first client render (no hydration mismatch / flash) and swaps to the chosen number after mount. All the surfaces listed above use the hook.
+
+**To activate the split**: set `secondary` to the real secondary number in `src/data/contact.ts` (currently it equals `mobile`, so the site shows one consistent number). Adjust `secondaryWeight` to change the ratio. No component changes needed.
+
+Note: static `.astro` page copy and JSON-LD structured data intentionally always show the **primary** number (correct for SEO consistency); only interactive Call/WhatsApp CTAs participate in the per-visitor split.
+

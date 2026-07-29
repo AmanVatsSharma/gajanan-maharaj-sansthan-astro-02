@@ -8,6 +8,7 @@ import {
   getLodgingBusinessWithRatingSchema,
 } from "@/lib/seo/structured-data";
 import { testimonials } from "@/data/testimonials";
+import { CONTACT_DETAILS } from "@/data/contact";
 
 export const prerender = true;
 
@@ -164,7 +165,7 @@ const faqs = [
   {
     question: "Can I get Omkareshwar prasad shipped to my home?",
     answer:
-      "Currently, Omkareshwar Temple does not offer prasad shipping or delivery services directly. However, you can purchase prasad items (vibhuti, small Shiva lingams, sacred Rudraksha beads, and religious books) from the temple bookstall and carry them back with you. Some devotees fill small bottles of Narmada water to take home. For packaged prasad items to be shipped, you would need to arrange courier services from Indore or Khandwa after your visit. The Shri Gajanan Maharaj Sansthan in Shegaon also sells religious items and books related to Shri Gajanan Maharaj — contact them at +91 80531 90691 for details.",
+      `Currently, Omkareshwar Temple does not offer prasad shipping or delivery services directly. However, you can purchase prasad items (vibhuti, small Shiva lingams, sacred Rudraksha beads, and religious books) from the temple bookstall and carry them back with you. Some devotees fill small bottles of Narmada water to take home. For packaged prasad items to be shipped, you would need to arrange courier services from Indore or Khandwa after your visit. The Shri Gajanan Maharaj Sansthan in Shegaon also sells religious items and books related to Shri Gajanan Maharaj — contact them at ${CONTACT_DETAILS.booking.mobile} for details.`,
   },
 ];
 

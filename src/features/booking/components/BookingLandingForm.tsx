@@ -24,9 +24,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { showWhatsAppButton, callButtonIsDialog } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { sansthanLocations } from "@/data/sansthan-data";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics/events";
+import { cn } from "@/lib/utils";
 
 function formatDateLabel(value: string): string {
   // Keep formatting simple and locale-safe (value is `YYYY-MM-DD` from <input type="date" />).
@@ -52,14 +54,11 @@ export function BookingLandingForm({ initialLocation = null, onWhatsAppClick, on
   const [checkOut, setCheckOut] = useState<string>("");
   const [guests, setGuests] = useState<number>(3);
   const [phone, setPhone] = useState<string>("");
+  const { number: contactNumber, telHref: bookingCallHref, whatsappHref: whatsappBase } = useContactNumber();
 
   const selectedLocation = useMemo(() => {
     return sansthanLocations.find((loc) => loc.id === locationId) ?? null;
   }, [locationId]);
-
-  const bookingCallHref = useMemo(() => {
-    return `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
-  }, []);
 
   const whatsappHref = useMemo(() => {
     const locationLabel = selectedLocation
@@ -83,9 +82,9 @@ export function BookingLandingForm({ initialLocation = null, onWhatsAppClick, on
       .filter(Boolean)
       .join("\n");
 
-    const separator = WHATSAPP_LINK.includes("?") ? "&" : "?";
-    return `${WHATSAPP_LINK}${separator}text=${encodeURIComponent(message)}`;
-  }, [selectedLocation, checkIn, checkOut, guests, phone]);
+    const separator = whatsappBase.includes("?") ? "&" : "?";
+    return `${whatsappBase}${separator}text=${encodeURIComponent(message)}`;
+  }, [selectedLocation, checkIn, checkOut, guests, phone, whatsappBase]);
 
   return (
     <div className="rounded-2xl border bg-background p-5 sm:p-6 shadow-sm">
@@ -200,41 +199,48 @@ export function BookingLandingForm({ initialLocation = null, onWhatsAppClick, on
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-          <Button
-            asChild
-            className="h-12 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white shadow-md hover:shadow-lg transition-all"
-          >
-            <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => {
-                trackWhatsAppClick(`booking_page:${locationId || "unknown"}`);
-                onWhatsAppClick?.();
-              }}
+        <div className={cn(
+          "grid grid-cols-1 gap-3 pt-1",
+          showWhatsAppButton && !callButtonIsDialog ? "sm:grid-cols-2" : "sm:grid-cols-1"
+        )}>
+          {showWhatsAppButton && (
+            <Button
+              asChild
+              className="h-12 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white shadow-md hover:shadow-lg transition-all"
             >
-              <MessageCircle className="h-5 w-5" />
-              WhatsApp to Book
-            </a>
-          </Button>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackWhatsAppClick(`booking_page:${locationId || "unknown"}`);
+                  onWhatsAppClick?.();
+                }}
+              >
+                <MessageCircle className="h-5 w-5" />
+                WhatsApp to Book
+              </a>
+            </Button>
+          )}
 
-          <Button
-            asChild
-            variant="outline"
-            className="h-12 rounded-full border-brand-maroon/20"
-          >
-            <a
-              href={bookingCallHref}
-              onClick={() => {
-                trackPhoneClick(CONTACT_DETAILS.booking.mobile, "booking_page");
-                onCallClick?.();
-              }}
+          {!callButtonIsDialog && (
+            <Button
+              asChild
+              variant="outline"
+              className="h-12 rounded-full border-brand-maroon/20"
             >
-              <PhoneCall className="h-5 w-5" />
-              Call Now
-            </a>
-          </Button>
+              <a
+                href={bookingCallHref}
+                onClick={() => {
+                  trackPhoneClick(contactNumber, "booking_page");
+                  onCallClick?.();
+                }}
+              >
+                <PhoneCall className="h-5 w-5" />
+                Call Now
+              </a>
+            </Button>
+          )}
         </div>
 
         <div className="rounded-xl border bg-muted/30 p-4 text-xs text-muted-foreground leading-relaxed">

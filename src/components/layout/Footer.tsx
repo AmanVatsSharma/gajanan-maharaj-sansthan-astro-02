@@ -6,13 +6,13 @@
 import { useState } from "react";
 import { MessageCircle, PhoneCall } from "lucide-react";
 
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { CONTACT_DETAILS, showWhatsAppButton, callButtonIsDialog } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { BookingDialog } from "@/features/booking/components/BookingDialog";
 
 export function Footer() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-  const isWhatsAppOnly = CONTACT_DETAILS.booking.whatsappBookingOnly;
-  const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
+  const { number: contactNumber, telHref: bookingCallHref, whatsappHref: whatsappBase } = useContactNumber();
 
   return (
     <footer className="relative bg-brand-maroon text-white">
@@ -25,25 +25,27 @@ export function Footer() {
             <div className="text-center md:text-left">
               <p className="text-white font-bold text-lg md:text-xl font-serif">Need Help? Reach us instantly</p>
               <a
-                href={`tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`}
+                href={bookingCallHref}
                 className="text-white/90 hover:text-white text-2xl md:text-3xl font-bold tracking-wide transition-colors duration-200 mt-1 inline-block"
                 aria-label="Call booking helpline"
               >
-                {CONTACT_DETAILS.booking.mobile}
+                {contactNumber}
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <a
-                href={`${WHATSAPP_LINK}?text=${encodeURIComponent("🙏 Jai Gajanan Maharaj 🙏\n\nAccommodation booking enquiry")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Chat on WhatsApp"
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold shadow-md transition-all duration-200 hover:scale-105"
-              >
-                <MessageCircle className="h-5 w-5 shrink-0" />
-                WhatsApp
-              </a>
-              {isWhatsAppOnly ? (
+              {showWhatsAppButton && (
+                <a
+                  href={`${whatsappBase}?text=${encodeURIComponent("🙏 Jai Gajanan Maharaj 🙏\n\nAccommodation booking enquiry")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat on WhatsApp"
+                  className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold shadow-md transition-all duration-200 hover:scale-105"
+                >
+                  <MessageCircle className="h-5 w-5 shrink-0" />
+                  WhatsApp
+                </a>
+              )}
+              {callButtonIsDialog ? (
                 <button
                   type="button"
                   onClick={() => setIsBookingOpen(true)}
@@ -165,7 +167,7 @@ export function Footer() {
               </a>
             </p>
             <p className="text-sm text-gray-200">
-              <span className="font-semibold">Contact:</span> {CONTACT_DETAILS.booking.mobile}
+              <span className="font-semibold">Contact:</span> {contactNumber}
             </p>
           </div>
         </div>
