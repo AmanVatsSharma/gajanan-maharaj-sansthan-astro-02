@@ -21,15 +21,13 @@ export const CONTACT_DETAILS = {
   },
   booking: {
     // Primary contact number for site-wide call/WhatsApp links.
-    mobile: "+918969871378",
-    whatsapp: "+918969871378",
+    mobile: "+917033516657",
+    whatsapp: "+917033516657",
     // Secondary number shown to a per-visitor fraction of traffic.
-    // TODO(operator): replace with the real secondary number to activate the split.
-    // Until then it equals the primary, so the site shows one consistent number.
-    secondary: "+918969871378",
+    secondary: "+918434289721",
     // Probability (0–1) that a given visitor sees the SECONDARY number.
-    // 0.65 => secondary ~65% of visitors, primary ~35%.
-    secondaryWeight: 0.65,
+    // 0.5 => 50% primary, 50% secondary.
+    secondaryWeight: 0.5,
     contactMode: "both" as ContactMode,
   },
   social: {

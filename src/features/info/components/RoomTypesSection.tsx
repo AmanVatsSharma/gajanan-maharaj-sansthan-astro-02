@@ -17,7 +17,7 @@ import { ArrowRight, Building2, MessageCircle, PhoneCall, Snowflake, Users } fro
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CONTACT_DETAILS, WHATSAPP_LINK } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { sansthanLocations, type Facility } from "@/data/sansthan-data";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics/events";
 import { cn } from "@/lib/utils";
@@ -34,7 +34,7 @@ function getFacilitySummary(facility: Facility): string {
   return `${typeLabel} • ${acLabel} • Up to ${facility.capacity} devotees`;
 }
 
-function buildFacilityWhatsAppHref(locationLabel: string, facility: Facility): string {
+function buildFacilityWhatsAppHref(whatsappBase: string, locationLabel: string, facility: Facility): string {
   const acLabel = facility.ac ? "AC" : "Non-AC";
   const message = [
     "🙏 Jai Gajanan Maharaj 🙏",
@@ -46,20 +46,20 @@ function buildFacilityWhatsAppHref(locationLabel: string, facility: Facility): s
     "Kindly share tariff and availability for the selected dates.",
   ].join("\n");
 
-  const separator = WHATSAPP_LINK.includes("?") ? "&" : "?";
-  return `${WHATSAPP_LINK}${separator}text=${encodeURIComponent(message)}`;
+  const separator = whatsappBase.includes("?") ? "&" : "?";
+  return `${whatsappBase}${separator}text=${encodeURIComponent(message)}`;
 }
 
 export function RoomTypesSection() {
   const defaultLocationId = sansthanLocations[0]?.id ?? "";
   const [locationId, setLocationId] = useState<string>(defaultLocationId);
+  const { number: contactNumber, telHref: bookingCallHref, whatsappHref: whatsappBase } = useContactNumber();
 
   const selectedLocation = useMemo(() => {
     return sansthanLocations.find((loc) => loc.id === locationId) ?? null;
   }, [locationId]);
 
   const facilities = selectedLocation?.facilities ?? [];
-  const bookingCallHref = `tel:${CONTACT_DETAILS.booking.mobile.replace(/[^0-9+]/g, "")}`;
   const locationLabel = selectedLocation
     ? `${selectedLocation.name}${selectedLocation.city ? `, ${selectedLocation.city}` : ""}`
     : "Selected location";
@@ -146,7 +146,7 @@ export function RoomTypesSection() {
           {facilities.map((facility, index) => {
             const Icon = facilityTypeIconMap[facility.type] ?? Building2;
             const acLabel = facility.ac ? "AC" : "Non-AC";
-            const facilityWhatsAppHref = buildFacilityWhatsAppHref(locationLabel, facility);
+            const facilityWhatsAppHref = buildFacilityWhatsAppHref(whatsappBase, locationLabel, facility);
 
             return (
               <motion.div
@@ -222,7 +222,7 @@ export function RoomTypesSection() {
                           aria-label={`Call to enquire about ${facility.name} at ${locationLabel}`}
                           onClick={() =>
                             trackPhoneClick(
-                              CONTACT_DETAILS.booking.mobile,
+                              contactNumber,
                               `rooms_section:${selectedLocation?.id || "unknown"}:${facility.name}`
                             )
                           }

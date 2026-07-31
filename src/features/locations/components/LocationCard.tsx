@@ -14,7 +14,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button";
 import type { Location } from "@/data/sansthan-data";
 import { MapPin, MessageCircle } from "lucide-react";
-import { WHATSAPP_LINK } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { trackWhatsAppClick } from "@/lib/analytics/events";
 
 interface LocationCardProps {
@@ -22,6 +22,7 @@ interface LocationCardProps {
 }
 
 export function LocationCard({ location }: LocationCardProps) {
+  const { whatsappHref: WHATSAPP_LINK } = useContactNumber();
   return (
     <Card className="group overflow-hidden flex flex-col h-full border-none shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-card">
       <div className="aspect-video bg-muted relative overflow-hidden">

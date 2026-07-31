@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import { PRIMARY_NUMBER, resolveContactNumber, toTelHref, toWhatsAppHref } from "@/lib/contact-number";
 
 export interface ContactNumber {
-  /** The phone number string to display (e.g. "+918969871378"). */
+  /** The phone number string to display (e.g. "+917033516657"). */
   number: string;
   /** `tel:` href for the current number. */
   telHref: string;

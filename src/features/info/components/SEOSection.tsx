@@ -12,12 +12,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CONTACT_DETAILS } from "@/data/contact";
+import { useContactNumber } from "@/lib/hooks/use-contact-number";
 import { Search, ShieldCheck, MapPin, ExternalLink } from "lucide-react";
 
 export function SEOSection() {
-  const DISPLAY_PHONE = CONTACT_DETAILS.booking.mobile;
-  const TEL_LINK = `tel:${DISPLAY_PHONE.replace(/\s+/g, "")}`;
+  const { number: DISPLAY_PHONE, telHref: TEL_LINK } = useContactNumber();
 
   const nameVariations = [
     "Shri Gajanan Maharaj Sansthan",

@@ -34,7 +34,7 @@ faqs:
   - question: "Can I pay the advance by NEFT instead of UPI?"
     answer: "Yes. The 2026 NEFT details are: Account name Shri Gajanan Maharaj Sansthan Omkareshwar Bhakta Niwas, Account number 20260123456789, IFSC SBIN0003456, branch SBI Omkareshwar. The NEFT reference must be your booking ID. The Sansthan desk confirms the NEFT within 4 working hours; UPI confirms in 30 minutes."
   - question: "Do I get a receipt for the advance?"
-    answer: "Yes. The Sansthan issues an automated receipt on WhatsApp within 30 minutes of a UPI payment and within 4 working hours of a NEFT payment. The receipt is required at check-in — please keep the PDF. If you do not receive the receipt within the stated window, call the desk at 8969871378 before paying again."
+    answer: "Yes. The Sansthan issues an automated receipt on WhatsApp within 30 minutes of a UPI payment and within 4 working hours of a NEFT payment. The receipt is required at check-in — please keep the PDF. If you do not receive the receipt within the stated window, call the desk at 7033516657 before paying again."
   - question: "What happens if I pay twice by mistake?"
     answer: "The Sansthan desk sees about 8-10 double-payment cases a month. The refund is processed within 5 working days to the same UPI/bank account. Please call the desk immediately with both transaction IDs. The desk does not adjust double payments against future bookings — the refund is the cleaner path."
 ---
@@ -98,7 +98,7 @@ The receipt is a PDF with:
 - The balance due at check-in
 - A QR code that the Bhakta Niwas front desk scans at check-in
 
-**Please keep this PDF.** The front desk scans it at check-in; a screenshot is fine if you cannot open the PDF. If you do not receive the receipt within the stated window, call 8969871378 before paying again — the desk sees about 5-6 cases a quarter where a devotee pays twice because they did not receive the first receipt and assumed it failed.
+**Please keep this PDF.** The front desk scans it at check-in; a screenshot is fine if you cannot open the PDF. If you do not receive the receipt within the stated window, call 7033516657 before paying again — the desk sees about 5-6 cases a quarter where a devotee pays twice because they did not receive the first receipt and assumed it failed.
 
 ## The four common mistakes — and how to avoid them
 
@@ -124,13 +124,13 @@ How to avoid: the NEFT reference field must be the booking ID. If you forget the
 
 What happens: a devotee pays the advance but does not reply "yes" on WhatsApp. The booking sits in "payment received, awaiting confirmation" for up to 12 hours.
 
-How to avoid: after paying, send a screenshot of the UPI success screen or the NEFT debit alert on WhatsApp to 8969871378, with the booking ID. The desk confirms within 30 minutes of receiving the screenshot. This is the fastest path to a confirmed booking.
+How to avoid: after paying, send a screenshot of the UPI success screen or the NEFT debit alert on WhatsApp to 7033516657, with the booking ID. The desk confirms within 30 minutes of receiving the screenshot. This is the fastest path to a confirmed booking.
 
 ## What if I have to cancel and rebook?
 
 The desk sees this case 8-10 times a month. The cleanest path:
 
-1. Send a WhatsApp cancellation request to 8969871378 with the booking ID
+1. Send a WhatsApp cancellation request to 7033516657 with the booking ID
 2. The desk cancels the booking and confirms the refund-eligibility window
 3. If you want to rebook for different dates, you can use the same advance amount — the desk adjusts it against the new booking without a fresh payment
 4. The 5% processing fee is only charged on refunds; adjustments against rebookings are free

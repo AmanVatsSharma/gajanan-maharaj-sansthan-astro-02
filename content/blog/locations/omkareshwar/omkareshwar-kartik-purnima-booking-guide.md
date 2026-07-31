@@ -62,7 +62,7 @@ The eight-day cluster is the working unit. If you book only the festival night, 
 The 2026 booking window opens at 9:00 AM IST on 18 September 2026. Three channels open at the same time:
 
 - **Online portal** — median time to a confirmed booking: 14 minutes at 9 AM, faster after 10 AM
-- **WhatsApp desk** at 8969871378 — first 30 messages get confirmed, rest go to waitlist
+- **WhatsApp desk** at 7033516657 — first 30 messages get confirmed, rest go to waitlist
 - **Phone desk** — for international and +91 STD-code calls, 30-40 lines a day
 
 What our 2025 records show: the 18 September 2025 window opening filled the entire eight-day cluster in 11 days. The 23 November 2025 night (Purnima itself) filled in 38 hours. For 2026 we expect the cluster to fill in 8-10 days, and the Purnima night to fill in 24-30 hours.
