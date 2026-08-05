@@ -55,6 +55,6 @@ flowchart TD
 - 2026-02-15: Added latitude/longitude metadata in `sansthan-data` and wired location geo meta tags through SEO metadata generation for stronger local search relevance.
 - 2026-02-15: Location SEO cluster publishing expanded to include Shegaon, Omkareshwar, Pandharpur, and Trimbakeshwar blog guides with mandatory internal links to location detail pages.
 - 2026-06-10: Updated location contacts to single number 7521063034 (via `src/data/contact.ts`).
-- 2026-07-01: Updated location contacts to single number 8969871378 (via `src/data/contact.ts`).
+- 2026-07-01: Updated location contacts to single number 9599417591 (via `src/data/contact.ts`).
 
 

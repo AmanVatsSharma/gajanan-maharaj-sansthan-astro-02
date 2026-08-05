@@ -7,7 +7,7 @@
 #   +91 80531 90691  -> +91 70335 16657   (stale number left by an earlier buggy run)
 #   +91 96612 63850  -> +91 70335 16657
 #   +91 75210 63034  -> +91 70335 16657
-#   +918969871378 / +918053190691 / +919661263850 / +917521063034 -> +917033516657   (plain forms)
+#   +919599417591 / +918053190691 / +919661263850 / +917521063034 -> +917033516657   (plain forms)
 #
 # Scans all .astro/.ts/.tsx/.json/.md/.mjs/.js/.xml/.txt files under src/ and public/.
 # Skips: node_modules, .git, dist, .vercel, .playwright-mcp, content/blog.
@@ -29,7 +29,7 @@ $oldSpaced3 = '+91 96612 63850'
 $oldSpaced4 = '+91 75210 63034'
 
 # Legacy no-space / machine-readable variants to replace.
-$oldPlain1 = '+918969871378'
+$oldPlain1 = '+919599417591'
 $oldPlain2 = '+918053190691'
 $oldPlain3 = '+919661263850'
 $oldPlain4 = '+917521063034'
