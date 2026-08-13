@@ -4,15 +4,18 @@
  * Purpose: React hook returning the per-visitor contact number for the
  * primary/secondary split.
  *
- * Returns the PRIMARY number during SSR and the first client render (so the
- * server-rendered HTML matches and there is no hydration mismatch), then
- * resolves the real per-visitor number (primary or secondary) in a layout
- * effect and re-renders. This guarantees a stable first paint and a flash-free
- * swap to the chosen number.
+ * Backed by the shared singleton store in src/lib/contact-number.ts and
+ * consumed via React's `useSyncExternalStore`. Guarantees:
+ *   - SSR/build + first client render return the PRIMARY (matches prerendered
+ *     HTML, no hydration mismatch / no content flash warnings).
+ *   - Exactly ONE dice roll per visitor, shared by every component on every
+ *     page, so all Call/WhatsApp CTAs show the same number for a given user.
+ *   - When the split config (primary/secondary/weight) changes, returning
+ *     visitors re-roll instead of being locked into a stale stored number.
  */
 
-import { useEffect, useState } from "react";
-import { PRIMARY_NUMBER, resolveContactNumber, toTelHref, toWhatsAppHref } from "@/lib/contact-number";
+import { useSyncExternalStore } from "react";
+import { contactNumberStore, toTelHref, toWhatsAppHref } from "@/lib/contact-number";
 
 export interface ContactNumber {
   /** The phone number string to display (e.g. "+917033516657"). */
@@ -24,12 +27,12 @@ export interface ContactNumber {
 }
 
 export function useContactNumber(): ContactNumber {
-  // Start at the primary so SSR and first client render match the prerendered HTML.
-  const [number, setNumber] = useState<string>(PRIMARY_NUMBER);
-
-  useEffect(() => {
-    setNumber(resolveContactNumber());
-  }, []);
+  // Single shared decision across the whole site; getServerSnapshot = PRIMARY.
+  const number = useSyncExternalStore(
+    contactNumberStore.subscribe,
+    contactNumberStore.getSnapshot,
+    contactNumberStore.getServerSnapshot
+  );
 
   return {
     number,
