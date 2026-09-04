@@ -24,7 +24,7 @@ export const CONTACT_DETAILS = {
     mobile: "+917970580390",
     whatsapp: "+917970580390",
     // Secondary number shown to a per-visitor fraction of traffic.
-    secondary: "+918434289721",
+    secondary: "+917970580390",
     // Probability (0–1) that a given visitor sees the SECONDARY number.
     // 0.5 => 50% primary, 50% secondary.
     secondaryWeight: 0.5,
