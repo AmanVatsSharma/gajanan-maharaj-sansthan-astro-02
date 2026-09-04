@@ -18,7 +18,7 @@ import { useSyncExternalStore } from "react";
 import { contactNumberStore, toTelHref, toWhatsAppHref } from "@/lib/contact-number";
 
 export interface ContactNumber {
-  /** The phone number string to display (e.g. "+917033516657"). */
+  /** The phone number string to display (e.g. "+917970580390"). */
   number: string;
   /** `tel:` href for the current number. */
   telHref: string;

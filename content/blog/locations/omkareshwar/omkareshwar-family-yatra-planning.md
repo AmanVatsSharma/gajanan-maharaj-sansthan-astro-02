@@ -30,7 +30,7 @@ relatedSlugs:
   - "omkareshwar-canteen-and-mahaprasad-guide"
 faqs:
   - question: "How do I book a family suite at Omkareshwar Bhakta Niwas?"
-    answer: "Family suites (₹4,150/night, sleeps 4-6) are booked through our main desk at 7033516657 or via the WhatsApp booking flow. We have 6 family suites at the property. Suites go first in peak weeks (Sawan Mondays, Karthik Purnima), so we recommend booking 4-6 weeks ahead for those periods, 2 weeks ahead for off-peak."
+    answer: "Family suites (₹4,150/night, sleeps 4-6) are booked through our main desk at 7970580390 or via the WhatsApp booking flow. We have 6 family suites at the property. Suites go first in peak weeks (Sawan Mondays, Karthik Purnima), so we recommend booking 4-6 weeks ahead for those periods, 2 weeks ahead for off-peak."
   - question: "Do you offer a group discount for 10 or more pilgrims?"
     answer: "Yes. For groups of 10+ pilgrims travelling together, we offer a 10% rebate on the room tariff and one complimentary bed in a dormitory for the group's group-leader. Corporate and yatra-shala groups of 20+ get a separate rate card — call the duty manager directly to negotiate."
   - question: "Is Omkareshwar suitable for very young children?"
@@ -106,7 +106,7 @@ A solo yatri is not a "family" in the booking sense, but it is a real person, an
 
 - **Best room:** the dormitory (₹200/bed) is the cheapest and most social — most solo pilgrims make friends in dorms. Our dorms are single-gender and have attached common baths.
 - **Privacy option:** a 4-bed non-AC (₹600) is fine for a single person if you want quiet; we do not pro-rate it down further, but we will store your extra beds' worth of luggage at the desk.
-- **Solo female travellers:** our Bhakta Niwas has a female-only dorm block and a 24×7 reception. We have hosted solo women from every Indian state and from 17 countries in 2025. The desk staff will accompany you to the temple and back on request — call 7033516657.
+- **Solo female travellers:** our Bhakta Niwas has a female-only dorm block and a 24×7 reception. We have hosted solo women from every Indian state and from 17 countries in 2025. The desk staff will accompany you to the temple and back on request — call 7970580390.
 - **Safety contacts:** Women Helpline MP 1091/181. Tourist Police Khandwa 0733-2222299. Our desk will coordinate with both if needed.
 
 ## Group bookings (10-40 pilgrims)
@@ -147,7 +147,7 @@ If you tell us in advance that someone in the family has mobility issues, dietar
 - [ ] Family tree drawn with ages and mobility notes
 - [ ] Room mix decided (suites vs 4-bed vs dorm)
 - [ ] Travel dates checked against our [peak-season calendar](omkareshwar-best-time-to-visit)
-- [ ] Booking made via 7033516657 or WhatsApp at least 2 weeks ahead (6 weeks for peak)
+- [ ] Booking made via 7970580390 or WhatsApp at least 2 weeks ahead (6 weeks for peak)
 - [ ] Per-generation mini-itinerary discussed (use our family planner if you want one)
 - [ ] Medical kit and medication for 2 days beyond planned stay
 - [ ] Family lead identified — one person to liaise with the desk
