@@ -210,7 +210,7 @@ Slugs are kebab-case, directory-prefixed. **Implementation step 1 verifies zero 
 | 93 | gajanan-maharaj-punyatithi-guide | Punyatithi |
 | 94 | shegaon-aarti-timings-daily-schedule | daily aarti timings |
 | 95 | gajanan-maharaj-doha-chaupai-meaning | doha/chaupai from Gajanan Vijay |
-| 96 | gajanan-maharaj-teachings-for-daily-life | teachings |
+| 96 | gajanan-maharaj-life-lessons-guide | life lessons (a generated teachings post already exists — link to it) |
 | 97 | gajanan-maharaj-and-dattatreya-tradition | Datta-tradition connection |
 | 98 | gajanan-maharaj-bhakti-vidarbha-legacy | Vidarbha bhakti legacy |
 | 99 | reading-gajanan-vijay-for-beginners | beginner granth guide |

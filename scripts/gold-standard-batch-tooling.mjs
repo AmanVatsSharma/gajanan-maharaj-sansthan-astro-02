@@ -114,7 +114,7 @@ const TOPICS = [
   [93, "spiritual", "gajanan-maharaj-punyatithi-guide", "gajanan maharaj punyatithi"],
   [94, "spiritual", "shegaon-aarti-timings-daily-schedule", "shegaon aarti timings"],
   [95, "spiritual", "gajanan-maharaj-doha-chaupai-meaning", "gajanan maharaj doha chaupai"],
-  [96, "spiritual", "gajanan-maharaj-teachings-for-daily-life", "gajanan maharaj teachings daily life"],
+  [96, "spiritual", "gajanan-maharaj-life-lessons-guide", "gajanan maharaj life lessons"],
   [97, "spiritual", "gajanan-maharaj-and-dattatreya-tradition", "gajanan maharaj dattatreya tradition"],
   [98, "spiritual", "gajanan-maharaj-bhakti-vidarbha-legacy", "gajanan maharaj vidarbha bhakti legacy"],
   [99, "spiritual", "reading-gajanan-vijay-for-beginners", "reading gajanan vijay for beginners"],
@@ -251,13 +251,21 @@ function cmdCheck() {
     }
   }
 
-  // Against existing posts (skip files owned by this batch)
-  const newPaths = new Set(records.map((record) => record.path));
+  // Against existing posts — files at planned paths are skipped only when they
+  // are our own previously-written posts (slug matches the planned slug).
+  const plannedSlugByPath = new Map(records.map((record) => [record.path, record.slug]));
   for (const filePath of getMarkdownFiles(BLOG_ROOT)) {
     const relativePath = path.relative(BLOG_ROOT, filePath).replace(/\\/g, "/");
-    if (newPaths.has(relativePath)) continue;
     const parsed = matter(fs.readFileSync(filePath, "utf8"));
     const fileSlug = typeof parsed.data.slug === "string" ? parsed.data.slug.trim() : path.basename(relativePath, ".md");
+
+    if (plannedSlugByPath.has(relativePath)) {
+      if (fileSlug === plannedSlugByPath.get(relativePath)) {
+        continue; // our own post from a previous run — skip self-comparison
+      }
+      failures.push(`planned path occupied by existing post: ${relativePath} (slug "${fileSlug}")`);
+    }
+
     if (slugSeen.has(fileSlug)) {
       failures.push(`slug collision with existing post: ${fileSlug} (${relativePath})`);
     }
