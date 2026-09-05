@@ -110,4 +110,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/trimbakeshwar/trimbakeshwar-darshan-timing-guide.md",
   "locations/trimbakeshwar/trimbakeshwar-bhakta-niwas-accommodation-guide.md",
   "guides/all-12-jyotirlinga-planning.md",
+  // 2026-09-05 gold-standard batch 1 — Shegaon (#29–38)
+  "locations/shegaon/shegaon-bhakta-niwas-check-in-check-out-timings.md",
+  "locations/shegaon/shegaon-bhakta-niwas-online-booking-vs-whatsapp.md",
+  "locations/shegaon/shegaon-bhakta-niwas-refund-and-cancellation-guide.md",
+  "locations/shegaon/shegaon-bhakta-niwas-dormitory-vs-family-rooms.md",
+  "locations/shegaon/shegaon-bhakta-niwas-room-types-and-facilities.md",
+  "locations/shegaon/shegaon-bhakta-niwas-common-booking-mistakes.md",
+  "locations/shegaon/shegaon-room-booking-near-samadhi-mandir.md",
+  "locations/shegaon/shegaon-bhakta-niwas-booking-confirmation-timeline.md",
+  "locations/shegaon/shegaon-visawa-room-booking-guide.md",
+  "locations/shegaon/shegaon-room-booking-during-ekadashi-and-festivals.md",
 ];
