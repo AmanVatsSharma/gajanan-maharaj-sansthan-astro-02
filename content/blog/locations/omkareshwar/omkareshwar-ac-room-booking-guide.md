@@ -55,7 +55,7 @@ The cooled portion of the tariff card, as published across the Sansthan network:
 | 3 Bed AC | 3 | ₹2,050 | Small families in the hot season |
 | 4 Bed AC | 4 | ₹2,550 | Households of four through the burning months |
 
-Two honest readings, so that no family overpays. The gaps between the rows are small — four hundred rupees separates the largest cooled room from the smallest — and that narrowness is deliberate: cooling should be chosen by party size first and season second, never purchased as a status. And the comparison that actually matters for most pilgrims is not among the cooled rows but between them and their ventilated sisters at ₹1,750 and ₹2,250; that decision is the next section's whole subject.
+Two honest readings, so that no family overpays. The gaps between the rows are small — nine hundred rupees separates the largest cooled room from the smallest — and that narrowness is deliberate: cooling should be chosen by party size first and season second, never purchased as a status. And the comparison that actually matters for most pilgrims is not among the cooled rows but between them and their ventilated sisters at ₹1,750 and ₹2,250; that decision is the next section's whole subject.
 
 | Month you travel | Our desk's usual counsel |
 |---|---|
@@ -66,7 +66,7 @@ Two honest readings, so that no family overpays. The gaps between the rows are s
 
 ## The season that earns the premium
 
-A family should feel no romance about this decision — the arithmetic is weather, and the weather is predictable. The hot build begins as spring closes and holds through the monsoon's first thunder; in those months the cooled rows are not comfort but equipment, the way walking shoes are equipment. Parties that will stand in darshan queues through a Malwa afternoon, or walk the island's parikrama in daylight, should sleep cool the night before and rest cool the afternoon after. The premium of ₹300 to ₹500 over the ventilated rows buys, in practice, a second darshan: the party that rested at noon is the party at the evening aarti, whose hours and crowds our [Omkareshwar darshan timings hub](/blog/omkareshwar-darshan-timings) keeps updated for every season.
+A family should feel no romance about this decision — the arithmetic is weather, and the weather is predictable. The hot build begins as spring closes and holds through the monsoon's first thunder; in those months the cooled rows are not comfort but equipment, the way walking shoes are equipment. Parties that will stand in darshan queues through a Malwa afternoon, or walk the island's parikrama in daylight, should sleep cool the night before and rest cool the afternoon after. The flat premium of three hundred rupees over the ventilated rows buys, in practice, a second darshan: the party that rested at noon is the party at the evening aarti, whose hours and crowds our [Omkareshwar darshan timings hub](/blog/omkareshwar-darshan-timings) keeps updated for every season.
 
 There is a subtler case for cooling that the desk hears from elders' children: rest quality before travel. Omkareshwar is reached, for most pilgrims, through Indore and a further road journey; a party arriving heated and dehydrated begins its pilgrimage in deficit. A cooled room on the arrival night — even for a winter-shoulder trip in a hot year, when March arrives early — restores the deficit before the first queue. For such parties the request note is simple: state the arrival's expected heat exposure and the elders in the party, and let the office weigh it.
 
