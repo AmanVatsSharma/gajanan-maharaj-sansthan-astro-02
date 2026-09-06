@@ -90,6 +90,8 @@ The short walk is walked four or six times a day, and it repays a little craft. 
 
 Safety on the walk is mostly the safety of arrangement. Keep the room's card or the office's address slip on each pilgrim, including the children; agree the assembly point before each outing, because a temple crowd separates parties for minutes at a time; and let the family's slowest member set the pace, resting when they rest, so the walk stays what it was booked to be — a pleasure with a sanctum at the end of it. After the evening aarti, the descent home is lantern-lit and gentle, the day's last procession being your own family's, walking downhill toward supper with the temple's bells still somewhere behind.
 
+## Frequently asked questions
+
 ### How close to the temple is the Sansthan accommodation at Trimbakeshwar?
 
 Close enough to make the pre-dawn pooja hours a short walk rather than a journey — the placement particulars are the office's to state for your dates and room type, and the [location page](/locations/trimbakeshwar) holds the essentials; ask the walking question explicitly in the request.

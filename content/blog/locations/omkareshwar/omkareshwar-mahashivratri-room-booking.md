@@ -79,7 +79,7 @@ The nightly tariffs do not rise on festival dates — what changes is availabili
 | 4 Bed Non-AC | ₹2,250 | ₹4,500 | The joint family, February's chill forgiving |
 | 4 Bed AC | ₹2,550 | ₹5,100 | The full rotation plan: two on, two resting |
 
-Shivaratri falls in late winter, note, so the non-AC rows are genuinely defensible — though the cooled rows still buy the post-vigil forenoon sleep, and ₹900 is all that separates the couple's 2 Bed AC from the family's 4 Bed AC across the pair of nights' nightly step from ₹1,650 to ₹2,550. Every room's attached bath runs hot water, which on a February night of worship is not a luxury either. The room-by-room inventory is in the [room types and facilities guide](/blog/omkareshwar-bhakta-niwas-room-types-and-facilities).
+Shivaratri falls in late winter, note, so the non-AC rows are genuinely defensible — though the cooled rows still buy the post-vigil forenoon sleep, and ₹900 a night — ₹1,800 across the pair of nights — separates the couple's 2 Bed AC from the family's 4 Bed AC, the nightly step from ₹1,650 to ₹2,550. Every room's attached bath runs hot water, which on a February night of worship is not a luxury either. The room-by-room inventory is in the [room types and facilities guide](/blog/omkareshwar-bhakta-niwas-room-types-and-facilities).
 
 ## From request to vigil: the sequence
 

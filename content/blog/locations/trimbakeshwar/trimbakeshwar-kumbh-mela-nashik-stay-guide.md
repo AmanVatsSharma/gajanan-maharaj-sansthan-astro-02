@@ -93,6 +93,8 @@ A mela rewrites the packing list, and the families who fare best carry less and 
 
 The clothing counsel follows the river. The snan is a full bath in public company, and the tradition's answer is the simplest dhoti or saree the family owns — nothing precious, nothing heavy when wet, and a dry set waiting at the room for the walk back. Footwear should be the pair the family can afford to lose and still walk home in, because a mela's shoe stands hold millions of pairs and sort them by mercy rather than by system. Somewhere in the pack, too, a small first-aid kit — the blister, the headache, the twisted ankle of an unseen step — because a crowd's minor casualties are the family's own to treat. The mela's shops will sell everything; what they cannot sell is the hour of the morning, and the prepared family keeps its hours.
 
+## Frequently asked questions
+
 ### When is the next Nashik-Trimbakeshwar Kumbh, and when should we book?
 
 The Simhastha returns on a cycle of roughly twelve years, and its exact dates are announced by the authorities rather than anticipated by guides — the moment an announcement comes, treat the booking as urgent; mela-period rooms are claimed months ahead of the snan days.
