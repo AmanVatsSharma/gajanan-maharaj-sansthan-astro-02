@@ -176,4 +176,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/trimbakeshwar/trimbakeshwar-pune-devotees-travel-and-stay-plan.md",
   "locations/trimbakeshwar/trimbakeshwar-diwali-and-winter-stay-guide.md",
   "locations/trimbakeshwar/trimbakeshwar-bhakta-niwas-devotee-experience-tips.md",
+  // 2026-09-05 gold-standard batch 7 — Gajanan Maharaj spiritual guides (#89–98)
+  "spiritual/gajanan-maharaj-jayanti-celebration-guide.md",
+  "spiritual/gajanan-maharaj-miracles-stories.md",
+  "spiritual/gajanan-maharaj-bhajans-collection.md",
+  "spiritual/gajanan-maharaj-chaturmas-guide.md",
+  "spiritual/gajanan-maharaj-punyatithi-guide.md",
+  "spiritual/shegaon-aarti-timings-daily-schedule.md",
+  "spiritual/gajanan-maharaj-doha-chaupai-meaning.md",
+  "spiritual/gajanan-maharaj-life-lessons-guide.md",
+  "spiritual/gajanan-maharaj-and-dattatreya-tradition.md",
+  "spiritual/gajanan-maharaj-bhakti-vidarbha-legacy.md",
 ];
