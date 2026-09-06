@@ -132,4 +132,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/shegaon/shegaon-nearby-devasthan-visit-with-overnight-stay.md",
   "locations/pandharpur/pandharpur-bhakta-niwas-check-in-check-out-timings.md",
   "locations/pandharpur/pandharpur-bhakta-niwas-online-booking-vs-whatsapp.md",
+  // 2026-09-05 gold-standard batch 3 — Pandharpur stay and wari booking (#49–58)
+  "locations/pandharpur/pandharpur-bhakta-niwas-refund-and-cancellation-guide.md",
+  "locations/pandharpur/pandharpur-bhakta-niwas-dormitory-vs-family-rooms.md",
+  "locations/pandharpur/pandharpur-bhakta-niwas-room-types-and-facilities.md",
+  "locations/pandharpur/pandharpur-bhakta-niwas-common-booking-mistakes.md",
+  "locations/pandharpur/pandharpur-wari-accommodation-booking-guide.md",
+  "locations/pandharpur/pandharpur-ashadhi-ekadashi-room-booking.md",
+  "locations/pandharpur/pandharpur-vitthal-rukmini-darshan-and-stay-plan.md",
+  "locations/pandharpur/pandharpur-chandrabhaga-snana-and-stay-planning.md",
+  "locations/pandharpur/pandharpur-room-booking-near-vitthal-temple.md",
+  "locations/pandharpur/pandharpur-kartik-ekadashi-stay-booking.md",
 ];
