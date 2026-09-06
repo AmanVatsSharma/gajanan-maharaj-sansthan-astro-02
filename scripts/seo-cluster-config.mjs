@@ -165,4 +165,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/trimbakeshwar/trimbakeshwar-kaal-sarp-dosh-pooja-and-stay-plan.md",
   "locations/trimbakeshwar/trimbakeshwar-kumbh-mela-nashik-stay-guide.md",
   "locations/trimbakeshwar/trimbakeshwar-room-booking-near-temple-walking-distance.md",
+  // 2026-09-05 gold-standard batch 6 — Trimbakeshwar stay and pooja planning (#79–88)
+  "locations/trimbakeshwar/trimbakeshwar-monsoon-visit-and-room-booking.md",
+  "locations/trimbakeshwar/trimbakeshwar-ac-room-booking-guide.md",
+  "locations/trimbakeshwar/trimbakeshwar-family-room-booking-with-kids.md",
+  "locations/trimbakeshwar/trimbakeshwar-accessible-room-booking.md",
+  "locations/trimbakeshwar/trimbakeshwar-darshan-queue-timing-and-stay-plan.md",
+  "locations/trimbakeshwar/trimbakeshwar-one-night-stay-before-pooja.md",
+  "locations/trimbakeshwar/trimbakeshwar-mumbai-devotees-weekend-stay-plan.md",
+  "locations/trimbakeshwar/trimbakeshwar-pune-devotees-travel-and-stay-plan.md",
+  "locations/trimbakeshwar/trimbakeshwar-diwali-and-winter-stay-guide.md",
+  "locations/trimbakeshwar/trimbakeshwar-bhakta-niwas-devotee-experience-tips.md",
 ];
