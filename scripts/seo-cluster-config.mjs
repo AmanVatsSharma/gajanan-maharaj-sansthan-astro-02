@@ -154,4 +154,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/omkareshwar/omkareshwar-group-room-booking-guide.md",
   "locations/omkareshwar/omkareshwar-winter-devotee-stay-guide.md",
   "locations/omkareshwar/omkareshwar-darshan-queue-and-stay-timing-plan.md",
+  // 2026-09-05 gold-standard batch 5 — Omkareshwar close + Trimbakeshwar pooja stay (#69–78)
+  "locations/omkareshwar/omkareshwar-one-night-stay-plan.md",
+  "locations/omkareshwar/omkareshwar-room-booking-with-elderly-devotees.md",
+  "locations/omkareshwar/omkareshwar-narmada-parikrama-stay-planning.md",
+  "locations/omkareshwar/omkareshwar-mahashivratri-room-booking.md",
+  "locations/omkareshwar/omkareshwar-first-timer-stay-and-darshan-plan.md",
+  "locations/omkareshwar/omkareshwar-sawan-room-availability-guide.md",
+  "locations/trimbakeshwar/trimbakeshwar-narayan-nagbali-pooja-stay-booking.md",
+  "locations/trimbakeshwar/trimbakeshwar-kaal-sarp-dosh-pooja-and-stay-plan.md",
+  "locations/trimbakeshwar/trimbakeshwar-kumbh-mela-nashik-stay-guide.md",
+  "locations/trimbakeshwar/trimbakeshwar-room-booking-near-temple-walking-distance.md",
 ];
