@@ -209,4 +209,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "guides/bhakta-niwas-vs-ota-direct-booking.md",
   "guides/sansthan-room-booking-for-senior-citizens.md",
   "guides/sansthan-room-booking-id-and-document-requirements.md",
+  // 2026-09-05 gold-standard batch 10 — booking hub capstones (#19-28)
+  "guides/sansthan-room-booking-with-darshan-combo.md",
+  "guides/bhakta-niwas-check-in-process-all-locations.md",
+  "guides/bhakta-niwas-room-booking-calendar.md",
+  "guides/sansthan-room-booking-mistakes-to-avoid.md",
+  "guides/bhakta-niwas-long-stay-room-booking-rules.md",
+  "guides/sansthan-canteen-mahaprasad-with-room-booking.md",
+  "guides/bhakta-niwas-room-booking-with-elderly-parents.md",
+  "guides/sansthan-room-booking-safety-and-security-guide.md",
+  "guides/bhakta-niwas-booking-customer-support-guide.md",
+  "guides/sansthan-four-location-room-booking-overview.md",
 ];
