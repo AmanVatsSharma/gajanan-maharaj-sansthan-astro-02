@@ -19,7 +19,7 @@ npm run preview      # serve dist/ locally
 npm run lint         # eslint
 
 # SEO CI gate (runs after build)
-npm run seo:ci      # lint + build + blog validation + sitemap + rss + robots
+npm run seo:ci      # lint + phone guard + build + blog validation + sitemap + rss + robots
 
 # Individual SEO checks (run after build)
 npm run verify:sitemap
@@ -27,6 +27,7 @@ npm run verify:rss
 npm run verify:robots
 npm run verify:blog-content
 npm run verify:blog-content:report   # detailed SEO surface report
+npm run verify:phone                 # phone-number consistency (no build needed)
 
 # Live redirect check (opt-in)
 SEO_VERIFY_LIVE_REDIRECTS=true npm run verify:live-redirects
@@ -125,6 +126,7 @@ Blog pages use these for static path generation (prerendered at build time).
 ### Static data layer
 
 `src/data/` contains typed domain objects used throughout the site:
+- `contact.ts` — **single source of truth for every phone/WhatsApp number on the site** (`CONTACT_DETAILS.booking`). All components, pages, FAQ answers, JSON-LD schemas, and even blog post copy must use this number. To change the number: edit `src/data/contact.ts` only, then run `npm run verify:phone` — it fails CI on any stale number left anywhere in `src/`, `content/` (including blog posts), `scripts/`, or root docs, and lists the exact files to fix. Never hardcode a phone number anywhere else.
 - `sansthan-data.ts` — locations, facilities, amenities, contact info
 - `rooms.ts` — Bhakta Niwas room types with pricing
 - `festivals.ts` — annual festival calendar

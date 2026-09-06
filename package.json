@@ -15,7 +15,8 @@
     "verify:live-redirects": "node scripts/verify-live-host-redirects.mjs",
     "verify:blog-content": "node scripts/validate-blog-content.mjs",
     "verify:blog-content:report": "node scripts/validate-blog-content.mjs --seo-guardrail-report",
-    "seo:ci": "npm run lint && npm run build && npm run verify:robots"
+    "seo:ci": "npm run lint && npm run verify:phone && npm run build && npm run verify:robots",
+    "verify:phone": "node scripts/verify-phone-consistency.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",

@@ -231,7 +231,7 @@ faqs:
    - Has a specific 2026 data point (fare, date, time, distance)
    - Has a real visitor quote with name, city, family size, date
    - Has an "office note" callout for time-sensitive data
-   - References the Sansthan contact desk `7970580390` where relevant
+   - References the Sansthan contact desk `7070604312` where relevant
 
 3. **At least one table** for fares, dates, or schedules (tables rank in featured snippets).
 
@@ -475,7 +475,7 @@ Read 3 of the Omkareshwar rewrites end-to-end before writing anything:
 - **Specific 2026 data everywhere** — no placeholders, no "varies", no "depending on season"
 - **Real visitor quotes** with full attribution: name, city, family size, date
 - **Office note callouts** for time-sensitive data (Sawan Mondays, Mahashivratri)
-- **Direct phone reference** to the Sansthan desk (`7970580390` for the Omkareshwar desk; for Trimbakeshwar, check `src/data/sansthan-data.ts`)
+- **Direct phone reference** to the Sansthan desk (`7070604312` for the Omkareshwar desk; for Trimbakeshwar, check `src/data/sansthan-data.ts`)
 - **Honest trade-offs** — what the desk recommends, what they don't, why
 - **Numbers and percentages** where applicable (occupancy, queue time, booking window)
 

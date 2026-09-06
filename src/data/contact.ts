@@ -21,10 +21,10 @@ export const CONTACT_DETAILS = {
   },
   booking: {
     // Primary contact number for site-wide call/WhatsApp links.
-    mobile: "+917970580390",
-    whatsapp: "+917970580390",
+    mobile: "+917070604312",
+    whatsapp: "+917070604312",
     // Secondary number shown to a per-visitor fraction of traffic.
-    secondary: "+917970580390",
+    secondary: "+917070604312",
     // Probability (0–1) that a given visitor sees the SECONDARY number.
     // 0.5 => 50% primary, 50% secondary.
     secondaryWeight: 0.5,

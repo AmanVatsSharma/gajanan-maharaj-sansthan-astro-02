@@ -53,5 +53,7 @@ flowchart TD
 - 2026-02-15: Blog SEO content validation now enforces internal booking/contact intent links to strengthen conversion-oriented internal linking.
 - 2026-06-10: Updated booking mobile/WhatsApp number to 7521063034 in `src/data/contact.ts` and all FAQ entries.
 - 2026-07-01: Updated booking mobile/WhatsApp number to 9599417591 in `src/data/contact.ts`, all FAQ entries, and manual seed blog posts.
+- 2026-09-06: Updated booking mobile/WhatsApp number to 7070604312 in `src/data/contact.ts` (single source of truth); all FAQ entries, Omkareshwar blog posts, and consumers pick it up automatically.
+- 2026-09-06: Added `npm run verify:phone` CI guard (`scripts/verify-phone-consistency.mjs`, wired into `seo:ci`) that fails on any phone number outside `CONTACT_DETAILS` in src/, content/ (incl. blog), scripts/, and root docs — number changes are now enforced to be one-place.
 
 
