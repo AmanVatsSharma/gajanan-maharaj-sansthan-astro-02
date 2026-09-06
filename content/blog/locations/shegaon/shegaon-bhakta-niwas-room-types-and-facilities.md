@@ -80,6 +80,8 @@ The ₹300 difference between AC and non-AC versions of the same bed count makes
 
 Two practical notes. Elders resting through a hot afternoon before the evening aarti benefit from AC more than any other travellers — if your yatra falls in April–June with grandparents in the party, take the AC room without agonising. And children sleep through summer nights better in AC rooms, which protects the next morning's early darshan. The seasonal backdrop, including festival timing, is covered in our [best time to visit Shegaon guide](/blog/shegaon-best-time-to-visit).
 
+A word on how a Shegaon summer day unfolds, because it should shape the room as much as the dates do. In April, May, and June the heat builds through the late morning, holds through the afternoon, and yields only as the evening approaches — the hours a family most needs its room are exactly the hours the sun is at its hardest. The practical summer pattern is therefore darshan in the early morning, mahaprasad, a closed and cooled room through the afternoon, and a return to the mandir as the light softens. Book the AC configuration for those months without treating it as a luxury: it is what converts the day's worst hours into the stay's most restful ones. And because every family reasons the same way, AC rooms are the first configurations to thin out in the summer festival windows — request them early rather than negotiating for them late.
+
 ## Facilities inside and around the room
 
 Every published room type carries the same facility baseline, maintained by the Sansthan across its network:
@@ -129,6 +131,8 @@ The request flow takes minutes when you arrive prepared:
 4. **Add special requests in the remarks** — adjoining rooms, ground floor, early arrival — where the office will see them with the request itself.
 5. **Save the submission record**, then the office's acknowledgement, and finally the confirmation that names your room type.
 6. **Carry photo ID for every adult** — Aadhaar, Voter ID, or equivalent — matched to the names in the request.
+
+The same remarks field is where a specific wing or room request belongs. If your family needs a ground-floor room for an elder who cannot manage stairs, adjoining doors for a split party, or quieter placement for light-sleeping children, write the preference into the request itself rather than raising it at the desk. A note entered at booking travels with your file to whoever draws up the day's allocation chart, so the preference is already in view when rooms are assigned; the same request made on arrival day depends entirely on what the chart happens to hold. The office honours such preferences as allocation allows and says so plainly when it cannot — either way, asking early costs nothing and often decides the question.
 
 At check-in the desk matches your confirmation against the day's allocation chart, records your entry time to start the 24-hour cycle, and hands over the keys — the full sequence is walked through in our [check-in and check-out timings guide](/blog/shegaon-bhakta-niwas-check-in-check-out-timings), and the request discipline behind it is part of the wider [complete Bhakta Niwas booking guide](/blog/bhakta-niwas-complete-booking-guide). If your dates fall near ekadashi or a Shegaon utsav, read our [ekadashi and festival booking guide](/blog/shegaon-room-booking-during-ekadashi-and-festivals) before requesting, because advance windows tighten sharply in those weeks.
 

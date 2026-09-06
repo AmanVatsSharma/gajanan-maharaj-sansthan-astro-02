@@ -41,7 +41,7 @@ This guide introduces Visawa properly — where it sits, what its character is, 
 
 ## Introducing Visawa to pilgrims
 
-Many devotees planning a first Shegaon trip discover only Bhakta Niwas and Anand Vihar in their searches, and are surprised to learn the Sansthan maintains a third option. Visawa — recorded in the Sansthan's own location directory as accommodation "conveniently located for travellers arriving by train" — is that third door, and it exists because Shegaon's trains impose a particular rhythm on pilgrims.
+Many devotees planning a first Shegaon trip discover only Bhakta Niwas and Anand Vihar in their searches, and are surprised to learn the Sansthan maintains a third option. Visawa — recorded in the Sansthan's own location directory as accommodation "conveniently located for travelers arriving by train" — is that third door, and it exists because Shegaon's trains impose a particular rhythm on pilgrims.
 
 That rhythm is real: overnight trains from the Mumbai and Nagpur sides deliver devotees to the Shegaon-Akola belt in the small hours, and departure trains leave at hours that make a station-adjacent room the difference between a calm morning and a rushed one. A complex beside the station absorbs this rhythm — early check-ins after pre-dawn arrivals, luggage deposited on the final day, a short walk to the platform with bags that would otherwise make the mandir-side commute heavy.
 

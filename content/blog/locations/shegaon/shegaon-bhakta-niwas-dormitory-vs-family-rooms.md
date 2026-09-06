@@ -115,6 +115,8 @@ Both nights end at the same place — the darshan line. The difference is only i
 
 One caution on the last profile: do not book a single 4-bed room for six people. Overstuffed rooms strain bathrooms, bedding, and the register; the office will in any case match capacity to headcount, as our [common booking mistakes guide](/blog/shegaon-bhakta-niwas-common-booking-mistakes) explains.
 
+The same logic extends to genuinely multi-generational parties that no single configuration can hold. When an extended yatra gathers a family core of parents and children, a set of grandparents, and a member travelling singly from another city, the honest split is often one family room for the household plus dormitory berths for those on their own — single travellers are directed to the common hall by policy in any case, so the arrangement works with the system rather than against it. Place the whole plan in one request, with the party composition stated exactly as it will arrive, so the office sees one yatra in two parts rather than two unrelated bookings. The halves reunite where it matters — at the aarti, at mahaprasad, on an evening turn around Anand Sagar — rather than in a corridor.
+
 ## Rules that shape the choice
 
 The Sansthan's published booking rules remove most of the guesswork:
