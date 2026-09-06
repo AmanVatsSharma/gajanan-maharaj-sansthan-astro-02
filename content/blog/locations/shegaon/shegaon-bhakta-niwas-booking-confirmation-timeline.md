@@ -63,6 +63,8 @@ Only the confirmation row carries room-allocation weight, and it is the message 
 
 The stage that varies most is the silence between 1 and 2 — and that variance is seasonal, not personal. A request sent on an ordinary Tuesday and one sent three days before the Gajanan Vijay Utsav are simply in different worlds of queue length.
 
+The gap is not dead time, and devotees who use it well arrive calmer. Hold your travel plans loosely for a day or two — do not lock tickets you cannot change until the dates are firm in the confirmation. Keep a watch on the channel you submitted through, so an office reply or a clarification question is answered the same day rather than discovered a week later. And for peak dates, keep one alternative ready: a second window of travel dates you could accept, or a neighbouring complex you would be content with, so that if the office offers an option you can say yes in one reply instead of starting a family debate.
+
 ## The acknowledgement, decoded
 
 When the first reply arrives, read it as the office intends:
@@ -144,7 +146,7 @@ Names against ID cards, dates against your plan, the room type, the reference nu
 
 ### Does a confirmation expire?
 
-Your room is held per the prevailing policy for your dates — but any change of plan should be communicated to the office in writing immediately, as our [refund and cancellation guide](/blog/shegaon-bhakta-niwas-refund-and-cancellation-guide) explains.
+Once confirmed, the office holds your room for your dates under its current holding policy — but any change of plan should be communicated to the office in writing immediately, as our [refund and cancellation guide](/blog/shegaon-bhakta-niwas-refund-and-cancellation-guide) explains.
 
 ## Wait well, arrive ready
 

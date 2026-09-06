@@ -24,7 +24,7 @@ locationIds:
   - "pandharpur-math"
   - "trimbakeshwar"
 relatedSlugs:
-  - "gajanan-maharaj-seva-opportunities-guide"
+  - "gajanan-maharaj-sansthan-room-booking-whatsapp-guide"
   - "gajanan-maharaj-sansthan-room-booking-phone-number"
   - "bhakta-niwas-complete-booking-guide"
   - "how-to-book-bhakta-niwas-online"
@@ -51,7 +51,7 @@ Understanding the sequence removes most of the anxiety first-time users feel. Th
 4. **Receive and keep the written confirmation.** The confirmation from the office is your reservation. Save it, carry a printed copy, and bring it with photo ID for each adult to the desk.
 5. **Settle the balance as guided and check in.** At the centre, complete any balance payment per the office's guidance against your receipt, and your 24-hour cycle begins from entry.
 
-Two habits protect this flow. First, keep every message and receipt in one folder on your phone — the paper trail is your friend if any detail needs correcting. Second, if anything about a confirmation looks off, verify it with the office through the [contact page](/contact) before travelling, not after. Our companion guide on [reaching the office by phone](/blog/gajanan-maharaj-sansthan-room-booking-phone-number) covers verification in depth, and the wider [complete Bhakta Niwas booking guide](/blog/bhakta-niwas-complete-booking-guide) holds the full policy picture.
+Two habits protect this flow. First, keep every message and receipt in one folder on your phone — the paper trail is your friend if any detail needs correcting. Second, if anything about a confirmation looks off, verify it with the office through the [contact page](/contact) before travelling, not after. Our companion guide on [reaching the office by phone](/blog/gajanan-maharaj-sansthan-room-booking-phone-number) covers verification in depth, the [WhatsApp room booking guide](/blog/gajanan-maharaj-sansthan-room-booking-whatsapp-guide) explains how the messaging route to the same office works, and the wider [complete Bhakta Niwas booking guide](/blog/bhakta-niwas-complete-booking-guide) holds the full policy picture.
 
 ## Rooms and tariffs across the four centres
 

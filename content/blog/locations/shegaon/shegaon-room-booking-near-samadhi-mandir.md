@@ -87,6 +87,8 @@ The honest tension in this topic: sometimes the room you want and the location y
 
 Notice that the table never suggests changing complexes daily for sport — each move costs a check-in cycle. Pick one base per two or three nights, and let Shegaon's short distances do the rest. And when two options feel equal, let the party's weakest walker decide: the grandmother who tires at the bazaar corner is the constraint that matters, and she will never complain about a shorter walk.
 
+Proximity also reshapes what a rest day feels like. Devotees based far from the mandir tend to plan each day as one long expedition — darshan, prasad, everything in a single outbound loop, because returning is costly. A family at Bhakta Niwas can instead keep the room inside the day's rhythm: out for the morning darshan, back for a lie-down while the sun is high, out again refreshed for the evening aarti. For elderly devotees this intermediate return is the whole difference — a midday hour with feet up and medicines at hand restores a grandmother whom a single long circuit would exhaust, and it turns a two-darshan day from an effort into a pleasure.
+
 ## An arrival sequence that saves steps
 
 For the classic pattern — a family arriving by morning train and sleeping near the mandir — this sequence has been refined by thousands of devotees before you:

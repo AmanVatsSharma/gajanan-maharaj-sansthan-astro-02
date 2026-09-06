@@ -43,6 +43,8 @@ Shegaon is not a town with a booking problem; it is a town with a seasonal one. 
 
 In those weeks, the office is allocating rooms at speed from requests that arrived weeks apart. A request that says four but brings five, a name spelled two ways, a second identical request that arrived the same morning — each of these must pause the queue while a human resolves it, and the family behind you in that queue is waiting too. The mistakes rarely cost anyone their darshan; what they cost is certainty, calm, and sometimes the specific room your grandmother needed on the ground floor.
 
+It is worth being precise about the compounding. On an ordinary Tuesday in a quiet fortnight, the same office has room to be patient with a mismatched name — a corrected message settles the matter before the family reaches the platform. On an ekadashi weekend the identical slip behaves differently: the queue is longer, the person resolving it is handling ten other requests, and a fix that takes five minutes midweek can quietly consume the margin by which your room was being held. Experienced devotees therefore treat festival-window requests not as ordinary requests made sooner, but as the same request under a stricter discipline — every detail right the first time, because the second attempt competes with a far larger crowd.
+
 The good news is asymmetrical: every mistake in this guide takes under a minute to prevent, and prevention is entirely in your hands before you send anything. The office will meet you more than halfway once your request is clean — but the cleanliness is your seva to perform.
 
 ## Mistakes with your party details

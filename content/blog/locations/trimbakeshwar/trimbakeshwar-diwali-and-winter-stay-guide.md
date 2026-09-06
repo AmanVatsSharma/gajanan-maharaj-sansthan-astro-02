@@ -61,7 +61,7 @@ Winter turns the tariff card's logic upside down from summer: the non-AC rows ar
 | 3 Bed Non-AC | 3 | ₹1,750 | ₹5,250 | The small household's default |
 | 3 Bed AC | 3 | ₹2,050 | ₹6,150 | Only for parties who run cold |
 | 4 Bed Non-AC | 4 | ₹2,250 | ₹6,750 | The standard family booking of the season |
-| 4 Bed AC | 4 | ₹2,550 | ₹7,650 | Festival-fortnite siege comfort, rarely otherwise |
+| 4 Bed AC | 4 | ₹2,550 | ₹7,650 | Festival-fortnight siege comfort, rarely otherwise |
 | 2 Bed AC | 2 | ₹1,650 | ₹4,950 | The couple's quiet-season room |
 
 A four-member family's three-night stay in the 4 Bed Non-AC comes to ₹6,750 — ₹1,687.50 for each pilgrim across the whole visit — and the cooled version of the identical room would add exactly ₹900 across the same nights, a sum the winter almost never justifies. What the season does justify, loudly, is the bathroom: every row carries an attached bathroom with hot water, and in December and January that hot water is the difference between a 5 AM ritual bath being an act of devotion and an act of heroism. Ask at the desk about the hot-water arrangement for your wing when you check in; the facilities inventory is catalogued in the [Trimbakeshwar room types and facilities guide](/blog/trimbakeshwar-bhakta-niwas-room-types-and-facilities).

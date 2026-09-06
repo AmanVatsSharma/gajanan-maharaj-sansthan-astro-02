@@ -56,7 +56,7 @@ Three practical shifts mark the monsoon day at Trimbakeshwar, and each one touch
 
 ## Choosing rooms for the wet months
 
-The tariff card reads the same in July as in January — the Sansthan's room rates do not swing by season — but the *right* reading of it changes. In the monsoon, the non-AC rows are the natural choice: daytime temperatures in the wet months sit in the low twenties in the hills, ceilings fans and mountain air do the work a compressor would do elsewhere, and the money saved is better spent on an extra night or an extra prasad packet. The current published rates:
+The tariff card reads the same in July as in January — the Sansthan's room rates do not swing by season — but the *right* reading of it changes. In the monsoon, the non-AC rows are the natural choice: daytime temperatures in the wet months sit in the low twenties in the hills, ceiling fans and mountain air do the work a compressor would do elsewhere, and the money saved is better spent on an extra night or an extra prasad packet. The current published rates:
 
 | Option | Sleeps | Nightly rate | Two nights | Monsoon verdict |
 |---|---|---|---|---|

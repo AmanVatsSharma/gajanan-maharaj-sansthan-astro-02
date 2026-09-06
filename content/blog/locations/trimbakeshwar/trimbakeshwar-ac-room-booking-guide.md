@@ -97,7 +97,7 @@ On the heaviest dates, every AC room in town can be spoken for, and the plan sho
 
 ### How much extra does an AC room cost at Trimbakeshwar?
 
-Exactly ₹300 per night over the same room without cooling — ₹1,650 for the 2 Bed AC against the cooled family rows of ₹2,050 for three beds and ₹2,550 for four. Across a two-night stay the premium is ₹600; across three, ₹900.
+Exactly ₹300 per night over the same bed size without cooling. To read the arithmetic plainly: the 2 Bed AC is ₹1,650 a night, while the cooled family rows start at ₹2,050 for the 3 Bed AC — a ₹400 step up for one extra bed as well as air-conditioning — and reach ₹2,550 for the 4 Bed AC. Across a two-night stay the premium is ₹600; across three, ₹900.
 
 ### Which months need an AC room at Trimbakeshwar?
 

@@ -1,6 +1,6 @@
 ---
 title: "Shegaon Room Booking During Ekadashi and Festivals | Shri Gajanan Maharaj Sansthan"
-description: "Shegaon room booking during ekadashi and festivals, guided by Shri Gajanan Maharaj Sansthan — advance windows, calendars, arrival strategy. Reserve early today."
+description: "Shegaon room booking during ekadashi and festivals, guided by Shri Gajanan Maharaj Sansthan — advance windows, calendars, arrival strategy. Reserve early."
 date: "2026-07-04"
 slug: "shegaon-room-booking-during-ekadashi-and-festivals"
 image: "/images/shegaon-temple.svg"

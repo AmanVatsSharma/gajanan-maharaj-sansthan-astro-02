@@ -1,6 +1,6 @@
 ---
 title: "Shegaon Visawa Room Booking Guide | Shri Gajanan Maharaj Sansthan"
-description: "Shegaon Visawa room booking guide from Shri Gajanan Maharaj Sansthan — who it suits, its station-side location, and how to request a room. Book your stay today."
+description: "Shegaon Visawa room booking guide from Shri Gajanan Maharaj Sansthan — who it suits, its station-side location, and how to request a room. Book your stay."
 date: "2026-07-03"
 slug: "shegaon-visawa-room-booking-guide"
 image: "/images/shegaon-temple.svg"
@@ -100,6 +100,8 @@ The tariff row deserves one clarification: room pricing across the Sansthan netw
 - Your stay is festival-centred, and proximity to the Samadhi Mandir is the whole point of the trip — the booking implications of which are in our [ekadashi and festival booking guide](/blog/shegaon-room-booking-during-ekadashi-and-festivals).
 
 A recognised hybrid answers the either/or: one night at Visawa around a late arrival or early departure, with the mandir-centred nights at Bhakta Niwas. Request both stays in one message with clear dates, and the office will plan the sequence with you.
+
+Multi-family groups travelling in the wari spirit — several households from one lane or one mandal visiting Shegaon as a single party — also find Visawa forgiving. Because the complex sits where the town's two arrival streams meet, part of the group can step off an overnight train while the rest drive in with the luggage and the grandmother who cannot manage the platform stairs; the station-side rooms become a natural assembly point from which everyone walks or rides to the mandir together. Request the rooms in one message with each family's names and bed counts, note who arrives by rail and who by road, and the office can try to keep the allocations adjacent so the party gathers as one.
 
 ## Requesting a Visawa room: the path
 

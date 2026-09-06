@@ -68,7 +68,7 @@ Reachability belongs in the same reading, because a threshold is only gentle if 
 | 4 Bed Non-AC | 4 | ₹2,250 | The standard family row, most of the year |
 | 4 Bed AC | 4 | ₹2,550 | Larger families and hot-season travel |
 
-Two arithmetic constants hold at all four centres because the tariffs are network-wide: the same-bed air-conditioning premium is ₹300 per night, and widening a couple's booking into the family's 4 Bed AC adds ₹900 per night, with the 3 Bed Non-AC to 4 Bed Non-AC step at ₹500. A family that learns the table once has learnt it for every threshold. The fullest facilities treatment, row by row, is the [Shegaon room types and facilities guide](/blog/shegaon-bhakta-niwas-room-types-and-facilities), and its logic is the network's own; the AC-versus-non-AC question by season is developed in the [Bhakta Niwas AC room booking guide](/blog/bhakta-niwas-ac-room-booking-guide).
+Two arithmetic constants hold at all four centres because the tariffs are network-wide: the air-conditioned step within a bed size is ₹300 a night, and widening a couple's booking into the family's 4 Bed AC adds ₹900 per night, with the 3 Bed Non-AC to 4 Bed Non-AC step at ₹500. A family that learns the table once has learnt it for every threshold. The fullest facilities treatment, row by row, is the [Shegaon room types and facilities guide](/blog/shegaon-bhakta-niwas-room-types-and-facilities), and its logic is the network's own; the AC-versus-non-AC question by season is developed in the [Bhakta Niwas AC room booking guide](/blog/bhakta-niwas-ac-room-booking-guide).
 
 ## Choosing by the purpose of the yatra
 
