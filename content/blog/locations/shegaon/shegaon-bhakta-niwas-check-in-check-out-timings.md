@@ -1,6 +1,6 @@
 ---
 title: "Shegaon Bhakta Niwas Check-in and Check-out Timings | Shri Gajanan Maharaj Sansthan"
-description: "Planning a stay at Shegaon? This Shri Gajanan Maharaj Sansthan guide explains Bhakta Niwas check-in and check-out, the 24-hour cycle, early arrivals, and how to book."
+description: "Planning a Shegaon stay? Shri Gajanan Maharaj Sansthan explains Bhakta Niwas check-in, the 24-hour check-out cycle, early arrivals, and how to book rooms."
 date: "2026-06-25"
 slug: "shegaon-bhakta-niwas-check-in-check-out-timings"
 image: "/images/shegaon-temple.svg"
@@ -120,6 +120,29 @@ On Ekadashi, Gajanan Maharaj's Pragat Din, and major utsav days, the check-in qu
 ## Checking out without the rush
 
 On departure day, devotees often want one last darshan or a morning aarti before leaving. Under the 24-hour cycle, that usually works naturally: check out at the desk, leave luggage as guided, collect it before your train, and leave buffer for the prasad counter and the walk to the station. Ask at reception the previous evening about any crowd expectations for the next morning — the office's guidance on the ground is always more current than any published article, including this one.
+
+## A sample 24-hour stay timeline
+
+To see how the 24-hour cycle works in practice, here is a typical one-night pattern for a family arriving on an overnight train. Treat it as a shape rather than a schedule — adjust each stage to your own train, the season, and the aarti timings confirmed with the temple office for your dates.
+
+| Stage of the stay | What typically happens | A devotee's note |
+|---|---|---|
+| Arrival at Shegaon | You step off the train, freshen up, and make your way towards the Bhakta Niwas complex | Keep the booking confirmation and photo IDs in one reachable pouch |
+| Check-in at reception | Confirmation shown, IDs verified, entry time recorded, keys and housekeeping notes handed over | Your 24-hour cycle begins now, so settle in at an unhurried pace |
+| First darshan | A first darshan of the Samadhi Mandir, at whatever pace the morning queue allows | Ask the desk about expected crowds before you walk over |
+| Midday rest and mahaprasad | Rest in the room, followed by the canteen or mahaprasad as guided for the day | Note the timings when you collect your keys |
+| Evening | Anand Sagar or the temple bazaar route, returning to the room at a relaxed hour | Keep the pace of elderly family members in mind |
+| Check-out the next day | Check out around the same hour as your entry, leave luggage as guided, enjoy a final darshan, then collect bags for the station | Build in buffer for the prasad counter and the walk to the station |
+
+For a two-day stay, the same rhythm simply repeats with more breathing room. Many families give the first day to the Samadhi Mandir and its aarti schedule and the second to Anand Sagar and the bazaar, with check-out following the departure train rather than the clock. If you are pacing a longer visit, the [Shegaon travel guide](/blog/shegaon-travel-guide) shows how experienced pilgrims spread the town's darshan across successive days.
+
+## Getting oriented: from Shegaon station to the reception
+
+Shegaon rewards unhurried arrivals. The town is compact and walkable, and most devotees find their bearings within a single visit — the station, the Samadhi Mandir, and the Bhakta Niwas complex all sit within the same small pilgrimage circuit, so the first walk to the reception doubles as an orientation tour. Travellers carrying heavier luggage, senior citizens, and families with small children usually prefer an auto-rickshaw or shared transport for the short hop; these are readily available around the station area, and drivers are well used to devotee traffic towards the Sansthan's accommodation.
+
+Two small preparations make arrival smoother. First, keep your booking confirmation handy — a screenshot or printout you can show at the desk within moments of arriving spares you digging through bags while the queue builds behind you. Second, if you are travelling with elderly devotees or anyone who needs physical assistance, arrange support in advance through the [contact page](/contact) rather than at the last minute; the office can note the requirement against your booking so the reception is prepared when you reach it.
+
+First-time visitors need not worry about the layout. The reception is the natural first stop, and the desk routinely guides newcomers to their wing, the canteen, and the mandir — once you have checked in, every part of your stay begins from that one familiar point.
 
 ## Frequently asked questions
 
