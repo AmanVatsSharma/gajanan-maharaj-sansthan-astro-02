@@ -85,7 +85,7 @@ First, the office will have said so at confirmation. Festival-window bookings ar
 
 Second, notice matters more than reason. A message sent a month before Ashadashi, whatever its cause, gives the office room to re-commit the bed; a message sent the day before the great day often cannot help anyone.
 
-Third, alternatives are worth requesting before you cancel outright. A shift of two or three days — arriving after the peak, when the town exhales and rooms open — preserves your journey and frequently preserves your advance in a way a flat cancellation cannot. The pattern of those post-festival days, and why the day after a great ekadashi is among Pandharpur's gentlest for arrivals, is described in our [Pandharpur Ashadhi Ekadashi room booking guide](/blog/pandharpur-ashadhi-ekadashi-room-booking); the autumn window gets the same treatment in our [Kartik Ekadashi stay booking guide](/blog/pandharpur-kartik-ekadashi-stay-booking).
+Third, alternatives are worth requesting before you cancel outright. A shift of two or three days — arriving after the peak, when the crowds thin and rooms begin to open — preserves your journey and frequently preserves your advance in a way a flat cancellation cannot. The pattern of those post-festival days, and why the day after a great ekadashi is the calmest arrival day the town offers, is described in our [Pandharpur Ashadhi Ekadashi room booking guide](/blog/pandharpur-ashadhi-ekadashi-room-booking); the autumn window gets the same treatment in our [Kartik Ekadashi stay booking guide](/blog/pandharpur-kartik-ekadashi-stay-booking).
 
 ## Group and dindi cancellations
 

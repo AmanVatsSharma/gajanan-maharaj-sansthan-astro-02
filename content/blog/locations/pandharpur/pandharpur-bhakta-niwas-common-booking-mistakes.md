@@ -65,7 +65,7 @@ One pattern deserves naming before the list begins, because it explains half of 
 
 **Forgetting that the lunar calendar moves.** Ekadashi dates shift against the Gregorian year, and the family that books "the same dates as last year" sometimes books a fortnight of empty ordinary days and misses the festival entirely. Prevention: fix the tithi, confirm the corresponding dates, and state them exactly in the request.
 
-**Ignoring the day after.** The day following a great ekadashi is among Pandharpur's gentlest — departures open the chart, the town exhales — yet pilgrims fixated on the peak itself never think to ask for it. Prevention: when the peak is beyond reach, book the day after deliberately; it is the insider's date, not the loser's.
+**Ignoring the day after.** The day following a great ekadashi slows Pandharpur back to its everyday rhythm — the chart loosens with the morning's departures, the lanes empty by mid-morning — yet pilgrims fixated on the peak itself never think to ask for it. Prevention: when the peak is beyond reach, book the day after deliberately; it is the insider's date, not the loser's.
 
 ## Mistakes made at the desk itself
 

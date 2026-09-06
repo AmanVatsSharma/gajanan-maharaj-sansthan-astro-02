@@ -75,7 +75,7 @@ A note on what earliness is not. Booking early does not mean paying early or in 
 Every Ashadhi, the office must tell late askers that the rooms are committed, and every Ashadhi, some of those askers treat the news as the end of the pilgrimage. It is not. The alternatives, in the order the desk itself recommends:
 
 - **The hall.** Shared rest in the wari's own tradition — not a concession but the walking pilgrimage's native shelter, and in the ekadashi week, the bed that exists precisely because rooms do not multiply. The choice between hall and rooms is argued in full in our [dormitory versus family rooms guide](/blog/pandharpur-bhakta-niwas-dormitory-vs-family-rooms), and the walking party's whole booking craft — the subject of the previous guide in this series — stands in the [wari accommodation booking guide](/blog/pandharpur-wari-accommodation-booking-guide).
-- **The day after.** Book the Dwadashi arrival as a deliberate plan: travel on ekadashi day only if you must, arrive into the exhale, and keep the festival's peace at a fraction of its crush.
+- **The day after.** Book the Dwadashi arrival as a deliberate plan: travel on ekadashi day only if you must, arrive into the quiet that follows, and keep the festival's peace at a fraction of its crush.
 - **The shifted window.** A stay ending just before the tide, or beginning just after it, keeps you in Pandharpur's festival week with an ordinary town's arithmetic at the edges.
 - **The autumn answer.** Kartik Ekadashi in October or November brings the wari's second, gentler wave — the same palkhis, the same town, cooler roads, and a chart measurably kinder. Its planning has its own page: our [Kartik Ekadashi stay booking guide](/blog/pandharpur-kartik-ekadashi-stay-booking).
 
@@ -118,7 +118,7 @@ It is — shared rest in the wari's tradition, and in the great week it is the s
 
 ### What is the best alternative if ekadashi night is full?
 
-Book the night after. The day following Ashadhi Ekadashi is among Pandharpur's gentlest — departures open the town, darshan relaxes, and the festival's peace remains after its crush has gone.
+Book the night after. The day following Ashadhi Ekadashi restores the town to its unhurried pace — the roads ease as the wari turns homeward, darshan relaxes, and the festival's peace remains after its crush has gone.
 
 ### Where do I confirm all the window's arrangements?
 

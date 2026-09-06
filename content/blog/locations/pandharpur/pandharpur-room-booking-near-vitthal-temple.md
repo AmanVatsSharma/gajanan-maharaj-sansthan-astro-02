@@ -70,7 +70,7 @@ The classic near-temple day runs as a loop, and the loop is the method:
 3. **Return and recover.** Come back for the midday hour — the elder's nap, the children's rest, the wash that no queue permits.
 4. **Second pass.** Out again for the evening darshan and aarti, with whatever energy the recovery hour restored.
 5. **Sleep near.** The short walk home after the aarti, in lanes full of singing, ends the day at the door rather than at a bus stop.
-6. **Dawn pass.** If the stay holds the morning — and the room's day-long cycle from entry usually does — the pre-dawn snana and one final darshan complete the loop before departure.
+6. **Dawn pass.** If the stay holds the morning — and the room's full day from your entry time usually does — the pre-dawn snana and one final darshan complete the loop before departure.
 
 The loop is why families book two nights and use them fully: a one-night stay runs the loop once; a two-night stay runs it in ever-gentler circles, with the pilgrimage's rhythm replacing its logistics. The full mechanics of the day-long cycle are explained in the [Pandharpur check-in and check-out timings guide](/blog/pandharpur-bhakta-niwas-check-in-check-out-timings).
 
