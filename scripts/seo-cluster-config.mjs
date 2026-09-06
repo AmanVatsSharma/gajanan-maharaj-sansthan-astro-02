@@ -121,4 +121,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/shegaon/shegaon-bhakta-niwas-booking-confirmation-timeline.md",
   "locations/shegaon/shegaon-visawa-room-booking-guide.md",
   "locations/shegaon/shegaon-room-booking-during-ekadashi-and-festivals.md",
+  // 2026-09-05 gold-standard batch 2 — Shegaon + Pandharpur (#39–48)
+  "locations/shegaon/shegaon-bhakta-niwas-advance-payment-guide.md",
+  "locations/shegaon/shegaon-same-day-room-booking-options.md",
+  "locations/shegaon/shegaon-gajanan-maharaj-temple-complete-visitor-guide.md",
+  "locations/shegaon/shegaon-train-timings-and-stay-planning.md",
+  "locations/shegaon/shegaon-one-day-vs-two-day-visit-planning.md",
+  "locations/shegaon/shegaon-family-trip-itinerary-with-room-booking.md",
+  "locations/shegaon/shegaon-darshan-and-stay-same-trip-planning.md",
+  "locations/shegaon/shegaon-nearby-devasthan-visit-with-overnight-stay.md",
+  "locations/pandharpur/pandharpur-bhakta-niwas-check-in-check-out-timings.md",
+  "locations/pandharpur/pandharpur-bhakta-niwas-online-booking-vs-whatsapp.md",
 ];
