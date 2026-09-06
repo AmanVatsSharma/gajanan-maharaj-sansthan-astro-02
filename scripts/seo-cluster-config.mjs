@@ -198,4 +198,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "guides/bhakta-niwas-ac-room-booking-guide.md",
   "spiritual/reading-gajanan-vijay-for-beginners.md",
   "spiritual/gajanan-maharaj-seva-opportunities-guide.md",
+  // 2026-09-05 gold-standard batch 9 — cross-location booking guides (#9-18)
+  "guides/bhakta-niwas-family-room-booking-guide.md",
+  "guides/bhakta-niwas-dormitory-booking-guide.md",
+  "guides/bhakta-niwas-room-booking-for-weekend.md",
+  "guides/bhakta-niwas-same-day-booking-guide.md",
+  "guides/bhakta-niwas-booking-modification-guide.md",
+  "guides/bhakta-niwas-booking-rules-and-terms.md",
+  "guides/bhakta-niwas-vs-hotels-comparison.md",
+  "guides/bhakta-niwas-vs-ota-direct-booking.md",
+  "guides/sansthan-room-booking-for-senior-citizens.md",
+  "guides/sansthan-room-booking-id-and-document-requirements.md",
 ];
