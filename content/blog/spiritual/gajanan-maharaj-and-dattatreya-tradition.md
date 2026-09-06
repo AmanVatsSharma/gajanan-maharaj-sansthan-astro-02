@@ -71,17 +71,20 @@ There is also a regional reading of the placement that devotees in Vidarbha make
 
 ## The family marks of the line
 
-Read across its figures, the line keeps a recognisable household style, and noticing it is one of the quieter pleasures of Datta-bhakti.
-
-- **The unannounced arrival.** No figure of the line appears with a biography; the arrival without credentials is itself the credential.
-- **The plate.** Food — eaten strangely, shared freely, multiplied unexpectedly — recurs at Akkalkot, Shirdi and Shegaon alike. In this line, theology is done at mealtimes.
-- **The few words.** The line's speech is epigrammatic or silent; its teachings are demonstrations rather than discourses.
-- **The refusal of institution in the founder's lifetime.** The great seats of the line — Akkalkot, Shirdi, Shegaon — were built by devotees after the master's passing, from what the master declined to hold.
-- **The dogs.** From the iconography of Dattatreya himself to the courtyard of Shegaon, the companion no one wanted keeps appearing beside the teacher no one expected.
+Read across its figures, the line keeps a recognisable household style, and noticing it is one of the quieter pleasures of Datta-bhakti. Five marks recur. No figure of the line appears with a biography; the unannounced arrival is itself the credential. Food — eaten strangely, shared freely, multiplied unexpectedly — recurs at Akkalkot, Shirdi and Shegaon alike; in this line, theology is done at mealtimes. The line's speech is epigrammatic or silent; its teachings are demonstrations rather than discourses. The great seats of the line — Akkalkot, Shirdi, Shegaon — were built by devotees after the master's passing, from what the master declined to hold. And from the iconography of Dattatreya himself to the courtyard of Shegaon, the companion no one wanted keeps appearing beside the teacher no one expected.
 
 Families who keep this line's devotions often say the marks decide the debates: whatever the metaphysics, the style is unmistakable, and the style is the teaching.
 
-A small exercise serves to make the point at a family table. Take any episode from the Shegaon tradition — the founding scene at the victuals, the dry branch, the shared plate — and hold it beside an episode from Akkalkot or Shirdi. The settings differ; the grammar does not. In each case the saint does the socially unthinkable thing, does it without explanation, and leaves the watching devotee permanently rearranged. That grammar, repeated across centuries and towns, is what devotees mean when they say the line continues. A lineage that files no records is traced exactly this way — by handwriting.
+## How a household recognises the Datta marks in daily observance
+
+The marks are not only read about in hagiography; they are noticed, and a household that keeps the line's ordinary devotions soon finds the style surfacing in its own week. Long-standing families describe the noticing roughly as follows.
+
+1. **Begin with the evening naming.** At day's end, name the day's involuntary teachers — the difficult colleague, the crow on the wire, the season itself — keeping the twenty-four gurus episode as the house rule. The line's first mark, the teacher no one expected, then begins appearing in the household's own week.
+2. **Read one episode of the Gajanan Vijay aloud in its season.** Keep the parayan formats the tradition describes, and let the granth teach the way the line itself teaches — in few words, by demonstration rather than discourse.
+3. **Notice the plate at your own table.** Where food is shared freely and none is turned away, the line's theology is being done at mealtimes, exactly as the mark recurs at Akkalkot, Shirdi and Shegaon.
+4. **Hold the week's episode beside one from Akkalkot or Shirdi.** Take any episode from the Shegaon tradition — the founding scene at the victuals, the dry branch, the shared plate — and set it beside an episode from the other seats. The settings differ; the grammar does not: in each case the saint does the socially unthinkable thing, does it without explanation, and leaves the watching devotee permanently rearranged.
+5. **Trace the line by handwriting rather than records.** A lineage that files no records is recognised exactly this way — by the grammar repeated across centuries and towns, which is what devotees mean when they say the line continues.
+6. **Keep the year's gatherings.** Devotees mark Datta Jayanti each year, and the Shegaon year's own rhythm of aarti and mantra carries the rest; the marks are easiest to recognise in company, which is how the line has always kept them.
 
 ## Reading the two granths together
 
