@@ -187,4 +187,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "spiritual/gajanan-maharaj-life-lessons-guide.md",
   "spiritual/gajanan-maharaj-and-dattatreya-tradition.md",
   "spiritual/gajanan-maharaj-bhakti-vidarbha-legacy.md",
+  // 2026-09-05 gold-standard batch 8 — spiritual close + booking hub start (#99-100, #1-8)
+  "guides/gajanan-maharaj-sansthan-online-room-booking.md",
+  "guides/gajanan-maharaj-sansthan-room-booking-phone-number.md",
+  "guides/gajanan-maharaj-sansthan-room-booking-whatsapp-guide.md",
+  "guides/bhakta-niwas-room-availability-check-guide.md",
+  "guides/bhakta-niwas-booking-payment-methods-guide.md",
+  "guides/bhakta-niwas-booking-confirmation-process.md",
+  "guides/bhakta-niwas-booking-advance-amount-guide.md",
+  "guides/bhakta-niwas-ac-room-booking-guide.md",
+  "spiritual/reading-gajanan-vijay-for-beginners.md",
+  "spiritual/gajanan-maharaj-seva-opportunities-guide.md",
 ];
