@@ -143,4 +143,15 @@ export const MANUAL_SEED_POST_PATHS = [
   "locations/pandharpur/pandharpur-chandrabhaga-snana-and-stay-planning.md",
   "locations/pandharpur/pandharpur-room-booking-near-vitthal-temple.md",
   "locations/pandharpur/pandharpur-kartik-ekadashi-stay-booking.md",
+  // 2026-09-05 gold-standard batch 4 — Pandharpur pillars + Omkareshwar stay (#59–68)
+  "locations/pandharpur/pandharpur-math-bhakta-niwas-complete-guide.md",
+  "locations/pandharpur/pandharpur-two-day-itinerary-with-overnight-stay.md",
+  "locations/omkareshwar/omkareshwar-ac-room-booking-guide.md",
+  "locations/omkareshwar/omkareshwar-jyotirlinga-darshan-and-room-booking-combo.md",
+  "locations/omkareshwar/omkareshwar-room-booking-from-indore.md",
+  "locations/omkareshwar/omkareshwar-mandhata-island-stay-guide.md",
+  "locations/omkareshwar/omkareshwar-family-room-booking-guide.md",
+  "locations/omkareshwar/omkareshwar-group-room-booking-guide.md",
+  "locations/omkareshwar/omkareshwar-winter-devotee-stay-guide.md",
+  "locations/omkareshwar/omkareshwar-darshan-queue-and-stay-timing-plan.md",
 ];
