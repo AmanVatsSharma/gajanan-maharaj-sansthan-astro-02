@@ -30,6 +30,7 @@ relatedSlugs:
   - "temple-accommodation-comparison-guide"
   - "temple-trust-accommodation-benefits"
   - "budget-vs-comfort-trade-offs"
+  - "pandharpur-wari-accommodation-booking-guide"
   - "shestha-vs-bhakt-niwas-comparison"
   - "shegaon-accommodation-guide"
   - "welcome-to-sansthan"
@@ -77,9 +78,9 @@ One more concession, offered reluctantly but honestly: hotels win on spontaneity
 
 ## The comparison, centre by centre
 
-The hotel question changes shape at each of the four towns, because proximity is worth different amounts in different geographies. At Shegaon, the commercial properties sit at the market's preferred distance from the temple, while the [rooms near the Samadhi Mandir](/blog/shegaon-room-booking-near-samadhi-mandir) that devotees actually want belong to the Sansthan's own complexes — the price of that walk being the price of the row, ₹2,250 for a family of four, not a premium room rate. At Omkareshwar, the comparison tilts further toward the Niwas, because the ghat-side geography makes a short walk worth more than any amenity; families consistently report the same trade in the [Omkareshwar Bhakta Niwas family stay tips](/blog/omkareshwar-bhakta-niwas-family-stay-tips).
+The hotel question changes shape at each of the four towns, because proximity is worth different amounts in different geographies. At Shegaon, the commercial properties sit at the market's preferred distance from the temple, while the [rooms near the Samadhi Mandir](/blog/shegaon-room-booking-near-samadhi-mandir) that devotees actually want belong to the Sansthan's own complexes — the price of that walk being the price of the row, ₹2,250 for a family of four, not a premium room rate. At Omkareshwar, the comparison tilts further toward the Niwas, because the ghat-side geography makes a short walk worth more than any amenity; families consistently report the same trade in the [Omkareshwar Bhakta Niwas family stay tips](/blog/omkareshwar-bhakta-niwas-family-stay-tips), and the [Omkareshwar family room booking guide](/blog/omkareshwar-family-room-booking-guide) shows the rows such families choose instead of the riverside tariff sheet.
 
-Pandharpur's comparison is seasonal to its bones: in plain weeks a hotel competes credibly on comfort, while in the wari and ekadashi windows nothing commercial matches the [Pandharpur Math's](/locations/pandharpur-math) combination of tariff and adjacency, as the [Pandharpur family accommodation checklist](/blog/pandharpur-family-accommodation-checklist) attests. And Trimbakeshwar, a hill town of narrow lanes, is where the proximity argument reaches its full strength — the family that books the Niwas walks to the temple while the family that books the distant hotel negotiates the gradient twice daily; parents weighing that exact walk with children in tow should read the [Trimbakeshwar family room booking with kids guide](/blog/trimbakeshwar-family-room-booking-with-kids) before choosing either side.
+Pandharpur's comparison is seasonal to its bones: in plain weeks a hotel competes credibly on comfort, while in the wari and ekadashi windows nothing commercial matches the [Pandharpur Math's](/locations/pandharpur-math) combination of tariff and adjacency, as the [Pandharpur family accommodation checklist](/blog/pandharpur-family-accommodation-checklist) attests and the [Pandharpur wari accommodation booking guide](/blog/pandharpur-wari-accommodation-booking-guide) plans for in full. And Trimbakeshwar, a hill town of narrow lanes, is where the proximity argument reaches its full strength — the family that books the Niwas walks to the temple while the family that books the distant hotel negotiates the gradient twice daily; parents weighing that exact walk with children in tow should read the [Trimbakeshwar family room booking with kids guide](/blog/trimbakeshwar-family-room-booking-with-kids) before choosing either side.
 
 ## The no-room-service reality, prepared for
 

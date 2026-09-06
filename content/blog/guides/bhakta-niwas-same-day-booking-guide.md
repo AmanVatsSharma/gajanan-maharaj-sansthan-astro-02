@@ -1,6 +1,6 @@
 ---
 title: "Bhakta Niwas Same Day Booking Guide | Shri Gajanan Maharaj Sansthan"
-description: "Same day room booking at Bhakta Niwas, honestly explained by Shri Gajanan Maharaj Sansthan — when it works, when it fails and what to do instead."
+description: "Same day room booking at Bhakta Niwas, explained by Shri Gajanan Maharaj Sansthan — when it works, when it fails, what to do instead. Request a room today."
 date: "2026-06-08"
 slug: "bhakta-niwas-same-day-booking-guide"
 image: "/images/shegaon-temple.svg"

@@ -32,6 +32,7 @@ relatedSlugs:
   - "pandharpur-bhakta-niwas-dormitory-vs-family-rooms"
   - "trimbakeshwar-bhakta-niwas-dormitory-vs-family-rooms"
   - "bhakta-niwas-complete-booking-guide"
+  - "pandharpur-wari-accommodation-booking-guide"
   - "budget-vs-comfort-trade-offs"
   - "solo-female-devotee-safety-guide"
 ---
@@ -66,7 +67,7 @@ A solo traveller holds a genuine choice, and it deserves a table rather than a s
 | Is it right for elders? | Only fit elders who sleep easily among others | The safer choice where rest is medical |
 | Best for | One-night solo stops, walking circuits | Rest days, families, elders, couples |
 
-The comparison is not a contest with a winner. The devotee finishing a two-day walk needs a bed, a bath and an early start — the dormitory serves all three at the lowest cost the network offers. The devotee recovering before a long return journey needs a door that closes; for that traveller, 2 Bed AC at ₹1,650 or the 3 Bed rows are the honest picks, and the [budget versus comfort trade-offs guide](/blog/budget-vs-comfort-trade-offs) treats the decision in full. Solo women travellers weighing the same choice will find direct, practical counsel in our [solo female devotee safety guide](/blog/solo-female-devotee-safety-guide).
+The comparison is not a contest with a winner. The devotee finishing a two-day walk needs a bed, a bath and an early start — the dormitory serves all three at the lowest cost the network offers, and the shape of such a flying visit is drawn in the [Omkareshwar one-night stay plan](/blog/omkareshwar-one-night-stay-plan). The devotee recovering before a long return journey needs a door that closes; for that traveller, 2 Bed AC at ₹1,650 or the 3 Bed rows are the honest picks, and the [budget versus comfort trade-offs guide](/blog/budget-vs-comfort-trade-offs) treats the decision in full. Solo women travellers weighing the same choice will find direct, practical counsel in our [solo female devotee safety guide](/blog/solo-female-devotee-safety-guide).
 
 ## Requesting a dormitory bed: the sequence
 
@@ -105,7 +106,7 @@ Dormitory demand moves differently from room demand, because its travellers move
 | Omkareshwar | Long weekends and monsoon season | Hill-town humidity pushes budget travellers indoors early |
 | Trimbakeshwar | Festival weekends and pooja seasons | Pooja-bound travellers often extend stays; request ahead |
 
-The centre-by-centre detail is written from the ground: [Shegaon's dormitory versus family rooms page](/blog/shegaon-bhakta-niwas-dormitory-vs-family-rooms) covers the largest complex, the [Omkareshwar comparison](/blog/omkareshwar-bhakta-niwas-dormitory-vs-family-rooms) the river town, the [Pandharpur comparison](/blog/pandharpur-bhakta-niwas-dormitory-vs-family-rooms) the wari season, and the [Trimbakeshwar comparison](/blog/trimbakeshwar-bhakta-niwas-dormitory-vs-family-rooms) the hill station's cooler nights. Location pages for [Shegaon Bhakta Niwas](/locations/shegaon-bhakt-niwas), the [Pandharpur Math](/locations/pandharpur-math), [Omkareshwar](/locations/omkareshwar) and [Trimbakeshwar](/locations/trimbakeshwar) carry the practical descriptions of each complex.
+The centre-by-centre detail is written from the ground: [Shegaon's dormitory versus family rooms page](/blog/shegaon-bhakta-niwas-dormitory-vs-family-rooms) covers the largest complex, the [Omkareshwar comparison](/blog/omkareshwar-bhakta-niwas-dormitory-vs-family-rooms) the river town, the [Pandharpur comparison](/blog/pandharpur-bhakta-niwas-dormitory-vs-family-rooms) the wari season, and the [Trimbakeshwar comparison](/blog/trimbakeshwar-bhakta-niwas-dormitory-vs-family-rooms) the hill station's cooler nights. For the wari windows themselves, when the halls fill days ahead of the rooms, the [Pandharpur wari accommodation booking guide](/blog/pandharpur-wari-accommodation-booking-guide) plans the season's beds in full. Location pages for [Shegaon Bhakta Niwas](/locations/shegaon-bhakt-niwas), the [Pandharpur Math](/locations/pandharpur-math), [Omkareshwar](/locations/omkareshwar) and [Trimbakeshwar](/locations/trimbakeshwar) carry the practical descriptions of each complex.
 
 ## Frequently asked questions
 

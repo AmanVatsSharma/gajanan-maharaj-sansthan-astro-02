@@ -30,6 +30,7 @@ relatedSlugs:
   - "understanding-sansthan-accommodation-rules"
   - "shegaon-bhakta-niwas-check-in-check-out-timings"
   - "bhakta-niwas-booking-advance-amount-guide"
+  - "shegaon-bhakta-niwas-advance-payment-guide"
   - "bhakta-niwas-booking-payment-methods-guide"
   - "sansthan-room-booking-id-and-document-requirements"
   - "group-booking-essentials"
@@ -57,15 +58,23 @@ It is worth saying what the terms are not, because devotees arriving from commer
 
 ## The request-confirm rhythm, lived once
 
-Terms read better with a timeline attached, so consider one plain booking from beginning to end. A family of four decides on a Shegaon weekend and sends its request on Monday — 4 Bed AC, Friday and Saturday, arriving by the evening train. The office acknowledges and, by midweek, confirms with a reference; the family books its train tickets on Thursday, in that order. On Friday the party arrives, presents one ID per adult plus the reference, is allotted per the chart, enters at 9 in the evening, and starts the 24-hour cycle. On Saturday the family darshans, rests and eats; on Sunday evening the cycle closes, keys return, and the file ends as cleanly as it opened — ₹5,100 across two nights, receipted.
+Terms read better with a timeline attached, so consider one plain booking from beginning to end, lived as a sequence.
 
-Every term above appears exactly once in that paragraph, doing exactly its job, and no devotee in the story needed a rulebook. That is the aim of the terms: to be invisible when respected and unmistakable when not. The wider flow is documented for the whole network in the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide).
+1. **Monday — the request.** A family of four decides on a Shegaon weekend and sends its request through the [booking page](/booking): 4 Bed AC, Friday and Saturday, arriving by the evening train.
+2. **Monday, shortly after — the acknowledgement.** The office receives the application and replies to say so; the family now knows the request exists, and does not yet mistake the acknowledgement for a room.
+3. **By midweek — the confirmation.** The office checks the request against the chart and confirms with a reference; the booking becomes real in the office's words, not the family's.
+4. **Thursday — the train tickets, in that order.** Only now, reference in hand, does the family book its travel, keeping the refundable thing dependent on the confirmed thing rather than the reverse.
+5. **Friday evening — arrival and the register.** The party presents one photo ID per adult plus the reference, is allotted per the chart, and enters at 9 in the evening, starting the 24-hour cycle from that hour.
+6. **Saturday — the day itself.** The family darshans, rests and eats, and the arithmetic stays exactly what the published row promised — nothing new is owed and nothing has crept in.
+7. **Sunday evening — the clean close.** The cycle ends, the keys return, the balance has been settled against a receipt — ₹5,100 across two nights — and the file closes as cleanly as it opened.
+
+Every term above appears exactly once in that sequence, doing exactly its job, and no devotee in the story needed a rulebook. That is the aim of the terms: to be invisible when respected and unmistakable when not. The wider flow is documented for the whole network in the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide).
 
 ## Request, then confirmation — the flow the terms govern
 
 The booking flow has a shape devotees sometimes misread. A request through the [booking page](/booking) is an application: the office receives it, checks it against the chart, and replies — first with an acknowledgement, then with a confirmation carrying your reference. Between those two messages sits every virtue of the system, because a human being has looked at your dates, your party and the room's reality before promising you a key.
 
-What the flow asks of the devotee is patience and precision: state the party exactly, the row plainly, the arrival window honestly, and then wait for the confirmation before booking trains around it. What the flow asks of the office is a reply worth waiting for, and our experience across centres is that it delivers one. The full pathway is mapped in the [Bhakta Niwas booking confirmation process](/blog/bhakta-niwas-booking-confirmation-process), and changes after confirmation travel the same channel — the [booking modification guide](/blog/bhakta-niwas-booking-modification-guide) covers them.
+What the flow asks of the devotee is patience and precision: state the party exactly, the row plainly, the arrival window honestly, and then wait for the confirmation before booking trains around it. What the flow asks of the office is a reply worth waiting for, and our experience across centres is that it delivers one. The full pathway is mapped in the [Bhakta Niwas booking confirmation process](/blog/bhakta-niwas-booking-confirmation-process), and changes after confirmation travel the same channel — the [booking modification guide](/blog/bhakta-niwas-booking-modification-guide) covers them. The channel choice itself, web form against WhatsApp, is compared honestly in the [Shegaon online booking versus WhatsApp guide](/blog/shegaon-bhakta-niwas-online-booking-vs-whatsapp), and the comparison lands on the same side every time: the flow is the flow, whichever door you enter by.
 
 ## Capacity is the bed count, and the bed count is final
 
@@ -79,13 +88,13 @@ The rule also carries a quiet safety function that devotees should hear stated p
 
 Check-out at a Bhakta Niwas is not a hotel's noon gun; it is a rolling 24-hour cycle that begins the moment you enter. Arrive at 7 in the evening after a long train ride and the room is yours until 7 the next evening; arrive at dawn for the aarti and it is yours until dawn again. The term serves pilgrims far better than a fixed hour — trains do not respect noon, and nor do temple calendars.
 
-The cycle asks two courtesies in return. Check out when your day is done rather than holding a room you have emptied, because the chart behind you has a family arriving tonight; and if your departure is hours after your cycle ends, ask at the desk about luggage rather than about the room, which is usually the better question and always the cheaper one. The term's practical shape at the busiest centre is described in the [Shegaon check-in and check-out timings guide](/blog/shegaon-bhakta-niwas-check-in-check-out-timings).
+The cycle asks two courtesies in return. Check out when your day is done rather than holding a room you have emptied, because the chart behind you has a family arriving tonight; and if your departure is hours after your cycle ends, ask at the desk about luggage rather than about the room, which is usually the better question and always the cheaper one. The term's practical shape at the busiest centre is described in the [Shegaon check-in and check-out timings guide](/blog/shegaon-bhakta-niwas-check-in-check-out-timings), and the wari season's version of the same cycle is carried in the [Pandharpur check-in and check-out timings guide](/blog/pandharpur-bhakta-niwas-check-in-check-out-timings).
 
 Notice, too, what the cycle does to the age-old anxiety of the early arrival. Under a fixed-noon regime, the pilgrim off a 5 AM train spends the morning negotiating; under the 24-hour cycle, that pilgrim simply enters when the room is ready and the clock begins then — no negotiation, no surcharge, no awkward lobby hours. Term and mercy turn out to be the same sentence, which is the mark of a rule written by people who have themselves waited for dawn trains.
 
 ## Payments, receipts and the advance
 
-Money under these terms moves along two rails, both of them receipted. Where the office calls for an advance against the booking, it is paid through the guided channel and acknowledged — the [advance amount guide](/blog/bhakta-niwas-booking-advance-amount-guide) explains the practice and its arithmetic. The balance settles at the desk against a printed receipt, and the [payment methods guide](/blog/bhakta-niwas-booking-payment-methods-guide) covers the accepted modes centre by centre.
+Money under these terms moves along two rails, both of them receipted. Where the office calls for an advance against the booking, it is paid through the guided channel and acknowledged — the [advance amount guide](/blog/bhakta-niwas-booking-advance-amount-guide) explains the practice and its arithmetic, and the busiest desk's own handling of it is documented in the [Shegaon Bhakta Niwas advance payment guide](/blog/shegaon-bhakta-niwas-advance-payment-guide). The balance settles at the desk against a printed receipt, and the [payment methods guide](/blog/bhakta-niwas-booking-payment-methods-guide) covers the accepted modes centre by centre.
 
 The rule beneath the rails: no receipt, no payment. A devotee paying anywhere at anything without a receipt has left the Sansthan's system, whatever the room's signage says — a caution our [guide to verifying official Sansthan contacts](/blog/how-to-verify-official-sansthan-contacts) extends to phone numbers and messages too. The Sansthan's own channels — the [booking page](/booking), the [contact page](/contact), the office desks at [Shegaon Bhakta Niwas](/locations/shegaon-bhakt-niwas), the [Pandharpur Math](/locations/pandharpur-math), [Omkareshwar](/locations/omkareshwar) and [Trimbakeshwar](/locations/trimbakeshwar) — are the complete list of places a Bhakta Niwas room is genuinely booked.
 

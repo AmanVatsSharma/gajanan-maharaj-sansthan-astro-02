@@ -31,6 +31,7 @@ relatedSlugs:
   - "devotee-document-checklist-for-all-locations"
   - "bhakta-niwas-booking-for-nris"
   - "first-time-visit-checklist"
+  - "shegaon-bhakta-niwas-common-booking-mistakes"
   - "bhakta-niwas-booking-rules-and-terms"
   - "shegaon-bhakta-niwas-check-in-check-out-timings"
   - "what-to-carry-pilgrimage-essentials"
@@ -65,7 +66,7 @@ The document rule's twin is the headcount rule, and the two are checked together
 - **Match names to IDs reasonably.** The desk reads names against cards with sense, not pedantry; but a request booked under a nickname the ID never mentions earns a longer look than it needs.
 - **Declare infants sharing parents' beds.** The register's honesty is its value; an infant noted at booking is welcome without a bed, and noted is the operative word.
 
-Families working out how many rooms a party truly needs will find the two-room arithmetic ready-made in the [family room booking guide](/blog/bhakta-niwas-family-room-booking-guide), and the terms behind the register in the [booking rules and terms guide](/blog/bhakta-niwas-booking-rules-and-terms).
+Families working out how many rooms a party truly needs will find the two-room arithmetic ready-made in the [family room booking guide](/blog/bhakta-niwas-family-room-booking-guide), and the terms behind the register in the [booking rules and terms guide](/blog/bhakta-niwas-booking-rules-and-terms). Headcount miscounts are, fittingly, the first entries in both the [Shegaon common booking mistakes guide](/blog/shegaon-bhakta-niwas-common-booking-mistakes) and its [Pandharpur counterpart](/blog/pandharpur-bhakta-niwas-common-booking-mistakes), which families routinely read after a correction they would rather have avoided.
 
 The headcount rule deserves its defence as well as its statement, because it can read as rigidity to a family that has always travelled loosely. It is, in truth, the register's entire honesty: when the desk knows exactly who sleeps where, it can hold the right number of rooms for the parties behind you, account for every traveller in an emergency, and keep the tariffs flat for everyone by keeping the arithmetic exact. A devotee who books truthfully for four and arrives as four has subsidised nothing and hidden nothing; the system that thanks them is the same system that will hold a room for their daughter's family twenty years hence. Institutions outlive their guests, and the register is how an institution keeps its promises across generations.
 
@@ -79,11 +80,17 @@ The lost-ID anxiety deserves its own sentence: a driving licence left on a dinin
 
 Though the document rule is one rule everywhere, each centre's paper trail has its own habits, and the multi-town devotee benefits from knowing them. At Shegaon — where the dawn queue is fed by overnight trains — the register moves fastest for parties whose cards are together in one hand rather than distributed across four bags, and the check-in sequence is documented plainly in the [Shegaon check-in and check-out timings guide](/blog/shegaon-bhakta-niwas-check-in-check-out-timings). At Omkareshwar, the desk's confirmation culture extends to follow-ups: a reference quoted in a later message is found in moments, and the habits that make this reliable are taught in the [Omkareshwar booking follow-up and confirmation tips](/blog/omkareshwar-booking-follow-up-and-confirmation-tips).
 
-Trimbakeshwar, busiest on pooja weekends, rewards the devotee who arrives with the confirmation reference and the party's IDs ready before the counter rather than at it — the same discipline the [Trimbakeshwar booking follow-up and confirmation tips](/blog/trimbakeshwar-booking-follow-up-and-confirmation-tips) guide recommends for every interaction with the office. And devotees who requested their rooms by phone or WhatsApp — perfectly proper channels, compared in the [Shegaon online booking versus WhatsApp guide](/blog/shegaon-bhakta-niwas-online-booking-vs-whatsapp) — should carry the message thread's reference the way a paper devotee carries the printed line: the desk reads both equally, provided either exists.
+Trimbakeshwar, busiest on pooja weekends, rewards the devotee who arrives with the confirmation reference and the party's IDs ready before the counter rather than at it — the same discipline the [Trimbakeshwar booking follow-up and confirmation tips](/blog/trimbakeshwar-booking-follow-up-and-confirmation-tips) guide recommends for every interaction with the office, and travellers shaping the pooja-eve arrival itself will find the [Trimbakeshwar one-night stay before pooja guide](/blog/trimbakeshwar-one-night-stay-before-pooja) written around that exact morning. And devotees who requested their rooms by phone or WhatsApp — perfectly proper channels, compared in the [Shegaon online booking versus WhatsApp guide](/blog/shegaon-bhakta-niwas-online-booking-vs-whatsapp) — should carry the message thread's reference the way a paper devotee carries the printed line: the desk reads both equally, provided either exists.
 
 ## Keeping documents whole across a yatra
 
-A multi-town pilgrimage multiplies paperwork, and three habits keep it painless. First, the pilgrim's wallet: one card per adult, carried on the person rather than in the suitcase that rides in the luggage van — the packing discipline is set out in our [what to carry pilgrimage essentials](/blog/what-to-carry-pilgrimage-essentials) guide. Second, the digital shadow: a phone photograph of every card, every confirmation reference and every prescription, taken before departure, has rescued more yatras than any single item in any bag. Third, the reference ritual: the booking confirmation from each centre — Shegaon, Pandharpur, Omkareshwar, Trimbakeshwar — saved where the family's booking member can produce it in seconds, because the reference is the thread that ties the desk's register to your request.
+A multi-town pilgrimage multiplies paperwork, and a short sequence of habits keeps it painless from the first desk to the last.
+
+1. **Photograph everything before departure.** A phone photograph of every card, every confirmation reference and every prescription, taken the evening before travel, has rescued more yatras than any single item in any bag.
+2. **Carry one card per adult on the person.** The pilgrim's wallet travels in a pocket, not in the suitcase riding the luggage van — the wider packing discipline is set out in our [what to carry pilgrimage essentials](/blog/what-to-carry-pilgrimage-essentials) guide.
+3. **Pack one spare card per adult in a different bag.** The veteran's habit from earlier in this page, applied across the party's luggage, so that no single lost bag empties the whole party's proof.
+4. **Give each reference a home you can reach in seconds.** The booking confirmation from each centre — Shegaon, Pandharpur, Omkareshwar, Trimbakeshwar — saved where the family's booking member can produce it at once, because the reference is the thread that ties the desk's register to your request.
+5. **Reconcile the wallet each morning of the yatra.** Two minutes at breakfast — cards counted, references in place, photographs backed up — keeps the whole sequence honest across every town on the circuit.
 
 First-time devotees assembling the whole picture — documents, darshan planning, what the first visit feels like — will find the [first visit checklist](/blog/first-time-visit-checklist) written for exactly them.
 
@@ -113,7 +120,7 @@ Present any other card from the standard four, and speak to the desk plainly —
 
 ### Does the headcount on the booking have to match exactly?
 
-It does — capacity equals the bed count, and the register reconciles the party against the request; changes travel as modifications through the office before travel day, where they are absorbed, rather than at the counter, where they are negotiated.
+It does — the party must fit the beds, and the register reconciles the headcount against the request; changes travel as modifications through the office before travel day, where they are absorbed, rather than at the counter, where they are negotiated.
 
 ## Carry the right card, book the right bed
 

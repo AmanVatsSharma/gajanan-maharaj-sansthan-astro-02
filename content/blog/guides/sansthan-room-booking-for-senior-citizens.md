@@ -30,6 +30,7 @@ relatedSlugs:
   - "omkareshwar-room-booking-with-elderly-devotees"
   - "trimbakeshwar-accessible-room-booking"
   - "shegaon-senior-citizen-travel-tips"
+  - "shegaon-bhakta-niwas-check-in-check-out-timings"
   - "senior-citizen-special-needs-guide"
   - "wheelchair-accessible-locations-guide"
   - "trimbakeshwar-senior-citizen-travel-tips"
@@ -88,7 +89,7 @@ Pack these five and the elder travels prepared for the yatra's actual shape, not
 
 ## Pacing the yatra around the stay
 
-The 24-hour cycle from entry is a gift elders should be helped to unwrap. A noon arrival holds the room until noon next day, converting the standard yatra into something gentler: an afternoon nap before the evening darshan, the early aarti without a pre-dawn rush from a distant lodge, breakfast at leisure, and a final darshan before the cycle closes. Compare this with a fixed-noon hotel clock and the elder's day stops being scheduled around the room.
+The 24-hour cycle from entry is a gift elders should be helped to unwrap. A noon arrival holds the room until noon next day, converting the standard yatra into something gentler: an afternoon nap before the evening darshan, the early aarti without a pre-dawn rush from a distant lodge, breakfast at leisure, and a final darshan before the cycle closes. Compare this with a fixed-noon hotel clock and the elder's day stops being scheduled around the room. The cycle's practical shape at the busiest centre, from the dawn queue to the evening keys, is set out in the [Shegaon check-in and check-out timings guide](/blog/shegaon-bhakta-niwas-check-in-check-out-timings).
 
 Three pacing disciplines serve every senior citizen's yatra. Keep the first day half-empty — arrival, rest, one darshan — and spend the second day on the longer wishes. Let the family split for the strenuous portions while the elder holds the room and the easy darshan, rejoining for meals and the evening aarti. And build the return journey from the cycle's end, not the temple's closing hour, so the last memory is prasad rather than a run for a train. The multi-town version of this pacing — for elders ambitious enough to combine centres — is drawn thoughtfully in the [senior devotee multi-city itinerary](/blog/senior-devotee-multi-city-itinerary).
 
@@ -110,7 +111,7 @@ The 2 Bed AC at ₹1,650 is built for exactly them — two beds, air-conditionin
 
 ### Are the centres wheelchair friendly?
 
-Accessibility differs by wing and by centre — Shegaon flattest, Trimbakeshwar steepest, Omkareshwar gaited — so declare the wheelchair in the request and read the [wheelchair accessible locations guide](/blog/wheelchair-accessible-locations-guide) before choosing the town.
+Accessibility differs by wing and by centre — Shegaon flattest, Trimbakeshwar steepest, and the ghats of Omkareshwar in between — so declare the wheelchair in the request and read the [wheelchair accessible locations guide](/blog/wheelchair-accessible-locations-guide) before choosing the town.
 
 ### Can an elder get a late check-out for an evening train?
 
