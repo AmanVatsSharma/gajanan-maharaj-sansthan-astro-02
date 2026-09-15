@@ -29,7 +29,7 @@ relatedSlugs:
   - "managing-accommodation-during-pragat-din"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "teaching-children-about-gajanan-maharaj"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
 ---
@@ -100,7 +100,7 @@ February at Shegaon is cool, dry and — in the jayanti window — full. Three p
 - **Arrive the evening before.** The observance belongs to the early morning; a same-morning arrival from a distant city spends the day's best hours in movement rather than darshan.
 - **Build one unhurried day around the peak day.** The town is fullest on the observance day itself and noticeably lighter the day after — families who stay the extra day trade a little convenience for a far quieter darshan.
 
-The mechanics of requesting rooms — dates, party size, room type — are walked through in the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide), and the wider travel picture, including train routes from Mumbai, Pune and the Nagpur side, is in the [complete Shegaon travel guide](/blog/shegaon-travel-guide). Room requests begin at the [booking page](/booking), and anything the form cannot carry goes to the office through the [contact page](/contact).
+The mechanics of requesting rooms — dates, party size, room type — are walked through in the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide), and the wider travel picture, including train routes from Mumbai, Pune and the Nagpur side, is in the [complete Shegaon travel guide](/blog/sheogaon-travel-guide). Room requests begin at the [booking page](/booking), and anything the form cannot carry goes to the office through the [contact page](/contact).
 
 A practical note on the week's rhythm: jayanti week rewards the family that treats it as a pilgrimage rather than a day-trip. The difference shows in small things — the unhurried morning aarti, the parayan you can sit through without watching the clock, the annadan taken seated rather than standing in a station-bound hurry. Two nights is the pattern most returning families settle on: one for the eve gathering, one for the observance day itself, with the departure timed for the afternoon so the final darshan is not surrendered to a timetable. The 24-hour check-out cycle counted from entry, which the Bhakta Niwas follows for most rooms, suits exactly this shape of visit.
 

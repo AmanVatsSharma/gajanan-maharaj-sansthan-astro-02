@@ -23,8 +23,8 @@ locationIds:
 relatedSlugs:
   - "trimbakeshwar-darshan-timing-guide"
   - "trimbakeshwar-mahashivratri-booking-guide"
-  - "shegaon-darshan-timing-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-darshan-timing-guide"
+  - "sheogaon-travel-guide"
   - "how-to-reach-shegaon-train-bus-from-every-city"
   - "omkareshwar-mamleshwar-jyotirlinga-darshan-guide"
   - "all-12-jyotirlinga-planning"

@@ -1,6 +1,7 @@
 "use client";
 
-import { MapPin, Phone, ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import { MapPin, Phone, ArrowLeft, BookOpen } from "lucide-react";
 import type { Location } from "@/data/sansthan-data";
 import { AmenityList } from "@/features/locations/components/AmenityList";
 import { LocationBookingCtas } from "@/features/locations/components/LocationBookingCtas";
@@ -9,12 +10,22 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { FAQ } from "@/components/seo/FAQ";
 import type { FAQItem } from "@/data/faq";
 
+interface RelatedPost {
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+}
+
 interface LocationDetailPageBodyProps {
   location: Location;
   faqs?: FAQItem[];
+  relatedPosts?: RelatedPost[];
 }
 
-export function LocationDetailPageBody({ location, faqs }: LocationDetailPageBodyProps) {
+export function LocationDetailPageBody({ location, faqs, relatedPosts }: LocationDetailPageBodyProps) {
+  const posts = relatedPosts || [];
+
   return (
     <div className="container py-12">
       <Breadcrumbs
@@ -139,6 +150,37 @@ export function LocationDetailPageBody({ location, faqs }: LocationDetailPageBod
             </Card>
           )}
         </div>
+
+        {relatedPosts.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold font-heading text-brand-maroon mb-6 flex items-center gap-3">
+              <BookOpen className="w-6 h-6 text-brand-gold" />
+              Related Guides for {location.name}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {relatedPosts.map((post) => (
+                <a
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group block p-5 rounded-xl border border-border/50 bg-card hover:border-brand-gold/40 hover:shadow-md transition-all"
+                >
+                  <span className="text-xs font-medium text-brand-saffron uppercase tracking-wider">
+                    {post.category}
+                  </span>
+                  <h3 className="mt-1.5 font-semibold text-foreground group-hover:text-brand-maroon transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+                    {post.description}
+                  </p>
+                  <span className="mt-3 inline-flex items-center text-sm font-medium text-brand-saffron group-hover:gap-2 transition-all">
+                    Read More <ArrowLeft className="w-3.5 h-3.5 rotate-180 ml-1" />
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

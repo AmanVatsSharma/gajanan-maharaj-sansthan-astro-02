@@ -29,7 +29,7 @@ relatedSlugs:
   - "triambakeshwar-best-time-to-visit"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "phone-and-whatsapp-booking-best-practices"

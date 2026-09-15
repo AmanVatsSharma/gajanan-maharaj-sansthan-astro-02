@@ -29,7 +29,7 @@ relatedSlugs:
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-bhakta-niwas-booking-process"
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "welcome-to-sansthan"
 ---
 # Shegaon Bhakta Niwas Refund and Cancellation
@@ -170,4 +170,4 @@ The Sansthan office, applying the prevailing policy to your dates and timing. Th
 
 ## Keep your plans honest and your records complete
 
-Cancel rarely, cancel early, and cancel in writing — that is the whole discipline. When you are ready to plan your next visit, begin at the [booking request page](/booking); the complex details are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas); and the town-wide planning context lives in the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+Cancel rarely, cancel early, and cancel in writing — that is the whole discipline. When you are ready to plan your next visit, begin at the [booking request page](/booking); the complex details are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas); and the town-wide planning context lives in the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).

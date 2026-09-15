@@ -23,11 +23,11 @@ locationIds:
 relatedSlugs:
   - "gajanan-maharaj-pragat-din-utsav-guide"
   - "punyatithi-utsav-darshan-planning"
-  - "maha-shivaratri-sansthan-visit"
-  - "guru-purnima-devotee-planning"
+  - "mahashivratri-complete-guide"
+  - "guru-purnima-celebration"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "month-wise-pilgrimage-planning-calendar"
   - "peak-season-vs-off-season-guide"
@@ -45,7 +45,7 @@ Pragat Din, typically in May, is the Sansthan's most significant annual programm
 
 ## Summer transition: Guru Purnima
 
-Guru Purnima, typically in July or August, is the monsoon festival that honours the Guru tradition. The [guru-purnima-devotee-planning](/blog/guru-purnima-devotee-planning) guide covers the complete programme. Guru Purnima draws 10,000 to 15,000 devotees, and the spiritual discourse programme is one of the most intellectually engaging events in the Sansthan's calendar. The monsoon weather adds a contemplative atmosphere to the festival, and the reduced crowd allows for an unhurried devotional experience.
+Guru Purnima, typically in July or August, is the monsoon festival that honours the Guru tradition. The [guru-purnima-celebration](/blog/guru-purnima-celebration) guide covers the complete programme. Guru Purnima draws 10,000 to 15,000 devotees, and the spiritual discourse programme is one of the most intellectually engaging events in the Sansthan's calendar. The monsoon weather adds a contemplative atmosphere to the festival, and the reduced crowd allows for an unhurried devotional experience.
 
 ## Monsoon programmes: Narsimha Jayanti and Janmashtami
 

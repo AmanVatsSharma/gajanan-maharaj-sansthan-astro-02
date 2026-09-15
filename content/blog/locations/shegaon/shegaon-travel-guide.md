@@ -2,7 +2,7 @@
 title: "Shegaon Travel Guide | Shri Gajanan Maharaj Sansthan"
 description: "How to reach Shegaon by train, bus, and car from Nagpur, Mumbai, Pune, Amravati, Akola, and other cities. Complete travel guide with distances, nearest airport, and route tips."
 date: "2026-03-10"
-slug: "shegaon-travel-guide"
+slug: "sheogaon-travel-guide"
 image: "/images/shegaon-temple.svg"
 keywords:
   - "how to reach shegaon"
@@ -24,10 +24,10 @@ locationIds:
   - "shegaon-visawa"
 relatedSlugs:
   - "how-to-reach-shegaon-train-bus-from-every-city"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "shegaon-bhakta-niwas-accommodation-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-anand-sagar-visit-guide"
   - "shegaon-family-accommodation-checklist"
   - "shegaon-vidarbha-pilgrimage-planning"

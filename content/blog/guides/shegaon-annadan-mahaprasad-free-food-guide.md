@@ -21,12 +21,12 @@ locationIds:
 relatedSlugs:
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
   - "pragat-din-darshan-planning"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "shegaon-samadhi-mandir-history-architecture"
   - "bhakta-niwas-room-tariff-room-types-2026"
   - "shegaon-accommodation-guide"
   - "shegaon-annadan-mahaprasad-free-food-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "how-to-reach-shegaon-train-bus-from-every-city"
   - "gajanan-vijay-granth-parayan-complete-guide"
 ---

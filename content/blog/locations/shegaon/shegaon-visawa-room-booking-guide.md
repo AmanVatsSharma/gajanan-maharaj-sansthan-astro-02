@@ -28,7 +28,7 @@ relatedSlugs:
   - "shegaon-room-booking-near-samadhi-mandir"
   - "shegaon-visawa-accommodation-tips"
   - "shegaon-anand-sagar-visit-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "shegaon-accommodation-guide"
   - "welcome-to-sansthan"
@@ -153,4 +153,4 @@ Yes — a common pattern for late arrivals or early departures. Request both sta
 
 ## Land, rest, and rise for darshan
 
-Visawa turns a train timetable into a plan: book it when the rails decide your hours. Begin at the [booking request page](/booking), place the choice inside the town's fuller geography with the [complete Shegaon travel guide](/blog/shegaon-travel-guide), and let the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) frame the pilgrimage itself.
+Visawa turns a train timetable into a plan: book it when the rails decide your hours. Begin at the [booking request page](/booking), place the choice inside the town's fuller geography with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide), and let the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) frame the pilgrimage itself.

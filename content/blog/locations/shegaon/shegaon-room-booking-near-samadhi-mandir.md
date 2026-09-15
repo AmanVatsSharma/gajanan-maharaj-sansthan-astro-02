@@ -27,9 +27,9 @@ relatedSlugs:
   - "shegaon-visawa-room-booking-guide"
   - "shegaon-accommodation-near-temple"
   - "shegaon-senior-citizen-travel-tips"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "welcome-to-sansthan"
 ---
 # Shegaon Room Booking Near Samadhi Mandir
@@ -100,7 +100,7 @@ For the classic pattern — a family arriving by morning train and sleeping near
 5. **Return for the evening aarti.** From Bhakta Niwas this is a short walk; from Anand Vihar or Visawa, time the return with buffer.
 6. **Close the day with mahaprasad**, and let the next morning's Kakad Aarti decision be a gentle one — the room is minutes away.
 
-The day-level timetable of darshans and aartis is maintained in our [Shegaon darshan timing guide](/blog/shegaon-darshan-timing-guide); timings shift across festival periods, so confirm the current schedule with the temple office. And before you send the request itself, a pass through our [common booking mistakes guide](/blog/shegaon-bhakta-niwas-common-booking-mistakes) — the errors that cost families their preferred location are usually made in the request, not on the map — will protect the room this itinerary depends on.
+The day-level timetable of darshans and aartis is maintained in our [Shegaon darshan timing guide](/blog/sheogaon-darshan-timing-guide); timings shift across festival periods, so confirm the current schedule with the temple office. And before you send the request itself, a pass through our [common booking mistakes guide](/blog/shegaon-bhakta-niwas-common-booking-mistakes) — the errors that cost families their preferred location are usually made in the request, not on the map — will protect the room this itinerary depends on.
 
 ## The small logistics that follow the choice
 
@@ -144,4 +144,4 @@ Yes, and it is a recognised pattern — for example a first night at Visawa afte
 
 ## Choose your base, then walk everywhere
 
-Proximity in Shegaon is a choice you make once, in the booking remarks. Begin at the [booking request page](/booking), weigh the three complexes honestly, and set the choice inside the town's full context with the [complete Shegaon travel guide](/blog/shegaon-travel-guide) and the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide).
+Proximity in Shegaon is a choice you make once, in the booking remarks. Begin at the [booking request page](/booking), weigh the three complexes honestly, and set the choice inside the town's full context with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide) and the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide).

@@ -27,7 +27,7 @@ locationIds:
 relatedSlugs:
   - "bhakta-niwas-complete-booking-guide"
   - "phone-and-whatsapp-booking-best-practices"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "nearby-places-from-shegaon"
   - "solo-female-devotee-safety-guide"
   - "senior-citizen-special-needs-guide"

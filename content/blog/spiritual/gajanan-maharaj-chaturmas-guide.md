@@ -29,7 +29,7 @@ relatedSlugs:
   - "navratri-festival-season-booking-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "gajanan-maharaj-jayanti-celebration-guide"
 ---
@@ -89,7 +89,7 @@ Two small patterns make the household season real. The first is visibility — t
 
 Chaturmas is the monsoon at Shegaon, and the rains change both the town's face and a pilgrim's arithmetic. The countryside of the Buldhana district turns green; the air cools; and the crowds move in the pattern the table above implies — light on ordinary weekdays, gathering on every Shravan Monday and every ekadashi, and at their heaviest around the September utsav. Rooms through the season are requested via the [booking page](/booking), with the September window planned months rather than weeks ahead; the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide) walks through the request itself.
 
-For the rains, the practicalities are ordinary and worth respecting: footwear with grip, a compact umbrella per adult, one full change of clothing per person packed dry, and basic cold remedies within reach. The full checklist is in our [pilgrimage essentials guide](/blog/what-to-carry-pilgrimage-essentials). Trains reach the Shegaon–Akola belt from Mumbai, Pune and Nagpur; the routes are detailed in the [complete Shegaon travel guide](/blog/shegaon-travel-guide), and the location details of the complex — rooms, facilities, placement — are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas).
+For the rains, the practicalities are ordinary and worth respecting: footwear with grip, a compact umbrella per adult, one full change of clothing per person packed dry, and basic cold remedies within reach. The full checklist is in our [pilgrimage essentials guide](/blog/what-to-carry-pilgrimage-essentials). Trains reach the Shegaon–Akola belt from Mumbai, Pune and Nagpur; the routes are detailed in the [complete Shegaon travel guide](/blog/sheogaon-travel-guide), and the location details of the complex — rooms, facilities, placement — are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas).
 
 Families travelling with elders should read the season generously. A monsoon chaturmas visit asks for slower mornings, a room within easy reach of the temple approach, and a plan that treats the evening aarti as the day's fixed point rather than chasing every programme. The non-AC rooms that suit the Vidarbha winter are equally the natural choice in the wet months, when daytime temperatures sit well below their April peaks; the AC rows earn their premium only in the crowded festival windows, when a cool room to recover in becomes part of the day's strategy. Under the 24-hour check-out cycle counted from entry, a family arriving by an evening train holds its room through the following evening — which frames a two-night chaturmas stay around aartis rather than around checkout anxieties.
 

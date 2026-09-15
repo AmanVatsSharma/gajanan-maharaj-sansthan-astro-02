@@ -22,8 +22,8 @@ locationIds:
   - "shegaon-bhakt-niwas"
   - "shegaon-anand-vihar"
 relatedSlugs:
-  - "shegaon-darshan-timing-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-darshan-timing-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "shegaon-anand-sagar-visit-guide"
   - "week-long-devotional-circuit-planner"
@@ -93,7 +93,7 @@ For a broader multi-location plan, see the [Jyotirlinga and Sansthan Combined It
 - **Day 1:** Darshan + rest + evening prayers
 - **Day 2:** Anand Sagar + local spiritual points + return
 
-For the full trip setup, combine this with the [Shegaon Travel Guide](/blog/shegaon-travel-guide) and [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide).
+For the full trip setup, combine this with the [Shegaon Travel Guide](/blog/sheogaon-travel-guide) and [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide).
 
 If you are also planning a Jyotirlinga route, check the [Omkareshwar Darshan Timing Guide](/blog/omkareshwar-darshan-timings) and the [Week-Long Devotional Circuit Planner](/blog/week-long-devotional-circuit-planner).
 

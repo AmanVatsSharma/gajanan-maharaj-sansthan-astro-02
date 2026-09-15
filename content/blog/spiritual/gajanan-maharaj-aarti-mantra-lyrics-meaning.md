@@ -24,11 +24,11 @@ relatedSlugs:
   - "gajanan-vijay-granth-parayan-complete-guide"
   - "shegaon-samadhi-mandir-history-architecture"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "pragat-din-darshan-planning"
   - "teachings-of-shri-gajanan-maharaj-for-modern-families"
   - "shegaon-annadan-mahaprasad-free-food-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "bhakta-niwas-complete-booking-guide"
 ---
 # Gajanan Maharaj Aarti, Mantra & Their Meaning

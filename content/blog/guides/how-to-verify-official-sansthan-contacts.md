@@ -29,7 +29,7 @@ relatedSlugs:
   - "shegaon-to-ajmer-spiritual-route"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "phone-and-whatsapp-booking-best-practices"
@@ -122,7 +122,7 @@ Carry a small notebook to jot down thoughts, observations, and prayers during th
 - [Shegaon To Ajmer Spiritual Route](/blog/shegaon-to-ajmer-spiritual-route)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)

@@ -30,7 +30,7 @@ relatedSlugs:
   - "temple-volunteer-seva-guide"
   - "the-power-of-mahaprasad-in-devotion"
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
 ---
 # Gajanan Maharaj Seva Opportunities Guide
 
@@ -138,4 +138,4 @@ Decline, and report the offer to the office via the [contact page](/contact). Ge
 
 ## The plate is always open
 
-The saint of Shegaon was first seen at a heap of discarded food, and everything the Sansthan built since answers that single image: nothing wasted, no one unfed, no hand turned away. That is the door your seva walks through. Begin where you are — an offering to the annadan, an evening of service at the next utsav, a meal given quietly at home — and when the wish to serve at the source takes hold, request your stay through the [accommodation booking page](/booking) and present yourself at the office. Between the wish and the act stands nothing but a short walk and a willing heart; the [Shegaon travel guide](/blog/shegaon-travel-guide) will bring you to the town, and this guide has shown you where, once there, your hands belong. This article closes our spiritual series — the [online room booking guide](/blog/gajanan-maharaj-sansthan-online-room-booking) opens the practical series that follows it, for the days between one seva and the next.
+The saint of Shegaon was first seen at a heap of discarded food, and everything the Sansthan built since answers that single image: nothing wasted, no one unfed, no hand turned away. That is the door your seva walks through. Begin where you are — an offering to the annadan, an evening of service at the next utsav, a meal given quietly at home — and when the wish to serve at the source takes hold, request your stay through the [accommodation booking page](/booking) and present yourself at the office. Between the wish and the act stands nothing but a short walk and a willing heart; the [Shegaon travel guide](/blog/sheogaon-travel-guide) will bring you to the town, and this guide has shown you where, once there, your hands belong. This article closes our spiritual series — the [online room booking guide](/blog/gajanan-maharaj-sansthan-online-room-booking) opens the practical series that follows it, for the days between one seva and the next.

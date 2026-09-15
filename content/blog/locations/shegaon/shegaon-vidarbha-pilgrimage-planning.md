@@ -26,10 +26,10 @@ relatedSlugs:
   - "shegaon-anand-sagar-visit-guide"
   - "shegaon-visawa-accommodation-tips"
   - "shegaon-amravati-to-shegaon-route"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "pandharpur-and-shegaon-family-yatra-plan"
@@ -118,10 +118,10 @@ Senior citizens should carry their primary medical documents and a small persona
 - [Shegaon Anand Sagar Visit Guide](/blog/shegaon-anand-sagar-visit-guide)
 - [Shegaon Visawa Accommodation Tips](/blog/shegaon-visawa-accommodation-tips)
 - [Shegaon Amravati To Shegaon Route](/blog/shegaon-amravati-to-shegaon-route)
-- [Shegaon Darshan Timing Guide](/blog/shegaon-darshan-timing-guide)
+- [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Pandharpur and Shegaon Family Yatra Plan](/blog/pandharpur-and-shegaon-family-yatra-plan)

@@ -20,7 +20,7 @@ category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
 relatedSlugs:
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "nearby-places-from-shegaon"
   - "bhakta-niwas-complete-booking-guide"
@@ -76,7 +76,7 @@ Today the Sansthan manages the Samadhi Mandir, the Bhakta Niwas network, Anand S
 
 ## What to Pack and How to Prepare
 
-Dress modestly and comfortably. Cotton clothing works well in Shegaon's Vidarbha climate, especially between October and March. Remove leather items like belts, wallets, and watch straps before entering the Mandir. Footwear is left at the designated shoe racks near the entrance, so wear easily removable shoes or sandals. Carry a small scarf or shawl, a water bottle for the queue, and a cap and sunscreen if you are visiting during summer. The [Shegaon Travel Guide](/blog/shegaon-travel-guide) covers transport options, seasonal weather, nearby towns, and a detailed packing checklist.
+Dress modestly and comfortably. Cotton clothing works well in Shegaon's Vidarbha climate, especially between October and March. Remove leather items like belts, wallets, and watch straps before entering the Mandir. Footwear is left at the designated shoe racks near the entrance, so wear easily removable shoes or sandals. Carry a small scarf or shawl, a water bottle for the queue, and a cap and sunscreen if you are visiting during summer. The [Shegaon Travel Guide](/blog/sheogaon-travel-guide) covers transport options, seasonal weather, nearby towns, and a detailed packing checklist.
 
 For devotees who want to understand the spiritual dimension of staying within a temple premises, the [Spiritual Benefits of Bhakta Niwas Stay](/blog/spiritual-benefits-of-bhakta-niwas-stay) and [Significance of Temple Stay in Devotion](/blog/significance-of-temple-stay-in-devotion) explore the tradition of temple accommodation from a devotional perspective.
 

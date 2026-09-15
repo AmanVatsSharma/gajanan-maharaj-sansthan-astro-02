@@ -147,7 +147,7 @@ Trimbakeshwar is not a good fit for:
 - Children under 3 — the queue, the heat, the Brahmagiri descent are all too much
 - Multi-generational groups with elders above 80 and very young children in the same trip — pick a different temple or split the trip into two shorter visits
 
-For a younger-child alternative, the Gajanan Maharaj temple at Shegaon has a much gentler pace, better wheelchair access, and a shorter queue. See [Shegaon Travel Guide](/blog/shegaon-travel-guide).
+For a younger-child alternative, the Gajanan Maharaj temple at Shegaon has a much gentler pace, better wheelchair access, and a shorter queue. See [Shegaon Travel Guide](/blog/sheogaon-travel-guide).
 
 ### Mistakes to avoid
 

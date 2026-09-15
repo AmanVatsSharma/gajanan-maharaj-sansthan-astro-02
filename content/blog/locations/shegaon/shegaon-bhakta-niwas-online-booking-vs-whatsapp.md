@@ -29,7 +29,7 @@ relatedSlugs:
   - "whatsapp-booking-step-by-step-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "welcome-to-sansthan"
 ---
 # Shegaon Bhakta Niwas Online Booking vs WhatsApp
@@ -164,4 +164,4 @@ Yes — the channel never changes the tariff. Room rates are the published indic
 
 ## Make your request the clean way
 
-The channel debate resolves itself once you treat the two as partners: the [booking request page](/booking) for the request, WhatsApp for the conversation around it. Location details for the complex are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and the wider pilgrimage context — trains, seasons, itineraries — begins with the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+The channel debate resolves itself once you treat the two as partners: the [booking request page](/booking) for the request, WhatsApp for the conversation around it. Location details for the complex are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and the wider pilgrimage context — trains, seasons, itineraries — begins with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).

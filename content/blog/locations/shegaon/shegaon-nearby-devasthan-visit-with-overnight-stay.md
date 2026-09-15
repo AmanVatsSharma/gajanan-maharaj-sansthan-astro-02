@@ -27,7 +27,7 @@ relatedSlugs:
   - "nearby-places-from-shegaon"
   - "shegaon-nearby-attractions-day-trip"
   - "shegaon-anand-sagar-visit-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "vidarbha-temple-stay-network"
   - "gajanan-maharaj-sansthan-complete-guide"
@@ -129,4 +129,4 @@ With the office on the day — the [contact page](/contact) reaches the team tha
 
 ## Rest in Shegaon, roam by day
 
-The circuit pilgrim's secret is not a secret at all: sleep where the aarti is, and let the roads radiate from a still centre. Book the base as one honest request, keep the inner ring on foot, ration the journeys out to one per day of energy, and return each evening to the lamps. Begin with the [accommodation booking request page](/booking), place the basecamp on the map through the [Bhakta Niwas location page](/locations/shegaon-bhakt-niwas) and its sister complexes, and read the wider region through the [complete Shegaon travel guide](/blog/shegaon-travel-guide) — or continue this series directly with our Pandharpur accommodation guides, beginning with the [check-in and check-out timings at Pandharpur Bhakta Niwas](/blog/pandharpur-bhakta-niwas-check-in-check-out-timings).
+The circuit pilgrim's secret is not a secret at all: sleep where the aarti is, and let the roads radiate from a still centre. Book the base as one honest request, keep the inner ring on foot, ration the journeys out to one per day of energy, and return each evening to the lamps. Begin with the [accommodation booking request page](/booking), place the basecamp on the map through the [Bhakta Niwas location page](/locations/shegaon-bhakt-niwas) and its sister complexes, and read the wider region through the [complete Shegaon travel guide](/blog/sheogaon-travel-guide) — or continue this series directly with our Pandharpur accommodation guides, beginning with the [check-in and check-out timings at Pandharpur Bhakta Niwas](/blog/pandharpur-bhakta-niwas-check-in-check-out-timings).

@@ -23,11 +23,11 @@ locationIds:
 relatedSlugs:
   - "gajanan-maharaj-pragat-din-utsav-guide"
   - "punyatithi-utsav-darshan-planning"
-  - "maha-shivaratri-sansthan-visit"
-  - "guru-purnima-devotee-planning"
+  - "mahashivratri-complete-guide"
+  - "guru-purnima-celebration"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "month-wise-pilgrimage-planning-calendar"
   - "festival-season-what-to-expect"
@@ -49,7 +49,7 @@ The practical challenges of peak season are accommodation booking pressure, tran
 
 Off-season at the Sansthan covers the months between major festivals, with the most favourable off-season periods being the monsoon months (July to September) and the post-festival winter months (January to February). During off-season, the temple crowd is significantly smaller — darshan queues are typically 15 to 30 minutes long — and the devotional atmosphere is quieter and more contemplative. Many devotees describe the off-season temple experience as more personally meaningful than the peak-season experience, precisely because the reduced crowd allows them to spend extended time at the Samadhi without the pressure of a large programme.
 
-The practical advantages of off-season are accommodation availability, cost savings, and travel convenience. Bhakta Niwas rooms are typically available on short notice during off-season, and the accommodation cost is lower. The [shegaon-budget-pilgrimage-guide](/blog/shegaon-budget-pilgrimage-guide) provides cost estimates for off-season visits. Transport to Shegaon is less crowded, and the train and bus schedules are more flexible. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers transport options and seasonal variations.
+The practical advantages of off-season are accommodation availability, cost savings, and travel convenience. Bhakta Niwas rooms are typically available on short notice during off-season, and the accommodation cost is lower. The [shegaon-budget-pilgrimage-guide](/blog/shegaon-budget-pilgrimage-guide) provides cost estimates for off-season visits. Transport to Shegaon is less crowded, and the train and bus schedules are more flexible. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers transport options and seasonal variations.
 
 The spiritual advantage of off-season is the contemplative atmosphere. The Anand Sagar complex is particularly beautiful during the monsoon months, with the lake full and the gardens lush, and the reduced crowd allows for extended reflection in a peaceful environment. Many devotees describe the off-season as their favourite time to visit Shegaon, because the combination of natural beauty, reduced crowd, and regular temple programme creates a devotional environment that is conducive to personal spiritual practice.
 

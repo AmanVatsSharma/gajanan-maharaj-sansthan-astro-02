@@ -30,7 +30,7 @@ relatedSlugs:
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "family-values-in-sansthan-tradition"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-miracles-stories"
 ---
 # Gajanan Maharaj Life Lessons Guide
@@ -110,4 +110,4 @@ They were designed for exactly that — a life, not a location. That said, famil
 
 ## Live the lessons where they were lived
 
-A season of practising the five lessons earns, and is earned by, a visit to Shegaon. Send the room request through the [accommodation booking page](/booking), look over the complex on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and read the wider setting in the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) and the [complete Shegaon travel guide](/blog/shegaon-travel-guide). The verse-teachings behind these lessons are opened in our [doha-chaupai guide](/blog/gajanan-maharaj-doha-chaupai-meaning), and the tradition the saint belonged to is traced in our guide to [Gajanan Maharaj and the Dattatreya tradition](/blog/gajanan-maharaj-and-dattatreya-tradition).
+A season of practising the five lessons earns, and is earned by, a visit to Shegaon. Send the room request through the [accommodation booking page](/booking), look over the complex on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and read the wider setting in the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) and the [complete Shegaon travel guide](/blog/sheogaon-travel-guide). The verse-teachings behind these lessons are opened in our [doha-chaupai guide](/blog/gajanan-maharaj-doha-chaupai-meaning), and the tradition the saint belonged to is traced in our guide to [Gajanan Maharaj and the Dattatreya tradition](/blog/gajanan-maharaj-and-dattatreya-tradition).

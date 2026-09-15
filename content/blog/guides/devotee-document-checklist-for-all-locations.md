@@ -29,7 +29,7 @@ relatedSlugs:
   - "sansthan-location-selection-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "shegaon-bhakta-niwas-booking-process"
@@ -122,7 +122,7 @@ The trust usually publishes a yearly festival calendar on its notice board, and 
 - [Sansthan Location Selection Guide](/blog/sansthan-location-selection-guide)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Shegaon Bhakta Niwas Booking Process](/blog/shegaon-bhakta-niwas-booking-process)

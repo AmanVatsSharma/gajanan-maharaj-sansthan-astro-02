@@ -28,7 +28,7 @@ relatedSlugs:
   - "shegaon-two-day-itinerary"
   - "shegaon-best-time-to-visit"
   - "shegaon-bhakta-niwas-room-types-and-facilities"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
 ---
@@ -47,7 +47,7 @@ Strip the question to its essentials and the decision makes itself in four lines
 - **Choose two days without debate** when ekadashi falls anywhere near your dates — the town's rhythm on those days punishes tight plans and rewards unhurried ones.
 - **Choose more than two** only for a specific reason: a companion pilgrimage onward, a parayan or seva commitment, or a family that treats Shegaon as a retreat rather than a destination.
 
-Notice what is absent from the list: cost. The difference between one night and two, at Sansthan tariffs — rooms run from ₹1,650 for a 2-bed AC to ₹2,550 for a 4-bed AC — is smaller than what most families spend on the rail fares themselves. The scarcity is never money at Shegaon; it is room availability on the dates you want, which is why the length decision belongs at the start of planning, not the end. The tariff detail sits in our [room types and facilities guide](/blog/shegaon-bhakta-niwas-room-types-and-facilities), and the booking mechanics that turn a chosen length into a held room are those of the [complete Bhakta Niwas booking guide](/blog/bhakta-niwas-complete-booking-guide), set in the town-wide context of the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+Notice what is absent from the list: cost. The difference between one night and two, at Sansthan tariffs — rooms run from ₹1,650 for a 2-bed AC to ₹2,550 for a 4-bed AC — is smaller than what most families spend on the rail fares themselves. The scarcity is never money at Shegaon; it is room availability on the dates you want, which is why the length decision belongs at the start of planning, not the end. The tariff detail sits in our [room types and facilities guide](/blog/shegaon-bhakta-niwas-room-types-and-facilities), and the booking mechanics that turn a chosen length into a held room are those of the [complete Bhakta Niwas booking guide](/blog/bhakta-niwas-complete-booking-guide), set in the town-wide context of the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).
 
 ## What one day at Shegaon holds
 

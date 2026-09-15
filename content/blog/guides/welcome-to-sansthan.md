@@ -26,7 +26,7 @@ relatedSlugs:
   - "gajanan-maharaj-sansthan-complete-guide"
   - "first-time-visit-checklist"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "mumbai-to-shegaon-weekend-guide"
   - "complete-transport-guide-for-devotees"
   - "what-to-carry-pilgrimage-essentials"
@@ -71,7 +71,7 @@ The Mahaprasad Hall is located within the temple complex, and the Mahaprasad —
 
 The Anand Sagar complex is a landscaped garden and water park that is adjacent to the main temple complex. The complex includes a lake, a garden, a children's play area, and a museum that documents the life of Shri Gajanan Maharaj. The Anand Sagan complex is open to all visitors, and entry is free or available for a nominal fee. The complex is a popular destination for families and for devotees who want to spend time in a peaceful, landscaped environment after the intensity of the darshan experience.
 
-The [Shegaon Darshan Timing Guide](/blog/shegaon-darshan-timing-guide) covers the darshan timings, the queue procedures, the Mahaprasad distribution schedule, and the Anand Sagan complex hours in detail.
+The [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide) covers the darshan timings, the queue procedures, the Mahaprasad distribution schedule, and the Anand Sagan complex hours in detail.
 
 ## The Multi-Location Pilgrimage Experience
 

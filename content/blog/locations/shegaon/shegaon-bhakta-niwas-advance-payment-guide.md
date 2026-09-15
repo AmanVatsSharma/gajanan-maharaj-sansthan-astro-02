@@ -30,7 +30,7 @@ relatedSlugs:
   - "bhakta-niwas-complete-booking-guide"
   - "how-to-book-bhakta-niwas-online"
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "welcome-to-sansthan"
 ---
 # Shegaon Bhakta Niwas Advance Payment Guide

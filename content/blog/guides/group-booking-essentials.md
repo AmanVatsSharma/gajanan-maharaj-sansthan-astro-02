@@ -32,7 +32,7 @@ relatedSlugs:
   - "shegaon-accommodation-guide"
   - "omkareshwar-accommodation-near-temple"
   - "pandharpur-accommodation-near-temple"
-  - "trimabkeshwar-accommodation-near-temple"
+  - "trimbakeshwar-accommodation-near-temple"
 ---
 
 # Group Booking Essentials | Shri Gajanan Maharaj Sansthan
@@ -57,7 +57,7 @@ The trust accommodation office reviews the request and provides a confirmation w
 
 The trust also provides a group check-in lane at Bhakta Niwas during peak periods. Instead of joining the individual check-in queue, the group proceeds directly to a designated counter where the coordinator processes the check-in for all group members simultaneously. This reduces the check-in time from approximately thirty minutes per person to approximately fifteen minutes for the entire group.
 
-The [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide) covers the group booking procedure in detail, including the request format, the confirmation timeline, the group rate structure, and the modification and cancellation policies for group bookings.
+The [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide) covers the group booking procedure in detail, including the request format, the confirmation timeline, the group rate structure, and the modification and cancellation policies for group bookings. You can also browse [Shegaon Bhakta Niwas](/locations/shegaon-bhakt-niwas) for accommodation details and [book directly](/booking) for your group stay.
 
 ## Group Booking at the Other Locations
 
@@ -85,7 +85,7 @@ The logistical planning for a group pilgrimage starts with the accommodation boo
 
 **Meal coordination.** The trust Mahaprasad Hall can accommodate groups, but the timing needs to be coordinated to avoid the peak periods when the Hall is overcrowded. The group coordinator can arrange a specific meal time for the group, typically before or after the main serving periods. If the group has specific dietary requirements — vegetarian-only, no onion-garlic, specific allergy restrictions — the coordinator can communicate these requirements to the Mahaprasad Hall kitchen in advance.
 
-**Darshan queue coordination.** The darshan queue at Shegaon and the other locations can be long during peak periods, and the group coordinator can arrange for the group to enter the queue together at a specific time. This is particularly useful during festival periods when the queue management is more structured. The [Shegaon Darshan Timing Guide](/blog/shegaon-darshan-timing-guide) and the [Pandharpur Vitthal Darshan Timing Guide](/blog/pandharpur-vitthal-darshan-timing-guide) cover the darshan timing and the queue procedures for groups.
+**Darshan queue coordination.** The darshan queue at Shegaon and the other locations can be long during peak periods, and the group coordinator can arrange for the group to enter the queue together at a specific time. This is particularly useful during festival periods when the queue management is more structured. The [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide) and the [Pandharpur Vitthal Darshan Timing Guide](/blog/pandharpur-vitthal-darshan-timing-guide) cover the darshan timing and the queue procedures for groups.
 
 **Daily schedule.** The group coordinator will help the group plan the daily schedule — darshan timing, Mahaprasad timing, Anand Sagan visit, and any other activities. The coordinator knows the local timings and can advise on the best sequence of activities to avoid crowds and heat.
 

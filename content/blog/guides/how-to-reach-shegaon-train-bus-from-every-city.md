@@ -5,8 +5,8 @@ date: "2025-11-07"
 slug: "how-to-reach-shegaon-train-bus-from-every-city"
 image: "/images/shegaon-temple.svg"
 keywords:
-  - "how to reach shegaon"
-  - "nagpur to shegaon distance"
+  - "shegaon train and bus routes"
+  - "shegaon transport guide from every city"
   - "mumbai to shegaon train"
   - "pune to shegaon"
   - "shegaon railway station"
@@ -20,10 +20,10 @@ category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
 relatedSlugs:
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "pragat-din-darshan-planning"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
   - "shegaon-to-pandharpur-route-guide"
@@ -113,7 +113,7 @@ The station to temple distance is about 1.5 km. The walk is short but can be unc
 
 **Carrying luggage:** The Sansthan has cloakroom facilities near the mandir. You can leave your bags at the cloakroom and collect them after darshan.
 
-**Booking accommodation in advance:** Pragat Din (February 12) and Samadhi Utsav (August–September) require advance booking. See our [Bhakta Niwas tariff guide](/bhakt-niwas-room-tariff-room-types-2026) for rates and [Shegaon accommodation guide](/shegaon-accommodation-guide) for alternatives.
+**Booking accommodation in advance:** Pragat Din (February 12) and Samadhi Utsav (August–September) require advance booking. See our [Bhakta Niwas tariff guide](/blog/bhakt-niwas-room-tariff-room-types-2026) for rates, the [Shegaon accommodation guide](/blog/shegaon-accommodation-guide) for alternatives, and [Bhakta Niwas Shegaon](/locations/shegaon-bhakt-niwas) for room details. You can also [book your stay](/booking) directly.
 
 ## Frequently asked questions
 

@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -41,7 +41,7 @@ The festival is also associated with the concept of purification and the renewal
 
 ## The Samadhi Programme
 
-The Rishi Panchami programme at the Sansthan is centred around the Samadhi, the place where Shri Gajanan Maharaj attained mahasamadhi. The morning begins with a special puja that is conducted by the temple priests at the Samadhi, and the programme includes the recitation of the traditional mantras that honour the Saptarishi. The atmosphere at the Samadhi during the programme is one of quiet devotional concentration, and many devotees describe the experience of participating in the Rishi Panchami programme at the Samadhi as one of the most spiritually significant moments of the year. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the Rishi Panchami programme.
+The Rishi Panchami programme at the Sansthan is centred around the Samadhi, the place where Shri Gajanan Maharaj attained mahasamadhi. The morning begins with a special puja that is conducted by the temple priests at the Samadhi, and the programme includes the recitation of the traditional mantras that honour the Saptarishi. The atmosphere at the Samadhi during the programme is one of quiet devotional concentration, and many devotees describe the experience of participating in the Rishi Panchami programme at the Samadhi as one of the most spiritually significant moments of the year. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the Rishi Panchami programme.
 
 The main temple also conducts a special puja during Rishi Panchami, and devotees who participate in both programmes — at the main temple and at the Samadhi — report a comprehensive devotional experience that engages both the intellectual and the emotional dimensions of spiritual practice. The morning programme at the main temple includes the Mangala Aarti at 4:00 AM, followed by the abhishek ceremony and the special puja for Rishi Panchami.
 
@@ -49,7 +49,7 @@ The main temple also conducts a special puja during Rishi Panchami, and devotees
 
 The Samadhi at Shegaon is a unique devotional space — the place where Shri Gajanan Maharaj attained mahasamadhi and where his presence is most directly felt by devotees who visit. The Samadhi grounds are surrounded by old banyan trees, peaceful gardens, and the quiet atmosphere that is conducive to contemplative practice. The Rishi Panchami programme at the Samadhi takes advantage of this setting, with the morning programme conducted in the garden surrounding the Samadhi and the afternoon programme conducted in the temple adjacent to the grounds.
 
-Devotees who arrive before 6:00 AM for the Rishi Panchami programme can participate in the complete morning schedule — the Mangala Aarti at the Samadhi, the abhishek ceremony, and the special puja that is conducted for the festival. The early morning programme is particularly well-attended, and many devotees describe the experience of participating in the morning programme at the Samadhi as one of the most spiritually significant moments of the year. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the morning programme.
+Devotees who arrive before 6:00 AM for the Rishi Panchami programme can participate in the complete morning schedule — the Mangala Aarti at the Samadhi, the abhishek ceremony, and the special puja that is conducted for the festival. The early morning programme is particularly well-attended, and many devotees describe the experience of participating in the morning programme at the Samadhi as one of the most spiritually significant moments of the year. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the morning programme.
 
 ## The Monsoon Setting
 
@@ -69,7 +69,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Rishi Panchami visi
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for Rishi Panchami because devotees can arrive in the early morning and participate in the programme at the Samadhi. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for Rishi Panchami because devotees can arrive in the early morning and participate in the programme at the Samadhi. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 
@@ -77,7 +77,7 @@ The journey to Shegaon from Mumbai or Pune involves the overnight train, which i
 Rishi Panchami at Shegaon honours the Saptarishi — the seven great sages of the Vedic tradition — and celebrates the guru-disciple tradition that Shri Gajanan Maharaj exemplified in his own life.
 
 **Where is the Rishi Panchami programme conducted?**
-The programme is centred around the Samadhi, the place where Shri Gajanan Maharaj attained mahasamadhi. A special programme is also conducted at the main temple. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule.
+The programme is centred around the Samadhi, the place where Shri Gajanan Maharaj attained mahasamadhi. A special programme is also conducted at the main temple. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 **How far in advance should I book accommodation?**
 Two to three weeks in advance is sufficient. The [bhakta-niwas-complete-booking-guide](/blog/bhakta-niwas-complete-booking-guide) covers the reservation process.

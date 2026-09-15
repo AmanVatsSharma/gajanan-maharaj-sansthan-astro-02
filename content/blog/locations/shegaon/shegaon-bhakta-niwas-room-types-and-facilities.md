@@ -28,7 +28,7 @@ relatedSlugs:
   - "shegaon-bhakta-niwas-facilities-and-amenities"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "how-to-book-bhakta-niwas-online"
   - "welcome-to-sansthan"
 ---
@@ -164,4 +164,4 @@ Yes, note it in the remarks of your booking request through the [booking page](/
 
 ## Reserve the room that fits, then pack light
 
-The room types are simple, the tariffs are complete, and the facilities cover what a pilgrim family actually needs. Begin at the [booking request page](/booking), review the complex details on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and set the whole journey in context with the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+The room types are simple, the tariffs are complete, and the facilities cover what a pilgrim family actually needs. Begin at the [booking request page](/booking), review the complex details on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and set the whole journey in context with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).

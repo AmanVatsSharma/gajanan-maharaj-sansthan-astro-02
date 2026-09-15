@@ -25,11 +25,11 @@ locationIds:
 relatedSlugs:
   - "shegaon-visawa-accommodation-tips"
   - "shegaon-vidarbha-pilgrimage-planning"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "shegaon-weekend-planning-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "pandharpur-and-shegaon-family-yatra-plan"
@@ -117,11 +117,11 @@ Senior citizens should carry their primary medical documents and a small persona
 
 - [Shegaon Visawa Accommodation Tips](/blog/shegaon-visawa-accommodation-tips)
 - [Shegaon Vidarbha Pilgrimage Planning](/blog/shegaon-vidarbha-pilgrimage-planning)
-- [Shegaon Darshan Timing Guide](/blog/shegaon-darshan-timing-guide)
+- [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide)
 - [Shegaon Weekend Planning Guide](/blog/shegaon-weekend-planning-guide)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Pandharpur and Shegaon Family Yatra Plan](/blog/pandharpur-and-shegaon-family-yatra-plan)

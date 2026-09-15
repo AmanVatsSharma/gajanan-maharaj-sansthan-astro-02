@@ -11,6 +11,8 @@ import { Testimonials } from "@/features/info/components/Testimonials";
 import { PlanYourVisit } from "@/features/info/components/PlanYourVisit";
 import { CTABanner } from "@/features/info/components/CTABanner";
 import { SectionDivider } from "@/features/info/components/SectionDivider";
+import { FAQ } from "@/components/seo/FAQ";
+import { bookingFAQs } from "@/data/faq";
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import {
   BRAND_VARIANTS,
@@ -154,6 +156,22 @@ const structuredPayload = [
     <Testimonials client:visible />
     <SectionDivider client:visible variant="minimal" />
         <PlanYourVisit client:visible />
+    <SectionDivider client:visible variant="minimal" />
+    <section class="py-16 sm:py-24">
+      <FAQ
+        title="Frequently Asked Questions"
+        description="Everything you need to know before your visit to Shri Gajanan Maharaj Sansthan."
+        faqs={bookingFAQs.filter((f) =>
+          ["how-to-book", "room-types-available", "room-price-bhakt-niwas",
+           "accommodation-cost", "darshan-timings-shegaon", "free-entry-darshan",
+           "whatsapp-booking-number", "meals-included", "check-in-duration",
+           "multiple-locations", "id-proof-required", "family-only",
+           "online-booking-available", "facilities-available"
+          ].includes(f.id)
+        )}
+      />
+    </section>
+    <SectionDivider client:visible variant="ornate" />
     <CTABanner client:visible />
   </div>
 </Layout>

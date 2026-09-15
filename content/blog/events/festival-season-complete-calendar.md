@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "monsoon-festival-calendar-pilgrimage-planning"
@@ -71,7 +71,7 @@ Accommodation demand at Shegaon varies significantly across the festival calenda
 
 ## Festival-Specific Planning Resources
 
-Each major festival at the Sansthan has its own dedicated planning guide that covers the complete darshan schedule, the programme details, the crowd expectations, and the accommodation and travel logistics. These guides are designed to be used alongside this comprehensive calendar guide for planning visits that are focused on a specific festival. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the basic darshan schedule that applies to all festivals, and the individual festival guides provide the specific details that are needed for each observance.
+Each major festival at the Sansthan has its own dedicated planning guide that covers the complete darshan schedule, the programme details, the crowd expectations, and the accommodation and travel logistics. These guides are designed to be used alongside this comprehensive calendar guide for planning visits that are focused on a specific festival. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the basic darshan schedule that applies to all festivals, and the individual festival guides provide the specific details that are needed for each observance.
 
 ## Frequently Asked Questions
 

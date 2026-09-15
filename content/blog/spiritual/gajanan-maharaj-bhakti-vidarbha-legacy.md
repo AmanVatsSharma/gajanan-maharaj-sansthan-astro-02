@@ -30,7 +30,7 @@ relatedSlugs:
   - "shegaon-samadhi-mandir-history-architecture"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-biography-life-story-shegaon"
 ---
 # Gajanan Maharaj: The Bhakti Legacy in Vidarbha
@@ -67,7 +67,7 @@ Two honest notes belong beside the table. The first is that the Sansthan's rooms
 
 The legacy's largest effect is cartographic. Vidarbha's sacred geography — Ramtek above Nagpur with its hilltop temples and Kalidas associations, Deekshabhoomi in Nagpur, the extraordinary crater lake at Lonar in the saint's own Buldhana district — always rewarded the traveller; what changed after 1878 is that the region acquired a centre of the first rank, and a reason for pilgrims from Mumbai, Pune and beyond to travel east rather than only west. Shegaon now functions as the region's devotional capital and its practical hub: the town households route through, stay in, and plan around.
 
-Families combining the region's sacred sites in one itinerary will find the planning pieces already written: the [Vidarbha spiritual tourism guide](/blog/vidarbha-spiritual-tourism-guide) maps the circuit, the [Vidarbha temple stay network](/blog/vidarbha-temple-stay-network) covers where to stay across it, and the [complete Shegaon travel guide](/blog/shegaon-travel-guide) handles the centre of the circuit in detail. A common pattern: two nights at Shegaon anchoring the trip, with Lonar or Ramtek added by road for households with the time.
+Families combining the region's sacred sites in one itinerary will find the planning pieces already written: the [Vidarbha spiritual tourism guide](/blog/vidarbha-spiritual-tourism-guide) maps the circuit, the [Vidarbha temple stay network](/blog/vidarbha-temple-stay-network) covers where to stay across it, and the [complete Shegaon travel guide](/blog/sheogaon-travel-guide) handles the centre of the circuit in detail. A common pattern: two nights at Shegaon anchoring the trip, with Lonar or Ramtek added by road for households with the time.
 
 ## How the legacy reaches a household
 

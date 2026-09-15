@@ -28,7 +28,7 @@ relatedSlugs:
   - "gajanan-maharaj-sansthan-booking-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-first-time-visitor-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "welcome-to-sansthan"
 ---
 # Shegaon Bhakta Niwas Booking Mistakes to Avoid
@@ -156,4 +156,4 @@ Photo ID is required for adults; for children, carrying a school ID or Aadhaar c
 
 ## Book once, book right, travel light
 
-Every mistake in this guide shares one cure: a complete, single, written request made early. Begin yours at the [booking request page](/booking), keep the [contact page](/contact) for follow-ups, see the complex on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and plan the whole trip with the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+Every mistake in this guide shares one cure: a complete, single, written request made early. Begin yours at the [booking request page](/booking), keep the [contact page](/contact) for follow-ups, see the complex on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and plan the whole trip with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).

@@ -52,8 +52,8 @@ if (fs.existsSync(refPath)) {
   console.log("EXISTS", wc, "words");
 } else {
   console.log("MISSING - searching for accommodation guides...");
-  const matches: { file: string; words: number }[] = [];
-  function findAccom(d: string) {
+  const matches = [];
+  function findAccom(d) {
     for (const f of fs.readdirSync(d)) {
       const fp = path.join(d, f);
       const s = fs.statSync(fp);

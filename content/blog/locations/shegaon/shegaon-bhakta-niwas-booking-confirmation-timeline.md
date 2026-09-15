@@ -150,4 +150,4 @@ Once confirmed, the office holds your room for your dates under its current hold
 
 ## Wait well, arrive ready
 
-The timeline is simple once the vocabulary is fixed: request, acknowledgement, confirmation, keys — with patience and one clean follow-up bridging the middle. Begin at the [booking request page](/booking), keep every message the office sends you, and plan the journey itself with the [complete Shegaon travel guide](/blog/shegaon-travel-guide) and the [official Sansthan guide](/blog/gajanan-maharaj-sansthan-complete-guide).
+The timeline is simple once the vocabulary is fixed: request, acknowledgement, confirmation, keys — with patience and one clean follow-up bridging the middle. Begin at the [booking request page](/booking), keep every message the office sends you, and plan the journey itself with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide) and the [official Sansthan guide](/blog/gajanan-maharaj-sansthan-complete-guide).

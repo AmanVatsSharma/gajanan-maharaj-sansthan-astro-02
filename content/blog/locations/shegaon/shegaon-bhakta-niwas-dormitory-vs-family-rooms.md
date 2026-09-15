@@ -29,7 +29,7 @@ relatedSlugs:
   - "shegaon-solo-traveler-guide"
   - "shegaon-family-accommodation-checklist"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "welcome-to-sansthan"
 ---
 # Shegaon Bhakta Niwas Dormitory vs Family Rooms
@@ -157,4 +157,4 @@ In your booking request itself, through the [booking page](/booking), along with
 
 ## Book the stay that fits your party
 
-Match the accommodation to your party, not to anyone else's habit: the dormitory for the solitary and the walking, a family room for those travelling as a household. Begin at the [booking request page](/booking), see the complex details on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and plan the journey itself with the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+Match the accommodation to your party, not to anyone else's habit: the dormitory for the solitary and the walking, a family room for those travelling as a household. Begin at the [booking request page](/booking), see the complex details on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and plan the journey itself with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).

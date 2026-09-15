@@ -26,7 +26,7 @@ relatedSlugs:
   - "welcome-to-sansthan"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "first-time-visit-checklist"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "month-wise-pilgrimage-planning-calendar"
   - "festival-dates-and-booking-windows"

@@ -32,7 +32,7 @@ relatedSlugs:
   - "return-journey-planning-tips"
   - "pandharpur-wari-accommodation-tips"
   - "omkareshwar-accommodation-near-temple"
-  - "trimabkeshwar-accommodation-near-temple"
+  - "trimbakeshwar-accommodation-near-temple"
 ---
 
 # Luggage Storage And Lockers | Shri Gajanan Maharaj Sansthan
@@ -49,7 +49,7 @@ The storage is available from early morning — typically 4:00 a.m. — until la
 
 The security of the storage is good but not absolute. The storage room is locked, and the bags are stored in an organised arrangement that makes it easy to retrieve the correct bag. However, the storage room is not a high-security vault, and the trust advises devotees not to store valuables — cash, jewellery, electronics, identity documents — in their stored luggage. Carry your valuables with you in your day bag, and store only the items that you do not need during the darshan and temple visit.
 
-The cloakroom at the Samadhi Mandir is a separate storage facility for phones and cameras that are not permitted inside the inner sanctum. The cloakroom operates during the darshan hours, and it collects your phone or camera before you enter the inner queue and returns it after you exit. The cloakroom is managed by trust staff, and the security is good. The [Shegaon Darshan Timing Guide](/blog/shegaon-darshan-timing-guide) covers the cloakroom procedure in detail.
+The cloakroom at the Samadhi Mandir is a separate storage facility for phones and cameras that are not permitted inside the inner sanctum. The cloakroom operates during the darshan hours, and it collects your phone or camera before you enter the inner queue and returns it after you exit. The cloakroom is managed by trust staff, and the security is good. The [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide) covers the cloakroom procedure in detail.
 
 ## Omkareshwar: Storage at the Trust Dharamshala
 
@@ -79,7 +79,7 @@ The trust dharamshala at Trimbakeshwar is small, and the luggage storage facilit
 
 The trust dharamshala at Trimbakeshwar is within the temple compound, and the proximity to the temple means that you can drop your bags at the reception and walk to the temple immediately, without any additional transport. The walk from the dharamshala to the temple takes approximately five minutes, and the walk from the dharamshala to the Kushavarat kund takes approximately ten minutes. Most devotees at Trimbakeshwar use the dharamshala storage for their main luggage and carry a day bag with them during the temple visit.
 
-The [Trimbakeshwar Accommodation Near Temple](/blog/trimabkeshwar-accommodation-near-temple) guide covers the dharamshala storage facilities and the check-in procedures.
+The [Trimbakeshwar Accommodation Near Temple](/blog/trimbakeshwar-accommodation-near-temple) guide covers the dharamshala storage facilities and the check-in procedures.
 
 ## Luggage Management Across Multi-Location Trips
 
@@ -101,7 +101,7 @@ The trust storage is free for guests at the trust dharamshala, while the railway
 
 **Can I store my luggage at Bhakta Niwas before check-in?**
 
-Yes. Drop your bags at the Bhakta Niwas reception before you go to the temple, and the staff will store them and give you a numbered tag. Retrieve your bags when you return from darshan and complete the check-in formalities. The storage is available from early morning until late evening.
+Yes. Drop your bags at the Bhakta Niwas reception before you go to the temple, and the staff will store them and give you a numbered tag. Retrieve your bags when you return from darshan and complete the check-in formalities. The storage is available from early morning until late evening. See [Bhakta Niwas Shegaon](/locations/shegaon-bhakt-niwas) for accommodation details or [book your stay](/booking) in advance.
 
 **Is the luggage storage at the trust dharamshala secure?**
 
@@ -121,4 +121,4 @@ The trust storage rooms are designed for standard luggage — suitcases, duffel 
 
 **Are there lockers at the Samadhi Mandir for small items?**
 
-Yes. The cloakroom at the Samadhi Mandir entrance collects phones, cameras, and other small items that are not permitted inside the inner sanctum. The cloakroom is not designed for large luggage, but it is useful for storing your phone and wallet during darshan. The [Shegaon Darshan Timing Guide](/blog/shegaon-darshan-timing-guide) covers the cloakroom procedure.
+Yes. The cloakroom at the Samadhi Mandir entrance collects phones, cameras, and other small items that are not permitted inside the inner sanctum. The cloakroom is not designed for large luggage, but it is useful for storing your phone and wallet during darshan. The [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide) covers the cloakroom procedure.

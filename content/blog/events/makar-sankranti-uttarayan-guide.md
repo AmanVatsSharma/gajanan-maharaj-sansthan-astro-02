@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "shegaon-kids-friendly-visit-guide"
@@ -37,7 +37,7 @@ There is a particular quality to the sunlight on January 14th at Shegaon that an
 
 Makar Sankranti at the Sansthan is one of the most community-oriented festivals of the year. The morning begins with the regular Mangala Aarti at 4:00 AM, followed by special abhishek and aartis in the main temple. The Anand Saga grounds host the cultural programme from late morning until sunset, including kite-flying competitions, traditional games, and community meals. Devotees who arrive early in the morning can witness the darshan and then spend the rest of the day participating in the cultural programmes that make Makar Sankranti at Shegaon a festival that is both devotional and genuinely enjoyable.
 
-The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of aarti and darshan times for Makar Sankranti. The Sansthan arranges a special programme that includes the distribution of til-gud prasad to all devotees, which is the characteristic sweet of the festival. The prasad is prepared by the temple priests according to traditional methods and is considered especially blessed on this day.
+The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of aarti and darshan times for Makar Sankranti. The Sansthan arranges a special programme that includes the distribution of til-gud prasad to all devotees, which is the characteristic sweet of the festival. The prasad is prepared by the temple priests according to traditional methods and is considered especially blessed on this day.
 
 ## The Sesame Tradition
 
@@ -71,7 +71,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Makar Sankranti vis
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune is comfortable by train, with the overnight Dadar-Akola Express arriving in the early morning hours. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail. January is a good time to drive to Shegaon because the roads are clear and the visibility is excellent, particularly during the morning hours when the post-monsoon clarity of the air gives way to the winter haze.
+The journey to Shegaon from Mumbai or Pune is comfortable by train, with the overnight Dadar-Akola Express arriving in the early morning hours. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail. January is a good time to drive to Shegaon because the roads are clear and the visibility is excellent, particularly during the morning hours when the post-monsoon clarity of the air gives way to the winter haze.
 
 ## Frequently Asked Questions
 
@@ -91,7 +91,7 @@ Two to three weeks in advance is sufficient. The [bhakta-niwas-complete-booking-
 The Anand Saga grounds host kite-flying competitions, traditional games, and community meals throughout the day. The temple arranges special aartis and the distribution of til-gud prasad.
 
 **Are there any specific rituals associated with Makar Sankranti at the Sansthan?**
-The Sansthan arranges a special morning abhishek and aarti that are specific to the Makar Sankranti observance. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule.
+The Sansthan arranges a special morning abhishek and aarti that are specific to the Makar Sankranti observance. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 ## Closing Guidance
 

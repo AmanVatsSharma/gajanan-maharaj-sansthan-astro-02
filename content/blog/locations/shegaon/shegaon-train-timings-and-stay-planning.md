@@ -27,7 +27,7 @@ relatedSlugs:
   - "shegaon-bhakta-niwas-check-in-check-out-timings"
   - "shegaon-visawa-room-booking-guide"
   - "how-to-reach-shegaon-train-bus-from-every-city"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "welcome-to-sansthan"
@@ -102,7 +102,7 @@ Families whose return train leaves at an awkward middle hour — late afternoon,
 
 ## Nights when the bus serves you better
 
-Honesty requires the bus a paragraph too. For pilgrims travelling short distances — from Khamgaon, Akola, Jalgaon, or the villages of Vidarbha — buses and shared vehicles often beat the train on flexibility, arriving at hours the rail timetable does not serve. The same stay logic applies unchanged: state the arrival window in the booking request, follow the first-ninety-minutes sequence with one amendment — buses set you down at the bus stand rather than the platform — and plan the return with the desk's knowledge of local services. Two cautions travel with every bus journey in this belt: confirm the last service of the evening before you plan a late departure, and avoid the temptation of unreserved overnight road travel with children. Our wider [Shegaon travel guide](/blog/shegaon-travel-guide) carries the road-side detail.
+Honesty requires the bus a paragraph too. For pilgrims travelling short distances — from Khamgaon, Akola, Jalgaon, or the villages of Vidarbha — buses and shared vehicles often beat the train on flexibility, arriving at hours the rail timetable does not serve. The same stay logic applies unchanged: state the arrival window in the booking request, follow the first-ninety-minutes sequence with one amendment — buses set you down at the bus stand rather than the platform — and plan the return with the desk's knowledge of local services. Two cautions travel with every bus journey in this belt: confirm the last service of the evening before you plan a late departure, and avoid the temptation of unreserved overnight road travel with children. Our wider [Shegaon travel guide](/blog/sheogaon-travel-guide) carries the road-side detail.
 
 ## Frequently asked questions
 
@@ -132,4 +132,4 @@ Through the Sansthan office when your booking is confirmed — the [booking page
 
 ## Let the train set the room's clock
 
-Rail and rest, planned as one thing, make Shegaon effortless: the train delivers you into the dark, the aarti receives you, the room rises to meet you, and the return platform arrives with the dawn. Pair your berth with your bed using the table above, write your arrival hour into the request, and keep the office informed when the rails waver. Begin at the [accommodation booking request page](/booking), see where the complexes sit on the [Bhakta Niwas location page](/locations/shegaon-bhakt-niwas) and the [Visawa location page](/locations/shegaon-visawa), and for the town that waits beyond the platform, read our [complete Shegaon travel guide](/blog/shegaon-travel-guide) next.
+Rail and rest, planned as one thing, make Shegaon effortless: the train delivers you into the dark, the aarti receives you, the room rises to meet you, and the return platform arrives with the dawn. Pair your berth with your bed using the table above, write your arrival hour into the request, and keep the office informed when the rails waver. Begin at the [accommodation booking request page](/booking), see where the complexes sit on the [Bhakta Niwas location page](/locations/shegaon-bhakt-niwas) and the [Visawa location page](/locations/shegaon-visawa), and for the town that waits beyond the platform, read our [complete Shegaon travel guide](/blog/sheogaon-travel-guide) next.

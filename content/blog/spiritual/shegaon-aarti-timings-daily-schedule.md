@@ -24,12 +24,12 @@ locationIds:
 relatedSlugs:
   - "gajanan-maharaj-doha-chaupai-meaning"
   - "gajanan-maharaj-punyatithi-guide"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "evening-aarti-participation-guide"
   - "gajanan-maharaj-aarti-mantra-lyrics-meaning"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "spiritual-importance-of-anand-sagar"
   - "gajanan-maharaj-chaturmas-guide"
 ---
@@ -46,7 +46,7 @@ The day at Shri Gajanan Maharaj's Samadhi Mandir in Shegaon is built around **fo
 | Saptashringi | Around 4 PM; opens the evening darshan session | The town returning from its day; energy rising |
 | Shej | Around 9:30 PM; closes the evening session | The putting-to-rest; the quietest large gathering of the day |
 
-Between the two sessions, the temple observes an afternoon break — published guidance places the morning session from about 5 AM to midday and the evening session from about 4 PM to 10 PM. The companion piece to this article, our [Shegaon darshan timing guide](/blog/shegaon-darshan-timing-guide), holds the fuller darshan picture; this guide concentrates on the aartis themselves and on shaping a pilgrim's day around them.
+Between the two sessions, the temple observes an afternoon break — published guidance places the morning session from about 5 AM to midday and the evening session from about 4 PM to 10 PM. The companion piece to this article, our [Shegaon darshan timing guide](/blog/sheogaon-darshan-timing-guide), holds the fuller darshan picture; this guide concentrates on the aartis themselves and on shaping a pilgrim's day around them.
 
 ## Kakad: the temple wakes before the town
 
@@ -112,4 +112,4 @@ The aarti and the "Gan Gan Ganat Bote" mantra, with text, transliteration and me
 
 ## Let the aartis set your itinerary
 
-Plan the visit so the sequence does the scheduling for you: pick the anchor aarti, book the room within easy reach through the [accommodation booking page](/booking), rest through the afternoon intermission, and confirm your dates with the office via the [contact page](/contact). The wider travel picture — trains, routes and arrival tactics — is in the [complete Shegaon travel guide](/blog/shegaon-travel-guide), and the words you will be singing are opened in our guide to the [doha-chaupai teachings of the tradition](/blog/gajanan-maharaj-doha-chaupai-meaning).
+Plan the visit so the sequence does the scheduling for you: pick the anchor aarti, book the room within easy reach through the [accommodation booking page](/booking), rest through the afternoon intermission, and confirm your dates with the office via the [contact page](/contact). The wider travel picture — trains, routes and arrival tactics — is in the [complete Shegaon travel guide](/blog/sheogaon-travel-guide), and the words you will be singing are opened in our guide to the [doha-chaupai teachings of the tradition](/blog/gajanan-maharaj-doha-chaupai-meaning).

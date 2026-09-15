@@ -31,7 +31,7 @@ relatedSlugs:
   - "trimbakeshwar-best-time-to-visit"
   - "trimbakeshwar-nashik-trimbakeshwar-combo-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
 ---
 
 ## Trimbakeshwar Brahmagiri parikrama and trek guide

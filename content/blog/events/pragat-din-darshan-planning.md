@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -41,7 +41,7 @@ The spiritual significance of Pragat Din is amplified by the saint's documented 
 
 ## The Programme Structure
 
-The Pragat Din programme at the Sansthan typically spans two to three days, with the main day being the most crowded and spiritually intense. The programme begins with the Mangala Aarti at 4:00 AM on the main day, followed by a series of special puja ceremonies throughout the morning. The temple priests conduct a special abhishek ceremony that is unique to the Pragat Din observance, accompanied by the recitation of devotional texts that honour Shri Gajanan Maharaj. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule.
+The Pragat Din programme at the Sansthan typically spans two to three days, with the main day being the most crowded and spiritually intense. The programme begins with the Mangala Aarti at 4:00 AM on the main day, followed by a series of special puja ceremonies throughout the morning. The temple priests conduct a special abhishek ceremony that is unique to the Pragat Din observance, accompanied by the recitation of devotional texts that honour Shri Gajanan Maharaj. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 The afternoon programme includes devotional discourses by prominent spiritual teachers, community gatherings at the Anand Saga grounds, and the distribution of prasad. The evening programme builds in intensity as the night approaches, with bhajan sessions and a special aarti that marks the conclusion of the main day's programme. The programme on the day after Pragat Din includes a continuation of the devotional discourses and a final aarti that concludes the observance.
 
@@ -59,7 +59,7 @@ For devotees who cannot find accommodation in Shegaon, the nearby town of Khamga
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune typically involves an overnight train, and tickets for Pragat Din should be booked at least eight to ten weeks in advance because of the high demand. From Nagpur, the three-and-a-half-hour drive is the most convenient option, and many devotees from the Vidarbha region drive to Shegaon for Pragat Din. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune typically involves an overnight train, and tickets for Pragat Din should be booked at least eight to ten weeks in advance because of the high demand. From Nagpur, the three-and-a-half-hour drive is the most convenient option, and many devotees from the Vidarbha region drive to Shegaon for Pragat Din. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## What to Carry
 
@@ -95,7 +95,7 @@ The Pragat Din programme includes extensive bhajan sessions and devotional disco
 
 ## The Early Morning Programme
 
-The early morning programme at the Sansthan on Pragat Din begins at approximately 4:00 AM with the Mangala Aarti, and the next two hours include a series of pujas and abhisheks that set the devotional tone for the entire day. Devotees who arrive before 5:00 AM can participate in the complete morning programme, which includes several aarti ceremonies and a special abhishek that is unique to the Pragat Din observance. The atmosphere during the early morning programme is one of focused devotional attention, and many devotees describe the experience of participating in the morning programme as one of the most spiritually significant moments of the year. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the early morning programme.
+The early morning programme at the Sansthan on Pragat Din begins at approximately 4:00 AM with the Mangala Aarti, and the next two hours include a series of pujas and abhisheks that set the devotional tone for the entire day. Devotees who arrive before 5:00 AM can participate in the complete morning programme, which includes several aarti ceremonies and a special abhishek that is unique to the Pragat Din observance. The atmosphere during the early morning programme is one of focused devotional attention, and many devotees describe the experience of participating in the morning programme as one of the most spiritually significant moments of the year. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the early morning programme.
 
 ## Closing Guidance
 

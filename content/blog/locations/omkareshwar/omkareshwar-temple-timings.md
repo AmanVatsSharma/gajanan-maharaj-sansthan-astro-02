@@ -20,15 +20,15 @@ category: "locations"
 locationIds:
   - "omkareshwar"
 relatedSlugs:
+  - "omkareshwar-darshan-timing-guide"
   - "omkareshwar-darshan-timings"
-  - "omkareshwar-evening-aarti-timing-guide"
   - "omkareshwar-morning-darshan-planning"
   - "omkareshwar-evening-darshan-planning"
+  - "omkareshwar-darshan-timings"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "omkareshwar-first-time-visitor-guide"
   - "omkareshwar-parikrama-guide"
   - "omkareshwar-narmada-river-aarti"
-  - "shegaon-temple-timings"
   - "omkareshwar-devotee-faqs"
 ---
 The Omkareshwar temple follows a daily schedule that includes morning darshan, afternoon rest, and evening darshan with aarti. For devotees planning a visit, understanding the temple timings helps in planning the day around the most spiritually meaningful hours. The temple is open from approximately 5:00 AM to 9:30 PM, with the doors closing for a brief rest period in the afternoon. The Mamleshwar temple on the mainland has similar timings but with slightly shorter hours. This guide covers the complete daily schedule of the Omkareshwar and Mamleshwar temples, the aarti timings, and the practical tips that help you plan your visit around the most spiritually meaningful hours.

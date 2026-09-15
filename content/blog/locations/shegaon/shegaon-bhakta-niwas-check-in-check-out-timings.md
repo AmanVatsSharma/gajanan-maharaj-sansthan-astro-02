@@ -29,7 +29,7 @@ relatedSlugs:
   - "shegaon-bhakta-niwas-booking-process"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "welcome-to-sansthan"
 ---
@@ -69,7 +69,7 @@ Shegaon is one of the few pilgrimage towns where arriving before sunrise is a st
 - Let the desk know at booking that you expect an early arrival, so your room readiness is planned the previous evening where possible.
 - Confirm the next day's aarti and darshan schedule with the temple office, because timings shift across festival periods.
 
-The daily schedule context is covered in our [Shegaon darshan timing guide](/blog/shegaon-darshan-timing-guide), and the wider travel picture is in the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+The daily schedule context is covered in our [Shegaon darshan timing guide](/blog/sheogaon-darshan-timing-guide), and the wider travel picture is in the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).
 
 ## What the 24-hour cycle means for your plans
 
@@ -134,7 +134,7 @@ To see how the 24-hour cycle works in practice, here is a typical one-night patt
 | Evening | Anand Sagar or the temple bazaar route, returning to the room at a relaxed hour | Keep the pace of elderly family members in mind |
 | Check-out the next day | Check out around the same hour as your entry, leave luggage as guided, enjoy a final darshan, then collect bags for the station | Build in buffer for the prasad counter and the walk to the station |
 
-For a two-day stay, the same rhythm simply repeats with more breathing room. Many families give the first day to the Samadhi Mandir and its aarti schedule and the second to Anand Sagar and the bazaar, with check-out following the departure train rather than the clock. If you are pacing a longer visit, the [Shegaon travel guide](/blog/shegaon-travel-guide) shows how experienced pilgrims spread the town's darshan across successive days.
+For a two-day stay, the same rhythm simply repeats with more breathing room. Many families give the first day to the Samadhi Mandir and its aarti schedule and the second to Anand Sagar and the bazaar, with check-out following the departure train rather than the clock. If you are pacing a longer visit, the [Shegaon travel guide](/blog/sheogaon-travel-guide) shows how experienced pilgrims spread the town's darshan across successive days.
 
 ## Getting oriented: from Shegaon station to the reception
 

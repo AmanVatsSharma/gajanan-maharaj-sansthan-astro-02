@@ -25,7 +25,7 @@ locationIds:
   - "shegaon-bhakt-niwas"
   - "omkareshwar"
 relatedSlugs:
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-three-day-itinerary"
   - "omkareshwar-bhakta-niwas-booking-process"
@@ -162,7 +162,7 @@ The confirmation is in English and Marathi. The desk can also send a Hindi versi
 
 ---
 
-For the Shegaon side specifically, see the [Shegaon travel guide](/blog/shegaon-travel-guide) and the [Shegaon accommodation guide](/blog/shegaon-accommodation-guide). For the Omkareshwar side specifically, see the [Omkareshwar three-day itinerary](/blog/omkareshwar-three-day-itinerary) and the [Bhakta Niwas booking process guide](/blog/omkareshwar-bhakta-niwas-booking-process). For the Shegaon-Omkareshwar driving route, see the [Omkareshwar route and transport options](/blog/omkareshwar-route-and-transport-options).
+For the Shegaon side specifically, see the [Shegaon travel guide](/blog/sheogaon-travel-guide) and the [Shegaon accommodation guide](/blog/shegaon-accommodation-guide). For the Omkareshwar side specifically, see the [Omkareshwar three-day itinerary](/blog/omkareshwar-three-day-itinerary) and the [Bhakta Niwas booking process guide](/blog/omkareshwar-bhakta-niwas-booking-process). For the Shegaon-Omkareshwar driving route, see the [Omkareshwar route and transport options](/blog/omkareshwar-route-and-transport-options).
 
 For the Shegaon Sansthan address, GPS pin, and front-desk hours, see the [Shegaon Sansthan location page](/locations/shegaon-bhakt-niwas). For the Omkareshwar Sansthan address, GPS pin, and front-desk hours, see the [Omkareshwar Sansthan location page](/locations/omkareshwar).
 

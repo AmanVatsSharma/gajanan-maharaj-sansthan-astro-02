@@ -27,7 +27,7 @@ relatedSlugs:
   - "bhakta-niwas-complete-booking-guide"
   - "bhakta-niwas-refund-and-cancellation-policy"
   - "how-to-book-bhakta-niwas-online"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "phone-and-whatsapp-booking-best-practices"
@@ -119,7 +119,7 @@ The trust usually publishes a yearly festival calendar on its notice board, and 
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
 - [Bhakta Niwas Refund And Cancellation Policy](/blog/bhakta-niwas-refund-and-cancellation-policy)
 - [How To Book Bhakta Niwas Online](/blog/how-to-book-bhakta-niwas-online)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)

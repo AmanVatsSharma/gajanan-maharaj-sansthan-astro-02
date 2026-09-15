@@ -19,7 +19,7 @@ category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
 relatedSlugs:
-  - "shegaon-bhakt-niwas-accommodation-guide"
+  - "shegaon-accommodation-guide"
   - "shegaon-accommodation-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "bhakta-niwas-room-types-and-facilities"
@@ -43,7 +43,7 @@ Shestha provides two main room categories: shared rooms and private rooms. The s
 
 The private rooms at Shestha accommodate one or two devotees per room, with basic bedding, a dedicated bathroom, and a small table with a chair. The private rooms are priced at approximately 400 to 600 rupees per night, providing privacy at a moderate cost. Both shared and private rooms at Shestha include access to the common dining hall, where meals are served at a very low cost — typically 20 to 50 rupees per meal — and the courtyard, which provides a quiet space for rest and reflection between temple visits.
 
-The [shegaon-bhakt-niwas-accommodation-guide](/blog/shegaon-bhakt-niwas-accommodation-guide) covers the Shestha room types in detail, and the [shestha-vs-bhakt-niwas-comparison](/blog/shestha-vs-bhakt-niwas-comparison) guide provides a complete comparison between Shestha and Bhakta Niwas.
+The [shegaon-accommodation-guide](/blog/shegaon-accommodation-guide) covers the Shestha room types in detail, and the [shestha-vs-bhakt-niwas-comparison](/blog/shestha-vs-bhakt-niwas-comparison) guide provides a complete comparison between Shestha and Bhakta Niwas.
 
 ## Facilities and amenities
 

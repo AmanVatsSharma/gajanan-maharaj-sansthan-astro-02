@@ -19,7 +19,7 @@ category: "guides"
 locationIds:
   - "shegaon-bhakt-niwas"
 relatedSlugs:
-  - "shegaon-bhakt-niwas-accommodation-guide"
+  - "shegaon-accommodation-guide"
   - "shegaon-accommodation-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "bhakta-niwas-room-types-and-facilities"
@@ -45,7 +45,7 @@ The Shestha facility also provides a communal atmosphere that many devotees find
 
 ## Bhakta Niwas: the modern accommodation facility
 
-Bhakta Niwas is the Sansthan's modern accommodation facility, providing a wider range of room categories and amenities than Shestha. The facility includes common hall dormitory rooms, private non-AC rooms, private AC rooms, and family suites. The [shegaon-bhakt-niwas-accommodation-guide](/blog/shegaon-bhakt-niwas-accommodation-guide) covers all room categories in detail, and the [bhakta-niwas-room-types-and-facilities](/blog/bhakta-niwas-room-types-and-facilities) guide provides a detailed breakdown of each category's facilities and pricing.
+Bhakta Niwas is the Sansthan's modern accommodation facility, providing a wider range of room categories and amenities than Shestha. The facility includes common hall dormitory rooms, private non-AC rooms, private AC rooms, and family suites. The [shegaon-accommodation-guide](/blog/shegaon-accommodation-guide) covers all room categories in detail, and the [bhakta-niwas-room-types-and-facilities](/blog/bhakta-niwas-room-types-and-facilities) guide provides a detailed breakdown of each category's facilities and pricing.
 
 The common hall dormitory at Bhakta Niwas is priced at approximately 300 to 500 rupees per person per night, providing a shared accommodation experience that is comparable to Shestha in terms of cost but with better facilities — the common hall is clean, airy, and comfortable, with individual storage spaces and shared bathroom facilities that are maintained regularly. The private non-AC rooms at Bhakta Niwas are priced at approximately 800 to 1,200 rupees per night, providing privacy and basic comfort at a moderate price point. The private AC rooms are priced at approximately 1,500 to 2,000 rupees per night, providing air conditioning, attached bathroom, and modern amenities for devotees who prefer a more comfortable accommodation experience.
 

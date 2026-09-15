@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -37,7 +37,7 @@ The temple at Shegaon has a particular quality on Diwali that is impossible to d
 
 Diwali at the Sansthan is not a single-day event. The Sansthan follows the traditional five-day Diwali programme, beginning with Dhanteras two days before the main festival and continuing through Bhai Dooj two days after. Each day has its own specific programme, and devotees who can spend the full five days at Shegaon experience a progression of devotional activities that builds in intensity through the main Diwali day and concludes with the familial celebration of Bhai Dooj.
 
-The main Diwali day begins with special puja programmes at the temple in the morning, followed by the Lakshmi puja in the evening — the ceremony that is the spiritual centrepiece of Diwali across Hindu tradition. The Sansthan's Lakshmi puja is conducted with full Vedic ceremony by the temple priests, and the evening closes with a special aarti accompanied by bhajan performances. The temple and its grounds are illuminated with thousands of oil lamps, and the atmosphere is one of deep spiritual celebration. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule for all five days of the Diwali programme.
+The main Diwali day begins with special puja programmes at the temple in the morning, followed by the Lakshmi puja in the evening — the ceremony that is the spiritual centrepiece of Diwali across Hindu tradition. The Sansthan's Lakshmi puja is conducted with full Vedic ceremony by the temple priests, and the evening closes with a special aarti accompanied by bhajan performances. The temple and its grounds are illuminated with thousands of oil lamps, and the atmosphere is one of deep spiritual celebration. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule for all five days of the Diwali programme.
 
 ## The Lakshmi Puja at Shegaon
 
@@ -79,7 +79,7 @@ The Mahaprasad Hall at Shegaon serves a special Diwali meal that includes festiv
 
 ## Travel Logistics for Diwali
 
-Diwali falls in October or November, when the weather at Shegaon is pleasant and cool. Daytime temperatures range between 22 and 30 degrees Celsius, making it the most comfortable season for temple visits. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options. Train tickets should be booked at least four to six weeks in advance for the Diwali period, as the demand is high and many trains sell out early. The [what-to-carry-pilgrimage-essentials](/blog/what-to-carry-pilgrimage-essentials) provides a complete packing checklist for Diwali at Shegaon.
+Diwali falls in October or November, when the weather at Shegaon is pleasant and cool. Daytime temperatures range between 22 and 30 degrees Celsius, making it the most comfortable season for temple visits. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options. Train tickets should be booked at least four to six weeks in advance for the Diwali period, as the demand is high and many trains sell out early. The [what-to-carry-pilgrimage-essentials](/blog/what-to-carry-pilgrimage-essentials) provides a complete packing checklist for Diwali at Shegaon.
 
 ## The Devotional Atmosphere
 
@@ -88,7 +88,7 @@ The devotional atmosphere at Shegaon during Diwali is unique. The combination of
 ## Frequently Asked Questions
 
 **Which day of the Diwali programme is most important?**
-The main Diwali day — the day of Lakshmi puja — is the most spiritually significant, but each of the five days has its own devotional value. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule.
+The main Diwali day — the day of Lakshmi puja — is the most spiritually significant, but each of the five days has its own devotional value. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 **How far in advance should I book accommodation?**
 Four to six weeks in advance is advisable. The demand during Diwali is high. The [bhakta-niwas-complete-booking-guide](/blog/bhakta-niwas-complete-booking-guide) covers the reservation process.

@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -37,7 +37,7 @@ The eleventh day of the bright half of Chaitra — the first month of the Hindu 
 
 Ekadashi — the eleventh lunar day — is one of the most significant devotional observances in the Hindu tradition. It is dedicated to Lord Vishnu, and it is observed twice each month, once during the bright half and once during the dark half of the lunar month. Of the twenty-four Ekadashis of the year, Chaitra Ekadashi holds a special place because it falls in the month that marks the beginning of the Hindu calendar year, and it is considered one of the most auspicious Ekadashis of the year. The observance involves fasting, the recitation of Vishnu's names, the performance of puja and abhishek, and the distribution of prasad. At the Sansthan, the Ekadashi programme includes all of these elements, creating a day of focused devotional practice that is both spiritually deep and physically accessible.
 
-The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the Chaitra Ekadashi programme. The morning begins with the Mangala Aarti at 4:00 AM, followed by a special abhishek ceremony in the main temple that is unique to the Ekadashi observance. The abhishek is conducted with traditional offerings including milk, honey, and flowers, and the temple priests recite the Vishnu Sahasranama — the thousand names of Vishnu — as part of the ceremony.
+The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the Chaitra Ekadashi programme. The morning begins with the Mangala Aarti at 4:00 AM, followed by a special abhishek ceremony in the main temple that is unique to the Ekadashi observance. The abhishek is conducted with traditional offerings including milk, honey, and flowers, and the temple priests recite the Vishnu Sahasranama — the thousand names of Vishnu — as part of the ceremony.
 
 ## The Fasting Practice
 
@@ -65,11 +65,11 @@ Chaitra Ekadashi falls in March or April, which is the transition period between
 
 ## Accommodation for Chaitra Ekadashi
 
-Bhakta Niwas at Shegaon is the recommended accommodation for Chaitra Ekadashi visitors. Booking two to three weeks in advance is typically sufficient, as the demand during this Ekadashi is moderate. The [bhakta-niwas-complete-booking-guide](/blog/bhakta-niwas-complete-booking-guide) covers the reservation process and the different room categories.
+Bhakta Niwas at Shegaon is the recommended accommodation for Chaitra Ekadashi visitors. You can book accommodation at [Bhakta Niwas Shegaon](/locations/shegaon-bhakt-niwas) through our [booking page](/booking). Booking two to three weeks in advance is typically sufficient, as the demand during this Ekadashi is moderate. The [bhakta-niwas-complete-booking-guide](/blog/bhakta-niwas-complete-booking-guide) covers the reservation process and the different room categories.
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 
@@ -77,7 +77,7 @@ The journey to Shegaon from Mumbai or Pune is comfortable by train, with multipl
 Ekadashi is a Vedic observance dedicated to Lord Vishnu, and it is observed twice each month. Chaitra Ekadashi falls in the first month of the Hindu calendar and is considered one of the most auspicious observances of the year.
 
 **What puja is conducted on Chaitra Ekadashi?**
-The Sansthan conducts a special abhishek ceremony and recites the Vishnu Sahasranama as part of the Ekadashi programme. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule.
+The Sansthan conducts a special abhishek ceremony and recites the Vishnu Sahasranama as part of the Ekadashi programme. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 **What fasting options are available at the Sansthan?**
 The Mahaprasad Hall provides fasting-compliant meals throughout the Ekadashi programme. The [shegaon-canteen-and-mahaprasad-guide](/blog/shegaon-canteen-and-mahaprasad-guide) covers the complete range of offerings.
@@ -98,4 +98,4 @@ The Chaitra Ekadashi programme at the Sansthan includes sessions of devotional r
 
 ## Closing Guidance
 
-Chaitra Ekadashi at Shri Gajanan Maharaj Sansthan offers a devotional experience that combines the spiritual depth of the Ekadashi observance with the comfort of spring weather at Shegaon. The special abhishek ceremony, the fasting-friendly meals, and the focused devotional atmosphere make this an excellent choice for devotees who want a contemplative and meaningful temple visit. Book your accommodation through the [official booking page](/booking) and reach out to the [Sansthan contact office](/contact) for specific programme details. The [festival-season-complete-calendar](/blog/festival-season-complete-calendar) provides an overview of how Chaitra Ekadashi fits into the broader annual programme at the Sansthan.
+Chaitra Ekadashi at Shri Gajanan Maharaj Sansthan offers a devotional experience that combines the spiritual depth of the Ekadashi observance with the comfort of spring weather at Shegaon. The special abhishek ceremony, the fasting-friendly meals, and the focused devotional atmosphere make this an excellent choice for devotees who want a contemplative and meaningful temple visit. Book your accommodation through the [official booking page](/booking) and reach out to the [Sansthan contact office](/contact) for specific programme details. The [festival-season-complete-calendar](/blog/festival-season-complete-calendar) provides an overview of how Chaitra Ekadashi fits into the broader annual programme at the Sansthan, and the [darshan-and-stay-priority-planning](/blog/darshan-and-stay-priority-planning) guide covers planning tips for Ekadashi visits.

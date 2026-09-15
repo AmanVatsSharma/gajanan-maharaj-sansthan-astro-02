@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "shegaon-kids-friendly-visit-guide"
@@ -35,7 +35,7 @@ The morning of Holi at Shegaon arrives with a particular quality that anyone who
 
 ## The Devotional Programme
 
-The Holi programme at the Sansthan begins in the early morning with the Mangala Aarti at 4:00 AM, followed by special puja ceremonies in the main temple. The temple priests conduct a puja that invokes the blessings of Vishnu in his Narasimha form, commemorating the victory of Prahlada over the demon king Hiranyakashipu — the story that is the mythological foundation of the Holi festival. The morning programme includes a special abhishek and aarti that is unique to the Holi observance, and devotees who arrive early in the morning can witness the complete ceremony. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the Holi programme.
+The Holi programme at the Sansthan begins in the early morning with the Mangala Aarti at 4:00 AM, followed by special puja ceremonies in the main temple. The temple priests conduct a puja that invokes the blessings of Vishnu in his Narasimha form, commemorating the victory of Prahlada over the demon king Hiranyakashipu — the story that is the mythological foundation of the Holi festival. The morning programme includes a special abhishek and aarti that is unique to the Holi observance, and devotees who arrive early in the morning can witness the complete ceremony. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the Holi programme.
 
 The morning programme at the temple is followed by the community colour play at the Anand Saga grounds. The Sansthan provides organic, skin-safe coloured powder for the colour play, and the community gathering is open to all devotees and visitors. The atmosphere is festive and inclusive, with people of all ages participating in the colour exchange. The [shegaon-kids-friendly-visit-guide](/blog/shegaon-kids-friendly-visit-guide) provides specific advice for families with children, including the protective measures needed for safe participation in the colour play.
 
@@ -75,7 +75,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Holi visitors. Book
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 

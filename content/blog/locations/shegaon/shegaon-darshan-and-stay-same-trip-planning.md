@@ -24,11 +24,11 @@ locationIds:
 relatedSlugs:
   - "shegaon-nearby-devasthan-visit-with-overnight-stay"
   - "shegaon-family-trip-itinerary-with-room-booking"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "shegaon-morning-darshan-planning"
   - "shegaon-evening-darshan-planning"
   - "shegaon-bhakta-niwas-check-in-check-out-timings"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
 ---
@@ -42,7 +42,7 @@ The reason this guide needs to exist is a pattern we see each season: families w
 
 Begin with the two clocks the town runs on. The temple's clock is older: aartis at fixed-feeling hours, queues that swell and thin with the day, festival days that redraw everything. The room's clock is simpler: your accommodation is held for a full twenty-four hours from the moment your party enters, which means you choose, in effect, when your day begins and ends. Weave them right and the clocks agree; weave them wrong and you spend the trip serving one clock against the other.
 
-The weaving itself is three questions, asked in order. Which darshan does the family most want — the Kakad Aarti's pre-dawn depth, the morning's steady flow, or the evening's lamps and singing? When does our transport deliver us and take us back? And what does the party's stamina honestly allow — elders, children, the worn-out organiser? The sections below turn the answers into a plan, but the questions themselves, asked at the kitchen table, are half the work. For the temple-side detail in depth, our [Shegaon darshan timing guide](/blog/shegaon-darshan-timing-guide) remains the canonical piece; the morning and evening hours each have their own treatment in our [morning darshan planning](/blog/shegaon-morning-darshan-planning) and [evening darshan planning](/blog/shegaon-evening-darshan-planning) guides.
+The weaving itself is three questions, asked in order. Which darshan does the family most want — the Kakad Aarti's pre-dawn depth, the morning's steady flow, or the evening's lamps and singing? When does our transport deliver us and take us back? And what does the party's stamina honestly allow — elders, children, the worn-out organiser? The sections below turn the answers into a plan, but the questions themselves, asked at the kitchen table, are half the work. For the temple-side detail in depth, our [Shegaon darshan timing guide](/blog/sheogaon-darshan-timing-guide) remains the canonical piece; the morning and evening hours each have their own treatment in our [morning darshan planning](/blog/shegaon-morning-darshan-planning) and [evening darshan planning](/blog/shegaon-evening-darshan-planning) guides.
 
 ## Room first or darshan first?
 
@@ -76,7 +76,7 @@ A one-night stay comfortably holds two of the three blocks, and which two depend
 Once the blocks are chosen, the stay falls into place in five moves:
 
 1. **Write the primary block into the booking request.** "Arriving for the Kakad Aarti by the early train" or "want the evening aarti with the children" — these lines in the remarks let the office plan your readiness and wing to fit.
-2. **Choose the complex by the block.** Temple-block families choose Bhakta Niwas for the walk; evening-garden families choose Anand Vihar; dawn-departure families choose Visawa. The three are compared in our [complete accommodation guide](/blog/shegaon-accommodation-guide), and the town that holds them is walked through in the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+2. **Choose the complex by the block.** Temple-block families choose Bhakta Niwas for the walk; evening-garden families choose Anand Vihar; dawn-departure families choose Visawa. The three are compared in our [complete accommodation guide](/blog/shegaon-accommodation-guide), and the town that holds them is walked through in the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).
 3. **Set the entry hour deliberately.** Since the day-long cycle begins at entry, entering at the hour your devotion begins — dawn for the aarti families, midday for the evening families — aligns the room's clock with the temple's.
 4. **Place the rest blocks around the darshan blocks.** Midday shade for elders, nap hours for children, the room as the family's monastery between the temple's hours.
 5. **Book the departure inside the same logic.** The check-out sits a day from entry; choose the return train that lets the last block — usually the morning after — happen without a sprint.

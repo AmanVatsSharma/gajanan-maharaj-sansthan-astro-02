@@ -85,8 +85,8 @@ export function SEOSection() {
                 ))}
               </ul>
               <div className="mt-8 pt-6 border-t border-border/50">
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  *These terms are frequently used by devotees seeking official darshan and bhakta niwas booking information online.
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Shri Gajanan Maharaj Sansthan in Shegaon, Maharashtra is known by many names — Shri Gajanan Maharaj Mandir, Shegaon Sansthan, SGMS, and Gajanan Maharaj Temple. All refer to the same trust founded in 1908, which now operates Bhakta Niwas accommodation at four locations: Shegaon, Pandharpur, Omkareshwar, and Trimbakeshwar. Whether you search for bhakt niwas, dharamshala, or temple accommodation, the official booking channel remains the same.
                 </p>
               </div>
             </motion.div>

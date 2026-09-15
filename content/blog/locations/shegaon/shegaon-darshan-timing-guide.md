@@ -2,7 +2,7 @@
 title: "Shegaon Darshan Timing Guide | Shri Gajanan Maharaj Sansthan"
 description: "Detailed shegaon darshan timing guide for devotees searching Shri/Shree/Sri Gajanan Maharaj Sansthan Shegaon. Includes booking links, travel tips, and internal route guidance."
 date: "2026-02-15"
-slug: "shegaon-darshan-timing-guide"
+slug: "sheogaon-darshan-timing-guide"
 image: "/images/shegaon-temple.svg"
 keywords:
   - "shegaon darshan timing guide"
@@ -29,7 +29,7 @@ relatedSlugs:
   - "shegaon-family-accommodation-checklist"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "pandharpur-and-shegaon-family-yatra-plan"
@@ -121,7 +121,7 @@ Senior citizens should carry their primary medical documents and a small persona
 - [Shegaon Family Accommodation Checklist](/blog/shegaon-family-accommodation-checklist)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Omkareshwar Darshan Timings Guide](/blog/omkareshwar-darshan-timings)
 - [Pandharpur and Shegaon Family Yatra Plan](/blog/pandharpur-and-shegaon-family-yatra-plan)

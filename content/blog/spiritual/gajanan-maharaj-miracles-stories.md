@@ -29,7 +29,7 @@ relatedSlugs:
   - "gajanan-maharaj-doha-chaupai-meaning"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "teaching-children-about-gajanan-maharaj"
   - "gajanan-maharaj-and-dattatreya-tradition"
 ---
@@ -88,7 +88,7 @@ The Sansthan's continuing annadan at Shegaon is understood by devotees as the li
 
 ## Meeting the stories where they live, from visit to bedtime
 
-Reading is one relationship with the leelas; place is another. At Shegaon the stories have addresses. The Samadhi Mandir holds the paduka that is the focus of darshan; the Audumbar tree stands in its own aura of memory; the lanes around the complex are the same lanes the saint walked. Families who do a parayan at home and then stand where the parayan happened discover that the two experiences complete each other. The [complete Shegaon travel guide](/blog/shegaon-travel-guide) covers how to reach the town, and our overview of the [Gajanan Maharaj Sansthan](/blog/gajanan-maharaj-sansthan-complete-guide) maps the complex itself.
+Reading is one relationship with the leelas; place is another. At Shegaon the stories have addresses. The Samadhi Mandir holds the paduka that is the focus of darshan; the Audumbar tree stands in its own aura of memory; the lanes around the complex are the same lanes the saint walked. Families who do a parayan at home and then stand where the parayan happened discover that the two experiences complete each other. The [complete Shegaon travel guide](/blog/sheogaon-travel-guide) covers how to reach the town, and our overview of the [Gajanan Maharaj Sansthan](/blog/gajanan-maharaj-sansthan-complete-guide) maps the complex itself.
 
 If a visit is in your plans, the practical pieces are simple. Rooms at the Bhakta Niwas are requested through the [booking page](/booking); the complex's details, facilities and placement are on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and the full reservation mechanics are covered in the [Bhakta Niwas complete booking guide](/blog/bhakta-niwas-complete-booking-guide). Devotees pairing the stories with their setting often time the trip to an observance window — the February jayanti week is described in our [jayanti celebration guide](/blog/gajanan-maharaj-jayanti-celebration-guide).
 

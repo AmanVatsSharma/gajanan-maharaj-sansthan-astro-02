@@ -24,11 +24,11 @@ relatedSlugs:
   - "shegaon-bhakta-niwas-booking-process"
   - "shegaon-accommodation-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "pragat-din-darshan-planning"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
   - "shegaon-annadan-mahaprasad-free-food-guide"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "how-to-reach-shegaon-train-bus-from-every-city"
 ---
 # Bhakt Niwas Room Tariff 2026: Room Types, Prices & How to Book

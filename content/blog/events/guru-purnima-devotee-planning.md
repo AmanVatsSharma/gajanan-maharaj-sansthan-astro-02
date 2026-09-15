@@ -2,7 +2,7 @@
 title: "Guru Purnima Devotee Planning | Devotee Event Guide"
 description: "Festival/event support guide for devotees searching Sansthan darshan timing and accommodation planning during high-rush periods."
 date: "2025-08-02"
-slug: "guru-purnima-devotee-planning"
+slug: "guru-purnima-celebration"
 image: "/images/shegaon-temple.svg"
 keywords:
   - "guru purnima devotee planning"
@@ -26,7 +26,7 @@ relatedSlugs:
   - "anniversary-utsav-booking-tips"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "major-utsav-crowd-planning-checklist"
   - "phone-and-whatsapp-booking-best-practices"
@@ -97,7 +97,7 @@ Devotees often find that a few days of light fasting or simplified meals before 
 - [Anniversary Utsav Booking Tips](/blog/anniversary-utsav-booking-tips)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Major Utsav Crowd Planning Checklist](/blog/major-utsav-crowd-planning-checklist)
 - [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)

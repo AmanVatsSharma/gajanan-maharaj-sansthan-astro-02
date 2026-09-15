@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -37,7 +37,7 @@ The night of Mahashivratri at Shri Gajanan Maharaj Sansthan is one of the most s
 
 Mahashivratri is one of the most ancient and widely observed festivals in the Hindu tradition. It commemorates the night when Lord Shiva performed the cosmic dance of creation, preservation, and destruction — the Tandava — and it is observed as a night of focused devotion, fasting, and meditation. The festival is particularly significant at the Sansthan because Shri Gajanan Maharaj's own teachings emphasized the formless nature of the divine, and Shiva — as the deity who represents dissolution and formlessness — is closely associated with the saint's philosophical tradition.
 
-The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the Mahashivratri programme. The programme at the Sansthan begins in the early morning with the Mangala Aarti, followed by the regular puja ceremonies throughout the day. The evening programme builds in intensity as the midnight vigil approaches, and the temple remains open throughout the night for devotees who wish to observe the complete vigil.
+The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the Mahashivratri programme. The programme at the Sansthan begins in the early morning with the Mangala Aarti, followed by the regular puja ceremonies throughout the day. The evening programme builds in intensity as the midnight vigil approaches, and the temple remains open throughout the night for devotees who wish to observe the complete vigil.
 
 ## The Night-Long Vigil
 
@@ -77,7 +77,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Mahashivratri visit
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for Mahashivratri because devotees can arrive in the late afternoon and participate in the evening programme. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for Mahashivratri because devotees can arrive in the late afternoon and participate in the evening programme. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 

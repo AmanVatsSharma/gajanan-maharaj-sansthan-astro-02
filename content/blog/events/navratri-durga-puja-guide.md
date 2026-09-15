@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -35,7 +35,7 @@ The nine nights of Navratri at Shri Gajanan Maharaj Sansthan have a quality that
 
 ## The Nine Forms of the Goddess
 
-Navratri celebrates the Navadurga — the nine forms of the Goddess — each of whom represents a different aspect of divine feminine power. The nine nights are devoted to Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri, and Siddhidatri. At the Sansthan, each night features a special puja dedicated to the specific form being honoured that evening, and the temple priests conduct these ceremonies with traditional materials, Vedic mantras, and the ritual detail that the Sansthan is known for. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the nightly pujas throughout the Navratri programme.
+Navratri celebrates the Navadurga — the nine forms of the Goddess — each of whom represents a different aspect of divine feminine power. The nine nights are devoted to Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri, and Siddhidatri. At the Sansthan, each night features a special puja dedicated to the specific form being honoured that evening, and the temple priests conduct these ceremonies with traditional materials, Vedic mantras, and the ritual detail that the Sansthan is known for. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the nightly pujas throughout the Navratri programme.
 
 The narrative of each night is drawn from the Devi Mahatmya, the section of the Markandeya Purana that serves as the scriptural foundation of Navratri. The temple priests explain the significance of each form of the Goddess through the evening discourses, and many devotees report that understanding the nine forms and their respective qualities deepens their devotional experience across the nine nights. The devotional atmosphere of the temple during Navratri is distinctive — it has a devotional intensity that is different from other observances, and many long-time devotees describe Navratri as their favourite festival at the Sansthan.
 
@@ -65,7 +65,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Navratri visitors. 
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services connecting Shegaon with major cities in Maharashtra. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services connecting Shegaon with major cities in Maharashtra. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 
@@ -73,7 +73,7 @@ The journey to Shegaon from Mumbai or Pune is comfortable by train, with multipl
 Navratri at Shegaon celebrates the nine forms of the Goddess through nine nights of devotional programme, Devi Mahatmya recitations, dandiya dance, and special pujas. The festival culminates in the Vijayadashami celebration of victory and renewal.
 
 **What time does the Devi Mahatmya recitation begin?**
-The recitations typically begin at approximately 7:00 PM each evening. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete programme schedule.
+The recitations typically begin at approximately 7:00 PM each evening. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete programme schedule.
 
 **What is the dandiya programme?**
 The dandiya programme at the Anand Saga grounds is a community dance event that uses traditional wooden sticks accompanied by devotional music. The programme begins at approximately 8:00 PM each evening.

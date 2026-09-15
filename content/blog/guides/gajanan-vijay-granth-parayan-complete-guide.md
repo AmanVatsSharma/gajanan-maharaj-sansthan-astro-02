@@ -26,9 +26,9 @@ relatedSlugs:
   - "shegaon-accommodation-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "gajanan-maharaj-aarti-mantra-lyrics-meaning"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
 ---
 # Gajanan Vijay Granth Parayan: The Complete Guide
 

@@ -21,7 +21,7 @@ locationIds:
 relatedSlugs:
   - "omkareshwar-darshan-timing-guide"
   - "all-12-jyotirlinga-planning"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "trimbakeshwar-narayan-nagbali-kaal-sarp-dosh-pooja-guide"
   - "shegaon-to-pandharpur-route-guide"
   - "shegaon-accommodation-guide"
@@ -91,7 +91,7 @@ Many pilgrims visiting the Vidarbha region combine Shegaon (Gajanan Maharaj) wit
 - Shegaon → Akola (75 km, 1.5 hours) → Khandwa (130 km, 3 hours) → Omkareshwar (60 km, 1.5 hours)
 - Or: Shegaon → Nagpur (110 km) → Indore (by train or flight, ~6–8 hours) → Omkareshwar (77 km, 2 hours)
 
-The combined visit is best planned as a 4 to 5 day trip. Our [Shegaon travel guide](/shegaon-travel-guide) has accommodation options at Shegaon, and the [Pandharpur route guide](/shegaon-to-pandharpur-route-guide) covers the Shegaon-Pandharpur-Omkareshwar triangular route.
+The combined visit is best planned as a 4 to 5 day trip. Our [Shegaon travel guide](/sheogaon-travel-guide) has accommodation options at Shegaon, and the [Pandharpur route guide](/shegaon-to-pandharpur-route-guide) covers the Shegaon-Pandharpur-Omkareshwar triangular route.
 
 ## Mahashivaratri at Omkareshwar
 

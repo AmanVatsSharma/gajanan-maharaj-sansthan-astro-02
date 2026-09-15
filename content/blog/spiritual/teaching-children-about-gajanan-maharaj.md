@@ -26,7 +26,7 @@ relatedSlugs:
   - "maintaining-spiritual-focus-in-crowds"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "phone-and-whatsapp-booking-best-practices"
   - "shegaon-bhakta-niwas-booking-process"
@@ -97,7 +97,7 @@ Devotees often find that a few days of light fasting or simplified meals before 
 - [Maintaining Spiritual Focus In Crowds](/blog/maintaining-spiritual-focus-in-crowds)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Phone and WhatsApp Booking Best Practices](/blog/phone-and-whatsapp-booking-best-practices)
 - [Shegaon Bhakta Niwas Booking Process](/blog/shegaon-bhakta-niwas-booking-process)

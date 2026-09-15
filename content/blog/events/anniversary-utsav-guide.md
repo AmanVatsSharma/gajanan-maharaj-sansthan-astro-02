@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -57,19 +57,19 @@ The community programmes at the Anand Saga grounds during the anniversary observ
 
 ## The Mahaprasad
 
-The Mahaprasad Hall at Shegaon serves a special anniversary meal that includes traditional festive items. The prasad on the anniversary day is considered especially blessed because of the commemorative nature of the programme, and many devotees take portions back home to share with family members. The shegaon-canteen-and-mahaprasad-guide covers the complete range of food offerings during the anniversary programme. The Mahaprasad Hall accommodates a large number of devotees on the anniversary day, and the Sansthan arranges extended meal service hours to ensure that all attendees receive the special meal.
+The Mahaprasad Hall at Shegaon serves a special anniversary meal that includes traditional festive items. The prasad on the anniversary day is considered especially blessed because of the commemorative nature of the programme, and many devotees take portions back home to share with family members. The [shegaon-canteen-and-mahaprasad-guide](/blog/shegaon-canteen-and-mahaprasad-guide) covers the complete range of food offerings during the anniversary programme. The Mahaprasad Hall accommodates a large number of devotees on the anniversary day, and the Sansthan arranges extended meal service hours to ensure that all attendees receive the special meal.
 
 ## Weather and Preparation
 
-The anniversary falls in February, which is the cool late-winter period at Shegaon. Daytime temperatures range between 22 and 30 degrees Celsius, and the night-time temperatures can drop to between 10 and 15 degrees Celsius. Warm clothing is essential for the early morning and late evening programmes. The what-to-carry-pilgrimage-essentials guide provides a complete packing checklist for winter visits to Shegaon.
+The anniversary falls in February, which is the cool late-winter period at Shegaon. Daytime temperatures range between 22 and 30 degrees Celsius, and the night-time temperatures can drop to between 10 and 15 degrees Celsius. Warm clothing is essential for the early morning and late evening programmes. The [What to Carry Pilgrimage Essentials](/blog/what-to-carry-pilgrimage-essentials) guide provides a complete packing checklist for winter visits to Shegaon.
 
 ## Accommodation for the Anniversary
 
-Bhakta Niwas at Shegaon is the recommended accommodation for anniversary visitors. The multi-day programme means that devotees who attend the complete observance need accommodation for several nights. Booking three to four weeks in advance is advisable. The bhakta-niwas-complete-booking-guide covers the reservation process and the different room categories.
+Bhakta Niwas at Shegaon is the recommended accommodation for anniversary visitors. The multi-day programme means that devotees who attend the complete observance need accommodation for several nights. Booking three to four weeks in advance is advisable. The [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide) covers the reservation process and the different room categories. You can also browse [Bhakta Niwas Shegaon](/locations/shegaon-bhakt-niwas) for accommodation details and [book directly](/booking) for your stay.
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for the anniversary programme because devotees can arrive in the morning and participate in the programme from the first day. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The shegaon-travel-guide covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for the anniversary programme because devotees can arrive in the morning and participate in the programme from the first day. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [Shegaon Travel Guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 
@@ -77,10 +77,10 @@ The journey to Shegaon from Mumbai or Pune involves the overnight train, which i
 The anniversary commemorates the arrival of Shri Gajanan Maharaj at Shegaon and celebrates the living tradition that the saint established. The programme includes abhishek ceremonies, devotional discourses, and community programmes.
 
 **How long does the anniversary programme last?**
-The anniversary programme typically spans three to five days. The shegaon-darshan-timing-guide provides the complete schedule.
+The anniversary programme typically spans three to five days. The [Shegaon Darshan Timing Guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 **How far in advance should I book accommodation?**
-Three to four weeks in advance is advisable. The bhakta-niwas-complete-booking-guide covers the reservation process.
+Three to four weeks in advance is advisable. The [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide) covers the reservation process.
 
 **What is the weather like during the anniversary at Shegaon?**
 February at Shegaon is cool, with daytime temperatures between 22 and 30 degrees Celsius and night-time temperatures between 10 and 15 degrees Celsius.
@@ -90,4 +90,4 @@ The Anand Saga grounds host devotional singing, community meals, and cultural pe
 
 ## Closing Guidance
 
-The anniversary utsav at Shri Gajanan Maharaj Sansthan commemorates the saint's arrival at Shegaon and celebrates the devotional tradition that he established. The abhishek ceremonies, the devotional discourses, and the community programmes create an atmosphere of focused devotion and communal celebration. Book your accommodation through the official booking page and reach out to the Sansthan contact office for specific programme details. The festival-season-complete-calendar provides an overview of how the anniversary fits into the broader annual programme at the Sansthan.
+The anniversary utsav at Shri Gajanan Maharaj Sansthan commemorates the saint's arrival at Shegaon and celebrates the devotional tradition that he established. The abhishek ceremonies, the devotional discourses, and the community programmes create an atmosphere of focused devotion and communal celebration. Book your accommodation through the [official booking page](/booking) and reach out to the [Sansthan contact office](/contact) for specific programme details. The [Festival Season Complete Calendar](/blog/festival-season-complete-calendar) provides an overview of how the anniversary fits into the broader annual programme at the Sansthan.

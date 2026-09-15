@@ -27,8 +27,8 @@ relatedSlugs:
   - "pragat-din-darshan-planning"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
   - "teachings-of-shri-gajanan-maharaj-for-modern-families"
-  - "shegaon-darshan-timing-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-darshan-timing-guide"
+  - "sheogaon-travel-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
 ---

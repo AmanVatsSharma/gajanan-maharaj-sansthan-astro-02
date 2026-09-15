@@ -19,7 +19,7 @@ export function Hero() {
         <img
           key={HERO_WITH_NEW_IMAGE}
           src={HERO_WITH_NEW_IMAGE}
-          alt="Shri Gajanan Maharaj Temple"
+          alt="Shri Gajanan Maharaj Temple at Shegaon — main shrine entrance with devotees during aarti"
           width={1920}
           height={1080}
           fetchPriority="high"

@@ -29,7 +29,7 @@ relatedSlugs:
   - "festival-dates-and-booking-windows"
   - "festival-rush-booking-strategies"
   - "shegaon-best-time-to-visit"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
 ---
 # Shegaon Room Booking During Ekadashi and Festivals
@@ -145,4 +145,4 @@ Yes — expect stricter handling around ekadashi dates and the great utsavs, bec
 
 ## Book early, arrive calmly, stay for the aarti
 
-The festival calendar is known, the advance windows are honest, and the town welcomes every devotee who plans a fortnight better than they needed to. Begin at the [booking request page](/booking), direct your questions to the [contact page](/contact), see the complex on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and frame the whole journey with the [complete Shegaon travel guide](/blog/shegaon-travel-guide).
+The festival calendar is known, the advance windows are honest, and the town welcomes every devotee who plans a fortnight better than they needed to. Begin at the [booking request page](/booking), direct your questions to the [contact page](/contact), see the complex on the [Shegaon Bhakta Niwas page](/locations/shegaon-bhakt-niwas), and frame the whole journey with the [complete Shegaon travel guide](/blog/sheogaon-travel-guide).

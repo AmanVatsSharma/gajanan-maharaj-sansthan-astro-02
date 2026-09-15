@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -45,7 +45,7 @@ The Gudi hoisting ceremony is typically conducted at approximately 8:00 AM on th
 
 ## The Devotional Programme
 
-The Gudi Padwa programme at the Sansthan includes the regular morning aarti at 4:00 AM, followed by the special abhishek ceremony that is conducted for the Gudi Padwa observance. The temple priests conduct the abhishek with traditional materials including milk, honey, and flowers, and the ceremony is accompanied by the recitation of traditional mantras. The afternoon programme includes a special puja that invokes the blessings of the new year, and many devotees participate in the puja by making personal offerings to the deity. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the Gudi Padwa programme.
+The Gudi Padwa programme at the Sansthan includes the regular morning aarti at 4:00 AM, followed by the special abhishek ceremony that is conducted for the Gudi Padwa observance. The temple priests conduct the abhishek with traditional materials including milk, honey, and flowers, and the ceremony is accompanied by the recitation of traditional mantras. The afternoon programme includes a special puja that invokes the blessings of the new year, and many devotees participate in the puja by making personal offerings to the deity. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the Gudi Padwa programme.
 
 ## The Community Programme
 
@@ -73,7 +73,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Gudi Padwa visitors
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune is comfortable by train, with multiple daily services. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 

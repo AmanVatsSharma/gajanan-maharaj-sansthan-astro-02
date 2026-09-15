@@ -21,15 +21,16 @@ locationIds:
   - "omkareshwar"
 relatedSlugs:
   - "omkareshwar-accommodation-guide"
-  - "omkareshwar-booking-process"
+  - "omkareshwar-bhakta-niwas-booking-process"
   - "omkareshwar-canteen-and-mahaprasad-guide"
   - "omkareshwar-darshan-timings"
+  - "omkareshwar-darshan-timing-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "omkareshwar-devotee-faqs"
-  - "omkareshwar-room-types-and-facilities"
+  - "omkareshwar-bhakt-niwas-room-types-and-facilities"
   - "omkareshwar-bhakt-niwas-sheogaon-contact"
-  - "omkareshwar-bhakt-niwas-vs-anand-vihar"
-  - "shegaon-bhakt-niwas-guide"
+  - "omkareshwar-bhakta-niwas-accommodation-guide"
+  - "omkareshwar-bhakta-niwas-vs-anand-vihar"
 ---
 The Sansthan Bhakta Niwas at Omkareshwar is where most pilgrims stay during their visit to the Jyotirlinga. Run by the Shri Gajanan Maharaj Sansthan, it is located near the boat ghat and offers clean, simple accommodation at affordable prices. The Bhakta Niwas has been serving devotees for decades, and the staff is experienced in handling yatris from across India. The accommodation is basic but functional, with clean rooms, hot water, and a canteen that serves vegetarian meals. For many devotees, staying at the Bhakta Niwas is part of the spiritual experience — waking up to the sound of temple bells, walking to the ghat for morning darshan, and returning to a quiet, devotional atmosphere after the crowds disperse. This guide covers everything you need to know about the Bhakta Niwas at Omkareshwar.
 

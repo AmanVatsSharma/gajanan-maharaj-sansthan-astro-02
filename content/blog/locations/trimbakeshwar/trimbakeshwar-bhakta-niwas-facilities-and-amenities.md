@@ -26,7 +26,7 @@ relatedSlugs:
   - "trimbakeshwar-sheogaon-accommodation-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "trimbakeshwar-nashik-shegaon-route"
   - "jyotirlinga-and-sansthan-combined-itinerary"
@@ -118,7 +118,7 @@ Senior citizens should carry their primary medical documents and a small persona
 - [Trimbakeshwar Sheogaon Accommodation Guide](/blog/trimbakeshwar-sheogaon-accommodation-guide)
 - [Official Sansthan Guide for Devotees](/blog/gajanan-maharaj-sansthan-complete-guide)
 - [Bhakta Niwas Complete Booking Guide](/blog/bhakta-niwas-complete-booking-guide)
-- [Complete Travel Guide to Shegaon](/blog/shegaon-travel-guide)
+- [Complete Travel Guide to Shegaon](/blog/sheogaon-travel-guide)
 - [Shegaon Accommodation Guide](/blog/shegaon-accommodation-guide)
 - [Trimbakeshwar Nashik Shegaon Route](/blog/trimbakeshwar-nashik-shegaon-route)
 - [Jyotirlinga and Sansthan Combined Itinerary](/blog/jyotirlinga-and-sansthan-combined-itinerary)

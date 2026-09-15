@@ -29,7 +29,7 @@ relatedSlugs:
   - "triambakeshwar-darshan-timing-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "omkareshwar-darshan-timings"
   - "phone-and-whatsapp-booking-best-practices"
@@ -47,7 +47,7 @@ Trimbakeshwar does not have its own airport or railway station, which is the fir
 
 By air, the nearest airport is Ozar Airport (ISK) near Nashik, which operates domestic flights to Mumbai, Delhi, and Ahmedabad. Mumbai's Chhatrapati Shivaji Maharaj International Airport is a second option, approximately 270km by road, with a 5 to 6 hour drive via the Mumbai–Nashik Expressway. From Shegaon, the distance is approximately 330km, and most pilgrims route through Nashik or take the train from Shegaon Junction (SEG) to Nashik Road station, which takes roughly 4 to 5 hours.
 
-By train, the nearest station is Nashik Road (NK), on the Central Railway network, served by express trains from Mumbai, Pune, Nagpur, Delhi, and Bhopal. From Nashik Road, Trimbakeshwar is a 45-minute drive by taxi or shared auto. The [Shegaon Travel Guide](/blog/shegaon-travel-guide) covers the Shegaon to Nashik train connection in detail.
+By train, the nearest station is Nashik Road (NK), on the Central Railway network, served by express trains from Mumbai, Pune, Nagpur, Delhi, and Bhopal. From Nashik Road, Trimbakeshwar is a 45-minute drive by taxi or shared auto. The [Shegaon Travel Guide](/blog/sheogaon-travel-guide) covers the Shegaon to Nashik train connection in detail.
 
 By road from Nashik city, the drive takes 45 minutes to an hour along a state highway through the Sahyadri foothills. Auto-rickshaws are readily available at Nashik's main stands, and shared jeeps cost approximately 50 to 80 rupees per person. For pilgrims arriving from Omkareshwar, the distance is approximately 450km by road; the [Omkareshwar Darshan Timings guide](/blog/omkareshwar-darshan-timings) covers that connection.
 

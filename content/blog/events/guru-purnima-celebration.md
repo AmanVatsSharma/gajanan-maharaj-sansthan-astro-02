@@ -21,10 +21,10 @@ locationIds:
 relatedSlugs:
   - "punyatithi-utsav-darshan-planning"
   - "major-utsav-crowd-planning-checklist"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-accommodation-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "what-to-carry-pilgrimage-essentials"
   - "shegaon-canteen-and-mahaprasad-guide"
   - "festival-season-complete-calendar"
@@ -45,7 +45,7 @@ The afternoon programme includes discourses on the Guru Gita — a section of th
 
 ## The Morning Programme
 
-The Guru Purnima programme at the Sansthan begins in the early morning with the Mangala Aarti at 4:00 AM, followed by a special puja in the main temple that honours the guru-disciple tradition. The temple priests conduct the puja with traditional materials and recite the mantras that are associated with the guru, and devotees participate by offering their own prayers of gratitude to their teachers. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule of the Guru Purnima programme.
+The Guru Purnima programme at the Sansthan begins in the early morning with the Mangala Aarti at 4:00 AM, followed by a special puja in the main temple that honours the guru-disciple tradition. The temple priests conduct the puja with traditional materials and recite the mantras that are associated with the guru, and devotees participate by offering their own prayers of gratitude to their teachers. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule of the Guru Purnima programme.
 
 The morning programme at the Samadhi is particularly well-attended on Guru Purnima. Many devotees visit the Samadhi to offer their prayers at the place where Shri Gajanan Maharaj attained mahasamadhi, and the experience of standing at the Samadhi on this day carries a particular devotional depth. The quiet contemplative atmosphere of the Samadhi — surrounded by the old banyan trees and the peaceful garden — is well-suited to the reflective nature of the Guru Purnima observance. Devotees who arrive before 6:00 AM can participate in the morning programme at both the main temple and the Samadhi, and this early visit is one of the most meaningful devotional practices of the year.
 
@@ -71,7 +71,7 @@ Bhakta Niwas at Shegaon is the recommended accommodation for Guru Purnima visito
 
 ## Travel Logistics
 
-The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for Guru Purnima because devotees can arrive in the late afternoon and participate in the evening programme. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers all transport options in detail.
+The journey to Shegaon from Mumbai or Pune involves the overnight train, which is convenient for Guru Purnima because devotees can arrive in the late afternoon and participate in the evening programme. From Nagpur, the three-and-a-half-hour drive is manageable for a same-day arrival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers all transport options in detail.
 
 ## Frequently Asked Questions
 
@@ -79,7 +79,7 @@ The journey to Shegaon from Mumbai or Pune involves the overnight train, which i
 Guru Purnima at Shegaon honours the guru-disciple tradition that is central to Shri Gajanan Maharaj's legacy. The festival is observed with devotional discourses, special puja, and the offering of gratitude to spiritual teachers.
 
 **What puja is conducted on Guru Purnima?**
-The Sansthan conducts a special puja that honours the guru-disciple tradition, including the recitation of the Guru Stotra and traditional mantras. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) provides the complete schedule.
+The Sansthan conducts a special puja that honours the guru-disciple tradition, including the recitation of the Guru Stotra and traditional mantras. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) provides the complete schedule.
 
 **What devotional discourses are arranged during Guru Purnima?**
 The afternoon programme includes devotional discourses on the significance of the guru in the Hindu spiritual tradition, drawing on texts including the Guru Gita.

@@ -30,7 +30,7 @@ relatedSlugs:
   - "gajanan-vijay-granth-parayan-complete-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-jayanti-celebration-guide"
 ---
 # Gajanan Maharaj Punyatithi Guide
@@ -110,4 +110,4 @@ With planning, yes — but the peak day is genuinely crowded. Families with elde
 
 ## The day the town keeps its appointment
 
-The punyatithi window asks more of a visiting family than any other date at Shegaon, and returns more than any other. Send the room request early through the [accommodation booking page](/booking), place the practical details with the office through the [contact page](/contact), and read the wider frame in the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) and the [complete Shegaon travel guide](/blog/shegaon-travel-guide). What the days around 8 September ask of your patience, the morning aarti at the Samadhi Mandir repays.
+The punyatithi window asks more of a visiting family than any other date at Shegaon, and returns more than any other. Send the room request early through the [accommodation booking page](/booking), place the practical details with the office through the [contact page](/contact), and read the wider frame in the [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) and the [complete Shegaon travel guide](/blog/sheogaon-travel-guide). What the days around 8 September ask of your patience, the morning aarti at the Samadhi Mandir repays.

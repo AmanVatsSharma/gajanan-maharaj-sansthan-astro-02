@@ -24,15 +24,15 @@ locationIds:
   - "trimbakeshwar"
 relatedSlugs:
   - "complete-transport-guide-for-devotees"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "mumbai-to-shegaon-weekend-guide"
   - "shegaon-to-omkareshwar-route-guide"
   - "shegaon-to-pandharpur-route-guide"
-  - "trimabkeshwar-to-shegaon-route-guide"
+  - "trimbakeshwar-to-shegaon-route-guide"
   - "omkareshwar-best-time-to-visit"
   - "pandharpur-accommodation-near-temple"
-  - "trimabkeshwar-accommodation-near-temple"
-  - "local-transport-safety-tips"
+  - "trimbakeshwar-accommodation-near-temple"
+  - "safety-tips-for-maharashtra-pilgrimage"
 ---
 
 # Local Transport Options Near Sansthan | Shri Gajanan Maharaj Sansthan
@@ -85,13 +85,7 @@ The local transport within Trimbakeshwar is primarily by auto-rickshaw or by wal
 
 The Kushavarat kund, which is the bathing ghat near the temple, is a short walk from the trust dharamshala, and many devotees walk to the kund for the bathing ritual before attending darshan at the temple. The walk takes approximately ten minutes, and the route is well-lit and safe during the early morning hours.
 
-The [Trimbakeshwar Darshan Timing Guide](/blog/trimabkeshwar-darshan-timing-guide) covers the temple timings, the darshan procedures, and the Brahmagiri approach, and the [Trimbakeshwar Accommodation Near Temple](/blog/trimabkeshwar-accommodation-near-temple) guide covers the transport options from Nashik station to the temple.
-
-## Transport Safety Tips
-
-The local transport at all four Sansthan locations is generally safe, but a few practical precautions are worth observing. The first is to confirm the fare before you get into an auto-rickshaw, and to agree on the route. The second is to use the pre-paid auto-rickshaw counter at Shegaon railway station whenever it is available, because the registered drivers through the cooperative are more reliable than the informal drivers outside the station. The third is to avoid travelling by auto-rickshaw alone late at night — the trust dharamshala at all four locations is safe, but the roads around the temple can be quiet after 10:00 p.m., and a shared auto-rickshaw or a walk with a companion is safer than a solo ride.
-
-The [Local Transport Safety Tips](/blog/local-transport-safety-tips) guide covers the safety considerations for local transport at all four locations in detail, including the safe routes, the safe hours, and the procedures to follow if you have a problem with an auto-rickshaw driver.
+The [Trimbakeshwar Darshan Timing Guide](/blog/trimbakeshwar-darshan-timing-guide) covers the temple timings, the darshan procedures, and the Brahmagiri approach, and the [Trimbakeshwar Accommodation Near Temple](/blog/trimbakeshwar-accommodation-near-temple) guide covers the transport options from Nashik station to the temple. The [Local Transport Safety Tips](/blog/solo-female-devotee-safety-guide) guide covers the safety considerations for local transport at all four locations in detail, including the safe routes, the safe hours, and the procedures to follow if you have a problem with an auto-rickshaw driver.
 
 ## Frequently Asked Questions
 
@@ -101,7 +95,7 @@ Approximately three kilometres, which is a thirty-five to forty-five minute walk
 
 **Is there a trust shuttle service from the station to the accommodation?**
 
-No. The trust does not operate a shuttle service from the railway station. The trust can arrange a shared vehicle for group bookings, but individual devotees need to use auto-rickshaws or walk. The [Group Booking Essentials](/blog/group-booking-essentials) guide covers the group transport arrangements.
+No. The trust does not operate a shuttle service from the railway station. The trust can arrange a shared vehicle for group bookings, but individual devotees need to use auto-rickshaws or walk. The [Group Booking Essentials](/blog/group-booking-essentials) guide covers the group transport arrangements. For accommodation near the temple, see [Bhakta Niwas Shegaon](/locations/shegaon-bhakt-niwas) or [book your stay](/booking) through our booking page.
 
 **Can I walk from the Shegaon bus stand to the temple?**
 

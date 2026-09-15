@@ -20,13 +20,13 @@ locationIds:
   - "shegaon-bhakt-niwas"
 relatedSlugs:
   - "gajanan-maharaj-sansthan-complete-guide"
-  - "shegaon-bhakt-niwas-accommodation-guide"
-  - "shegaon-darshan-timing-guide"
-  - "shegaon-travel-guide"
+  - "shegaon-accommodation-guide"
+  - "sheogaon-darshan-timing-guide"
+  - "sheogaon-travel-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "phone-and-whatsapp-booking-best-practices"
-  - "maha-shivaratri-sansthan-visit"
-  - "guru-purnima-devotee-planning"
+  - "mahashivratri-complete-guide"
+  - "guru-purnima-celebration"
   - "festival-season-what-to-expect"
   - "shegaon-budget-pilgrimage-guide"
 ---
@@ -43,13 +43,13 @@ This checklist is designed for first-time visitors who want to prepare thoroughl
 
 - Verify the Sansthan's official contact details before making any booking: the [how-to-verify-official-sansthan-contacts](/blog/how-to-verify-official-sansthan-contacts) guide covers how to identify genuine Sansthan communications and avoid scams.
 
-- Plan your transport: the [shegaon-travel-guide](/blog/shegaon-travel-guide) covers the complete transport options, including train, bus, and private vehicle. Book your train or bus tickets at least two weeks before your visit to ensure availability and reasonable pricing.
+- Plan your transport: the [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers the complete transport options, including train, bus, and private vehicle. Book your train or bus tickets at least two weeks before your visit to ensure availability and reasonable pricing.
 
 ## Booking accommodation
 
 - Book Bhakta Niwas accommodation at least two to three weeks before your visit. For festival visits, book four to six weeks in advance. The [bhakta-niwas-complete-booking-guide](/blog/bhakta-niwas-complete-booking-guide) covers the booking process in detail.
 
-- Choose a room category that matches your budget: the [shegaon-bhakt-niwas-accommodation-guide](/blog/shegaon-bhakt-niwas-accommodation-guide) covers all room categories, from the common hall dormitory to private AC rooms, and provides cost estimates for each.
+- Choose a room category that matches your budget: the [shegaon-accommodation-guide](/blog/shegaon-accommodation-guide) covers all room categories, from the common hall dormitory to private AC rooms, and provides cost estimates for each.
 
 - Confirm your booking with the Sansthan's booking office before your visit. Call the booking number provided in your confirmation and verify that your reservation is active. The [phone-and-whatsapp-booking-best-practices](/blog/phone-and-whatsapp-booking-best-practices) guide covers the authorised booking channels.
 
@@ -57,11 +57,11 @@ This checklist is designed for first-time visitors who want to prepare thoroughl
 
 ## What to pack
 
-- Comfortable shoes that you have been wearing throughout the day — the temple security team checks shoes at the entry, and brand-new shoes can trigger the metal detectors. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) covers the security process.
+- Comfortable shoes that you have been wearing throughout the day — the temple security team checks shoes at the entry, and brand-new shoes can trigger the metal detectors. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) covers the security process.
 
 - A small bag for essentials — your phone, wallet, medications, and a water bottle. Large bags are not permitted inside the temple complex, and the cloakroom near the entry can store larger items during your visit.
 
-- Light cotton clothing for the daytime and a light shawl or jacket for the early morning and evening. The [shegaon-travel-guide](/blog/shegaon-travel-guide) provides seasonal packing advice.
+- Light cotton clothing for the daytime and a light shawl or jacket for the early morning and evening. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) provides seasonal packing advice.
 
 - Any medications you need, with a sufficient supply for the duration of your visit. Medical facilities are available near the temple, but it is practical to bring your own medications.
 
@@ -69,9 +69,9 @@ This checklist is designed for first-time visitors who want to prepare thoroughl
 
 ## Temple etiquette and preparation
 
-- Arrive early for darshan: the Mangala Aarti at 4:30 AM is the most devotional moment of the day, and arriving early allows you to experience the temple at its most peaceful. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) covers the daily schedule and optimal visiting windows.
+- Arrive early for darshan: the Mangala Aarti at 4:30 AM is the most devotional moment of the day, and arriving early allows you to experience the temple at its most peaceful. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) covers the daily schedule and optimal visiting windows.
 
-- Follow the temple security instructions: remove your shoes at the designated area, pass through the metal detector, and maintain queue discipline during darshan. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) covers the security process in detail.
+- Follow the temple security instructions: remove your shoes at the designated area, pass through the metal detector, and maintain queue discipline during darshan. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) covers the security process in detail.
 
 - Maintain respectful behaviour in the temple: speak softly, avoid phone calls inside the temple complex, and follow the directions of the Sansthan's staff and volunteers. The [gajanan-maharaj-sansthan-complete-guide](/blog/gajanan-maharaj-sansthan-complete-guide) covers temple etiquette and devotional practices.
 
@@ -107,7 +107,7 @@ Booking your accommodation in advance is the most critical preparation step. The
 Large bags, unnecessary valuables, and electronics that you do not need during your visit. The temple's cloakroom can store larger items during your visit, but it is practical to travel light. The security team checks all bags at the entry, and the process is faster when you are carrying only essential items.
 
 **Is it necessary to book transport in advance?**
-Yes, particularly for train travel during festival periods. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers transport booking advice, including when to book and how to find the best fares.
+Yes, particularly for train travel during festival periods. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers transport booking advice, including when to book and how to find the best fares.
 
 **What is the most meaningful activity during my first visit?**
 The Samadhi darshan is the primary devotional experience, and spending quiet time there is the most meaningful activity of your visit. Many devotees also find the Mangala Aarti at 4:30 AM and the evening aarti to be deeply moving devotional moments.

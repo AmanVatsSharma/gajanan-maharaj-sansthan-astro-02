@@ -28,8 +28,8 @@ relatedSlugs:
   - "omkareshwar-accommodation-guide"
   - "omkareshwar-budget-pilgrimage-guide"
   - "omkareshwar-train-and-bus-arrival-planning"
-  - "shegaon-how-to-reach"
   - "omkareshwar-devotee-faqs"
+  - "sheogaon-travel-guide"
 ---
 Omkareshwar is located in the Khandwa district of Madhya Pradesh, on the banks of the Narmada river. The town is accessible by train, bus, and road from most major cities in central and western India. For devotees based in Maharashtra, the most common route is via Indore or Khandwa Junction. For devotees based in Gujarat, the route via Barwaha or the Indore route is most convenient. This guide covers all the major routes to Omkareshwar, the transport options at each stage, and the practical tips that seasoned pilgrims share with newcomers.
 

@@ -24,6 +24,7 @@ import {
 import { getLocationFAQs } from "@/data/faq";
 import { CONTACT_DETAILS } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
+import { getBlogPosts } from "@/lib/blog";
 
 export function getStaticPaths() {
   return sansthanLocations.map((location) => ({
@@ -84,6 +85,34 @@ const locationFAQs = getLocationFAQs(
   location.contact[0] || CONTACT_DETAILS.booking.mobile,
   totalCapacity
 );
+
+// Find related blog posts for this location
+const allPosts = getBlogPosts();
+const locationBaseSlug = location.id
+  .replace("-bhakt-niwas", "")
+  .replace("-anand-vihar", "")
+  .replace("-visawa", "")
+  .replace("-math", "")
+  .replace("-jyotirlinga", "");
+
+const relatedPosts = allPosts
+  .filter((post) => {
+    const postSlug = post.slug;
+    // Match by explicit locationIds, or by slug containing the location base name
+    return (
+      post.locationIds?.includes(location.id) ||
+      postSlug.startsWith(locationBaseSlug) ||
+      postSlug.includes(location.id.replace("-jyotirlinga", ""))
+    );
+  })
+  .slice(0, 6)
+  .map((post) => ({
+    slug: post.slug,
+    title: post.title,
+    description: post.description,
+    category: post.category,
+  }));
+
 const faqSchema = getFAQSchema(
   locationFAQs.map((faq) => ({ question: faq.question, answer: faq.answer }))
 );
@@ -112,5 +141,5 @@ const structuredPayload = [
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))
   }
-  <LocationDetailPageBody client:visible location={location} faqs={locationFAQs} />
+  <LocationDetailPageBody client:visible location={location} faqs={locationFAQs} relatedPosts={relatedPosts} />
 </Layout>

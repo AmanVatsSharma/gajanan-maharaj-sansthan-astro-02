@@ -22,11 +22,11 @@ relatedSlugs:
   - "gajanan-maharaj-pragat-din-utsav-guide"
   - "punyatithi-utsav-darshan-planning"
   - "diwali-darshan-and-accommodation"
-  - "maha-shivaratri-sansthan-visit"
-  - "guru-purnima-devotee-planning"
+  - "mahashivratri-complete-guide"
+  - "guru-purnima-celebration"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "major-utsav-crowd-planning-checklist"
 ---
@@ -47,7 +47,7 @@ This checklist is designed to help you prepare for every major festival at the S
 
 ## Transport planning
 
-- Book your train or bus tickets at least three to four weeks before the festival. The [shegaon-travel-guide](/blog/shegaon-travel-guide) covers the complete transport options, including specific train numbers and bus timings.
+- Book your train or bus tickets at least three to four weeks before the festival. The [sheogaon-travel-guide](/blog/sheogaon-travel-guide) covers the complete transport options, including specific train numbers and bus timings.
 
 - For private vehicle travel, plan your departure time to avoid the traffic that builds near the temple during festival afternoons. Departing before noon on festival days avoids the congestion that typically begins around 3:00 PM.
 
@@ -59,7 +59,7 @@ This checklist is designed to help you prepare for every major festival at the S
 
 - Plan your darshan schedule around the festival programme. During Pragat Din, the special puja programme runs from approximately 6:00 AM to 10:00 PM, and the darshan queue during the programme hours is 60 to 90 minutes long. The morning hours before 6:00 AM and the afternoon break between 1:00 PM and 3:00 PM are the best windows for darshan.
 
-- Position yourself near the entry gates rather than in the centre of the courtyard. The queue moves faster near the entry, and you can enter the main darshan area more quickly. The [shegaon-darshan-timing-guide](/blog/shegaon-darshan-timing-guide) covers the darshan schedule and optimal positioning.
+- Position yourself near the entry gates rather than in the centre of the courtyard. The queue moves faster near the entry, and you can enter the main darshan area more quickly. The [sheogaon-darshan-timing-guide](/blog/sheogaon-darshan-timing-guide) covers the darshan schedule and optimal positioning.
 
 - Use the designated entry for elderly, mobility-challenged, and family devotees. The Sansthan provides a separate entry area near the security booth that is less crowded and more accessible.
 

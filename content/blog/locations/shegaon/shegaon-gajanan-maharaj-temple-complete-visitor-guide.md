@@ -24,10 +24,10 @@ locationIds:
 relatedSlugs:
   - "shegaon-train-timings-and-stay-planning"
   - "shegaon-same-day-room-booking-options"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "shegaon-anand-sagar-visit-guide"
   - "shegaon-bhakta-niwas-room-types-and-facilities"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "gajanan-maharaj-sansthan-complete-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "welcome-to-sansthan"
@@ -44,7 +44,7 @@ Shegaon sits in Maharashtra's Buldhana district, in the Vidarbha region — a mo
 
 That origin explains much of what a visitor now finds. The Sansthan is not a hotel company that happens to run a temple; it is a century-old service institution built around a saint's resting place, known for disciplined management, spotless upkeep, and welfare work — medical camps, education, and the free Annakshetra kitchen among them. The accommodation tariffs are held deliberately within a devotee's reach, and the rooms exist so that pilgrims can rest, not so that the trust can trade.
 
-For first-time visitors, this changes how to read the town. The crowds are not a tourism industry's crowd; they are a devotee stream that swells on ekadashi, on Tuesdays, and on the anniversary days of the Maharaj's life. The queues move with a patience learned in bhakti. And the three accommodation complexes are not competitors vying for your custom; they are one network arranged around the pilgrim's three anchors — the temple, the gardens, and the railway station. The [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) tells the institutional story in full, and the [complete Shegaon travel guide](/blog/shegaon-travel-guide) carries the practical detail of the town itself.
+For first-time visitors, this changes how to read the town. The crowds are not a tourism industry's crowd; they are a devotee stream that swells on ekadashi, on Tuesdays, and on the anniversary days of the Maharaj's life. The queues move with a patience learned in bhakti. And the three accommodation complexes are not competitors vying for your custom; they are one network arranged around the pilgrim's three anchors — the temple, the gardens, and the railway station. The [official Sansthan guide for devotees](/blog/gajanan-maharaj-sansthan-complete-guide) tells the institutional story in full, and the [complete Shegaon travel guide](/blog/sheogaon-travel-guide) carries the practical detail of the town itself.
 
 ## The Samadhi Mandir through the day
 
@@ -59,7 +59,7 @@ The heart of Shegaon is the Samadhi Mandir, the shrine raised over the saint's r
 | Evening | Aarti, lamps, and the bazaar walk | Nearly everyone — the town's peak hour |
 | Tuesday evening | The weekly Dindi procession from the eastern gate | Devotees who time their trip to it |
 
-Timings shift across seasons and festival windows, so treat this table as the shape of the day rather than a schedule; the temple office fixes the exact aarti hours for your dates, and our dedicated [Shegaon darshan timing guide](/blog/shegaon-darshan-timing-guide) carries the fuller treatment. Two further pointers do the rounds of every experienced family: footwear is left outside the complex at the counters, and the prasad you carry home should be bought at the official counter rather than accepted from strangers near the gates.
+Timings shift across seasons and festival windows, so treat this table as the shape of the day rather than a schedule; the temple office fixes the exact aarti hours for your dates, and our dedicated [Shegaon darshan timing guide](/blog/sheogaon-darshan-timing-guide) carries the fuller treatment. Two further pointers do the rounds of every experienced family: footwear is left outside the complex at the counters, and the prasad you carry home should be bought at the official counter rather than accepted from strangers near the gates.
 
 Around the Mandir cluster the smaller landmarks that give a first visit its texture — the Paduka Mandir marking the place of the Mahasamadhi, the path of the Tuesday Dindi, and the temple bazaar with its books, images, and offerings. They are described, with timings and walking notes, in our guide to [nearby places from Shegaon](/blog/nearby-places-from-shegaon).
 

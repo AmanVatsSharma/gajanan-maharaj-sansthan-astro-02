@@ -24,9 +24,9 @@ relatedSlugs:
   - "gajanan-maharaj-biography-life-story-shegaon"
   - "rishi-panchami-shegaon-samadhi-utsav-guide"
   - "pragat-din-darshan-planning"
-  - "shegaon-darshan-timing-guide"
+  - "sheogaon-darshan-timing-guide"
   - "shegaon-anand-sagar-visit-guide"
-  - "shegaon-travel-guide"
+  - "sheogaon-travel-guide"
   - "shegaon-accommodation-guide"
   - "bhakta-niwas-complete-booking-guide"
   - "shegaon-annadan-mahaprasad-free-food-guide"
@@ -77,7 +77,7 @@ Planning a visit around Rishi Panchami means booking accommodation well in advan
 
 ## Pilgrimage route: Shegaon and the nearby circuit
 
-Shegaon sits at the junction of several important pilgrimage routes. Devotees coming from Nagpur, Akola, or Amaravati can make a single stop at Shegaon and continue to the Nashik-Trimbakeshwar Jyotirlinga or to the Pandharpur Vitthal Temple. Our [travel guide to Shegaon](/shegaon-travel-guide) and the [12 Jyotirlinga planning guide](/all-12-jyotirlinga-planning) cover these combined routes.
+Shegaon sits at the junction of several important pilgrimage routes. Devotees coming from Nagpur, Akola, or Amaravati can make a single stop at Shegaon and continue to the Nashik-Trimbakeshwar Jyotirlinga or to the Pandharpur Vitthal Temple. Our [travel guide to Shegaon](/sheogaon-travel-guide) and the [12 Jyotirlinga planning guide](/all-12-jyotirlinga-planning) cover these combined routes.
 
 ## Frequently asked questions
 
