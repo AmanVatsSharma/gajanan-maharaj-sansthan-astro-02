@@ -232,7 +232,7 @@ Check at [PageSpeed Insights](https://pagespeed.web.dev/):
    - Name: "Shri Gajanan Maharaj Sansthan - Shegaon"
    - Category: "Hindu temple" + "Lodging"
    - Address: Use exact address from contact data
-   - Phone: 8796359334
+   - Phone: +918084529456
    - Website: https://www.gajananmaharajsanstan.com/locations/shegaon-bhakt-niwas
 3. Add photos (minimum 10 high-quality photos)
 4. Add business hours (24/7)
@@ -261,7 +261,7 @@ List your business on:
 ```
 Name: Shri Gajanan Maharaj Sansthan
 Address: Shri Gajanan Maharaj Temple Complex, Shegaon, Dist. Buldhana, Maharashtra - 444203
-Phone: 8796359334
+Phone: +918084529456
 ```
 
 ### Encourage Reviews
