@@ -47,13 +47,13 @@ flowchart TD
 
 **Change-log:**
 - 2026-02-13: Added lightweight `/booking` landing page and `BookingLandingForm` (WhatsApp/call based).
-- 2026-02-13: Updated booking mobile/WhatsApp number to +918084529456 in `src/data/contact.ts` (single source of truth).
-- 2026-02-13: Removed all other phone numbers; site now uses only +918084529456 for contact (single number everywhere).
+- 2026-02-13: Updated booking mobile/WhatsApp number to +917091717296 in `src/data/contact.ts` (single source of truth).
+- 2026-02-13: Removed all other phone numbers; site now uses only +917091717296 for contact (single number everywhere).
 - 2026-02-13: Renamed home checkout widget "Check Out" to "Check Availability"; after click, now shows only Call button (WhatsApp removed).
 - 2026-02-15: Blog SEO content validation now enforces internal booking/contact intent links to strengthen conversion-oriented internal linking.
-- 2026-06-10: Updated booking mobile/WhatsApp number to +918084529456 in `src/data/contact.ts` and all FAQ entries.
-- 2026-07-01: Updated booking mobile/WhatsApp number to +918084529456 in `src/data/contact.ts`, all FAQ entries, and manual seed blog posts.
-- 2026-09-06: Updated booking mobile/WhatsApp number to +918084529456 in `src/data/contact.ts` (single source of truth); all FAQ entries, Omkareshwar blog posts, and consumers pick it up automatically.
+- 2026-06-10: Updated booking mobile/WhatsApp number to +917091717296 in `src/data/contact.ts` and all FAQ entries.
+- 2026-07-01: Updated booking mobile/WhatsApp number to +917091717296 in `src/data/contact.ts`, all FAQ entries, and manual seed blog posts.
+- 2026-09-06: Updated booking mobile/WhatsApp number to +917091717296 in `src/data/contact.ts` (single source of truth); all FAQ entries, Omkareshwar blog posts, and consumers pick it up automatically.
 - 2026-09-06: Added `npm run verify:phone` CI guard (`scripts/verify-phone-consistency.mjs`, wired into `seo:ci`) that fails on any phone number outside `CONTACT_DETAILS` in src/, content/ (incl. blog), scripts/, and root docs — number changes are now enforced to be one-place.
 
 

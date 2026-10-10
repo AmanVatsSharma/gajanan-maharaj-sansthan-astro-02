@@ -81,10 +81,10 @@ flowchart TD
 - 2026-02-12: Reordered home page sections to show rooms before locations for better conversion flow. Simplified hero section by removing secondary navigation links ("Check availability", "Fill detailed booking request", "Explore locations"), keeping only direct WhatsApp and phone booking CTAs for cleaner UX and stronger conversion focus.
 - 2026-02-12: Removed detailed booking system completely from website. Deleted /booking page, BookingWizard, VerticalDatePicker, and booking schema. Removed all "Fill detailed booking request" links from Hero, BookingCheckoutWidget, Footer, Navbar, RoomTypesSection, FeaturedLocations, CTABanner, location pages, and LocationCard. Updated all booking CTAs to direct WhatsApp/Call links only. Removed /booking from sitemap. Simplified user journey to WhatsApp and phone booking exclusively for better conversion and reduced complexity.
 - 2026-02-13: Reintroduced a lightweight `/booking` landing page (WhatsApp/Call intent form + FAQ) and re-added it to sitemap/navigation. Unified canonical site URL handling across metadata/robots/sitemap/JSON-LD and added placeholder image routes to prevent 404s until real assets are added.
-- 2026-02-13: Updated booking mobile/WhatsApp number to +918084529456 (via `src/data/contact.ts`); Hero, RoomTypesSection, EnhancedRoomsSection, Footer, Navbar, Contact page all consume this single source.
-- 2026-02-13: Removed all other phone numbers; site now uses only +918084529456 for contact everywhere.
+- 2026-02-13: Updated booking mobile/WhatsApp number to +917091717296 (via `src/data/contact.ts`); Hero, RoomTypesSection, EnhancedRoomsSection, Footer, Navbar, Contact page all consume this single source.
+- 2026-02-13: Removed all other phone numbers; site now uses only +917091717296 for contact everywhere.
 - 2026-02-18: Restored hero section to use temple photo (hero-image-2026-02-05.jpeg) after SEO PR had switched to SVG placeholder; ensures hero displays proper aligned image post-pull.
-- 2026-06-10: Updated booking mobile/WhatsApp number to +918084529456 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
-- 2026-07-01: Updated booking mobile/WhatsApp number to +918084529456 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
-- 2026-09-06: Updated booking mobile/WhatsApp number to +918084529456 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
+- 2026-06-10: Updated booking mobile/WhatsApp number to +917091717296 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
+- 2026-07-01: Updated booking mobile/WhatsApp number to +917091717296 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
+- 2026-09-06: Updated booking mobile/WhatsApp number to +917091717296 (via `src/data/contact.ts`); all consumers automatically pick up the new value.
 
